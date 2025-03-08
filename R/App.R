@@ -23,6 +23,7 @@ ui <- fluidPage(
     tags$style(HTML("
       .dark-mode .nav-tabs > li > a { color: green !important; }
       .dark-mode .nav-tabs > li.active > a { color: white !important; }
+      .compact-alert { padding: 5px; margin-bottom: 5px; font-size: 12px; }
     "))
   ),
   titlePanel("NetworkApp 1.0.0"),
@@ -31,6 +32,7 @@ ui <- fluidPage(
       textInput("data_url", "URL de la Fuente de Datos:", 
                 value = DEFAULT_URL,
                 placeholder = "Ingrese la URL del archivo CSV"),
+      uiOutput("loading_indicator"),
       dateRangeInput("date_range", "Rango de Fechas:",
                      start = NULL, end = NULL, min = NULL, max = NULL,
                      format = "yyyy-mm-dd"),
@@ -42,8 +44,7 @@ ui <- fluidPage(
                   choices = c("Todos" = "All")),
       switchInput("toggle_mode", "Modo Oscuro", value = FALSE),
       actionButton("run_btn", "Ejecutar", class = "btn-primary"),
-      verbatimTextOutput("debug_info"),
-      uiOutput("loading_indicator")  # Added loading indicator
+      verbatimTextOutput("debug_info")
     ),
     mainPanel(
       tabsetPanel(
@@ -63,7 +64,7 @@ ui <- fluidPage(
                  plotlyOutput("sla_trend", height = "300px")),
         tabPanel("Correlograma",
                  plotOutput("corr_plot", height = "400px"),
-                 plotlyOutput("impact_bar", height = "400px")),
+                 plotlyOutput("impact_bar", height = "200px")),  # Reduced from 400px to 200px
         tabPanel("Boxplots",
                  plotlyOutput("csat_boxplot", height = "400px"),
                  plotlyOutput("rt_boxplot", height = "400px"),
@@ -145,16 +146,15 @@ server <- function(input, output, session) {
                            min = min(df$date, na.rm = TRUE),
                            max = max(df$date, na.rm = TRUE))
       updateSelectInput(session, "channel",
-                        choices = c("Todos" = "All", unique(df$channel)))
+                        choices = c("Todos" = "All", sort(unique(df$channel))))
       updateSelectInput(session, "group",
-                        choices = c("Todos" = "All", unique(df$csat_rated_group_name)))
+                        choices = c("Todos" = "All", sort(unique(df$csat_rated_group_name))))
       updateSelectInput(session, "issue",
                         choices = c("Todos" = "All", sort(unique(df$issue_classification))))
       
-      # Show loading indicator
       output$loading_indicator <- renderUI({
-        div(class = "alert alert-success",
-            "Datos cargados exitosamente: ", nrow(df), " filas")
+        div(class = "alert alert-success compact-alert",
+            "Datos cargados: ", nrow(df), " filas")
       })
     }
   })
