@@ -8,17 +8,15 @@ library(plotly)
 library(viridis)
 library(lubridate)
 library(corrplot)
-library(forecast)      # Para Holt-Winters
-library(randomForest)  # Para Random Forest
-library(caret)         # Para métricas y validación cruzada
-library(pROC)          # Para ROC y AUC
-library(rpart)         # Para árbol de decisión
-library(rpart.plot)    # Para graficar el árbol
+library(forecast)
+library(randomForest)
+library(caret)
+library(pROC)
+library(rpart)
+library(rpart.plot)
 
-# Default URL
 DEFAULT_URL <- "https://raw.githubusercontent.com/ringoquimico/Portfolio/refs/heads/main/Data%20Sources/bank_call_center_feedback.csv"
 
-# UI definition
 ui <- fluidPage(
   theme = bs_theme(version = 5, bootswatch = "flatly"),
   tags$head(
@@ -36,13 +34,16 @@ ui <- fluidPage(
       dateRangeInput("date_range", "Rango de Fechas:",
                      start = NULL, end = NULL, min = NULL, max = NULL,
                      format = "yyyy-mm-dd"),
+      selectInput("channel", "Channel:",
+                  choices = c("Todos" = "All")),
       selectInput("group", "CSAT Rated Group Name:",
                   choices = c("Todos" = "All")),
       selectInput("issue", "Issue Classification:",
                   choices = c("Todos" = "All")),
       switchInput("toggle_mode", "Modo Oscuro", value = FALSE),
       actionButton("run_btn", "Ejecutar", class = "btn-primary"),
-      verbatimTextOutput("debug_info")
+      verbatimTextOutput("debug_info"),
+      uiOutput("loading_indicator")  # Added loading indicator
     ),
     mainPanel(
       tabsetPanel(
@@ -76,7 +77,7 @@ ui <- fluidPage(
                  fluidRow(
                    column(12, h3("Predicción"), 
                           numericInput("pred_groups_rf", "Número de Grupos:", value = 1, min = 1),
-                          numericInput("pred_time_rf", "Tiempo de Resolución (días):", value = 1, min = 0, step = 0.1),
+                          numericInput("pred_time_rf", "Tiempo de Resolución (min):", value = 1, min = 0, step = 0.1),
                           selectInput("pred_sla_rf", "Resuelto en SLA:", choices = c("Sí" = 1, "No" = 0)),
                           actionButton("predict_btn_rf", "Predecir"),
                           verbatimTextOutput("rf_prediction"))
@@ -91,7 +92,7 @@ ui <- fluidPage(
                  fluidRow(
                    column(12, h3("Predicción"), 
                           numericInput("pred_groups_dt", "Número de Grupos:", value = 1, min = 1),
-                          numericInput("pred_time_dt", "Tiempo de Resolución (días):", value = 1, min = 0, step = 0.1),
+                          numericInput("pred_time_dt", "Tiempo de Resolución (min):", value = 1, min = 0, step = 0.1),
                           selectInput("pred_sla_dt", "Resuelto en SLA:", choices = c("Sí" = 1, "No" = 0)),
                           actionButton("predict_btn_dt", "Predecir"),
                           downloadButton("download_dt_plot", "Descargar Árbol (PNG)"),
@@ -103,66 +104,61 @@ ui <- fluidPage(
   )
 )
 
-# Server definition
 server <- function(input, output, session) {
-  # Define themes
   light_theme <- bs_theme(version = 5, bootswatch = "flatly")
   dark_theme <- bs_theme(version = 5, bootswatch = "darkly")
   
-  # Reactive data loading
   data <- reactive({
     req(input$data_url)
     tryCatch({
       df <- read.csv(input$data_url, sep = ";", quote = '"', encoding = "UTF-8") %>%
-        rename(
-          Start.of.Month = `Start of Month`,
-          Resolution.Time.Days = `RESOLUTION TIME (min)`,
-          Resolved.in.SLA = `RESOLVED IN SLA`,
-          CSAT.Rated.Group.Name = `CSAT Rated Group Name`,
-          Issue.Classification = `Issue Classification`,
-          Group.Name.History = `Group Name History`,
-          Resolution.Groups = `Total Groups`,
-          CSAT.Rating.Received = `CSAT Rating Received`
-        ) %>%
         mutate(
-          Start.of.Month = as.Date(Start.of.Month, format = "%d/%m/%Y"),
-          Resolution.Time.Days = as.double(gsub(",", ".", Resolution.Time.Days)) / 1440,  # Convertir minutos a días
-          Month_Year = format(Start.of.Month, "%Y-%m"),
-          Resolved.in.SLA = case_when(
-            is.na(Resolved.in.SLA) & Resolution.Time.Days < 1 ~ 1,
-            is.na(Resolved.in.SLA) ~ 0,
-            TRUE ~ as.numeric(Resolved.in.SLA)
+          date = as.Date(date, format = "%Y-%m-%d"),
+          start_of_week = as.Date(start_of_week, format = "%Y-%m-%d"),
+          start_of_month = as.Date(start_of_month, format = "%Y-%m-%d"),
+          resolution_time_min = as.double(gsub(",", ".", resolution_time_min)),
+          month_year = format(start_of_month, "%Y-%m"),
+          resolved_in_sla = case_when(
+            is.na(resolved_in_sla) & resolution_time_min < 60 ~ 1,
+            is.na(resolved_in_sla) ~ 0,
+            TRUE ~ as.numeric(resolved_in_sla)
           ),
-          Resolution.Time.Days = case_when(
-            is.na(Resolution.Time.Days) & (Resolved.in.SLA == 1 | CLASSIFICATION == "PROMOTER") ~ 0.5,
-            is.na(Resolution.Time.Days) ~ 1,
-            TRUE ~ Resolution.Time.Days
+          resolution_time_min = case_when(
+            is.na(resolution_time_min) & (resolved_in_sla == 1 | classification == "PROMOTER") ~ 30,
+            is.na(resolution_time_min) ~ 60,
+            TRUE ~ resolution_time_min
           )
         )
       df
     }, error = function(e) {
-      showNotification(paste("Error al cargar los datos:", e$message), type = "error")
+      showNotification("Error al cargar los datos. Verifique la URL.", type = "error")
       NULL
     })
   })
   
-  # Update UI inputs when data changes
   observeEvent(data(), {
     df <- data()
     if (!is.null(df) && nrow(df) > 0) {
       updateDateRangeInput(session, "date_range",
-                           start = min(df$Start.of.Month, na.rm = TRUE),
-                           end = max(df$Start.of.Month, na.rm = TRUE),
-                           min = min(df$Start.of.Month, na.rm = TRUE),
-                           max = max(df$Start.of.Month, na.rm = TRUE))
+                           start = min(df$date, na.rm = TRUE),
+                           end = max(df$date, na.rm = TRUE),
+                           min = min(df$date, na.rm = TRUE),
+                           max = max(df$date, na.rm = TRUE))
+      updateSelectInput(session, "channel",
+                        choices = c("Todos" = "All", unique(df$channel)))
       updateSelectInput(session, "group",
-                        choices = c("Todos" = "All", unique(df$CSAT.Rated.Group.Name)))
+                        choices = c("Todos" = "All", unique(df$csat_rated_group_name)))
       updateSelectInput(session, "issue",
-                        choices = c("Todos" = "All", sort(unique(df$Issue.Classification))))
+                        choices = c("Todos" = "All", sort(unique(df$issue_classification))))
+      
+      # Show loading indicator
+      output$loading_indicator <- renderUI({
+        div(class = "alert alert-success",
+            "Datos cargados exitosamente: ", nrow(df), " filas")
+      })
     }
   })
   
-  # Toggle theme
   observeEvent(input$toggle_mode, {
     if (input$toggle_mode) {
       session$setCurrentTheme(dark_theme)
@@ -173,34 +169,34 @@ server <- function(input, output, session) {
     }
   })
   
-  # Reactive filtered data
   filtered_data <- reactive({
     req(data(), input$date_range[1], input$date_range[2])
     df <- data()
     
     if (is.null(df) || nrow(df) == 0) return(NULL)
     
-    df <- df %>% 
-      filter(Start.of.Month >= input$date_range[1],
-             Start.of.Month <= input$date_range[2])
+    df <- df %>% filter(date >= input$date_range[1],
+                        date <= input$date_range[2])
+    
+    if (input$channel != "All") {
+      df <- df %>% filter(channel == input$channel)
+    }
     
     if (input$group != "All") {
-      df <- df %>% filter(CSAT.Rated.Group.Name == input$group)
+      df <- df %>% filter(csat_rated_group_name == input$group)
     }
     
     if (input$issue != "All") {
-      df <- df %>% filter(Issue.Classification == input$issue)
+      df <- df %>% filter(issue_classification == input$issue)
     }
     
-    df %>% filter(!is.na(Group.Name.History) & Group.Name.History != "")
+    df %>% filter(!is.na(group_name_history) & group_name_history != "")
   })
   
-  # Datos procesados solo cuando se presiona "Ejecutar"
   processed_data <- eventReactive(input$run_btn, {
     filtered_data()
   })
   
-  # Debug info
   output$debug_info <- renderPrint({
     df <- processed_data()
     if (is.null(df)) {
@@ -210,17 +206,16 @@ server <- function(input, output, session) {
     }
   })
   
-  # Network data preparation
   network_data <- eventReactive(input$run_btn, {
     data <- processed_data()
     
     if (is.null(data) || nrow(data) == 0) return(list(nodes = data.frame(), edges = data.frame()))
     
-    data$Group.Name.History <- gsub(", ", ",", data$Group.Name.History)
-    data$Group.Name.History <- lapply(strsplit(data$Group.Name.History, ","), as.vector)
+    data$group_name_history <- gsub(", ", ",", data$group_name_history)
+    data$group_name_history <- lapply(strsplit(data$group_name_history, ","), as.vector)
     
     edges <- data.frame(from = character(), to = character(), weight = numeric())
-    for (groups in data$Group.Name.History) {
+    for (groups in data$group_name_history) {
       if (length(groups) == 1) {
         edges <- rbind(edges, data.frame(from = groups[1], to = groups[1], weight = 1))
       } else if (length(groups) > 1) {
@@ -231,7 +226,7 @@ server <- function(input, output, session) {
     }
     edges <- edges %>% group_by(from, to) %>% summarise(weight = sum(weight), .groups = "drop")
     
-    node_occurrences <- table(unlist(data$Group.Name.History))
+    node_occurrences <- table(unlist(data$group_name_history))
     if (length(node_occurrences) == 0) return(list(nodes = data.frame(), edges = edges))
     
     occurrences <- as.numeric(node_occurrences)
@@ -248,7 +243,6 @@ server <- function(input, output, session) {
     list(nodes = nodes, edges = edges %>% rename(value = weight))
   })
   
-  # Render network
   output$network <- renderVisNetwork({
     data <- network_data()
     if (nrow(data$nodes) == 0) {
@@ -262,7 +256,6 @@ server <- function(input, output, session) {
       visPhysics(solver = "forceAtlas2Based", forceAtlas2Based = list(gravitationalConstant = -50, centralGravity = 0.01))
   })
   
-  # Top 10 interactions
   top_interactions_data <- eventReactive(input$run_btn, {
     edges <- network_data()$edges
     if (nrow(edges) == 0) return(data.frame(group_pairs = character(), weights = numeric()))
@@ -271,7 +264,6 @@ server <- function(input, output, session) {
     data.frame(group_pairs, weights = top_10$value) %>% arrange(weights)
   })
   
-  # Render top interactions
   output$top_interactions <- renderPlotly({
     df_top <- top_interactions_data()
     if (nrow(df_top) == 0) {
@@ -304,16 +296,15 @@ server <- function(input, output, session) {
       )
   })
   
-  # Statistics calculations
   stats_data <- eventReactive(input$run_btn, {
     df <- processed_data()
     if (is.null(df) || nrow(df) == 0) return(list(csat_stats = list(avg = NA), sla_stats = list(avg = NA), resolution_time = list(), resolution_groups = list()))
     surveys_df <- nrow(df)
     
     csat_by_month <- df %>%
-      group_by(Month_Year) %>%
-      summarise(CSAT_Score = ifelse(n() > 0 && sum(!is.na(CLASSIFICATION)) > 0, 
-                                    round(sum(CLASSIFICATION == "PROMOTER", na.rm = TRUE) / n() * 100, 1), NA),
+      group_by(month_year) %>%
+      summarise(CSAT_Score = ifelse(n() > 0 && sum(!is.na(classification)) > 0, 
+                                    round(sum(classification == "PROMOTER", na.rm = TRUE) / n() * 100, 1), NA),
                 .groups = "drop") %>%
       pull(CSAT_Score)
     csat_quartiles <- quantile(csat_by_month, probs = c(0.25, 0.5, 0.75), na.rm = TRUE)
@@ -338,14 +329,14 @@ server <- function(input, output, session) {
       outliers_upper = csat_outliers_upper,
       skew = csat_skew,
       surveys = surveys_df,
-      promoters = sum(df$CLASSIFICATION == "PROMOTER", na.rm = TRUE),
-      detractors = sum(df$CLASSIFICATION == "DETRACTOR", na.rm = TRUE)
+      promoters = sum(df$classification == "PROMOTER", na.rm = TRUE),
+      detractors = sum(df$classification == "DETRACTOR", na.rm = TRUE)
     )
     
     sla_by_month <- df %>%
-      group_by(Month_Year) %>%
-      summarise(SLA_Percent = ifelse(n() > 0 && sum(!is.na(Resolved.in.SLA)) > 0, 
-                                     round(sum(Resolved.in.SLA == 1, na.rm = TRUE) / n() * 100, 1), NA),
+      group_by(month_year) %>%
+      summarise(SLA_Percent = ifelse(n() > 0 && sum(!is.na(resolved_in_sla)) > 0, 
+                                     round(sum(resolved_in_sla == 1, na.rm = TRUE) / n() * 100, 1), NA),
                 .groups = "drop") %>%
       pull(SLA_Percent)
     sla_quartiles <- quantile(sla_by_month, probs = c(0.25, 0.5, 0.75), na.rm = TRUE)
@@ -371,7 +362,7 @@ server <- function(input, output, session) {
       skew = sla_skew
     )
     
-    rt <- df$Resolution.Time.Days
+    rt <- df$resolution_time_min
     rt_quartiles <- quantile(rt, probs = c(0.25, 0.5, 0.75), na.rm = TRUE)
     rt_iqr <- rt_quartiles[3] - rt_quartiles[1]
     rt_lower_bound <- rt_quartiles[1] - 1.5 * rt_iqr
@@ -395,7 +386,7 @@ server <- function(input, output, session) {
       skew = rt_skew
     )
     
-    rg <- df$Resolution.Groups
+    rg <- df$total_groups
     rg_quartiles <- quantile(rg, probs = c(0.25, 0.5, 0.75), na.rm = TRUE)
     rg_iqr <- rg_quartiles[3] - rg_quartiles[1]
     rg_lower_bound <- rg_quartiles[1] - 1.5 * rg_iqr
@@ -422,7 +413,6 @@ server <- function(input, output, session) {
     list(csat_stats = csat_stats, sla_stats = sla_stats, resolution_time = resolution_time, resolution_groups = resolution_groups)
   })
   
-  # Render statistics
   output$csat_score <- renderPrint({
     csat <- stats_data()$csat_stats
     if (is.na(csat$avg)) {
@@ -464,27 +454,26 @@ server <- function(input, output, session) {
     }
   })
   
-  # Trends data preparation
   trends_data <- eventReactive(input$run_btn, {
     df <- processed_data()
     if (is.null(df) || nrow(df) == 0) return(data.frame())
     
     trends <- df %>%
-      group_by(Month_Year) %>%
+      group_by(month_year) %>%
       summarise(
-        CSAT_Score = ifelse(n() > 0 && sum(!is.na(CLASSIFICATION)) > 0, 
-                            round(sum(CLASSIFICATION == "PROMOTER", na.rm = TRUE) / n() * 100, 1), NA),
-        Median_Resolution_Time = ifelse(sum(!is.na(Resolution.Time.Days)) > 0, 
-                                        median(Resolution.Time.Days, na.rm = TRUE), NA),
-        Mean_Resolution_Groups = ifelse(sum(!is.na(Resolution.Groups)) > 0, 
-                                        mean(Resolution.Groups, na.rm = TRUE), NA),
-        SLA_Percent = ifelse(n() > 0 && sum(!is.na(Resolved.in.SLA)) > 0, 
-                             round(sum(Resolved.in.SLA == 1, na.rm = TRUE) / n() * 100, 1), NA),
+        CSAT_Score = ifelse(n() > 0 && sum(!is.na(classification)) > 0, 
+                            round(sum(classification == "PROMOTER", na.rm = TRUE) / n() * 100, 1), NA),
+        Median_Resolution_Time = ifelse(sum(!is.na(resolution_time_min)) > 0, 
+                                        median(resolution_time_min, na.rm = TRUE), NA),
+        Mean_Resolution_Groups = ifelse(sum(!is.na(total_groups)) > 0, 
+                                        mean(total_groups, na.rm = TRUE), NA),
+        SLA_Percent = ifelse(n() > 0 && sum(!is.na(resolved_in_sla)) > 0, 
+                             round(sum(resolved_in_sla == 1, na.rm = TRUE) / n() * 100, 1), NA),
         .groups = "drop"
       ) %>%
-      arrange(as.Date(paste0(Month_Year, "-01")))
+      arrange(as.Date(paste0(month_year, "-01")))
     
-    last_date <- as.Date(paste0(max(trends$Month_Year), "-01"))
+    last_date <- as.Date(paste0(max(trends$month_year), "-01"))
     future_months <- format(seq(last_date %m+% months(1), by = "month", length.out = 5), "%Y-%m")
     
     if (nrow(trends) >= 24) {
@@ -505,7 +494,7 @@ server <- function(input, output, session) {
       pred_sla <- forecast(hw_sla, h = 5, level = 95)
       
       future_df_csat <- data.frame(
-        Month_Year = future_months,
+        month_year = future_months,
         CSAT_Score = as.numeric(pred_csat$mean),
         CI_Lower_CSAT = as.numeric(pred_csat$lower),
         CI_Upper_CSAT = as.numeric(pred_csat$upper),
@@ -513,7 +502,7 @@ server <- function(input, output, session) {
       )
       
       future_df_sla <- data.frame(
-        Month_Year = future_months,
+        month_year = future_months,
         SLA_Percent = as.numeric(pred_sla$mean),
         CI_Lower_SLA = as.numeric(pred_sla$lower),
         CI_Upper_SLA = as.numeric(pred_sla$upper),
@@ -523,7 +512,7 @@ server <- function(input, output, session) {
       trends$Is_Projection_CSAT <- FALSE
       trends$Is_Projection_SLA <- FALSE
       
-      future_df <- full_join(future_df_csat, future_df_sla, by = "Month_Year")
+      future_df <- full_join(future_df_csat, future_df_sla, by = "month_year")
       return(bind_rows(trends, future_df))
     } else if (nrow(trends) >= 2) {
       ts_csat <- ts(trends$CSAT_Score)
@@ -535,7 +524,7 @@ server <- function(input, output, session) {
       pred_sla <- forecast(hw_sla, h = 5, level = 95)
       
       future_df_csat <- data.frame(
-        Month_Year = future_months,
+        month_year = future_months,
         CSAT_Score = as.numeric(pred_csat$mean),
         CI_Lower_CSAT = as.numeric(pred_csat$lower),
         CI_Upper_CSAT = as.numeric(pred_csat$upper),
@@ -543,7 +532,7 @@ server <- function(input, output, session) {
       )
       
       future_df_sla <- data.frame(
-        Month_Year = future_months,
+        month_year = future_months,
         SLA_Percent = as.numeric(pred_sla$mean),
         CI_Lower_SLA = as.numeric(pred_sla$lower),
         CI_Upper_SLA = as.numeric(pred_sla$upper),
@@ -553,7 +542,7 @@ server <- function(input, output, session) {
       trends$Is_Projection_CSAT <- FALSE
       trends$Is_Projection_SLA <- FALSE
       
-      future_df <- full_join(future_df_csat, future_df_sla, by = "Month_Year")
+      future_df <- full_join(future_df_csat, future_df_sla, by = "month_year")
       return(bind_rows(trends, future_df))
     } else {
       trends$Is_Projection_CSAT <- FALSE
@@ -562,12 +551,10 @@ server <- function(input, output, session) {
     }
   })
   
-  # Define colors based on mode
   trend_color <- reactive({
     if (input$toggle_mode) "#11EFE3" else "#635BFF"
   })
   
-  # Render CSAT trend
   output$csat_trend <- renderPlotly({
     df <- trends_data()
     text_color <- ifelse(input$toggle_mode, "white", "black")
@@ -590,7 +577,7 @@ server <- function(input, output, session) {
     }
     
     if (nrow(proj_data) == 0) {
-      plot_ly(actual_data, x = ~Month_Year, y = ~CSAT_Score, type = "scatter", mode = "markers",
+      plot_ly(actual_data, x = ~month_year, y = ~CSAT_Score, type = "scatter", mode = "markers",
               marker = list(color = trend_color(), size = 10)) %>%
         layout(
           title = list(text = title_text, font = list(size = 16, color = text_color), x = 0),
@@ -601,11 +588,11 @@ server <- function(input, output, session) {
         )
     } else {
       plot_ly() %>%
-        add_trace(data = actual_data, x = ~Month_Year, y = ~CSAT_Score, type = "scatter", mode = "lines+markers",
+        add_trace(data = actual_data, x = ~month_year, y = ~CSAT_Score, type = "scatter", mode = "lines+markers",
                   name = "Actual", marker = list(color = trend_color(), size = 8), line = list(color = trend_color())) %>%
-        add_trace(data = proj_data, x = ~Month_Year, y = ~CSAT_Score, type = "scatter", mode = "lines",
+        add_trace(data = proj_data, x = ~month_year, y = ~CSAT_Score, type = "scatter", mode = "lines",
                   name = "Proyección", line = list(color = trend_color(), dash = "dash")) %>%
-        add_ribbons(data = proj_data, x = ~Month_Year, ymin = ~CI_Lower_CSAT, ymax = ~CI_Upper_CSAT,
+        add_ribbons(data = proj_data, x = ~month_year, ymin = ~CI_Lower_CSAT, ymax = ~CI_Upper_CSAT,
                     name = "IC 95%", fillcolor = "rgba(128, 128, 128, 0.2)", line = list(color = "transparent")) %>%
         layout(
           title = list(text = title_text, font = list(size = 16, color = text_color), x = 0),
@@ -618,7 +605,6 @@ server <- function(input, output, session) {
     }
   })
   
-  # Render Resolution Time trend
   output$resolution_time_trend <- renderPlotly({
     df <- trends_data()
     text_color <- ifelse(input$toggle_mode, "white", "black")
@@ -629,29 +615,28 @@ server <- function(input, output, session) {
     }
     
     if (nrow(df[!is.na(df$Median_Resolution_Time), ]) < 2) {
-      plot_ly(df, x = ~Month_Year, y = ~Median_Resolution_Time, type = "scatter", mode = "markers",
+      plot_ly(df, x = ~month_year, y = ~Median_Resolution_Time, type = "scatter", mode = "markers",
               marker = list(color = trend_color(), size = 10)) %>%
         layout(
           title = list(text = "Tiempo de Resolución (Sin Tendencia)", font = list(size = 16, color = text_color), x = 0),
           xaxis = list(title = "Mes", color = axis_color, showgrid = FALSE),
-          yaxis = list(title = "Días", color = axis_color, showgrid = FALSE),
+          yaxis = list(title = "Minutos", color = axis_color, showgrid = FALSE),
           plot_bgcolor = "rgba(0,0,0,0)",
           paper_bgcolor = "rgba(0,0,0,0)"
         )
     } else {
-      plot_ly(df, x = ~Month_Year, y = ~Median_Resolution_Time, type = "scatter", mode = "lines",
+      plot_ly(df, x = ~month_year, y = ~Median_Resolution_Time, type = "scatter", mode = "lines",
               line = list(color = trend_color())) %>%
         layout(
           title = list(text = "Tendencia Mediana Tiempo de Resolución", font = list(size = 16, color = text_color), x = 0),
           xaxis = list(title = "Mes", color = axis_color, showgrid = FALSE),
-          yaxis = list(title = "Días", color = axis_color, showgrid = FALSE),
+          yaxis = list(title = "Minutos", color = axis_color, showgrid = FALSE),
           plot_bgcolor = "rgba(0,0,0,0)",
           paper_bgcolor = "rgba(0,0,0,0)"
         )
     }
   })
   
-  # Render Resolution Groups trend
   output$resolution_groups_trend <- renderPlotly({
     df <- trends_data()
     text_color <- ifelse(input$toggle_mode, "white", "black")
@@ -662,7 +647,7 @@ server <- function(input, output, session) {
     }
     
     if (nrow(df[!is.na(df$Mean_Resolution_Groups), ]) < 2) {
-      plot_ly(df, x = ~Month_Year, y = ~Mean_Resolution_Groups, type = "scatter", mode = "markers",
+      plot_ly(df, x = ~month_year, y = ~Mean_Resolution_Groups, type = "scatter", mode = "markers",
               marker = list(color = trend_color(), size = 10)) %>%
         layout(
           title = list(text = "Grupos de Resolución (Sin Tendencia)", font = list(size = 16, color = text_color), x = 0),
@@ -672,7 +657,7 @@ server <- function(input, output, session) {
           paper_bgcolor = "rgba(0,0,0,0)"
         )
     } else {
-      plot_ly(df, x = ~Month_Year, y = ~Mean_Resolution_Groups, type = "scatter", mode = "lines",
+      plot_ly(df, x = ~month_year, y = ~Mean_Resolution_Groups, type = "scatter", mode = "lines",
               line = list(color = trend_color())) %>%
         layout(
           title = list(text = "Tendencia Promedio Grupos de Resolución", font = list(size = 16, color = text_color), x = 0),
@@ -684,7 +669,6 @@ server <- function(input, output, session) {
     }
   })
   
-  # Render SLA trend
   output$sla_trend <- renderPlotly({
     df <- trends_data()
     text_color <- ifelse(input$toggle_mode, "white", "black")
@@ -707,7 +691,7 @@ server <- function(input, output, session) {
     }
     
     if (nrow(proj_data) == 0) {
-      plot_ly(actual_data, x = ~Month_Year, y = ~SLA_Percent, type = "scatter", mode = "markers",
+      plot_ly(actual_data, x = ~month_year, y = ~SLA_Percent, type = "scatter", mode = "markers",
               marker = list(color = trend_color(), size = 10)) %>%
         layout(
           title = list(text = title_text, font = list(size = 16, color = text_color), x = 0),
@@ -718,11 +702,11 @@ server <- function(input, output, session) {
         )
     } else {
       plot_ly() %>%
-        add_trace(data = actual_data, x = ~Month_Year, y = ~SLA_Percent, type = "scatter", mode = "lines+markers",
+        add_trace(data = actual_data, x = ~month_year, y = ~SLA_Percent, type = "scatter", mode = "lines+markers",
                   name = "Actual", marker = list(color = trend_color(), size = 8), line = list(color = trend_color())) %>%
-        add_trace(data = proj_data, x = ~Month_Year, y = ~SLA_Percent, type = "scatter", mode = "lines",
+        add_trace(data = proj_data, x = ~month_year, y = ~SLA_Percent, type = "scatter", mode = "lines",
                   name = "Proyección", line = list(color = trend_color(), dash = "dash")) %>%
-        add_ribbons(data = proj_data, x = ~Month_Year, ymin = ~CI_Lower_SLA, ymax = ~CI_Upper_SLA,
+        add_ribbons(data = proj_data, x = ~month_year, ymin = ~CI_Lower_SLA, ymax = ~CI_Upper_SLA,
                     name = "IC 95%", fillcolor = "rgba(128, 128, 128, 0.2)", line = list(color = "transparent")) %>%
         layout(
           title = list(text = title_text, font = list(size = 16, color = text_color), x = 0),
@@ -735,7 +719,6 @@ server <- function(input, output, session) {
     }
   })
   
-  # Correlation data preparation
   corr_data <- eventReactive(input$run_btn, {
     df <- trends_data()
     if (nrow(df) == 0) return(list(matrix = NULL, warning = "No data available from trends_data"))
@@ -774,7 +757,6 @@ server <- function(input, output, session) {
     list(matrix = cor_matrix, warning = warning_msg)
   })
   
-  # Render correlogram
   output$corr_plot <- renderPlot({
     corr <- corr_data()
     text_color <- ifelse(input$toggle_mode, "white", "black")
@@ -796,7 +778,6 @@ server <- function(input, output, session) {
     }
   }, bg = "transparent")
   
-  # Render bar chart for CSAT impact
   output$impact_bar <- renderPlotly({
     corr <- corr_data()
     text_color <- ifelse(input$toggle_mode, "white", "black")
@@ -818,6 +799,7 @@ server <- function(input, output, session) {
     }
     
     csat_cor <- csat_cor[, valid_cols, drop = FALSE]
+    
     impact_df <- data.frame(
       Variable = valid_cols,
       Correlation = abs(csat_cor[1, ])
@@ -835,17 +817,16 @@ server <- function(input, output, session) {
       )
   })
   
-  # Render boxplots
   output$csat_boxplot <- renderPlotly({
     df <- processed_data()
     text_color <- ifelse(input$toggle_mode, "white", "black")
     axis_color <- ifelse(input$toggle_mode, "white", "black")
     
-    if (is.null(df) || nrow(df) == 0 || !"CSAT.Rating.Received" %in% names(df)) {
-      return(plot_ly() %>% layout(title = "No hay datos o columna CSAT.Rating.Received no encontrada"))
+    if (is.null(df) || nrow(df) == 0 || !"csat_rating_received" %in% names(df)) {
+      return(plot_ly() %>% layout(title = "No hay datos o columna csat_rating_received no encontrada"))
     }
     
-    plot_ly(df, x = ~Month_Year, y = ~CSAT.Rating.Received, type = "box", name = "CSAT", marker = list(color = trend_color())) %>%
+    plot_ly(df, x = ~month_year, y = ~csat_rating_received, type = "box", name = "CSAT", marker = list(color = trend_color())) %>%
       layout(
         title = list(text = "Boxplot CSAT Rating por Mes", font = list(size = 16, color = text_color), x = 0),
         xaxis = list(title = "Mes", color = axis_color, showgrid = FALSE),
@@ -860,15 +841,15 @@ server <- function(input, output, session) {
     text_color <- ifelse(input$toggle_mode, "white", "black")
     axis_color <- ifelse(input$toggle_mode, "white", "black")
     
-    if (is.null(df) || nrow(df) == 0 || all(is.na(df$Resolution.Time.Days))) {
+    if (is.null(df) || nrow(df) == 0 || all(is.na(df$resolution_time_min))) {
       return(plot_ly() %>% layout(title = "No hay datos para RT"))
     }
     
-    plot_ly(df, x = ~Month_Year, y = ~Resolution.Time.Days, type = "box", name = "RT", marker = list(color = trend_color())) %>%
+    plot_ly(df, x = ~month_year, y = ~resolution_time_min, type = "box", name = "RT", marker = list(color = trend_color())) %>%
       layout(
         title = list(text = "Boxplot Resolution Time por Mes", font = list(size = 16, color = text_color), x = 0),
         xaxis = list(title = "Mes", color = axis_color, showgrid = FALSE),
-        yaxis = list(title = "Días", color = axis_color, showgrid = FALSE),
+        yaxis = list(title = "Minutos", color = axis_color, showgrid = FALSE),
         plot_bgcolor = "rgba(0,0,0,0)",
         paper_bgcolor = "rgba(0,0,0,0)"
       )
@@ -879,11 +860,11 @@ server <- function(input, output, session) {
     text_color <- ifelse(input$toggle_mode, "white", "black")
     axis_color <- ifelse(input$toggle_mode, "white", "black")
     
-    if (is.null(df) || nrow(df) == 0 || all(is.na(df$Resolution.Groups))) {
+    if (is.null(df) || nrow(df) == 0 || all(is.na(df$total_groups))) {
       return(plot_ly() %>% layout(title = "No hay datos para RG"))
     }
     
-    plot_ly(df, x = ~Month_Year, y = ~Resolution.Groups, type = "box", name = "RG", marker = list(color = trend_color())) %>%
+    plot_ly(df, x = ~month_year, y = ~total_groups, type = "box", name = "RG", marker = list(color = trend_color())) %>%
       layout(
         title = list(text = "Boxplot Resolution Groups por Mes", font = list(size = 16, color = text_color), x = 0),
         xaxis = list(title = "Mes", color = axis_color, showgrid = FALSE),
@@ -893,27 +874,31 @@ server <- function(input, output, session) {
       )
   })
   
-  # Random Forest
   rf_model_data <- eventReactive(input$run_btn, {
     df <- processed_data()
     
     if (is.null(df) || nrow(df) == 0) return(NULL)
     
     rf_data <- df %>%
-      filter(CLASSIFICATION %in% c("PROMOTER", "DETRACTOR")) %>%
-      select(CLASSIFICATION, Resolution.Groups, Resolution.Time.Days, Resolved.in.SLA) %>%
+      filter(classification %in% c("PROMOTER", "DETRACTOR")) %>%
+      select(classification, total_groups, resolution_time_min, resolved_in_sla) %>%
       na.omit()
     
     if (nrow(rf_data) < 10) return(NULL)
     
-    rf_data$CLASSIFICATION <- as.factor(rf_data$CLASSIFICATION)
-    rf_data$Resolution.Groups <- as.numeric(rf_data$Resolution.Groups)
-    rf_data$Resolution.Time.Days <- as.numeric(rf_data$Resolution.Time.Days)
-    rf_data$Resolved.in.SLA <- as.numeric(rf_data$Resolved.in.SLA)
+    rf_data$classification <- as.factor(rf_data$classification)
+    rf_data$total_groups <- as.numeric(rf_data$total_groups)
+    rf_data$resolution_time_min <- as.numeric(rf_data$resolution_time_min)
+    rf_data$resolved_in_sla <- as.numeric(rf_data$resolved_in_sla)
+    
+    sla_values <- unique(rf_data$resolved_in_sla)
+    if (!all(sla_values %in% c(0, 1))) {
+      message("Advertencia: resolved_in_sla contiene valores no binarios: ", paste(sla_values, collapse = ", "))
+    }
     
     set.seed(123)
-    balanced_data <- upSample(rf_data[, -which(names(rf_data) == "CLASSIFICATION")], rf_data$CLASSIFICATION, 
-                              list = FALSE, yname = "CLASSIFICATION")
+    balanced_data <- upSample(rf_data[, -which(names(rf_data) == "classification")], rf_data$classification, 
+                              list = FALSE, yname = "classification")
     
     train_control <- trainControl(method = "cv", number = 5, 
                                   classProbs = TRUE, 
@@ -923,7 +908,7 @@ server <- function(input, output, session) {
     tune_grid <- expand.grid(mtry = c(1:3))
     
     rf_model_cv <- tryCatch({
-      train(CLASSIFICATION ~ Resolution.Groups + Resolution.Time.Days + Resolved.in.SLA,
+      train(classification ~ total_groups + resolution_time_min + resolved_in_sla,
             data = balanced_data,
             method = "rf",
             trControl = train_control,
@@ -951,13 +936,14 @@ server <- function(input, output, session) {
     importance <- tryCatch({
       imp <- importance(rf_model_cv$finalModel, type = 1)
       if (is.null(imp) || all(is.na(imp))) {
-        imp <- rep(0, length(c("Resolution.Groups", "Resolution.Time.Days", "Resolved.in.SLA")))
-        names(imp) <- c("Resolution.Groups", "Resolution.Time.Days", "Resolved.in.SLA")
+        imp <- rep(0, length(c("total_groups", "resolution_time_min", "resolved_in_sla")))
+        names(imp) <- c("total_groups", "resolution_time_min", "resolved_in_sla")
       }
       imp
     }, error = function(e) {
-      imp <- rep(0, length(c("Resolution.Groups", "Resolution.Time.Days", "Resolved.in.SLA")))
-      names(imp) <- c("Resolution.Groups", "Resolution.Time.Days", "Resolved.in.SLA")
+      message("Error al calcular importancia: ", e$message)
+      imp <- rep(0, length(c("total_groups", "resolution_time_min", "resolved_in_sla")))
+      names(imp) <- c("total_groups", "resolution_time_min", "resolved_in_sla")
       imp
     })
     
@@ -968,21 +954,21 @@ server <- function(input, output, session) {
       round(100 * importance / max_imp, 2)
     }
     
-    promoter_data <- balanced_data[balanced_data$CLASSIFICATION == "PROMOTER", ]
-    detractor_data <- balanced_data[balanced_data$CLASSIFICATION == "DETRACTOR", ]
+    promoter_data <- balanced_data[balanced_data$classification == "PROMOTER", ]
+    detractor_data <- balanced_data[balanced_data$classification == "DETRACTOR", ]
     
     ranges <- list(
-      Resolution.Groups = quantile(promoter_data$Resolution.Groups, probs = c(0.25, 0.75), na.rm = TRUE),
-      Resolution.Time.Days = quantile(promoter_data$Resolution.Time.Days, probs = c(0.25, 0.75), na.rm = TRUE)
+      total_groups = quantile(promoter_data$total_groups, probs = c(0.25, 0.75), na.rm = TRUE),
+      resolution_time_min = quantile(promoter_data$resolution_time_min, probs = c(0.25, 0.75), na.rm = TRUE)
     )
     
-    sla_counts_promoter <- table(promoter_data$Resolved.in.SLA)
+    sla_counts_promoter <- table(promoter_data$resolved_in_sla)
     sla_total_promoter <- sum(sla_counts_promoter)
     sla_prop_1_promoter <- ifelse(is.na(sla_counts_promoter["1"]), 0, sla_counts_promoter["1"] / sla_total_promoter)
     sla_prop_0_promoter <- ifelse(is.na(sla_counts_promoter["0"]), 0, sla_counts_promoter["0"] / sla_total_promoter)
     recommended_sla <- ifelse(sla_prop_1_promoter > 0.5, 1, 0)
     
-    sla_counts_detractor <- table(detractor_data$Resolved.in.SLA)
+    sla_counts_detractor <- table(detractor_data$resolved_in_sla)
     sla_total_detractor <- sum(sla_counts_detractor)
     sla_prop_1_detractor <- ifelse(is.na(sla_counts_detractor["1"]), 0, sla_counts_detractor["1"] / sla_total_detractor)
     sla_prop_0_detractor <- ifelse(is.na(sla_counts_detractor["0"]), 0, sla_counts_detractor["0"] / sla_total_detractor)
@@ -993,7 +979,7 @@ server <- function(input, output, session) {
       "No (sin tendencia clara entre clases)"
     }
     
-    ranges$Resolved.in.SLA <- list(
+    ranges$resolved_in_sla <- list(
       value = recommended_sla,
       prop_1_promoter = sla_prop_1_promoter,
       prop_0_promoter = sla_prop_0_promoter,
@@ -1003,9 +989,9 @@ server <- function(input, output, session) {
     )
     
     midpoints <- data.frame(
-      Resolution.Groups = mean(ranges$Resolution.Groups),
-      Resolution.Time.Days = mean(ranges$Resolution.Time.Days),
-      Resolved.in.SLA = recommended_sla
+      total_groups = mean(ranges$total_groups),
+      resolution_time_min = mean(ranges$resolution_time_min),
+      resolved_in_sla = recommended_sla
     )
     
     prob <- predict(rf_model_cv, newdata = midpoints, type = "prob")
@@ -1016,7 +1002,6 @@ server <- function(input, output, session) {
          importance = importance_scaled, promoter_ranges = ranges, promoter_prob = promoter_prob)
   })
   
-  # Render Random Forest summary
   output$rf_summary <- renderPrint({
     rf <- rf_model_data()
     group_name <- ifelse(input$group == "All", "Todos", input$group)
@@ -1046,28 +1031,27 @@ server <- function(input, output, session) {
       cat("\nMatriz de confusión (mejor modelo):\n")
       print(cm)
       cat("\nRecomendación de rangos para clasificación PROMOTER:\n")
-      cat("GRUPOS DE RESOLUCIÓN (STEPS):", sprintf("%.2f - %.2f", rf$promoter_ranges$Resolution.Groups[1], rf$promoter_ranges$Resolution.Groups[2]), "\n")
-      cat("TIEMPO DE RESOLUCIÓN (DÍAS):", sprintf("%.2f - %.2f", rf$promoter_ranges$Resolution.Time.Days[1], rf$promoter_ranges$Resolution.Time.Days[2]), "\n")
-      cat("RESOLUCIÓN EN SLA: Recomendado =", rf$promoter_ranges$Resolved.in.SLA$value, "\n")
-      cat("  PROMOTER - SLA=1:", sprintf("%.2f%%", rf$promoter_ranges$Resolved.in.SLA$prop_1_promoter * 100), 
-          ", SLA=0:", sprintf("%.2f%%", rf$promoter_ranges$Resolved.in.SLA$prop_0_promoter * 100), "\n")
-      cat("  DETRACTOR - SLA=1:", sprintf("%.2f%%", rf$promoter_ranges$Resolved.in.SLA$prop_1_detractor * 100), 
-          ", SLA=0:", sprintf("%.2f%%", rf$promoter_ranges$Resolved.in.SLA$prop_0_detractor * 100), "\n")
-      cat("  ¿Es relevante?:", rf$promoter_ranges$Resolved.in.SLA$is_relevant, "\n")
+      cat("GRUPOS DE RESOLUCIÓN (STEPS):", sprintf("%.2f - %.2f", rf$promoter_ranges$total_groups[1], rf$promoter_ranges$total_groups[2]), "\n")
+      cat("TIEMPO DE RESOLUCIÓN (MINUTOS):", sprintf("%.2f - %.2f", rf$promoter_ranges$resolution_time_min[1], rf$promoter_ranges$resolution_time_min[2]), "\n")
+      cat("RESOLUCIÓN EN SLA: Recomendado =", rf$promoter_ranges$resolved_in_sla$value, "\n")
+      cat("  PROMOTER - SLA=1:", sprintf("%.2f%%", rf$promoter_ranges$resolved_in_sla$prop_1_promoter * 100), 
+          ", SLA=0:", sprintf("%.2f%%", rf$promoter_ranges$resolved_in_sla$prop_0_promoter * 100), "\n")
+      cat("  DETRACTOR - SLA=1:", sprintf("%.2f%%", rf$promoter_ranges$resolved_in_sla$prop_1_detractor * 100), 
+          ", SLA=0:", sprintf("%.2f%%", rf$promoter_ranges$resolved_in_sla$prop_0_detractor * 100), "\n")
+      cat("  ¿Es relevante?:", rf$promoter_ranges$resolved_in_sla$is_relevant, "\n")
       cat("\nImportancia de variables (escalada, referencia del modelo):\n")
       print(round(rf$importance, 2))
     }
   })
   
-  # Prediction with user input for Random Forest
   rf_prediction <- eventReactive(input$predict_btn_rf, {
     rf <- rf_model_data()
     if (is.null(rf)) return("No hay modelo disponible para predecir. Presione 'Ejecutar' con filtros válidos.")
     
     new_data <- data.frame(
-      Resolution.Groups = as.numeric(input$pred_groups_rf),
-      Resolution.Time.Days = as.double(input$pred_time_rf),
-      Resolved.in.SLA = as.numeric(input$pred_sla_rf)
+      total_groups = as.numeric(input$pred_groups_rf),
+      resolution_time_min = as.double(input$pred_time_rf),
+      resolved_in_sla = as.numeric(input$pred_sla_rf)
     )
     
     pred <- predict(rf$model, new_data, type = "raw")
@@ -1080,38 +1064,36 @@ server <- function(input, output, session) {
     )
   })
   
-  # Render prediction output for Random Forest
   output$rf_prediction <- renderPrint({
     rf_prediction()
   })
   
-  # Decision Tree
   dt_model_data <- eventReactive(input$run_btn, {
     df <- processed_data()
     
     if (is.null(df) || nrow(df) == 0) return(NULL)
     
     dt_data <- df %>%
-      filter(CLASSIFICATION %in% c("PROMOTER", "DETRACTOR")) %>%
-      select(CLASSIFICATION, Resolution.Groups, Resolution.Time.Days, Resolved.in.SLA) %>%
+      filter(classification %in% c("PROMOTER", "DETRACTOR")) %>%
+      select(classification, total_groups, resolution_time_min, resolved_in_sla) %>%
       na.omit()
     
     if (nrow(dt_data) < 10) return(NULL)
     
-    unique_sla <- unique(dt_data$Resolved.in.SLA)
+    unique_sla <- unique(dt_data$resolved_in_sla)
     if (length(unique_sla) != 2) {
-      message("Error: Resolved.in.SLA no es una variable binaria. Tiene ", length(unique_sla), " valores únicos.")
+      message("Error: resolved_in_sla no es una variable binaria. Tiene ", length(unique_sla), " valores únicos.")
       return(NULL)
     }
     
-    dt_data$CLASSIFICATION <- as.factor(dt_data$CLASSIFICATION)
-    dt_data$Resolution.Groups <- as.numeric(dt_data$Resolution.Groups)
-    dt_data$Resolution.Time.Days <- as.numeric(dt_data$Resolution.Time.Days)
-    dt_data$Resolved.in.SLA <- factor(dt_data$Resolved.in.SLA, levels = c(0, 1))
+    dt_data$classification <- as.factor(dt_data$classification)
+    dt_data$total_groups <- as.numeric(dt_data$total_groups)
+    dt_data$resolution_time_min <- as.numeric(dt_data$resolution_time_min)
+    dt_data$resolved_in_sla <- factor(dt_data$resolved_in_sla, levels = c(0, 1))
     
     set.seed(123)
-    balanced_data <- upSample(dt_data[, -which(names(dt_data) == "CLASSIFICATION")], dt_data$CLASSIFICATION, 
-                              list = FALSE, yname = "CLASSIFICATION")
+    balanced_data <- upSample(dt_data[, -which(names(dt_data) == "classification")], dt_data$classification, 
+                              list = FALSE, yname = "classification")
     
     train_control <- trainControl(method = "cv", number = 5, 
                                   classProbs = TRUE, 
@@ -1121,7 +1103,7 @@ server <- function(input, output, session) {
     tune_grid <- expand.grid(cp = seq(0.01, 0.5, by = 0.05))
     
     dt_model_cv <- tryCatch({
-      train(CLASSIFICATION ~ Resolution.Groups + Resolution.Time.Days + Resolved.in.SLA,
+      train(classification ~ total_groups + resolution_time_min + resolved_in_sla,
             data = balanced_data,
             method = "rpart",
             trControl = train_control,
@@ -1150,7 +1132,6 @@ server <- function(input, output, session) {
          is_good_model = is_good_model, cm_table = cm_table, optimal_cp = optimal_cp)
   })
   
-  # Render Decision Tree summary
   output$dt_summary <- renderPrint({
     dt <- dt_model_data()
     group_name <- ifelse(input$group == "All", "Todos", input$group)
@@ -1183,15 +1164,18 @@ server <- function(input, output, session) {
     }
   })
   
-  # Prediction with user input for Decision Tree
+  output$dt_prediction <- renderPrint({
+    dt_prediction()
+  })
+  
   dt_prediction <- eventReactive(input$predict_btn_dt, {
     dt <- dt_model_data()
     if (is.null(dt)) return("No hay modelo disponible para predecir. Presione 'Ejecutar' con filtros válidos.")
     
     new_data <- data.frame(
-      Resolution.Groups = as.numeric(input$pred_groups_dt),
-      Resolution.Time.Days = as.double(input$pred_time_dt),
-      Resolved.in.SLA = factor(input$pred_sla_dt, levels = c(0, 1))
+      total_groups = as.numeric(input$pred_groups_dt),
+      resolution_time_min = as.double(input$pred_time_dt),
+      resolved_in_sla = factor(input$pred_sla_dt, levels = c(0, 1))
     )
     
     pred <- predict(dt$model, new_data, type = "raw")
@@ -1203,46 +1187,6 @@ server <- function(input, output, session) {
       "Probabilidad DETRACTOR:", sprintf("%.2f%%", prob[,"DETRACTOR"] * 100)
     )
   })
-  
-  # Render prediction output for Decision Tree
-  output$dt_prediction <- renderPrint({
-    dt_prediction()
-  })
-  
-  # Download handler for Decision Tree plot
-  output$download_dt_plot <- downloadHandler(
-    filename = function() {
-      paste("decision_tree_cv5_", Sys.time(), ".png", sep = "")
-    },
-    content = function(file) {
-      dt <- dt_model_data()
-      group_name <- ifelse(input$group == "All", "Todos", input$group)
-      issue_name <- ifelse(input$issue == "All", "Todos", input$issue)
-      
-      if (is.null(dt)) {
-        png(file, width = 1200, height = 900, res = 100)
-        plot.new()
-        text(0.5, 0.5, "No hay datos suficientes para graficar el árbol", cex = 1.5)
-        dev.off()
-      } else {
-        png(file, width = 1200, height = 900, res = 100)
-        title_text <- paste("Árbol de Decisión (CV=5, Optimal cp)\n",
-                            "CSAT Rated Group:", group_name, "\n",
-                            "Issue Classification:", issue_name)
-        rpart.plot(dt$model$finalModel, 
-                   main = title_text,
-                   box.palette = "RdYlGn", 
-                   shadow.col = "gray", 
-                   nn = TRUE,
-                   extra = 104,
-                   fallen.leaves = TRUE,
-                   type = 4,
-                   tweak = 1.2)
-        dev.off()
-      }
-    }
-  )
 }
 
-# Run the app
 shinyApp(ui, server)
