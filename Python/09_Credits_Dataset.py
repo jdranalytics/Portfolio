@@ -2,52 +2,78 @@ import pandas as pd
 import numpy as np
 from faker import Faker
 import random
+from datetime import datetime, timedelta
 
 
 fake = Faker()
+random.seed(42)
+np.random.seed(42)
 
 
-n_registros = 10000  
-random.seed(42)  
+n_registros = 10000
+fecha_inicio = datetime(2022, 1, 1)
+fecha_fin = datetime(2025, 3, 20)
+
+
+def generar_fecha_aleatoria(inicio, fin):
+    delta = fin - inicio
+    dias_aleatorios = random.randint(0, delta.days)
+    return inicio + timedelta(days=dias_aleatorios)
 
 
 def generar_dataset_credito(n):
     data = {
-        'ID_Cliente': [fake.uuid4() for _ in range(n)],
-        'Edad': [random.randint(18, 80) for _ in range(n)],
-        'Ingresos_Anuales': [round(random.uniform(15000, 150000), 2) for _ in range(n)],
-        'Puntaje_Crediticio': [random.randint(300, 850) for _ in range(n)],
-        'Historial_Pagos': [random.choice(['Bueno', 'Regular', 'Malo']) for _ in range(n)],
-        'Deuda_Actual': [round(random.uniform(0, 50000), 2) for _ in range(n)],
-        'Antiguedad_Laboral': [random.randint(0, 40) for _ in range(n)],
-        'Estado_Civil': [random.choice(['Soltero', 'Casado', 'Divorciado', 'Viudo']) for _ in range(n)],
-        'Numero_Dependientes': [random.randint(0, 5) for _ in range(n)],
-        'Tipo_Empleo': [random.choice(['Fijo', 'Temporal', 'Autonomo', 'Desempleado']) for _ in range(n)],
-        'Solicitud_Credito': [random.choice([0, 1]) for _ in range(n)],  # 0: No aprobado, 1: Aprobado
+        'id_cliente': [fake.uuid4() for _ in range(n)],
+        'edad': [random.randint(18, 80) for _ in range(n)],
+        'ingresos_anuales': [round(random.uniform(15000, 150000), 2) for _ in range(n)],
+        'puntaje_crediticio': [random.randint(300, 850) for _ in range(n)],
+        'historial_pagos': [random.choice(['Bueno', 'Regular', 'Malo']) for _ in range(n)],
+        'deuda_actual': [round(random.uniform(0, 50000), 2) for _ in range(n)],
+        'antiguedad_laboral': [random.randint(0, 40) for _ in range(n)],
+        'estado_civil': [random.choice(['Soltero', 'Casado', 'Divorciado', 'Viudo']) for _ in range(n)],
+        'numero_dependientes': [random.randint(0, 5) for _ in range(n)],
+        'tipo_empleo': [random.choice(['Fijo', 'Temporal', 'Autonomo', 'Desempleado']) for _ in range(n)],
+        'fecha_solicitud': [generar_fecha_aleatoria(fecha_inicio, fecha_fin) for _ in range(n)],
+        'solicitud_credito': [random.choice([0, 1]) for _ in range(n)]  # 0: No aprobado, 1: Aprobado
     }
     
-
+ 
     df = pd.DataFrame(data)
     
 
-    df['Solicitud_Credito'] = df.apply(
-        lambda row: 1 if (row['Puntaje_Crediticio'] > 650 and 
-                         row['Ingresos_Anuales'] > 30000 and 
-                         row['Historial_Pagos'] in ['Bueno', 'Regular'] and 
-                         row['Deuda_Actual'] < row['Ingresos_Anuales'] * 0.4) 
+    df['solicitud_credito'] = df.apply(
+        lambda row: 1 if (row['puntaje_crediticio'] > 650 and 
+                         row['ingresos_anuales'] > 30000 and 
+                         row['historial_pagos'] in ['Bueno', 'Regular'] and 
+                         row['deuda_actual'] < row['ingresos_anuales'] * 0.4) 
         else 0, axis=1)
+    
+
+    df['fecha_solicitud'] = pd.to_datetime(df['fecha_solicitud'])
+    df['inicio_mes'] = df['fecha_solicitud'].dt.to_period('M').dt.to_timestamp()
+    df['inicio_semana'] = df['fecha_solicitud'] - pd.to_timedelta(df['fecha_solicitud'].dt.dayofweek + 1, unit='D') + pd.to_timedelta(1, unit='D')
+    
+
+    df = df.sort_values('fecha_solicitud').reset_index(drop=True)
     
     return df
 
 
 dataset = generar_dataset_credito(n_registros)
 
+
 print("Primeras 5 filas del dataset:")
 print(dataset.head())
 
 
-dataset.to_csv('dataset_credito_sintetico.csv', index=False)
-print("\nDataset guardado como 'dataset_credito_sintetico.csv'")
+dataset.to_csv('dataset_credito_sintetico_temporal.csv', index=False)
+print("\nDataset guardado como 'dataset_credito_sintetico_temporal.csv'")
+
+
+proporcion = dataset['solicitud_credito'].value_counts(normalize=True) * 100
+print("\nProporción esperada en el dataset:")
+print(f"Créditos Aprobados (1): {proporcion.get(1, 0):.2f}%")
+print(f"Créditos No Aprobados (0): {proporcion.get(0, 0):.2f}%")
 
 
 print("\nEstadísticas básicas del dataset:")
