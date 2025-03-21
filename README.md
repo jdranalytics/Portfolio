@@ -2,7 +2,8 @@
 
 ## 🚀 ¿Qué encontrarás aquí?
 Aquí presento una colección de algunos de mis proyectos:  
-- **Proyectos analíticos**: Modelos y visualizaciones con data sintética (siempre respetando la confidencialidad).  
+- **Proyectos analíticos**: Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad, evitando usar datos reales). 
+ 
 - **Carpetas del portafolio**:  
   - 📁 **Data Sources**: Fuentes de datos disponibles para los proyectos.  
   - 📁 **Python**: Proyectos desarrollados en Python.  
