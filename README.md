@@ -68,8 +68,8 @@ Aquí presento una colección de algunos de mis proyectos:
 ## 📬 Contacto
 - [Correo](mailto:ing.jd.rojas@gmail.com)  
 
-## 🎉 Fun Fact
-"Y recuerda, no hay código que no venga acompañado de un buen café... ☕"
+## ☝🏻😌 Facts
+"Recuerda, no hay código que no venga acompañado de un buen café... ☕"
 
 ![Cafecito](https://media.giphy.com/media/lSVL6vdhdZVPW/giphy.gif)  
 
