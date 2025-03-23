@@ -60,7 +60,7 @@ Aquí presento una colección de algunos de mis proyectos:
 | Categoría                    | Herramientas                              |
 |------------------------------|-------------------------------------------|
 | **Lenguajes**                | Python, R, DAX, SQL                       |
-| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate     |
+| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow     |
 | **Bases de Datos**           | Access, SQL Server, MySQL, SQLite, PostgreSQL |
 | **Herramientas BI**          | Power BI, Tableau, Looker Studio          |
 | **Herramientas de Análisis** | Minitab, Statgraphics                     |
