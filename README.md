@@ -63,8 +63,6 @@ Aquí presento una colección de algunos de mis proyectos:
 | **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow     |
 | **Bases de Datos**           | Access, SQL Server, MySQL, SQLite, PostgreSQL |
 | **Herramientas BI**          | Power BI, Tableau, Looker Studio          |
-| **Herramientas de Análisis** | Minitab, Statgraphics                     |
-| **Editores de Código**       | Visual Studio Code, Trae                  |
 
 ## 📬 Contacto
 - [Correo](mailto:ing.jd.rojas@gmail.com)  
