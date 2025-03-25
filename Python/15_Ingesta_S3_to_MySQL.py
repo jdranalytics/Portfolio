@@ -7,6 +7,8 @@ import boto3
 import pymysql
 import tempfile
 import os
+import requests
+from datetime import datetime  # Importamos datetime para obtener el timestamp
 
 # Configuración de logging
 logging.basicConfig(level=logging.INFO)
@@ -14,8 +16,8 @@ logging.basicConfig(level=logging.INFO)
 # Configuración de AWS S3
 S3_BUCKET = "ringoquimico"
 S3_PREFIX = "EXCELS/"
-AWS_ACCESS_KEY = "XXXXXXXXXXXXXXXXXXX"
-AWS_SECRET_KEY = "XXXXXXXXXXXXXXXXXXXXXXXX"
+AWS_ACCESS_KEY = "XXXXXXXXXXXXXXXXXXXXXXXX"  # Reemplaza con tu clave de acceso
+AWS_SECRET_KEY = "XXXXXXXXXXX/XXXXXXXXX"  # Reemplaza con tu clave secreta
 
 # Configuración de MySQL
 MYSQL_HOST = "localhost"
@@ -27,20 +29,25 @@ MYSQL_DB = "airflow_db"
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 SMTP_USER = "ringoquimico@gmail.com"
-SMTP_PASSWORD = "XXXX XXXX XXXX XXXX"
+SMTP_PASSWORD = "xxxx xxxx xxxx xxxx"  # Reemplaza con tu contraseña de aplicación de Gmail
 EMAIL_FROM = "ringoquimico@gmail.com"
 EMAIL_TO = "ing.jd.rojas@gmail.com"
-EMAIL_SUBJECT_NO_FILES = "No se encontraron archivos Excel en S3"
-EMAIL_SUBJECT_NO_CHANGES = "No hubo cambios en la ingesta a MySQL"
-EMAIL_SUBJECT_SUCCESS = "Nuevos clientes ingresados"
+
+# Configuración de Discord
+DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1354192765130375248/MF7bEPPlHnrzgYnJJ4iev7xTr0TrxVpqKw_MOVVIRseppELwK0hBM7VMZf8DQnVPpvh6"
+
+# Textos para notificaciones
+EMAIL_SUBJECT_NO_FILES = "Ingesta de archivos Excel desde S3 a MySQL: No se encontraron archivos Excel en S3"
+EMAIL_SUBJECT_NO_CHANGES = "Ingesta de archivos Excel desde S3 a MySQL: No hubo cambios en la ingesta a MySQL"
+EMAIL_SUBJECT_SUCCESS = "Ingesta de archivos Excel desde S3 a MySQL: Nuevos clientes ingresados"
 EMAIL_BODY_NO_FILES = """
-No se encontraron archivos Excel en el bucket S3: {bucket}/{prefix}.
+Ingesta de archivos Excel desde S3 a MySQL: No se encontraron archivos Excel en el bucket S3: {bucket}/{prefix}.
 """
 EMAIL_BODY_NO_CHANGES = """
-No se realizaron cambios en la base de datos. No se encontraron nuevos registros para insertar.
+Ingesta de archivos Excel desde S3 a MySQL: No se realizaron cambios en la base de datos. No se encontraron nuevos registros para insertar.
 """
 EMAIL_BODY_SUCCESS = """
-Se han ingresado los siguientes nuevos clientes a la base de datos:
+Ingesta de archivos Excel desde S3 a MySQL: Se han ingresado los siguientes nuevos clientes a la base de datos:
 {new_customers}
 
 Total de Registros Agregados: {total_records}
@@ -63,6 +70,26 @@ def send_notification_email(subject, body):
         logging.info(f"Correo enviado correctamente: {subject}")
     except Exception as e:
         logging.error(f"Error al enviar correo de notificación: {e}")
+        raise
+
+# Función auxiliar para enviar mensajes a Discord
+def send_discord_message(message):
+    try:
+        # Obtener el timestamp actual en un formato legible
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        # Agregar el timestamp al mensaje
+        message_with_timestamp = f"{message}\n\n**Tareas ejecutadas el:** {timestamp}"
+        
+        payload = {
+            "content": message_with_timestamp
+        }
+        response = requests.post(DISCORD_WEBHOOK_URL, json=payload)
+        if response.status_code == 204:  # Discord responde con 204 (sin contenido) si es exitoso
+            logging.info(f"Mensaje enviado a Discord: {message_with_timestamp}")
+        else:
+            logging.error(f"Error al enviar mensaje a Discord: {response.text}")
+    except Exception as e:
+        logging.error(f"Error al enviar mensaje a Discord: {e}")
         raise
 
 def ingest_excel_from_s3_to_mysql():
@@ -95,11 +122,10 @@ def ingest_excel_from_s3_to_mysql():
         # Verificar si hay objetos en el prefijo
         if "Contents" not in response:
             logging.info("No se encontraron objetos en el bucket bajo el prefijo especificado.")
-            # Enviar notificación por correo
-            send_notification_email(
-                EMAIL_SUBJECT_NO_FILES,
-                EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
-            )
+            # Enviar notificación por correo y Discord
+            message = EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
+            send_notification_email(EMAIL_SUBJECT_NO_FILES, message)
+            send_discord_message(message)
             return
 
         # Filtrar archivos .xlsx
@@ -109,10 +135,9 @@ def ingest_excel_from_s3_to_mysql():
         # Si no hay archivos .xlsx, enviar notificación y salir
         if not excel_files:
             logging.info("No se encontraron archivos Excel (.xlsx) en el bucket.")
-            send_notification_email(
-                EMAIL_SUBJECT_NO_FILES,
-                EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
-            )
+            message = EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
+            send_notification_email(EMAIL_SUBJECT_NO_FILES, message)
+            send_discord_message(message)
             return
 
         new_customers = []
@@ -176,11 +201,10 @@ def ingest_excel_from_s3_to_mysql():
 
         if not new_customers:
             logging.info("No se encontraron nuevos registros para insertar.")
-            # Enviar notificación por correo
-            send_notification_email(
-                EMAIL_SUBJECT_NO_CHANGES,
-                EMAIL_BODY_NO_CHANGES
-            )
+            # Enviar notificación por correo y Discord
+            message = EMAIL_BODY_NO_CHANGES
+            send_notification_email(EMAIL_SUBJECT_NO_CHANGES, message)
+            send_discord_message(message)
             # Eliminar archivos temporales locales
             for file_info in downloaded_files:
                 local_file = file_info["local_path"]
@@ -196,11 +220,10 @@ def ingest_excel_from_s3_to_mysql():
             connection.commit()
             logging.info(f"Se insertaron {len(new_customers)} nuevos registros.")
 
-            # Enviar correo si hay nuevos clientes
-            send_notification_email(
-                EMAIL_SUBJECT_SUCCESS,
-                EMAIL_BODY_SUCCESS.format(new_customers="\n".join(new_customers), total_records=len(new_customers))
-            )
+            # Enviar notificación si hay nuevos clientes (correo y Discord)
+            message = EMAIL_BODY_SUCCESS.format(new_customers="\n".join(new_customers), total_records=len(new_customers))
+            send_notification_email(EMAIL_SUBJECT_SUCCESS, message)
+            send_discord_message(message)
 
             # Eliminar archivos de S3 tras éxito
             for file_key in files_to_delete:

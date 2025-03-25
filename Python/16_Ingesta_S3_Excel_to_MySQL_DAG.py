@@ -8,17 +8,19 @@ import pandas as pd
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import requests
 import os
 import tempfile
 import boto3
 import botocore.exceptions
+from airflow.models import Variable
 
 # Configuración de logging
 logging.basicConfig(level=logging.INFO)
 
 # Configuración
-MYSQL_CONN_ID = "airflow_db"  # Configurado en Airflow
-AWS_CONN_ID = "aws_default"  # Configurado en Airflow
+MYSQL_CONN_ID = "airflow_db"
+AWS_CONN_ID = "aws_default"
 S3_BUCKET = "ringoquimico"
 S3_PREFIX = "EXCELS/"
 
@@ -26,24 +28,20 @@ S3_PREFIX = "EXCELS/"
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 SMTP_USER = "ringoquimico@gmail.com"
-SMTP_PASSWORD = "xxxx xxxx xxxx xxxx"
+SMTP_PASSWORD = "xxxx xxxx xxxx xxxx"  # Reemplaza con tu contraseña de aplicación de Gmail
 EMAIL_FROM = "ringoquimico@gmail.com"
 EMAIL_TO = "ing.jd.rojas@gmail.com"
+
+# Configuración de Discord
+DISCORD_WEBHOOK_URL = Variable.get("discord_webhook_url")
+
+# Textos para notificaciones
 EMAIL_SUBJECT_NO_FILES = "No se encontraron archivos Excel en S3"
 EMAIL_SUBJECT_NO_CHANGES = "No hubo cambios en la ingesta a MySQL"
 EMAIL_SUBJECT_SUCCESS = "Nuevos clientes ingresados"
-EMAIL_BODY_NO_FILES = """
-No se encontraron archivos Excel en el bucket S3: {bucket}/{prefix}.
-"""
-EMAIL_BODY_NO_CHANGES = """
-No se realizaron cambios en la base de datos. No se encontraron nuevos registros para insertar.
-"""
-EMAIL_BODY_SUCCESS = """
-Se han ingresado los siguientes nuevos clientes a la base de datos:
-{new_customers}
-
-Total de Registros Agregados: {total_records}
-"""
+EMAIL_BODY_NO_FILES = "No se encontraron archivos Excel en el bucket S3: {bucket}/{prefix}."
+EMAIL_BODY_NO_CHANGES = "No se realizaron cambios en la base de datos. No se encontraron nuevos registros para insertar."
+EMAIL_BODY_SUCCESS = "Se han ingresado los siguientes nuevos clientes a la base de datos:\n{new_customers}\n\nTotal de Registros Agregados: {total_records}"
 
 # Función auxiliar para enviar correos
 def send_notification_email(subject, body):
@@ -64,10 +62,29 @@ def send_notification_email(subject, body):
         logging.error(f"Error al enviar correo de notificación: {e}")
         raise
 
-# Tarea 1: Descargar archivos desde S3 usando boto3
+# Función auxiliar para enviar mensajes a Discord
+def send_discord_message(message):
+    try:
+        # Obtener el timestamp actual en un formato legible
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        # Agregar el timestamp al mensaje
+        message_with_timestamp = f"{message}\n\n**Tareas ejecutadas el:** {timestamp}"
+        
+        payload = {
+            "content": message_with_timestamp
+        }
+        response = requests.post(DISCORD_WEBHOOK_URL, json=payload)
+        if response.status_code == 204:  # Discord responde con 204 (sin contenido) si es exitoso
+            logging.info(f"Mensaje enviado a Discord: {message_with_timestamp}")
+        else:
+            logging.error(f"Error al enviar mensaje a Discord: {response.text}")
+    except Exception as e:
+        logging.error(f"Error al enviar mensaje a Discord: {e}")
+        raise
+
+# Tarea 1: Descargar archivos desde S3
 def download_from_s3(ti):
     try:
-        # Obtener las credenciales de AWS desde la conexión de Airflow
         s3_hook = S3Hook(aws_conn_id=AWS_CONN_ID)
         credentials = s3_hook.get_credentials()
         s3_client = boto3.client(
@@ -76,54 +93,43 @@ def download_from_s3(ti):
             aws_secret_access_key=credentials.secret_key
         )
 
-        # Usar un directorio temporal compatible con Windows y Ubuntu
         temp_dir = tempfile.gettempdir()
         logging.info(f"Usando directorio temporal: {temp_dir}")
         downloaded_files = []
 
-        # Verificar permisos de escritura en el directorio temporal
         if not os.access(temp_dir, os.W_OK):
             logging.error(f"No se tienen permisos de escritura en {temp_dir}")
             raise PermissionError(f"No se tienen permisos de escritura en {temp_dir}")
 
-        # Listar archivos en S3
         logging.info(f"Listando archivos en bucket {S3_BUCKET} con prefijo {S3_PREFIX}")
         s3_files = s3_hook.list_keys(bucket_name=S3_BUCKET, prefix=S3_PREFIX)
         logging.info(f"Archivos encontrados en S3: {s3_files}")
 
-        # Verificar si hay objetos en el prefijo
         if not s3_files:
             logging.info("No se encontraron objetos en el bucket bajo el prefijo especificado.")
-            # Enviar notificación por correo
-            send_notification_email(
-                EMAIL_SUBJECT_NO_FILES,
-                EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
-            )
+            message = EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
+            send_notification_email(EMAIL_SUBJECT_NO_FILES, message)
+            send_discord_message(message)
             return []
 
-        # Filtrar solo archivos .xlsx
         excel_files = [key for key in s3_files if key.endswith(".xlsx")]
         logging.info(f"Archivos .xlsx encontrados: {excel_files}")
 
-        # Si no hay archivos .xlsx, enviar notificación y salir
         if not excel_files:
             logging.info("No se encontraron archivos Excel (.xlsx) en el bucket.")
-            send_notification_email(
-                EMAIL_SUBJECT_NO_FILES,
-                EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
-            )
+            message = EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
+            send_notification_email(EMAIL_SUBJECT_NO_FILES, message)
+            send_discord_message(message)
             return []
 
         for file_key in excel_files:
             original_filename = file_key.split('/')[-1]
-            # Generar un nombre de archivo temporal para el destino final
             temp_file = tempfile.NamedTemporaryFile(dir=temp_dir, suffix=".xlsx", delete=False)
             local_file = temp_file.name
             temp_file.close()
 
             logging.info(f"Descargando {file_key} a {local_file}")
             try:
-                # Descargar el archivo directamente usando boto3
                 s3_client.download_file(
                     Bucket=S3_BUCKET,
                     Key=file_key,
@@ -143,7 +149,6 @@ def download_from_s3(ti):
                 if os.path.exists(local_file):
                     os.remove(local_file)
 
-        # Pasar la lista de archivos descargados a la siguiente tarea vía XCom
         ti.xcom_push(key="downloaded_files", value=downloaded_files)
         return downloaded_files
 
@@ -192,12 +197,9 @@ def ingest_to_mysql(ti):
 
         if not new_customers:
             logging.info("No se encontraron nuevos registros para insertar.")
-            # Enviar notificación por correo
-            send_notification_email(
-                EMAIL_SUBJECT_NO_CHANGES,
-                EMAIL_BODY_NO_CHANGES
-            )
-            # Eliminar archivos temporales locales
+            message = EMAIL_BODY_NO_CHANGES
+            send_notification_email(EMAIL_SUBJECT_NO_CHANGES, message)
+            send_discord_message(message)
             for file_info in downloaded_files:
                 local_file = file_info["local_path"]
                 if os.path.exists(local_file):
@@ -210,7 +212,6 @@ def ingest_to_mysql(ti):
     except Exception as e:
         logging.error(f"Error en la ingesta: {e}")
         connection.rollback()
-        # Asegurarnos de eliminar los archivos temporales en caso de error
         for file_info in downloaded_files:
             local_file = file_info["local_path"]
             if os.path.exists(local_file):
@@ -221,24 +222,22 @@ def ingest_to_mysql(ti):
         cursor.close()
         connection.close()
 
-    # Pasar la lista de nuevos clientes a la siguiente tarea
     ti.xcom_push(key="new_customers", value=new_customers)
     return new_customers
 
-# Tarea 3: Enviar correo electrónico (solo si hay nuevos clientes)
-def send_email(ti):
+# Tarea 3: Enviar notificaciones (correo y Discord)
+def send_notifications(ti):
     new_customers = ti.xcom_pull(key="new_customers", task_ids="ingest_to_mysql")
     if not new_customers:
-        logging.info("No hay nuevos clientes para enviar por correo.")
+        logging.info("No hay nuevos clientes para enviar notificaciones.")
         return
 
     total_records = len(new_customers)
-    send_notification_email(
-        EMAIL_SUBJECT_SUCCESS,
-        EMAIL_BODY_SUCCESS.format(new_customers="\n".join(new_customers), total_records=total_records)
-    )
+    message = EMAIL_BODY_SUCCESS.format(new_customers="\n".join(new_customers), total_records=total_records)
+    send_notification_email(EMAIL_SUBJECT_SUCCESS, message)
+    send_discord_message(message)
 
-# Tarea 4: Eliminar archivos de S3 (si hay archivos descargados, independientemente de si hubo cambios)
+# Tarea 4: Eliminar archivos de S3
 def delete_from_s3(ti):
     s3_hook = S3Hook(aws_conn_id=AWS_CONN_ID)
     downloaded_files = ti.xcom_pull(key="downloaded_files", task_ids="download_from_s3")
@@ -252,7 +251,6 @@ def delete_from_s3(ti):
         s3_hook.delete_objects(bucket=S3_BUCKET, keys=[file_key])
         logging.info(f"Archivo {file_key} eliminado de S3.")
 
-    # Eliminar archivos temporales locales si no se hizo antes (por ejemplo, si hubo nuevos clientes)
     for file_info in downloaded_files:
         local_file = file_info["local_path"]
         if os.path.exists(local_file):
@@ -270,32 +268,27 @@ default_args = {
 with DAG(
     dag_id="ingest_excel_from_s3_to_mysql",
     default_args=default_args,
-    schedule_interval="0 6 * * *",  # Ejecutar diariamente a las 6:00 AM
+    schedule_interval="0 6 * * *",
     catchup=False,
 ) as dag:
-    # Tarea 1: Descargar desde S3
     download_task = PythonOperator(
         task_id="download_from_s3",
         python_callable=download_from_s3,
     )
 
-    # Tarea 2: Ingestar a MySQL
     ingest_task = PythonOperator(
         task_id="ingest_to_mysql",
         python_callable=ingest_to_mysql,
     )
 
-    # Tarea 3: Enviar correo
-    email_task = PythonOperator(
-        task_id="send_email",
-        python_callable=send_email,
+    notify_task = PythonOperator(
+        task_id="send_notifications",
+        python_callable=send_notifications,
     )
 
-    # Tarea 4: Eliminar de S3
     delete_task = PythonOperator(
         task_id="delete_from_s3",
         python_callable=delete_from_s3,
     )
 
-    # Definir el orden de las tareas
-    download_task >> ingest_task >> email_task >> delete_task
+    download_task >> ingest_task >> notify_task >> delete_task
