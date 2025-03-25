@@ -59,7 +59,7 @@ Aquí presento una colección de algunos de mis proyectos:
 ## ⚙️ Lenguajes y herramientas usadas
 | Categoría                    | Herramientas                              |
 |------------------------------|-------------------------------------------|
-| **Lenguajes**                | Python, R, DAX, SQL                       |
+| **Lenguajes**                | Python, R, DAX, M, SQL                       |
 | **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow     |
 | **Bases de Datos**           | Access, SQL Server, MySQL |
 | **Herramientas BI**          | Power BI, Tableau, Looker Studio          |
