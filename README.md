@@ -25,7 +25,7 @@ Aquí presento una colección de algunos de mis proyectos:
       <a href="https://youtu.be/sBOK6WT38JU">
         <img src="https://img.youtube.com/vi/sBOK6WT38JU/0.jpg" alt="Video 2" width="200"/>
       </a>
-      <br>My.RCManager v.2.0
+      <br>My.RCManager v.2.0 (Excel-Access-VBA)
     </td>
     <td align="center">
       <a href="https://youtu.be/BLnl0NhVNxM">
@@ -39,7 +39,7 @@ Aquí presento una colección de algunos de mis proyectos:
       <a href="https://youtu.be/QmfAVkEeaIM">
         <img src="https://img.youtube.com/vi/QmfAVkEeaIM/0.jpg" alt="Video 4" width="200"/>
       </a>
-      <br>Módulo Automatizado de Oferta
+      <br>Módulo Automatizado de Oferta (Excel-VBA)
     </td>
     <td align="center">
       <a href="https://youtu.be/Gw61TO7Aitk">
@@ -51,7 +51,7 @@ Aquí presento una colección de algunos de mis proyectos:
       <a href="https://youtu.be/F13BJ3i9ilA">
         <img src="https://img.youtube.com/vi/F13BJ3i9ilA/0.jpg" alt="Video 6" width="200"/>
       </a>
-      <br>C5Manager v.1.0
+      <br>C5Manager v.1.0 (Excel-Access-VBA)
     </td>
   </tr>
 </table>
