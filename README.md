@@ -17,19 +17,19 @@ Aquí presento una colección de algunos de mis proyectos:
   <tr>
     <td align="center">
       <a href="https://youtu.be/F6nQHX9olDo">
-        <img src="https://img.youtube.com/vi/F6nQHX9olDo/0.jpg" alt="ContactApp 1.0.0 (Análisis de Satisfacción del Cliente)" width="200"/>
+        <img src="https://img.youtube.com/vi/F6nQHX9olDo/0.jpg" alt="Video 1" width="250"/>
       </a>
       <br>ContactApp 1.0.0 (R-Shiny)
     </td>
     <td align="center">
       <a href="https://youtu.be/sBOK6WT38JU">
-        <img src="https://img.youtube.com/vi/sBOK6WT38JU/0.jpg" alt="Video 2" width="200"/>
+        <img src="https://img.youtube.com/vi/sBOK6WT38JU/0.jpg" alt="Video 2" width="250"/>
       </a>
       <br>My.RCManager v.2.0 (Excel-Access-VBA)
     </td>
     <td align="center">
       <a href="https://youtu.be/BLnl0NhVNxM">
-        <img src="https://img.youtube.com/vi/BLnl0NhVNxM/0.jpg" alt="Video 3" width="200"/>
+        <img src="https://img.youtube.com/vi/BLnl0NhVNxM/0.jpg" alt="Video 3" width="250"/>
       </a>
       <br>Apetitoso Restaurant (Power Apps)
     </td>
@@ -37,19 +37,19 @@ Aquí presento una colección de algunos de mis proyectos:
   <tr>
     <td align="center">
       <a href="https://youtu.be/QmfAVkEeaIM">
-        <img src="https://img.youtube.com/vi/QmfAVkEeaIM/0.jpg" alt="Video 4" width="200"/>
+        <img src="https://img.youtube.com/vi/QmfAVkEeaIM/0.jpg" alt="Video 4" width="250"/>
       </a>
       <br>Módulo Automatizado de Oferta (Excel-VBA)
     </td>
     <td align="center">
       <a href="https://youtu.be/Gw61TO7Aitk">
-        <img src="https://img.youtube.com/vi/Gw61TO7Aitk/0.jpg" alt="Video 5" width="200"/>
+        <img src="https://img.youtube.com/vi/Gw61TO7Aitk/0.jpg" alt="Video 5" width="250"/>
       </a>
       <br>Boletín Informativo (COVID)
     </td>
     <td align="center">
       <a href="https://youtu.be/F13BJ3i9ilA">
-        <img src="https://img.youtube.com/vi/F13BJ3i9ilA/0.jpg" alt="Video 6" width="200"/>
+        <img src="https://img.youtube.com/vi/F13BJ3i9ilA/0.jpg" alt="Video 6" width="250"/>
       </a>
       <br>C5Manager v.1.0 (Excel-Access-VBA)
     </td>
