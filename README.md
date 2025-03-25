@@ -28,10 +28,10 @@ Aquí presento una colección de algunos de mis proyectos:
       <br>My.RCManager v.2.0
     </td>
     <td align="center">
-      <a href="https://youtu.be/gLnfQt2QmNY">
-        <img src="https://img.youtube.com/vi/gLnfQt2QmNY/0.jpg" alt="Video 3" width="200"/>
+      <a href="https://youtu.be/BLnl0NhVNxM">
+        <img src="https://img.youtube.com/vi/BLnl0NhVNxM/0.jpg" alt="Video 3" width="200"/>
       </a>
-      <br>Mi Balance Financiero
+      <br>Apetitoso Restaurant (Power Apps)
     </td>
   </tr>
   <tr>
