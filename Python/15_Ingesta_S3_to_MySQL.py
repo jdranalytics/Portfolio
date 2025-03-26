@@ -16,8 +16,8 @@ logging.basicConfig(level=logging.INFO)
 # Configuración de AWS S3
 S3_BUCKET = "ringoquimico"
 S3_PREFIX = "EXCELS/"
-AWS_ACCESS_KEY = "XXXXXXXXXXXXXXXXXXXXXXXX"  # Reemplaza con tu clave de acceso
-AWS_SECRET_KEY = "XXXXXXXXXXX/XXXXXXXXX"  # Reemplaza con tu clave secreta
+AWS_ACCESS_KEY = "XXXXXXXXXXXXXXXXXXXXXXXX"
+AWS_SECRET_KEY = "XXXXXXXXXXX/XXXXXXXXX"
 
 # Configuración de MySQL
 MYSQL_HOST = "localhost"
@@ -29,7 +29,7 @@ MYSQL_DB = "airflow_db"
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 SMTP_USER = "ringoquimico@gmail.com"
-SMTP_PASSWORD = "xxxx xxxx xxxx xxxx"  # Reemplaza con tu contraseña de aplicación de Gmail
+SMTP_PASSWORD = "xxxx xxxx xxxx xxxx"
 EMAIL_FROM = "ringoquimico@gmail.com"
 EMAIL_TO = "ing.jd.rojas@gmail.com"
 
