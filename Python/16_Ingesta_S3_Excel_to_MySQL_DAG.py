@@ -62,20 +62,27 @@ def send_notification_email(subject, body):
         logging.error(f"Error al enviar correo de notificación: {e}")
         raise
 
-# Función auxiliar para enviar mensajes a Discord
-def send_discord_message(message):
+# Función auxiliar para enviar mensajes a Discord (ajustada al formato del ejemplo)
+def send_discord_message(message, success=True):
+    """Envía un mensaje a Discord con el estado de la ejecución en formato embed"""
     try:
-        # Obtener el timestamp actual en un formato legible
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        # Agregar el timestamp al mensaje
-        message_with_timestamp = f"{message}\n\n**Tareas ejecutadas el:** {timestamp}"
+        color = 0x00FF00 if success else 0xFF0000  # Verde para éxito, rojo para error
+        emoji = "✅" if success else "❌"
         
         payload = {
-            "content": message_with_timestamp
+            "embeds": [{
+                "title": f"{emoji} Notificación del DAG: ingest_excel_from_s3_to_mysql",
+                "description": message,
+                "color": color,
+                "fields": [{"name": "Timestamp", "value": timestamp, "inline": True}],
+                "footer": {"text": "Sistema de Monitoreo Airflow"}
+            }]
         }
+        
         response = requests.post(DISCORD_WEBHOOK_URL, json=payload)
-        if response.status_code == 204:  # Discord responde con 204 (sin contenido) si es exitoso
-            logging.info(f"Mensaje enviado a Discord: {message_with_timestamp}")
+        if response.status_code == 204:
+            logging.info(f"Mensaje enviado a Discord: {message}")
         else:
             logging.error(f"Error al enviar mensaje a Discord: {response.text}")
     except Exception as e:
@@ -109,7 +116,7 @@ def download_from_s3(ti):
             logging.info("No se encontraron objetos en el bucket bajo el prefijo especificado.")
             message = EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
             send_notification_email(EMAIL_SUBJECT_NO_FILES, message)
-            send_discord_message(message)
+            send_discord_message(message, success=False)  # Error: no hay archivos
             return []
 
         excel_files = [key for key in s3_files if key.endswith(".xlsx")]
@@ -119,7 +126,7 @@ def download_from_s3(ti):
             logging.info("No se encontraron archivos Excel (.xlsx) en el bucket.")
             message = EMAIL_BODY_NO_FILES.format(bucket=S3_BUCKET, prefix=S3_PREFIX)
             send_notification_email(EMAIL_SUBJECT_NO_FILES, message)
-            send_discord_message(message)
+            send_discord_message(message, success=False)  # Error: no hay archivos Excel
             return []
 
         for file_key in excel_files:
@@ -199,7 +206,7 @@ def ingest_to_mysql(ti):
             logging.info("No se encontraron nuevos registros para insertar.")
             message = EMAIL_BODY_NO_CHANGES
             send_notification_email(EMAIL_SUBJECT_NO_CHANGES, message)
-            send_discord_message(message)
+            send_discord_message(message, success=True)  # Éxito, pero sin cambios
             for file_info in downloaded_files:
                 local_file = file_info["local_path"]
                 if os.path.exists(local_file):
@@ -235,7 +242,7 @@ def send_notifications(ti):
     total_records = len(new_customers)
     message = EMAIL_BODY_SUCCESS.format(new_customers="\n".join(new_customers), total_records=total_records)
     send_notification_email(EMAIL_SUBJECT_SUCCESS, message)
-    send_discord_message(message)
+    send_discord_message(message, success=True)  # Éxito: nuevos clientes ingresados
 
 # Tarea 4: Eliminar archivos de S3
 def delete_from_s3(ti):
