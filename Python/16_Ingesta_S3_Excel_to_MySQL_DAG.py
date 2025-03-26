@@ -28,7 +28,7 @@ S3_PREFIX = "EXCELS/"
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
 SMTP_USER = "ringoquimico@gmail.com"
-SMTP_PASSWORD = "xxxx xxxx xxxx xxxx"  # Reemplaza con tu contraseña de aplicación de Gmail
+SMTP_PASSWORD = "xxxx xxxx xxxx xxxx"
 EMAIL_FROM = "ringoquimico@gmail.com"
 EMAIL_TO = "ing.jd.rojas@gmail.com"
 
