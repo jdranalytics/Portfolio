@@ -8,9 +8,9 @@ fake = Faker()
 random.seed(42)
 np.random.seed(42)
 
-n_registros = 10000
+n_registros = 20000
 fecha_inicio = datetime(2022, 1, 1)
-fecha_fin = datetime(2025, 3, 20)
+fecha_fin = datetime(2025, 3, 27)
 
 def generar_fecha_aleatoria(inicio, fin):
     delta = fin - inicio
@@ -42,10 +42,21 @@ def generar_dataset_credito(n):
                          row['deuda_actual'] < row['ingresos_anuales'] * 0.4) 
         else 0, axis=1)
     
-    # Ahora introducimos valores null (25% mínimo)
-    # Generamos una máscara aleatoria donde aproximadamente el 25-30% será null
-    mask = np.random.random(n) < 0.25  # 25% de probabilidad de ser null
-    df.loc[mask, 'solicitud_credito'] = np.nan  # Asignamos NaN a esos registros
+    # Definimos el rango de los últimos dos meses
+    fecha_limite = fecha_fin - timedelta(days=60)  # 60 días antes de fecha_fin (20 de enero de 2025)
+    
+    # Creamos una máscara para los últimos dos meses
+    mask_ultimos_dos_meses = df['fecha_solicitud'] >= fecha_limite
+    
+    # Contamos cuántos registros hay en los últimos dos meses
+    n_ultimos_dos_meses = mask_ultimos_dos_meses.sum()
+    
+    # Generamos una máscara aleatoria solo para los últimos dos meses, con 25-30% de nulos
+    mask_nulls = np.random.random(n) < 0.25  # 25% de probabilidad de ser null
+    mask_final = mask_ultimos_dos_meses & mask_nulls  # Combinamos las máscaras
+    
+    # Asignamos NaN solo a los registros en los últimos dos meses seleccionados por la máscara
+    df.loc[mask_final, 'solicitud_credito'] = np.nan
     
     # Fechas
     df['fecha_solicitud'] = pd.to_datetime(df['fecha_solicitud'])
@@ -73,3 +84,7 @@ print(f"Créditos No Aprobados (0): {proporcion.get(0, 0):.2f}%")
 
 print("\nEstadísticas básicas del dataset:")
 print(dataset.describe())
+
+# Verificación adicional: Conteo de nulos por mes
+print("\nConteo de valores nulos por mes en 'solicitud_credito':")
+print(dataset.groupby(dataset['fecha_solicitud'].dt.to_period('M'))['solicitud_credito'].apply(lambda x: x.isna().sum()))
