@@ -61,7 +61,7 @@ Aquí presento una colección de algunos de mis proyectos:
 |------------------------------|-------------------------------------------|
 | **Lenguajes**                | Python, R, DAX, M, SQL                       |
 | **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow     |
-| **Bases de Datos**           | Access, SQL Server, MySQL |
+| **Bases de Datos**           | Access, SQL Server, MySQL, Google Cloud, BigQuery |
 | **Herramientas BI**          | Power BI, Tableau, Looker Studio          |
 
 ## 📬 Contacto
