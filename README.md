@@ -42,10 +42,10 @@ Aquí presento una colección de algunos de mis proyectos:
       <br>Módulo Automatizado de Oferta (Excel-VBA)
     </td>
     <td align="center">
-      <a href="https://youtu.be/Gw61TO7Aitk">
-        <img src="https://img.youtube.com/vi/Gw61TO7Aitk/0.jpg" alt="Video 5" width="250"/>
+      <a href="https://youtu.be/-2JqTp_lcnU">
+        <img src="https://img.youtube.com/vi/-2JqTp_lcnU/0.jpg" alt="Video 5" width="250"/>
       </a>
-      <br>Boletín Informativo (COVID)
+      <br>Flujo ETL Airflow + BigQuery (Análisis de Riesgo)
     </td>
     <td align="center">
       <a href="https://youtu.be/F13BJ3i9ilA">
