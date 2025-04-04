@@ -16,22 +16,22 @@ Aquí presento una colección de algunos de mis proyectos:
 <table>
   <tr>
     <td align="center">
-      <a href="https://youtu.be/F6nQHX9olDo">
-        <img src="https://img.youtube.com/vi/F6nQHX9olDo/0.jpg" alt="Video 1" width="250"/>
+      <a href="https://youtu.be/M9p6LTcJkOs">
+        <img src="https://img.youtube.com/vi/M9p6LTcJkOs/0.jpg" alt="Tableros" width="250"/>
       </a>
-      <br>ContactApp 1.0.0 (R-Shiny)
+      <br> EXCEL-VBA | Power BI | Looker | Tableau
     </td>
     <td align="center">
-      <a href="https://youtu.be/sBOK6WT38JU">
-        <img src="https://img.youtube.com/vi/sBOK6WT38JU/0.jpg" alt="Video 2" width="250"/>
+      <a href="https://youtu.be/1c89jF3w34I">
+        <img src="https://img.youtube.com/vi/1c89jF3w34I/0.jpg" alt="Análisis de Riesgo" width="250"/>
       </a>
-      <br>My.RCManager v.2.0 (Excel-Access-VBA)
+      <br>Análisis de Riesgo Crediticio (Shiny App) Dashboard con Asistente AI
     </td>
     <td align="center">
-      <a href="https://youtu.be/BLnl0NhVNxM">
-        <img src="https://img.youtube.com/vi/BLnl0NhVNxM/0.jpg" alt="Video 3" width="250"/>
+      <a href="https://youtu.be/Gw61TO7Aitk">
+        <img src="https://img.youtube.com/vi/Gw61TO7Aitk/0.jpg" alt="Tablero Excel (COVID-19)" width="250"/>
       </a>
-      <br>Apetitoso Restaurant (Power Apps)
+      <br>Tablero Excel (COVID-19)
     </td>
   </tr>
   <tr>
