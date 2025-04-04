@@ -4,7 +4,7 @@ from faker import Faker
 import random
 from datetime import datetime, timedelta
 
-fake = Faker()
+fake = Faker(['es_ES'])  # Configurar Faker para nombres en español
 random.seed(42)
 np.random.seed(42)
 
@@ -20,6 +20,8 @@ def generar_fecha_aleatoria(inicio, fin):
 def generar_dataset_credito(n):
     data = {
         'id_cliente': [fake.uuid4() for _ in range(n)],
+        'nombre': [fake.first_name() for _ in range(n)],
+        'apellido': [fake.last_name() for _ in range(n)],
         'edad': [random.randint(18, 80) for _ in range(n)],
         'ingresos_anuales': [round(random.uniform(15000, 150000), 2) for _ in range(n)],
         'puntaje_crediticio': [random.randint(300, 850) for _ in range(n)],
