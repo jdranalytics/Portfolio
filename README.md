@@ -31,7 +31,7 @@ Aquí presento una colección de algunos de mis proyectos:
       <a href="https://youtu.be/BLnl0NhVNxM">
         <img src="https://img.youtube.com/vi/BLnl0NhVNxM/0.jpg" alt="Video 3" width="250"/>
       </a>
-      <br>Apetitoso Restaurant (Power Apps)
+      <br>Apetitoso Restaurant (Power Apps + Automate)
     </td>
   </tr>
   <tr>
