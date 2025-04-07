@@ -38,6 +38,9 @@ credentials_path <- "C:/Users/joey_/Desktop/AIRFLOW/adroit-terminus-450816-r9-1b
 DISCORD_WEBHOOK_URL <- "https://discordapp.com/api/webhooks/1354192765130375248/MF7bEPPlHnrzgYnJJ4iev7xTr0TrxVpqKw_MOVVIRseppELwK0hBM7VMZf8DQnVPpvh6"
 OPENAI_API_KEY_PATH <- "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/openai.txt"
 GEMINI_API_KEY_PATH <- "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/gemini.txt"
+DEEPSEEK_API_KEY_PATH <- "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/deepseek.txt"
+
+
 
 # MODELOS DISPONIBLES ----
 OPENAI_MODELS <- c("gpt-4o-mini")
@@ -66,7 +69,7 @@ load_api_key <- function(path) {
 
 OPENAI_API_KEY <- load_api_key(OPENAI_API_KEY_PATH)
 GEMINI_API_KEY <- load_api_key(GEMINI_API_KEY_PATH)
-DEEPSEEK_API_KEY <- load_api_key("C:/Users/joey_/Desktop/AIRFLOW/API KEYS/deepseek.txt")
+DEEPSEEK_API_KEY <- load_api_key(DEEPSEEK_API_KEY_PATH)
 
 # FUNCIONES AUXILIARES ----
 send_discord_message <- function(message, success = TRUE) {
