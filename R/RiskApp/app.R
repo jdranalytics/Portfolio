@@ -42,7 +42,7 @@ GEMINI_API_KEY_PATH <- "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/gemini.txt"
 # MODELOS DISPONIBLES ----
 OPENAI_MODELS <- c("gpt-4o-mini")
 GEMINI_MODELS <- c("gemini-1.5-flash", "gemini-2.0-flash" , "gemini-2.0-flash-lite")
-DEEPSEEK_MODELS <- c("deepseek-chat")
+DEEPSEEK_MODELS <- c("deepseek-chat", "deepseek-reasoner")
 
 # AUTENTICACIÓN ----
 bq_auth(path = credentials_path)
