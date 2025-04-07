@@ -693,9 +693,25 @@ custom_css <- "
     align-items: center;
     margin-left: 10px;
   }
+  #ia_ask {
+    background-color: #2ECC71 !important;
+    color: #FFFFFF !important;
+    border-color: #27AE60 !important;
+  }
+  #ia_ask:hover {
+    background-color: #27AE60 !important;
+  }
   #ia_ask:disabled {
     background-color: #95A5A6 !important;
     cursor: not-allowed !important;
+  }
+  #ex1, #ex2, #ex3, #ex4, #ex5 {
+    background-color: #3498DB !important;
+    color: #FFFFFF !important;
+    border-color: #2980B9 !important;
+  }
+  #ex1:hover, #ex2:hover, #ex3:hover, #ex4:hover, #ex5:hover {
+    background-color: #2980B9 !important;
   }
 "
 
@@ -1600,15 +1616,40 @@ server <- function(input, output, session) {
   
   observeEvent(input$ia_ask, {
     req(input$ia_prompt, input$ia_provider, input$ia_model, rv_ia$data_loaded)
+
+    # Limpiar elementos antes de la nueva consulta
+    updateAceEditor(
+      session,
+      "ia_response_text",
+      value = "Procesando consulta..."
+    )
+
+    # Limpiar DataFrame
+    rv_ia$ia_dataframe <- NULL
+    output$ia_response_df <- renderDT({
+      datatable(
+        data.frame(Mensaje = "Procesando consulta..."),
+        options = list(dom = "t", pageLength = 5),
+        rownames = FALSE
+      )
+    })
+
+    # Limpiar carrusel
+    rv_ia$ia_visualizations <- NULL
+    output$ia_response_carousel <- renderUI({
+      NULL
+    })
+
     if (!rv_ia$data_loaded) {
       showNotification("Los datos de la tabla no están cargados aún.", type = "warning")
       return()
     }
+    
     if (rv_ia$countdown > 0) {
       showNotification("Espera a que termine el conteo para realizar otra consulta.", type = "warning")
       return()
     }
-    
+
     showModal(modalDialog(title = "Analizando datos", "Procesando tu solicitud...", footer = NULL))
     
     respuesta <- tryCatch({
