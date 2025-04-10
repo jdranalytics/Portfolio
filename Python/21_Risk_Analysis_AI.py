@@ -16,7 +16,7 @@ import logging
 import traceback
 import numpy as np
 import os
-import rec
+import re
 import atexit
 import tempfile
 
