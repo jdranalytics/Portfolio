@@ -44,7 +44,7 @@ DEEPSEEK_API_KEY_PATH <- "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/deepseek.txt"
 
 # MODELOS DISPONIBLES ----
 OPENAI_MODELS <- c("gpt-4o-mini")
-GEMINI_MODELS <- c("gemini-1.5-flash", "gemini-2.0-flash" , "gemini-2.0-flash-lite")
+GEMINI_MODELS <- c("gemini-1.5-flash", "gemini-1.5-pro","gemini-2.0-flash" , "gemini-2.0-flash-lite")
 DEEPSEEK_MODELS <- c("deepseek-chat", "deepseek-reasoner")
 
 # AUTENTICACIÓN ----
@@ -366,36 +366,7 @@ diccionario_contexto <- paste(
 
 diccionario_visuales <- paste(
   "DICCIONARIO DE VISUALES RECOMENDADAS:",
-  "1. Para análisis de distribución:",
-  " - Histogramas con línea de densidad roja punteada",
-  " - Histogramas marginales (ggExtra::ggMarginal)",
-  " - Diagramas de caja (boxplots) con puntos de datos superpuestos",
-  " - Gráficos de violín (violin plots) para mostrar densidad y dispersión",
-  " - Gráficos de densidad para comparar distribuciones",
-  "2. Para comparación de categorías:",
-  " - Gráficos de barras con etiquetas de valores",
-  " - Gráficos de barras divergentes para mostrar desviaciones",
-  " - Gráficos de donut (variación de pie charts con espacio central)",
-  " - Gráficos de barras apiladas o agrupadas para múltiples variables",
-  " - Waterfall charts para mostrar contribuciones acumulativas",
-  " - Bump charts para mostrar cambios en rankings a lo largo del tiempo",
-  "3. Para relaciones entre variables:",
-  " - Scatterplots con líneas de tendencia y elipses de confianza",
-  " - Bubble charts para 3 dimensiones cuantitativas",
-  " - Heatmaps para matrices de correlación",
-  " - Gráficos de pares (ggpairs) para análisis multivariado",
-  " - Dumbell charts para mostrar cambios entre dos puntos en el tiempo",
-  "4. Para flujos y composiciones:",
-  " - Gráficos Sankey o Alluvial para flujos y procesos",
-  " - Diagramas de Venn para superposición de conjuntos",
-  "5. Para análisis avanzados:",
-  " - Radar charts para comparación de múltiples métricas",
-  " - Waterfall charts para análisis financieros",
-  " - Series temporales con bandas de confianza",
-  "6. Visualizaciones por grupos:",
-  " - Boxplots por grupos con puntos de datos",
-  " - Histogramas por grupos (usando facet_wrap o facet_grid)",
-  "7. Mejores prácticas visuales:",
+  "IMPORTANTE. Mejores prácticas visuales:",
   " - DEBES usar paletas de colores accesibles como viridis, sequential y/o ColorBrewer",
   " - Asegurar contraste adecuado para daltonismo",
   " - Limitar a 6-8 categorías por gráfico para claridad",
@@ -403,13 +374,16 @@ diccionario_visuales <- paste(
   " - Usar escalas apropiadas (logarítmicas cuando sea necesario)",
   " - Los heatmaps y correlogramas deben usar escalas de colores como Red-Blue-White Divergente",
   " - Añadir anotaciones para puntos clave cuando sea relevante",
+  " - SOLO GENERA UN SOLO HISTOGRAMA DE LA VARIABLE MÁS IMPORTANTE",
+  " - Para histogramas selecciona el número de bins aplicando la regla de la raíz cuadrada",
+  " - SIEMPRE COLOCA ETIQUETAS DE DATOS A GRÁFICOS DE BARRAS O SIMILARES A +0.5 DE LA PARTE SUPERIOR. Si hay más de 10 marras, las etiquetas deben ser verticales",
   sep = "\n"
 )
 
 construct_prompt <- function(prompt, datos_tabla, table_name) {
   columnas <- paste(colnames(datos_tabla), collapse = ", ")
   sprintf(
-    "Actúa como un analista y científico de datos experto en R para análisis de riesgo crediticio, eres un pro que usará 'datos_tabla' para analizar. Tienes acceso total a una tabla llamada 'datos_tabla' con las siguientes columnas: %s y %d filas.\n\n%s\n\n%s\n\nConsulta del usuario: %s\n\nInstrucciones adicionales:\n1. NO SIMULES DATOS; usa exclusivamente 'datos_tabla' y siempre verifica el tipo de datos de las columnas, NO SIMULES DATOS\n2. SIEMPRE crea y asigna un DataFrame llamado 'resultado_df' con los datos relevantes para todos los análisis que deriven de él\n3. SIEMPRE genera una gráfica principal asignándola a 'grafico'\n4. SIEMPRE genera tantas visualizaciones adicionales que creas necesarias para sustentar el análisis y asígnalas a 'graficoX' donde X es el número a partir de 2\n5. Usa las definiciones exactas del diccionario de contexto para los cálculos\n6. No apliques filtros a menos que se soliciten explícitamente\n7. Maneja datos faltantes con na.rm = TRUE\n8. NO comentes ningún código de gráficas\n9. Usa theme_gray() para todas las gráficas\n10. Todas las gráficas deben ser objetos ggplotly y puedes combinar con tidyplots y/o ggplot2 según se adapte mejor al requerimiento analítico (Puedes usar las visualizaciones recomendadas del diccionario de visuales) y deben renderizarse en el carrusel\n11. Asegúrate de que cada gráfica tenga un título descriptivo\n12. Asegúrate de que los gráficos sean lo más estéticos posibles siguiendo las mejores prácticas de visualización del diccionario\n13. Si las gráficas son barplots o similares, asegúrate de que tengan etiquetas de datos arriba de las barras a menos que se indique lo contrario\n14. Si te piden o propones histogramas, deben incluir una línea de densidad en rojo con punteado fino\n15. Al inicio del código, incluye este bloque para manejar paquetes:\n required_packages <- c('dplyr', 'ggplot2', 'caret', 'forecast', 'tidyverse', 'tidyplots', 'plotly', 'tidyr', 'GGally', 'ggforce', 'ggridges', 'ggalt', 'ggExtra', 'ggalluvial', 'waterfalls')\n for(pkg in required_packages) {\n if (!require(pkg, character.only = TRUE)) {\n install.packages(pkg)\n library(pkg, character.only = TRUE)\n }\n }\n16. Añade otros paquetes a required_packages según los necesites para el análisis específico\n17. SIEMPRE genera un análisis estadístico detallado que incluya:\n - PRIMERO crea un dataframe llamado 'estadisticas_numericas' que contenga todas las métricas relevantes\n - LUEGO calcula y almacena todas las correlaciones importantes en 'estadisticas_numericas'\n - DESPUÉS identifica y almacena patrones y anomalías con valores numéricos\n18. SIEMPRE genera conclusiones basadas en datos DESPUÉS de calcular las estadísticas:\n - SOLO DESPUÉS de tener 'estadisticas_numericas' completo, crea un vector de texto llamado 'conclusiones_texto'\n - Cada conclusión DEBE usar valores específicos de 'estadisticas_numericas'\n - Incluye interpretación de visualizaciones con valores numéricos exactos\n19. SIEMPRE genera recomendaciones accionables basadas en las conclusiones:\n - SOLO DESPUÉS de tener 'conclusiones_texto', crea un vector de texto llamado 'recomendaciones_texto'\n - Cada recomendación DEBE basarse en valores específicos de 'estadisticas_numericas'\n - Incluye objetivos numéricos exactos basados en los cálculos realizados\n20. Asegúrate de que todos los dataframes y variables ('resultado_df', 'estadisticas_numericas', 'conclusiones_texto', 'recomendaciones_texto') estén disponibles en el ambiente y contengan valores reales\n21. NUNCA uses print() o message() para mostrar conclusiones, usa las variables definidas\n22. Asegúrate de que todas las variables contengan valores calculados, no referencias o placeholders\n23. NO SIMULES DATOS Y NO INVENTES LAS CONCLUSIONES Y RECOMENDACIONES, CALCULA TODO PRIMERO\n24. IMPORTANTE: Las conclusiones y recomendaciones DEBEN ser vectores de texto que contengan los valores numéricos específicos calculados",
+    "Actúa como un analista y científico de datos experto en R para análisis de riesgo crediticio, eres un pro que usará 'datos_tabla' para analizar. Tienes acceso total a una tabla llamada 'datos_tabla' con las siguientes columnas: %s y %d filas.\n\n%s\n\n%s\n\nConsulta del usuario: %s\n\nInstrucciones adicionales:\n1. NO SIMULES DATOS; usa exclusivamente 'datos_tabla' y siempre verifica el tipo de datos de las columnas, NO SIMULES DATOS\n2. SIEMPRE crea y asigna un DataFrame llamado 'resultado_df' con los datos relevantes para todos los análisis que deriven de él\n3. SIEMPRE genera una gráfica principal asignándola a 'grafico'\n4. SIEMPRE genera tantas visualizaciones adicionales que creas necesarias para sustentar el análisis, pero hasta tres (3) adicionales y asígnalas a 'graficoX' donde X es el número a partir de 2\n5. Usa las definiciones exactas del diccionario de contexto para los cálculos\n6. No apliques filtros a menos que se soliciten explícitamente\n7. Maneja datos faltantes con na.rm = TRUE\n8. NO comentes ningún código de gráficas\n9. Usa theme_gray() para todas las gráficas\n10. Todas las gráficas deben ser objetos ggplotly y puedes combinar con tidyplots y/o ggplot2 según se adapte mejor al requerimiento analítico (Puedes usar las visualizaciones recomendadas del diccionario de visuales) y deben renderizarse en el carrusel\n11. Asegúrate de que cada gráfica tenga un título descriptivo\n12. Asegúrate de que los gráficos sean lo más estéticos posibles siguiendo las mejores prácticas de visualización del diccionario\n13. Si las gráficas son barplots o similares, asegúrate de que tengan etiquetas de datos arriba de las barras a menos que se indique lo contrario\n14. Si te piden o propones histogramas, deben incluir una línea de densidad en rojo con punteado fino\n15. Al inicio del código, incluye este bloque para manejar paquetes:\n required_packages <- c('dplyr', 'ggplot2', 'caret', 'forecast', 'tidyverse', 'tidyplots', 'plotly', 'tidyr', 'GGally', 'ggforce', 'ggridges', 'ggalt', 'ggExtra', 'ggalluvial', 'waterfalls')\n for(pkg in required_packages) {\n if (!require(pkg, character.only = TRUE)) {\n install.packages(pkg)\n library(pkg, character.only = TRUE)\n }\n }\n16. Añade otros paquetes a required_packages según los necesites para el análisis específico\n17. SIEMPRE genera un análisis estadístico detallado que incluya:\n - PRIMERO crea un dataframe llamado 'estadisticas_numericas' que contenga todas las métricas relevantes\n - LUEGO calcula y almacena todas las correlaciones importantes en 'estadisticas_numericas'\n - DESPUÉS identifica y almacena patrones y anomalías con valores numéricos\n18. SIEMPRE genera conclusiones basadas en datos DESPUÉS de calcular las estadísticas:\n - SOLO DESPUÉS de tener 'estadisticas_numericas' completo, crea un vector de texto llamado 'conclusiones_texto'\n - Cada conclusión DEBE usar valores específicos de 'estadisticas_numericas'\n - Incluye interpretación de visualizaciones con valores numéricos exactos\n19. SIEMPRE genera recomendaciones accionables basadas en las conclusiones:\n - SOLO DESPUÉS de tener 'conclusiones_texto', crea un vector de texto llamado 'recomendaciones_texto'\n - Cada recomendación DEBE basarse en valores específicos de 'estadisticas_numericas'\n - Incluye objetivos numéricos exactos basados en los cálculos realizados\n20. Asegúrate de que todos los dataframes y variables ('resultado_df', 'estadisticas_numericas', 'conclusiones_texto', 'recomendaciones_texto') estén disponibles en el ambiente y contengan valores reales\n21. NUNCA uses print() o message() para mostrar conclusiones, usa las variables definidas\n22. Asegúrate de que todas las variables contengan valores calculados, no referencias o placeholders\n23. NO SIMULES DATOS Y NO INVENTES LAS CONCLUSIONES Y RECOMENDACIONES, CALCULA TODO PRIMERO\n24. IMPORTANTE: Las conclusiones y recomendaciones DEBEN ser vectores de texto que contengan los valores numéricos específicos calculados\n25. MANDATORIO: CALCULA TODAS LAS VARIABLES DECLARADAS Y REVISA LA SINTAXIS DEL CÓDIGO Y VARIABLES, CORRIGE ERRORES ANTES DE DE RESPONDER",
     columnas, nrow(datos_tabla), diccionario_contexto, diccionario_visuales, prompt
   )
 }
@@ -441,8 +415,8 @@ consultar_ia <- function(prompt, datos_tabla, table_name, provider, model) {
         body = list(
           model = model,
           messages = list(
-            list(role = "system", content = "Eres un experto en análisis de datos y visualización en R."),
-            list(role = "user", content = prompt_completo)
+            list(role = "system", content = "Eres un experto en análisis y ciencia de datos y visualización en R. Utiliza ÚNICAMENTE los datos proporcionados en 'datos_tabla'. NO simules ni generes datos aleatorios bajo ninguna circunstancia., SOLO DEBES ANALIZAR:",datos_tabla, "DEBES TENER MUCHÍSIMO CUIDADO CON LA SINTAXIS Y RESPETAR LAS VARIABLES DECLARADAS, DEBES REVISAR Y CORREGIR ERRORES (UNEXPECTED SYMBOLS) EN EL CODIGO ANTES DE RESPONDER"),
+            list(role = "user", content = paste("CRITICO: DEBES USAR REASONING PASO A PASO PARA ANALIZAR Y DEBES TENER CUIDADO CON LA SINTAXIS Y VARIABLES DECLARADAS, CUIDA DE COMAS, COMILLAS, PARÉNTESIS Y LLAVES COMO EXPERTO EN CODING",prompt_completo,"MANDATORIO: REVISA EL CÓDIGO Y CORRIGE ERRORES ANTES DE DAR LA RESPUESTA COMPLETA"))
           ),
           max_tokens = 800,
           temperature = 0.5
@@ -501,8 +475,8 @@ consultar_ia <- function(prompt, datos_tabla, table_name, provider, model) {
         body = list(
           model = model,
           messages = list(
-            list(role = "system", content = "Eres un experto en análisis y ciencia de datos y visualización en R. Utiliza ÚNICAMENTE los datos proporcionados en 'datos_tabla'. NO simules ni generes datos aleatorios bajo ninguna circunstancia., SOLO DEBES ANALIZAR:",datos_tabla),
-            list(role = "user", content = prompt_completo)
+            list(role = "system", content = "Eres un experto en análisis y ciencia de datos y visualización en R. Utiliza ÚNICAMENTE los datos proporcionados en 'datos_tabla'. NO simules ni generes datos aleatorios bajo ninguna circunstancia., SOLO DEBES ANALIZAR:",datos_tabla, "DEBES TENER MUCHÍSIMO CUIDADO CON LA SINTAXIS Y RESPETAR LAS VARIABLES DECLARADAS, DEBES REVISAR Y CORREGIR ERRORES (UNEXPECTED SYMBOLS) EN EL CODIGO ANTES DE RESPONDER"),
+            list(role = "user", content = paste("CRITICO: DEBES USAR REASONING PASO A PASO PARA ANALIZAR Y DEBES TENER CUIDADO CON LA SINTAXIS Y VARIABLES DECLARADAS, CUIDA DE COMAS, COMILLAS, PARÉNTESIS Y LLAVES COMO EXPERTO EN CODING",prompt_completo,"MANDATORIO: REVISA EL CÓDIGO Y CORRIGE ERRORES ANTES DE DAR LA RESPUESTA COMPLETA"))
           ),
           max_tokens = 8000,
           temperature = 0.2,
