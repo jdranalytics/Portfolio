@@ -80,9 +80,9 @@ Aquí presento una colección de algunos de mis proyectos:
 | Categoría                    | Herramientas                              |
 |------------------------------|-------------------------------------------|
 | **Lenguajes**                | Python, R, DAX, M, SQL                       |
-| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow     |
+| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow, AI Generativa    |
 | **Bases de Datos**           | Access, SQL Server, MySQL, Google Cloud, BigQuery |
-| **Herramientas BI**          | Power BI, Tableau, Looker Studio          |
+| **Herramientas BI**          | Power BI, Tableau, Looker Studio, Shiny        |
 
 ## 📬 Contacto
 - [Correo](mailto:ing.jd.rojas@gmail.com)  
