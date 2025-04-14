@@ -8,7 +8,7 @@ Aquí presento una colección de algunos de mis proyectos:
   - 📁 **Data Sources**: Fuentes de datos disponibles para los proyectos.  
   - 📁 **Python**: Proyectos desarrollados en Python.  
   - 📁 **R**: Proyectos desarrollados en R.
-  - 
+    
 - **[Portafolio en Video](https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko)**  
   Demostraciones visuales de algunos de mis proyectos y habilidades en acción.  
 
@@ -68,10 +68,10 @@ Aquí presento una colección de algunos de mis proyectos:
       <br>Análisis de Riesgo Crediticio (Shiny App + Asistente AI)
     </td>
     <td align="center">
-      <a href="https://youtu.be/Gw61TO7Aitk">
-        <img src="https://img.youtube.com/vi/Gw61TO7Aitk/0.jpg" alt="Tablero Excel (COVID-19)" width="250"/>
+      <a href="https://youtu.be/fZLZ_h8GHq8">
+        <img src="https://img.youtube.com/vi/fZLZ_h8GHq8/0.jpg" alt="Asistente AI" width="250"/>
       </a>
-      <br>Tablero Excel (COVID-19)
+      <br>Asistente AI para análisis de datos (Streamlit)
     </td>
   </tr>
 </table>
@@ -80,9 +80,9 @@ Aquí presento una colección de algunos de mis proyectos:
 | Categoría                    | Herramientas                              |
 |------------------------------|-------------------------------------------|
 | **Lenguajes**                | Python, R, DAX, M, SQL                       |
-| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow     |
+| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow, AI Generativa    |
 | **Bases de Datos**           | Access, SQL Server, MySQL, Google Cloud, BigQuery |
-| **Herramientas BI**          | Power BI, Tableau, Looker Studio          |
+| **Herramientas BI**          | Power BI, Tableau, Looker Studio, Shiny        |
 
 ## 📬 Contacto
 - [Correo](mailto:ing.jd.rojas@gmail.com)  
