@@ -4,7 +4,8 @@ from faker import Faker
 import random
 from datetime import datetime, timedelta
 
-fake = Faker(['es_ES'])  # Configurar Faker para nombres en español
+# Configurar Faker para Colombia
+fake = Faker(['es_CO'])  # Usar localización colombiana
 random.seed(42)
 np.random.seed(42)
 
@@ -20,6 +21,7 @@ def generar_fecha_aleatoria(inicio, fin):
 def generar_dataset_credito(n):
     data = {
         'id_cliente': [fake.uuid4() for _ in range(n)],
+        'cedula_ciudadania': [fake.ssn() for _ in range(n)],  
         'nombre': [fake.first_name() for _ in range(n)],
         'apellido': [fake.last_name() for _ in range(n)],
         'edad': [random.randint(18, 80) for _ in range(n)],
@@ -36,7 +38,7 @@ def generar_dataset_credito(n):
     
     df = pd.DataFrame(data)
     
-    # Primero generamos la decisión inicial (0 o 1)
+    # Generar decisión inicial (0 o 1) para solicitud_credito
     df['solicitud_credito'] = df.apply(
         lambda row: 1 if (row['puntaje_crediticio'] > 650 and 
                          row['ingresos_anuales'] > 30000 and 
@@ -44,36 +46,37 @@ def generar_dataset_credito(n):
                          row['deuda_actual'] < row['ingresos_anuales'] * 0.4) 
         else 0, axis=1)
     
-    # Definimos el rango de los últimos dos meses
+    # Definir el rango de los últimos dos meses
     fecha_limite = fecha_fin - timedelta(days=60)  # 60 días antes de fecha_fin (20 de enero de 2025)
     
-    # Creamos una máscara para los últimos dos meses
+    # Crear máscara para los últimos dos meses
     mask_ultimos_dos_meses = df['fecha_solicitud'] >= fecha_limite
     
-    # Contamos cuántos registros hay en los últimos dos meses
-    n_ultimos_dos_meses = mask_ultimos_dos_meses.sum()
-    
-    # Generamos una máscara aleatoria solo para los últimos dos meses, con 25-30% de nulos
+    # Generar máscara aleatoria para nulos solo en los últimos dos meses (25-30% de nulos)
     mask_nulls = np.random.random(n) < 0.25  # 25% de probabilidad de ser null
-    mask_final = mask_ultimos_dos_meses & mask_nulls  # Combinamos las máscaras
+    mask_final = mask_ultimos_dos_meses & mask_nulls  # Combinar máscaras
     
-    # Asignamos NaN solo a los registros en los últimos dos meses seleccionados por la máscara
+    # Asignar NaN a los registros seleccionados en los últimos dos meses
     df.loc[mask_final, 'solicitud_credito'] = np.nan
     
-    # Fechas
+    # Procesar fechas
     df['fecha_solicitud'] = pd.to_datetime(df['fecha_solicitud'])
     df['inicio_mes'] = df['fecha_solicitud'].dt.to_period('M').dt.to_timestamp()
     df['inicio_semana'] = df['fecha_solicitud'] - pd.to_timedelta(df['fecha_solicitud'].dt.dayofweek + 1, unit='D') + pd.to_timedelta(1, unit='D')
     
+    # Ordenar por fecha_solicitud y resetear índice
     df = df.sort_values('fecha_solicitud').reset_index(drop=True)
     
     return df
 
+# Generar dataset
 dataset = generar_dataset_credito(n_registros)
 
+# Mostrar primeras 5 filas
 print("Primeras 5 filas del dataset:")
 print(dataset.head())
 
+# Guardar dataset
 dataset.to_csv('dataset_credito_sintetico_temporal.csv', index=False)
 print("\nDataset guardado como 'dataset_credito_sintetico_temporal.csv'")
 
@@ -84,9 +87,10 @@ print(f"En espera (NaN): {proporcion.get(np.nan, 0):.2f}%")
 print(f"Créditos Aprobados (1): {proporcion.get(1, 0):.2f}%")
 print(f"Créditos No Aprobados (0): {proporcion.get(0, 0):.2f}%")
 
+# Estadísticas básicas
 print("\nEstadísticas básicas del dataset:")
 print(dataset.describe())
 
-# Verificación adicional: Conteo de nulos por mes
+# Conteo de nulos por mes
 print("\nConteo de valores nulos por mes en 'solicitud_credito':")
 print(dataset.groupby(dataset['fecha_solicitud'].dt.to_period('M'))['solicitud_credito'].apply(lambda x: x.isna().sum()))
