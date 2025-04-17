@@ -6,16 +6,21 @@ from google.oauth2 import service_account
 from google.api_core.exceptions import GoogleAPICallError
 import os
 import requests
+import logging
 
-# Configuración de Discord
+# Configuración de logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Configuración de Discord (mantenida sin cambios)
 DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1354192765130375248/MF7bEPPlHnrzgYnJJ4iev7xTr0TrxVpqKw_MOVVIRseppELwK0hBM7VMZf8DQnVPpvh6"
 
-# Configuración de BigQuery - Rutas para Windows accedidas desde Ubuntu
+# Configuración de BigQuery (mantenida sin cambios)
 PROJECT_ID = "adroit-terminus-450816-r9"
 DATASET_ID = "solicitudes_credito"
 TABLE_ID = "solicitudes"
-CREDENTIALS_PATH = "/mnt/c/Users/joey_/Desktop/AIRFLOW/adroit-terminus-450816-r9-1b90cfcf6a76.json"  
-CSV_FILE_PATH = "/mnt/c/Users/joey_/Documents/Visual Code (Clone)/Portfolio/Data Sources/dataset_credito_sintetico_temporal.csv" 
+CREDENTIALS_PATH = "/mnt/c/Users/joey_/Desktop/AIRFLOW/adroit-terminus-450816-r9-1b90cfcf6a76.json"
+CSV_FILE_PATH = "/mnt/c/Users/joey_/Documents/Visual Code (Clone)/Portfolio/Data Sources/dataset_credito_sintetico_temporal.csv"
 
 def send_discord_message(message, success=True):
     """Envía un mensaje a Discord con el estado de la ejecución"""
@@ -35,21 +40,25 @@ def send_discord_message(message, success=True):
         }
         
         response = requests.post(DISCORD_WEBHOOK_URL, json=payload)
-        if response.status_code != 204:
-            print(f"Error al enviar mensaje a Discord: {response.text}")
+        response.raise_for_status()
+        logger.info("Mensaje enviado a Discord")
     except Exception as e:
-        print(f"Error al enviar mensaje a Discord: {e}")
+        logger.error(f"Error al enviar mensaje a Discord: {e}")
 
 def get_bigquery_client():
     """Crea y retorna un cliente de BigQuery"""
-    if not os.path.exists(CREDENTIALS_PATH):
-        raise FileNotFoundError(f"No se encontró el archivo de credenciales: {CREDENTIALS_PATH}")
-    
-    credentials = service_account.Credentials.from_service_account_file(
-        CREDENTIALS_PATH,
-        scopes=["https://www.googleapis.com/auth/cloud-platform"]
-    )
-    return bigquery.Client(credentials=credentials, project=PROJECT_ID)
+    try:
+        if not os.path.exists(CREDENTIALS_PATH):
+            raise FileNotFoundError(f"No se encontró el archivo de credenciales: {CREDENTIALS_PATH}")
+        
+        credentials = service_account.Credentials.from_service_account_file(
+            CREDENTIALS_PATH,
+            scopes=["https://www.googleapis.com/auth/cloud-platform"]
+        )
+        return bigquery.Client(credentials=credentials, project=PROJECT_ID)
+    except Exception as e:
+        logger.error(f"Error al crear cliente de BigQuery: {e}")
+        raise
 
 def load_csv_to_bigquery():
     """Carga el CSV a la tabla solicitudes"""
@@ -68,11 +77,8 @@ def load_csv_to_bigquery():
 
     client = get_bigquery_client()
     file_size = os.path.getsize(CSV_FILE_PATH) / 1024 / 1024
-    start_message = f"Iniciando carga de datos a BigQuery\n" \
-                    f"- Dataset: {DATASET_ID}\n" \
-                    f"- Tabla: {TABLE_ID}\n" \
-                    f"- Tamaño archivo: {file_size:.2f} MB"
-    print(start_message)
+    start_message = f"Iniciando carga de datos a BigQuery\n- Dataset: {DATASET_ID}\n- Tabla: {TABLE_ID}\n- Tamaño archivo: {file_size:.2f} MB"
+    logger.info(start_message)
     send_discord_message(start_message, success=True)
 
     try:
@@ -83,60 +89,43 @@ def load_csv_to_bigquery():
                 job_config=job_config
             )
         job.result()
-        success_message = f"✅ Carga completada con éxito!\n" \
-                         f"- Tabla: {PROJECT_ID}.{DATASET_ID}.{TABLE_ID}\n" \
-                         f"- Filas cargadas: {job.output_rows:,}"
-        print(success_message)
+        success_message = f"✅ Carga completada con éxito!\n- Tabla: {PROJECT_ID}.{DATASET_ID}.{TABLE_ID}\n- Filas cargadas: {job.output_rows:,}"
+        logger.info(success_message)
         send_discord_message(success_message, success=True)
-        return True
     except GoogleAPICallError as e:
-        error_message = f"⚠️ Error en la API de Google:\n" \
-                        f"- Error: {str(e)}\n" \
-                        f"- Código: {getattr(e, 'code', 'N/A')}\n" \
-                        f"- Dataset: {DATASET_ID}\n" \
-                        f"- Tabla: {TABLE_ID}"
-        print(error_message)
+        error_message = f"⚠️ Error en la API de Google:\n- Error: {str(e)}\n- Código: {getattr(e, 'code', 'N/A')}\n- Dataset: {DATASET_ID}\n- Tabla: {TABLE_ID}"
+        logger.error(error_message)
         send_discord_message(error_message, success=False)
-        return False
+        raise
     except Exception as e:
-        error_message = f"❌ Error inesperado:\n" \
-                        f"- Tipo: {type(e).__name__}\n" \
-                        f"- Detalles: {str(e)}\n" \
-                        f"- Dataset: {DATASET_ID}\n" \
-                        f"- Tabla: {TABLE_ID}"
-        print(error_message)
+        error_message = f"❌ Error inesperado:\n- Tipo: {type(e).__name__}\n- Detalles: {str(e)}\n- Dataset: {DATASET_ID}\n- Tabla: {TABLE_ID}"
+        logger.error(error_message)
         send_discord_message(error_message, success=False)
-        return False
+        raise
 
 def run_query(query, task_name):
     """Ejecuta una consulta en BigQuery y maneja errores"""
     client = get_bigquery_client()
     start_message = f"Iniciando tarea: {task_name}"
-    print(start_message)
+    logger.info(start_message)
     send_discord_message(start_message, success=True)
 
     try:
         query_job = client.query(query)
         query_job.result()
-        success_message = f"✅ Tarea completada: {task_name}\n" \
-                         f"- Filas afectadas: {query_job.num_dml_affected_rows if query_job.num_dml_affected_rows is not None else 'N/A'}"
-        print(success_message)
+        success_message = f"✅ Tarea completada: {task_name}\n- Filas afectadas: {query_job.num_dml_affected_rows if query_job.num_dml_affected_rows is not None else 'N/A'}"
+        logger.info(success_message)
         send_discord_message(success_message, success=True)
-        return True
     except GoogleAPICallError as e:
-        error_message = f"⚠️ Error en la API de Google (tarea: {task_name}):\n" \
-                        f"- Error: {str(e)}\n" \
-                        f"- Código: {getattr(e, 'code', 'N/A')}"
-        print(error_message)
+        error_message = f"⚠️ Error en la API de Google (tarea: {task_name}):\n- Error: {str(e)}\n- Código: {getattr(e, 'code', 'N/A')}"
+        logger.error(error_message)
         send_discord_message(error_message, success=False)
-        return False
+        raise
     except Exception as e:
-        error_message = f"❌ Error inesperado (tarea: {task_name}):\n" \
-                        f"- Tipo: {type(e).__name__}\n" \
-                        f"- Detalles: {str(e)}"
-        print(error_message)
+        error_message = f"❌ Error inesperado (tarea: {task_name}):\n- Tipo: {type(e).__name__}\n- Detalles: {str(e)}"
+        logger.error(error_message)
         send_discord_message(error_message, success=False)
-        return False
+        raise
 
 def update_aggregated_table():
     """Actualiza la tabla solicitudes_agregadas"""
@@ -155,7 +144,7 @@ def update_aggregated_table():
     GROUP BY fecha_mes
     ORDER BY fecha_mes;
     """
-    return run_query(query, "Actualizar tabla solicitudes_agregadas")
+    run_query(query, "Actualizar tabla solicitudes_agregadas")
 
 def retrain_forecast_models():
     """Reentrena los modelos de pronóstico"""
@@ -214,9 +203,7 @@ def retrain_forecast_models():
     ]
 
     for query, task_name in queries:
-        if not run_query(query, task_name):
-            return False
-    return True
+        run_query(query, task_name)
 
 def update_forecasts():
     """Actualiza los pronósticos"""
@@ -292,17 +279,16 @@ def update_forecasts():
     ]
 
     for query, task_name in queries:
-        if not run_query(query, task_name):
-            return False
-    return True
+        run_query(query, task_name)
 
 def retrain_clustering_model():
-    """Reentrena el modelo de clustering"""
+    """Reentrena el modelo de clustering con k=5"""
     query = """
     CREATE OR REPLACE MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering`
     OPTIONS(
       model_type='kmeans',
-      num_clusters=3
+      num_clusters=5,
+      standardize_features=TRUE
     ) AS
     SELECT
       edad,
@@ -313,7 +299,82 @@ def retrain_clustering_model():
       numero_dependientes
     FROM `adroit-terminus-450816-r9.solicitudes_credito.solicitudes`;
     """
-    return run_query(query, "Reentrenar modelo_clustering")
+    run_query(query, "Reentrenar modelo_clustering")
+
+def elbow_analysis():
+    """Realiza análisis de Elbow para k=2 a k=6"""
+    queries = [
+        (
+            """
+            CREATE OR REPLACE MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k2`
+            OPTIONS(model_type='kmeans', num_clusters=2, standardize_features=TRUE) AS
+            SELECT edad, ingresos_anuales, puntaje_crediticio, deuda_actual, antiguedad_laboral, numero_dependientes
+            FROM `adroit-terminus-450816-r9.solicitudes_credito.solicitudes`;
+            """,
+            "Modelo k=2"
+        ),
+        (
+            """
+            CREATE OR REPLACE MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k3`
+            OPTIONS(model_type='kmeans', num_clusters=3, standardize_features=TRUE) AS
+            SELECT edad, ingresos_anuales, puntaje_crediticio, deuda_actual, antiguedad_laboral, numero_dependientes
+            FROM `adroit-terminus-450816-r9.solicitudes_credito.solicitudes`;
+            """,
+            "Modelo k=3"
+        ),
+        (
+            """
+            CREATE OR REPLACE MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k4`
+            OPTIONS(model_type='kmeans', num_clusters=4, standardize_features=TRUE) AS
+            SELECT edad, ingresos_anuales, puntaje_crediticio, deuda_actual, antiguedad_laboral, numero_dependientes
+            FROM `adroit-terminus-450816-r9.solicitudes_credito.solicitudes`;
+            """,
+            "Modelo k=4"
+        ),
+        (
+            """
+            CREATE OR REPLACE MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k5`
+            OPTIONS(model_type='kmeans', num_clusters=5, standardize_features=TRUE) AS
+            SELECT edad, ingresos_anuales, puntaje_crediticio, deuda_actual, antiguedad_laboral, numero_dependientes
+            FROM `adroit-terminus-450816-r9.solicitudes_credito.solicitudes`;
+            """,
+            "Modelo k=5"
+        ),
+        (
+            """
+            CREATE OR REPLACE MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k6`
+            OPTIONS(model_type='kmeans', num_clusters=6, standardize_features=TRUE) AS
+            SELECT edad, ingresos_anuales, puntaje_crediticio, deuda_actual, antiguedad_laboral, numero_dependientes
+            FROM `adroit-terminus-450816-r9.solicitudes_credito.solicitudes`;
+            """,
+            "Modelo k=6"
+        ),
+        (
+            """
+            CREATE OR REPLACE TABLE `adroit-terminus-450816-r9.solicitudes_credito.elbow_analysis` AS
+            SELECT
+              2 AS num_clusters, davies_bouldin_index, mean_squared_distance
+            FROM ML.EVALUATE(MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k2`)
+            UNION ALL
+            SELECT 3, davies_bouldin_index, mean_squared_distance
+            FROM ML.EVALUATE(MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k3`)
+            UNION ALL
+            SELECT 4, davies_bouldin_index, mean_squared_distance
+            FROM ML.EVALUATE(MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k4`)
+            UNION ALL
+            SELECT 5, davies_bouldin_index, mean_squared_distance
+            FROM ML.EVALUATE(MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k5`)
+            UNION ALL
+            SELECT 6, davies_bouldin_index, mean_squared_distance
+            FROM ML.EVALUATE(MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_clustering_k6`)
+            ORDER BY num_clusters;
+            """,
+            "Análisis Elbow"
+        )
+    ]
+
+    for query, task_name in queries:
+        run_query(query, task_name)
 
 def update_clusters():
     """Actualiza las tablas de clusters"""
@@ -361,33 +422,36 @@ def update_clusters():
     ]
 
     for query, task_name in queries:
-        if not run_query(query, task_name):
-            return False
-    return True
+        run_query(query, task_name)
 
 def retrain_logistic_model():
-    """Reentrena el modelo de regresión logística"""
+    """Reentrena el modelo de regresión logística con escalado"""
     query = """
     CREATE OR REPLACE MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_aprobacion`
-    OPTIONS(
-      model_type='logistic_reg',
-      input_label_cols=['solicitud_credito']
-    ) AS
-    SELECT
-      edad,
-      ingresos_anuales,
-      puntaje_crediticio,
+    TRANSFORM(
+      ML.STANDARD_SCALER(edad) OVER () AS edad,
+      ML.STANDARD_SCALER(ingresos_anuales) OVER () AS ingresos_anuales,
+      ML.STANDARD_SCALER(puntaje_crediticio) OVER () AS puntaje_crediticio,
+      ML.STANDARD_SCALER(deuda_actual) OVER () AS deuda_actual,
+      ML.STANDARD_SCALER(antiguedad_laboral) OVER () AS antiguedad_laboral,
       historial_pagos,
-      deuda_actual,
-      antiguedad_laboral,
       estado_civil,
       numero_dependientes,
       tipo_empleo,
       solicitud_credito
+    )
+    OPTIONS(
+      model_type='logistic_reg',
+      input_label_cols=['solicitud_credito'],
+      l2_reg=1.0,
+      auto_class_weights=TRUE,
+      data_split_method='AUTO_SPLIT'
+    ) AS
+    SELECT *
     FROM `adroit-terminus-450816-r9.solicitudes_credito.solicitudes`
     WHERE solicitud_credito IS NOT NULL;
     """
-    return run_query(query, "Reentrenar modelo_aprobacion")
+    run_query(query, "Reentrenar modelo_aprobacion")
 
 def update_logistic_predictions():
     """Actualiza las predicciones del modelo de regresión logística"""
@@ -412,7 +476,16 @@ def update_logistic_predictions():
       FROM `adroit-terminus-450816-r9.solicitudes_credito.solicitudes`
       WHERE solicitud_credito IS NULL));
     """
-    return run_query(query, "Actualizar predicciones_aprobaciones_reglog")
+    run_query(query, "Actualizar predicciones_aprobaciones_reglog")
+
+def evaluate_logistic_model():
+    """Evalúa el modelo de regresión logística"""
+    query = """
+    CREATE OR REPLACE TABLE `adroit-terminus-450816-r9.solicitudes_credito.evaluacion_modelo_reglog` AS
+    SELECT *
+    FROM ML.EVALUATE(MODEL `adroit-terminus-450816-r9.solicitudes_credito.modelo_aprobacion`);
+    """
+    run_query(query, "Evaluar modelo_aprobacion")
 
 def update_combined_table():
     """Actualiza la tabla combinada de históricos y pronósticos"""
@@ -420,13 +493,13 @@ def update_combined_table():
     CREATE OR REPLACE TABLE `adroit-terminus-450816-r9.solicitudes_credito.forecast_combinado` AS
     SELECT
       fecha_mes,
-      total_solicitudes AS total_solicitudes,
+      total_solicitudes,
       NULL AS total_solicitudes_lower,
       NULL AS total_solicitudes_upper,
-      solicitudes_aprobadas AS solicitudes_aprobadas,
+      solicitudes_aprobadas,
       NULL AS solicitudes_aprobadas_lower,
       NULL AS solicitudes_aprobadas_upper,
-      tasa_aprobacion AS tasa_aprobacion,
+      tasa_aprobacion,
       NULL AS tasa_aprobacion_lower,
       NULL AS tasa_aprobacion_upper,
       'Histórico' AS tipo_dato
@@ -447,7 +520,7 @@ def update_combined_table():
     FROM `adroit-terminus-450816-r9.solicitudes_credito.forecast_final`
     ORDER BY fecha_mes, tipo_dato;
     """
-    return run_query(query, "Actualizar forecast_combinado")
+    run_query(query, "Actualizar forecast_combinado")
 
 # Configuración por defecto del DAG
 default_args = {
@@ -455,7 +528,7 @@ default_args = {
     'depends_on_past': False,
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 1,
+    'retries': 2,
     'retry_delay': timedelta(minutes=5),
 }
 
@@ -463,7 +536,7 @@ default_args = {
 with DAG(
     'bigquery_etl_ml_risk_analysis',
     default_args=default_args,
-    description='ETL para solicitudes de crédito en BigQuery',
+    description='ETL para solicitudes de crédito en BigQuery con ML',
     schedule_interval=timedelta(days=1),
     start_date=datetime(2025, 3, 27),
     catchup=False,
@@ -473,54 +546,67 @@ with DAG(
     load_csv_task = PythonOperator(
         task_id='load_csv_to_bigquery',
         python_callable=load_csv_to_bigquery,
+        retries=3
     )
 
     # Tarea 2: Actualizar tabla agregada
     update_agg_task = PythonOperator(
         task_id='update_aggregated_table',
-        python_callable=update_aggregated_table,
+        python_callable=update_aggregated_table
     )
 
     # Tarea 3: Reentrenar modelos de pronóstico
     retrain_forecast_task = PythonOperator(
         task_id='retrain_forecast_models',
-        python_callable=retrain_forecast_models,
+        python_callable=retrain_forecast_models
     )
 
     # Tarea 4: Actualizar pronósticos
     update_forecasts_task = PythonOperator(
         task_id='update_forecasts',
-        python_callable=update_forecasts,
+        python_callable=update_forecasts
     )
 
     # Tarea 5: Reentrenar modelo de clustering
     retrain_clustering_task = PythonOperator(
         task_id='retrain_clustering_model',
-        python_callable=retrain_clustering_model,
+        python_callable=retrain_clustering_model
     )
 
-    # Tarea 6: Actualizar tablas de clusters
+    # Tarea 6: Análisis de Elbow
+    elbow_analysis_task = PythonOperator(
+        task_id='elbow_analysis',
+        python_callable=elbow_analysis
+    )
+
+    # Tarea 7: Actualizar tablas de clusters
     update_clusters_task = PythonOperator(
         task_id='update_clusters',
-        python_callable=update_clusters,
+        python_callable=update_clusters
     )
 
-    # Tarea 7: Reentrenar modelo de regresión logística
+    # Tarea 8: Reentrenar modelo de regresión logística
     retrain_logistic_task = PythonOperator(
         task_id='retrain_logistic_model',
-        python_callable=retrain_logistic_model,
+        python_callable=retrain_logistic_model
     )
 
-    # Tarea 8: Actualizar predicciones de regresión logística
+    # Tarea 9: Actualizar predicciones de regresión logística
     update_logistic_pred_task = PythonOperator(
         task_id='update_logistic_predictions',
-        python_callable=update_logistic_predictions,
+        python_callable=update_logistic_predictions
     )
 
-    # Tarea 9: Actualizar tabla combinada
+    # Tarea 10: Evaluar modelo de regresión logística
+    evaluate_logistic_task = PythonOperator(
+        task_id='evaluate_logistic_model',
+        python_callable=evaluate_logistic_model
+    )
+
+    # Tarea 11: Actualizar tabla combinada
     update_combined_task = PythonOperator(
         task_id='update_combined_table',
-        python_callable=update_combined_table,
+        python_callable=update_combined_table
     )
 
     # Tarea final: Notificación de éxito
@@ -530,13 +616,14 @@ with DAG(
         op_kwargs={'message': '🎉 Proceso de actualización completado con éxito!', 'success': True}
     )
 
-    # Definir dependencias entre tareas
+    # Definir dependencias
     load_csv_task >> update_agg_task
     update_agg_task >> retrain_forecast_task
     retrain_forecast_task >> update_forecasts_task
-    update_forecasts_task >> retrain_clustering_task
-    retrain_clustering_task >> update_clusters_task
-    update_clusters_task >> retrain_logistic_task
+    update_forecasts_task >> [retrain_clustering_task, retrain_logistic_task]  # Paralelizar clustering y regresión
+    retrain_clustering_task >> [update_clusters_task, elbow_analysis_task]  # Análisis de Elbow en paralelo
+    update_clusters_task >> update_combined_task
     retrain_logistic_task >> update_logistic_pred_task
-    update_logistic_pred_task >> update_combined_task
+    update_logistic_pred_task >> evaluate_logistic_task
+    [evaluate_logistic_task, update_clusters_task] >> update_combined_task
     update_combined_task >> notify_success_task
