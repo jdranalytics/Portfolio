@@ -6,7 +6,7 @@ import requests
 from datetime import datetime
 
 # Configuración de Discord
-DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1354192765130375248/MF7bEPPlHnrzgYnJJ4iev7xTr0TrxVpqKw_MOVVIRseppELwK0hBM7VMZf8DQnVPpvh6"
+DISCORD_WEBHOOK_URL = "XXXXXXXXXXXXXXXXXXXXXXXX"
 
 def send_discord_message(message, success=True):
     """Envía un mensaje a Discord con el estado de la ejecución"""

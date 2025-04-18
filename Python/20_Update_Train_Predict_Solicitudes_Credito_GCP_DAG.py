@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Configuración de Discord (mantenida sin cambios)
-DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1354192765130375248/MF7bEPPlHnrzgYnJJ4iev7xTr0TrxVpqKw_MOVVIRseppELwK0hBM7VMZf8DQnVPpvh6"
+DISCORD_WEBHOOK_URL = "XXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 # Configuración de BigQuery (mantenida sin cambios)
 PROJECT_ID = "adroit-terminus-450816-r9"

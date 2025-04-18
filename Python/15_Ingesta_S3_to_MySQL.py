@@ -34,7 +34,7 @@ EMAIL_FROM = "ringoquimico@gmail.com"
 EMAIL_TO = "ing.jd.rojas@gmail.com"
 
 # Configuración de Discord
-DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1354192765130375248/MF7bEPPlHnrzgYnJJ4iev7xTr0TrxVpqKw_MOVVIRseppELwK0hBM7VMZf8DQnVPpvh6"
+DISCORD_WEBHOOK_URL = "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS"
 
 # Textos para notificaciones
 EMAIL_SUBJECT_NO_FILES = "Ingesta de archivos Excel desde S3 a MySQL: No se encontraron archivos Excel en S3"
