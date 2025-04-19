@@ -19,8 +19,28 @@ def generar_fecha_aleatoria(inicio, fin):
     return inicio + timedelta(days=dias_aleatorios)
 
 def generar_dataset_credito(n):
+    # Primero generamos todas las fechas y las ordenamos
+    fechas = [generar_fecha_aleatoria(fecha_inicio, fecha_fin) for _ in range(n)]
+    fechas.sort()  # Ordenamos las fechas
+    
+    # Generamos los IDs secuenciales basados en las fechas
+    ids = []
+    contador_diario = {}  # Diccionario para mantener conteo por día
+    
+    for fecha in fechas:
+        fecha_str = fecha.strftime('%Y%m%d')
+        if fecha_str not in contador_diario:
+            contador_diario[fecha_str] = 1
+        else:
+            contador_diario[fecha_str] += 1
+        
+        # Crear ID con formato RA-YYYYMMDDXX donde XX es el contador del día
+        id_solicitud = f"RA-{fecha_str}{contador_diario[fecha_str]:02d}"
+        ids.append(id_solicitud)
+    
     data = {
-        'id_solicitud': [fake.uuid4() for _ in range(n)],
+        'id_solicitud': ids,
+        'fecha_solicitud': fechas,
         'cedula_ciudadania': [fake.ssn() for _ in range(n)],  
         'nombre': [fake.first_name() for _ in range(n)],
         'apellido': [fake.last_name() for _ in range(n)],
@@ -33,7 +53,6 @@ def generar_dataset_credito(n):
         'estado_civil': [random.choice(['Soltero', 'Casado', 'Divorciado', 'Viudo']) for _ in range(n)],
         'numero_dependientes': [random.randint(0, 5) for _ in range(n)],
         'tipo_empleo': [random.choice(['Fijo', 'Temporal', 'Autonomo', 'Desempleado']) for _ in range(n)],
-        'fecha_solicitud': [generar_fecha_aleatoria(fecha_inicio, fecha_fin) for _ in range(n)],
     }
     
     df = pd.DataFrame(data)
