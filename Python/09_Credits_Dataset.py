@@ -20,12 +20,12 @@ def generar_fecha_aleatoria(inicio, fin):
 
 def generar_dataset_credito(n):
     data = {
-        'id_cliente': [fake.uuid4() for _ in range(n)],
+        'id_solicitud': [fake.uuid4() for _ in range(n)],
         'cedula_ciudadania': [fake.ssn() for _ in range(n)],  
         'nombre': [fake.first_name() for _ in range(n)],
         'apellido': [fake.last_name() for _ in range(n)],
         'edad': [random.randint(18, 80) for _ in range(n)],
-        'ingresos_anuales': [round(random.uniform(15000, 150000), 2) for _ in range(n)],
+        'ingresos_anuales': [round(random.uniform(15000, 250000), 2) for _ in range(n)],
         'puntaje_crediticio': [random.randint(300, 850) for _ in range(n)],
         'historial_pagos': [random.choice(['Bueno', 'Regular', 'Malo']) for _ in range(n)],
         'deuda_actual': [round(random.uniform(0, 50000), 2) for _ in range(n)],
