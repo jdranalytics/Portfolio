@@ -35,7 +35,7 @@ st.set_page_config(page_title="Risk Analysis", layout="wide", page_icon="💰")
 PROJECT_ID = "adroit-terminus-450816-r9"
 DATASET_ID = "solicitudes_credito"
 CREDENTIALS_PATH = "C:/Users/joey_/Desktop/AIRFLOW/adroit-terminus-450816-r9-1b90cfcf6a76.json"
-DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1354192765130375248/MF7bEPPlHnrzgYnJJ4iev7xTr0TrxVpqKw_MOVVIRseppELwK0hBM7VMZf8DQnVPpvh6"
+DISCORD_WEBHOOK_URL = "https://discordapp.com"
 MODEL_LIST = ["gemini-2.0-flash", "deepseek-chat", "deepseek-reasoner"]
 GEMINI_API_KEY_PATH = "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/gemini.txt"
 DEEPSEEK_API_KEY_PATH = "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/deepseek.txt"
