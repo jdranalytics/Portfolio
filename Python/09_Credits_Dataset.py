@@ -41,7 +41,7 @@ def generar_dataset_credito(n):
     data = {
         'id_solicitud': ids,
         'fecha_solicitud': fechas,
-        'cedula_ciudadania': [fake.ssn() for _ in range(n)],  
+        'cedula_ciudadania': [str(random.randint(0, 999999999)).zfill(9) for _ in range(n)],  
         'nombre': [fake.first_name() for _ in range(n)],
         'apellido': [fake.last_name() for _ in range(n)],
         'edad': [random.randint(18, 80) for _ in range(n)],
@@ -59,11 +59,11 @@ def generar_dataset_credito(n):
     
     # Generar decisión inicial (0 o 1) para solicitud_credito
     df['solicitud_credito'] = df.apply(
-        lambda row: 1 if (row['puntaje_crediticio'] > 650 and 
+        lambda row: int(1) if (row['puntaje_crediticio'] > 650 and 
                          row['ingresos_anuales'] > 30000 and 
                          row['historial_pagos'] in ['Bueno', 'Regular'] and 
                          row['deuda_actual'] < row['ingresos_anuales'] * 0.4) 
-        else 0, axis=1)
+        else int(0), axis=1)
     
     # Definir el rango de los últimos dos meses
     fecha_limite = fecha_fin - timedelta(days=60)  # 60 días antes de fecha_fin (20 de enero de 2025)
