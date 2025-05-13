@@ -13,85 +13,85 @@ Aquí presento una colección de algunos de mis proyectos:
   Demostraciones visuales de algunos de mis proyectos y habilidades en acción.  
 
 ### Algunos videos destacados:
-<table>
+<table style="table-layout: fixed; width: 100%;">
   <tr>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/F6nQHX9olDo">
         <img src="https://img.youtube.com/vi/F6nQHX9olDo/0.jpg" alt="Video 1" width="250"/>
       </a>
-      <br>ContactApp 1.0.0 (R-Shiny)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">ContactApp 1.0.0 (R-Shiny)</div>
     </td>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/sBOK6WT38JU">
         <img src="https://img.youtube.com/vi/sBOK6WT38JU/0.jpg" alt="Video 2" width="250"/>
       </a>
-      <br>My.RCManager v.2.0 (Excel-Access-VBA)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">My.RCManager v.2.0 (Excel-Access-VBA)</div>
     </td>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/BLnl0NhVNxM">
         <img src="https://img.youtube.com/vi/BLnl0NhVNxM/0.jpg" alt="Video 3" width="250"/>
       </a>
-      <br>Apetitoso Restaurant (Power Apps + Automate)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Apetitoso Restaurant (Power Apps+Automate)</div>
     </td>
   </tr>
   <tr>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/QmfAVkEeaIM">
         <img src="https://img.youtube.com/vi/QmfAVkEeaIM/0.jpg" alt="Video 4" width="250"/>
       </a>
-      <br>Módulo Automatizado de Oferta (Excel-VBA)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Módulo Automatizado de Oferta (Excel-VBA)</div>
     </td>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/F13BJ3i9ilA">
         <img src="https://img.youtube.com/vi/F13BJ3i9ilA/0.jpg" alt="Video 5" width="250"/>
       </a>
-      <br>C5Manager v.1.0 (Excel-Access-VBA)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">C5Manager v.1.0 (Excel+Access-VBA)</div>
     </td>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/-2JqTp_lcnU">
         <img src="https://img.youtube.com/vi/-2JqTp_lcnU/0.jpg" alt="Video 6" width="250"/>
       </a>
-      <br>Flujo ETL Airflow + BigQuery + Machine Learning (Análisis de Riesgo)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Airflow+BigQuery+ML (Risk Analysis)</div>
     </td>
   </tr>
   <tr>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/M9p6LTcJkOs">
         <img src="https://img.youtube.com/vi/M9p6LTcJkOs/0.jpg" alt="Video 7" width="250"/>
       </a>
-      <br>Excel-VBA | Power BI | Looker | Tableau
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Excel-VBA | Power BI | Looker | Tableau</div>
     </td>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/eBS8BfjXEGM">
         <img src="https://img.youtube.com/vi/eBS8BfjXEGM/0.jpg" alt="Video 8" width="250"/>
       </a>
-      <br>Proceso de Ingesta a MySQL (AIRFLOW)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Proceso de Ingesta a MySQL (AIRFLOW)</div>
     </td>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/1c89jF3w34I">
         <img src="https://img.youtube.com/vi/1c89jF3w34I/0.jpg" alt="Video 9" width="250"/>
       </a>
-      <br>Análisis de Riesgo Crediticio (Shiny App + Asistente AI)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Análisis de Riesgo (Shiny App+Asistente AI)</div>
     </td>
   </tr>
   <tr>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/fZLZ_h8GHq8">
         <img src="https://img.youtube.com/vi/fZLZ_h8GHq8/0.jpg" alt="Video 10" width="250"/>
       </a>
-      <br>Asistente AI para análisis de datos (Streamlit)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Asistente AI para análisis de riesgo (Python+Streamlit)</div>
     </td>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/NSE45GBUpMA">
         <img src="https://img.youtube.com/vi/NSE45GBUpMA/0.jpg" alt="Video 11" width="250"/>
       </a>
-      <br>Machine Learning en MS Fabric (Risk Analysis)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Machine Learning en MS Fabric (Risk Analysis)</div>
     </td>
-    <td align="center">
+    <td align="center" style="width: 33.33%;">
       <a href="https://youtu.be/XQCd9OFM0-E">
         <img src="https://img.youtube.com/vi/XQCd9OFM0-E/0.jpg" alt="Video 12" width="250"/>
       </a>
-      <br>RiskApp (Power Apps+Automate+MS Fabric)
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">RiskApp (Power Apps+Automate+Fabric)</div>
     </td>
   </tr>
 </table>
