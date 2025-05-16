@@ -3,6 +3,8 @@
 ## 🚀 ¿Qué encontrarás aquí?
 Aquí presento una colección de algunos de mis proyectos:  
 - **Proyectos analíticos**: Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad, evitando usar datos reales). 
+
+PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[Análisis DeepWiki](https://deepwiki.com/ringoquimico/Portfolio)**  
  
 - **Carpetas del portafolio**:  
   - 📁 **Data Sources**: Fuentes de datos disponibles para los proyectos.  
