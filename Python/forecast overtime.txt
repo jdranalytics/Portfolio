@@ -1,0 +1,112 @@
+import pandas as pd
+import pymssql
+from prophet import Prophet
+from sklearn.metrics import mean_squared_error
+import numpy as np
+import joblib
+import datetime
+import logging
+
+# Configuración de logging
+logging.basicConfig(level=logging.INFO)
+
+# Configuración de SQL Server
+SQL_SERVER = "172.28.192.1:50121\\SQLEXPRESS"
+SQL_DB = "HR_Analytics"
+SQL_USER = "sa"
+SQL_PASSWORD = "123456"
+
+def train_and_predict_overtime():
+    try:
+        # Conectar a SQL Server
+        conn = pymssql.connect(
+            server=SQL_SERVER,
+            database=SQL_DB,
+            user=SQL_USER,
+            password=SQL_PASSWORD
+        )
+        query = """
+        SELECT k.work_date, w.department, SUM(k.overtime_hours) as total_overtime
+        FROM Kronos_TimeEntries k
+        JOIN Workday_Employees w ON k.employee_id = w.employee_id
+        GROUP BY k.work_date, w.department
+        """
+        df = pd.read_sql(query, conn)
+        df['work_date'] = pd.to_datetime(df['work_date'])
+
+        # Agregar por semana
+        df = df.groupby([pd.Grouper(key='work_date', freq='W'), 'department'])['total_overtime'].sum().reset_index()
+
+        metrics = {}
+        models = {}
+        cursor = conn.cursor()
+
+        for department in df['department'].unique():
+            dept_df = df[df['department'] == department][['work_date', 'total_overtime']]
+            dept_df.columns = ['ds', 'y']  # Prophet requiere 'ds' (fecha) y 'y' (valor)
+
+            # Verificar datos suficientes
+            if len(dept_df) < 10:
+                logging.warning(f"Departamento {department} tiene datos insuficientes: {len(dept_df)} semanas")
+                continue
+
+            # Dividir datos: usar las últimas 4 semanas para evaluación (si disponibles)
+            train = dept_df.iloc[:-4] if len(dept_df) > 4 else dept_df
+            test = dept_df.iloc[-4:] if len(dept_df) > 4 else pd.DataFrame()
+
+            # Entrenar modelo con todos los datos históricos disponibles
+            model = Prophet(yearly_seasonality=True, weekly_seasonality=True, daily_seasonality=False)
+            model.fit(dept_df)  # Usar todos los datos para entrenamiento final
+
+            # Generar predicciones para las próximas 4 semanas
+            future = model.make_future_dataframe(periods=4, freq='W', include_history=False)
+            forecast = model.predict(future)
+
+            # Evaluar si hay datos de prueba
+            rmse = None
+            if not test.empty:
+                historical_forecast = model.predict(test[['ds']])
+                y_pred = historical_forecast['yhat']
+                y_true = test['y']
+                rmse = np.sqrt(mean_squared_error(y_true, y_pred))
+
+            # Guardar modelo
+            models[department] = model
+            joblib.dump(model, f'overtime_model_{department}.pkl')
+
+            # Guardar métricas
+            cursor.execute(
+                """
+                INSERT INTO ML_Model_Accuracy (model_name, run_date, accuracy, precision, recall, f1_score)
+                VALUES (%s, %s, %s, %s, %s, %s)
+                """,
+                (f'Overtime_Forecast_{department}', datetime.datetime.now(), 
+                 1 - (rmse / 100 if rmse is not None else 0), 0, 0, 0)  # Proxy accuracy
+            )
+
+            # Guardar predicciones para las próximas 4 semanas
+            for _, row in forecast[['ds', 'yhat']].iterrows():
+                cursor.execute(
+                    """
+                    INSERT INTO Overtime_Predictions (department, prediction_date, predicted_overtime)
+                    VALUES (%s, %s, %s)
+                    """,
+                    (department, row['ds'], max(0, row['yhat']))  # Evitar valores negativos
+                )
+
+            metrics[department] = {'rmse': rmse if rmse is not None else 'N/A'}
+
+        conn.commit()
+        conn.close()
+        logging.info(f"Overtime Forecast - Metrics per department: {metrics}")
+        return metrics
+
+    except Exception as e:
+        logging.error(f"Error in overtime forecasting: {e}")
+        if 'conn' in locals():
+            conn.rollback()
+            conn.close()
+        raise
+
+if __name__ == "__main__":
+    train_and_predict_overtime()
