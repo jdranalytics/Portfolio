@@ -1,1001 +1,1001 @@
 employee_id,first_name,last_name,department,job_role,hire_date,salary,location,status
-1001,Eileen,Whitney,Inventory,Clerk,2020-12-03,90272.71,Los Angeles,On Leave
-1002,Theresa,Bowman,Finance,Supervisor,2024-07-22,31687.26,Los Angeles,Terminated
-1003,Kenneth,Clark,Finance,Supervisor,2021-10-17,43198.86,Miami,Active
-1004,Christopher,Soto,HR,Analyst,2025-04-24,101455.21,Los Angeles,On Leave
-1005,Andrea,Davis,Finance,Manager,2021-02-08,71634.57,New York,Active
-1006,Robert,Wilson,HR,Clerk,2022-09-25,86318.04,New York,On Leave
-1007,Emily,Spencer,Inventory,Supervisor,2025-02-22,112820.76,Miami,Active
-1008,Timothy,Roberts,Finance,Analyst,2021-04-07,74217.41,Los Angeles,Terminated
-1009,Francisco,Andrews,Finance,Analyst,2021-07-29,71004.09,Houston,Active
-1010,David,Garcia,HR,Analyst,2021-12-26,66700.57,Houston,On Leave
-1011,Seth,Lucas,HR,Supervisor,2020-07-29,107759.88,Houston,On Leave
-1012,Nicholas,Potts,Inventory,Associate,2023-06-20,105718.97,Houston,Terminated
-1013,Andrea,Thompson,Finance,Manager,2022-01-24,72849.08,Los Angeles,Terminated
-1014,Brooke,Jones,Marketing,Manager,2021-04-27,117925.16,Houston,Active
-1015,Sheila,Moore,Marketing,Associate,2020-12-21,108347.63,Los Angeles,Active
-1016,Yvonne,Walters,Sales,Associate,2024-09-06,79433.18,Chicago,Active
-1017,Robert,Miller,Inventory,Manager,2021-01-13,49834.63,Los Angeles,On Leave
-1018,Heidi,Marshall,Inventory,Associate,2023-10-10,42477.69,Chicago,On Leave
-1019,Jason,Patrick,Marketing,Manager,2022-08-01,50873.63,Los Angeles,Terminated
-1020,Sheri,Lucero,Marketing,Associate,2020-09-27,85150.98,New York,Active
-1021,Kimberly,Harris,Inventory,Manager,2024-10-13,72520.77,Los Angeles,Terminated
-1022,Matthew,Simmons,Finance,Manager,2025-04-02,95595.0,New York,Active
-1023,Carrie,Perez,HR,Manager,2022-01-25,75227.38,New York,Terminated
-1024,Richard,Martinez,Finance,Clerk,2024-10-27,49050.43,Los Angeles,Active
-1025,Martin,Neal,Inventory,Supervisor,2024-05-23,88262.93,Chicago,On Leave
-1026,Paige,Fleming,HR,Supervisor,2023-10-29,70717.09,Los Angeles,Active
-1027,Christopher,Gray,Marketing,Supervisor,2023-03-01,54719.45,Los Angeles,Terminated
-1028,Linda,Wilson,Inventory,Analyst,2024-02-12,60787.28,Los Angeles,On Leave
-1029,Theresa,Walker,IT,Associate,2020-11-30,73848.7,Houston,On Leave
-1030,Natalie,Gallagher,Sales,Clerk,2023-09-04,54027.69,Chicago,Terminated
-1031,Ryan,Avila,Finance,Associate,2021-11-14,107574.95,Houston,Active
-1032,Juan,Ward,Marketing,Manager,2021-09-14,31476.72,New York,On Leave
-1033,Karen,Marshall,HR,Manager,2024-04-01,34039.8,Chicago,Terminated
-1034,Michelle,Velez,Finance,Analyst,2021-05-03,39031.95,Los Angeles,Active
-1035,Mikayla,Thompson,HR,Supervisor,2024-12-31,86114.61,New York,On Leave
-1036,Audrey,Payne,HR,Clerk,2024-03-24,56011.71,Houston,On Leave
-1037,Tina,Baker,IT,Supervisor,2023-11-09,91956.15,Houston,Active
-1038,Samantha,Bowers,HR,Analyst,2022-06-24,85204.88,Los Angeles,Active
-1039,Gabriel,Keith,Inventory,Associate,2020-11-26,117845.41,Chicago,Terminated
-1040,Chloe,Hodges,HR,Manager,2021-03-20,115961.16,New York,Active
-1041,Matthew,Carrillo,Inventory,Analyst,2024-12-12,56756.76,New York,On Leave
-1042,Oscar,Richards,Finance,Manager,2021-06-09,119963.84,Houston,Terminated
-1043,Donald,Ball,IT,Associate,2025-04-15,103755.26,Houston,Terminated
-1044,James,Martinez,Inventory,Manager,2022-07-31,60625.15,Miami,On Leave
-1045,Justin,Jones,IT,Analyst,2020-11-09,36121.16,Chicago,Terminated
-1046,Jack,Reed,Marketing,Supervisor,2020-10-08,100831.11,New York,On Leave
-1047,Cody,Mccoy,Marketing,Manager,2024-08-03,80071.72,Houston,Active
-1048,Tina,Kelley,HR,Clerk,2020-07-22,116147.11,Miami,Terminated
-1049,Elizabeth,Russell,Inventory,Analyst,2022-04-14,111111.35,Miami,Terminated
-1050,Jeff,West,IT,Clerk,2023-10-16,30310.96,Miami,On Leave
-1051,April,Brown,HR,Supervisor,2021-05-20,106806.6,Chicago,Terminated
-1052,Gabrielle,Richardson,Finance,Clerk,2021-05-16,62247.32,Miami,On Leave
-1053,Kevin,Martinez,Finance,Supervisor,2024-09-21,46559.99,Los Angeles,Terminated
-1054,Emily,Woods,HR,Manager,2024-07-08,118456.81,Houston,On Leave
-1055,Danny,Watson,Sales,Clerk,2024-05-26,91029.74,Miami,Terminated
-1056,Melissa,Gonzalez,Sales,Associate,2021-07-02,53443.06,Miami,On Leave
-1057,Scott,Meyer,Sales,Manager,2024-10-03,79877.29,Miami,Terminated
-1058,Susan,Mercer,HR,Supervisor,2020-09-18,116869.24,Houston,Terminated
-1059,Nathan,Hughes,HR,Clerk,2023-12-04,100750.96,New York,Terminated
-1060,Melissa,Hoover,HR,Supervisor,2020-12-10,54483.42,Miami,On Leave
-1061,Matthew,Jones,IT,Analyst,2024-11-17,105736.3,New York,Active
-1062,Nathan,Wyatt,Sales,Manager,2022-06-06,82908.3,Chicago,Terminated
-1063,Stacey,Phillips,Marketing,Analyst,2020-05-31,88120.01,New York,Active
-1064,Marcia,Brown,Marketing,Clerk,2022-04-13,87292.37,New York,Active
-1065,Brittney,Lee,Marketing,Manager,2023-12-01,74536.91,Miami,On Leave
-1066,Samantha,Ellis,IT,Associate,2021-06-25,44287.44,Chicago,On Leave
-1067,Mary,Gutierrez,IT,Supervisor,2025-03-17,115466.58,Los Angeles,On Leave
-1068,Caleb,Moody,Finance,Associate,2022-07-31,81847.75,Los Angeles,Active
-1069,Jacqueline,Flores,HR,Clerk,2022-12-24,66157.5,Los Angeles,Terminated
-1070,Michelle,Trujillo,Inventory,Associate,2022-04-16,69947.51,Los Angeles,On Leave
-1071,Patrick,Rosario,HR,Analyst,2022-01-19,30392.72,Chicago,Terminated
-1072,Kristi,Gould,Inventory,Supervisor,2021-08-21,51131.51,New York,Terminated
-1073,Kelly,Edwards,Inventory,Clerk,2022-10-31,82469.33,Houston,On Leave
-1074,Danny,Nelson,Marketing,Manager,2022-01-19,44379.44,Chicago,Active
-1075,Denise,Smith,HR,Supervisor,2022-10-25,78470.16,Miami,Active
-1076,Patrick,Morgan,IT,Analyst,2022-01-18,97878.02,Los Angeles,On Leave
-1077,Troy,Harris,Sales,Supervisor,2024-06-21,60706.31,New York,On Leave
-1078,Janice,Simmons,Inventory,Associate,2022-11-07,47194.01,Houston,Active
-1079,William,Gomez,HR,Clerk,2024-08-27,68251.38,Houston,Active
-1080,Karen,Gonzalez,HR,Analyst,2021-08-11,117346.05,Chicago,Active
-1081,John,Gibson,IT,Clerk,2021-05-18,77596.2,Chicago,Active
-1082,Beth,Perry,Finance,Clerk,2024-10-07,77209.66,Miami,Terminated
-1083,Collin,Simpson,Inventory,Supervisor,2024-01-23,40366.22,Houston,On Leave
-1084,Nathan,Taylor,HR,Clerk,2021-03-22,102033.64,Los Angeles,Terminated
-1085,Steven,Santana,Inventory,Manager,2024-08-05,55307.22,New York,Active
-1086,Tracy,Simmons,Sales,Associate,2022-12-26,81679.5,Los Angeles,Active
-1087,Tony,Clark,HR,Analyst,2020-08-05,108151.6,New York,On Leave
-1088,Amanda,Clark,HR,Clerk,2020-05-28,38574.94,New York,Terminated
-1089,Joshua,Cardenas,IT,Manager,2022-08-04,109829.88,Los Angeles,Terminated
-1090,Michael,Cisneros,IT,Supervisor,2024-11-26,118511.65,New York,On Leave
-1091,Kyle,Myers,Inventory,Manager,2023-09-02,50101.92,Chicago,On Leave
-1092,Darius,Griffith,Sales,Analyst,2020-09-11,59844.25,New York,Terminated
-1093,Joseph,Lawrence,HR,Clerk,2021-03-09,54135.96,Chicago,Active
-1094,Stephen,Lopez,Sales,Manager,2022-05-19,83958.56,Houston,Active
-1095,Kathy,Wilson,IT,Associate,2020-07-11,61728.51,Miami,Active
-1096,Kristina,Compton,IT,Clerk,2020-08-17,117234.64,Los Angeles,Active
-1097,Diane,Stewart,IT,Supervisor,2024-03-18,35969.69,New York,On Leave
-1098,John,Higgins,HR,Clerk,2021-12-01,84632.26,Los Angeles,Active
-1099,Joshua,Patel,Finance,Manager,2023-03-04,109997.04,New York,Terminated
-1100,Joseph,Warren,Sales,Supervisor,2021-11-17,77651.02,Chicago,On Leave
-1101,Amy,Richardson,Marketing,Associate,2023-11-29,56546.97,New York,Terminated
-1102,Brooke,Bonilla,Inventory,Analyst,2022-09-08,87178.41,Miami,On Leave
-1103,Sandra,Nelson,Finance,Analyst,2022-06-11,104579.96,Chicago,Terminated
-1104,Katherine,White,Marketing,Supervisor,2022-02-03,106166.44,Los Angeles,On Leave
-1105,Adam,Hardy,Marketing,Supervisor,2023-10-12,77422.63,Miami,Active
-1106,Bianca,Henderson,HR,Clerk,2025-02-21,118639.32,Chicago,On Leave
-1107,Sharon,Rios,Finance,Supervisor,2022-05-04,61244.09,Houston,Terminated
-1108,Julie,Kim,Inventory,Manager,2024-09-21,83279.34,Houston,On Leave
-1109,Megan,Reid,HR,Clerk,2022-06-27,42996.34,Houston,Active
-1110,Dana,Schroeder,HR,Analyst,2021-10-17,114915.58,New York,On Leave
-1111,Phyllis,Miller,Marketing,Clerk,2025-04-30,38038.65,Miami,Active
-1112,Richard,Martinez,HR,Manager,2020-08-02,82857.75,Chicago,Active
-1113,Brian,Lee,Marketing,Manager,2022-05-02,34006.63,Chicago,Terminated
-1114,Melissa,White,Inventory,Analyst,2022-04-27,84092.88,New York,Terminated
-1115,Daniel,Wright,Sales,Associate,2025-01-20,100290.24,Houston,On Leave
-1116,William,Church,Sales,Manager,2024-07-18,77739.15,Houston,Active
-1117,Anthony,Barnes,Marketing,Analyst,2023-05-17,99886.67,Houston,Terminated
-1118,Kathy,Carter,Inventory,Clerk,2021-02-13,86909.07,Chicago,Active
-1119,Lori,Torres,Marketing,Clerk,2024-02-06,59892.7,Los Angeles,On Leave
-1120,Michael,Jenkins,Inventory,Analyst,2024-03-08,41277.0,Los Angeles,On Leave
-1121,Lauren,Sullivan,Inventory,Analyst,2022-09-29,58965.7,Los Angeles,Active
-1122,Linda,Austin,Finance,Clerk,2021-10-15,93133.48,Miami,On Leave
-1123,Melanie,Thompson,Finance,Supervisor,2024-03-16,82343.81,Houston,Active
-1124,Shari,Mathews,Finance,Clerk,2024-05-09,103517.72,Los Angeles,Active
-1125,Alan,Larson,Inventory,Manager,2022-10-27,79483.98,Los Angeles,Active
-1126,David,Hamilton,Marketing,Manager,2021-05-11,95571.43,Los Angeles,Terminated
-1127,Raymond,King,Marketing,Clerk,2021-08-27,84162.0,Miami,On Leave
-1128,Steven,Johnson,Inventory,Associate,2021-09-13,82464.53,Miami,Active
-1129,Katherine,Taylor,IT,Associate,2021-07-06,34944.5,New York,Terminated
-1130,Jon,Ellis,Inventory,Clerk,2023-01-30,110015.66,Houston,Active
-1131,Amy,Rivera,IT,Manager,2023-05-12,32673.52,Houston,Active
-1132,Brandon,Paul,Marketing,Manager,2024-03-02,57284.18,Miami,On Leave
-1133,Connie,Frey,Inventory,Analyst,2023-07-22,55141.21,Miami,Terminated
-1134,Kristin,Lopez,Inventory,Supervisor,2021-10-30,41182.18,Los Angeles,Active
-1135,James,Kelly,IT,Clerk,2022-03-12,106296.64,Houston,Active
-1136,David,Tanner,Marketing,Analyst,2020-10-04,82028.61,Los Angeles,Terminated
-1137,Kevin,Burgess,HR,Analyst,2024-06-08,47313.68,Los Angeles,Terminated
-1138,Laura,Patterson,Finance,Analyst,2021-02-06,90992.45,Miami,Active
-1139,Beth,Christian,Sales,Associate,2023-03-24,64665.71,Chicago,Terminated
-1140,Alicia,Freeman,IT,Clerk,2022-07-23,48969.28,New York,Active
-1141,Monica,Simmons,Marketing,Supervisor,2023-06-15,66922.78,Chicago,Terminated
-1142,Chad,Smith,Sales,Manager,2024-11-11,80496.1,New York,Terminated
-1143,Lauren,Rogers,Inventory,Clerk,2020-07-04,57091.62,New York,Active
-1144,Michael,Adams,IT,Associate,2024-10-09,45644.52,Chicago,Active
-1145,Bethany,Cunningham,Sales,Analyst,2022-02-10,93068.89,Los Angeles,Terminated
-1146,Renee,Frazier,Sales,Clerk,2024-12-17,50002.84,New York,Terminated
-1147,Frank,Schwartz,Sales,Clerk,2024-04-08,68796.14,Miami,Terminated
-1148,Vincent,Casey,IT,Supervisor,2025-03-06,30579.52,Miami,Terminated
-1149,Christopher,Nielsen,Sales,Supervisor,2022-11-08,49951.42,Houston,Terminated
-1150,Wendy,Mejia,Inventory,Clerk,2022-02-12,89724.65,Los Angeles,Terminated
-1151,Jordan,Newman,Sales,Supervisor,2022-02-24,98450.45,Los Angeles,Active
-1152,Jane,Johnson,Sales,Associate,2024-10-20,87091.14,Houston,Terminated
-1153,Autumn,Vaughn,Marketing,Supervisor,2022-08-07,78312.3,Houston,Terminated
-1154,Amber,Smith,Marketing,Analyst,2021-02-28,88016.02,Miami,On Leave
-1155,Darin,Kennedy,HR,Manager,2021-06-06,52544.04,Houston,On Leave
-1156,Amber,Woodward,Sales,Manager,2020-08-12,31001.67,Miami,On Leave
-1157,Richard,Jackson,HR,Supervisor,2021-02-04,42975.2,Los Angeles,Active
-1158,Linda,Andrade,HR,Manager,2020-08-28,72995.82,New York,Terminated
-1159,Keith,Sanchez,Marketing,Analyst,2021-12-30,58408.76,Los Angeles,On Leave
-1160,Karen,Hall,Finance,Manager,2022-10-09,95529.21,Chicago,On Leave
-1161,Nicholas,Herrera,Marketing,Associate,2024-11-21,84454.88,Chicago,On Leave
-1162,Thomas,Glenn,Sales,Manager,2021-04-29,96159.83,New York,Active
-1163,Jo,Jones,IT,Clerk,2022-12-12,95504.29,Houston,Terminated
-1164,Nicole,Peters,Sales,Associate,2020-08-30,61173.64,Houston,Terminated
-1165,William,Jones,HR,Analyst,2022-02-18,83804.23,Miami,On Leave
-1166,Rebecca,Adams,Inventory,Associate,2023-10-21,37081.19,New York,Active
-1167,Paul,Jackson,HR,Manager,2022-05-05,95282.63,Houston,Terminated
-1168,Gabriel,Tanner,Marketing,Clerk,2024-03-01,64346.63,Houston,Terminated
-1169,Troy,Trujillo,Inventory,Associate,2024-02-12,34374.28,Miami,Terminated
-1170,Kathy,Camacho,Sales,Analyst,2023-06-13,92031.52,Houston,On Leave
-1171,Jacqueline,Knapp,IT,Clerk,2021-08-27,42988.66,New York,Active
-1172,Austin,Williams,Sales,Manager,2022-11-26,68461.28,Los Angeles,Terminated
-1173,Carrie,Gonzalez,HR,Manager,2022-11-09,95285.74,Houston,On Leave
-1174,John,Swanson,Sales,Clerk,2023-04-06,59565.46,Chicago,On Leave
-1175,Maria,Diaz,HR,Manager,2023-02-17,53984.78,Chicago,On Leave
-1176,Jeremiah,Hernandez,Marketing,Associate,2020-10-08,67468.86,Miami,Active
-1177,Gerald,Hernandez,IT,Clerk,2022-01-31,65791.06,Chicago,On Leave
-1178,Dana,Wade,Inventory,Analyst,2024-05-20,95689.48,Los Angeles,Terminated
-1179,Alyssa,Aguilar,HR,Associate,2023-12-17,47257.14,Los Angeles,Terminated
-1180,John,Johnson,Finance,Analyst,2023-10-10,47355.88,Los Angeles,Terminated
-1181,Jennifer,Turner,Finance,Supervisor,2022-08-30,107371.19,Miami,Terminated
-1182,Brandon,Rivera,Marketing,Manager,2022-03-26,49246.27,Los Angeles,Active
-1183,Gabrielle,Le,Inventory,Analyst,2022-05-24,47901.17,Miami,Active
-1184,Wanda,Fry,Finance,Associate,2022-11-06,114605.64,Houston,On Leave
-1185,Dustin,Gonzales,Sales,Associate,2021-03-11,81847.09,Houston,On Leave
-1186,Laura,Nelson,Finance,Analyst,2022-11-09,86233.95,Los Angeles,Active
-1187,Laura,Hunt,IT,Analyst,2021-09-15,37651.12,Los Angeles,Terminated
-1188,Mary,Robbins,Sales,Analyst,2023-10-26,107110.42,Los Angeles,Terminated
-1189,Alexis,Waters,Inventory,Supervisor,2024-07-21,83561.44,Houston,Terminated
-1190,Amber,Thomas,Inventory,Supervisor,2022-09-06,51550.81,Miami,On Leave
-1191,Johnny,Jones,Inventory,Clerk,2024-09-19,95466.05,Los Angeles,Terminated
-1192,Allison,Jones,Finance,Supervisor,2024-11-25,69488.33,Houston,On Leave
-1193,Alexis,Clarke,IT,Associate,2022-02-22,99487.08,Chicago,Active
-1194,Stacy,Payne,IT,Analyst,2022-11-16,95138.75,Chicago,On Leave
-1195,Toni,Hanson,Inventory,Clerk,2020-10-18,62339.76,New York,Active
-1196,Kathleen,Allison,Sales,Clerk,2022-10-02,104777.32,Miami,On Leave
-1197,Katherine,Brown,Finance,Analyst,2021-06-25,50674.99,New York,On Leave
-1198,Laura,Flynn,Marketing,Clerk,2023-02-25,32976.36,New York,Terminated
-1199,Lance,Rodriguez,Sales,Manager,2023-12-12,43763.49,Miami,On Leave
-1200,Jeanette,Flores,Inventory,Analyst,2024-03-22,68336.86,Los Angeles,Terminated
-1201,Jeffrey,Carrillo,Marketing,Clerk,2020-05-30,92716.88,Los Angeles,Active
-1202,Kenneth,Boyd,Marketing,Clerk,2022-01-26,68793.08,Los Angeles,On Leave
-1203,Christopher,Baker,Sales,Associate,2023-05-20,100532.96,Chicago,Active
-1204,Renee,Lester,Finance,Supervisor,2024-01-01,74574.11,Chicago,Terminated
-1205,Steven,Clark,Marketing,Clerk,2022-07-03,44138.68,Miami,Active
-1206,Anthony,Pruitt,Marketing,Manager,2021-11-30,114513.14,Chicago,Active
-1207,Victoria,Wright,IT,Manager,2022-08-05,76250.87,Miami,On Leave
-1208,Angela,Humphrey,Finance,Clerk,2024-10-16,69143.1,Chicago,On Leave
-1209,Connor,Barr,Sales,Supervisor,2021-01-19,68037.04,Chicago,Active
-1210,Matthew,Parks,HR,Manager,2020-08-11,46029.89,New York,Active
-1211,Jonathan,Lee,Inventory,Clerk,2022-05-22,36656.16,Los Angeles,On Leave
-1212,John,Padilla,Finance,Associate,2020-08-17,110767.24,New York,Active
-1213,Andrea,Hunt,HR,Clerk,2024-08-03,67792.65,Los Angeles,Terminated
-1214,Brandon,Carter,IT,Supervisor,2024-01-23,49699.55,Chicago,On Leave
-1215,Dana,Sanders,IT,Supervisor,2021-03-03,70161.02,Chicago,On Leave
-1216,Joanna,Lynch,Inventory,Manager,2024-11-22,95732.92,Los Angeles,On Leave
-1217,Amanda,Lee,Finance,Analyst,2022-03-29,78134.12,New York,Active
-1218,William,Ware,IT,Clerk,2023-04-22,38151.07,Los Angeles,Active
-1219,Scott,Bradley,HR,Clerk,2020-12-07,117666.18,Miami,Active
-1220,Charles,Owens,Finance,Clerk,2021-02-03,115905.09,Miami,Active
-1221,Seth,Price,Finance,Associate,2020-10-11,80794.49,Houston,Terminated
-1222,Samantha,Erickson,IT,Supervisor,2020-10-21,64189.12,New York,Active
-1223,Sarah,Davis,HR,Analyst,2020-05-28,88362.51,Los Angeles,On Leave
-1224,Tyler,Williams,Sales,Manager,2021-11-27,115414.35,Miami,On Leave
-1225,Jackie,Paul,Sales,Associate,2023-04-19,85605.7,Chicago,Active
-1226,Mark,Marks,Finance,Manager,2022-11-22,113279.47,Miami,Terminated
-1227,Maria,Gill,IT,Manager,2020-08-29,53281.8,Los Angeles,Terminated
-1228,Tricia,Soto,HR,Manager,2024-09-13,113209.18,New York,Terminated
-1229,Jennifer,Gordon,Marketing,Analyst,2023-11-24,95486.24,Los Angeles,On Leave
-1230,Lawrence,Shelton,Finance,Analyst,2025-01-24,41459.67,Miami,On Leave
-1231,Kathleen,Cox,Finance,Supervisor,2025-05-06,34044.06,Houston,Active
-1232,Katelyn,Collins,HR,Associate,2022-12-27,65259.88,New York,On Leave
-1233,Matthew,Schmidt,Sales,Manager,2023-03-02,60601.93,New York,On Leave
-1234,Wayne,Vaughn,Finance,Manager,2023-04-19,82636.28,New York,Terminated
-1235,Shane,Barber,Marketing,Supervisor,2020-06-03,114812.12,Los Angeles,On Leave
-1236,Michael,Hall,Marketing,Supervisor,2025-02-04,114931.06,New York,Terminated
-1237,Lauren,Graham,IT,Analyst,2023-04-20,87641.92,Los Angeles,Terminated
-1238,Gregory,Lopez,HR,Clerk,2021-05-23,100636.84,Chicago,On Leave
-1239,Nicole,Petersen,Inventory,Analyst,2024-12-11,117018.76,Chicago,On Leave
-1240,Phillip,Craig,Sales,Supervisor,2024-06-09,115690.6,Chicago,Terminated
-1241,Summer,Pena,HR,Associate,2023-11-08,77468.15,Houston,On Leave
-1242,Alisha,Smith,IT,Manager,2022-06-16,119775.1,Miami,On Leave
-1243,Renee,Proctor,Inventory,Clerk,2021-10-06,35853.03,Miami,Terminated
-1244,Jay,Pacheco,Marketing,Associate,2023-03-14,62524.76,New York,Active
-1245,Judy,Monroe,Sales,Clerk,2024-06-04,112390.68,Houston,On Leave
-1246,Benjamin,Sullivan,Marketing,Clerk,2021-02-19,45085.47,Miami,Terminated
-1247,James,Spencer,Finance,Clerk,2025-03-10,111847.2,Los Angeles,Active
-1248,Ashley,Cole,Finance,Associate,2025-02-12,110197.79,Houston,On Leave
-1249,Tiffany,Williams,Inventory,Manager,2023-09-07,35034.96,Miami,Terminated
-1250,Philip,Scott,Marketing,Clerk,2023-10-19,59014.5,Houston,On Leave
-1251,Thomas,Espinoza,Finance,Supervisor,2022-11-15,90242.36,Houston,On Leave
-1252,Jennifer,Little,Inventory,Associate,2023-11-26,83495.73,Chicago,Active
-1253,Jennifer,Randall,Marketing,Clerk,2024-07-18,39042.71,New York,On Leave
-1254,Jennifer,Howard,Finance,Supervisor,2020-11-08,44661.17,Chicago,Terminated
-1255,Kathryn,Waters,Sales,Associate,2022-02-05,90379.19,Houston,Active
-1256,Sarah,Stevens,Sales,Clerk,2020-05-28,93194.98,Chicago,Active
-1257,Evan,Sims,IT,Manager,2020-06-20,85709.0,Chicago,Terminated
-1258,Michelle,Davis,Sales,Supervisor,2022-02-05,41832.76,Los Angeles,Terminated
-1259,Jonathan,Bailey,Finance,Clerk,2023-03-14,73293.6,Houston,Terminated
-1260,Melissa,Robinson,HR,Supervisor,2023-05-05,80698.64,Miami,Active
-1261,Sean,Warren,Inventory,Manager,2022-07-30,32588.58,Houston,Active
-1262,Paul,Garrett,Finance,Analyst,2021-08-19,108651.71,Houston,Active
-1263,Jeffrey,Mcguire,Sales,Analyst,2020-07-25,94211.23,Houston,Active
-1264,Patricia,Hodge,Finance,Manager,2023-07-29,99121.43,Miami,Active
-1265,Anthony,Ramirez,IT,Supervisor,2023-07-04,108966.8,Houston,Terminated
-1266,Aaron,Morris,HR,Associate,2022-08-11,69421.65,Houston,Active
-1267,Gregg,Farley,IT,Analyst,2023-02-27,74479.12,Miami,Terminated
-1268,Andrew,Vang,Sales,Analyst,2020-09-08,110324.06,Houston,On Leave
-1269,Adam,Fox,Marketing,Manager,2020-11-29,79575.8,New York,On Leave
-1270,Sharon,Huffman,HR,Clerk,2021-06-14,100898.14,Miami,Active
-1271,Philip,Whitaker,IT,Supervisor,2021-03-30,49384.16,New York,On Leave
-1272,Lisa,Hart,Sales,Analyst,2024-08-10,40164.81,Miami,On Leave
-1273,Erica,Hicks,Marketing,Associate,2020-12-14,68131.31,Los Angeles,Terminated
-1274,Francisco,Ross,HR,Manager,2024-02-02,99168.61,Houston,On Leave
-1275,John,Miranda,Finance,Clerk,2022-04-05,80821.09,Chicago,On Leave
-1276,Kristen,Stewart,IT,Manager,2021-07-17,105427.34,Los Angeles,Terminated
-1277,Gary,Skinner,Marketing,Clerk,2022-09-17,58370.5,Los Angeles,Active
-1278,Andrew,Flores,Finance,Supervisor,2023-01-16,55163.44,Los Angeles,Terminated
-1279,James,Rosario,Finance,Associate,2020-10-13,67882.79,Houston,Terminated
-1280,Sally,Rich,Sales,Associate,2021-02-22,110792.88,Miami,On Leave
-1281,Lisa,Jacobson,HR,Associate,2024-12-02,63903.65,Chicago,On Leave
-1282,Amanda,May,Sales,Manager,2022-02-21,79639.54,Chicago,Terminated
-1283,Anthony,Holder,Marketing,Clerk,2021-08-04,102757.66,Miami,Terminated
-1284,Elizabeth,Dominguez,IT,Manager,2025-02-18,83282.94,New York,Active
-1285,Kurt,Clark,IT,Associate,2020-10-11,49614.1,Chicago,On Leave
-1286,Jasmine,Wilson,IT,Manager,2025-02-24,55920.34,Chicago,Active
-1287,Kenneth,Stephens,Marketing,Manager,2024-03-11,119723.16,Los Angeles,Terminated
-1288,Timothy,Price,Marketing,Associate,2024-04-30,113980.73,Houston,Active
-1289,Tiffany,Harris,Marketing,Analyst,2025-02-15,110546.4,Los Angeles,Active
-1290,Corey,Pearson,Finance,Supervisor,2023-09-26,87517.69,Houston,On Leave
-1291,Nicole,Clark,IT,Supervisor,2022-11-09,56041.7,Los Angeles,On Leave
-1292,John,Hogan,Finance,Manager,2021-04-30,118316.41,Chicago,Terminated
-1293,Jamie,Reed,HR,Associate,2021-10-13,55284.05,Chicago,Active
-1294,Robert,Hill,IT,Associate,2023-08-02,61273.98,New York,Terminated
-1295,Jessica,Nielsen,Marketing,Manager,2023-09-23,88143.27,Chicago,On Leave
-1296,Megan,Murphy,Inventory,Manager,2023-04-06,91167.35,Houston,Terminated
-1297,Jacqueline,Good,Sales,Clerk,2021-01-24,87738.77,Los Angeles,Terminated
-1298,Ethan,Jackson,IT,Manager,2022-04-26,48937.71,Miami,On Leave
-1299,Brandy,Hardin,IT,Associate,2021-10-18,112202.84,Chicago,Active
-1300,Brian,Wilson,Finance,Supervisor,2021-11-14,39288.29,Miami,Active
-1301,Tyler,Moore,HR,Supervisor,2020-12-17,30750.24,Miami,Terminated
-1302,Sarah,Mathis,Sales,Analyst,2022-08-24,79068.25,Chicago,Active
-1303,William,Madden,Sales,Clerk,2023-10-09,63417.74,Miami,On Leave
-1304,David,Davis,Sales,Supervisor,2020-06-18,61786.01,Houston,Terminated
-1305,Brian,Welch,IT,Clerk,2023-07-17,45030.87,Chicago,Active
-1306,Kyle,Koch,Inventory,Associate,2023-03-28,112490.11,Chicago,Terminated
-1307,Jill,Bryant,Sales,Manager,2023-09-18,98883.62,Miami,Terminated
-1308,Candace,Blankenship,HR,Clerk,2025-04-01,51070.78,Houston,Terminated
-1309,Mary,Mayer,Finance,Clerk,2024-01-01,89875.41,Houston,On Leave
-1310,Jerry,Anderson,Inventory,Associate,2021-12-14,64172.38,Los Angeles,On Leave
-1311,Brenda,Acevedo,HR,Clerk,2024-02-28,114876.93,Houston,On Leave
-1312,Jessica,Rojas,Finance,Associate,2022-10-24,96545.83,Chicago,On Leave
-1313,Diane,Hall,HR,Analyst,2024-08-09,47592.56,Houston,Active
-1314,Benjamin,Frank,Inventory,Clerk,2022-07-12,67131.41,Chicago,Active
-1315,Harry,Martinez,Sales,Analyst,2024-09-11,39916.1,New York,Terminated
-1316,Christina,Wilson,IT,Analyst,2022-12-30,64698.16,Miami,On Leave
-1317,Willie,Scott,Marketing,Supervisor,2024-05-25,77828.07,New York,Active
-1318,Robert,Davis,Inventory,Analyst,2022-11-04,73567.6,Chicago,Active
-1319,John,Mahoney,Marketing,Supervisor,2024-09-12,106482.82,Miami,Terminated
-1320,Frank,Daniels,HR,Supervisor,2021-03-28,53240.57,Houston,Terminated
-1321,James,Guzman,HR,Supervisor,2025-01-04,85342.25,New York,Terminated
-1322,Shaun,Shaw,HR,Associate,2024-04-17,69660.28,Miami,On Leave
-1323,Wayne,Krause,Finance,Analyst,2020-10-30,64773.58,New York,Active
-1324,Jessica,West,Marketing,Clerk,2023-03-13,113408.66,Chicago,Terminated
-1325,Andrew,Moon,HR,Associate,2021-11-14,81264.63,Chicago,On Leave
-1326,Mallory,Brown,Finance,Supervisor,2023-07-16,115212.72,Los Angeles,On Leave
-1327,Michael,Nelson,Finance,Analyst,2020-09-18,57040.92,Houston,On Leave
-1328,Joshua,Thomas,Sales,Manager,2021-07-24,84720.44,Chicago,Active
-1329,Steven,Bonilla,Sales,Manager,2024-04-19,94119.55,New York,On Leave
-1330,William,Tucker,IT,Manager,2023-01-28,59019.65,Houston,Active
-1331,Gary,Moore,Finance,Clerk,2024-06-19,30252.54,New York,Active
-1332,John,Schultz,IT,Supervisor,2023-03-27,117969.29,Houston,On Leave
-1333,Calvin,Rocha,Inventory,Clerk,2024-10-10,42177.84,New York,On Leave
-1334,Erica,Wise,Sales,Clerk,2023-04-27,47266.96,New York,Active
-1335,Jeffrey,Jacobs,HR,Analyst,2022-02-09,31943.87,Los Angeles,Terminated
-1336,Jessica,Bell,Sales,Supervisor,2023-07-20,107046.11,Houston,Terminated
-1337,Laura,Bowen,Marketing,Clerk,2022-04-20,35433.66,Houston,Active
-1338,Craig,Long,Marketing,Analyst,2022-06-15,88600.91,Houston,On Leave
-1339,Charles,Avery,Marketing,Supervisor,2024-10-19,45362.37,Los Angeles,Active
-1340,Nathan,Dodson,Finance,Manager,2024-10-26,61725.64,Los Angeles,On Leave
-1341,Katie,Johnson,Inventory,Clerk,2024-05-09,103797.17,Houston,Terminated
-1342,Tina,Rodriguez,Sales,Analyst,2025-03-19,46320.37,Miami,On Leave
-1343,Tina,Peck,HR,Associate,2023-08-02,80953.77,Los Angeles,Terminated
-1344,Julie,Diaz,Sales,Supervisor,2023-08-18,49226.88,Los Angeles,On Leave
-1345,Richard,Patterson,Sales,Manager,2021-01-21,103257.0,Miami,Terminated
-1346,James,Martin,Marketing,Manager,2020-11-20,59035.42,Chicago,On Leave
-1347,Donna,Baldwin,Marketing,Clerk,2023-12-13,47560.37,New York,On Leave
-1348,Lisa,Deleon,Marketing,Analyst,2021-06-16,94946.1,Chicago,On Leave
-1349,Brian,Villegas,IT,Associate,2025-02-24,73290.31,Miami,On Leave
-1350,Justin,Williams,Sales,Clerk,2023-03-10,43857.81,Los Angeles,Active
-1351,Nicole,Barnes,IT,Clerk,2023-02-09,45917.07,Miami,Active
-1352,Joshua,Jones,Marketing,Clerk,2024-09-20,70099.06,New York,Active
-1353,Aaron,Stone,Inventory,Associate,2024-02-23,68818.97,Houston,Active
-1354,Jessica,Garrett,Finance,Associate,2021-03-16,66043.31,Chicago,Active
-1355,Diana,Saunders,Marketing,Supervisor,2024-01-08,109078.56,Houston,On Leave
-1356,Kelly,Bailey,HR,Clerk,2022-09-10,114070.22,Los Angeles,Terminated
-1357,Victor,Miller,Finance,Supervisor,2020-08-06,110566.4,Los Angeles,Terminated
-1358,Joseph,Castro,HR,Manager,2024-08-24,38320.43,Miami,Active
-1359,Joy,Butler,HR,Manager,2024-05-08,83273.85,Houston,Active
-1360,Tara,Roberts,Sales,Clerk,2020-07-12,117928.23,Houston,Terminated
-1361,Donald,Holland,Marketing,Clerk,2022-08-20,119485.66,Los Angeles,Active
-1362,Thomas,Webb,Inventory,Supervisor,2025-04-10,64637.59,Los Angeles,Active
-1363,Richard,Wilson,Inventory,Associate,2023-06-30,88438.09,Chicago,On Leave
-1364,Steve,West,IT,Associate,2021-01-14,35670.54,Miami,Active
-1365,Matthew,Parker,IT,Clerk,2024-01-05,55398.54,New York,Active
-1366,Andrew,Flores,IT,Manager,2024-12-13,83427.85,Miami,Active
-1367,David,Powell,Marketing,Clerk,2023-03-10,50873.92,New York,Active
-1368,Stephen,Grimes,HR,Manager,2020-09-08,87340.15,Miami,Active
-1369,Brandon,Brooks,Finance,Analyst,2024-04-05,103024.47,Chicago,On Leave
-1370,Stephen,Hancock,Inventory,Manager,2022-09-13,33035.66,Los Angeles,Terminated
-1371,Timothy,Mclaughlin,Inventory,Manager,2025-01-31,37007.25,Houston,Terminated
-1372,Jason,Miller,Sales,Manager,2023-04-18,56451.95,Miami,Active
-1373,Victoria,Vaughan,Inventory,Manager,2021-02-06,104279.63,Houston,Active
-1374,Sarah,Griffin,Finance,Clerk,2023-03-25,63613.05,Miami,On Leave
-1375,Eileen,Miller,Sales,Associate,2021-09-04,32907.0,New York,On Leave
-1376,Lisa,Church,Marketing,Manager,2023-11-27,96045.01,New York,On Leave
-1377,John,Goodwin,Inventory,Supervisor,2024-06-06,83450.8,New York,Active
-1378,Theresa,House,Inventory,Associate,2022-01-27,101340.38,New York,Active
-1379,Phyllis,Wilkinson,Marketing,Associate,2023-11-09,64916.27,Chicago,On Leave
-1380,Trevor,Schmidt,HR,Manager,2023-08-29,92711.93,New York,Terminated
-1381,Paul,Meyer,Inventory,Analyst,2022-12-03,67134.13,Los Angeles,Active
-1382,Shannon,Bryant,HR,Clerk,2021-03-09,85592.16,Los Angeles,On Leave
-1383,Madison,Young,IT,Clerk,2022-03-09,97623.32,Miami,Active
-1384,Fernando,Owens,Inventory,Manager,2020-07-29,50773.53,Miami,Active
-1385,Shawn,Martin,Finance,Associate,2024-03-03,113921.71,Houston,Active
-1386,Nicole,Miller,Finance,Clerk,2022-10-10,30074.12,Chicago,On Leave
-1387,Christopher,Johnson,HR,Supervisor,2023-06-30,52843.73,Chicago,Terminated
-1388,Nicholas,Krause,IT,Clerk,2023-10-23,118496.0,Los Angeles,Terminated
-1389,Jill,Kim,IT,Supervisor,2022-07-24,111282.15,Miami,On Leave
-1390,Kelly,Stanton,HR,Supervisor,2021-11-26,111349.11,Los Angeles,Active
-1391,Hunter,Gutierrez,Marketing,Supervisor,2023-05-25,98288.23,Chicago,Terminated
-1392,Nathaniel,English,Finance,Manager,2021-12-06,49428.22,Chicago,Terminated
-1393,Cynthia,Owens,Sales,Manager,2024-04-14,63837.4,Houston,Active
-1394,Henry,Rodriguez,Inventory,Analyst,2023-02-15,52620.66,Houston,On Leave
-1395,Lori,Levy,Marketing,Supervisor,2024-04-04,37825.6,Chicago,On Leave
-1396,Stephen,Eaton,Inventory,Analyst,2022-06-22,48699.92,Chicago,On Leave
-1397,Leslie,Ibarra,Inventory,Clerk,2021-06-25,38427.27,Houston,Terminated
-1398,Jocelyn,Aguilar,Marketing,Analyst,2021-08-26,116822.2,New York,Terminated
-1399,Jessica,Williams,Finance,Supervisor,2022-03-28,83007.54,Chicago,Active
-1400,Shawn,Flores,IT,Associate,2024-08-06,51494.78,Houston,Active
-1401,Danielle,Gomez,Finance,Associate,2023-04-05,58464.9,New York,On Leave
-1402,Jessica,Taylor,Inventory,Associate,2023-11-03,109681.24,Los Angeles,On Leave
-1403,Michelle,Sweeney,Inventory,Supervisor,2021-11-03,40541.67,Los Angeles,Active
-1404,Rebecca,Carter,Marketing,Supervisor,2021-03-25,35191.72,Los Angeles,Active
-1405,Nicole,Gonzales,IT,Supervisor,2025-04-14,43661.31,Chicago,Active
-1406,Joan,James,IT,Analyst,2024-02-10,37510.89,Chicago,On Leave
-1407,Catherine,Butler,Marketing,Analyst,2021-05-05,46908.64,Houston,Active
-1408,Jeffrey,Thornton,Finance,Analyst,2020-06-22,40349.01,Los Angeles,Terminated
-1409,Travis,Hale,IT,Analyst,2024-11-11,62250.3,New York,Active
-1410,Andrew,Brown,Finance,Analyst,2024-08-10,69368.48,Los Angeles,Terminated
-1411,Patrick,Jenkins,IT,Analyst,2023-07-04,100850.6,Houston,On Leave
-1412,Steven,Hardin,Sales,Analyst,2024-08-03,53688.02,Los Angeles,On Leave
-1413,Craig,Foley,HR,Associate,2021-06-20,91929.86,Miami,On Leave
-1414,Regina,Ellis,IT,Associate,2021-08-02,42903.05,Houston,Active
-1415,Elizabeth,Choi,HR,Manager,2024-05-17,75424.99,Chicago,Active
-1416,Nicole,Carter,Sales,Supervisor,2023-08-12,38128.46,Los Angeles,On Leave
-1417,Patricia,Lucas,HR,Associate,2021-02-08,55241.79,New York,Terminated
-1418,Courtney,Scott,Marketing,Supervisor,2023-10-20,113677.86,New York,Terminated
-1419,Nancy,Arnold,Finance,Supervisor,2022-07-30,105762.35,Houston,Active
-1420,Brenda,Jones,Marketing,Supervisor,2021-07-14,57735.3,Chicago,On Leave
-1421,Carolyn,Tran,Marketing,Clerk,2020-10-13,96511.32,New York,Terminated
-1422,Taylor,Bell,Marketing,Analyst,2020-09-17,84358.11,Los Angeles,Active
-1423,Howard,Morton,Marketing,Supervisor,2022-04-30,60498.41,Miami,Active
-1424,Kevin,Taylor,Sales,Manager,2022-07-20,50475.48,Houston,Terminated
-1425,Megan,Arnold,IT,Clerk,2023-04-29,33827.07,Chicago,Terminated
-1426,Nicole,Schultz,Sales,Manager,2024-03-09,101175.83,Houston,On Leave
-1427,Samantha,Wallace,Marketing,Supervisor,2022-02-06,47898.2,New York,Terminated
-1428,Tracy,Stark,Marketing,Manager,2022-08-03,103284.72,Houston,Active
-1429,April,Wells,Finance,Associate,2024-09-29,91882.7,Houston,Active
-1430,Lisa,Howard,HR,Manager,2020-12-10,96529.36,Los Angeles,On Leave
-1431,Nicholas,Romero,Inventory,Associate,2021-01-04,92490.6,Houston,Terminated
-1432,Gary,Brown,Inventory,Manager,2024-02-17,89024.37,Los Angeles,Active
-1433,Elizabeth,Randall,Sales,Supervisor,2021-12-21,41463.94,Los Angeles,Terminated
-1434,Bobby,Collins,Finance,Supervisor,2021-03-22,117223.92,Los Angeles,Active
-1435,Dan,Meyer,Sales,Manager,2023-07-15,119363.98,New York,On Leave
-1436,Joseph,Black,Sales,Supervisor,2022-02-20,54971.94,Miami,Active
-1437,Marvin,Roberts,Sales,Supervisor,2020-08-01,54674.85,Houston,Active
-1438,Noah,Roman,Finance,Supervisor,2020-05-25,57905.0,Chicago,On Leave
-1439,Michelle,Simpson,Finance,Clerk,2022-02-03,87554.9,New York,On Leave
-1440,Heather,Cruz,Inventory,Clerk,2025-05-16,89500.72,Los Angeles,Terminated
-1441,Jennifer,Hart,IT,Analyst,2020-07-18,89750.85,Houston,Terminated
-1442,Desiree,Parker,Inventory,Clerk,2024-03-13,48994.39,Los Angeles,Active
-1443,Ryan,Mcclain,HR,Manager,2023-06-06,38856.98,Houston,Active
-1444,Jacob,French,Sales,Analyst,2023-03-09,84648.01,Houston,On Leave
-1445,Kristin,Coleman,HR,Manager,2020-10-19,35238.02,Los Angeles,Active
-1446,Tyler,Whitehead,Inventory,Supervisor,2023-11-19,115671.7,Houston,On Leave
-1447,Madison,Smith,Inventory,Associate,2024-11-28,96642.67,Miami,On Leave
-1448,Hannah,Boyd,HR,Analyst,2023-03-23,67034.79,Houston,Active
-1449,Terrance,Powell,Sales,Supervisor,2021-06-11,31574.15,New York,On Leave
-1450,Melinda,Mooney,Marketing,Associate,2024-07-04,37387.95,Miami,Active
-1451,Melissa,Gutierrez,Sales,Analyst,2021-03-02,78735.39,Miami,Terminated
-1452,Darren,Roberson,Finance,Associate,2022-04-17,72903.22,Houston,On Leave
-1453,Robert,Taylor,Marketing,Associate,2022-04-02,46761.94,Miami,Terminated
-1454,Wesley,Hughes,Marketing,Clerk,2021-01-26,63586.7,New York,Terminated
-1455,Tracy,Delacruz,Sales,Associate,2021-03-21,77437.74,Los Angeles,On Leave
-1456,Kristen,Martin,HR,Clerk,2023-07-02,44777.9,Miami,Terminated
-1457,Marcus,Brennan,Marketing,Associate,2022-09-11,87343.23,Miami,Terminated
-1458,Seth,Hansen,Marketing,Associate,2023-06-20,119537.02,Miami,On Leave
-1459,Samantha,Simpson,Finance,Associate,2023-10-31,30048.27,Chicago,On Leave
-1460,Travis,Reed,Marketing,Associate,2021-12-07,68741.61,Miami,On Leave
-1461,Jared,Moore,IT,Analyst,2021-09-17,41786.54,Chicago,On Leave
-1462,Brandi,Welch,HR,Associate,2022-06-17,106944.56,New York,Active
-1463,Kenneth,Black,HR,Associate,2022-03-12,38755.37,Chicago,Terminated
-1464,James,Thompson,Sales,Associate,2021-12-05,115614.57,Miami,Active
-1465,Olivia,Adams,Sales,Clerk,2023-02-22,93909.9,Miami,On Leave
-1466,Jason,Williams,HR,Associate,2024-01-11,69781.02,New York,Terminated
-1467,Robert,Duarte,HR,Associate,2023-07-08,75928.58,Los Angeles,Terminated
-1468,Sarah,Klein,HR,Clerk,2023-07-11,43870.12,Houston,Active
-1469,Benjamin,Gibson,Inventory,Analyst,2024-09-06,42105.0,Los Angeles,Terminated
-1470,Rose,Saunders,Sales,Associate,2024-09-25,106342.56,Chicago,Terminated
-1471,Gregory,Harris,Sales,Analyst,2024-09-24,108931.26,Miami,On Leave
-1472,Rebecca,Evans,IT,Clerk,2020-08-22,50854.33,Houston,Terminated
-1473,Joseph,Cummings,Finance,Associate,2024-02-23,98460.0,New York,Active
-1474,Douglas,Olson,Sales,Associate,2022-04-02,85104.05,Miami,Terminated
-1475,Christina,Hall,Finance,Analyst,2020-12-20,74462.24,Houston,On Leave
-1476,Victoria,Flynn,Inventory,Supervisor,2022-02-14,58553.05,Los Angeles,Active
-1477,Douglas,Long,Inventory,Clerk,2024-02-20,51488.5,New York,Active
-1478,Katherine,Lam,HR,Manager,2024-06-02,64797.16,Houston,Active
-1479,Amber,Dorsey,Marketing,Manager,2023-07-31,74047.82,Los Angeles,On Leave
-1480,Andrew,Parker,IT,Clerk,2021-04-28,119683.44,Miami,Active
-1481,Ashley,Wang,Inventory,Associate,2024-04-16,116161.72,Houston,Active
-1482,Ashley,Mccoy,HR,Associate,2024-06-21,119945.54,Los Angeles,Active
-1483,Donna,Bates,Inventory,Clerk,2023-04-07,72583.21,Los Angeles,On Leave
-1484,Keith,Roberts,Finance,Analyst,2021-09-20,81312.87,New York,Active
-1485,Roberto,Gonzalez,Sales,Manager,2024-12-05,97763.66,New York,On Leave
-1486,Cynthia,Daniel,IT,Clerk,2025-05-06,118768.7,Chicago,On Leave
-1487,Michelle,Gilbert,Finance,Associate,2021-04-09,58022.92,New York,On Leave
-1488,John,Kim,IT,Associate,2025-03-19,55797.64,Miami,Terminated
-1489,Kelsey,Wells,Finance,Manager,2024-05-07,84501.79,Miami,On Leave
-1490,Lawrence,Gardner,HR,Analyst,2024-12-27,58544.66,Chicago,On Leave
-1491,Caitlin,Coffey,HR,Clerk,2023-08-27,90188.71,Houston,Terminated
-1492,Melissa,Estes,Inventory,Analyst,2025-04-18,113080.5,Los Angeles,Active
-1493,Tammy,Brown,Sales,Manager,2020-06-11,107126.58,Houston,On Leave
-1494,Rita,Walker,Finance,Manager,2025-02-04,100234.16,Los Angeles,On Leave
-1495,Jacob,Hernandez,HR,Manager,2020-09-15,102194.68,Chicago,On Leave
-1496,Valerie,Lindsey,Sales,Analyst,2025-01-07,43781.86,Chicago,On Leave
-1497,Nicholas,Harrell,Inventory,Associate,2021-01-03,103233.22,Miami,Terminated
-1498,Jean,Allen,Finance,Associate,2020-10-19,46122.3,New York,Terminated
-1499,Samantha,Green,HR,Clerk,2024-02-09,111800.57,Miami,Active
-1500,Joshua,Nelson,Finance,Manager,2023-04-04,60276.36,Houston,Terminated
-1501,Nicholas,Bright,HR,Supervisor,2022-11-17,33616.02,Chicago,Active
-1502,Sarah,Perez,Marketing,Manager,2022-11-22,42915.71,Houston,Active
-1503,John,Price,Inventory,Analyst,2022-07-28,63991.64,Chicago,Terminated
-1504,Ian,Newton,Inventory,Supervisor,2021-09-23,81372.06,Los Angeles,Active
-1505,Justin,Scott,Sales,Supervisor,2024-12-18,98476.48,Chicago,On Leave
-1506,Kathryn,Hardy,Inventory,Associate,2023-10-17,57753.62,Miami,Active
-1507,Troy,Taylor,Marketing,Associate,2021-06-15,69068.24,Houston,Active
-1508,Michael,Guerrero,HR,Supervisor,2021-10-05,80279.15,Chicago,Terminated
-1509,Miranda,Guzman,Sales,Manager,2022-05-21,96142.65,Miami,Terminated
-1510,Kelly,Booker,IT,Clerk,2023-01-03,46401.03,Los Angeles,On Leave
-1511,Paula,Herrera,Finance,Clerk,2020-11-14,89795.15,New York,On Leave
-1512,Ashley,Carter,Inventory,Manager,2020-10-05,63045.59,Miami,On Leave
-1513,Jennifer,Brown,IT,Clerk,2021-02-10,63675.45,Miami,Terminated
-1514,Sara,Frazier,Marketing,Associate,2023-12-22,60803.43,Los Angeles,Terminated
-1515,Lindsay,Smith,IT,Clerk,2023-02-02,106892.96,Miami,On Leave
-1516,Rebecca,Brown,HR,Analyst,2024-09-08,112536.92,Los Angeles,Terminated
-1517,David,Rivera,Inventory,Supervisor,2024-05-19,75728.11,Miami,Active
-1518,Julian,Parks,Marketing,Clerk,2025-05-10,88779.59,Houston,Active
-1519,Derek,Harris,Inventory,Supervisor,2021-03-29,92676.19,Chicago,Active
-1520,Robert,Bryant,IT,Associate,2021-11-26,40774.64,Los Angeles,Terminated
-1521,Deanna,Williams,Finance,Supervisor,2024-09-14,33628.77,Houston,Active
-1522,Taylor,Clark,IT,Associate,2023-03-06,58771.05,Houston,Terminated
-1523,Jennifer,Jimenez,HR,Clerk,2025-01-04,81908.79,Los Angeles,Terminated
-1524,Austin,Davis,Finance,Associate,2024-03-25,107770.57,Miami,Terminated
-1525,Mark,Pierce,IT,Analyst,2021-05-24,31396.47,Chicago,Terminated
-1526,Christopher,Chapman,Marketing,Associate,2021-11-02,89731.49,Miami,On Leave
-1527,Rebecca,Mullins,Inventory,Supervisor,2020-09-15,84656.31,Los Angeles,Terminated
-1528,James,Montgomery,IT,Analyst,2022-10-27,80726.99,Chicago,Active
-1529,Nicholas,Smith,Finance,Supervisor,2020-07-11,56903.71,New York,On Leave
-1530,Robert,Guzman,Marketing,Clerk,2023-10-25,55097.22,Chicago,On Leave
-1531,Andrea,Rodriguez,Marketing,Supervisor,2024-01-05,56460.57,Los Angeles,On Leave
-1532,Karen,Leon,HR,Associate,2020-11-02,85640.41,Chicago,Active
-1533,James,Graham,Inventory,Supervisor,2021-04-02,85337.7,Miami,On Leave
-1534,Christopher,Pitts,Marketing,Associate,2021-06-06,85339.37,Houston,Active
-1535,Kyle,Miller,Sales,Supervisor,2021-11-17,105380.54,Chicago,On Leave
-1536,Cesar,Freeman,IT,Supervisor,2023-06-27,54290.28,Houston,On Leave
-1537,Lonnie,Miller,Marketing,Associate,2022-05-03,89148.61,Chicago,Terminated
-1538,Renee,Kent,Finance,Supervisor,2022-06-06,103626.06,Miami,Terminated
-1539,Kathleen,Mata,IT,Manager,2022-06-22,39492.25,Los Angeles,On Leave
-1540,Daniel,Foley,IT,Manager,2022-04-16,111239.26,Chicago,Active
-1541,Kendra,Robertson,HR,Manager,2022-03-19,53244.21,New York,Active
-1542,Evan,Hill,IT,Manager,2023-01-03,40247.41,Houston,Active
-1543,Paul,Haas,HR,Supervisor,2020-07-11,38733.42,Los Angeles,Terminated
-1544,Alex,Brooks,IT,Supervisor,2022-05-18,74828.36,New York,Terminated
-1545,Steven,Brown,IT,Clerk,2024-05-29,94591.79,Miami,On Leave
-1546,Sarah,Holt,Inventory,Supervisor,2024-01-23,79678.01,Miami,Terminated
-1547,Kayla,Rios,Finance,Supervisor,2024-05-19,71825.32,New York,Active
-1548,Nathan,Mitchell,HR,Analyst,2023-04-24,117534.75,Miami,On Leave
-1549,Amanda,Thompson,Inventory,Clerk,2024-07-29,57285.59,Houston,On Leave
-1550,Russell,Jackson,Sales,Supervisor,2024-07-09,88390.97,Miami,On Leave
-1551,Stephanie,Franco,IT,Analyst,2023-11-23,52676.6,Los Angeles,On Leave
-1552,Patrick,Williams,IT,Clerk,2023-08-19,105199.27,Houston,Terminated
-1553,Julia,Allen,Finance,Associate,2023-07-24,44280.51,Houston,Active
-1554,Juan,Higgins,IT,Associate,2023-07-11,48661.07,Miami,On Leave
-1555,Kathleen,Bailey,Sales,Analyst,2022-12-25,56912.83,Houston,Terminated
-1556,Cathy,Robles,Inventory,Associate,2021-12-06,95257.39,Los Angeles,On Leave
-1557,Dennis,Clay,IT,Clerk,2021-09-13,104143.71,Miami,Terminated
-1558,John,Smith,Marketing,Supervisor,2024-05-14,81006.52,New York,On Leave
-1559,Cynthia,Miller,IT,Associate,2023-03-09,42828.87,Miami,Terminated
-1560,Michael,Rosario,HR,Supervisor,2024-05-02,53364.67,Los Angeles,On Leave
-1561,Kristen,Savage,Inventory,Associate,2020-10-07,41098.63,New York,Terminated
-1562,Matthew,Carroll,Marketing,Analyst,2021-08-16,44735.18,Los Angeles,On Leave
-1563,Tami,Carter,Finance,Supervisor,2022-02-12,69461.06,Houston,Active
-1564,Bryce,Whitaker,Finance,Clerk,2025-01-12,58549.97,Houston,Terminated
-1565,Marcus,Gray,IT,Associate,2023-01-11,76344.64,Houston,Terminated
-1566,Nancy,Thompson,IT,Clerk,2022-02-10,56840.88,Miami,Terminated
-1567,Alexis,Watson,HR,Manager,2021-06-15,38478.98,Miami,Active
-1568,Margaret,Cruz,Finance,Analyst,2022-05-01,100167.18,Los Angeles,Active
-1569,Laura,Ruiz,Inventory,Manager,2021-10-03,100509.64,Los Angeles,Terminated
-1570,Matthew,Gross,HR,Associate,2023-10-09,95767.3,Los Angeles,On Leave
-1571,Morgan,Gould,HR,Analyst,2024-03-18,80447.68,New York,Terminated
-1572,Laura,Ayala,Sales,Analyst,2022-04-10,111577.95,Chicago,Active
-1573,Blake,Rodriguez,HR,Manager,2022-09-10,117258.54,Los Angeles,On Leave
-1574,Kimberly,Foster,IT,Manager,2021-11-22,45781.18,Houston,On Leave
-1575,Melissa,Martin,Sales,Clerk,2024-05-29,61011.51,New York,Active
-1576,Kimberly,Preston,Finance,Associate,2024-05-06,69941.77,Chicago,Terminated
-1577,Steven,Wong,IT,Supervisor,2022-10-31,53190.37,Miami,Terminated
-1578,Tonya,Miller,Inventory,Supervisor,2020-11-13,106619.04,Los Angeles,On Leave
-1579,George,Christensen,HR,Associate,2023-05-04,114807.29,Los Angeles,On Leave
-1580,Anthony,Dyer,Inventory,Manager,2021-11-13,73073.83,Los Angeles,Active
-1581,Lori,Lowery,HR,Supervisor,2021-01-08,117319.76,Los Angeles,Terminated
-1582,Sarah,Williams,Sales,Manager,2025-04-23,31167.42,Chicago,Active
-1583,Denise,Garcia,Marketing,Manager,2024-02-21,106737.88,Chicago,Active
-1584,Andrew,Kennedy,Inventory,Associate,2023-03-20,72202.96,Chicago,Terminated
-1585,Shawn,Chen,HR,Manager,2024-11-07,74631.8,Miami,Active
-1586,Mercedes,Price,HR,Clerk,2021-03-03,48017.16,New York,On Leave
-1587,John,Kim,IT,Manager,2021-12-25,34513.75,Miami,On Leave
-1588,Gary,Paul,HR,Analyst,2021-08-11,89874.57,Houston,Active
-1589,Jennifer,Hooper,Sales,Supervisor,2020-09-11,102060.1,New York,Terminated
-1590,Hannah,Cook,Marketing,Supervisor,2020-10-17,97211.74,Houston,Terminated
-1591,Mathew,Anderson,Sales,Associate,2023-11-04,110331.57,Miami,Terminated
-1592,Gary,Valenzuela,Sales,Analyst,2023-02-09,42399.36,Houston,Active
-1593,Amy,Rose,Marketing,Analyst,2025-05-19,58958.21,Los Angeles,Active
-1594,Johnny,Murphy,Inventory,Manager,2023-04-05,65007.65,Houston,On Leave
-1595,David,Ayala,HR,Analyst,2022-07-11,105164.24,New York,Terminated
-1596,Deborah,Alvarado,HR,Clerk,2021-04-09,112657.54,Miami,Active
-1597,William,Howe,Sales,Associate,2024-05-31,88996.22,Miami,Active
-1598,Tony,Torres,Inventory,Associate,2022-07-16,94591.25,Chicago,Terminated
-1599,George,Smith,Marketing,Manager,2021-06-13,31479.57,New York,Active
-1600,Kristen,Holt,IT,Supervisor,2025-05-18,47946.15,Houston,On Leave
-1601,Joyce,Rojas,IT,Associate,2024-10-13,44685.01,Miami,Active
-1602,Robert,Bailey,Inventory,Clerk,2022-10-17,96024.56,Los Angeles,Active
-1603,Ashley,Huerta,IT,Manager,2023-07-06,115425.14,Chicago,Active
-1604,Perry,Smith,IT,Supervisor,2024-05-22,83861.56,Chicago,On Leave
-1605,Tasha,Cook,Marketing,Supervisor,2020-09-23,90741.61,Miami,Active
-1606,Debra,Cannon,IT,Supervisor,2020-05-26,87946.8,Houston,On Leave
-1607,Megan,Montgomery,Marketing,Analyst,2022-12-27,63462.03,New York,Active
-1608,Michelle,Hudson,HR,Clerk,2022-11-13,48144.98,Los Angeles,Terminated
-1609,Jerry,Higgins,Marketing,Supervisor,2022-10-05,32072.68,Miami,On Leave
-1610,Samantha,Sanders,Sales,Manager,2021-08-11,117086.82,Miami,Terminated
-1611,David,Bray,IT,Manager,2022-10-10,112539.6,Miami,Terminated
-1612,Cody,Jones,IT,Clerk,2021-08-04,100881.53,Houston,Terminated
-1613,Steven,Osborne,Marketing,Manager,2023-02-28,111042.22,Miami,On Leave
-1614,Jacob,Wells,Sales,Clerk,2023-08-11,83748.67,Houston,Terminated
-1615,Kristin,Archer,Inventory,Supervisor,2020-11-28,113956.53,Houston,On Leave
-1616,Alejandro,Huff,Marketing,Manager,2020-10-30,62709.35,Houston,On Leave
-1617,Daniel,Mcmahon,Sales,Associate,2023-06-27,68713.96,Los Angeles,On Leave
-1618,Christopher,Soto,Inventory,Clerk,2021-06-18,106498.26,Miami,On Leave
-1619,Alexander,Turner,Sales,Analyst,2025-04-12,104279.59,New York,On Leave
-1620,Lauren,Parker,Finance,Supervisor,2022-01-03,84913.53,Los Angeles,Active
-1621,Nathaniel,Romero,IT,Manager,2020-09-05,35553.1,Los Angeles,Active
-1622,David,Hatfield,Sales,Analyst,2022-06-21,65954.34,Los Angeles,Terminated
-1623,Wanda,Gonzalez,Sales,Analyst,2024-11-22,39239.42,Chicago,Terminated
-1624,Kimberly,Ayers,HR,Analyst,2020-08-30,109385.48,New York,Terminated
-1625,Melissa,Wood,HR,Associate,2023-05-22,52567.26,Houston,Active
-1626,Nicholas,Elliott,Inventory,Analyst,2022-12-15,119917.84,Miami,Terminated
-1627,Michael,Griffin,Finance,Associate,2022-02-02,100330.57,Los Angeles,Active
-1628,Alexandra,Scott,Finance,Associate,2021-10-29,68314.52,Miami,On Leave
-1629,Amy,Rogers,Marketing,Supervisor,2021-12-04,63453.08,Los Angeles,Active
-1630,Kurt,Lewis,Inventory,Supervisor,2023-07-20,36503.05,Houston,Terminated
-1631,Jason,Smith,HR,Manager,2021-04-16,98565.44,Chicago,On Leave
-1632,Brittany,Williams,HR,Analyst,2024-11-02,117793.0,Chicago,Active
-1633,Eduardo,Morales,Inventory,Associate,2023-05-22,54318.55,Miami,Terminated
-1634,Shawn,Adams,HR,Supervisor,2022-04-13,54422.11,Los Angeles,Terminated
-1635,Matthew,Cordova,IT,Manager,2021-03-14,80108.95,Chicago,Terminated
-1636,Elizabeth,Henderson,HR,Clerk,2022-06-05,90353.28,Houston,Active
-1637,Tyler,Hammond,Sales,Associate,2020-05-22,95091.8,Miami,Terminated
-1638,Albert,Martin,Sales,Manager,2024-02-24,116770.73,New York,Terminated
-1639,Wesley,Hill,Marketing,Associate,2024-10-13,43812.67,Los Angeles,Active
-1640,Russell,Miller,IT,Clerk,2020-09-23,105832.76,Miami,Active
-1641,Daniel,Garcia,Sales,Supervisor,2021-07-22,43714.12,Chicago,On Leave
-1642,Jon,Stone,Finance,Manager,2022-06-16,113967.93,Chicago,Active
-1643,Francisco,Young,HR,Supervisor,2024-03-11,81584.48,New York,Terminated
-1644,Christina,Shelton,Finance,Manager,2021-11-15,111195.65,New York,Active
-1645,Vincent,Patel,IT,Clerk,2022-05-18,33196.74,Chicago,Active
-1646,Rodney,Barnes,Marketing,Associate,2023-03-16,63928.02,Miami,On Leave
-1647,Stephen,Kim,Inventory,Associate,2022-02-28,111099.85,Los Angeles,Terminated
-1648,Diane,King,Inventory,Manager,2020-06-24,97927.62,Miami,Terminated
-1649,Tracy,Medina,Finance,Analyst,2025-04-09,119868.54,Houston,On Leave
-1650,Tonya,Phillips,Sales,Analyst,2021-03-03,83395.9,Chicago,Terminated
-1651,Tyler,Shaw,IT,Manager,2023-09-14,61407.04,Los Angeles,On Leave
-1652,Amy,Ross,Finance,Manager,2025-05-12,102585.04,Miami,Terminated
-1653,Brian,Smith,Finance,Manager,2022-03-16,75499.52,Houston,On Leave
-1654,Brian,Bullock,Sales,Associate,2023-06-04,105967.63,Miami,Active
-1655,Alexandra,Patel,HR,Manager,2020-07-28,112982.83,Chicago,Active
-1656,Kimberly,Cox,Finance,Clerk,2023-05-19,51225.01,Los Angeles,Terminated
-1657,Mandy,Perkins,HR,Manager,2024-03-20,34650.87,Houston,On Leave
-1658,Shawn,Gould,IT,Analyst,2020-10-23,89369.52,Houston,On Leave
-1659,Nicholas,Smith,Sales,Supervisor,2022-01-30,37823.46,New York,On Leave
-1660,Logan,Jenkins,Finance,Clerk,2025-02-21,40179.69,Los Angeles,Active
-1661,Andrea,Park,Finance,Clerk,2021-05-15,68606.44,Los Angeles,On Leave
-1662,Kaitlyn,Lucas,Finance,Clerk,2021-09-15,64671.75,Miami,Active
-1663,Dakota,Bradley,Inventory,Associate,2024-01-26,85329.15,Houston,Terminated
-1664,Kathleen,Solomon,Marketing,Associate,2025-03-12,33857.98,New York,Terminated
-1665,Michele,Clark,HR,Clerk,2024-01-11,93061.31,Miami,On Leave
-1666,Justin,Martinez,Sales,Analyst,2021-04-04,119877.5,Miami,Active
-1667,Justin,Warren,Marketing,Manager,2021-10-24,46824.57,Miami,On Leave
-1668,James,Leonard,Sales,Clerk,2024-03-05,37621.77,New York,Active
-1669,Jennifer,Riley,Marketing,Manager,2024-08-15,106796.26,Miami,On Leave
-1670,Joseph,Anderson,Sales,Analyst,2021-08-24,90668.58,Chicago,Terminated
-1671,Steven,Turner,Sales,Supervisor,2024-01-13,43780.98,Chicago,Terminated
-1672,Jeremy,Gonzales,HR,Clerk,2024-02-11,61093.25,New York,Active
-1673,Cheryl,Miller,Marketing,Supervisor,2021-10-16,77097.23,New York,On Leave
-1674,Maria,Brown,Finance,Manager,2021-06-22,68239.48,Miami,Terminated
-1675,Nicole,Carter,Sales,Supervisor,2024-07-11,58615.66,Chicago,On Leave
-1676,Alison,May,Marketing,Manager,2023-10-21,118725.26,New York,On Leave
-1677,James,Long,Marketing,Associate,2024-03-04,61777.26,Miami,Terminated
-1678,John,Jenkins,Finance,Analyst,2022-05-13,48119.0,New York,Terminated
-1679,Frederick,Mason,HR,Manager,2022-07-05,77864.27,Houston,On Leave
-1680,Elizabeth,Vargas,Finance,Manager,2022-05-08,67672.22,Miami,Terminated
-1681,William,Brooks,HR,Clerk,2022-01-05,58967.99,Los Angeles,Active
-1682,Stacey,Ward,Finance,Associate,2021-02-21,70394.86,Los Angeles,Active
-1683,Michelle,Perez,Finance,Associate,2021-09-13,32716.96,Los Angeles,On Leave
-1684,Debbie,Walsh,IT,Analyst,2021-06-22,94668.65,Houston,Active
-1685,Felicia,Lawson,HR,Analyst,2022-02-13,101863.55,Chicago,Active
-1686,Rose,Roy,Marketing,Analyst,2025-04-30,79445.93,Houston,On Leave
-1687,Sarah,Young,Sales,Supervisor,2022-09-13,31959.11,Houston,Terminated
-1688,Christy,Williams,Marketing,Analyst,2023-10-15,64829.18,Los Angeles,On Leave
-1689,Brooke,Rodriguez,IT,Analyst,2022-09-06,32267.1,Miami,Terminated
-1690,Valerie,Mathis,Finance,Clerk,2022-11-21,34690.16,Miami,Active
-1691,Richard,Coffey,Finance,Manager,2022-03-29,75313.02,Los Angeles,On Leave
-1692,Robert,Fernandez,Finance,Supervisor,2020-06-04,69499.26,Miami,Terminated
-1693,Adam,Greene,IT,Analyst,2020-08-15,53025.3,Miami,Active
-1694,Kathryn,Meyer,HR,Associate,2021-01-18,31108.57,New York,Active
-1695,Joseph,Drake,Inventory,Analyst,2024-09-02,113363.62,New York,Active
-1696,Ashley,Curry,Inventory,Supervisor,2021-01-11,35080.51,Chicago,Terminated
-1697,Robin,Walker,Sales,Analyst,2022-08-14,106321.04,Houston,On Leave
-1698,Vanessa,Oliver,HR,Supervisor,2024-09-13,74672.66,Chicago,Active
-1699,Scott,Davis,HR,Analyst,2023-06-15,33291.95,Chicago,On Leave
-1700,Trevor,Thompson,Finance,Supervisor,2023-10-31,83455.25,Los Angeles,Active
-1701,Robert,Yu,Finance,Analyst,2024-03-15,49103.37,New York,Terminated
-1702,Michele,Sanders,Finance,Clerk,2022-06-01,70644.01,Los Angeles,Terminated
-1703,Kevin,White,Sales,Manager,2021-05-26,83817.62,Miami,Terminated
-1704,Adam,Johnson,Inventory,Supervisor,2022-05-20,57810.77,New York,Active
-1705,Jeffrey,Smith,Inventory,Associate,2020-10-02,75658.11,Chicago,Terminated
-1706,Michael,Taylor,Finance,Manager,2022-05-14,65753.62,Los Angeles,On Leave
-1707,Morgan,Webb,Sales,Supervisor,2023-12-10,37742.04,Los Angeles,Terminated
-1708,Cynthia,Hill,Sales,Associate,2022-05-10,42385.26,Los Angeles,Terminated
-1709,Cheryl,Obrien,Inventory,Associate,2021-01-21,79639.95,Chicago,Active
-1710,Tracy,Warren,Sales,Clerk,2023-10-02,95664.98,New York,Active
-1711,Lauren,Price,Marketing,Clerk,2021-02-17,80024.38,Houston,Terminated
-1712,Stephen,Jones,Finance,Manager,2021-07-15,46603.47,Los Angeles,Terminated
-1713,Lisa,Diaz,HR,Supervisor,2023-04-21,88913.04,New York,On Leave
-1714,Steven,Nunez,Marketing,Clerk,2022-06-21,73640.52,Miami,Terminated
-1715,Ashley,Walker,HR,Clerk,2022-02-03,89074.53,New York,Active
-1716,Todd,Scott,Finance,Associate,2022-10-02,115816.26,Chicago,Terminated
-1717,Rebecca,Waters,Marketing,Analyst,2020-07-20,94408.6,New York,Terminated
-1718,Jerry,King,Sales,Associate,2025-04-16,103976.37,Los Angeles,Terminated
-1719,Kyle,Gutierrez,IT,Supervisor,2022-09-30,46579.69,Los Angeles,On Leave
-1720,Damon,Hunt,HR,Clerk,2022-06-14,83456.99,New York,Active
-1721,Angela,Thomas,IT,Supervisor,2025-01-16,31018.49,Houston,Active
-1722,Wesley,Bryant,IT,Manager,2023-09-02,53107.99,New York,On Leave
-1723,Eileen,Odonnell,Sales,Manager,2022-09-19,107096.27,Chicago,Active
-1724,Patrick,Jones,Finance,Associate,2021-02-27,52649.14,Chicago,Terminated
-1725,Linda,Jones,HR,Supervisor,2023-09-02,107972.08,Chicago,Active
-1726,Heidi,Hebert,Marketing,Manager,2022-12-15,98891.55,Miami,On Leave
-1727,Jared,Becker,Inventory,Manager,2021-09-24,66785.98,New York,On Leave
-1728,Melanie,Chandler,Marketing,Associate,2021-07-12,98376.48,Houston,Terminated
-1729,Timothy,Allen,Inventory,Associate,2023-01-24,35047.16,Miami,On Leave
-1730,Noah,Burnett,Sales,Supervisor,2023-08-14,70921.85,Miami,Terminated
-1731,Paul,Morris,Sales,Supervisor,2024-08-12,111195.17,New York,Active
-1732,Diana,Johnson,Finance,Clerk,2020-10-13,45266.24,New York,Terminated
-1733,Matthew,Dalton,Inventory,Manager,2023-07-26,61651.5,Los Angeles,Terminated
-1734,Daniel,Campbell,Finance,Manager,2024-02-09,114335.97,Houston,Active
-1735,Christian,Bailey,HR,Associate,2022-03-24,94793.94,Houston,Terminated
-1736,Meghan,Diaz,IT,Manager,2024-02-04,119883.85,Miami,Terminated
-1737,Paul,Coleman,Sales,Manager,2023-12-27,74214.97,Miami,Active
-1738,Danielle,Wright,IT,Clerk,2020-11-09,91690.99,New York,Active
-1739,Amanda,Alexander,Sales,Clerk,2025-04-30,76980.33,Chicago,On Leave
-1740,Susan,Romero,Finance,Supervisor,2025-04-06,117780.63,Houston,Active
-1741,Frederick,Gutierrez,Inventory,Clerk,2024-03-07,62211.06,Chicago,Terminated
-1742,Whitney,Thomas,Finance,Manager,2021-05-28,115702.48,Los Angeles,On Leave
-1743,Patricia,Simmons,Sales,Supervisor,2021-02-17,100107.16,Houston,On Leave
-1744,Craig,Mora,Sales,Associate,2023-02-26,59172.58,New York,Terminated
-1745,Molly,Henry,Sales,Associate,2024-12-15,48028.94,Chicago,Terminated
-1746,Cynthia,Vang,Marketing,Associate,2025-02-02,41870.33,Houston,Active
-1747,Amy,Mitchell,Finance,Manager,2023-01-30,70903.05,Miami,Terminated
-1748,Michelle,Anderson,Marketing,Analyst,2021-03-23,91240.91,Miami,Active
-1749,Sara,Cortez,HR,Supervisor,2021-11-27,33859.33,Los Angeles,Active
-1750,Anne,Harper,Marketing,Clerk,2025-05-12,86830.78,New York,On Leave
-1751,Charlotte,Mitchell,Finance,Manager,2021-12-26,94568.35,Chicago,On Leave
-1752,Anthony,Owens,Finance,Supervisor,2023-05-12,58943.37,Chicago,On Leave
-1753,Joseph,Morris,Marketing,Analyst,2023-01-08,93156.65,Chicago,Active
-1754,William,Fletcher,Inventory,Clerk,2023-01-22,48163.22,Miami,Active
-1755,Alexander,Mahoney,HR,Clerk,2023-04-23,79213.58,New York,Active
-1756,Joseph,Barry,Inventory,Associate,2022-01-07,48266.36,Chicago,Terminated
-1757,Kenneth,Sherman,Sales,Manager,2021-07-05,104814.02,Chicago,On Leave
-1758,Nicole,Pennington,IT,Associate,2023-03-29,57393.14,Chicago,On Leave
-1759,Dana,Smith,Sales,Analyst,2020-08-25,63663.74,Chicago,Active
-1760,Nicole,Beasley,Inventory,Clerk,2024-05-25,42046.87,Miami,On Leave
-1761,Noah,Davis,Finance,Supervisor,2024-01-26,72478.65,New York,On Leave
-1762,Karen,Montgomery,Marketing,Associate,2023-05-28,92518.18,Chicago,Terminated
-1763,Kenneth,Charles,IT,Manager,2022-01-11,58981.56,Chicago,Terminated
-1764,Maria,Tran,Inventory,Clerk,2025-02-06,103506.33,Los Angeles,Active
-1765,Keith,Austin,Finance,Analyst,2023-04-04,45101.03,Miami,On Leave
-1766,Matthew,Johnson,HR,Analyst,2020-06-14,114116.29,Miami,On Leave
-1767,Aaron,Henderson,Sales,Manager,2024-09-13,100908.51,Houston,Terminated
-1768,Carlos,Joseph,Marketing,Clerk,2021-03-26,112254.74,New York,Terminated
-1769,Diane,Thompson,HR,Supervisor,2021-10-20,112607.81,Miami,Active
-1770,Hunter,Cannon,Marketing,Associate,2025-01-01,58427.36,Chicago,Active
-1771,Darrell,Abbott,Sales,Supervisor,2021-06-16,67544.6,Miami,Active
-1772,Lisa,Brown,Sales,Clerk,2023-03-27,95023.65,Miami,On Leave
-1773,Eileen,Mclaughlin,HR,Clerk,2022-06-27,48522.68,New York,On Leave
-1774,Kelly,Travis,Sales,Analyst,2025-05-02,47124.63,Houston,Active
-1775,Leroy,Briggs,HR,Analyst,2022-08-20,99548.46,Los Angeles,Active
-1776,Amanda,Hammond,IT,Clerk,2022-12-15,99538.09,Miami,Terminated
-1777,Adam,Leon,Marketing,Clerk,2021-02-12,70354.3,Houston,Terminated
-1778,Matthew,Landry,Marketing,Supervisor,2024-09-15,50034.08,New York,On Leave
-1779,Daniel,Martinez,IT,Analyst,2022-08-31,46475.82,New York,On Leave
-1780,Charles,Brown,Inventory,Analyst,2021-05-08,62715.79,Los Angeles,Terminated
-1781,Michele,Kelly,HR,Manager,2022-09-18,99850.79,Chicago,Active
-1782,Barbara,Jones,Finance,Clerk,2022-02-03,91482.34,Houston,Active
-1783,Jessica,Heath,IT,Analyst,2022-09-10,31185.35,Chicago,On Leave
-1784,Sean,Horn,Marketing,Manager,2024-08-28,51209.85,Los Angeles,Active
-1785,Raymond,Delacruz,IT,Supervisor,2025-01-05,45367.46,Chicago,Active
-1786,Victoria,Moore,Inventory,Manager,2023-05-29,45199.05,Chicago,Active
-1787,Tracy,Davis,HR,Manager,2020-09-27,101326.23,New York,Active
-1788,Kimberly,Roberts,Finance,Analyst,2022-10-11,31679.25,Chicago,On Leave
-1789,Natasha,Molina,Marketing,Associate,2023-01-04,101948.4,New York,On Leave
-1790,Heather,Brown,Inventory,Associate,2021-02-03,66438.54,Miami,Active
-1791,Meghan,Clark,IT,Supervisor,2024-02-15,64806.04,Los Angeles,Terminated
-1792,Andrea,Mcclure,HR,Supervisor,2024-01-19,99431.78,Miami,Active
-1793,Lauren,Giles,HR,Analyst,2024-02-19,57656.72,New York,Active
-1794,Hailey,Thomas,Finance,Clerk,2023-03-21,107919.94,Miami,Active
-1795,Anne,Williams,IT,Manager,2022-11-13,109376.28,Chicago,On Leave
-1796,William,Ramirez,Sales,Manager,2023-04-09,61842.33,Houston,Terminated
-1797,Benjamin,Campbell,Inventory,Supervisor,2023-09-15,118849.52,Houston,On Leave
-1798,Joann,Greene,Inventory,Analyst,2025-02-01,55058.5,Los Angeles,On Leave
-1799,Bryan,Mcdonald,Marketing,Analyst,2023-05-25,108883.18,Houston,Terminated
-1800,Raven,Griffith,Marketing,Manager,2022-01-19,114713.8,Los Angeles,On Leave
-1801,Nicole,Hale,Finance,Manager,2020-09-20,112039.76,Houston,Terminated
-1802,Sarah,Miller,Finance,Analyst,2023-10-13,105986.39,Los Angeles,Terminated
-1803,Lee,Jordan,Sales,Analyst,2023-06-25,118061.97,Los Angeles,Terminated
-1804,Kathryn,Stewart,Inventory,Clerk,2024-06-08,52579.81,Chicago,Active
-1805,Cynthia,Cox,HR,Clerk,2020-09-04,69204.19,New York,Terminated
-1806,Mark,Stewart,Inventory,Associate,2024-08-16,61321.58,Miami,On Leave
-1807,Tammy,Floyd,HR,Manager,2022-09-29,112559.51,Los Angeles,Terminated
-1808,Matthew,Howell,Finance,Manager,2022-09-22,42814.34,Miami,Terminated
-1809,Heather,Parker,Marketing,Supervisor,2020-07-28,52418.43,Chicago,Active
-1810,Robert,Parker,Marketing,Supervisor,2022-03-22,66625.94,Chicago,Active
-1811,Rachel,Bennett,Inventory,Analyst,2020-05-23,96227.28,Houston,Active
-1812,Franklin,Suarez,HR,Associate,2023-03-16,104191.07,New York,Active
-1813,Lisa,Warner,Sales,Manager,2021-09-04,98121.59,New York,Active
-1814,Stephen,Bradley,Inventory,Manager,2022-06-03,42679.87,Miami,Terminated
-1815,Timothy,Walsh,HR,Associate,2023-02-01,112617.14,Chicago,Terminated
-1816,Laura,Bell,IT,Analyst,2021-11-17,53695.88,Los Angeles,On Leave
-1817,Daniel,Roman,Inventory,Associate,2023-01-17,83353.3,New York,Terminated
-1818,Sarah,Wade,Inventory,Supervisor,2020-12-24,46053.22,Los Angeles,On Leave
-1819,Timothy,Parker,Finance,Analyst,2022-06-28,68006.03,New York,On Leave
-1820,Abigail,Osborne,Sales,Manager,2020-07-01,77164.12,Houston,Active
-1821,Amanda,Beard,Inventory,Manager,2023-01-03,49578.77,Miami,Terminated
-1822,Michael,Hill,Sales,Clerk,2023-11-19,34533.63,Los Angeles,Terminated
-1823,Thomas,Gibson,Finance,Clerk,2022-05-19,60845.65,Miami,Terminated
-1824,Alicia,Carrillo,IT,Associate,2021-10-24,81718.44,Houston,On Leave
-1825,Kristin,Barnes,Finance,Associate,2023-03-17,84259.02,New York,Active
-1826,Courtney,Hunt,Sales,Supervisor,2025-04-24,116349.41,Los Angeles,Active
-1827,Melissa,Schultz,Inventory,Supervisor,2022-11-04,76844.3,Chicago,Terminated
-1828,Helen,Ochoa,IT,Manager,2024-02-10,85667.32,Los Angeles,Terminated
-1829,Marcus,Solomon,Finance,Associate,2024-05-11,35314.99,Chicago,On Leave
-1830,Eric,Davis,Finance,Manager,2022-06-09,96368.14,New York,On Leave
-1831,Valerie,Garza,Inventory,Clerk,2022-09-25,89767.71,New York,On Leave
-1832,Jeffrey,Russell,Finance,Associate,2025-03-19,46251.13,Los Angeles,Terminated
-1833,Alejandro,Levine,HR,Manager,2022-07-01,96694.78,Miami,Active
-1834,Joseph,Walker,HR,Associate,2020-08-21,30517.9,Chicago,Active
-1835,Alison,Dickerson,IT,Supervisor,2022-07-07,48990.88,Miami,Terminated
-1836,Wendy,Moss,Inventory,Supervisor,2021-10-31,46012.89,Houston,Active
-1837,Carrie,Spencer,Inventory,Associate,2020-05-22,103706.66,New York,Terminated
-1838,Ashley,Jones,Inventory,Supervisor,2023-08-27,66941.75,Chicago,Active
-1839,Deborah,Powell,Sales,Analyst,2021-09-07,64665.63,Chicago,Terminated
-1840,Paul,Watkins,Marketing,Clerk,2022-07-25,74894.99,Los Angeles,On Leave
-1841,Amy,Jimenez,IT,Manager,2020-11-27,113691.47,Chicago,Terminated
-1842,Patricia,Harris,HR,Associate,2020-07-07,31889.72,Los Angeles,Terminated
-1843,Danielle,Harris,Marketing,Associate,2022-07-01,98435.23,New York,On Leave
-1844,Sandy,Richardson,Inventory,Clerk,2023-01-01,69595.63,Chicago,On Leave
-1845,Mark,Wilson,IT,Manager,2023-04-26,62923.36,Houston,On Leave
-1846,Heather,Navarro,Inventory,Associate,2024-02-14,91759.96,Chicago,Terminated
-1847,Andrew,Frazier,HR,Manager,2022-08-27,77673.72,Chicago,On Leave
-1848,Rachel,Barnes,IT,Associate,2023-05-20,93745.02,Los Angeles,Terminated
-1849,Jeffery,Rice,IT,Associate,2020-12-04,108287.55,Los Angeles,Terminated
-1850,Robert,Freeman,Sales,Analyst,2024-11-02,34580.58,Los Angeles,Terminated
-1851,Matthew,Dominguez,Inventory,Analyst,2023-05-19,66328.47,New York,Active
-1852,Mark,Rodriguez,Marketing,Analyst,2021-03-27,39181.56,Los Angeles,Terminated
-1853,Lori,Jenkins,Marketing,Clerk,2025-03-23,99145.98,Miami,On Leave
-1854,Alison,George,Inventory,Clerk,2020-10-29,53987.93,Miami,Active
-1855,Christina,Flores,IT,Supervisor,2022-11-11,75042.9,Los Angeles,Active
-1856,Marvin,Simon,HR,Analyst,2023-05-29,63318.65,New York,Terminated
-1857,Justin,Edwards,Inventory,Supervisor,2024-04-30,75029.45,Miami,Active
-1858,Dawn,Lara,Sales,Clerk,2021-12-15,49681.15,Miami,Active
-1859,Megan,Moreno,Marketing,Manager,2024-03-18,57876.35,Chicago,Active
-1860,Deanna,Jimenez,Marketing,Supervisor,2021-07-25,107300.03,Houston,Terminated
-1861,James,Adams,IT,Associate,2021-08-03,72186.01,Los Angeles,Active
-1862,Anthony,Lawson,Finance,Clerk,2022-03-26,116066.5,Miami,On Leave
-1863,Cynthia,Hill,IT,Associate,2023-04-26,57633.26,Los Angeles,Active
-1864,Anthony,Daniel,Finance,Clerk,2024-09-22,36399.55,Miami,On Leave
-1865,Brenda,Long,Sales,Associate,2023-08-15,119771.14,New York,On Leave
-1866,Eric,Jimenez,Sales,Associate,2025-05-17,95030.47,Houston,On Leave
-1867,Russell,Garcia,Marketing,Analyst,2021-09-17,31967.77,Miami,On Leave
-1868,Brian,Ward,Finance,Analyst,2022-02-18,83807.81,Miami,Active
-1869,Kayla,Williams,Marketing,Associate,2020-07-17,55174.59,Chicago,Terminated
-1870,Dalton,Johnson,IT,Analyst,2024-02-23,114778.63,Los Angeles,Active
-1871,Jennifer,Smith,Finance,Clerk,2025-05-15,91742.49,Houston,On Leave
-1872,Michael,Michael,HR,Supervisor,2022-09-23,61051.92,Chicago,Active
-1873,Tammy,Young,IT,Analyst,2022-12-04,109860.17,Houston,On Leave
-1874,Christopher,Lopez,HR,Analyst,2022-05-21,56245.88,New York,Active
-1875,Kaylee,Jones,Marketing,Supervisor,2024-03-02,96191.78,Houston,On Leave
-1876,Larry,Jackson,Marketing,Associate,2024-05-09,67796.85,Chicago,Active
-1877,Michelle,Warren,HR,Associate,2024-01-19,50938.19,Chicago,Terminated
-1878,Jennifer,Cook,Inventory,Supervisor,2025-02-20,103280.45,Miami,Terminated
-1879,Christian,Taylor,Marketing,Manager,2021-01-09,99065.34,Chicago,Terminated
-1880,Samuel,Russell,HR,Clerk,2024-08-12,36065.58,New York,On Leave
-1881,Allison,Aguirre,Finance,Supervisor,2021-04-02,77810.43,Chicago,On Leave
-1882,Alexis,Long,IT,Clerk,2020-08-31,30982.12,Chicago,On Leave
-1883,Mary,Morrison,Marketing,Associate,2024-04-23,73368.07,Los Angeles,Terminated
-1884,Jessica,Buchanan,HR,Manager,2022-12-02,33991.94,New York,Active
-1885,Brenda,May,IT,Analyst,2023-08-29,111008.52,Miami,On Leave
-1886,Kenneth,Woods,Sales,Associate,2022-06-11,30119.57,Houston,Active
-1887,Brittany,Nelson,Inventory,Supervisor,2021-05-31,82484.83,Miami,On Leave
-1888,Maria,Gibson,Inventory,Manager,2024-09-15,76699.51,Chicago,Terminated
-1889,Deborah,Oneill,Finance,Associate,2021-04-20,39139.6,Miami,Terminated
-1890,Caitlin,Lambert,IT,Manager,2021-03-28,102840.14,Miami,Active
-1891,Aaron,Calderon,Finance,Manager,2021-01-30,79975.77,Los Angeles,On Leave
-1892,Larry,Cole,IT,Manager,2020-10-11,44251.42,Houston,Active
-1893,Tiffany,Horton,Marketing,Clerk,2025-04-12,46348.68,New York,On Leave
-1894,Monica,Beck,Marketing,Analyst,2024-01-12,88127.93,Los Angeles,Terminated
-1895,Barbara,Lucas,IT,Clerk,2021-12-18,114869.41,Los Angeles,On Leave
-1896,Tyler,Hill,Marketing,Clerk,2022-01-25,55205.23,Chicago,Active
-1897,Jacqueline,Green,Inventory,Associate,2024-09-12,71487.98,Miami,Active
-1898,Nicholas,Hill,IT,Manager,2023-05-04,54427.37,Los Angeles,Terminated
-1899,Willie,Watson,IT,Supervisor,2020-10-04,51570.66,Los Angeles,Terminated
-1900,Steven,York,Finance,Clerk,2020-09-13,56212.98,Chicago,On Leave
-1901,Juan,Lopez,Inventory,Supervisor,2022-03-29,74752.33,Houston,Terminated
-1902,Jessica,Figueroa,Sales,Manager,2021-01-09,43358.5,Los Angeles,Terminated
-1903,Norma,Clayton,HR,Clerk,2023-09-26,39892.94,Chicago,Terminated
-1904,Amanda,Brown,Marketing,Manager,2021-01-24,83143.16,New York,Active
-1905,Emily,Riley,Sales,Clerk,2022-07-06,80136.79,Los Angeles,Terminated
-1906,Ronald,Gibson,Sales,Associate,2025-02-25,66916.8,Miami,On Leave
-1907,Joshua,Woods,IT,Supervisor,2024-07-07,115150.4,Houston,On Leave
-1908,Mackenzie,English,Marketing,Analyst,2023-04-12,98011.98,Chicago,Terminated
-1909,Stephen,Robbins,Sales,Supervisor,2024-12-13,64819.49,Chicago,On Leave
-1910,Paula,Williamson,Inventory,Supervisor,2024-07-12,32985.09,Miami,Active
-1911,Tara,Chambers,Finance,Supervisor,2021-11-15,69271.08,Houston,Active
-1912,Michelle,Davenport,HR,Analyst,2024-02-16,100515.7,Miami,Active
-1913,Michele,Reed,IT,Supervisor,2022-02-23,30844.7,Los Angeles,Active
-1914,Faith,Hernandez,IT,Manager,2020-09-14,36371.37,Miami,On Leave
-1915,Carlos,Foster,Finance,Associate,2021-12-05,57497.84,New York,On Leave
-1916,Michelle,Li,HR,Clerk,2024-06-13,109827.6,Chicago,Active
-1917,Cynthia,Hutchinson,Inventory,Analyst,2021-12-01,42570.46,New York,On Leave
-1918,Michael,Fletcher,Finance,Associate,2023-08-25,47961.56,Chicago,Active
-1919,Phillip,Shannon,Finance,Analyst,2022-11-28,93644.42,New York,Terminated
-1920,Karen,Sullivan,HR,Associate,2025-03-31,104199.15,Houston,Terminated
-1921,Charles,Reynolds,HR,Manager,2022-01-27,95270.86,Los Angeles,Active
-1922,Ronald,Le,IT,Analyst,2023-01-19,94114.9,New York,Active
-1923,Julia,Murphy,Sales,Supervisor,2024-10-21,86706.72,Chicago,Terminated
-1924,Melanie,Hendrix,Sales,Supervisor,2021-09-10,66360.93,Miami,Active
-1925,Emily,Kemp,Marketing,Manager,2022-10-01,111985.3,New York,Active
-1926,Robert,Spears,HR,Manager,2021-03-12,33119.36,Chicago,On Leave
-1927,James,Sandoval,IT,Supervisor,2025-01-17,103719.99,Miami,Active
-1928,Tina,Gonzalez,HR,Supervisor,2022-11-10,95697.35,New York,Active
-1929,Sara,Tate,Inventory,Supervisor,2024-10-11,57760.06,Miami,Terminated
-1930,Katherine,Cook,Finance,Associate,2022-05-02,45814.56,Miami,On Leave
-1931,Dustin,Lane,Inventory,Associate,2022-03-04,35828.12,Los Angeles,On Leave
-1932,Annette,Wood,IT,Manager,2021-07-16,83132.01,New York,Terminated
-1933,Carrie,Krueger,IT,Associate,2022-01-21,63761.76,Chicago,Terminated
-1934,Rebecca,Skinner,Sales,Supervisor,2022-06-07,37070.78,Houston,Terminated
-1935,Jessica,Burns,Sales,Manager,2023-09-26,62378.67,Chicago,Terminated
-1936,Albert,Thompson,Marketing,Associate,2020-09-21,33878.49,Chicago,Active
-1937,Cheryl,Shields,IT,Clerk,2021-12-25,108088.92,Chicago,Terminated
-1938,Sarah,Wong,Inventory,Analyst,2023-08-10,66108.54,Los Angeles,Terminated
-1939,Shannon,Smith,Sales,Supervisor,2024-03-12,48932.9,Miami,On Leave
-1940,Jeremy,Barrett,Marketing,Analyst,2023-10-24,107268.76,Houston,On Leave
-1941,Douglas,Barr,HR,Clerk,2025-01-18,38099.62,Los Angeles,Terminated
-1942,Todd,Bowen,Sales,Manager,2021-10-07,71481.9,Los Angeles,On Leave
-1943,Michael,Sims,Inventory,Supervisor,2021-12-26,77457.78,Los Angeles,Active
-1944,Leslie,Dickerson,Marketing,Analyst,2021-05-28,119574.29,Miami,Terminated
-1945,Diane,Jackson,Inventory,Associate,2022-11-20,62271.97,Houston,On Leave
-1946,Aaron,Phillips,Inventory,Analyst,2023-08-10,69772.42,Chicago,Terminated
-1947,Laura,Scott,Sales,Associate,2022-07-24,63480.29,Houston,On Leave
-1948,Jared,Mills,IT,Analyst,2024-04-01,61094.16,Miami,Active
-1949,Kelly,Bailey,Marketing,Supervisor,2021-01-01,88587.81,Houston,Active
-1950,Justin,Johnson,Sales,Supervisor,2023-03-19,109970.05,New York,Terminated
-1951,Laura,Huerta,Marketing,Supervisor,2024-05-07,67740.86,New York,On Leave
-1952,Jessica,Phillips,Finance,Associate,2023-04-02,87010.17,Chicago,Terminated
-1953,Ricky,Clayton,Inventory,Analyst,2024-08-02,72980.19,Miami,Terminated
-1954,Michael,Flynn,Marketing,Analyst,2020-12-05,74361.21,Miami,On Leave
-1955,Kimberly,Hunt,Sales,Manager,2022-01-17,56352.42,Houston,On Leave
-1956,Courtney,Johnson,Inventory,Clerk,2022-09-14,33782.48,Houston,Terminated
-1957,Michelle,Elliott,Sales,Associate,2023-09-14,58593.62,Chicago,On Leave
-1958,Larry,Ware,Marketing,Supervisor,2020-08-19,68584.96,Houston,Terminated
-1959,Ronald,Quinn,Finance,Clerk,2024-02-02,86633.05,Chicago,Active
-1960,Anthony,Payne,Marketing,Analyst,2021-12-21,74216.0,New York,Terminated
-1961,Alisha,Melton,IT,Analyst,2020-09-09,107455.19,Houston,On Leave
-1962,Taylor,Davis,Inventory,Manager,2021-12-04,71147.63,Los Angeles,Active
-1963,Todd,Green,IT,Associate,2022-07-02,36223.72,Houston,On Leave
-1964,Antonio,Kaiser,Finance,Supervisor,2023-11-11,106692.75,Miami,On Leave
-1965,Stephen,Schmidt,IT,Analyst,2021-11-17,61468.56,New York,On Leave
-1966,Alexander,Evans,Inventory,Analyst,2024-02-10,71856.12,Miami,Active
-1967,Donald,Miller,Finance,Clerk,2024-10-30,35214.58,Houston,Active
-1968,Glenn,Quinn,HR,Manager,2022-07-05,113795.16,New York,Terminated
-1969,Adrian,Winters,HR,Supervisor,2022-10-30,104326.98,Los Angeles,On Leave
-1970,Sean,Jefferson,IT,Analyst,2023-04-27,80320.09,Miami,Active
-1971,Allison,Ward,Inventory,Clerk,2024-03-06,38371.25,Los Angeles,Active
-1972,Kathy,Wright,IT,Manager,2021-10-19,102748.98,Los Angeles,On Leave
-1973,Sherry,Shea,Marketing,Associate,2023-05-26,82941.97,Los Angeles,On Leave
-1974,Michael,Ramsey,Inventory,Supervisor,2023-01-17,35476.56,New York,Terminated
-1975,Jill,Bailey,Sales,Manager,2021-10-11,68070.59,New York,Terminated
-1976,Sandra,Barrera,Finance,Clerk,2024-01-08,37762.26,Los Angeles,Terminated
-1977,Maria,Parker,Sales,Manager,2025-05-08,51140.36,Houston,Terminated
-1978,Jennifer,Brooks,Finance,Associate,2022-06-04,73023.59,Houston,Terminated
-1979,Brady,Baker,Inventory,Supervisor,2022-12-27,60460.19,Houston,Active
-1980,Jennifer,Hernandez,IT,Analyst,2024-12-13,111745.81,New York,On Leave
-1981,Jennifer,Aguilar,Marketing,Clerk,2022-05-29,30895.26,New York,On Leave
-1982,Laura,Alvarez,Marketing,Analyst,2022-01-30,81198.39,Los Angeles,Active
-1983,Joseph,Reed,Finance,Associate,2021-10-28,111040.36,Miami,On Leave
-1984,Carl,Roman,Marketing,Analyst,2022-04-02,53989.84,Miami,Active
-1985,Matthew,Baker,IT,Manager,2023-09-07,59194.89,Miami,Active
-1986,Joshua,Wilkerson,IT,Associate,2023-07-13,78545.89,New York,On Leave
-1987,Scott,King,Sales,Associate,2024-05-11,114902.96,Houston,Terminated
-1988,Christopher,Li,Sales,Supervisor,2023-09-21,99742.31,Houston,On Leave
-1989,Sheryl,Nguyen,Sales,Manager,2025-02-05,60578.5,Chicago,Active
-1990,Mary,Rodriguez,Sales,Supervisor,2024-02-24,111546.65,Los Angeles,Active
-1991,James,Torres,Inventory,Analyst,2024-01-25,82918.75,New York,Active
-1992,Michele,Blankenship,IT,Supervisor,2024-04-24,78291.06,Miami,Active
-1993,Andrew,Walker,HR,Analyst,2024-04-15,64124.94,New York,Active
-1994,April,Ayers,Marketing,Clerk,2024-04-29,48826.14,Chicago,On Leave
-1995,Carl,Schroeder,Inventory,Associate,2024-01-03,113882.97,Chicago,Active
-1996,Kimberly,Richardson,Sales,Supervisor,2021-08-01,101094.38,Houston,Active
-1997,Thomas,Rodriguez,HR,Manager,2022-10-04,61962.6,Miami,Active
-1998,Joseph,Durham,Sales,Manager,2022-08-22,65760.28,Los Angeles,Terminated
-1999,Andrew,Phillips,Inventory,Manager,2020-07-20,42168.9,Houston,On Leave
-2000,Melissa,Davis,Sales,Clerk,2023-02-24,109243.77,Miami,Active
+1001,Bob,Cunningham,Finance,Clerk,2021-11-11,111368.97,Houston,On Leave
+1002,Sharon,Meadows,Finance,Supervisor,2023-08-31,54337.8,Houston,Active
+1003,Amber,Sanchez,IT,Supervisor,2025-04-03,89716.86,Houston,Active
+1004,Debra,Berry,Sales,Analyst,2022-08-31,30810.16,New York,Active
+1005,Richard,Martinez,IT,Analyst,2024-08-27,117466.6,Chicago,Active
+1006,Henry,Kelly,Sales,Associate,2023-08-21,68025.87,Chicago,Active
+1007,Melissa,Martinez,Inventory,Clerk,2024-10-21,49307.77,Miami,Active
+1008,Jason,Garcia,IT,Associate,2020-06-24,85969.56,Houston,On Leave
+1009,James,Barnes,Sales,Supervisor,2023-12-11,89456.06,New York,On Leave
+1010,Eric,Mason,IT,Supervisor,2023-08-20,93364.84,Houston,On Leave
+1011,Jean,Landry,Sales,Associate,2022-05-01,90040.01,Miami,Terminated
+1012,Shawn,Baker,Marketing,Associate,2023-07-01,35561.1,Chicago,Terminated
+1013,Anthony,Powell,Inventory,Supervisor,2021-07-06,110443.87,Los Angeles,On Leave
+1014,Christopher,Smith,HR,Clerk,2021-03-30,89236.81,Houston,On Leave
+1015,Justin,Gillespie,HR,Analyst,2022-08-01,64341.86,Chicago,Active
+1016,John,Richard,Sales,Supervisor,2023-06-13,89626.19,Miami,Terminated
+1017,Chelsea,Torres,Finance,Associate,2024-09-07,34046.68,Los Angeles,On Leave
+1018,Lisa,Newton,Inventory,Analyst,2023-08-27,87602.7,New York,Active
+1019,Joy,Schneider,HR,Manager,2021-12-06,82445.51,Miami,Active
+1020,Julie,Ramirez,Sales,Manager,2024-04-13,99290.08,New York,Terminated
+1021,John,Hutchinson,Marketing,Supervisor,2024-09-02,43760.5,Chicago,Active
+1022,Tina,Ramirez,HR,Manager,2021-02-19,30273.88,Los Angeles,Terminated
+1023,Kyle,Williams,Inventory,Associate,2024-08-31,79509.03,Miami,Terminated
+1024,Noah,Lopez,Finance,Analyst,2023-05-11,51110.59,Houston,On Leave
+1025,Kyle,Fisher,Sales,Analyst,2022-06-13,54488.35,Houston,On Leave
+1026,Nancy,Bridges,Marketing,Manager,2023-06-28,99598.53,Miami,Terminated
+1027,Kristy,Hernandez,Sales,Analyst,2023-08-30,114022.43,Los Angeles,Active
+1028,Anne,Black,Marketing,Analyst,2024-09-18,53342.19,Miami,Terminated
+1029,Alicia,Hernandez,Inventory,Clerk,2020-09-08,38555.19,New York,On Leave
+1030,Scott,Jones,Inventory,Analyst,2022-06-09,34665.39,New York,Active
+1031,Jeffrey,Drake,Finance,Associate,2020-09-20,119167.41,Chicago,Terminated
+1032,Stacy,Miller,Marketing,Supervisor,2023-05-16,58071.16,Los Angeles,Terminated
+1033,Adam,Spence,Marketing,Associate,2023-03-22,30715.34,Miami,On Leave
+1034,John,Herman,Inventory,Clerk,2021-06-20,119499.4,Los Angeles,On Leave
+1035,Robert,Williams,HR,Manager,2022-10-18,74972.51,Chicago,Terminated
+1036,Angela,Wise,Finance,Supervisor,2023-02-21,80613.51,Houston,Terminated
+1037,Dustin,Strickland,Finance,Analyst,2023-06-25,64466.35,Houston,Active
+1038,Donna,Cardenas,Inventory,Clerk,2022-05-30,70326.14,Chicago,On Leave
+1039,Kimberly,Carter,Finance,Associate,2020-09-08,50079.95,New York,On Leave
+1040,Carolyn,Cox,Sales,Supervisor,2022-07-14,82468.3,Miami,Terminated
+1041,James,Powers,Marketing,Manager,2024-11-19,53629.65,Chicago,Active
+1042,Rose,Gonzalez,Finance,Clerk,2023-10-17,116913.2,Chicago,Terminated
+1043,Aaron,Green,HR,Analyst,2024-02-12,59244.62,Los Angeles,On Leave
+1044,Sydney,Wiley,Finance,Analyst,2020-06-14,62960.1,Los Angeles,Terminated
+1045,Dustin,Collins,Marketing,Analyst,2024-02-08,65950.12,Los Angeles,Terminated
+1046,Phyllis,Grant,Sales,Clerk,2023-12-19,100670.94,Houston,Active
+1047,Pamela,Rogers,HR,Associate,2020-08-10,70534.36,Los Angeles,On Leave
+1048,Jose,Schultz,HR,Associate,2023-01-07,95153.9,Los Angeles,Active
+1049,Tyler,Scott,IT,Associate,2024-02-16,52648.79,Chicago,Active
+1050,Rebecca,Ross,IT,Clerk,2023-10-13,89756.28,Los Angeles,Terminated
+1051,Michelle,Collins,Finance,Associate,2024-07-31,61599.97,Chicago,Active
+1052,Eric,Montoya,Finance,Supervisor,2020-06-27,114165.87,Los Angeles,Active
+1053,Denise,Frederick,HR,Analyst,2022-10-02,48402.31,Los Angeles,Active
+1054,Sarah,Smith,HR,Manager,2024-03-30,100073.98,Chicago,On Leave
+1055,Catherine,Price,Inventory,Associate,2024-07-12,64736.91,Chicago,Active
+1056,Gary,Stanley,Inventory,Supervisor,2022-06-27,39930.96,Houston,Active
+1057,Timothy,Ward,HR,Associate,2020-10-14,116877.71,Chicago,Terminated
+1058,Katherine,Brown,Marketing,Clerk,2021-12-02,86328.73,Houston,Terminated
+1059,Michelle,Gibson,HR,Supervisor,2021-07-11,64808.72,Los Angeles,Active
+1060,Heather,Bridges,Sales,Analyst,2024-08-19,58383.79,New York,Terminated
+1061,Taylor,Fowler,Finance,Clerk,2025-02-06,31666.57,Chicago,Terminated
+1062,Judy,Vaughn,Sales,Supervisor,2020-11-12,54394.32,Chicago,On Leave
+1063,Ronald,Pittman,Marketing,Analyst,2022-10-31,84765.1,Houston,Terminated
+1064,Cynthia,White,Inventory,Clerk,2023-11-23,70559.23,Houston,Terminated
+1065,Jessica,Oneill,Inventory,Supervisor,2023-09-14,109025.81,New York,Active
+1066,Brandon,Johnson,Sales,Supervisor,2022-03-31,89469.64,Houston,Terminated
+1067,Tonya,Turner,Finance,Analyst,2023-04-04,35843.56,Los Angeles,Terminated
+1068,Jerry,Jackson,Inventory,Supervisor,2021-10-05,45995.46,New York,Active
+1069,Megan,Brown,Marketing,Associate,2021-10-04,104371.28,Los Angeles,Active
+1070,Christina,Cooper,IT,Clerk,2022-07-13,70201.21,Houston,On Leave
+1071,Sarah,Riddle,HR,Clerk,2021-01-03,66322.35,New York,Terminated
+1072,Rebecca,Herrera,Sales,Associate,2024-07-27,69565.09,New York,Active
+1073,Patricia,Reyes,IT,Manager,2023-05-20,62629.42,Miami,Active
+1074,Rebecca,Johnson,Marketing,Analyst,2021-06-14,55938.15,Houston,Active
+1075,John,Macias,Inventory,Supervisor,2023-11-20,110721.69,Los Angeles,Terminated
+1076,Crystal,Walker,HR,Associate,2024-02-03,90592.12,Houston,On Leave
+1077,Sandra,Dunn,HR,Analyst,2023-01-22,73203.05,Houston,Terminated
+1078,Jessica,Garza,IT,Associate,2022-08-17,109890.73,New York,On Leave
+1079,Nicholas,Haley,Sales,Associate,2020-05-29,46871.44,Houston,On Leave
+1080,George,Hensley,Inventory,Manager,2021-07-29,42745.95,Miami,Terminated
+1081,Amanda,Collins,Inventory,Clerk,2023-03-22,49097.88,Los Angeles,On Leave
+1082,Bryan,Mcdaniel,IT,Clerk,2025-02-19,110964.31,Miami,Terminated
+1083,Ricky,Cannon,Inventory,Clerk,2024-01-25,51946.11,Los Angeles,On Leave
+1084,Tracy,Wilson,Finance,Associate,2023-12-21,80673.24,Chicago,Active
+1085,Jessica,Booker,Finance,Clerk,2021-01-21,43810.16,Houston,Active
+1086,Rachel,Miles,Inventory,Analyst,2020-11-16,31919.53,Houston,Active
+1087,Wayne,Gray,HR,Associate,2024-09-17,45682.01,Los Angeles,Active
+1088,Shane,Barton,Marketing,Analyst,2020-11-02,70615.62,Chicago,On Leave
+1089,Jennifer,Finley,IT,Associate,2023-02-12,102345.23,New York,Active
+1090,Tony,Burgess,HR,Associate,2020-07-29,69577.69,Chicago,Active
+1091,John,Martinez,IT,Supervisor,2025-01-26,77373.55,Miami,Terminated
+1092,Donald,Walters,Sales,Associate,2021-09-27,105340.05,New York,On Leave
+1093,Emily,Johnson,IT,Associate,2024-06-02,76196.28,Miami,On Leave
+1094,April,Edwards,IT,Supervisor,2023-07-02,118015.63,Miami,Active
+1095,Amanda,Watkins,HR,Associate,2021-08-22,42541.73,Houston,Terminated
+1096,Jacob,Cox,IT,Clerk,2022-08-14,106026.1,Chicago,On Leave
+1097,James,Miller,Marketing,Analyst,2020-06-17,46048.46,Los Angeles,Active
+1098,Nicholas,Sutton,HR,Associate,2023-08-24,39178.23,Los Angeles,Terminated
+1099,Craig,Lewis,IT,Analyst,2023-05-25,79472.06,New York,Terminated
+1100,Matthew,Barnes,Finance,Manager,2022-12-25,32980.7,Houston,On Leave
+1101,Maria,Wiley,Marketing,Associate,2020-10-26,74465.9,New York,Active
+1102,Brandon,Mora,Marketing,Clerk,2021-07-07,66638.06,Houston,Terminated
+1103,Randall,Hardy,HR,Clerk,2023-12-15,67047.22,Miami,Terminated
+1104,John,Wilson,Marketing,Analyst,2022-07-25,81580.98,Miami,Terminated
+1105,Anthony,Cooper,Sales,Supervisor,2022-10-07,31537.55,New York,Active
+1106,Hayden,Davis,Finance,Clerk,2021-09-24,46329.71,New York,Active
+1107,Carl,Mclaughlin,Marketing,Analyst,2021-01-03,92713.21,Houston,On Leave
+1108,Mike,Simpson,HR,Analyst,2022-03-29,51712.63,Miami,Terminated
+1109,Timothy,Dean,HR,Clerk,2024-08-16,73457.96,Houston,Terminated
+1110,William,Herman,IT,Associate,2021-07-24,80042.72,Miami,Terminated
+1111,Rachel,Robertson,Sales,Associate,2024-09-02,49025.29,Miami,Active
+1112,Catherine,Friedman,Marketing,Supervisor,2022-05-13,95727.59,Miami,On Leave
+1113,Crystal,Anthony,HR,Clerk,2020-10-16,103754.15,New York,Terminated
+1114,Denise,Bradford,Sales,Clerk,2022-08-29,117291.51,New York,Terminated
+1115,Zachary,Lang,IT,Associate,2024-05-30,57013.0,Los Angeles,Terminated
+1116,Shawn,Hull,Finance,Associate,2022-08-13,119319.21,Chicago,On Leave
+1117,Kim,Schroeder,Inventory,Supervisor,2024-08-23,87604.47,Miami,On Leave
+1118,Jesse,Griffin,Sales,Supervisor,2023-09-11,36299.22,Miami,Active
+1119,Gary,Gomez,IT,Analyst,2024-02-18,32000.71,Houston,Active
+1120,Karl,Lane,Sales,Supervisor,2024-06-15,104304.25,Miami,Active
+1121,Shelley,Martinez,Sales,Analyst,2024-04-16,102466.88,Houston,Terminated
+1122,Nicholas,Crane,Inventory,Manager,2024-12-29,50017.17,Miami,On Leave
+1123,Margaret,Rogers,Sales,Manager,2021-02-07,75757.4,Miami,Terminated
+1124,Kristin,Wallace,Inventory,Supervisor,2024-01-15,58699.21,Los Angeles,Active
+1125,Susan,Harvey,Finance,Manager,2021-06-23,115230.53,New York,On Leave
+1126,Samantha,Beck,Finance,Manager,2020-06-11,39925.7,Chicago,Active
+1127,Alexander,Frank,Inventory,Manager,2023-01-13,50169.52,Houston,Active
+1128,Steven,Cox,HR,Supervisor,2021-04-29,50561.3,Miami,Active
+1129,Sarah,Glass,Inventory,Supervisor,2020-06-12,114049.02,Los Angeles,Terminated
+1130,John,Barnes,Inventory,Analyst,2022-12-09,81643.74,Chicago,Terminated
+1131,Tracy,Oliver,IT,Manager,2022-01-15,46004.8,Chicago,Active
+1132,Jennifer,Dunn,IT,Analyst,2023-01-05,96416.34,Miami,On Leave
+1133,Erik,Mack,Inventory,Supervisor,2024-08-28,49919.54,Miami,Terminated
+1134,Zachary,Berger,Sales,Clerk,2021-03-17,66686.33,Miami,On Leave
+1135,Lawrence,Roberts,Sales,Supervisor,2020-09-16,77491.56,Houston,Terminated
+1136,Michele,Bennett,HR,Associate,2022-09-25,116979.96,Houston,Active
+1137,Natalie,Palmer,Finance,Clerk,2023-11-22,88196.33,New York,On Leave
+1138,Derek,Blair,IT,Analyst,2022-10-10,59309.43,Chicago,Active
+1139,Nicole,Wilson,Finance,Associate,2023-09-19,45262.3,Los Angeles,Terminated
+1140,William,Garcia,IT,Manager,2024-01-12,114947.28,Miami,Active
+1141,Dennis,Thompson,IT,Associate,2022-08-12,114277.9,New York,On Leave
+1142,Kimberly,Kelley,Finance,Manager,2022-09-07,56184.32,Los Angeles,On Leave
+1143,Anthony,Santiago,IT,Analyst,2023-01-12,36748.68,Los Angeles,Terminated
+1144,Michele,Jacobs,Marketing,Clerk,2023-05-20,103827.43,Chicago,On Leave
+1145,Jeffrey,Ashley,Inventory,Analyst,2023-08-22,40591.71,Miami,On Leave
+1146,David,Winters,Finance,Supervisor,2021-02-02,105133.01,New York,Terminated
+1147,Alicia,Jones,Marketing,Manager,2022-10-05,51924.21,New York,On Leave
+1148,Lisa,Snow,Sales,Supervisor,2022-11-17,47456.89,New York,On Leave
+1149,John,Hill,HR,Supervisor,2021-11-21,84390.08,New York,Terminated
+1150,Kristin,Clark,Finance,Associate,2021-10-19,48888.97,New York,On Leave
+1151,Todd,Collins,Finance,Analyst,2022-03-18,45334.72,Chicago,Active
+1152,Paul,Williams,HR,Analyst,2025-01-03,105711.19,New York,Terminated
+1153,Kevin,Perry,Inventory,Clerk,2024-09-17,44686.25,Houston,Terminated
+1154,David,Jennings,Marketing,Analyst,2022-06-23,88456.79,New York,Terminated
+1155,Debra,Vasquez,Finance,Manager,2023-06-01,46585.67,Houston,Terminated
+1156,Eric,Murphy,Inventory,Supervisor,2022-10-12,118192.56,Chicago,Active
+1157,Stephen,Archer,Finance,Supervisor,2022-04-28,92509.3,Houston,On Leave
+1158,Robert,Johnson,Marketing,Manager,2020-05-29,36508.7,New York,On Leave
+1159,Joshua,Schneider,Sales,Supervisor,2022-06-07,82105.41,Chicago,Terminated
+1160,Amber,Wallace,IT,Analyst,2025-04-07,57800.91,New York,Active
+1161,Richard,Lewis,IT,Clerk,2024-10-27,109022.25,Los Angeles,On Leave
+1162,Ronald,Watson,Inventory,Manager,2022-12-21,94483.28,Houston,Terminated
+1163,Brian,Perry,Inventory,Clerk,2023-04-22,90437.94,New York,Terminated
+1164,Timothy,Brown,Inventory,Associate,2021-10-09,99941.14,Miami,Terminated
+1165,Kenneth,Wallace,IT,Associate,2024-07-03,101543.23,Chicago,On Leave
+1166,Jessica,Blanchard,Finance,Supervisor,2025-01-01,109300.35,New York,Active
+1167,Kristina,Williams,Marketing,Manager,2024-09-21,71273.06,Miami,Active
+1168,Olivia,Beck,Finance,Analyst,2022-12-30,64732.1,Houston,Active
+1169,Mary,Edwards,HR,Analyst,2023-07-05,74539.83,Houston,On Leave
+1170,Christopher,Phillips,Marketing,Supervisor,2024-05-30,87678.16,New York,On Leave
+1171,Christine,Sanchez,Inventory,Associate,2020-12-23,44846.19,Chicago,Active
+1172,Michael,Myers,Sales,Manager,2020-10-20,60336.33,Miami,Terminated
+1173,Monica,Turner,Sales,Analyst,2021-02-27,100174.94,Los Angeles,Active
+1174,Julian,Wallace,Sales,Associate,2024-08-21,48104.28,Los Angeles,On Leave
+1175,David,Williams,Inventory,Supervisor,2024-03-05,106943.24,Chicago,Terminated
+1176,Daniel,Moore,Inventory,Associate,2020-10-19,97693.28,Chicago,Active
+1177,Misty,Fields,Marketing,Analyst,2021-06-25,107916.84,Miami,On Leave
+1178,Kimberly,Garrett,Finance,Supervisor,2021-06-04,85742.29,Los Angeles,Active
+1179,Rhonda,Patterson,Sales,Clerk,2021-05-18,64148.72,New York,Terminated
+1180,Adam,Haynes,Finance,Clerk,2020-07-27,88542.7,Chicago,Active
+1181,Susan,Adams,Marketing,Clerk,2024-05-29,114625.16,New York,On Leave
+1182,Samuel,Proctor,Marketing,Manager,2021-05-20,110094.13,Los Angeles,Active
+1183,Julie,Rodriguez,Sales,Analyst,2021-05-23,33764.14,Miami,On Leave
+1184,Jennifer,Douglas,Marketing,Supervisor,2021-11-21,119926.82,Houston,Active
+1185,Nicholas,Solis,HR,Clerk,2020-08-18,41069.68,Miami,On Leave
+1186,Ryan,Martinez,Finance,Supervisor,2025-05-04,63305.8,New York,Active
+1187,Jesse,Olsen,Inventory,Associate,2020-12-30,60799.19,Chicago,Terminated
+1188,Martin,Garcia,Marketing,Manager,2021-05-04,35249.02,Miami,Active
+1189,Sandra,Rogers,Sales,Supervisor,2021-10-21,91365.93,Houston,Terminated
+1190,Tiffany,Fuentes,Marketing,Clerk,2024-02-05,103266.08,New York,On Leave
+1191,Andrew,Boyd,Marketing,Associate,2024-12-09,115417.5,Los Angeles,Active
+1192,Angela,Obrien,IT,Supervisor,2023-12-14,69496.13,New York,Active
+1193,Brendan,Carlson,Sales,Clerk,2025-03-21,72595.09,New York,Active
+1194,Samantha,Hicks,IT,Associate,2022-06-18,57953.93,New York,Active
+1195,Candace,Brennan,Inventory,Analyst,2020-12-26,73375.91,Chicago,On Leave
+1196,Edwin,Martin,Finance,Supervisor,2021-11-09,73820.31,Miami,On Leave
+1197,Mario,Martinez,HR,Analyst,2024-07-01,81562.42,Miami,Terminated
+1198,Rebecca,Williams,Sales,Manager,2024-03-28,52099.5,Houston,Terminated
+1199,Melissa,Taylor,Marketing,Clerk,2022-06-24,56491.33,Los Angeles,On Leave
+1200,Elizabeth,Martin,IT,Analyst,2022-01-30,103345.01,New York,Terminated
+1201,Rebecca,Chan,Inventory,Clerk,2022-12-22,41424.46,Chicago,Terminated
+1202,Amber,Carter,Marketing,Analyst,2020-05-21,84467.36,Los Angeles,Active
+1203,Shawn,White,Finance,Manager,2022-06-06,96594.89,New York,Active
+1204,Kimberly,Morris,Inventory,Supervisor,2024-11-01,63154.68,Chicago,On Leave
+1205,Lisa,Hebert,HR,Supervisor,2023-01-17,107147.31,Houston,Terminated
+1206,Nicolas,Jones,Finance,Analyst,2020-12-09,108874.92,New York,Terminated
+1207,Laura,Christensen,Marketing,Supervisor,2021-06-26,113615.05,Los Angeles,On Leave
+1208,Kevin,Morris,HR,Associate,2024-05-11,115129.81,Chicago,On Leave
+1209,Katelyn,Hogan,Inventory,Clerk,2020-07-19,90194.87,Houston,Terminated
+1210,Scott,Rice,Marketing,Analyst,2024-11-23,112284.38,New York,Terminated
+1211,Leslie,Fernandez,Marketing,Manager,2022-12-01,114418.7,New York,On Leave
+1212,Rachel,Smith,Marketing,Analyst,2021-03-29,40692.51,Miami,On Leave
+1213,Rachel,Goodwin,IT,Supervisor,2022-12-05,100635.89,Houston,Active
+1214,Matthew,Wilson,IT,Associate,2021-10-24,76405.02,Houston,Terminated
+1215,Tonya,Johnson,Inventory,Clerk,2024-03-05,62898.49,Los Angeles,On Leave
+1216,Alexis,Hodges,HR,Manager,2022-06-14,49105.63,New York,Active
+1217,David,Erickson,Inventory,Manager,2022-05-23,51156.11,Houston,Active
+1218,Mary,Carter,HR,Analyst,2025-01-03,88722.73,Miami,Terminated
+1219,Thomas,Scott,IT,Supervisor,2021-10-06,62029.5,New York,Active
+1220,Lindsey,Everett,Sales,Clerk,2020-12-11,92840.26,New York,On Leave
+1221,Sharon,Clarke,Finance,Analyst,2022-05-09,38412.93,Los Angeles,Active
+1222,Jacqueline,Wright,Finance,Supervisor,2024-02-06,93077.71,Chicago,Active
+1223,Jeffrey,Hughes,Marketing,Manager,2022-01-09,105970.2,Miami,On Leave
+1224,Joel,Russell,Marketing,Supervisor,2023-07-20,118734.18,Houston,Terminated
+1225,Jennifer,Rivas,IT,Clerk,2021-04-09,106997.46,Los Angeles,On Leave
+1226,Matthew,Mcdonald,Marketing,Supervisor,2024-01-12,54449.59,Houston,Terminated
+1227,Jill,Jackson,Marketing,Clerk,2023-04-11,80048.75,Chicago,Active
+1228,Kristina,Harvey,Sales,Supervisor,2024-02-14,118634.94,New York,Active
+1229,Robert,Adams,IT,Manager,2023-03-21,110471.84,Houston,Active
+1230,Danielle,Leonard,Inventory,Analyst,2022-01-28,55215.14,Miami,Active
+1231,Andrew,Cohen,HR,Clerk,2022-02-13,44111.27,Miami,Active
+1232,Mary,Benjamin,Finance,Analyst,2022-03-18,96220.9,Chicago,Terminated
+1233,Tiffany,Warren,Inventory,Supervisor,2021-01-21,99854.7,Los Angeles,Active
+1234,Jeremy,Campbell,IT,Analyst,2023-02-08,92090.46,Chicago,On Leave
+1235,Robert,Andrews,HR,Analyst,2020-07-13,84527.59,Chicago,Terminated
+1236,Robin,Trujillo,Sales,Supervisor,2023-09-28,46651.65,New York,Terminated
+1237,Colin,Wells,Finance,Supervisor,2022-11-28,48744.22,Los Angeles,Active
+1238,Carrie,Henson,HR,Clerk,2022-05-26,56103.12,Los Angeles,On Leave
+1239,Christine,Stone,Marketing,Clerk,2024-04-15,91789.66,Los Angeles,Terminated
+1240,Megan,Mann,Inventory,Manager,2022-06-16,45159.86,Houston,On Leave
+1241,Kristy,Porter,Finance,Clerk,2020-08-24,85989.49,Los Angeles,Active
+1242,Peter,Ross,Sales,Clerk,2020-09-08,84708.78,Chicago,Terminated
+1243,Rachel,Kelly,Inventory,Supervisor,2022-06-29,55878.58,Houston,On Leave
+1244,Richard,Smith,Inventory,Analyst,2021-12-18,54970.82,Houston,Terminated
+1245,Michael,Tran,Sales,Manager,2022-11-23,119299.05,Houston,On Leave
+1246,Aaron,Graves,Sales,Clerk,2024-08-18,38289.43,Los Angeles,On Leave
+1247,Catherine,Cross,IT,Supervisor,2020-06-26,86901.34,New York,Active
+1248,Alison,Evans,IT,Manager,2023-11-21,119578.99,Los Angeles,Active
+1249,Breanna,Johnson,Marketing,Associate,2021-07-16,91887.78,New York,On Leave
+1250,Erin,Cisneros,Finance,Clerk,2025-01-18,53472.15,Los Angeles,Active
+1251,Julie,Ramirez,Marketing,Analyst,2022-01-30,67606.94,Los Angeles,Terminated
+1252,Samuel,James,IT,Analyst,2022-12-12,83964.06,Miami,On Leave
+1253,Felicia,Robbins,Inventory,Associate,2024-02-10,84353.27,Chicago,Active
+1254,Mary,Rodriguez,Marketing,Analyst,2021-10-30,86205.81,Los Angeles,On Leave
+1255,Lisa,Aguilar,Marketing,Supervisor,2021-07-22,98853.85,Chicago,On Leave
+1256,Julia,Clayton,Finance,Analyst,2021-04-27,112210.73,Chicago,Active
+1257,Amber,Black,Sales,Associate,2024-06-08,106388.34,Chicago,Active
+1258,James,Mendez,Inventory,Associate,2020-08-14,105000.16,Los Angeles,On Leave
+1259,Jessica,Smith,Finance,Supervisor,2022-02-08,41443.4,Los Angeles,On Leave
+1260,Christine,Davis,Inventory,Supervisor,2021-07-01,96728.13,Houston,Terminated
+1261,Gerald,Williams,Inventory,Associate,2022-05-11,103650.75,Chicago,On Leave
+1262,Lisa,Ramsey,IT,Supervisor,2021-01-29,67841.1,New York,Terminated
+1263,Lisa,Calhoun,Marketing,Analyst,2025-03-11,38139.36,New York,On Leave
+1264,Kimberly,Hicks,Sales,Analyst,2024-01-09,83603.37,Los Angeles,On Leave
+1265,Anthony,Madden,HR,Supervisor,2020-09-23,59328.45,Miami,Active
+1266,Erica,Johnson,Sales,Associate,2022-07-06,106440.34,New York,On Leave
+1267,Emily,Smith,Inventory,Clerk,2021-05-21,32886.15,Miami,On Leave
+1268,Melissa,Jordan,Marketing,Supervisor,2022-03-27,118410.69,New York,Active
+1269,Melissa,Lopez,IT,Manager,2022-06-10,116438.82,Miami,Terminated
+1270,Harold,Wright,IT,Supervisor,2023-04-13,118234.23,Houston,On Leave
+1271,Donald,Lara,HR,Manager,2020-09-08,92755.39,Chicago,On Leave
+1272,Katherine,Jimenez,Inventory,Supervisor,2024-09-14,100605.67,Los Angeles,Terminated
+1273,Linda,Bradley,Sales,Manager,2023-02-23,75045.93,Los Angeles,On Leave
+1274,Andrew,Walker,Marketing,Associate,2021-02-08,64105.94,Miami,On Leave
+1275,Jason,Avery,Marketing,Supervisor,2024-03-13,110451.08,Chicago,Active
+1276,Jesse,Evans,Inventory,Supervisor,2024-01-31,32797.71,Houston,On Leave
+1277,Vanessa,Fields,Marketing,Clerk,2022-12-22,90909.84,Chicago,Active
+1278,Lisa,Palmer,Sales,Clerk,2024-12-19,81594.96,New York,Active
+1279,Catherine,Walls,Marketing,Associate,2024-11-29,90812.56,Los Angeles,Terminated
+1280,David,Ponce,IT,Supervisor,2023-08-09,81495.75,Miami,On Leave
+1281,Dillon,Floyd,Finance,Manager,2022-08-22,60613.95,Chicago,On Leave
+1282,Dustin,Thomas,HR,Manager,2022-10-01,102682.01,Los Angeles,Active
+1283,Douglas,Ross,HR,Supervisor,2024-07-09,84237.85,Houston,Active
+1284,Dawn,Todd,HR,Manager,2023-07-29,56122.03,Miami,Terminated
+1285,Derek,Peterson,Sales,Associate,2022-12-20,35379.09,New York,Terminated
+1286,Jonathan,Delgado,Marketing,Clerk,2024-06-07,117868.01,New York,On Leave
+1287,Christopher,Robinson,Inventory,Manager,2024-06-19,87572.16,Miami,Terminated
+1288,Zachary,Hernandez,IT,Clerk,2024-05-27,44405.15,Houston,Terminated
+1289,Austin,Phillips,IT,Manager,2024-07-23,62602.5,Miami,Terminated
+1290,Kristy,Peck,Inventory,Supervisor,2022-07-19,50005.06,Los Angeles,Terminated
+1291,Roy,Baker,Finance,Clerk,2023-10-23,60590.92,Miami,Terminated
+1292,Corey,Williams,Finance,Supervisor,2022-08-16,73724.09,Los Angeles,On Leave
+1293,Maurice,Hansen,IT,Manager,2020-06-03,53952.37,Houston,On Leave
+1294,Carl,Smith,Inventory,Analyst,2022-10-09,84672.2,Miami,Active
+1295,Peggy,Archer,Sales,Associate,2024-05-05,113509.32,Miami,On Leave
+1296,Katherine,Walker,Inventory,Manager,2024-08-05,114176.82,Miami,Terminated
+1297,Shawn,Evans,IT,Supervisor,2022-09-28,73451.49,Chicago,Active
+1298,Danielle,Mcpherson,IT,Supervisor,2022-01-31,72326.2,Houston,On Leave
+1299,Kirsten,Marsh,Inventory,Manager,2023-09-27,43380.41,New York,On Leave
+1300,Samuel,Conrad,Sales,Associate,2023-12-28,94415.65,Miami,On Leave
+1301,Kristin,Thomas,Finance,Supervisor,2022-09-03,71476.51,Chicago,Terminated
+1302,Jason,Bryant,Sales,Supervisor,2022-02-01,77696.3,Chicago,On Leave
+1303,Richard,Miller,HR,Clerk,2025-02-14,53440.57,Miami,On Leave
+1304,Timothy,Rogers,Inventory,Supervisor,2023-01-09,98866.58,Chicago,Active
+1305,Sarah,Hart,IT,Associate,2022-03-10,105157.2,Los Angeles,Active
+1306,Krista,Taylor,Sales,Supervisor,2022-01-13,99030.21,Los Angeles,On Leave
+1307,Kristina,Parks,Marketing,Clerk,2021-04-08,117449.51,New York,Active
+1308,Tina,Ellis,Marketing,Manager,2025-05-03,110751.59,Houston,On Leave
+1309,Dwayne,Flores,Sales,Supervisor,2021-09-07,59205.3,Chicago,Active
+1310,Ruth,Bass,Sales,Analyst,2021-08-26,118579.92,Miami,Terminated
+1311,Maria,Edwards,Marketing,Manager,2024-12-01,95079.06,Los Angeles,Active
+1312,Ronnie,Brewer,Finance,Manager,2020-06-09,65291.95,Houston,Terminated
+1313,Adam,Sheppard,HR,Manager,2024-04-10,40572.85,New York,On Leave
+1314,Theodore,Harris,Sales,Associate,2020-09-01,58356.69,Houston,Active
+1315,Elizabeth,Franklin,Inventory,Clerk,2020-12-20,47467.26,New York,Active
+1316,Jillian,Green,HR,Associate,2021-12-11,103858.99,Miami,Active
+1317,Mark,Robertson,Sales,Analyst,2024-04-06,37121.86,Chicago,On Leave
+1318,Jonathan,Howell,Inventory,Manager,2022-07-17,70755.15,Miami,Terminated
+1319,Stephanie,Kent,Sales,Associate,2022-09-17,108576.0,New York,On Leave
+1320,Kristin,Perez,IT,Clerk,2020-06-26,60158.14,Miami,Active
+1321,Jennifer,Mejia,Sales,Manager,2025-01-30,91987.14,New York,On Leave
+1322,Kathleen,Proctor,HR,Supervisor,2022-12-25,90884.96,Los Angeles,Active
+1323,Benjamin,Perry,Marketing,Associate,2024-09-17,106513.45,Houston,Terminated
+1324,Crystal,Vasquez,Sales,Manager,2022-07-14,66818.44,New York,Terminated
+1325,Tanya,Avila,Sales,Associate,2020-10-19,54621.53,Houston,Active
+1326,Amber,Garcia,Finance,Clerk,2025-04-06,85539.52,Chicago,Terminated
+1327,Belinda,Sims,Finance,Associate,2021-10-03,38727.62,Miami,On Leave
+1328,Richard,Newman,Inventory,Analyst,2021-10-16,55533.78,Los Angeles,On Leave
+1329,Jennifer,Brown,Marketing,Supervisor,2023-12-31,62448.93,New York,Terminated
+1330,Amanda,Torres,Inventory,Clerk,2021-09-03,101405.04,Houston,On Leave
+1331,Scott,Arias,IT,Associate,2023-10-07,69334.38,Houston,Active
+1332,Tyler,Williams,Marketing,Clerk,2021-04-10,106947.01,Chicago,Terminated
+1333,Donald,Wilson,HR,Clerk,2025-02-24,51833.9,Miami,Active
+1334,Jessica,Williams,Marketing,Supervisor,2023-12-23,74706.05,Houston,Terminated
+1335,Penny,Carter,Marketing,Analyst,2024-08-04,89189.03,Chicago,On Leave
+1336,Billy,Johnson,Finance,Clerk,2024-03-06,54358.03,New York,On Leave
+1337,Allison,Bryant,HR,Manager,2021-10-20,104157.19,New York,Active
+1338,Heather,Zhang,Inventory,Clerk,2021-05-10,80897.91,Los Angeles,Active
+1339,Suzanne,Weber,HR,Analyst,2022-01-05,114723.8,Chicago,On Leave
+1340,Jerry,Stevenson,Inventory,Analyst,2020-09-20,59228.73,Chicago,On Leave
+1341,Jeffrey,Diaz,IT,Supervisor,2021-03-05,66306.89,Chicago,On Leave
+1342,Amanda,Powell,Inventory,Supervisor,2021-08-17,83135.97,Chicago,Terminated
+1343,Mary,Miller,HR,Clerk,2022-06-08,77634.02,Houston,On Leave
+1344,Linda,Williams,Sales,Manager,2024-12-09,48534.1,Houston,Terminated
+1345,Jennifer,Sharp,Marketing,Associate,2021-03-04,96596.27,Los Angeles,On Leave
+1346,Glenn,Carter,Inventory,Analyst,2021-07-21,35455.77,Miami,Terminated
+1347,Edward,Hester,Marketing,Manager,2022-04-28,34766.69,Miami,Terminated
+1348,Lorraine,Sherman,Sales,Analyst,2024-10-01,90872.68,Miami,On Leave
+1349,Amy,Duke,IT,Analyst,2021-10-27,30248.83,Miami,On Leave
+1350,Michael,Garrett,IT,Clerk,2023-12-10,117091.01,Chicago,Terminated
+1351,Eric,Sullivan,Marketing,Associate,2024-10-15,98034.15,Miami,Terminated
+1352,Patricia,Andersen,Sales,Supervisor,2022-10-27,87609.68,Houston,On Leave
+1353,Lawrence,Mueller,Marketing,Clerk,2021-02-26,88652.17,New York,Terminated
+1354,Shawn,Bond,Finance,Supervisor,2021-03-30,97417.15,Los Angeles,Terminated
+1355,Rachel,Foster,HR,Manager,2022-07-09,100107.51,Chicago,On Leave
+1356,Brian,King,Finance,Manager,2022-02-05,118557.08,Miami,Terminated
+1357,Jessica,Bowers,Marketing,Manager,2021-10-07,63005.06,New York,Terminated
+1358,Patricia,Lewis,HR,Clerk,2022-10-28,112755.25,Chicago,Terminated
+1359,Christopher,Taylor,Inventory,Associate,2023-12-04,115342.35,Los Angeles,On Leave
+1360,Mary,Mcdonald,Marketing,Manager,2022-08-15,108587.27,New York,Terminated
+1361,Erik,Dean,Sales,Supervisor,2021-04-06,34859.8,New York,Terminated
+1362,John,Hernandez,IT,Analyst,2022-12-13,81290.98,Miami,On Leave
+1363,Tyler,Patel,Finance,Associate,2020-05-30,54981.17,Los Angeles,Terminated
+1364,Casey,Cortez,Inventory,Associate,2024-09-26,77664.81,Chicago,On Leave
+1365,Tracey,Horn,HR,Associate,2021-10-27,76723.04,Miami,Active
+1366,Selena,Baker,IT,Analyst,2025-04-06,63615.91,New York,Active
+1367,Paul,Miller,Marketing,Manager,2023-11-20,37879.85,Chicago,On Leave
+1368,Ashley,Richmond,Finance,Manager,2022-02-09,106856.71,Los Angeles,On Leave
+1369,Emma,Clarke,Marketing,Associate,2023-03-07,48885.75,Miami,Terminated
+1370,Mary,Holland,Marketing,Supervisor,2024-08-01,64914.49,Houston,Active
+1371,Christina,Lucero,IT,Manager,2023-05-04,39810.68,Miami,On Leave
+1372,Erin,Scott,Marketing,Analyst,2025-04-02,48484.14,New York,Terminated
+1373,Amber,Weber,Marketing,Associate,2022-02-24,119283.75,Chicago,Active
+1374,Benjamin,Scott,IT,Supervisor,2021-08-07,106058.82,New York,On Leave
+1375,Karla,Evans,Inventory,Associate,2024-08-12,104384.81,Miami,Terminated
+1376,Jasmine,Norris,Marketing,Analyst,2022-08-11,78299.92,Los Angeles,Active
+1377,Madison,Fields,HR,Manager,2024-05-27,54641.35,Chicago,Terminated
+1378,Michael,Farrell,HR,Analyst,2022-05-30,98439.32,Miami,Active
+1379,Rebecca,Gomez,Marketing,Supervisor,2024-06-13,116736.63,Houston,Terminated
+1380,Gregory,Beard,Marketing,Clerk,2024-03-22,40601.78,Los Angeles,On Leave
+1381,Wendy,Costa,Marketing,Manager,2024-10-18,59433.47,Los Angeles,On Leave
+1382,Valerie,Reed,IT,Supervisor,2021-07-23,45002.95,Los Angeles,Active
+1383,Michelle,Graham,HR,Manager,2023-10-10,37605.56,Los Angeles,Active
+1384,Denise,Atkins,Marketing,Supervisor,2021-09-03,54135.36,Chicago,Active
+1385,Lauren,Steele,IT,Associate,2024-12-04,93905.4,Houston,Terminated
+1386,Alexandra,Gomez,Marketing,Manager,2023-05-23,68934.05,Miami,Terminated
+1387,Amanda,Stewart,IT,Associate,2023-04-13,41529.08,Miami,On Leave
+1388,Susan,Hernandez,Marketing,Clerk,2025-03-02,58307.0,Chicago,On Leave
+1389,Jeremy,Dunn,Inventory,Supervisor,2020-06-24,72210.3,Los Angeles,Active
+1390,Yolanda,Cooper,HR,Manager,2021-07-27,114372.85,Miami,Active
+1391,Amanda,Walker,Marketing,Supervisor,2022-12-07,113114.9,Los Angeles,Terminated
+1392,Michelle,Miller,Marketing,Clerk,2025-03-31,76368.22,Miami,Terminated
+1393,Kristen,Howell,IT,Manager,2021-09-05,117147.57,New York,On Leave
+1394,Kevin,Elliott,Inventory,Analyst,2020-09-11,88901.73,Houston,Terminated
+1395,Michele,White,Finance,Analyst,2022-04-27,62047.01,Chicago,Terminated
+1396,Megan,Walton,Sales,Clerk,2022-03-07,105942.63,Houston,Active
+1397,Jacob,Jones,Sales,Associate,2020-12-26,109679.05,Miami,Terminated
+1398,Danny,Patrick,Sales,Analyst,2021-02-23,58741.64,Chicago,On Leave
+1399,Scott,Elliott,Marketing,Manager,2021-06-27,90684.75,Chicago,Terminated
+1400,James,Henderson,Sales,Clerk,2022-08-21,108994.32,Houston,Terminated
+1401,Christopher,Hicks,Finance,Clerk,2023-06-29,91221.12,Miami,On Leave
+1402,Cameron,Conner,IT,Analyst,2021-04-25,67158.6,Houston,On Leave
+1403,Jon,Davis,Finance,Clerk,2021-12-08,89165.47,Los Angeles,Terminated
+1404,Edward,Wilson,HR,Analyst,2022-08-30,109897.83,Los Angeles,Terminated
+1405,Erika,Bradshaw,Marketing,Associate,2023-08-20,82105.92,Houston,On Leave
+1406,Kathryn,Hernandez,Inventory,Associate,2023-07-08,117896.68,Houston,On Leave
+1407,Kimberly,Hoffman,HR,Analyst,2022-01-26,72560.97,Miami,On Leave
+1408,Katherine,Graves,Sales,Associate,2023-12-02,49722.89,Houston,On Leave
+1409,George,Knox,Marketing,Manager,2024-07-20,64007.59,Chicago,Terminated
+1410,David,Rivera,Inventory,Clerk,2023-02-10,92850.97,New York,On Leave
+1411,John,Edwards,HR,Analyst,2021-08-29,56963.65,Miami,On Leave
+1412,Megan,Short,Sales,Associate,2021-07-28,51787.04,Houston,Terminated
+1413,Erika,Harris,Inventory,Supervisor,2022-04-27,88808.61,New York,On Leave
+1414,Christopher,Garner,IT,Manager,2023-02-26,60577.48,New York,Terminated
+1415,Christopher,Anderson,Sales,Analyst,2023-10-10,99345.83,New York,Terminated
+1416,Malik,Alvarado,Marketing,Supervisor,2024-02-29,107501.74,Chicago,Terminated
+1417,Cody,Gamble,IT,Associate,2022-04-25,112802.63,New York,On Leave
+1418,Stephanie,Johnson,Sales,Clerk,2021-08-02,34507.96,New York,Active
+1419,Tiffany,Smith,HR,Analyst,2025-02-09,84437.18,Los Angeles,On Leave
+1420,Bonnie,Pearson,HR,Analyst,2023-02-05,113946.25,Houston,Terminated
+1421,Joel,Rice,Inventory,Clerk,2025-01-08,88683.46,Los Angeles,Terminated
+1422,Jonathan,Martin,Finance,Associate,2022-10-30,104920.0,New York,On Leave
+1423,Jenny,Lynch,IT,Manager,2020-06-14,101760.48,Los Angeles,On Leave
+1424,Nancy,Harrison,Inventory,Clerk,2024-09-06,81075.36,Chicago,Active
+1425,Christopher,Burch,Marketing,Clerk,2023-08-10,114521.48,Miami,Active
+1426,James,Gonzalez,HR,Manager,2020-06-28,59732.11,Miami,Terminated
+1427,Thomas,Everett,Inventory,Analyst,2025-01-22,99521.16,Los Angeles,On Leave
+1428,Melissa,Peck,HR,Analyst,2024-10-19,74130.73,Chicago,Active
+1429,Abigail,Dillon,Sales,Analyst,2023-12-12,62601.71,Los Angeles,On Leave
+1430,David,Harper,Marketing,Clerk,2021-11-22,51933.75,Miami,Terminated
+1431,Margaret,Carson,HR,Analyst,2025-03-31,55185.8,Miami,Terminated
+1432,Billy,Hernandez,Finance,Supervisor,2022-07-27,100776.27,Miami,Active
+1433,Michael,Andrews,Sales,Supervisor,2021-10-12,87285.21,Chicago,Terminated
+1434,Christopher,Hurley,Inventory,Clerk,2021-01-14,63495.5,Houston,Active
+1435,Lisa,Mcguire,Sales,Clerk,2025-05-10,81479.9,Chicago,Active
+1436,Beth,Wright,IT,Analyst,2024-11-01,96487.61,New York,Terminated
+1437,Stephen,Sloan,Finance,Analyst,2023-02-12,64835.34,Chicago,On Leave
+1438,Eric,Carter,IT,Associate,2022-03-01,117915.38,Houston,On Leave
+1439,Rodney,Merritt,IT,Manager,2025-03-10,42005.36,Chicago,Active
+1440,Steven,Wood,Inventory,Manager,2022-02-12,54588.69,Houston,On Leave
+1441,April,Ramsey,IT,Manager,2020-08-21,37291.28,Miami,On Leave
+1442,Adam,Simon,HR,Associate,2025-04-28,49081.15,New York,Active
+1443,Erica,Murphy,HR,Manager,2023-06-06,56116.13,Miami,On Leave
+1444,Sherry,Hughes,Inventory,Analyst,2024-08-28,112624.36,Los Angeles,On Leave
+1445,Alexandra,Gregory,Finance,Manager,2021-10-30,84102.75,Chicago,Terminated
+1446,Michael,Garcia,Marketing,Clerk,2024-08-05,80047.89,Miami,Active
+1447,Brittany,Hall,IT,Analyst,2022-01-17,56455.7,Houston,Terminated
+1448,Sylvia,May,Marketing,Clerk,2020-12-16,104382.66,Miami,Terminated
+1449,Julie,Hill,IT,Supervisor,2022-06-22,104399.0,Los Angeles,On Leave
+1450,Jeffrey,Castaneda,Sales,Clerk,2023-03-10,86625.59,Miami,On Leave
+1451,Tommy,Montgomery,Sales,Supervisor,2021-02-18,98670.64,Houston,Active
+1452,Calvin,Sanders,IT,Clerk,2023-05-31,37030.39,Chicago,Active
+1453,Mark,King,Finance,Manager,2022-03-21,66141.45,New York,Active
+1454,Keith,Fischer,HR,Supervisor,2025-04-16,96977.08,Chicago,On Leave
+1455,Sharon,Bernard,Inventory,Clerk,2022-03-31,60395.73,Miami,Terminated
+1456,Cindy,Hopkins,HR,Associate,2022-01-31,113902.42,Los Angeles,On Leave
+1457,Steven,Dickerson,Inventory,Clerk,2022-07-09,71856.22,Miami,Active
+1458,Bailey,Wilson,Sales,Associate,2021-04-16,44731.14,New York,On Leave
+1459,Kathleen,Ortiz,Sales,Clerk,2022-05-12,82762.33,Houston,Active
+1460,Wanda,Newton,Sales,Associate,2024-01-07,62314.26,Los Angeles,Terminated
+1461,Karen,Ortiz,HR,Clerk,2024-03-15,42090.72,Houston,On Leave
+1462,Deborah,Perez,Marketing,Clerk,2021-05-01,106678.08,Los Angeles,Active
+1463,Megan,Gomez,HR,Analyst,2020-07-02,32832.07,Los Angeles,On Leave
+1464,Connie,Miller,Inventory,Manager,2021-02-08,111230.62,Chicago,Active
+1465,Michelle,Costa,Inventory,Manager,2024-11-13,59069.29,Chicago,Active
+1466,Adrian,Williamson,Inventory,Analyst,2024-07-04,96441.25,Chicago,On Leave
+1467,Karen,Gillespie,Finance,Supervisor,2020-06-01,110517.41,Miami,Active
+1468,Kathryn,Johnson,Marketing,Associate,2022-04-02,58350.05,Los Angeles,Terminated
+1469,Laura,Todd,IT,Manager,2022-03-18,73394.36,Los Angeles,Terminated
+1470,Troy,Baldwin,HR,Clerk,2020-08-22,67614.22,Chicago,Active
+1471,Douglas,Scott,Finance,Associate,2023-02-25,85018.76,Houston,On Leave
+1472,Danielle,Shepherd,Finance,Manager,2025-02-07,119768.49,Houston,Terminated
+1473,Douglas,Terry,IT,Clerk,2023-08-28,44322.4,Chicago,Terminated
+1474,Joseph,Lamb,IT,Clerk,2022-03-07,63047.45,Los Angeles,On Leave
+1475,Robert,Barry,Finance,Associate,2022-03-05,40893.68,Chicago,Active
+1476,Rick,Johnson,IT,Manager,2021-02-03,109450.65,Miami,Active
+1477,Brian,Maddox,HR,Manager,2022-05-28,35303.06,Miami,Terminated
+1478,George,Wheeler,Marketing,Associate,2024-08-01,68023.79,Miami,Active
+1479,Daniel,Hunter,Marketing,Supervisor,2021-04-17,65265.56,Houston,Active
+1480,Michael,Jensen,Sales,Clerk,2024-08-16,35268.95,New York,On Leave
+1481,Becky,Phillips,HR,Manager,2023-06-05,69168.14,New York,Active
+1482,Tara,Smith,Finance,Clerk,2022-08-23,105523.89,New York,On Leave
+1483,Matthew,Sharp,Finance,Associate,2021-12-12,62733.29,Houston,Active
+1484,Brandon,Reeves,Marketing,Supervisor,2023-03-05,83312.44,Chicago,On Leave
+1485,Todd,Ramos,Inventory,Clerk,2024-09-26,67791.96,Miami,On Leave
+1486,Mary,Torres,IT,Clerk,2025-01-05,116917.61,New York,On Leave
+1487,Lauren,Cooper,IT,Associate,2023-04-03,40613.83,New York,Active
+1488,Amy,Cruz,Inventory,Manager,2020-06-29,77613.23,Houston,Terminated
+1489,Toni,Smith,HR,Manager,2020-09-27,48334.79,Chicago,On Leave
+1490,Randall,Garcia,Inventory,Supervisor,2021-02-16,117779.51,New York,On Leave
+1491,Jennifer,Rojas,Inventory,Associate,2021-07-12,64623.83,Los Angeles,On Leave
+1492,Cory,Hunter,Inventory,Supervisor,2025-04-16,76308.07,Houston,Active
+1493,Nathaniel,Ingram,Sales,Manager,2020-08-28,83369.17,New York,Terminated
+1494,Denise,Knight,Finance,Analyst,2023-10-01,92812.42,Houston,Terminated
+1495,Gregory,Tran,HR,Analyst,2021-08-12,59645.28,Miami,Active
+1496,John,Dudley,Marketing,Clerk,2022-08-14,114646.99,Houston,On Leave
+1497,Mark,Molina,Sales,Supervisor,2023-05-28,97277.08,Los Angeles,On Leave
+1498,Cynthia,Holmes,IT,Manager,2021-12-05,60951.66,Chicago,On Leave
+1499,Parker,Clark,IT,Associate,2022-01-03,72123.8,Houston,Active
+1500,Katherine,Johnson,Marketing,Associate,2023-10-14,102803.97,Houston,Terminated
+1501,James,Sanchez,HR,Supervisor,2021-11-05,79438.13,Miami,Terminated
+1502,Kendra,Daniel,IT,Associate,2022-08-07,95546.27,Miami,Active
+1503,Michael,Powers,Inventory,Associate,2020-09-13,83134.61,Los Angeles,Terminated
+1504,Kristen,Nolan,Marketing,Supervisor,2020-07-24,62731.58,Los Angeles,On Leave
+1505,Robert,Powell,IT,Analyst,2024-01-17,38803.01,New York,Terminated
+1506,Teresa,Brown,HR,Manager,2022-02-19,109528.14,Los Angeles,On Leave
+1507,Brian,Molina,Inventory,Manager,2020-07-24,69581.21,New York,On Leave
+1508,Kimberly,Griffin,IT,Clerk,2023-07-15,66585.23,Miami,On Leave
+1509,Mark,Long,Marketing,Manager,2024-03-29,44468.69,Los Angeles,Terminated
+1510,Heather,Sims,IT,Analyst,2024-09-22,105805.86,Los Angeles,On Leave
+1511,Anne,Mitchell,HR,Analyst,2021-01-23,80343.06,Miami,Terminated
+1512,James,Pugh,HR,Supervisor,2022-04-27,56885.03,Chicago,Active
+1513,Amber,Frey,IT,Supervisor,2023-12-15,36007.07,New York,On Leave
+1514,Jill,Valdez,Finance,Associate,2021-05-13,66363.2,Chicago,Active
+1515,Sabrina,Cain,IT,Supervisor,2024-07-16,101460.16,New York,Active
+1516,Sarah,Maxwell,IT,Supervisor,2024-10-14,114620.01,Chicago,Terminated
+1517,John,Jackson,Inventory,Clerk,2023-12-28,58185.16,Chicago,Terminated
+1518,Christopher,Rivera,Finance,Analyst,2023-04-22,48466.37,Chicago,Active
+1519,Joy,Barker,IT,Clerk,2024-02-04,87192.51,Los Angeles,Active
+1520,Shannon,Gamble,Inventory,Supervisor,2023-10-19,94827.39,Los Angeles,On Leave
+1521,Michelle,Long,Finance,Analyst,2021-05-04,32741.84,Chicago,Terminated
+1522,Timothy,Sandoval,IT,Manager,2021-06-21,45576.29,Miami,Active
+1523,Adam,Hernandez,Finance,Clerk,2023-08-17,111689.22,New York,Active
+1524,Derrick,Weaver,HR,Manager,2022-09-25,78056.24,Houston,Terminated
+1525,Tracy,Chavez,Inventory,Manager,2024-04-03,106554.0,New York,Terminated
+1526,Reginald,Guerrero,Sales,Analyst,2020-12-05,90459.69,Miami,Active
+1527,Jonathan,Jackson,Finance,Analyst,2021-03-06,92528.99,New York,Active
+1528,Emily,Williams,Finance,Analyst,2023-03-09,33551.71,Miami,Terminated
+1529,Jamie,Smith,Marketing,Manager,2022-10-21,74400.35,Miami,Terminated
+1530,Arthur,Evans,Marketing,Clerk,2022-03-09,105194.4,Houston,Active
+1531,Molly,Gutierrez,Marketing,Manager,2021-10-17,56411.09,New York,Terminated
+1532,Jennifer,Solomon,Marketing,Supervisor,2022-03-26,97870.88,Los Angeles,Active
+1533,Catherine,Davenport,Sales,Clerk,2020-06-07,78977.46,Miami,On Leave
+1534,Joshua,Bell,Finance,Manager,2022-03-14,68207.0,Houston,Terminated
+1535,Cynthia,Macdonald,IT,Associate,2023-01-23,71631.01,Houston,Active
+1536,Anthony,Mcgrath,HR,Associate,2022-11-06,60687.55,Houston,On Leave
+1537,Jacob,Walsh,Marketing,Clerk,2023-08-27,73892.93,Houston,On Leave
+1538,Mary,Thomas,IT,Analyst,2024-12-11,45268.58,New York,Terminated
+1539,Christopher,Lopez,Sales,Manager,2020-07-08,117657.94,New York,Active
+1540,Jamie,Johnson,Finance,Supervisor,2025-02-13,105468.6,Houston,Terminated
+1541,Brooke,Cabrera,Inventory,Clerk,2020-06-27,106889.91,Houston,On Leave
+1542,Stacey,Carter,HR,Manager,2023-04-02,44715.33,New York,Active
+1543,James,Williams,Marketing,Manager,2021-12-20,42428.09,Chicago,Active
+1544,Jonathan,Oconnor,Marketing,Associate,2025-03-24,62560.52,New York,Terminated
+1545,Roberto,Ruiz,Inventory,Supervisor,2022-11-11,36645.7,Los Angeles,On Leave
+1546,Joshua,Golden,IT,Analyst,2025-04-24,66420.06,Chicago,Active
+1547,Brandy,Garcia,HR,Clerk,2023-06-14,34127.24,New York,Terminated
+1548,Karen,Moon,Marketing,Supervisor,2021-12-02,99624.21,Miami,Active
+1549,Dale,Davis,IT,Clerk,2021-09-24,76885.57,New York,On Leave
+1550,Kenneth,Lee,Marketing,Supervisor,2023-03-03,80741.75,New York,Terminated
+1551,Peggy,Petersen,Inventory,Associate,2020-09-29,36748.95,Miami,Terminated
+1552,Sarah,Skinner,Marketing,Analyst,2024-11-13,50728.99,Miami,On Leave
+1553,Heather,Smith,IT,Analyst,2024-11-15,95730.21,Chicago,Terminated
+1554,Matthew,Webster,Marketing,Supervisor,2021-11-16,52413.06,Miami,On Leave
+1555,Angela,Stout,HR,Manager,2023-02-22,61257.58,Miami,Active
+1556,David,Williams,Sales,Analyst,2022-11-22,107823.23,New York,On Leave
+1557,Michael,Hendrix,IT,Manager,2022-12-23,65850.19,Los Angeles,Active
+1558,Michael,Forbes,Sales,Analyst,2020-09-08,55890.05,Chicago,Active
+1559,Jerry,Gonzalez,Sales,Clerk,2021-09-08,51168.63,New York,Active
+1560,Brittany,Dawson,Inventory,Analyst,2021-11-04,79670.95,Los Angeles,Active
+1561,Amanda,Vasquez,HR,Clerk,2023-06-11,112759.32,New York,On Leave
+1562,Joshua,Garza,Sales,Clerk,2021-08-11,57450.88,Miami,On Leave
+1563,Joshua,Edwards,Inventory,Clerk,2020-08-25,103972.08,New York,Active
+1564,Bobby,Garcia,HR,Associate,2024-10-21,89808.52,Miami,On Leave
+1565,Richard,Thomas,Inventory,Analyst,2021-12-14,70405.12,Los Angeles,Terminated
+1566,Laura,Chambers,Marketing,Manager,2023-06-10,95108.9,New York,On Leave
+1567,Brett,Martinez,Sales,Clerk,2020-11-26,119306.22,Chicago,On Leave
+1568,Christopher,Wyatt,Finance,Manager,2022-05-23,70467.54,Chicago,Terminated
+1569,Daniel,Bush,Inventory,Manager,2021-11-05,99479.55,Miami,On Leave
+1570,Victoria,Romero,Finance,Clerk,2023-03-25,41022.78,Los Angeles,On Leave
+1571,Jesus,Martin,Sales,Analyst,2023-10-22,100118.12,Los Angeles,Terminated
+1572,Gregory,Garrett,Sales,Associate,2024-06-28,69563.71,Houston,On Leave
+1573,Sean,Hernandez,IT,Analyst,2020-07-23,98066.51,Houston,Active
+1574,Jason,Davis,Sales,Supervisor,2020-10-11,38162.49,New York,Terminated
+1575,Laurie,Donovan,Marketing,Analyst,2024-06-20,33101.68,Houston,Active
+1576,Anthony,Harrison,Sales,Associate,2023-03-29,96531.95,Houston,Terminated
+1577,April,Hebert,Inventory,Manager,2023-01-24,63886.75,New York,Terminated
+1578,Tracey,Silva,Finance,Manager,2020-12-12,44200.62,Miami,Active
+1579,Heather,Rowland,Finance,Associate,2022-12-17,67019.49,Miami,Terminated
+1580,Mark,Woods,Marketing,Manager,2024-01-02,31707.12,Miami,Active
+1581,Lisa,Foster,Sales,Analyst,2021-01-27,79485.55,Miami,Active
+1582,Laura,Carrillo,Sales,Analyst,2022-08-20,55299.27,Houston,On Leave
+1583,Vincent,Evans,Marketing,Manager,2024-03-21,38489.88,Los Angeles,Terminated
+1584,Natalie,Park,Inventory,Associate,2023-04-29,79669.64,New York,Active
+1585,John,White,Finance,Manager,2024-06-29,80577.77,Miami,On Leave
+1586,Jenna,King,Marketing,Associate,2024-01-02,117436.97,Los Angeles,On Leave
+1587,Janice,Perry,HR,Associate,2021-03-21,82924.44,Chicago,On Leave
+1588,Amy,Hicks,Marketing,Clerk,2023-08-25,117886.05,Houston,Active
+1589,Jonathan,Newton,Finance,Supervisor,2025-04-03,102335.04,Los Angeles,On Leave
+1590,Scott,Hayes,HR,Associate,2023-01-11,117153.84,Miami,Active
+1591,Jacob,Erickson,Inventory,Analyst,2024-03-17,51358.74,Miami,Terminated
+1592,Laura,Fitzgerald,Finance,Supervisor,2021-01-22,99904.63,Los Angeles,Active
+1593,Tina,Alexander,HR,Clerk,2021-12-17,117252.62,New York,Active
+1594,Timothy,Reed,IT,Manager,2021-12-20,54552.67,Los Angeles,Active
+1595,Daniel,Bennett,Finance,Supervisor,2021-10-02,48104.73,New York,On Leave
+1596,Cameron,Wells,Finance,Manager,2024-03-30,33748.97,Chicago,Terminated
+1597,Nathan,Bean,HR,Supervisor,2024-08-22,114994.2,Chicago,On Leave
+1598,Donna,Jensen,Finance,Manager,2023-05-29,87130.9,Chicago,Active
+1599,Valerie,Carpenter,IT,Manager,2024-06-03,106666.84,Houston,On Leave
+1600,Eddie,Huang,Finance,Manager,2022-03-14,101509.92,Los Angeles,On Leave
+1601,Joseph,Hardy,HR,Analyst,2023-02-24,36069.2,Chicago,Active
+1602,Frank,Butler,Marketing,Supervisor,2023-05-27,113283.91,Chicago,Active
+1603,Matthew,Richardson,Inventory,Analyst,2022-04-28,104612.57,New York,On Leave
+1604,Cameron,Cooper,HR,Manager,2023-09-15,69895.43,Chicago,Active
+1605,Sarah,Rodriguez,Marketing,Manager,2024-11-09,100887.41,Chicago,On Leave
+1606,Roger,Cruz,Finance,Clerk,2024-08-11,98604.47,Houston,Terminated
+1607,Charles,Watson,IT,Manager,2020-06-24,116456.84,New York,On Leave
+1608,Susan,Jackson,HR,Analyst,2023-07-13,77418.27,Miami,Terminated
+1609,Heather,Watson,Finance,Associate,2022-10-22,61094.57,Houston,Active
+1610,Alexandra,Moore,Sales,Associate,2022-08-05,44213.66,Houston,On Leave
+1611,Brian,Davis,IT,Supervisor,2023-02-05,40944.69,Los Angeles,Active
+1612,Zachary,Lopez,IT,Associate,2020-08-19,83482.09,Los Angeles,On Leave
+1613,Frank,Park,Sales,Clerk,2023-02-28,37798.02,Houston,Terminated
+1614,Adam,Cunningham,IT,Analyst,2025-03-05,99711.49,Houston,Active
+1615,April,Larson,HR,Manager,2020-10-01,77657.43,Miami,Active
+1616,Tanya,Thomas,Inventory,Analyst,2021-01-09,60256.88,Los Angeles,Active
+1617,Bethany,Lang,Sales,Associate,2021-11-25,90943.61,Los Angeles,Terminated
+1618,Brian,Nelson,Marketing,Supervisor,2022-03-06,115188.73,New York,On Leave
+1619,Mary,Keith,Finance,Analyst,2021-02-09,80005.04,New York,Terminated
+1620,Thomas,Campbell,Marketing,Supervisor,2021-06-06,73301.84,Miami,Active
+1621,Joshua,Manning,Finance,Clerk,2023-10-05,65661.19,Miami,Terminated
+1622,Valerie,Patterson,Inventory,Supervisor,2023-08-01,61823.61,Chicago,Active
+1623,Jesse,Richards,Finance,Associate,2023-12-23,57443.86,Chicago,Terminated
+1624,Daniel,Wilson,Marketing,Manager,2021-05-20,100496.65,Los Angeles,On Leave
+1625,Carolyn,Hernandez,Inventory,Supervisor,2022-07-13,72844.03,Miami,Active
+1626,Gregory,Owen,IT,Associate,2025-01-14,82159.37,Chicago,Terminated
+1627,Jared,Gonzales,Finance,Analyst,2022-05-01,113506.8,Miami,On Leave
+1628,Elizabeth,Richardson,Marketing,Clerk,2021-03-31,64238.11,New York,Terminated
+1629,Megan,Bowen,Finance,Supervisor,2024-08-08,34011.3,New York,Active
+1630,Manuel,Brown,Finance,Analyst,2022-07-16,99873.28,New York,Terminated
+1631,Brett,Stone,Marketing,Associate,2020-08-11,76601.58,Los Angeles,On Leave
+1632,Carl,Ortiz,Marketing,Clerk,2024-02-11,30847.11,Los Angeles,On Leave
+1633,Tara,Johnson,HR,Clerk,2022-09-27,35953.11,Miami,On Leave
+1634,Michael,Mercado,HR,Analyst,2024-10-11,112385.38,Chicago,Active
+1635,Jason,Clayton,Marketing,Manager,2021-12-10,88115.96,Houston,Active
+1636,John,Scott,Sales,Associate,2021-04-03,82446.58,Houston,Active
+1637,Amy,Smith,IT,Manager,2022-02-12,42304.19,Miami,Terminated
+1638,Anna,Johnson,Marketing,Clerk,2021-12-31,49707.68,Los Angeles,On Leave
+1639,Daniel,Kim,IT,Supervisor,2021-06-29,117173.76,Los Angeles,Terminated
+1640,Chad,Moore,Finance,Supervisor,2022-05-09,80255.88,Los Angeles,Active
+1641,Emily,Murphy,Finance,Clerk,2020-09-02,106707.09,Miami,Terminated
+1642,Meghan,Gallagher,Inventory,Analyst,2022-06-28,116054.09,Houston,On Leave
+1643,Susan,Thomas,Marketing,Manager,2021-08-15,102331.97,Los Angeles,Active
+1644,Angela,Cook,Sales,Manager,2024-06-25,95237.23,New York,Terminated
+1645,Joshua,Brooks,Inventory,Supervisor,2023-01-02,31465.31,Chicago,On Leave
+1646,Madison,Diaz,HR,Analyst,2024-08-02,85544.66,New York,On Leave
+1647,Julie,Thompson,IT,Clerk,2024-07-06,88331.32,Chicago,On Leave
+1648,Austin,Wilson,IT,Associate,2024-03-26,102069.64,Miami,Active
+1649,Roger,Carpenter,IT,Clerk,2023-08-13,109923.23,Houston,Active
+1650,Brenda,Brewer,HR,Analyst,2025-02-16,90838.71,Chicago,On Leave
+1651,Gregory,Moore,HR,Manager,2025-02-05,93460.03,Los Angeles,Terminated
+1652,Anita,Hooper,Inventory,Associate,2021-04-16,93158.48,Chicago,Active
+1653,Amber,Thornton,Finance,Supervisor,2024-12-06,67233.82,Houston,On Leave
+1654,David,Larson,Inventory,Associate,2022-09-19,84383.98,New York,On Leave
+1655,Robin,Stevens,Sales,Associate,2023-08-12,76824.84,Los Angeles,On Leave
+1656,Kyle,Turner,Inventory,Clerk,2021-03-17,34422.87,Miami,Active
+1657,Sean,Ibarra,HR,Clerk,2024-05-19,38605.7,Miami,Active
+1658,Selena,Reynolds,Sales,Analyst,2020-10-10,55839.87,Chicago,Terminated
+1659,David,Lewis,Finance,Supervisor,2022-02-03,44362.12,Los Angeles,Active
+1660,Jessica,Villarreal,Finance,Clerk,2023-11-12,70180.88,Houston,Terminated
+1661,Megan,Jackson,IT,Clerk,2021-01-22,83479.38,Los Angeles,Terminated
+1662,Bailey,Peterson,IT,Clerk,2024-05-26,82584.87,Miami,On Leave
+1663,Andrew,Thomas,Sales,Supervisor,2023-11-01,58878.13,New York,Terminated
+1664,Antonio,Kennedy,Sales,Manager,2024-12-25,106219.4,Miami,On Leave
+1665,Emily,Smith,Inventory,Analyst,2025-03-31,49708.02,New York,Terminated
+1666,Brittany,Middleton,Sales,Manager,2023-02-27,45586.56,Miami,Terminated
+1667,Kenneth,Ross,HR,Clerk,2023-03-26,31218.52,Los Angeles,Active
+1668,Jennifer,Bowen,Marketing,Associate,2023-06-03,111986.01,New York,Terminated
+1669,Karen,Taylor,Finance,Associate,2020-09-08,59501.36,Chicago,On Leave
+1670,Phillip,Johnson,Finance,Analyst,2024-06-30,119583.61,New York,Terminated
+1671,Anthony,Williams,IT,Supervisor,2024-01-15,116505.71,Houston,Active
+1672,Brian,Shaw,IT,Supervisor,2024-09-27,63156.4,Houston,On Leave
+1673,Rachel,Sandoval,Sales,Associate,2021-07-14,35501.26,Chicago,Terminated
+1674,Barbara,Rogers,HR,Analyst,2021-11-13,59249.37,Houston,Terminated
+1675,Jody,Heath,HR,Manager,2025-01-06,71549.67,Miami,Active
+1676,Benjamin,Garcia,IT,Associate,2021-05-23,42841.11,Los Angeles,Terminated
+1677,John,Armstrong,Sales,Manager,2021-12-20,62578.65,New York,Active
+1678,Mariah,Taylor,Finance,Supervisor,2020-05-24,52725.86,Houston,On Leave
+1679,Glenda,Jackson,Marketing,Clerk,2024-03-28,42386.52,New York,Active
+1680,Justin,Jones,Marketing,Associate,2022-08-24,94972.49,Miami,Active
+1681,Rebecca,Park,Sales,Manager,2023-08-12,39347.8,Los Angeles,On Leave
+1682,April,Ruiz,Finance,Supervisor,2024-03-13,103116.75,Miami,On Leave
+1683,Wayne,Burns,Sales,Associate,2022-11-16,92839.24,New York,Active
+1684,Matthew,Hill,Marketing,Clerk,2025-01-16,44793.29,Miami,On Leave
+1685,Christopher,Williams,Inventory,Supervisor,2022-07-06,45490.59,Houston,On Leave
+1686,Calvin,Russell,Inventory,Manager,2020-06-20,98456.14,Los Angeles,Active
+1687,Sarah,Mendez,Inventory,Manager,2021-07-31,119540.17,Houston,Terminated
+1688,David,Moreno,IT,Analyst,2020-09-29,68333.1,Chicago,Terminated
+1689,Derrick,Walker,Inventory,Analyst,2024-04-28,119179.47,New York,On Leave
+1690,Sean,Wilkinson,Sales,Clerk,2025-02-04,35238.81,Chicago,Active
+1691,Kimberly,Young,Finance,Clerk,2024-05-19,96063.71,Miami,On Leave
+1692,Keith,Cervantes,Marketing,Analyst,2022-11-24,55601.07,Chicago,Active
+1693,John,Jackson,IT,Analyst,2025-02-27,93129.7,New York,Terminated
+1694,Kathleen,Gilbert,Sales,Analyst,2024-06-15,32236.46,Chicago,On Leave
+1695,Wyatt,Chen,Sales,Analyst,2023-05-06,107006.35,Chicago,On Leave
+1696,Anna,Webb,Finance,Supervisor,2023-12-04,33132.62,Los Angeles,Active
+1697,Crystal,Richard,Sales,Analyst,2022-06-27,99004.25,Los Angeles,Terminated
+1698,Jamie,Buckley,Finance,Associate,2022-10-24,104864.04,New York,Terminated
+1699,Linda,Smith,Inventory,Clerk,2025-05-04,60126.48,New York,Terminated
+1700,Paula,Sparks,Finance,Analyst,2022-04-18,108234.19,Miami,Active
+1701,Danielle,Keith,IT,Manager,2025-02-04,40617.34,Chicago,Active
+1702,Michael,Jones,HR,Supervisor,2021-11-18,38257.66,Miami,On Leave
+1703,Michael,Williams,Sales,Associate,2022-02-28,117535.47,New York,On Leave
+1704,Diana,Walker,Finance,Clerk,2024-03-16,47865.11,Chicago,Terminated
+1705,Benjamin,Middleton,HR,Associate,2020-11-24,92232.61,Miami,Terminated
+1706,Kevin,Juarez,HR,Supervisor,2021-05-23,36262.72,Miami,Terminated
+1707,Richard,Davis,Marketing,Supervisor,2025-04-17,105980.9,Chicago,On Leave
+1708,Richard,White,Sales,Supervisor,2023-11-25,107551.02,Los Angeles,On Leave
+1709,Jon,Adams,Inventory,Clerk,2023-08-21,38240.82,New York,On Leave
+1710,James,Thompson,Finance,Manager,2023-06-18,55402.09,New York,Active
+1711,Kimberly,Turner,Sales,Clerk,2023-04-08,115728.64,Los Angeles,Terminated
+1712,Edward,Wilson,Marketing,Manager,2023-04-13,70261.59,New York,Terminated
+1713,Tara,Wilson,Inventory,Manager,2024-04-27,33980.06,Chicago,On Leave
+1714,Cassandra,Powell,Finance,Clerk,2022-12-07,114065.84,Chicago,Terminated
+1715,Jamie,Walters,HR,Manager,2021-02-25,34952.34,Los Angeles,Active
+1716,Nathaniel,Holland,Marketing,Manager,2022-05-01,78850.8,Miami,Active
+1717,Victoria,Stewart,Sales,Supervisor,2020-06-23,114368.19,Houston,On Leave
+1718,Sara,Joseph,HR,Manager,2021-04-27,64453.69,New York,On Leave
+1719,Jill,Martinez,Finance,Supervisor,2022-05-25,45298.9,Los Angeles,Active
+1720,Mary,Martin,HR,Analyst,2022-10-11,66705.04,Chicago,Active
+1721,Daniel,Bass,Inventory,Associate,2022-03-18,108645.3,Los Angeles,On Leave
+1722,Timothy,Duke,Finance,Associate,2023-01-18,30831.69,Miami,Active
+1723,Cathy,Rodriguez,Inventory,Supervisor,2022-06-06,84799.49,Los Angeles,Active
+1724,Cynthia,Grant,HR,Manager,2020-11-29,60994.85,Miami,On Leave
+1725,Isabella,Hill,Finance,Associate,2021-07-13,53752.23,New York,Active
+1726,Gregory,Scott,HR,Associate,2024-10-29,31144.88,Houston,On Leave
+1727,Patrick,Nielsen,IT,Associate,2020-11-12,88107.63,Chicago,On Leave
+1728,Peter,Martin,HR,Clerk,2023-12-05,35946.27,Los Angeles,Active
+1729,Wanda,Myers,Marketing,Manager,2021-11-06,73512.89,Miami,On Leave
+1730,Anna,Allen,Finance,Supervisor,2023-06-09,34977.24,Miami,Active
+1731,David,Wood,Inventory,Supervisor,2025-04-26,95875.7,New York,Active
+1732,Erin,Higgins,Sales,Clerk,2025-02-02,33059.19,Miami,Terminated
+1733,Michael,Taylor,HR,Clerk,2022-12-29,94553.93,Houston,Active
+1734,Kristen,Wagner,Marketing,Supervisor,2025-04-18,107600.44,Houston,Terminated
+1735,Elizabeth,Perry,Marketing,Clerk,2020-08-13,107783.54,Houston,On Leave
+1736,Cindy,Harrison,Sales,Clerk,2022-05-01,91676.51,Los Angeles,Active
+1737,Wendy,Phillips,Finance,Associate,2022-02-14,84775.24,Los Angeles,Terminated
+1738,Luis,Mcgee,HR,Supervisor,2022-07-13,76376.72,Chicago,Terminated
+1739,Miranda,Wyatt,Inventory,Associate,2023-05-12,53281.57,Chicago,Terminated
+1740,Kimberly,Thomas,Marketing,Supervisor,2021-05-06,73805.9,Chicago,Active
+1741,Craig,Campos,Inventory,Analyst,2022-12-26,78945.12,Houston,Terminated
+1742,Jennifer,Johnson,Marketing,Supervisor,2022-04-29,93833.11,Chicago,Terminated
+1743,Rose,Bates,Inventory,Clerk,2022-05-18,51287.98,Miami,On Leave
+1744,Jasmine,Odonnell,Marketing,Clerk,2024-12-05,50779.19,Chicago,Terminated
+1745,Christina,Ramirez,Inventory,Supervisor,2024-08-27,71165.59,Chicago,Active
+1746,Scott,Chapman,Sales,Clerk,2023-11-02,73503.57,Houston,On Leave
+1747,Brittney,Harris,Marketing,Analyst,2024-04-06,108778.24,Chicago,Active
+1748,Jeff,Moss,IT,Associate,2024-04-15,39800.81,Los Angeles,Active
+1749,Crystal,Rodriguez,HR,Supervisor,2021-01-14,47090.57,Houston,On Leave
+1750,Anna,Wilson,Sales,Supervisor,2022-11-12,56064.53,Los Angeles,Active
+1751,Vanessa,Lowe,Finance,Supervisor,2023-10-20,88270.31,New York,Terminated
+1752,Sarah,Castro,Finance,Clerk,2021-08-16,55513.95,Chicago,On Leave
+1753,Mark,Davis,Inventory,Clerk,2024-08-13,112643.03,Houston,Active
+1754,Jeffrey,Mcbride,HR,Analyst,2025-01-21,34393.18,Houston,On Leave
+1755,Yvonne,Dickerson,Marketing,Clerk,2023-02-06,30701.7,Los Angeles,Active
+1756,Mark,Silva,HR,Associate,2023-12-10,103315.33,Chicago,Active
+1757,Helen,Ross,HR,Analyst,2023-07-25,109435.13,Miami,Active
+1758,Laura,Dunn,IT,Analyst,2025-03-11,42279.18,Los Angeles,Active
+1759,Kerri,Peters,HR,Analyst,2020-07-27,38765.81,Miami,Active
+1760,Kyle,Hamilton,Inventory,Manager,2020-11-24,81262.38,Los Angeles,On Leave
+1761,Zachary,Wilson,Marketing,Analyst,2025-02-07,107485.92,Chicago,Terminated
+1762,Samuel,Campbell,Marketing,Manager,2020-09-24,98281.87,Houston,On Leave
+1763,Cheryl,Hodges,IT,Analyst,2022-05-29,33445.41,Miami,On Leave
+1764,Julie,Miller,Marketing,Analyst,2023-01-07,47035.75,New York,Terminated
+1765,Douglas,Fisher,Finance,Clerk,2020-08-25,59076.4,Chicago,Active
+1766,Tara,Richard,Finance,Clerk,2025-04-18,46549.11,New York,Terminated
+1767,Stephanie,Smith,IT,Analyst,2021-05-26,47766.19,New York,Terminated
+1768,Steven,Ray,Inventory,Analyst,2021-07-02,35000.26,Chicago,Terminated
+1769,Paula,Peters,HR,Supervisor,2021-04-16,82954.66,Chicago,On Leave
+1770,Alejandro,Snow,HR,Clerk,2022-11-15,98575.39,Houston,Active
+1771,Gregory,Branch,Marketing,Analyst,2022-02-26,104646.39,Los Angeles,Active
+1772,Dylan,Oconnor,IT,Clerk,2024-02-26,32437.92,Houston,Terminated
+1773,Dan,Evans,IT,Analyst,2022-01-22,78778.02,Chicago,Terminated
+1774,Bridget,Gilbert,Sales,Supervisor,2023-01-13,49289.3,Los Angeles,On Leave
+1775,Tommy,Soto,IT,Associate,2023-03-12,75582.65,Chicago,Terminated
+1776,Jose,Bell,HR,Associate,2022-05-10,51260.13,Chicago,Terminated
+1777,Corey,Jones,IT,Associate,2023-02-28,37573.09,New York,Active
+1778,Stephanie,Craig,IT,Manager,2025-05-06,37077.77,Miami,On Leave
+1779,Jack,Knight,HR,Analyst,2020-09-09,76391.44,New York,Active
+1780,Herbert,Weiss,Inventory,Clerk,2021-11-09,72167.62,New York,Active
+1781,Ashley,Brady,Sales,Supervisor,2020-06-05,88826.0,Los Angeles,On Leave
+1782,Thomas,Reynolds,IT,Analyst,2022-02-21,96334.52,Los Angeles,Terminated
+1783,James,Gamble,Marketing,Analyst,2022-08-07,75722.33,Houston,Active
+1784,William,Anderson,Inventory,Supervisor,2024-02-19,116749.06,Chicago,Active
+1785,Eric,Santos,Marketing,Clerk,2020-06-30,107332.07,New York,Active
+1786,Nicholas,Mcguire,Finance,Manager,2023-02-16,108710.96,Chicago,Active
+1787,Christopher,Padilla,HR,Associate,2025-05-19,32680.1,New York,Active
+1788,Jason,Ortiz,HR,Associate,2021-06-24,104222.11,Chicago,Active
+1789,Scott,Holmes,Marketing,Supervisor,2021-10-05,105096.52,New York,Active
+1790,Carla,Robles,HR,Manager,2023-07-22,39011.82,Chicago,On Leave
+1791,Patricia,Dorsey,HR,Analyst,2024-10-15,115102.14,Chicago,On Leave
+1792,Jennifer,Glover,Marketing,Supervisor,2020-10-04,59908.2,Houston,Terminated
+1793,Jason,Anderson,HR,Supervisor,2020-12-27,86986.64,New York,Terminated
+1794,Jennifer,Watson,Marketing,Associate,2021-06-02,37087.66,Houston,On Leave
+1795,Andrea,Davenport,HR,Manager,2024-05-11,117171.67,New York,Terminated
+1796,Kevin,Strickland,Finance,Supervisor,2020-10-03,78592.21,New York,On Leave
+1797,Miguel,Rodriguez,HR,Analyst,2024-01-14,47529.13,Miami,On Leave
+1798,Nicholas,Crawford,IT,Associate,2021-08-20,87909.45,Miami,Terminated
+1799,Jeanette,Green,Marketing,Supervisor,2021-01-21,63345.31,Los Angeles,On Leave
+1800,Marcus,Bauer,IT,Supervisor,2020-06-09,45341.69,New York,On Leave
+1801,Kenneth,Alvarez,HR,Clerk,2024-09-10,77671.13,Chicago,On Leave
+1802,Robert,Smith,Finance,Supervisor,2023-04-23,110400.33,New York,Active
+1803,Alexander,Perez,Finance,Supervisor,2023-03-04,65287.98,Los Angeles,On Leave
+1804,Amy,Greer,HR,Analyst,2023-01-30,64359.41,Chicago,Active
+1805,Sharon,Pierce,Finance,Associate,2021-01-17,116796.48,New York,On Leave
+1806,John,Wright,Finance,Supervisor,2021-09-04,82815.15,New York,Active
+1807,Heather,Stevens,IT,Analyst,2023-09-08,97635.01,Houston,On Leave
+1808,Kimberly,Howard,Inventory,Supervisor,2024-09-26,75333.25,Chicago,On Leave
+1809,Michael,Morgan,Marketing,Supervisor,2024-04-04,71038.59,Chicago,Active
+1810,Ashley,Clark,HR,Associate,2023-02-04,90358.21,Chicago,Terminated
+1811,Christopher,Collins,Finance,Manager,2021-06-12,112151.74,New York,Active
+1812,Cindy,Hanson,Inventory,Associate,2024-04-10,61125.94,New York,On Leave
+1813,Michelle,Johnston,IT,Supervisor,2023-11-23,51907.68,Houston,Terminated
+1814,Joan,Munoz,Sales,Analyst,2020-05-21,32617.54,New York,Terminated
+1815,Keith,Turner,Marketing,Clerk,2023-06-05,100752.26,Houston,On Leave
+1816,Shane,Rodriguez,IT,Manager,2022-08-08,73150.0,Houston,Terminated
+1817,Elizabeth,Levy,Marketing,Associate,2020-06-22,39839.75,Chicago,Terminated
+1818,Dennis,Henderson,IT,Analyst,2020-09-19,116836.74,Los Angeles,Active
+1819,David,Garcia,Marketing,Manager,2024-04-15,82401.98,Houston,Active
+1820,Barry,Liu,IT,Clerk,2024-02-24,81268.87,Los Angeles,Terminated
+1821,David,Jimenez,Marketing,Supervisor,2021-12-13,118015.74,Chicago,Terminated
+1822,Amanda,Shaw,Finance,Analyst,2023-12-23,55504.26,Chicago,On Leave
+1823,Scott,Stephens,Marketing,Analyst,2021-01-16,48364.21,Miami,Terminated
+1824,Kimberly,James,Sales,Analyst,2024-05-28,36718.15,New York,Active
+1825,Brian,Hernandez,HR,Clerk,2022-04-16,88765.61,Houston,Active
+1826,Heather,Bailey,Finance,Clerk,2023-04-06,88384.39,Los Angeles,Terminated
+1827,Sandra,Smith,Marketing,Supervisor,2022-05-22,92352.68,New York,Active
+1828,Reginald,Fletcher,IT,Associate,2023-07-23,36109.24,New York,On Leave
+1829,Matthew,Wright,HR,Clerk,2021-05-22,41392.75,Houston,Active
+1830,Linda,Clark,Inventory,Associate,2023-01-27,83651.51,New York,On Leave
+1831,William,Long,Marketing,Clerk,2022-03-15,61193.28,Chicago,Terminated
+1832,Justin,Davis,Marketing,Supervisor,2025-03-31,59062.47,Houston,Active
+1833,Michelle,Wheeler,Marketing,Analyst,2023-08-17,64535.05,Chicago,Terminated
+1834,Madison,Gomez,HR,Manager,2022-04-30,59071.51,Houston,Terminated
+1835,Lisa,Vincent,Inventory,Clerk,2020-06-08,68799.59,New York,Terminated
+1836,Devin,Hancock,HR,Supervisor,2022-01-17,58019.16,Miami,On Leave
+1837,Justin,Guerrero,IT,Associate,2024-12-17,41361.33,Miami,On Leave
+1838,Jerry,Garcia,IT,Supervisor,2023-10-30,39371.41,Los Angeles,Active
+1839,Brittany,Bond,HR,Associate,2024-07-01,43203.53,Los Angeles,Active
+1840,Joann,Lynch,Sales,Analyst,2022-01-09,103097.86,Miami,Active
+1841,Tracy,Burke,Marketing,Clerk,2024-08-12,78122.05,New York,On Leave
+1842,Tiffany,Wilson,Finance,Clerk,2023-03-02,112560.9,Houston,Terminated
+1843,Michelle,Hall,Inventory,Associate,2023-04-30,67122.95,Chicago,Active
+1844,Tami,Pugh,IT,Manager,2022-08-05,93601.28,Chicago,On Leave
+1845,Douglas,Burgess,HR,Clerk,2024-02-03,111300.44,Miami,Terminated
+1846,Keith,King,HR,Clerk,2022-06-24,35526.88,Miami,Active
+1847,Mary,Navarro,Inventory,Manager,2024-01-17,110617.4,Chicago,Active
+1848,Sandra,Patton,IT,Associate,2024-02-19,53692.05,Los Angeles,On Leave
+1849,Donna,Boyd,IT,Associate,2024-09-23,111154.97,Miami,Terminated
+1850,Elijah,Robinson,Marketing,Analyst,2021-03-31,48118.28,Miami,Terminated
+1851,Timothy,Edwards,Sales,Analyst,2021-06-26,113528.33,Chicago,Active
+1852,Steve,Johnson,Sales,Clerk,2024-01-03,107963.61,Miami,Terminated
+1853,Carlos,Todd,Finance,Associate,2024-09-28,103909.17,New York,Terminated
+1854,David,Preston,Inventory,Manager,2023-08-28,112089.48,Los Angeles,Terminated
+1855,Mindy,Ortiz,Sales,Manager,2021-06-01,44637.63,Miami,Active
+1856,Evan,Wilson,HR,Supervisor,2021-12-11,58547.08,Chicago,On Leave
+1857,Lisa,Jensen,Sales,Manager,2021-07-12,113676.38,Los Angeles,Active
+1858,Jonathan,Gutierrez,Finance,Supervisor,2021-08-07,105463.87,New York,Active
+1859,Laura,Hubbard,Inventory,Associate,2020-08-01,76527.97,New York,Terminated
+1860,Jeffrey,Carroll,Inventory,Analyst,2024-05-27,37379.64,Los Angeles,Active
+1861,Laura,Cross,HR,Clerk,2022-08-07,43372.71,Los Angeles,Active
+1862,Benjamin,Browning,Inventory,Supervisor,2024-06-12,37851.75,New York,On Leave
+1863,Ross,Garcia,Inventory,Clerk,2022-12-30,40858.08,Miami,On Leave
+1864,Billy,Tanner,Marketing,Clerk,2024-09-14,54330.09,New York,Active
+1865,Alan,Vega,HR,Analyst,2021-06-05,94103.14,Houston,Terminated
+1866,Matthew,Lee,IT,Manager,2021-01-22,112320.15,Los Angeles,Terminated
+1867,Jenna,Sullivan,Sales,Analyst,2020-10-27,35637.14,Miami,Terminated
+1868,Michelle,Aguirre,Inventory,Clerk,2021-12-03,70648.95,Houston,Terminated
+1869,Timothy,Ramirez,Inventory,Supervisor,2023-03-22,49080.61,Chicago,On Leave
+1870,Andrew,White,Finance,Analyst,2022-05-14,59477.3,New York,Terminated
+1871,Levi,Jordan,Inventory,Supervisor,2022-07-15,84061.49,Miami,Terminated
+1872,Brian,Miller,HR,Manager,2023-01-21,117592.82,Chicago,On Leave
+1873,Leah,Smith,Marketing,Manager,2024-09-13,79022.15,New York,Terminated
+1874,Jeffrey,Landry,Finance,Clerk,2021-03-09,94635.99,Houston,On Leave
+1875,Emily,Hart,Finance,Associate,2024-11-28,37743.23,Chicago,Terminated
+1876,Brian,Murphy,IT,Associate,2024-09-01,82545.75,Miami,On Leave
+1877,Alicia,Mckee,HR,Analyst,2022-11-17,116513.71,Chicago,Active
+1878,Vicki,Smith,Inventory,Manager,2021-12-27,30842.01,Miami,Terminated
+1879,Zachary,Graham,Marketing,Manager,2025-01-13,41325.51,Miami,Terminated
+1880,Carlos,Smith,Marketing,Clerk,2024-06-12,51686.08,Houston,Terminated
+1881,Erika,Rowe,Finance,Manager,2024-11-28,66270.07,Chicago,Active
+1882,Michelle,Gardner,Marketing,Associate,2023-04-30,79027.43,Los Angeles,On Leave
+1883,Daniel,Richard,Finance,Manager,2022-01-22,40424.46,Los Angeles,On Leave
+1884,Peter,Adams,HR,Analyst,2020-10-07,75884.94,Los Angeles,Active
+1885,Carrie,Jenkins,HR,Analyst,2023-06-15,46819.17,Chicago,Active
+1886,Jason,Daniel,HR,Associate,2021-08-19,97808.89,Los Angeles,Active
+1887,Angie,Simon,IT,Associate,2022-04-20,64077.49,Los Angeles,On Leave
+1888,Timothy,Costa,IT,Clerk,2022-04-06,111910.17,Los Angeles,Terminated
+1889,Steven,Adams,HR,Supervisor,2022-12-19,101207.82,Los Angeles,Terminated
+1890,Rebecca,Morrison,Inventory,Clerk,2024-09-14,115523.0,Los Angeles,On Leave
+1891,Ashley,Buckley,Marketing,Supervisor,2023-06-23,80821.67,Los Angeles,Terminated
+1892,Clifford,Phillips,Finance,Analyst,2023-06-05,53037.65,Miami,Active
+1893,April,Rice,IT,Supervisor,2023-07-01,78489.37,Los Angeles,Terminated
+1894,Steven,Fuller,Sales,Manager,2024-05-16,65822.04,Los Angeles,On Leave
+1895,Jennifer,Harris,HR,Analyst,2025-01-08,68621.83,Los Angeles,Terminated
+1896,Scott,Newman,Sales,Supervisor,2022-03-08,62372.77,Houston,On Leave
+1897,Penny,Hall,HR,Associate,2024-06-07,104430.77,New York,Active
+1898,Angela,Roberson,Inventory,Analyst,2022-12-09,50972.97,Los Angeles,Active
+1899,Jessica,Nelson,Inventory,Analyst,2025-01-18,47560.38,Miami,On Leave
+1900,Denise,Green,Inventory,Manager,2022-01-20,93595.47,Miami,On Leave
+1901,Kenneth,Ruiz,Finance,Analyst,2021-12-23,70632.54,Houston,Terminated
+1902,Christina,Johnson,Marketing,Clerk,2024-10-16,93705.82,Houston,Terminated
+1903,Brian,Johnston,Marketing,Analyst,2022-11-06,60387.21,Houston,On Leave
+1904,Carla,Edwards,IT,Analyst,2025-04-18,35793.69,New York,Active
+1905,Sarah,Gill,Marketing,Associate,2022-08-25,78288.75,Chicago,On Leave
+1906,Jordan,Hunt,Inventory,Supervisor,2020-08-03,42152.44,Miami,Active
+1907,Kyle,Torres,Marketing,Clerk,2020-08-23,40828.34,Los Angeles,Terminated
+1908,Bradley,Norman,Marketing,Clerk,2021-06-05,60293.06,Houston,Terminated
+1909,Lee,Johnson,Finance,Manager,2022-01-01,71337.29,Chicago,Active
+1910,Henry,Smith,Inventory,Supervisor,2021-11-25,97783.68,New York,Terminated
+1911,Jay,Richardson,Finance,Clerk,2022-08-15,33572.05,Chicago,On Leave
+1912,Julie,Ramirez,Marketing,Manager,2022-05-10,85374.98,Los Angeles,Terminated
+1913,Jessica,Li,Marketing,Clerk,2025-02-08,85926.86,Chicago,On Leave
+1914,Veronica,Clark,IT,Manager,2021-11-11,102376.37,New York,Terminated
+1915,Erin,Davis,Sales,Manager,2022-05-19,97261.48,Chicago,Active
+1916,Andrea,Kelley,HR,Supervisor,2021-06-26,39188.77,New York,Active
+1917,Angela,Campbell,HR,Manager,2022-06-30,46232.77,Houston,Terminated
+1918,Robert,Savage,Marketing,Manager,2022-03-02,70003.57,Chicago,On Leave
+1919,Charles,Cole,HR,Manager,2023-08-18,82025.67,Chicago,Active
+1920,Kristen,Shields,IT,Manager,2024-09-22,101573.39,Los Angeles,Active
+1921,Courtney,Adams,Sales,Clerk,2022-06-04,104141.3,Los Angeles,Active
+1922,Gina,Watkins,Sales,Clerk,2021-07-03,55056.57,Houston,On Leave
+1923,Aaron,Nolan,Inventory,Associate,2020-10-25,119383.67,Los Angeles,Terminated
+1924,Emily,Wiley,IT,Analyst,2024-10-23,105943.69,Los Angeles,Active
+1925,Mariah,Hood,Inventory,Supervisor,2025-03-11,93146.08,Los Angeles,On Leave
+1926,Megan,Carpenter,Finance,Clerk,2022-10-16,117735.96,Chicago,On Leave
+1927,Carlos,Jones,Inventory,Associate,2023-04-15,81352.49,Houston,On Leave
+1928,Katherine,Wood,Inventory,Supervisor,2021-07-21,47946.14,Chicago,On Leave
+1929,Raymond,Mckee,Finance,Manager,2023-07-27,102924.41,Chicago,Active
+1930,Pamela,Payne,HR,Clerk,2024-12-06,81180.66,New York,On Leave
+1931,Laura,Smith,Inventory,Manager,2022-04-24,63928.19,Miami,Terminated
+1932,Eric,Davis,IT,Manager,2023-08-24,43233.27,Los Angeles,Terminated
+1933,Erika,Chavez,Finance,Analyst,2020-10-21,81960.02,Chicago,On Leave
+1934,Nicole,Snyder,HR,Clerk,2021-03-12,77313.67,Houston,On Leave
+1935,Patricia,Turner,Finance,Associate,2022-10-23,113676.01,Houston,On Leave
+1936,Christopher,Burnett,Inventory,Associate,2021-01-18,77813.26,Houston,Terminated
+1937,Susan,White,Finance,Analyst,2022-04-01,80878.56,New York,Terminated
+1938,Jonathan,Schultz,IT,Associate,2022-05-14,78944.98,Houston,On Leave
+1939,Krista,Roth,Sales,Analyst,2024-08-02,30748.51,Miami,Terminated
+1940,Arthur,Yates,Sales,Associate,2024-04-29,117581.83,Chicago,On Leave
+1941,Ashlee,Martinez,Sales,Associate,2024-02-08,52566.8,Houston,Terminated
+1942,Ashley,Rose,Marketing,Supervisor,2021-09-13,30880.95,Miami,On Leave
+1943,Summer,Davis,IT,Associate,2022-05-11,112384.85,New York,Terminated
+1944,Tracy,Molina,IT,Manager,2021-10-28,106617.61,Houston,Terminated
+1945,Shirley,Barnes,Sales,Analyst,2024-09-12,69294.93,Houston,Terminated
+1946,Kelly,Molina,IT,Associate,2023-12-19,64259.92,Miami,Terminated
+1947,Edward,Phillips,Inventory,Clerk,2021-08-23,53129.76,Miami,Active
+1948,Michael,Rose,Marketing,Analyst,2022-07-09,49075.45,Houston,On Leave
+1949,Sara,Ingram,Finance,Clerk,2023-03-12,94581.47,Miami,Terminated
+1950,Anthony,Carlson,Marketing,Manager,2022-09-24,56132.2,Houston,On Leave
+1951,Erin,Schmidt,IT,Analyst,2025-01-10,53007.59,Miami,On Leave
+1952,John,Michael,Inventory,Manager,2022-02-09,70359.48,New York,Terminated
+1953,Rachel,Fernandez,HR,Supervisor,2022-12-02,58526.02,Houston,Terminated
+1954,Brittney,Stark,IT,Clerk,2020-08-02,80877.92,Los Angeles,Active
+1955,Jennifer,Lewis,Sales,Clerk,2023-01-10,41880.28,Miami,Terminated
+1956,Chad,Clark,IT,Manager,2025-02-11,43635.71,Houston,On Leave
+1957,Michelle,Levy,HR,Associate,2020-09-17,70167.23,New York,On Leave
+1958,Jeff,Murray,Finance,Associate,2022-12-01,58181.73,New York,Active
+1959,Margaret,Bryant,IT,Manager,2021-10-18,72032.03,Los Angeles,Terminated
+1960,Steven,Bell,IT,Supervisor,2023-02-05,88608.68,Chicago,On Leave
+1961,Carmen,Boyer,Inventory,Manager,2021-04-02,90275.97,Houston,Terminated
+1962,Brett,Johnson,Marketing,Manager,2025-05-19,108425.69,Houston,Terminated
+1963,Lindsay,Clark,Marketing,Associate,2024-01-25,108778.51,Houston,On Leave
+1964,Mark,Russo,Sales,Analyst,2025-02-15,40184.68,Chicago,On Leave
+1965,Walter,Rice,Marketing,Clerk,2024-12-12,41689.55,New York,On Leave
+1966,Victoria,Rodriguez,Sales,Associate,2020-08-16,58164.24,Houston,On Leave
+1967,Heidi,Freeman,IT,Clerk,2021-04-17,97756.28,Los Angeles,Active
+1968,Cynthia,Roth,Finance,Manager,2025-01-10,31081.84,Chicago,On Leave
+1969,Allison,Ashley,Inventory,Supervisor,2021-11-13,43517.07,Chicago,Active
+1970,Lisa,Romero,IT,Manager,2022-04-14,60940.41,Houston,Terminated
+1971,Linda,Everett,Inventory,Analyst,2021-02-14,33253.18,Chicago,Terminated
+1972,Lance,Owens,HR,Supervisor,2024-02-10,72411.86,Los Angeles,Active
+1973,Ryan,Kelly,Marketing,Clerk,2023-11-22,88572.36,Chicago,On Leave
+1974,Jennifer,Byrd,Inventory,Manager,2024-05-19,62710.53,Miami,Terminated
+1975,Rhonda,Garcia,Inventory,Supervisor,2021-08-19,35137.78,Chicago,Terminated
+1976,Kevin,Contreras,Marketing,Associate,2020-09-06,35674.74,New York,Terminated
+1977,Jose,Ayala,Sales,Manager,2024-07-15,45412.7,Miami,On Leave
+1978,Evan,Dorsey,Marketing,Clerk,2024-12-03,61388.25,Miami,Active
+1979,Emily,Taylor,Finance,Associate,2025-03-12,108626.46,Los Angeles,Active
+1980,Ronald,Nelson,Marketing,Associate,2023-05-17,39886.37,Los Angeles,On Leave
+1981,Robert,Mahoney,IT,Associate,2023-10-12,115760.37,Chicago,On Leave
+1982,Samuel,Thompson,Sales,Supervisor,2021-01-18,64238.72,Los Angeles,On Leave
+1983,Eric,Welch,Sales,Analyst,2023-03-30,118851.92,Chicago,On Leave
+1984,Susan,Lawson,HR,Analyst,2020-09-28,76791.53,Houston,Active
+1985,Christine,Pierce,HR,Manager,2022-07-30,90290.06,Los Angeles,Terminated
+1986,Stephen,Gentry,Inventory,Clerk,2021-12-23,35497.18,New York,On Leave
+1987,Ronald,Boyd,Inventory,Clerk,2022-02-28,109968.91,Chicago,Terminated
+1988,Edward,Abbott,Marketing,Analyst,2023-11-10,50350.14,Houston,On Leave
+1989,Andrew,Perez,Finance,Clerk,2020-11-23,67275.13,Chicago,Terminated
+1990,Shannon,Green,Inventory,Analyst,2021-05-03,68470.89,Miami,On Leave
+1991,Donald,Robertson,Finance,Manager,2023-07-28,97744.02,Los Angeles,Active
+1992,Joe,Payne,IT,Manager,2023-05-10,31065.47,Miami,Active
+1993,Natalie,Church,Marketing,Clerk,2022-12-23,48352.11,New York,On Leave
+1994,Eric,Kelly,Sales,Associate,2023-01-10,54537.35,Los Angeles,Active
+1995,Tim,Compton,Sales,Analyst,2025-03-24,88909.76,Houston,Active
+1996,Shannon,Fletcher,Finance,Clerk,2021-04-25,85770.56,Los Angeles,Active
+1997,Eduardo,Lawrence,Finance,Analyst,2020-12-28,100345.28,Chicago,On Leave
+1998,James,West,HR,Analyst,2021-11-18,119008.92,New York,On Leave
+1999,Mark,Allen,Sales,Clerk,2022-04-27,40756.8,Los Angeles,Active
+2000,John,Howard,Marketing,Supervisor,2023-12-02,104269.46,Chicago,On Leave
