@@ -374,9 +374,9 @@ def save_predictions(**context):
         active_probabilities = probabilities_np[active_mask]
         active_predictions = predictions_np[active_mask]
         
-        # Identificar empleados de alto riesgo entre los activos (≥85%) y en riesgo (≥75%)
+        # Identificar empleados de alto riesgo entre los activos (≥85%) y en riesgo (≥70%)
         high_risk_count = sum(active_probabilities >= 0.85)
-        at_risk_count = sum(active_probabilities >= 0.75)
+        at_risk_count = sum(active_probabilities >= 0.70)
         
         # Convertir numpy arrays a listas Python y redondear probabilidades
         probabilities = [float(round(p, 4)) for p in probabilities_np]
@@ -409,7 +409,7 @@ def save_predictions(**context):
         
         predictions_message = f"""✅ Predicciones completadas:
         - Total empleados activos: {total_active}
-        - Empleados en riesgo de rotación (≥75%): {at_risk_count} ({risk_percentage:.1f}% de activos)
+        - Empleados en riesgo de rotación (≥70%): {at_risk_count} ({risk_percentage:.1f}% de activos)
         - Empleados de alto riesgo (≥85%): {high_risk_count} ({high_risk_percentage:.1f}% de activos)"""
         
         # Recopilar todos los mensajes
