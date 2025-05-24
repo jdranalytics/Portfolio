@@ -971,3 +971,143 @@
 2025-05-23 11:43:48,560 - INFO - Conexión a la base de datos exitosa
 2025-05-23 11:43:49,123 - INFO - Predicciones y métricas guardadas exitosamente
 2025-05-23 11:43:49,213 - INFO - Conexión a la base de datos exitosa
+2025-05-23 14:04:46,427 - INFO - Conexión a la base de datos exitosa
+2025-05-23 14:04:57,769 - INFO - Datos cargados: 318 registros
+2025-05-23 14:05:04,109 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+212 2025-01-19  Inventory           14.71
+290 2025-04-20  Inventory           17.93
+2025-05-23 14:05:04,121 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+303 2025-05-04         IT           19.78
+2025-05-23 14:05:04,132 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+286 2025-04-13  Marketing           20.43
+2025-05-23 14:05:13,378 - INFO - Período estacional detectado: 8
+2025-05-23 14:05:14,178 - INFO - Período estacional detectado: 3
+2025-05-23 14:05:24,554 - INFO - Período estacional detectado: 9
+2025-05-23 14:05:27,035 - INFO - Período estacional detectado: 7
+2025-05-23 14:05:27,963 - INFO - Período estacional detectado: 6
+2025-05-23 14:05:30,483 - INFO - Período estacional detectado: 1
+2025-05-23 14:05:38,874 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 14:05:39,015 - INFO - Período estacional seleccionado: 2 (std estacional: 0.6644)
+2025-05-23 14:06:00,868 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 14:06:00,876 - INFO - Período estacional seleccionado: 4 (std estacional: 1.8847)
+2025-05-23 14:06:19,067 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 14:06:19,075 - INFO - Período estacional seleccionado: 4 (std estacional: 0.4040)
+2025-05-23 14:06:22,532 - WARNING - Orden nulo detectado para Inventory. Usando Holt.
+2025-05-23 14:06:24,367 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 14:06:24,377 - INFO - Período estacional seleccionado: 4 (std estacional: 0.4702)
+2025-05-23 14:06:28,911 - WARNING - Residuos no son ruido blanco para IT (p-valor=0.0158)
+2025-05-23 14:06:28,913 - INFO - Reintentando con parámetros más amplios para IT
+2025-05-23 14:07:35,588 - WARNING - Residuos no son ruido blanco para IT (p-valor=0.0038)
+2025-05-23 14:07:35,594 - WARNING - SARIMA no válido para IT, usando Holt
+2025-05-23 14:07:37,180 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 14:07:37,185 - INFO - Período estacional seleccionado: 4 (std estacional: 1.4494)
+2025-05-23 14:07:42,394 - WARNING - Residuos no son ruido blanco para Marketing (p-valor=0.0437)
+2025-05-23 14:07:42,396 - INFO - Reintentando con parámetros más amplios para Marketing
+2025-05-23 14:10:15,906 - WARNING - Residuos no son ruido blanco para Marketing (p-valor=0.0437)
+2025-05-23 14:10:15,909 - WARNING - SARIMA no válido para Marketing, usando Holt
+2025-05-23 14:10:16,892 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 14:10:16,896 - INFO - Período estacional seleccionado: 4 (std estacional: 0.9904)
+2025-05-23 14:10:25,978 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 14:10:26,023 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 14:10:26,053 - INFO - Predicciones generadas para HOLT model
+2025-05-23 14:10:26,083 - INFO - Predicciones generadas para HOLT model
+2025-05-23 14:10:26,103 - INFO - Predicciones generadas para HOLT model
+2025-05-23 14:10:26,125 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 14:10:30,939 - INFO - Conexión a la base de datos exitosa
+2025-05-23 14:10:32,297 - INFO - Predicciones y métricas guardadas exitosamente
+2025-05-23 14:10:32,393 - INFO - Conexión a la base de datos exitosa
+2025-05-23 18:28:22,304 - INFO - Conexión a la base de datos exitosa
+2025-05-23 18:28:26,311 - INFO - Datos cargados: 318 registros
+2025-05-23 18:54:25,726 - INFO - Conexión a la base de datos exitosa
+2025-05-23 18:54:25,778 - INFO - Datos cargados: 318 registros
+2025-05-23 18:54:27,092 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+212 2025-01-19  Inventory           14.71
+290 2025-04-20  Inventory           17.93
+2025-05-23 18:54:27,107 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+303 2025-05-04         IT           19.78
+2025-05-23 18:54:27,125 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+286 2025-04-13  Marketing           20.43
+2025-05-23 18:54:31,007 - INFO - Período estacional detectado: 8
+2025-05-23 18:54:31,805 - INFO - Período estacional detectado: 3
+2025-05-23 18:54:33,179 - INFO - Período estacional detectado: 9
+2025-05-23 18:54:34,346 - INFO - Período estacional detectado: 7
+2025-05-23 18:54:34,926 - INFO - Período estacional detectado: 6
+2025-05-23 18:54:35,612 - INFO - Período estacional detectado: 1
+2025-05-23 18:54:36,554 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 18:54:36,610 - INFO - Período estacional seleccionado: 13 (std estacional: 1.6280)
+2025-05-23 18:54:43,529 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 18:54:43,540 - INFO - Período estacional seleccionado: 4 (std estacional: 1.8847)
+2025-05-23 18:54:58,916 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 18:54:58,926 - INFO - Período estacional seleccionado: 13 (std estacional: 1.8175)
+2025-05-23 18:55:02,580 - WARNING - Orden nulo detectado para Inventory. Usando Holt.
+2025-05-23 18:55:03,274 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 18:55:03,283 - INFO - Período estacional seleccionado: 13 (std estacional: 1.7436)
+2025-05-23 18:55:06,036 - WARNING - Orden nulo detectado para IT. Usando Holt.
+2025-05-23 18:55:06,614 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 18:55:06,625 - INFO - Período estacional seleccionado: 13 (std estacional: 2.1562)
+2025-05-23 18:55:08,679 - WARNING - Residuos no son ruido blanco para Marketing (p-valor=0.0437)
+2025-05-23 18:55:08,681 - INFO - Reintentando con parámetros más amplios para Marketing
+2025-05-23 18:56:46,771 - WARNING - Residuos no son ruido blanco para Marketing (p-valor=0.0437)
+2025-05-23 18:56:46,772 - WARNING - SARIMA no válido para Marketing, usando Holt
+2025-05-23 18:56:47,385 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 18:56:47,396 - INFO - Período estacional seleccionado: 13 (std estacional: 1.6428)
+2025-05-23 18:56:57,551 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 18:56:57,581 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 18:56:57,711 - INFO - Predicciones generadas para HOLT model
+2025-05-23 18:56:57,728 - INFO - Predicciones generadas para HOLT model
+2025-05-23 18:56:57,751 - INFO - Predicciones generadas para HOLT model
+2025-05-23 18:56:57,766 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 18:59:18,421 - INFO - Conexión a la base de datos exitosa
+2025-05-23 18:59:25,745 - INFO - Predicciones y métricas guardadas exitosamente
+2025-05-23 18:59:25,852 - INFO - Conexión a la base de datos exitosa
+2025-05-23 20:07:25,398 - INFO - Conexión a la base de datos exitosa
+2025-05-23 20:07:27,615 - INFO - Datos cargados: 318 registros
+2025-05-23 20:07:28,374 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+212 2025-01-19  Inventory           14.71
+290 2025-04-20  Inventory           17.93
+2025-05-23 20:07:28,393 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+303 2025-05-04         IT           19.78
+2025-05-23 20:07:28,406 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+286 2025-04-13  Marketing           20.43
+2025-05-23 20:07:33,312 - INFO - Período estacional detectado: 8
+2025-05-23 20:07:34,516 - INFO - Período estacional detectado: 3
+2025-05-23 20:07:35,387 - INFO - Período estacional detectado: 9
+2025-05-23 20:07:36,287 - INFO - Período estacional detectado: 7
+2025-05-23 20:07:38,193 - INFO - Período estacional detectado: 6
+2025-05-23 20:07:38,864 - INFO - Período estacional detectado: 1
+2025-05-23 20:07:40,944 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 20:07:40,973 - INFO - Período estacional seleccionado: 13 (std estacional: 1.6280)
+2025-05-23 20:07:49,370 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 20:07:49,383 - INFO - Período estacional seleccionado: 4 (std estacional: 1.8847)
+2025-05-23 20:08:07,100 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 20:08:07,117 - INFO - Período estacional seleccionado: 13 (std estacional: 1.8175)
+2025-05-23 20:08:11,952 - WARNING - Orden nulo detectado para Inventory. Usando Holt.
+2025-05-23 20:08:12,846 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 20:08:12,856 - INFO - Período estacional seleccionado: 13 (std estacional: 1.7436)
+2025-05-23 20:08:16,708 - WARNING - Orden nulo detectado para IT. Usando Holt.
+2025-05-23 20:08:17,519 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 20:08:17,532 - INFO - Período estacional seleccionado: 13 (std estacional: 2.1562)
+2025-05-23 20:08:21,449 - WARNING - Residuos no son ruido blanco para Marketing (p-valor=0.0437)
+2025-05-23 20:08:21,454 - INFO - Reintentando con parámetros más amplios para Marketing
+2025-05-23 20:10:04,416 - WARNING - Residuos no son ruido blanco para Marketing (p-valor=0.0437)
+2025-05-23 20:10:04,417 - WARNING - SARIMA no válido para Marketing, usando Holt
+2025-05-23 20:10:05,383 - INFO - Serie corta (53 puntos). Limitando período estacional a 4.
+2025-05-23 20:10:05,398 - INFO - Período estacional seleccionado: 13 (std estacional: 1.6428)
+2025-05-23 20:10:18,700 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 20:10:18,737 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 20:10:18,896 - INFO - Predicciones generadas para HOLT model
+2025-05-23 20:10:19,012 - INFO - Predicciones generadas para HOLT model
+2025-05-23 20:10:19,086 - INFO - Predicciones generadas para HOLT model
+2025-05-23 20:10:19,161 - INFO - Predicciones generadas para SARIMA model
+2025-05-23 20:10:21,051 - INFO - Conexión a la base de datos exitosa
+2025-05-23 20:10:21,282 - INFO - Predicciones y métricas guardadas exitosamente
+2025-05-23 20:10:21,393 - INFO - Conexión a la base de datos exitosa
