@@ -1,0 +1,7 @@
+,count,mean,std,min,25%,50%,75%,max,missing_count,missing_percentage,outlier_count_post_treatment,index_issues
+Finance,73.0,148.8616438356164,23.179030514532034,99.22,132.48,149.38,161.9,201.12,0.0,0.0,0.0,"{'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}"
+HR,73.0,195.41082191780822,22.865673918769875,140.61,183.02,196.64,210.73,245.6,0.0,0.0,1.0,"{'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}"
+Inventory,73.0,267.77890410958906,24.90628108873809,201.11,256.55,267.49,282.49,334.47,0.0,0.0,4.0,"{'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}"
+IT,73.0,210.08739726027397,24.418686379912987,155.2,194.16,211.46,223.58,264.02,0.0,0.0,0.0,"{'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}"
+Marketing,73.0,230.09397260273968,30.6607304825156,154.82,208.56,232.1,248.29,313.99,0.0,0.0,1.0,"{'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}"
+Sales,73.0,234.78767123287668,28.125463083622087,167.69,217.76,241.67,251.87,314.42,0.0,0.0,1.0,"{'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}"
