@@ -99,6 +99,26 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[
       <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">RiskApp (Power Apps+Automate+Fabric)</div>
     </td>
   </tr>
+  <tr>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/uMMLRSNm-CI">
+        <img src="https://img.youtube.com/vi/uMMLRSNm-CI/0.jpg" alt="Video 13" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Predicción de Rotación de Personal</div>
+    </td>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/lSItMMBnrYU">
+        <img src="https://img.youtube.com/vi/lSItMMBnrYU/0.jpg" alt="Video 14" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Pronóstico de Horas Extras</div>
+    </td>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/9gq6r8f0UNg">
+        <img src="https://img.youtube.com/vi/9gq6r8f0UNg/0.jpg" alt="Video 15" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Análisis de Sentimiento</div>
+    </td>
+  </tr>
 </table>
 
 ## ⚙️ Lenguajes y herramientas usadas
