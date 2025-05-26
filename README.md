@@ -1,9 +1,11 @@
 # **Bienvenidos a mi Portafolio** 📈💡
 
+![Banner Principal](https://drive.google.com/uc?export=view&id=1xzcguRioCBEcwwiqWm6c_1QdPPe9oKOA)
+
 ## 🚀 ¿Qué encontrarás aquí?
 Aquí presento una colección de algunos de mis proyectos:  
 
-* Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad, evitando usar datos reales). 
+* Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad evitando usar datos reales). 
 
 * Estos proyectos abarcan diferentes contextos de negocio y diferentes tecnologías según las necesidades.
 
@@ -99,15 +101,35 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[
       <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">RiskApp (Power Apps+Automate+Fabric)</div>
     </td>
   </tr>
+  <tr>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/uMMLRSNm-CI">
+        <img src="https://img.youtube.com/vi/uMMLRSNm-CI/0.jpg" alt="Video 13" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Predicción de Rotación de Personal</div>
+    </td>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/lSItMMBnrYU">
+        <img src="https://img.youtube.com/vi/lSItMMBnrYU/0.jpg" alt="Video 14" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Pronóstico de Horas Extras</div>
+    </td>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/9gq6r8f0UNg">
+        <img src="https://img.youtube.com/vi/9gq6r8f0UNg/0.jpg" alt="Video 15" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Análisis de Sentimiento</div>
+    </td>
+  </tr>
 </table>
 
 ## ⚙️ Lenguajes y herramientas usadas
 | Categoría                    | Herramientas                              |
 |------------------------------|-------------------------------------------|
 | **Lenguajes**                | Python, R, DAX, M, SQL                       |
-| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow, AI Generativa    |
-| **Bases de Datos**           | Access, SQL Server, MySQL, Google Cloud, BigQuery |
-| **Herramientas BI**          | Power BI, Tableau, Looker Studio, Shiny        |
+| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Apache Airflow, AI Generativa    |
+| **Bases de Datos y Nubes**   | Access, SQL Server, MySQL, Google Cloud, BigQuery, MS Fabric |
+| **Herramientas BI**          | Power BI, Tableau, Looker Studio, Shiny, Streamlit        |
 
 ## 📬 Contacto
 - [Correo](mailto:ing.jd.rojas@gmail.com)  
