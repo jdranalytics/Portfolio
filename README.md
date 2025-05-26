@@ -1,9 +1,11 @@
 # **Bienvenidos a mi Portafolio** 📈💡
 
+![Banner Principal](https://drive.google.com/uc?export=view&id=1xzcguRioCBEcwwiqWm6c_1QdPPe9oKOA)
+
 ## 🚀 ¿Qué encontrarás aquí?
 Aquí presento una colección de algunos de mis proyectos:  
 
-* Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad, evitando usar datos reales). 
+* Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad evitando usar datos reales). 
 
 * Estos proyectos abarcan diferentes contextos de negocio y diferentes tecnologías según las necesidades.
 
@@ -125,9 +127,9 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[
 | Categoría                    | Herramientas                              |
 |------------------------------|-------------------------------------------|
 | **Lenguajes**                | Python, R, DAX, M, SQL                       |
-| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Airflow, AI Generativa    |
-| **Bases de Datos**           | Access, SQL Server, MySQL, Google Cloud, BigQuery |
-| **Herramientas BI**          | Power BI, Tableau, Looker Studio, Shiny        |
+| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Apache Airflow, AI Generativa    |
+| **Bases de Datos y Nubes**   | Access, SQL Server, MySQL, Google Cloud, BigQuery, MS Fabric |
+| **Herramientas BI**          | Power BI, Tableau, Looker Studio, Shiny, Streamlit        |
 
 ## 📬 Contacto
 - [Correo](mailto:ing.jd.rojas@gmail.com)  
