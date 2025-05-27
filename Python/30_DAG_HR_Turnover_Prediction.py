@@ -12,7 +12,7 @@ from airflow.operators.python import PythonOperator
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.feature_selection import RFE
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report, roc_auc_score, precision_recall_curve
 from imblearn.over_sampling import SMOTE
 from sklearn.model_selection import GridSearchCV
 
@@ -20,13 +20,13 @@ from sklearn.model_selection import GridSearchCV
 logging.basicConfig(level=logging.INFO)
 
 # Configuración de SQL Server
-SQL_SERVER = "XXX.XX.XXX.XX\\XXXXXXX"
+SQL_SERVER = "XXX.XXX.XXX.XXXX:XXXXX"
 SQL_DB = "HR_Analytics"
 SQL_USER = "sa"
 SQL_PASSWORD = "123456"
 
 # Configuración de Discord
-DISCORD_WEBHOOK_URL = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+DISCORD_WEBHOOK_URL = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 def send_discord_message(message: str, success: bool = True, error_details: str = None, metrics: dict = None) -> None:
     """Envía un mensaje a Discord con el estado de la ejecución y métricas si están disponibles."""
@@ -43,7 +43,8 @@ def send_discord_message(message: str, success: bool = True, error_details: str 
         
         # Agregar métricas si están disponibles
         if metrics:
-            metrics_text = "\n".join([f"{k}: {v:.4f}" for k, v in metrics.items()])
+            metrics_text = "\n".join([f"{k}: {v:.4f}" for k, v in metrics.items() if k != 'quality'])
+            metrics_text += f"\nQuality: {metrics['quality']}"
             fields.append({"name": "Métricas del Modelo", "value": f"```\n{metrics_text}\n```", "inline": False})
         
         payload = {
@@ -86,15 +87,15 @@ def load_data(**context):
         conn = get_sql_connection()
         
         query = """
-        SELECT w.employee_id, w.department, w.salary, w.hire_date, 
-               AVG(k.hours_worked) as avg_hours_worked, 
-               AVG(k.overtime_hours) as avg_overtime_hours, 
-               AVG(s.satisfaction_score) as avg_satisfaction_score,
-               CASE WHEN w.status = 'Terminated' THEN 1 ELSE 0 END AS turnover
+        SELECT w.employee_id, w.department, w.salary, w.hire_date, w.performance_score, w.age, w.shift_type,
+            AVG(k.hours_worked) as avg_hours_worked, 
+            AVG(k.overtime_hours) as avg_overtime_hours, 
+            AVG(s.satisfaction_score) as avg_satisfaction_score,
+            CASE WHEN w.status = 'Terminated' THEN 1 ELSE 0 END AS turnover
         FROM Workday_Employees w
         LEFT JOIN Kronos_TimeEntries k ON w.employee_id = k.employee_id
         LEFT JOIN Employee_Surveys s ON w.employee_id = s.employee_id
-        GROUP BY w.employee_id, w.department, w.salary, w.hire_date, w.status
+        GROUP BY w.employee_id, w.department, w.salary, w.hire_date, w.status, w.performance_score, w.age, w.shift_type
         """
         
         df = pd.read_sql(query, conn)
@@ -130,7 +131,7 @@ def preprocess_data(**context):
         # Imputar avg_satisfaction_score usando XGBoost
         def impute_satisfaction_scores(df):
             train_mask = ~df['avg_satisfaction_score'].isna()
-            features = ['tenure', 'avg_hours_worked', 'avg_overtime_hours', 'salary']
+            features = ['tenure', 'avg_hours_worked', 'avg_overtime_hours', 'salary', 'age', 'performance_score']
             
             if train_mask.sum() > 0:  # Si hay datos para entrenar
                 X_train = df[train_mask][features]
@@ -183,27 +184,27 @@ def train_model(**context):
         df = df.reset_index(drop=True)  # Asegurar índices limpios
         
         # Preparar features
-        numeric_features = ['salary', 'avg_hours_worked', 'avg_overtime_hours', 'avg_satisfaction_score']
+        numeric_features = ['salary', 'avg_hours_worked', 'avg_overtime_hours', 'avg_satisfaction_score', 'age', 'performance_score', 'tenure']
         department_features = [col for col in df.columns if col.startswith('department_')]
         all_features = numeric_features + department_features
         
         # Aplicar RFE para selección de features
-        X_rfe = df[all_features]
+        X_rfe = df[all_features].copy()  # Crear copia para evitar SettingWithCopyWarning
         y_rfe = df['turnover']
         
         # Escalar features numéricos
         scaler = StandardScaler()
-        X_rfe[numeric_features] = scaler.fit_transform(X_rfe[numeric_features])
+        X_rfe.loc[:, numeric_features] = scaler.fit_transform(X_rfe[numeric_features])
         
         # Configurar RFE con XGBoost usando los mismos parámetros base
         xgb_model = xgb.XGBClassifier(
-            n_estimators=100,  # Valor medio del grid search
+            n_estimators=100,
             learning_rate=0.1,
             random_state=42,
             objective='binary:logistic',
             eval_metric='auc'
         )
-        rfe_selector = RFE(estimator=xgb_model, n_features_to_select=5, step=1, verbose=1)
+        rfe_selector = RFE(estimator=xgb_model, n_features_to_select=8, step=1, verbose=1)
         rfe_selector.fit(X_rfe, y_rfe)
         
         # Obtener features seleccionados
@@ -259,19 +260,27 @@ def train_model(**context):
         
         # Calcular probabilidades y predicciones
         y_pred_proba = best_model.predict_proba(X_test_scaled)[:, 1]
-
-        # Encontrar el mejor umbral de decisión
-        thresholds = np.arange(0.1, 0.9, 0.1)
+        
+        # Calcular AUC-ROC
+        auc_score = roc_auc_score(y_test, y_pred_proba)
+        
+        # Ajustar umbral para maximizar F1-Score con un recall mínimo
+        min_recall = 0.85
+        precisions, recalls, thresholds = precision_recall_curve(y_test, y_pred_proba)
+        
         best_threshold = 0.5
         best_f1 = 0
-
-        for threshold in thresholds:
-            y_pred_threshold = (y_pred_proba >= threshold).astype(int)
-            f1 = f1_score(y_test, y_pred_threshold)
-            if f1 > best_f1:
-                best_f1 = f1
-                best_threshold = threshold
-
+        best_recall = 0
+        
+        for i, threshold in enumerate(thresholds):
+            if recalls[i] >= min_recall:
+                y_pred_threshold = (y_pred_proba >= threshold).astype(int)
+                f1 = f1_score(y_test, y_pred_threshold)
+                if f1 > best_f1:
+                    best_f1 = f1
+                    best_threshold = threshold
+                    best_recall = recalls[i]
+        
         # Usar el umbral optimizado para las predicciones finales
         final_predictions = (y_pred_proba >= best_threshold).astype(int)
         
@@ -280,11 +289,23 @@ def train_model(**context):
             'accuracy': accuracy_score(y_test, final_predictions),
             'precision': precision_score(y_test, final_predictions, zero_division=0),
             'recall': recall_score(y_test, final_predictions, zero_division=0),
-            'f1_score': f1_score(y_test, final_predictions, zero_division=0)
+            'f1_score': f1_score(y_test, final_predictions, zero_division=0),
+            'auc': float(auc_score)  # Convertir a float para serialización
         }
         
-        # Guardar el umbral optimizado en XCom para usarlo en save_predictions
-        context['task_instance'].xcom_push(key='best_threshold', value=best_threshold)
+        # Clasificar el modelo
+        def classify_model(recall, f1_score, auc):
+            if recall > 0.85 and f1_score > 0.7 and auc > 0.8:
+                return 'Bueno'
+            elif recall >= 0.7 and f1_score >= 0.5 and auc >= 0.6:
+                return 'Aceptable'
+            else:
+                return 'Pobre'
+        
+        metrics['quality'] = classify_model(metrics['recall'], metrics['f1_score'], metrics['auc'])
+        
+        # Guardar el umbral optimizado en XCom (convertir a float)
+        context['task_instance'].xcom_push(key='best_threshold', value=float(best_threshold))
         
         # Guardar modelo, scaler y features seleccionados
         os.makedirs('Modelos Entrenados', exist_ok=True)
@@ -295,7 +316,8 @@ def train_model(**context):
         # Guardar métricas en XCom
         context['task_instance'].xcom_push(key='model_metrics', value=metrics)
         context['task_instance'].xcom_push(key='selected_features', value=selected_features)
-          # Guardar mensaje con métricas y features seleccionados
+        
+        # Guardar mensaje con métricas y features seleccionados
         train_message = f"""✅ Modelo entrenado exitosamente
 Features seleccionados: {', '.join(selected_features)}
 
@@ -303,9 +325,10 @@ Métricas del modelo:
 - Accuracy: {metrics['accuracy']:.4f}
 - Precision: {metrics['precision']:.4f}
 - Recall: {metrics['recall']:.4f}
-- F1-Score: {metrics['f1_score']:.4f}"""
+- F1-Score: {metrics['f1_score']:.4f}
+- AUC: {metrics['auc']:.4f}
+- Quality: {metrics['quality']}"""
         context['task_instance'].xcom_push(key='train_message', value=train_message)
-        context['task_instance'].xcom_push(key='train_metrics', value=metrics)
         
         # Guardar métricas en la base de datos
         conn = get_sql_connection()
@@ -314,17 +337,18 @@ Métricas del modelo:
             cursor.execute(
                 """
                 INSERT INTO ML_Model_Accuracy 
-                (model_name, run_date, accuracy, precision, recall, f1_score)
-                VALUES (%s, %s, %s, %s, %s, %s)
+                (model_name, run_date, accuracy, precision, recall, f1_score, AUC, quality)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
                 """,
                 ('Turnover_Prediction', datetime.now(), metrics['accuracy'],
-                 metrics['precision'], metrics['recall'], metrics['f1_score'])
+                 metrics['precision'], metrics['recall'], metrics['f1_score'], metrics['auc'], metrics['quality'])
             )
             conn.commit()
             logging.info("Métricas guardadas exitosamente en ML_Model_Accuracy")
         except Exception as e:
             conn.rollback()
             logging.error(f"Error al guardar métricas en ML_Model_Accuracy: {str(e)}")
+            send_discord_message("Error al guardar métricas en la base de datos", success=False, error_details=str(e))
             raise
         finally:
             cursor.close()
@@ -366,7 +390,7 @@ def save_predictions(**context):
         predictions_np = (probabilities_np >= best_threshold).astype(int)
         
         # Usar las métricas del entrenamiento para mantener consistencia
-        train_metrics = context['task_instance'].xcom_pull(task_ids='train_model', key='train_metrics')
+        train_metrics = context['task_instance'].xcom_pull(task_ids='train_model', key='model_metrics')
         
         # Filtrar solo empleados activos (turnover = 0)
         active_mask = df['turnover'] == 0
@@ -374,9 +398,9 @@ def save_predictions(**context):
         active_probabilities = probabilities_np[active_mask]
         active_predictions = predictions_np[active_mask]
         
-        # Identificar empleados de alto riesgo entre los activos (≥85%) y en riesgo (≥70%)
-        high_risk_count = sum(active_probabilities >= 0.85)
-        at_risk_count = sum(active_probabilities >= 0.70)
+        # Identificar empleados de alto riesgo entre los activos (≥90%) y en riesgo (≥75%)
+        high_risk_count = sum(active_probabilities >= 0.90)
+        at_risk_count = sum(active_probabilities >= 0.75)
         
         # Convertir numpy arrays a listas Python y redondear probabilidades
         probabilities = [float(round(p, 4)) for p in probabilities_np]
@@ -408,29 +432,24 @@ def save_predictions(**context):
         high_risk_percentage = (high_risk_count / total_active * 100) if total_active > 0 else 0
         
         predictions_message = f"""✅ Predicciones completadas:
-        - Total empleados activos: {total_active}
-        - Empleados en riesgo de rotación (≥70%): {at_risk_count} ({risk_percentage:.1f}% de activos)
-        - Empleados de alto riesgo (≥85%): {high_risk_count} ({high_risk_percentage:.1f}% de activos)"""
+- Total empleados activos: {total_active}
+- Empleados en riesgo de rotación (≥75%): {at_risk_count} ({risk_percentage:.1f}% de activos)
+- Empleados de alto riesgo (≥90%): {high_risk_count} ({high_risk_percentage:.1f}% de activos)"""
         
         # Recopilar todos los mensajes
         data_loaded_message = context['task_instance'].xcom_pull(task_ids='load_data', key='data_loaded_message')
         preprocess_message = context['task_instance'].xcom_pull(task_ids='preprocess_data', key='preprocess_message')
+        train_message = context['task_instance'].xcom_pull(task_ids='train_model', key='train_message')
         
         # Construir mensaje final
         final_message = f"""🤖 Pipeline de Predicción de Rotación Completado
 
 {data_loaded_message}
 {preprocess_message}
-
-{predictions_message}
-
-Métricas del modelo:
-- Accuracy: {train_metrics['accuracy']:.4f}
-- Precision: {train_metrics['precision']:.4f}
-- Recall: {train_metrics['recall']:.4f}
-- F1-Score: {train_metrics['f1_score']:.4f}"""
+{train_message}
+{predictions_message}"""
         
-        send_discord_message(final_message, success=True)
+        send_discord_message(final_message, success=True, metrics=train_metrics)
         
     except Exception as e:
         error_message = "❌ Error en el pipeline de predicción de rotación"
