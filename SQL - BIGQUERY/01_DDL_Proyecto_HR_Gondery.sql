@@ -111,6 +111,40 @@ CREATE TABLE Training (
     duration_hours DECIMAL(4,1) NOT NULL
 );
 
+
+-- TABLA PARA ALMACENAR LOS CLÚSTERES DE EMPLEADOS
+
+CREATE TABLE Employee_Clusters (
+    employee_id INT PRIMARY KEY,
+    cluster INT NOT NULL
+);
+
+-- TABLA PARA ALMACENAR LAS MÉTRICAS DE CLUSTERING (K-MEANS)
+
+CREATE TABLE Clustering_Metrics (
+    run_id INT IDENTITY(1,1) PRIMARY KEY,
+    run_datetime DATETIME NOT NULL,
+    num_clusters INT NOT NULL,
+    silhouette_score FLOAT NOT NULL,
+    davies_bouldin_score FLOAT NOT NULL,
+    mean_squared_distance FLOAT NOT NULL,
+    quality VARCHAR(20) NOT NULL
+);
+
+-- TABLA PARA ALMACENAR LOS RESULTADOS DEL MÉTODO DEL CODO
+
+CREATE TABLE Elbow_Method_Results (
+    num_clusters INT PRIMARY KEY,
+    inertia FLOAT NOT NULL,
+    silhouette_score FLOAT NOT NULL,
+    davies_bouldin_score FLOAT NOT NULL,
+    selected BIT NOT NULL
+);
+
+
+---------------------------------------------------------------------------------------------------
+
+
 -- VISTA DE MÉTRICAS DE PRECISIÓN DE MODELOS DE FORECAST DE OVERTIME POR DEPARTAMENTO
 
 CREATE VIEW vw_ml_overtime_forecast_metrics 
@@ -156,17 +190,19 @@ SELECT w.employee_id, w.department, w.first_name, w.last_name, w.gender, w.age, 
        CASE WHEN w.status = 'Terminated' THEN 1 ELSE 0 END AS turnover,
 	   tp.predicted_turnover as predicted_turnover,
 	   ROUND(tp.turnover_probability,2) as turnover_probability,
-	   CASE WHEN tp.turnover_probability >=0.70 AND tp.turnover_probability < 0.85 THEN 'Moderate'
-			WHEN tp.turnover_probability >=0.85 THEN 'High'
-			ELSE 'No Risk' END AS turnover_risk_level
+	   CASE WHEN tp.turnover_probability >=0.70 AND tp.turnover_probability < 0.90 THEN 'Moderate'
+			WHEN tp.turnover_probability >=0.90 THEN 'High'
+			ELSE 'No Risk' END AS turnover_risk_level,
+		cl.cluster
 
 FROM Workday_Employees w
 
 LEFT JOIN Kronos_TimeEntries k ON w.employee_id = k.employee_id
 LEFT JOIN Employee_Surveys s ON w.employee_id = s.employee_id
 LEFT JOIN Turnover_Predictions tp ON w.employee_id = tp.employee_id
+LEFT JOIN Employee_Clusters cl ON w.employee_id = cl.employee_id
 
-GROUP BY w.employee_id, w.department, w.salary, w.hire_date, w.status, tp.predicted_turnover,tp.turnover_probability,  w.first_name, w.last_name, w.job_role, w.location, w.gender, w.age, w.termination_date, w.onleave_date, w.performance_score, w.shift_type ;
+GROUP BY w.employee_id, w.department, w.salary, w.hire_date, w.status, tp.predicted_turnover,tp.turnover_probability,  w.first_name, w.last_name, w.job_role, w.location, w.gender, w.age, w.termination_date, w.onleave_date, w.performance_score, w.shift_type, cl.cluster ;
 
 
 -- CREAR VISTA DE FORECAST DEL OVERTIME POR DEPARTAMENTO
@@ -210,6 +246,9 @@ SELECT
     ) AS completion_percentage
 FROM Training
 GROUP BY employee_id, plan_year;
+
+
+
 
 --------------------------------------------------------------------------------------------------------------------------
 
