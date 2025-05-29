@@ -10,7 +10,7 @@ Aquí presento una colección de algunos de mis proyectos:
 
 * Estos proyectos abarcan diferentes contextos de negocio y diferentes tecnologías según las necesidades.
 
-PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[Análisis DeepWiki](https://deepwiki.com/ringoquimico/Portfolio)**  
+PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:   [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ringoquimico/Portfolio) 
  
 - **Carpetas del portafolio**:  
   - 📁 **Data Sources**: Fuentes de datos disponibles para los proyectos.  
@@ -145,4 +145,3 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[
 ⭐️ ¡Si te gusta mi trabajo, déjame una estrella en este repo!
 
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ringoquimico/Portfolio)
