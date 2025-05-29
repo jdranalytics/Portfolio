@@ -143,3 +143,6 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[
 ---
 
 ⭐️ ¡Si te gusta mi trabajo, déjame una estrella en este repo!
+
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ringoquimico/Portfolio)
