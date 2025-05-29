@@ -3,6 +3,7 @@
 ![Banner Principal](https://drive.google.com/uc?export=view&id=1xzcguRioCBEcwwiqWm6c_1QdPPe9oKOA)
 
 ## 🚀 ¿Qué encontrarás aquí?
+
 Aquí presento una colección de algunos de mis proyectos:  
 
 * Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad evitando usar datos reales). 
