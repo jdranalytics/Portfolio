@@ -8,7 +8,7 @@ Aquí presento una colección de algunos de mis proyectos:
 
 * Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad evitando usar datos reales). 
 
-* Estos proyectos abarcan diferentes contextos de negocio y diferentes tecnologías según las necesidades. Dentro de los principales contextos se encuentran, contact centers, riesgo crediticio, recursos humanos, gestión de activos, gestión de restaurantes, fuerza de venta, regulatoria, etre otros.
+* Estos proyectos abarcan diferentes contextos de negocio y diferentes tecnologías según las necesidades. Dentro de los principales contextos se encuentran, contact centers, riesgo crediticio, recursos humanos, gestión de proyectos, gestión de activos, gestión de restaurantes, fuerza de venta, regulatoria, etre otros.
 
 PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:   [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ringoquimico/Portfolio) 
  
