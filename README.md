@@ -3,13 +3,14 @@
 ![Banner Principal](https://drive.google.com/uc?export=view&id=1xzcguRioCBEcwwiqWm6c_1QdPPe9oKOA)
 
 ## 🚀 ¿Qué encontrarás aquí?
+
 Aquí presento una colección de algunos de mis proyectos:  
 
 * Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad evitando usar datos reales). 
 
-* Estos proyectos abarcan diferentes contextos de negocio y diferentes tecnologías según las necesidades.
+* Estos proyectos abarcan diferentes contextos de negocio y diferentes tecnologías según las necesidades. Dentro de los principales contextos se encuentran, contact centers, riesgo crediticio, recursos humanos, gestión de proyectos, gestión de activos, gestión de restaurantes, fuerza de venta, regulatoria, etre otros.
 
-PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[Análisis DeepWiki](https://deepwiki.com/ringoquimico/Portfolio)**  
+PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:   [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ringoquimico/Portfolio) 
  
 - **Carpetas del portafolio**:  
   - 📁 **Data Sources**: Fuentes de datos disponibles para los proyectos.  
@@ -142,3 +143,5 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:  **[
 ---
 
 ⭐️ ¡Si te gusta mi trabajo, déjame una estrella en este repo!
+
+
