@@ -16,7 +16,9 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:   [!
   - 📁 **Data Sources**: Fuentes de datos disponibles para los proyectos.  
   - 📁 **Python**: Proyectos desarrollados en Python.  
   - 📁 **R**: Proyectos desarrollados en R.
+  - 📁 **SQL-BigQuery**: Código SQL y modelos ML requeridos en proyectos full-stack.
     
+
 - **[Portafolio en Video](https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko)**  
   Demostraciones visuales de algunos de mis proyectos y habilidades en acción.  
 
