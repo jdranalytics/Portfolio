@@ -1,0 +1,21 @@
+producto_id,nombre_producto,categoria,precio_base,costo_variable,marca
+1,Agua 1,Bebida Energética,3125.82,527.03,Competidor1
+2,Cola 2,Agua,2151.78,2566.38,Competidor1
+3,Cola 3,Bebida Energética,2971.28,2502.45,Competidor1
+4,Agua 4,Agua,2199.77,761.14,Postobón
+5,Manzana 5,Gaseosa,3384.33,1942.14,Competidor2
+6,Naranja 6,Jugo,2735.38,1659.95,Competidor2
+7,Naranja 7,Gaseosa,1657.62,796.77,Competidor1
+8,Naranja 8,Jugo,1466.33,2951.42,Postobón
+9,Agua 9,Jugo,3186.78,1036.74,Competidor2
+10,Cola 10,Bebida Energética,4609.65,668.09,Competidor1
+11,Agua 11,Jugo,2375.83,1987.12,Competidor2
+12,Agua 12,Gaseosa,3932.0,2347.17,Competidor2
+13,Energía 13,Gaseosa,3634.65,581.11,Postobón
+14,Cola 14,Agua,4726.22,2146.79,Postobón
+15,Energía 15,Gaseosa,4283.92,1830.73,Competidor2
+16,Lima 16,Agua,3266.42,758.16,Competidor1
+17,Cola 17,Jugo,3628.12,931.31,Postobón
+18,Cola 18,Gaseosa,4593.55,1919.94,Competidor2
+19,Cola 19,Jugo,2598.08,1240.89,Postobón
+20,Naranja 20,Gaseosa,2307.18,2845.79,Postobón

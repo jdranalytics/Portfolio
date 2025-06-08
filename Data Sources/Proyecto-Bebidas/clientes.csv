@@ -1,0 +1,2001 @@
+cliente_id,nombre,edad,genero,ciudad,frecuencia_compra,ultima_compra
+1,María Mariana Parra,56,M,Corozal,12,2024-10-15
+2,Alejandro Gutiérrez,69,M,San Bernardo,9,2025-05-21
+3,Isabel Rojas Zambrano,46,M,Guapotá,1,2023-08-22
+4,Yuliana Ana Medina Herrera,32,F,Sotaquirá,18,2024-04-13
+5,Fabián Ardila Uribe,60,F,Ciénega,4,2025-02-19
+6,Juan Felipe Acosta,25,M,San Francisco,10,2024-08-09
+7,Antonio Muñoz,78,M,Duitama,7,2024-07-31
+8,Guillermo Jorge Figueroa Nieto,38,F,Belén de los Andaquíes,1,2024-10-25
+9,Ángel Alfredo Ortiz Martínez,56,M,Ricaurte,17,2024-05-30
+10,Marlene Yulieth Mejía Benavides,75,M,Barrancominas,2,2024-01-27
+11,Katherine Patricia Zapata,36,F,Canalete,11,2025-03-31
+12,Ana Alba Restrepo Hurtado,40,M,Rionegro,9,2023-07-05
+13,William Lozano Herrera,28,F,Chiriguaná,7,2024-10-02
+14,Juan Carmona,28,M,Girardot,17,2023-10-21
+15,Felipe López Ortega,41,F,Montelíbano,17,2024-12-31
+16,Esther Ramos Valencia,70,M,Obando,2,2024-01-06
+17,Mauricio Norberto Moreno Acosta,53,M,Villagarzón,6,2025-04-10
+18,José García,57,F,Paratebueno,14,2024-09-17
+19,Alexandra Enith Castañeda Cerón,41,M,Flandes,6,2023-07-30
+20,Julio Benjamín Cortés,20,F,Carolina,2,2024-08-21
+21,Cecilia Viviana Monsalve Osorio,39,M,Barranco de Loba,1,2025-05-08
+22,Luis Camilo Blanco,70,F,Pedraza,10,2023-10-13
+23,Dario Carlos Granados,19,F,Bagadó,5,2023-09-27
+24,Eduardo Julio Gómez,41,F,Soledad,2,2024-04-14
+25,Erika Carvajal,61,F,Santa Rosa de Cabal,16,2023-06-22
+26,Omar Valencia Salazar,47,M,Orocué,2,2025-04-11
+27,Marcela Doris Buitrago,55,M,Gámbita,10,2024-12-27
+28,Aurelio Rodríguez Bonilla,19,F,Piamonte,2,2024-05-24
+29,Diana María Bermúdez,77,F,Pereira,16,2024-06-13
+30,Óscar Barrera,38,F,San Martín,16,2023-10-22
+31,Camilo Heriberto Muñoz,50,M,San Pablo de Borbur,19,2023-10-02
+32,Diana Nayibe Quintero Giraldo,29,M,Talaigua Nuevo,7,2024-05-04
+33,Ignacio Juan Arias Gutiérrez,75,M,San Martín de Loba,12,2023-11-22
+34,Sandra Rentería González,39,M,Circasia,15,2024-10-04
+35,Stiven Mejía,78,F,Margarita,8,2024-08-21
+36,María Leal Arias,61,F,El Calvario,6,2024-03-04
+37,José Ramón Garzón,42,F,Sasaima,10,2023-08-17
+38,Liliana Méndez Hernández,66,M,Algarrobo,3,2025-02-07
+39,Camilo Flórez García,44,M,La Apartada,19,2024-06-17
+40,Jairo Daza Álvarez,76,M,Orocué,17,2023-12-12
+41,Alfonso Arango Gil,59,F,San Martín,7,2023-08-05
+42,José Alzate,45,F,Puerto Leguízamo,4,2024-04-07
+43,Elías Jesús Martínez Prieto,77,M,Sutatausa,14,2024-09-06
+44,María Cano,33,F,Arbeláez,15,2024-08-08
+45,Augusto Carlos Guerrero,32,M,Campamento,8,2025-02-10
+46,Fabiola Tatiana Ocampo García,79,M,Aranzazu,15,2023-08-19
+47,Daniel Ramos,79,F,Guaitarilla,14,2024-01-19
+48,Lina Torres,64,M,San Roque,9,2025-02-07
+49,Vanesa Ortiz,79,F,Silos,8,2024-02-25
+50,Angélica Jaimes Cáceres,68,M,Silvia,17,2023-07-09
+51,Víctor Toro,61,F,Palocabildo,2,2023-08-01
+52,Jairo Alarcón,72,F,Prado,3,2025-02-13
+53,Isabel Rosa Sierra Reyes,69,F,San Francisco,8,2023-12-30
+54,Andrés José Romero Navarro,74,M,Altamira,12,2023-10-11
+55,Octavio Alberto Moreno,20,M,San Pablo,1,2025-04-06
+56,María Hoyos Navarro,54,F,El Colegio,10,2024-02-01
+57,María Sofía Gómez,68,F,Manizales,3,2025-05-24
+58,Claudia Diana Garcés Oviedo,24,M,Potosí,6,2024-07-20
+59,Nelcy Montoya Vargas,38,M,Silvia,7,2023-08-30
+60,Santiago Jairo Rojas Gallego,26,M,Moniquirá,18,2025-02-04
+61,Luz Marín Hernández,56,F,Convención,11,2025-01-22
+62,Clara Guzmán Reyes,35,M,San José del Guaviare,19,2025-01-17
+63,Gerardo Edinson Mena,21,M,Labranzagrande,5,2024-09-02
+64,Blanca Jaramillo Moreno,42,F,Onzaga,19,2023-07-12
+65,Diana Vanessa Quiroga,77,M,Cucutilla,11,2023-11-14
+66,David Hermes Pérez Chaparro,31,M,Puerto Alegría,12,2023-10-29
+67,Blanca Becerra,67,M,Chigorodó,10,2023-09-04
+68,Liliana Fernández León,75,F,Chíquiza,8,2024-12-07
+69,Lorena Montes Palacio,26,F,Guatavita,9,2024-03-11
+70,María Córdoba Amaya,43,F,Iza,4,2023-09-25
+71,Alejandra Milena Álvarez Cano,70,F,Santa Bárbara,5,2024-09-26
+72,Natalia Flor Salas,19,F,Pácora,8,2024-12-28
+73,José Betancur Martínez,37,F,Villa Caro,9,2025-04-10
+74,Paulina Vargas Giraldo,45,F,Chalán,15,2025-02-07
+75,Ana Rosero Rodríguez,64,M,La Pedrera,15,2025-03-27
+76,Arturo Enrique Henao,77,M,Bolívar,16,2024-06-19
+77,Armando Gómez,24,F,Elías,14,2023-11-27
+78,Pilar Rodríguez,61,M,Garagoa,8,2025-05-22
+79,Beatriz Vargas Aguilar,78,M,Puerto Parra,18,2024-10-24
+80,María Eugenia Trujillo,25,F,Silvania,10,2024-07-29
+81,Bertha Duque Ruiz,64,M,Totoró,6,2024-05-24
+82,Hugo Zambrano Nieto,52,M,Ubaque,12,2023-11-24
+83,Patricia Valeria García,31,M,Chipatá,2,2024-03-01
+84,Marisol Daniela López,34,M,La Jagua de Ibirico,7,2023-12-20
+85,Bibiana Quintero,53,M,Roberto Payán,16,2025-04-22
+86,Camila Bolaños,67,F,Nimaima,3,2025-03-17
+87,Sonia Giraldo Mendoza,57,F,Gigante,13,2024-07-28
+88,Leidy Andrea Pardo,21,F,Plato,3,2025-05-23
+89,Carlos Parra,19,M,Monguí,18,2023-11-03
+90,Anderson Hugo Benavides,79,F,Sesquilé,11,2024-04-24
+91,Yaneth Hernández,23,M,Albán,8,2025-01-17
+92,Sandra Mejía Vargas,71,M,Lebrija,6,2023-07-01
+93,Guillermo Aldemar Escobar,59,M,Albania,1,2024-11-11
+94,José González Alzate,21,M,Curumaní,1,2025-03-16
+95,Elisa Pérez Mesa,71,F,Morroa,8,2024-12-16
+96,Jesús Hurtado Londoño,46,F,Tibú,5,2024-02-04
+97,Luz Vargas Rodríguez,35,M,Siachoque,16,2025-02-02
+98,Manuel Cano,43,F,Arcabuco,11,2024-03-28
+99,Amparo Claudia Rojas,61,M,Argelia,5,2024-03-18
+100,Karina Yuri Gutiérrez,51,F,Floridablanca,4,2025-05-11
+101,Omar Torres Agudelo,27,F,Tenerife,6,2024-02-15
+102,Omar Jorge Luna Castillo,79,M,La Unión,14,2024-08-09
+103,Paola Prada Ávila,53,F,Tiquisio,19,2024-06-06
+104,Karen Diana Moreno,31,M,Córdoba,9,2023-12-27
+105,Ana María Gómez,48,F,Suárez,12,2024-07-30
+106,Ángela Riascos,65,M,Coromoro,11,2025-02-24
+107,Segundo Rincón,32,M,Cerinza,14,2025-04-09
+108,Dora Omaira Oviedo,25,F,Carmen de Apicalá,16,2024-05-07
+109,Manuel Pérez Galvis,31,F,Medina,1,2023-11-21
+110,Karen Stella Castillo Muñoz,40,M,Morales,13,2024-04-04
+111,Alba Alba Forero,77,F,Falan,13,2024-02-06
+112,Lina Morales,74,F,San Benito Abad,2,2024-11-16
+113,Fabiola Sofía Jiménez,79,M,Linares,4,2024-03-10
+114,Luisa Helena Arévalo,57,M,Florencia,6,2025-01-13
+115,Alexis Jaime Jaramillo Álvarez,38,F,Heliconia,5,2024-10-12
+116,Víctor Serna Rubio,33,M,Isnos,3,2025-02-01
+117,Eugenia Michel Solano Chaparro,62,M,Jericó,1,2023-09-22
+118,Jesús Aldemar Guzmán,35,M,Chinácota,4,2024-10-24
+119,Lucía Martha Ramírez,64,F,Rivera,2,2025-02-04
+120,Fernando Rodríguez Pinto,70,F,Úmbita,5,2025-02-17
+121,Gerardo Pinto García,41,M,Filandia,3,2024-11-23
+122,Armando Héctor Bautista Aguirre,43,F,Distracción,9,2024-03-22
+123,Alba Sandoval,42,M,Chiriguaná,6,2024-08-10
+124,Alicia Castillo,77,F,Alto Baudó,18,2023-09-10
+125,Luz Rocío Montoya,77,M,Pácora,6,2025-03-13
+126,María Camargo Ríos,77,M,Sopetrán,19,2024-01-19
+127,Edilma Contreras Torres,62,F,Roncesvalles,12,2025-01-18
+128,Smith Ramírez Suárez,58,M,Calima,11,2023-10-11
+129,Luz Bernal Cárdenas,46,F,Siachoque,2,2023-08-02
+130,Jair Efrain Cárdenas,32,F,San Jacinto del Cauca,15,2024-03-04
+131,Nelcy Gómez,62,M,Villanueva,12,2023-11-16
+132,Inés Vega,18,M,Jordán,12,2024-08-20
+133,Gregorio Luis Tovar Rojas,42,F,Silvia,9,2024-10-28
+134,Lorena Yuliana Vergara,24,M,Carmen del Darién,2,2024-12-23
+135,Carmenza Luz Orozco Pérez,26,M,Jerusalén,3,2024-06-25
+136,Manuel Ramírez,41,M,Luruaco,12,2024-01-28
+137,Dayana Herrera,18,M,Rionegro,16,2024-02-19
+138,Jesús Herrera,61,M,Guaca,1,2024-10-23
+139,Esther Zuluaga,25,F,Villa Caro,3,2024-01-16
+140,Yaneth Marina Valencia Quintero,41,F,Carmen de Carupa,2,2024-03-02
+141,Ana Hernández Pinzón,28,M,San Martín,9,2025-03-16
+142,María Johanna García,68,M,San Pelayo,19,2025-04-10
+143,David Óscar Rodríguez,34,M,Cáchira,15,2024-10-16
+144,Angélica Inés Sarmiento,25,F,Purísima de la Concepción,18,2025-02-20
+145,Jorge Hernández Jaramillo,52,M,San Andrés,11,2024-06-11
+146,Herney Morales Toro,52,F,Güepsa,16,2023-09-23
+147,Diego Durán Álvarez,50,F,Maceo,17,2024-09-07
+148,Pedro Vásquez Parra,76,F,Cumaribo,5,2024-11-25
+149,Luisa Garcés Murillo,22,M,Guadalajara de Buga,12,2025-02-01
+150,Ricardo Bustos Álvarez,59,F,Albán,11,2024-07-01
+151,Antonio Velasco,56,M,Toribío,15,2025-05-05
+152,Natalia Mesa Villegas,75,F,Pácora,3,2024-12-20
+153,María Dora Gutiérrez,58,M,Cartagena de Indias,1,2024-03-05
+154,Giovanni Suárez Hernández,45,F,El Paso,16,2023-10-05
+155,María Suárez,24,M,El Charco,2,2024-07-13
+156,Samuel Alejandro Escobar Camacho,26,F,Río Viejo,2,2024-08-14
+157,Isabel Katerine Contreras Vargas,25,M,Vistahermosa,3,2024-02-13
+158,Felipe Eduardo Pérez Villamil,29,M,Puerto Boyacá,8,2023-11-25
+159,Amparo Mendoza,51,M,El Piñón,15,2023-11-26
+160,Alix Chacón Osorio,50,M,La Salina,7,2023-09-23
+161,Elsa Ana Rivera,65,F,Puerto Carreño,6,2025-01-13
+162,José Vásquez,72,F,Santuario,9,2025-05-16
+163,Elena Clara Flórez,40,M,Machetá,1,2023-10-01
+164,Wendy Valencia Lara,79,F,Lloró,8,2023-10-09
+165,Adriana Vélez Martínez,41,M,Tibú,3,2025-04-27
+166,María Villa Gutiérrez,54,M,Andes,4,2023-07-26
+167,Rosa Omaira Prieto Cáceres,52,F,Génova,15,2023-07-28
+168,Juan Torres,61,M,Arjona,6,2024-03-13
+169,Julieth Luz Padilla,57,M,Quipile,15,2024-01-31
+170,Jorge Manuel Rojas,39,F,Pueblo Nuevo,3,2023-06-11
+171,Eduardo Rincón Ospina,44,M,Santa Cruz de Mompox,14,2023-08-13
+172,Marcela Medina,52,M,Villa del Rosario,14,2024-10-22
+173,Cecilia Yaneth Vargas,18,M,La Pedrera,4,2024-05-15
+174,Raquel Jaimes Pérez,52,M,Patía,12,2023-11-30
+175,Fernando Agudelo,54,F,Firavitoba,17,2024-04-21
+176,Andrés Edilberto Orozco Guzmán,64,F,Calarcá,7,2024-11-16
+177,Elena Patiño,31,F,San Carlos,9,2024-10-01
+178,Edilma Cerón Guzmán,20,M,Bosconia,3,2025-02-05
+179,María Elena Castillo,18,M,Tenerife,13,2024-06-22
+180,Pedro Mario Gómez,22,F,San Juan de Rioseco,15,2024-05-17
+181,Raquel Mary Hernández,43,M,Los Patios,18,2025-03-23
+182,María Arévalo Molina,72,M,Envigado,19,2023-12-18
+183,Blanca Álvarez,31,M,Uramita,1,2025-03-08
+184,Carmen Elsa García Sánchez,56,M,Risaralda,6,2024-12-23
+185,Edilson José Castro,44,F,Linares,2,2023-07-15
+186,Víctor Santiago Morales,26,F,Chiriguaná,14,2023-09-22
+187,Aníbal Villegas González,32,F,Usiacurí,6,2024-08-14
+188,Paola Aura Miranda Arias,32,M,Villeta,14,2025-01-04
+189,David Suárez,43,F,María la Baja,4,2023-06-11
+190,Paula Adriana Paz,59,F,Olaya,8,2025-01-08
+191,Rocío Lorena Gómez,77,M,Pedraza,3,2024-01-18
+192,Maritza Arenas,30,M,Campo de la Cruz,19,2025-01-15
+193,Andrés Silva Mendoza,68,F,Icononzo,14,2024-09-03
+194,Carlos José González,49,F,Marmato,17,2023-10-06
+195,Angélica Karen Fajardo Cuéllar,56,F,Morroa,8,2025-06-03
+196,Carlos Jhonny Correa,66,F,Manatí,14,2025-01-26
+197,Jaime Espinosa Márquez,69,M,Fresno,6,2024-01-29
+198,Graciela López Cárdenas,78,F,Soatá,16,2023-09-02
+199,Johana Fernanda Barbosa,49,F,Puerto Colombia,19,2024-01-22
+200,Alix Barrios Rodríguez,21,M,Belmira,14,2024-10-28
+201,Orlando Julio Contreras,47,F,Guachetá,19,2023-06-21
+202,Andrés Pérez González,54,M,Jamundí,3,2023-08-23
+203,José Mosquera Galindo,40,M,Tuta,10,2023-08-29
+204,Stella Torres Vargas,56,M,San Jacinto,19,2024-04-08
+205,Gonzalo Germán Zambrano,62,F,Santa Bárbara de Pinto,9,2024-11-05
+206,Ángel Bernal,32,F,Fonseca,13,2023-06-10
+207,Albeiro Benítez Luna,60,M,Tibacuy,7,2024-01-28
+208,Edwin Cárdenas,46,F,Paipa,14,2023-09-10
+209,Jesús Campo,53,F,Circasia,9,2025-05-25
+210,Hermes Hernando Jiménez,30,M,El Cerrito,19,2025-04-15
+211,Diana Jiménez,49,M,San Cristóbal,15,2025-05-03
+212,Diana Nancy Fajardo Ruiz,24,F,Aipe,14,2025-05-16
+213,Gina Sepúlveda,76,M,Tununguá,6,2024-06-18
+214,Milena Deisy Lozano,68,F,San Carlos,4,2024-11-03
+215,Rocío Astrid Rodríguez Escobar,39,F,Remolino,8,2024-08-12
+216,Alfredo García Ortiz,45,F,Rionegro,17,2024-03-06
+217,Tulio Guerrero Castaño,19,F,Girón,9,2024-07-28
+218,Cristhian Hugo García,59,M,Restrepo,1,2024-03-16
+219,Magaly María Erazo,62,M,San Luis de Palenque,14,2023-11-28
+220,Antonio Camilo Rivera Marín,79,M,La Ceja,11,2025-01-14
+221,María Viviana Forero,74,M,Murillo,3,2024-01-17
+222,Consuelo Tatiana Bonilla,70,F,Ibagué,9,2024-10-30
+223,Edwin Suárez Torres,23,F,Santa Rosa,14,2024-06-19
+224,Dolores Navarro Castillo,45,M,Monguí,9,2024-12-10
+225,Fernando Dario Domínguez,45,F,Charta,4,2024-01-31
+226,Jean Luis Castrillón Camargo,61,F,Guaitarilla,4,2024-03-09
+227,Rosario Garcés Rojas,61,F,Unguía,8,2025-01-29
+228,Nelly Vega Herrera,37,M,Villa del Rosario,2,2024-03-21
+229,David Óscar Rodríguez,47,M,Tello,9,2025-02-24
+230,José Santiago Villamizar Nieto,79,M,San Pablo,14,2023-10-20
+231,Alberto González,28,F,Villavieja,9,2023-09-13
+232,Armando López,75,M,Puerto Arica,16,2024-11-29
+233,José Stiven García Bonilla,72,M,Santa Ana,17,2024-07-08
+234,Jackeline Gabriela Meza Arias,45,M,Malambo,16,2023-10-29
+235,Fernando Leider Palacios Melo,42,M,Fundación,12,2025-03-20
+236,Daniela Sanabria,56,M,Galeras,3,2024-05-13
+237,Lina Ana Díaz,79,M,Tota,11,2025-01-25
+238,Alberto Javier Loaiza Franco,50,F,El Tambo,14,2025-01-07
+239,Simón Cabrera Cardona,18,F,La Vega,18,2024-12-02
+240,María Carolina García Franco,74,M,Aguadas,5,2024-08-13
+241,Andrés Sergio Aguirre,44,M,Boavita,16,2024-09-05
+242,Ruth Catherine Rodríguez,79,F,Teruel,5,2024-03-25
+243,Julia Cárdenas Rodríguez,74,F,Cajamarca,3,2023-12-06
+244,María Garzón,69,M,Río Quito,12,2024-05-18
+245,Esneider Bonilla,30,M,Olaya,1,2024-07-02
+246,Patricia Hilda Reyes Correa,58,M,Guataquí,9,2024-11-24
+247,Eduard Erick Guerrero,20,M,Pijiño del Carmen,9,2024-12-13
+248,María Cecilia Velásquez,56,F,Fómeque,4,2024-10-27
+249,Carlos Jaimes,23,M,Quípama,3,2024-05-24
+250,Carlos Pérez Rodríguez,25,M,Ovejas,17,2024-03-07
+251,Alirio Juan Valderrama Gil,44,M,Chiriguaná,2,2024-05-11
+252,Jairo Restrepo,26,M,Molagavita,1,2023-08-12
+253,Yasmín Blanca Hernández Roa,79,F,Yacuanquer,8,2024-07-31
+254,Lizeth María Leal Pérez,54,F,La Paz,13,2024-11-14
+255,Santos Juan Gómez Castro,50,F,Medina,15,2024-10-19
+256,Olga Giraldo,68,M,San Andrés,8,2024-02-14
+257,Carolina Gómez,59,M,Cuítiva,12,2024-05-30
+258,Héctor Garzón Yepes,61,F,Caramanta,12,2023-11-25
+259,Stiven Diego Rincón Giraldo,41,M,Ubalá,14,2025-03-01
+260,Maritza Osorio,32,M,Providencia,15,2023-12-19
+261,Armando Sierra,76,F,San José del Palmar,15,2024-11-08
+262,Arturo Vargas Montoya,71,F,Quebradanegra,9,2024-05-01
+263,Eder William Cano,49,F,Fusagasugá,19,2024-05-16
+264,Alejandra Arévalo,49,F,Vianí,8,2024-02-20
+265,Edith Martha Martínez,41,M,Panqueba,19,2025-02-14
+266,Luis Jefferson Hernández Vélez,58,M,Galán,6,2024-12-06
+267,Gregorio Manuel Torres,69,F,Tocancipá,19,2024-11-04
+268,Felipe Hernández,66,M,Patía,4,2024-12-26
+269,Margarita Burbano,79,F,Taminango,7,2023-12-19
+270,Felipe Palacios,66,F,Villamaría,4,2024-11-17
+271,Ángel Arbey Castañeda Ocampo,75,M,Salento,12,2024-10-17
+272,Edilberto Juan López,69,F,Chivatá,13,2025-05-03
+273,Alejandra Elena Nieto,29,M,Chocontá,3,2024-02-29
+274,Alexis Eduardo Lara Serna,79,M,Dosquebradas,12,2024-01-26
+275,Amanda Barrios,56,M,"Bogotá, D.C.",2,2025-03-26
+276,Néstor Eduardo Benítez Rodríguez,19,M,Guayatá,2,2024-10-23
+277,Augusto Yesid Díaz,20,F,Tangua,9,2023-11-27
+278,Carlos Gómez Salcedo,66,M,San Jerónimo,1,2025-04-16
+279,Adriana González,54,F,Guamal,8,2024-04-29
+280,Santiago Torres Salazar,66,F,Rondón,6,2024-06-19
+281,Consuelo Cielo Vallejo,73,F,Melgar,6,2024-12-01
+282,Rosario Ángela Pérez Martínez,34,F,Córdoba,18,2023-10-22
+283,Jorge Jiménez Mora,76,M,El Cairo,17,2024-12-13
+284,Catalina Socorro Castillo Amaya,66,M,Rionegro,12,2024-12-28
+285,Alejandro Alejandro Agudelo,19,F,Cereté,6,2023-06-08
+286,David Luis Camacho,19,F,El Dorado,8,2024-09-17
+287,Luis Javier Arias Franco,45,M,Cartagena del Chairá,19,2025-05-21
+288,Paola Ana Álvarez Serna,71,F,Anserma,10,2024-07-15
+289,Luisa García Serna,40,M,Piedecuesta,1,2024-04-21
+290,Alejandra Romero,54,F,Belén,13,2024-12-18
+291,María Alfonso Triana,49,M,Orito,17,2024-08-19
+292,Ramiro David Sepúlveda Narváez,50,F,Suesca,3,2025-02-17
+293,Laura Paula Silva,18,F,San Mateo,8,2024-09-14
+294,Raúl Hernández,36,M,Yalí,14,2023-11-02
+295,Santos León,79,F,Armenia,3,2024-03-10
+296,Sofía Zambrano Moreno,19,F,Cañasgordas,16,2024-03-25
+297,Ángela Medina,70,M,Molagavita,13,2025-04-08
+298,Luz Mejía Cárdenas,61,F,Tona,17,2024-01-24
+299,Andrés Yesid Luna,43,M,Cocorná,13,2024-02-25
+300,Marino Rosero,49,M,Durania,6,2023-12-26
+301,Jesús Julio Pacheco Marín,23,F,Venecia,17,2025-04-06
+302,Jorge José López González,49,F,San Carlos de Guaroa,14,2024-10-17
+303,Paola Maritza Palacio Carrillo,72,F,Choachí,17,2024-09-12
+304,Javier Ortiz Muñoz,21,F,Palestina,8,2023-09-23
+305,Pedro Bastidas Ochoa,72,F,Vetas,11,2024-08-01
+306,Ana María Uribe,28,F,Murillo,1,2023-07-29
+307,Luisa Hernández Pacheco,73,F,El Carmen de Viboral,7,2024-02-29
+308,Lina Stella Parra,76,M,Tibasosa,17,2025-05-19
+309,Javier Ballesteros,34,F,San Pedro de los Milagros,10,2025-05-20
+310,Antonio Gómez Díaz,55,M,Inírida,11,2025-04-23
+311,Salvador Arboleda Guerra,41,F,San Vicente Ferrer,9,2025-01-09
+312,Julio Andrés Martínez Hoyos,22,F,Sopó,9,2024-07-24
+313,Maribel Bejarano,69,M,Palmas del Socorro,5,2023-11-01
+314,Wendy Rodríguez Castañeda,51,F,La Unión,17,2023-08-12
+315,Wilman Moreno,23,F,Tangua,9,2025-03-30
+316,Yasmín Carmen Toro,39,M,Córdoba,17,2025-05-26
+317,Heidy Carmen Jaimes,28,F,Rionegro,19,2024-11-07
+318,Ana Adriana Santos Ruiz,65,F,Contadero,7,2023-11-17
+319,Maritza Agudelo Tovar,33,F,Cumbitara,9,2023-07-08
+320,Hernán Castrillón,50,M,López de Micay,7,2025-03-03
+321,Elkin Alfonso Castro Castro,26,F,El Colegio,13,2025-05-27
+322,Amparo Gallego Díaz,77,F,Calamar,11,2024-03-16
+323,José Martínez Pérez,76,F,Hato Corozal,14,2023-11-27
+324,Eduardo Carlos Vanegas,23,F,Bucarasica,19,2024-07-25
+325,Álvaro Mauricio Parra Rojas,33,M,Angelópolis,11,2025-04-21
+326,David Martínez Rojas,46,M,Tibasosa,13,2023-09-23
+327,Rita Laura Gonzáles,20,F,Sutamarchán,14,2025-06-03
+328,José Díaz Rodríguez,37,F,Santa Marta,13,2024-10-12
+329,Judith Medina Ramos,77,M,La Apartada,1,2024-02-19
+330,Edith Mercedes León,76,M,Cimitarra,8,2025-03-11
+331,Diana Claudia Pérez Pineda,53,F,Amalfi,12,2024-01-31
+332,John Giovanny Bernal,36,M,Gachantivá,19,2023-09-22
+333,Brayan Suárez,43,F,Santa Lucía,12,2024-04-04
+334,José Steven Galeano Espinosa,20,M,San Andrés,8,2023-12-04
+335,María Clara Guevara Medina,36,M,Caucasia,8,2024-10-02
+336,Daniel Jhoan Gutiérrez,37,M,Anserma,13,2024-01-09
+337,Carlos Felipe Montenegro,49,M,Tibasosa,12,2024-01-14
+338,Silvia María Camargo,24,F,Montelíbano,16,2024-08-03
+339,Socorro María Rodríguez Romero,69,M,Puerto Escondido,1,2025-03-21
+340,Cristina Yohana Arrieta Ardila,58,M,Polonuevo,13,2024-05-20
+341,José Juan García,50,F,Cisneros,7,2023-09-28
+342,Stella María Hurtado,57,M,Betulia,5,2024-05-06
+343,Uriel Cantillo Villamizar,56,M,Guatavita,8,2024-02-03
+344,José Alexander Vásquez Restrepo,35,F,Cotorra,14,2023-11-25
+345,Andrés Gerardo García,57,M,Anorí,13,2024-12-03
+346,Ángela Astrid Quintero García,18,F,Pajarito,15,2024-12-15
+347,Gloria Adriana Jaramillo Bernal,28,F,Inírida,17,2024-03-19
+348,Adriana Vásquez,45,F,Villapinzón,15,2024-10-31
+349,Claudia Ángela Perdomo,74,F,Tópaga,18,2023-11-11
+350,José Jaime Mantilla Sarmiento,42,M,San Carlos,18,2024-05-03
+351,Arley Giraldo,67,F,Balboa,2,2024-10-14
+352,Enrique Ricardo Salcedo Díaz,40,M,Anapoima,4,2025-01-23
+353,Armando David Loaiza,48,M,Fúquene,1,2023-10-14
+354,María Silvia Estrada Estrada,47,M,San Roque,4,2023-10-03
+355,Carlos Rafael Oviedo Perea,59,M,Los Santos,18,2024-03-21
+356,Luis David Marín Muñoz,52,M,Úmbita,5,2024-06-03
+357,Fernando Arias,24,M,Puerto Asís,19,2025-01-29
+358,María Elena Cortés,77,M,Guachetá,15,2023-10-18
+359,Milena Amaya González,33,M,Chivolo,8,2024-12-13
+360,Ricardo John Ramírez,43,M,Tame,17,2025-04-03
+361,Mónica Portilla,65,M,Repelón,1,2024-09-30
+362,Alexander Peña,74,F,Lourdes,12,2024-07-29
+363,Esteban Daniel Maldonado,69,F,Montebello,19,2023-06-27
+364,Dolores María Giraldo Soto,77,F,Miranda,15,2024-09-28
+365,Rafael Alberto Herrera Mosquera,66,M,Santa Bárbara,9,2023-12-30
+366,Elena Hernández Herrera,19,F,Consacá,7,2025-04-07
+367,Fernando Reyes,18,F,Manizales,2,2024-12-13
+368,Andrés Beltrán,65,F,Nemocón,9,2024-06-02
+369,Lucía Carrillo,79,M,Sabaneta,10,2024-05-28
+370,Valentina Pérez,29,M,El Águila,2,2024-07-10
+371,Karen Mejía Gómez,22,M,San Agustín,19,2023-07-15
+372,Jesús López Betancur,54,M,Sopetrán,11,2024-08-07
+373,Wilber Lozano,49,F,Puerto Carreño,13,2024-01-25
+374,Enrique Valencia Ruiz,76,F,Lejanías,10,2023-10-03
+375,Diego Daniel Burbano Moreno,72,F,Anzá,14,2024-06-30
+376,Margarita Vera Ruiz,26,F,Puerto Tejada,18,2024-07-27
+377,Alexander Alberto Alfonso Sierra,58,M,Santo Domingo,19,2024-11-07
+378,María Martha Hernández,52,M,Corozal,9,2024-12-18
+379,Rafael Bolívar,36,M,Achí,7,2023-11-14
+380,Pilar Burbano López,65,F,Alejandría,3,2023-11-09
+381,Diana Duque López,33,M,Cuaspud Carlosama,6,2025-01-26
+382,Martha María Zambrano,20,M,Arroyohondo,2,2023-11-26
+383,Paula Martha Ardila,37,F,Timbiquí,6,2025-04-09
+384,Yenny Judith Restrepo,41,F,Ginebra,3,2023-07-20
+385,Carmen Martha Molano Guerrero,71,M,Filadelfia,16,2024-06-25
+386,Rosa Rodríguez Mercado,73,M,Sotará Paispamba,8,2025-05-19
+387,Sebastián García,50,M,Manaure,2,2024-09-17
+388,Antonio Alberto Álvarez Díaz,41,M,Garzón,17,2024-01-20
+389,Kevin Alberto Hernández Gallego,69,M,Pajarito,9,2024-03-31
+390,Milena Aura García,28,M,Tello,12,2023-07-26
+391,Edwin Gonzalo García Guerrero,66,F,Santa Rosa de Osos,3,2025-03-21
+392,Andrea María Figueroa Ortega,25,F,Génova,11,2025-03-22
+393,Fernando Fernando López Gonzáles,53,F,Sutamarchán,1,2023-08-14
+394,Manuel Alfonso Domínguez,55,M,Cómbita,13,2025-04-06
+395,Alexandra Arango Muñoz,57,F,Yaguará,15,2025-06-04
+396,Paola Triana,37,M,Tibirita,5,2024-01-20
+397,Fabio Juan Tamayo Morales,79,M,Puerto Colombia,17,2024-07-28
+398,Alonso Castillo Ayala,52,F,Ábrego,6,2024-04-10
+399,Francisco Carrillo,65,M,Lenguazaque,11,2024-02-22
+400,Helena Tania Alvarado Rincón,79,M,Manatí,18,2025-02-25
+401,Sebastián Javier Giraldo Cruz,42,F,Bosconia,4,2023-06-29
+402,Francisco Hernández,52,F,Turbaco,3,2023-06-13
+403,Stella Murcia Acosta,42,F,María la Baja,13,2024-05-27
+404,Elena Sierra,46,M,Vergara,9,2024-10-11
+405,Liliana Alexandra Flórez Silva,35,F,Herveo,6,2023-10-04
+406,Antonio Carlos Arboleda Sierra,63,F,Regidor,12,2023-12-07
+407,Mery Fuentes,35,M,Belén de los Andaquíes,2,2024-10-08
+408,Hernán Jhon Villa Martínez,19,F,Acacías,3,2024-02-20
+409,Carmen Correa Monroy,71,F,Socha,3,2025-04-17
+410,Andrés Mendoza Sepúlveda,52,F,Nocaima,12,2024-02-06
+411,Gustavo Durán Jiménez,33,M,Flandes,15,2025-03-24
+412,Rafael Hugo López,78,M,Paipa,9,2023-11-21
+413,Luisa Leidy Mercado Ramírez,58,M,Los Patios,8,2024-07-01
+414,Vanesa María Álvarez Díaz,53,M,Ventaquemada,11,2024-10-07
+415,Lizeth Laura Mora Rosero,50,F,Manaure Balcón del Cesar,16,2023-07-01
+416,Consuelo Herrera,21,M,Garagoa,4,2025-04-17
+417,Gladys Yadira Delgado,50,M,Paz de Río,1,2023-08-03
+418,Alberto Fernando Vera Ramírez,31,F,Otanche,7,2024-04-09
+419,James Sánchez Jaimes,38,F,Sesquilé,2,2023-11-24
+420,Francisco López,65,F,San Antonio del Tequendama,5,2024-02-27
+421,Andrea Alejandra Vélez,37,M,Villamaría,7,2024-03-12
+422,Katerine Fernanda Moreno Martínez,73,M,Villavieja,4,2023-09-18
+423,Juan Castro,25,M,El Guacamayo,5,2024-03-13
+424,Johan Alvarado,24,F,Suan,1,2024-08-02
+425,Yolanda Liliana Gutiérrez,20,F,Orocué,1,2024-05-21
+426,Dary Gloria Murillo,34,M,Abejorral,15,2024-12-31
+427,Óscar Carlos Castaño Mesa,50,F,Galapa,19,2024-09-29
+428,Patricia Clemencia Sarmiento,65,F,Santa Helena del Opón,10,2024-08-10
+429,Patricia Herrera,29,F,Murindó,18,2024-10-22
+430,Marina Marleny Muñoz,76,M,San Juan de Arama,3,2023-11-30
+431,Antonio Rodrigo Carrillo Bustos,68,F,Buenavista,11,2024-01-04
+432,Olga Trujillo,39,F,Labranzagrande,15,2024-06-12
+433,Eugenia Daniela Castro,72,M,Solano,11,2023-09-30
+434,John Jesús González Soto,39,M,Puerto Concordia,17,2023-07-06
+435,Nel Hernando Quintero,63,F,El Roble,17,2023-12-26
+436,Nelcy Córdoba,47,F,Barrancabermeja,6,2025-02-28
+437,Elena Dahiana Duarte Ardila,55,M,Nueva Granada,5,2025-04-24
+438,Andrés Torres,55,M,Caimito,8,2025-06-07
+439,Guillermo Nicolás Oviedo Morales,62,F,Arauca,2,2024-01-13
+440,Óscar Aguirre,68,F,Silvania,16,2024-10-17
+441,Luz Castro,71,F,Flandes,12,2023-10-24
+442,William Manuel Salazar,25,F,Jesús María,6,2024-02-14
+443,Rubiela Leidy Maldonado,44,M,Santa Bárbara,1,2025-05-26
+444,Mirian Sánchez Mejía,44,F,Pajarito,4,2023-12-21
+445,Elmer Armando Ortiz,51,F,Paz de Ariporo,17,2023-10-17
+446,Vanessa Gómez Burgos,38,M,Victoria,13,2023-09-15
+447,José David Pineda Martínez,47,F,Icononzo,18,2023-10-16
+448,Marcela Reyes Buitrago,50,M,Palermo,5,2023-08-20
+449,Hernán Franklin López,45,F,San José del Palmar,3,2024-05-10
+450,Leidy Luz Rojas,64,F,Villavicencio,11,2024-03-11
+451,Leidy Vanegas Torres,50,M,Morichal,13,2025-02-07
+452,Rosa Guzmán Murillo,22,M,Envigado,4,2025-05-31
+453,María María Muñoz Ortiz,77,F,Obando,14,2024-11-04
+454,Lucy Yaneth Pinto Meza,78,F,Santa María,11,2023-08-03
+455,Henry Muñoz,65,F,Plato,10,2024-12-04
+456,Alberto Parra,36,M,Puerto Rico,19,2024-03-21
+457,Alejandro Castro,21,F,Tenerife,18,2025-05-10
+458,Cristian Pérez Peña,52,M,Barbosa,6,2024-07-21
+459,Ivonne Quintero Mejía,66,M,Hatillo de Loba,15,2024-12-02
+460,Diana Paola Portilla,34,F,San Gil,10,2025-06-05
+461,Mariela Nora García,61,M,Frontino,5,2023-12-09
+462,Margarita Maricela León,45,F,Monterrey,5,2023-12-28
+463,Rodrigo Javier Ramírez,47,F,Santa Bárbara,10,2024-05-17
+464,Lina Oviedo Jiménez,46,F,Guamal,5,2024-08-01
+465,Claudia Sánchez Gómez,63,F,San Andrés de Cuerquía,3,2023-06-21
+466,María Elena Ortiz,70,F,Zipacón,6,2024-09-08
+467,José Torres,23,M,Palestina,4,2024-11-07
+468,Juan Arley Moreno,52,M,Tuluá,18,2024-12-30
+469,María Hernández,77,F,San Jacinto,9,2024-07-16
+470,Andrés Ceballos Carmona,58,F,Jardín,17,2023-11-03
+471,Eliana Liliana Ortiz Quiroz,54,M,Marsella,13,2023-10-02
+472,Ángela Acevedo,41,M,La Victoria,15,2024-10-20
+473,Viviana Gómez Palacios,46,M,Páramo,17,2024-01-05
+474,Nelly Corredor Solano,66,M,Caloto,13,2024-11-04
+475,Ciro Eliecer Alzate,63,F,María la Baja,16,2024-04-26
+476,Fernanda Leonor Córdoba Parra,70,F,Tenza,4,2023-09-22
+477,Marcela Ana Barrios,48,M,Colón,5,2024-01-31
+478,Andrea Margarita Galeano,52,F,Villeta,5,2024-04-01
+479,Andrés Enrique Palacios Ramírez,77,M,Los Palmitos,9,2024-01-19
+480,Rodolfo Javier González Ruiz,50,F,Cogua,17,2023-11-30
+481,Wilmar Gil,69,M,Almeida,13,2023-10-09
+482,Valeria Edith Caicedo Martínez,78,F,Tenza,2,2023-12-11
+483,Rosalba Palacio,38,M,Güepsa,13,2024-07-22
+484,Diana Londoño,49,M,Cáqueza,19,2024-09-23
+485,Marcela Parra Cabrera,40,F,San Andrés de Tumaco,3,2024-08-21
+486,Daniel John Gutiérrez,50,M,La Tola,10,2024-12-12
+487,Mónica Loaiza Hoyos,20,F,Pasca,2,2023-08-10
+488,Luis Cifuentes,35,F,Campoalegre,13,2025-03-28
+489,Stiven Horacio Martínez Contreras,42,M,Duitama,19,2024-10-09
+490,Agustín Orlando Galeano,59,F,Chitagá,17,2024-01-18
+491,Vanessa Deyanira Ortiz,48,F,San José de Cúcuta,14,2024-07-10
+492,Julieth Guerrero Galindo,71,F,Bello,12,2024-02-03
+493,Patricia Nancy López Patiño,75,F,Ayapel,12,2024-01-22
+494,Carolina Carolina Ríos,20,F,Arauca,11,2023-12-18
+495,Ángel Víctor Torres Duque,57,M,Purificación,7,2024-10-28
+496,John Torres Sánchez,63,F,Beltrán,4,2025-03-11
+497,Erika Mendoza,41,F,Armenia,19,2023-12-24
+498,Jhon Amaya,67,F,Isnos,1,2023-12-06
+499,Henry Mora,49,F,Fredonia,3,2024-03-14
+500,Damián Darwin Ramírez,64,F,San Marcos,13,2024-04-29
+501,Abelardo Alberto Molina,39,M,Puerto Caicedo,15,2024-11-16
+502,Luis Rendón Gutiérrez,40,F,El Espino,2,2024-02-07
+503,Julián Hugo Vanegas,19,M,Miraflores,11,2025-05-12
+504,Amparo Amanda Campo,44,M,Puerto Nare,4,2024-01-17
+505,Cecilia Gloria Sandoval López,59,M,La Ceja,19,2024-04-12
+506,Carolina Andrea Sánchez,19,M,Coveñas,17,2024-03-12
+507,Jairo Eduardo Jiménez Parra,43,F,El Cocuy,3,2024-01-31
+508,Norma Carolina Serna Lozano,34,M,Puerto Tejada,18,2023-11-07
+509,José Camacho,57,M,San Andrés de Cuerquía,8,2024-10-01
+510,Dayana Martha Rojas,50,F,Prado,19,2025-06-01
+511,Melissa Vargas,26,F,Paya,5,2025-02-02
+512,Julián Rentería Pérez,60,F,Labranzagrande,7,2023-11-25
+513,Luis González Murillo,71,M,Rionegro,8,2024-05-22
+514,León Montoya,65,F,Herveo,5,2024-08-15
+515,Alberto Alberto Narváez,56,F,Tierralta,17,2025-05-25
+516,Sandra Luz Patiño,46,M,Valledupar,5,2024-03-13
+517,Patricia Moreno,59,F,Restrepo,4,2023-12-20
+518,Stella Gómez Castro,72,F,La Unión,19,2025-01-07
+519,María Juliana Mendoza,43,F,Apía,2,2023-06-23
+520,Javier Armando Quintero,52,F,San José de Miranda,11,2023-12-23
+521,Andrés Alfonso Mosquera,67,M,Soledad,13,2024-04-15
+522,Mireya María Flórez,42,F,El Peñón,15,2023-08-14
+523,John Enrique Santos Muñoz,41,F,Bochalema,12,2023-07-05
+524,Luz Vanesa Vanegas Lara,30,M,Caicedonia,11,2024-05-30
+525,Daniel Parra García,77,F,Astrea,7,2025-03-26
+526,Juan Lozano Rodríguez,75,M,San Pedro de los Milagros,5,2024-11-02
+527,Ruth Vanessa García,24,F,Sibundoy,17,2023-07-05
+528,Maribel Ballesteros,74,M,Santa Rosa,9,2023-10-28
+529,Carlos González,53,M,Santa Lucía,14,2024-07-01
+530,David Chávez Montoya,62,M,Gramalote,12,2025-02-04
+531,Mayra Lilian Gaviria Ramos,37,M,Tununguá,6,2025-03-29
+532,José Carlos Quintero Díaz,18,F,Villa de Leyva,17,2025-02-10
+533,Eduardo Alejandro García Villamizar,25,M,Dagua,19,2025-02-22
+534,Julián Suárez Murcia,63,F,Puerto Boyacá,19,2024-01-24
+535,Roberto Harvey Arrieta Toro,33,M,Viotá,16,2024-03-02
+536,Yuri López Delgado,31,M,San Miguel,12,2024-12-24
+537,Alex Gómez Rangel,29,M,Saldaña,12,2023-07-16
+538,Laura Esther Rodríguez Carmona,68,F,Yarumal,6,2025-06-04
+539,Nancy Nury Ramos,40,M,Mocoa,4,2023-10-06
+540,Orlando Jhon Escobar,32,F,Lérida,6,2024-02-11
+541,Johana Díaz,45,F,Villagarzón,11,2024-09-09
+542,Ignacio Suárez,51,F,San José,1,2024-02-29
+543,Ángel Pulido,19,F,Sapuyes,15,2024-04-25
+544,Diana Garcés Hernández,49,F,Sácama,11,2025-06-07
+545,Alexander Gutiérrez Erazo,40,F,Barrancominas,19,2024-04-06
+546,Isabel Elena Ortiz,39,F,Chitaraque,18,2024-01-13
+547,Mariana Andrea Delgado Serna,68,F,Zipacón,17,2024-12-28
+548,Rubiela Patiño Méndez,42,F,Guachucal,19,2024-10-03
+549,José Wilmar Cano,75,M,San Rafael,14,2024-03-12
+550,María Myriam Vega Saavedra,79,M,Ciénega,18,2024-06-03
+551,Jesús Méndez Castro,78,M,San José del Fragua,19,2024-03-02
+552,Marina Daniela Vargas,39,M,San Luis,15,2025-01-10
+553,Jeison Díaz Sarmiento,75,M,San Benito Abad,15,2023-07-20
+554,Elizabeth Nancy Palacios Cardozo,75,F,Tibasosa,4,2024-03-26
+555,Martha Carmen Castro Soto,39,F,San José,7,2024-05-01
+556,Luis Alexander Amaya Ramírez,66,F,Briceño,13,2023-09-02
+557,Alveiro Ramón García Salazar,69,F,Rionegro,3,2024-02-22
+558,Natalia Ríos González,59,F,Armenia,16,2025-05-31
+559,Liseth María Barrios Gaitán,23,F,Aguadas,9,2025-04-10
+560,Edwin Fernando Miranda Cantillo,32,F,Zarzal,8,2024-10-20
+561,Lucía Claudia Muñoz,71,M,Chiquinquirá,13,2024-08-21
+562,Jhon Alberto Suárez,60,M,Paz de Río,17,2025-05-27
+563,Yesenia Mercedes Ruiz Restrepo,77,M,Lloró,17,2023-12-03
+564,Juan Nelson Salcedo Gutiérrez,54,M,El Tarra,17,2025-02-25
+565,Camilo Mosquera,50,F,Inzá,1,2023-08-08
+566,Marcela Viviana Martínez Forero,25,F,Gutiérrez,8,2025-01-20
+567,Jhonny Stiven Benavides Angulo,70,F,Guamal,19,2023-07-26
+568,Diego Aguilar Rincón,77,M,Támesis,6,2024-05-14
+569,Daniel Durán,61,F,Vegachí,3,2025-05-14
+570,Marta Vega Osorio,61,F,Iles,5,2024-06-13
+571,Eliecer Jhon Arias López,22,F,Elías,13,2023-10-30
+572,Emilce Guerra Herrera,56,M,Policarpa,15,2024-05-09
+573,Saúl Esteban Toro,21,F,Villapinzón,14,2025-01-18
+574,Ana Elena Rodríguez Martínez,23,M,San Juan de Urabá,16,2023-07-26
+575,David César Durán Vargas,62,M,Victoria,18,2024-04-05
+576,Juan Ángel Trujillo,49,M,Jericó,11,2025-04-09
+577,Luis Pérez Arias,69,M,La Montañita,3,2024-06-26
+578,Jhonatan Torres Rubio,47,F,Madrid,10,2024-04-26
+579,Cristina Tatiana Vergara,64,M,Piamonte,10,2023-11-17
+580,Ingrid Díaz,52,M,Vergara,16,2025-03-09
+581,John Muñoz,72,F,Coyaima,12,2024-11-02
+582,Fanny Loaiza Toro,57,F,El Paso,2,2023-08-29
+583,Manuel Martínez,69,M,Nariño,9,2024-04-06
+584,Doris Mireya Meneses,33,F,Arenal,3,2024-08-10
+585,Fernanda Martínez Mora,30,M,Ovejas,15,2024-08-02
+586,Carmen Leydi Mosquera,67,M,La Argentina,3,2024-01-18
+587,Yaneth María Solano,77,M,Medio Atrato,19,2024-09-22
+588,María Johana León López,59,M,Purificación,18,2025-02-08
+589,Leidy Salgado,47,F,Iza,8,2024-03-22
+590,Andrea Edith Muñoz Caicedo,36,M,Concepción,17,2024-10-26
+591,Aura Yohana Velásquez,34,F,Teorama,8,2024-08-17
+592,Daniel Peña Orjuela,73,F,Santa María,7,2024-09-26
+593,Dagoberto Rojas Ramírez,36,F,Saboyá,7,2023-11-13
+594,Fernando Juan García Muñoz,45,F,Guamo,3,2023-07-21
+595,Brandon Cristian Pineda,75,M,San Juan de Betulia,1,2023-07-03
+596,Alfonso Durán Anaya,72,F,Mallama,4,2024-03-03
+597,Tatiana Rodríguez,43,M,Puerto Libertador,5,2023-07-13
+598,Yulieth María Betancur Hernández,54,F,Bojayá,1,2024-05-28
+599,Alexander Junior Narváez Fonseca,43,F,Chachagüí,15,2024-04-07
+600,Martha Patricia Gutiérrez,70,M,Morales,5,2025-06-07
+601,Johan Guzmán,79,M,Tenza,13,2025-06-05
+602,Diego López,40,M,Machetá,8,2023-10-13
+603,Manuela Andrea Sánchez,26,F,El Banco,8,2025-05-17
+604,Juan Lozano Alzate,29,F,Abriaquí,5,2024-02-29
+605,Adriana Angie Peña Murillo,70,M,Necoclí,9,2025-05-06
+606,Anderson Felipe Murillo,18,M,Vianí,1,2024-02-18
+607,José Bedoya Quiroz,75,M,Mogotes,4,2023-10-24
+608,María Garzón,75,M,San Pelayo,3,2024-01-05
+609,Juan Acevedo,18,F,Papunahua,2,2024-05-04
+610,Jesús Rico Gómez,64,M,Cartago,8,2025-05-26
+611,Jair Jhon Silva,51,M,Guamo,9,2025-05-24
+612,Ernesto José Sierra,49,M,Fusagasugá,2,2023-08-23
+613,Armando Sánchez Cortés,79,M,La Plata,14,2024-05-06
+614,Jhon Morales Gómez,71,F,San Juan de Urabá,14,2025-01-26
+615,Luis Sebastián Toro,65,M,Bajo Baudó,4,2024-06-04
+616,César Muñoz,42,F,Santa Helena del Opón,6,2023-07-19
+617,Aldemar Gómez,57,M,Alvarado,11,2024-02-16
+618,Andrés Manuel Rangel,62,M,Calamar,3,2024-02-14
+619,Andrea Soto,70,F,El Carmen de Atrato,8,2024-05-03
+620,José Mateo García López,18,M,Hatillo de Loba,3,2024-09-06
+621,Andrés Alexander Hoyos López,33,F,San Carlos,14,2024-05-12
+622,Edinson Rubio,78,F,Jericó,13,2023-10-10
+623,Laura Rodríguez,56,M,Onzaga,13,2024-06-30
+624,Adriana Silva Reyes,22,F,Honda,2,2025-03-06
+625,David Arenas González,39,F,Cucunubá,13,2023-11-07
+626,Cristina Triana,46,F,San Andrés,19,2023-10-22
+627,Teresa Sánchez Duarte,72,F,Gigante,6,2024-04-20
+628,María Elizabeth Bernal,20,F,La Jagua de Ibirico,16,2024-10-18
+629,Fredy Contreras,29,F,Quinchía,2,2024-02-19
+630,Jorge Mauricio Vásquez Anaya,43,F,Chinchiná,8,2025-02-28
+631,Amparo Vallejo,33,F,La Belleza,17,2023-08-02
+632,Yamid Ibarra Mora,68,M,Fómeque,2,2023-11-01
+633,Leonardo Calderón Sánchez,54,M,Venecia,10,2025-03-24
+634,Angie Mayra Muñoz Ariza,39,F,San Andrés de Cuerquía,16,2023-12-11
+635,Fernando Antonio Ramos Torres,74,M,Cotorra,6,2024-08-09
+636,Daniel Yamid Medina Osorio,46,F,Alcalá,2,2023-06-17
+637,Emilio Gutiérrez Silva,31,F,Suárez,2,2024-11-24
+638,María Díaz Pabón,45,M,Puerres,13,2024-07-13
+639,Teresa Cristina Agudelo Jiménez,22,F,Jambaló,15,2025-05-17
+640,María Rosa Pérez,64,F,Restrepo,2,2023-10-16
+641,Vilma Patricia Ramírez,66,F,Zona Bananera,7,2025-01-10
+642,Magda Suárez,47,F,Tarapacá,3,2023-10-30
+643,William Uribe,63,M,Vetas,8,2023-11-10
+644,Esther Amaya Gómez,79,F,Coper,14,2025-01-08
+645,Ana Anyi Rojas Corredor,69,F,Gigante,7,2024-04-28
+646,Katerine Peña Cruz,22,F,Orocué,7,2023-11-12
+647,Inés Luz Pineda Castañeda,29,M,Los Santos,1,2025-03-13
+648,Edgardo Mora Ocampo,33,F,Funza,17,2025-02-07
+649,Clara Alba Guzmán,43,M,Canalete,9,2024-11-20
+650,Carol Morales,43,M,Ciudad Bolívar,13,2023-06-22
+651,Germán José García,65,F,Baranoa,19,2023-12-30
+652,Antonio Rivera Hernández,38,F,La Gloria,19,2024-03-24
+653,Edgar Quintero,56,M,Curití,17,2025-05-29
+654,Uriel Suárez Morales,53,F,La Tebaida,10,2024-11-14
+655,María Danna Quintero,50,M,Santiago,10,2024-11-09
+656,Sergio Murillo,79,M,San Miguel de Sema,4,2024-07-14
+657,Pablo Miguel Páez Díaz,47,F,Puerto Colombia,8,2025-01-03
+658,Eduardo Alirio Silva,54,F,Arroyohondo,18,2025-04-03
+659,Tomás Richard Valderrama Arango,40,M,Morroa,14,2024-01-11
+660,Orlando Ortega Erazo,75,M,Imués,18,2023-11-05
+661,Consuelo Luz Vera,27,M,San Andrés de Tumaco,14,2024-12-29
+662,Diana María Aguirre,71,M,Sandoná,15,2025-01-21
+663,Juan Jaime Arrieta,22,F,Sahagún,4,2025-02-24
+664,Yazmín Patricia Vásquez,53,F,Puerto Leguízamo,13,2024-10-17
+665,Paula Gómez,51,F,El Carmen,8,2023-07-30
+666,Armando Pineda Figueroa,69,F,Sucre,18,2024-01-13
+667,Yasmín Torres Parada,48,F,Viracachá,12,2025-03-26
+668,Juan Hoyos Ávila,27,M,El Zulia,14,2023-08-27
+669,Samuel Daniel Gómez Reyes,75,F,San Pedro de los Milagros,2,2024-01-17
+670,Ernesto Duván Espinosa González,36,F,La Montañita,18,2024-10-06
+671,María Barrera Rojas,75,F,Sibundoy,2,2024-03-28
+672,Alonso Sarmiento,49,F,San Pablo,11,2023-10-22
+673,Esneider Romero,18,F,Maicao,9,2025-05-20
+674,Blanca Ríos,73,M,Yavaraté,12,2025-01-19
+675,Juan Andrés Gómez,22,M,Yumbo,17,2024-03-05
+676,Juan Oviedo Ruiz,62,M,Timbiquí,15,2025-01-09
+677,Gilberto Hernández Sánchez,21,F,Calima,17,2024-08-01
+678,Jorge Jhon Castro,33,M,Pijiño del Carmen,18,2025-03-05
+679,Santos Contreras,41,M,Subachoque,6,2024-02-05
+680,Karina Fernández,33,F,San Antonio del Tequendama,17,2023-11-25
+681,Marcela Gladys Morales Quintero,72,F,Chíquiza,18,2024-03-06
+682,Patricia Castro Franco,19,F,San Carlos,8,2024-09-03
+683,Estela Agudelo León,66,M,Córdoba,9,2024-02-03
+684,Andrea Carmen Suárez Contreras,45,M,Cajicá,6,2023-11-04
+685,Luisa Bernal Domínguez,49,F,San José del Fragua,5,2024-07-11
+686,Ana Rodríguez Castro,44,F,Pradera,12,2023-08-10
+687,Patricia Ana Vallejo Parra,37,M,Santiago de Tolú,11,2023-11-13
+688,Daniel Meza,41,M,Ramiriquí,1,2025-05-23
+689,Angélica Osorio,29,F,Manzanares,11,2024-05-15
+690,Dario Alvarado,67,F,Bello,19,2023-09-21
+691,Diego Andrés Ardila,52,M,Cumaribo,9,2025-01-26
+692,Magda Luz Arroyo Alarcón,77,F,Manta,2,2024-09-27
+693,Paula Sanabria Restrepo,50,M,Moniquirá,12,2024-04-23
+694,Carlos Antonio Agudelo Rodríguez,50,M,Cuaspud Carlosama,4,2024-08-04
+695,Adriana Montoya Fuentes,78,M,Tabio,4,2023-07-03
+696,Liliana Claudia Ruiz,68,M,Zipaquirá,18,2023-07-27
+697,Graciela Camila Martínez Córdoba,60,F,Circasia,15,2025-03-17
+698,Zoraida Lilian Romero Ávila,54,F,Nueva Granada,19,2024-02-16
+699,Guillermo Adrián Londoño Restrepo,29,M,Jerusalén,13,2024-11-26
+700,Wilder Yesid Giraldo Méndez,20,M,La Jagua del Pilar,19,2024-02-14
+701,Jerson Cerón,18,M,Titiribí,17,2024-02-25
+702,Manuel Javier Franco,50,M,Sabanagrande,6,2024-03-15
+703,Karina Gaitán,57,M,Pulí,16,2024-03-01
+704,Germán Luis Barbosa Jiménez,27,F,Gachantivá,12,2024-02-16
+705,Ariel Mauricio López,60,F,Páramo,19,2023-08-08
+706,Carmen Yaneth Corredor,61,F,Hatillo de Loba,5,2024-07-09
+707,Edwar José Giraldo García,46,F,San Carlos,17,2023-07-14
+708,Alejandro Carlos Pinto Prieto,30,M,San Andrés,1,2024-01-28
+709,Rodrigo Ospina,29,M,Zona Bananera,10,2024-01-31
+710,Sandra Nancy López,48,M,Guayatá,15,2024-10-13
+711,James López Sánchez,63,M,Sabanalarga,11,2023-12-17
+712,María Figueroa,19,M,Jesús María,13,2023-11-09
+713,Ana Helena Bejarano,78,F,Buenavista,5,2024-11-21
+714,Johana Acevedo Beltrán,68,M,Norcasia,1,2025-01-13
+715,Camilo Sierra Solano,67,F,Armenia,12,2024-12-14
+716,Fernanda Duque,52,F,Mutiscua,11,2023-11-23
+717,María Astrid Muñoz,40,F,Guamal,17,2024-04-14
+718,Fabián Jorge Oviedo,34,F,Gramalote,4,2024-01-24
+719,Maira Martínez Ortiz,43,M,Paz de Ariporo,15,2024-03-04
+720,Alejandro Rincón Reyes,25,F,Almaguer,9,2024-02-24
+721,Andrés Mosquera Uribe,46,F,San Antonio del Tequendama,19,2023-07-18
+722,Fabián González Castellanos,43,F,Fredonia,19,2024-06-09
+723,Alexis Martínez Arteaga,27,M,Pueblo Bello,12,2023-11-10
+724,Julio Barrera,43,M,Arauca,5,2023-12-11
+725,Juan Javier Rodríguez Hernández,79,M,Suaita,10,2025-01-04
+726,Jorge Manuel Romero,51,F,Garagoa,17,2024-06-12
+727,John Bedoya Ocampo,68,F,San Felipe,5,2025-03-11
+728,Miller Fernando Blanco,58,M,San Sebastián de Buenavista,16,2024-07-31
+729,José Páez Beltrán,24,F,Girón,7,2024-01-12
+730,Kevin Mauricio Gutiérrez,21,M,Suárez,9,2023-06-25
+731,Nidia Erazo,75,M,Ariguaní,3,2023-06-14
+732,Humberto Pineda Hurtado,70,F,Tuta,15,2024-08-01
+733,Luz Polo Narváez,67,F,Viracachá,16,2023-11-30
+734,Santiago David Suárez Henao,62,F,Caicedonia,18,2024-07-20
+735,Cecilia Flórez,28,F,Ancuya,14,2025-04-10
+736,Armando Leonardo Guerra Vallejo,46,M,Duitama,3,2025-02-27
+737,Óscar Nicolás Zapata,73,M,El Molino,12,2023-07-16
+738,Luz Tatiana Londoño Alzate,53,M,Tangua,9,2024-03-27
+739,Javier Jaramillo Sierra,42,M,Pajarito,7,2024-08-15
+740,Diego Barrios,38,M,Tubará,9,2023-10-17
+741,Paola Sandra Vargas,78,F,Jerusalén,13,2025-01-10
+742,Paola Hernández Gutiérrez,74,M,Puerto Rico,18,2024-09-22
+743,Helena Núñez Moreno,53,M,Arroyohondo,5,2024-07-10
+744,Humberto Javier Gómez Ortiz,27,M,Acacías,13,2023-10-26
+745,Jorge Manrique,54,F,Tarso,4,2023-11-30
+746,Diego López,26,F,San Marcos,2,2023-06-13
+747,Judith Padilla,41,F,Capitanejo,16,2023-07-31
+748,Marina Ana Marín Vargas,52,F,Sucre,9,2024-03-07
+749,Eduardo Alberto Pérez,66,M,San Bernardo del Viento,9,2025-04-02
+750,Ronald Carvajal Valderrama,52,M,Baranoa,6,2024-08-30
+751,Piedad Andrea Cabrera Mejía,65,F,Paya,11,2024-12-08
+752,Andrés Cristian Blanco,53,F,Génova,1,2024-07-05
+753,Freddy Campo Castillo Muñoz,35,M,Teruel,4,2023-12-02
+754,María Vélez,66,M,Guatapé,13,2023-08-15
+755,Julián Luis Campo,56,F,Río Quito,13,2024-07-27
+756,José Roberto Gómez Morales,49,F,El Rosario,13,2023-09-03
+757,Flor Navarro Martínez,41,F,Cumbitara,2,2024-05-08
+758,Armando Cabrera Ortiz,40,F,Valledupar,9,2024-01-13
+759,Shirley Guzmán,79,M,Mesetas,8,2024-05-21
+760,Germán Juan López,49,M,Hacarí,7,2024-11-20
+761,Ana Buitrago,54,M,Alvarado,4,2025-06-02
+762,Estefanía Bonilla,29,F,San Miguel de Sema,18,2024-02-25
+763,Nelcy Ramos Giraldo,66,F,El Tarra,3,2024-02-12
+764,Lorena Stella Yepes Durán,72,M,Sotará Paispamba,6,2023-10-19
+765,Carmen Delia Cárdenas Díaz,30,M,Páez,12,2023-12-02
+766,Johana Ortiz Barrera,40,M,Valdivia,12,2023-11-26
+767,Teresa Rodríguez,42,M,Melgar,8,2023-09-01
+768,David Alejandro Mercado,52,F,Padilla,1,2023-06-20
+769,Óscar Ariel Gutiérrez,58,M,Cunday,4,2025-05-12
+770,Claudia Mercedes Jaimes,47,M,Firavitoba,11,2024-04-02
+771,Leonardo Jhon Restrepo,34,M,Nuquí,3,2023-09-28
+772,Leonor Álvarez,66,M,Guachucal,13,2024-02-04
+773,Carlos Sergio Hernández,79,M,Argelia,17,2023-12-03
+774,Alejandro Aguirre,37,M,Páez,10,2025-01-01
+775,Yeison Rentería,65,M,Yumbo,12,2024-10-13
+776,Humberto González,42,F,Tinjacá,15,2025-04-29
+777,Diego Wilfredo Vega,39,F,San Juan de Urabá,10,2024-04-01
+778,Daniela Alejandra Arias Buitrago,30,F,Copacabana,14,2024-05-08
+779,Marcela Arrieta,76,F,Nátaga,13,2023-08-08
+780,Luz Leonor Flórez Reyes,36,M,La Playa,5,2024-05-13
+781,Fernando Pedro Gaviria,66,F,La Capilla,6,2023-08-27
+782,María Amelia Delgado Rodríguez,53,F,Ataco,2,2023-11-07
+783,Myriam Elsa Martínez,29,M,Charta,17,2025-04-20
+784,Luis Jorge Pinzón,78,M,Giraldo,4,2025-05-04
+785,Enrique Hernández Martínez,58,F,Los Córdobas,14,2024-07-17
+786,Alejandro Gustavo Gómez López,36,F,Planeta Rica,10,2024-07-12
+787,Elena Paola Ballesteros Torres,29,M,Cali,3,2025-01-22
+788,Judith Delgado Bohórquez,26,F,Mongua,3,2023-11-14
+789,José Fernando García,24,M,Tame,15,2023-10-27
+790,Pablo Mario García,45,M,Prado,6,2024-03-24
+791,Magaly Carrillo,31,M,Enciso,17,2024-01-21
+792,Karen Mena,48,M,Providencia,12,2024-10-26
+793,Patricia Katherin Núñez Pérez,69,F,Peñol,11,2024-06-14
+794,Juan Rojas,36,M,Santa Cruz de Mompox,4,2023-09-21
+795,Julio López,75,M,El Dovio,6,2024-11-04
+796,Fabio Jesús Sánchez,64,F,Hato Corozal,1,2024-08-11
+797,Liliana Stella Hoyos Flórez,33,M,Algarrobo,16,2023-11-07
+798,Alicia Luz Velasco,70,F,Pueblorrico,15,2023-10-30
+799,Carmen Peña,22,F,Guadalupe,17,2025-01-20
+800,Nayibe Ospina,52,F,La Gloria,8,2024-04-24
+801,María Camacho Niño,29,M,Neira,12,2025-02-22
+802,Paola Sánchez Morales,42,F,Samacá,10,2025-02-19
+803,Abel Juan Pérez López,69,F,Guática,15,2023-11-29
+804,Valentina Arias,76,M,Versalles,9,2024-04-27
+805,Andrea Inés Gómez,38,F,Arauca,2,2024-03-05
+806,Paula Lorena Torres,53,F,Yacuanquer,5,2024-09-29
+807,Liliana Mosquera,70,F,Anorí,6,2024-02-14
+808,Santiago Caicedo,40,F,Coveñas,7,2024-01-14
+809,Deyanira Mesa,33,F,La Esperanza,1,2023-08-10
+810,Rodolfo Bautista Monroy,74,M,Puerto Libertador,7,2025-03-29
+811,Norma Hernández Quintero,56,F,Tesalia,12,2025-04-23
+812,Hugo Alexis Ardila,62,F,El Castillo,16,2024-01-30
+813,Luis Carlos Alzate,70,M,Paicol,16,2025-02-05
+814,Andrés Benavides Torres,59,M,Yolombó,11,2024-02-29
+815,Walter Danilo Arias,75,M,Entrerríos,4,2024-08-30
+816,Sebastián Luis Castaño,56,F,San Jacinto,13,2025-02-10
+817,María Sandra Ramos,31,M,Galapa,7,2024-11-01
+818,Blanca Garcés Moreno,48,F,Supía,4,2023-12-22
+819,Gustavo Marlon Figueroa Hernández,75,F,San Vicente de Chucurí,15,2023-12-08
+820,Tatiana Guerrero,22,M,Santa Cruz de Mompox,19,2024-09-18
+821,Jennifer Esperanza Castro Miranda,52,M,Samacá,9,2025-03-16
+822,María Esperanza Gutiérrez,40,F,Pácora,11,2024-08-03
+823,David Javier Gaviria Quintero,46,M,Distracción,8,2024-01-03
+824,Milena Elisa Arenas Aguirre,60,F,Cumaral,1,2024-01-04
+825,Robinson Ocampo Leal,28,M,Tunja,8,2023-07-08
+826,Angie Lina Londoño Ramírez,35,M,Villa de San Diego de Ubaté,13,2023-12-07
+827,Juan Edgar González Ángel,64,M,Abejorral,4,2024-01-28
+828,Geraldine Becerra,29,F,Galeras,8,2024-06-30
+829,Esther Elena Arévalo,26,M,Rovira,3,2025-04-25
+830,Tatiana Astrid Martínez García,27,F,San Agustín,9,2024-09-02
+831,Luis Leonardo Torres Peña,75,F,Chivatá,2,2025-04-24
+832,Claudia Sánchez Valencia,61,F,Fosca,2,2023-06-29
+833,Johana Cecilia Rodríguez,34,F,Santo Domingo,13,2023-10-31
+834,Adriana Díaz Hurtado,78,M,Guamal,15,2023-07-05
+835,Rafael Arturo Vargas Silva,55,F,Villanueva,12,2024-07-26
+836,Alberto Pineda,24,F,San Pablo de Borbur,4,2023-09-22
+837,Anderson Castrillón Rubio,63,M,Concordia,8,2024-02-29
+838,María Cárdenas,30,F,Neiva,9,2024-04-15
+839,Eduardo William Jiménez,57,M,Gómez Plata,5,2024-03-21
+840,Ruby María Camargo Gómez,59,F,La Pintada,18,2023-10-07
+841,Leonardo Sánchez,26,M,Topaipí,11,2024-04-01
+842,Edilberto Pablo Garzón,67,F,Samaniego,15,2023-08-19
+843,Carlos Jonathan Rodríguez Vargas,44,M,Zambrano,9,2023-08-11
+844,Elizabeth Margarita Lara Ríos,75,F,Pedraza,17,2023-09-08
+845,David Fernando Rodríguez Álvarez,19,F,Samaná,12,2024-04-02
+846,Eduardo Jairo Ojeda Cardona,22,M,Palestina,7,2024-05-09
+847,Andrés Cardona Bonilla,46,M,Morales,10,2024-03-13
+848,Antonio David Caicedo Pérez,54,M,Labranzagrande,10,2025-05-13
+849,Jesús Mario Acosta González,55,M,San Martín de Loba,13,2025-05-22
+850,Dayana Pérez Martínez,36,F,Alpujarra,19,2023-09-12
+851,Karen Andrea Hurtado,25,F,La Apartada,11,2025-03-25
+852,Andrés Fernando Arboleda Alarcón,65,M,Marsella,13,2024-03-24
+853,Maricela Paola Garzón Díaz,62,F,Pasca,8,2024-04-01
+854,Victoria Sanabria,18,M,Repelón,8,2025-05-11
+855,Mauricio Caballero,39,M,Ariguaní,4,2023-09-29
+856,Tatiana Bolaños Silva,69,F,Guateque,15,2024-03-23
+857,Laura Astrid Sierra,34,F,Puerto Nariño,11,2025-04-04
+858,Teresa Ximena Ariza Álvarez,24,F,Mongua,11,2025-01-07
+859,Leonardo Castillo Torres,42,F,Aratoca,1,2024-11-05
+860,Juan Antonio Bohórquez,62,F,Chinchiná,17,2024-03-04
+861,Paola Tovar,21,F,Buriticá,15,2023-07-27
+862,Óscar Jesús Restrepo,53,F,Liborina,6,2025-03-20
+863,Mónica Ruiz Becerra,23,M,La Unión,15,2025-03-30
+864,Esther Laura Beltrán,77,M,El Castillo,9,2024-07-19
+865,Hernando Molano Martínez,48,M,Pasto,14,2025-04-06
+866,Janneth Natalia Naranjo,36,M,Caloto,18,2023-06-30
+867,Diana Cárdenas Navarro,78,M,Matanza,17,2025-04-09
+868,Alexander Rodríguez,61,F,Cómbita,18,2025-02-01
+869,Diego David Marín Hurtado,71,M,Cachipay,5,2024-06-02
+870,Isabel Figueroa Espinosa,56,M,Nunchía,9,2024-02-13
+871,Jader Cristian Guerrero Pérez,44,M,Almaguer,11,2024-01-31
+872,Pedro Herrera Chacón,27,M,Filandia,1,2025-05-04
+873,Teresa Bohórquez,43,M,La Sierra,18,2024-01-31
+874,Leidy Martínez,36,M,El Bagre,6,2024-01-30
+875,Lilia Elizabeth Quintero,56,M,Pachavita,2,2024-09-18
+876,María Jiménez,79,F,Pedraza,15,2025-04-27
+877,Lina Jimena Gallego Gómez,20,F,Panqueba,14,2024-12-13
+878,Edwin Andrés Carrillo Moreno,62,M,La Victoria,5,2025-03-05
+879,Alexander Manuel Ibarra Mesa,30,F,Maicao,6,2025-01-01
+880,Luz Mariana Estrada Nieto,67,F,Padilla,6,2025-04-20
+881,María Nancy Villamil Sarmiento,45,F,Luruaco,18,2025-02-01
+882,Milena Gutiérrez,79,F,Pailitas,14,2023-07-21
+883,Mary Margarita Pineda Herrera,75,M,La Apartada,10,2025-05-03
+884,Clara Acosta Pabón,37,F,Caldas,14,2024-01-11
+885,Rosa Cifuentes Parra,45,F,Falan,13,2024-04-23
+886,María Lorena Aguirre Gómez,25,F,Hatillo de Loba,3,2023-08-22
+887,Luis Alberto Murillo Castillo,78,M,Jericó,6,2024-06-20
+888,Johana Burgos,58,M,Puerto Triunfo,8,2023-07-15
+889,Henry Orlando Mosquera,56,M,Gachalá,12,2025-01-29
+890,Constanza Cruz,18,M,Repelón,13,2024-12-07
+891,Hernán Andrés Vega,20,M,Vistahermosa,11,2023-07-29
+892,Aida Nidia García Vásquez,30,M,Guapi,12,2024-01-31
+893,Lizeth Luz González,45,M,Gachantivá,1,2025-03-15
+894,Jairo Moreno,79,F,Pamplonita,17,2025-05-20
+895,Paola Tatiana Díaz,74,F,Fuente de Oro,16,2025-05-17
+896,Ferney Brayan Osorio,77,F,Guamal,11,2024-04-10
+897,Gustavo Cardozo,66,M,Francisco Pizarro,13,2025-01-25
+898,Carolina Ana Caro Herrera,42,M,Carepa,18,2023-08-05
+899,Dora Diana Sánchez Villamil,73,M,Lorica,11,2024-12-29
+900,Maira García,50,M,Mosquera,12,2024-03-18
+901,Yeimy Diana Sánchez,55,M,Guaduas,6,2023-08-17
+902,Andrés Mateo Durán Rodríguez,70,F,San Benito Abad,9,2024-09-27
+903,Claudia Patricia González Cantillo,23,F,San Marcos,16,2023-09-20
+904,Fernando Meza Bermúdez,75,M,Taraira,4,2024-03-22
+905,María Torres Castañeda,61,M,Apartadó,3,2024-02-13
+906,Mariela Lorena Agudelo Torres,62,M,Bojayá,16,2023-10-12
+907,Arturo Cardona,49,M,Campo de la Cruz,12,2025-02-02
+908,Alfonso Javier Vásquez González,62,F,Puerto López,11,2025-04-12
+909,Leidy Ramírez Vanegas,78,M,Villagómez,5,2025-01-02
+910,Beatriz Contreras,64,M,Pana Pana,18,2023-09-20
+911,Adolfo Alberto Hernández García,38,M,Rionegro,19,2025-01-14
+912,José Juan Vargas Pinzón,33,M,Copacabana,6,2025-04-13
+913,Diana Espinosa Álvarez,71,F,Barrancominas,18,2025-05-11
+914,María Rubiela Pérez,38,M,Timbiquí,6,2024-08-30
+915,Alberto Parra Duque,28,M,Gámbita,4,2024-08-26
+916,Nelson Garzón Rivera,77,F,San Sebastián,12,2025-03-13
+917,Juana Claudia Ramírez Peña,54,F,Fredonia,19,2024-04-03
+918,José Ricardo Jiménez Serrano,53,F,Quinchía,2,2024-11-21
+919,Claudia Luz Suárez Valencia,52,M,San Jerónimo,17,2023-12-25
+920,Santiago Diego Mora Sandoval,36,M,Nóvita,11,2025-04-23
+921,Sandra Bernal Granados,37,F,Tipacoque,11,2025-04-06
+922,John Páez,74,F,Repelón,16,2024-05-29
+923,Alexander Andrés Fonseca,35,F,Gamarra,2,2024-10-20
+924,Mario Camilo Narváez,64,F,Nunchía,2,2023-07-21
+925,Jesús Gómez Bedoya,58,F,Guataquí,8,2025-04-17
+926,Liliana Páez Cantillo,66,F,Purísima de la Concepción,13,2024-06-02
+927,Andrés García Navarro,31,M,Herrán,10,2023-08-02
+928,Eduardo Alberto Rodríguez Ramos,32,M,Marinilla,8,2024-03-12
+929,Yolima Amaya,48,M,San Antonio,4,2023-11-07
+930,Steven Alexander Montes,18,F,Samaná,15,2024-08-12
+931,Martha Aida Sánchez García,70,F,Morroa,1,2023-08-16
+932,Amparo Ruby Salcedo,71,F,El Carmen de Chucurí,11,2023-11-20
+933,Milena Sofía Contreras Rodríguez,71,F,Baraya,7,2024-01-27
+934,Nubia Suárez González,20,F,Teorama,17,2024-10-27
+935,Catalina Erika Torres Montenegro,33,F,Miranda,18,2024-06-28
+936,Enrique Gómez Hoyos,40,M,Belén,12,2024-03-13
+937,Javier Pérez,74,M,San Andrés de Tumaco,9,2024-11-18
+938,Leidy Pacheco,28,F,Morelia,5,2025-01-14
+939,Maribel Flor Vásquez Mendoza,29,M,Ataco,10,2024-07-18
+940,Andrés Ibarra Quintero,27,F,Gualmatán,4,2023-08-28
+941,Elizabeth Inés Moreno,49,M,Casabianca,5,2024-02-07
+942,Sara Nubia Duarte Ortiz,33,F,Santiago,10,2023-07-19
+943,Andrés Mauricio Díaz,25,F,El Peñón,11,2024-04-12
+944,Mariela Álvarez,55,M,Vegachí,10,2024-03-30
+945,Vanessa Restrepo Salas,29,M,Tauramena,8,2024-11-29
+946,Fredy Restrepo Meneses,41,F,Sardinata,2,2024-06-06
+947,Adriana Rubio Moreno,45,F,Magüí,8,2024-10-11
+948,Paola Muñoz,70,M,San Martín de Loba,16,2024-03-24
+949,Henry Hernández,25,M,Sutatenza,5,2025-01-24
+950,Erick Acevedo,75,F,Riohacha,3,2024-12-23
+951,Fernanda Pérez,45,M,Galapa,12,2024-08-01
+952,Betty Carolina Rubio Galvis,53,F,Tipacoque,13,2023-08-10
+953,Patricia Luz Cerón Benítez,43,F,La Paz,13,2024-07-14
+954,Milena Gabriela Ramírez,25,F,Mesetas,10,2023-11-08
+955,Angélica Cristina Barreto Rivas,75,F,Choachí,4,2023-06-16
+956,Angélica Betty Ramos Mendoza,77,M,Arenal,9,2024-06-24
+957,Lucy Yamile Ramírez Torres,67,M,Aguadas,2,2024-12-21
+958,Lucía Elvira Gutiérrez Calderón,45,M,Nariño,19,2024-04-02
+959,Anderson Herrera Mendoza,45,M,Hatillo de Loba,1,2024-06-02
+960,Leonardo Raúl García,54,M,Concordia,7,2024-07-28
+961,Alonso Álvarez,58,M,Macaravita,17,2024-09-09
+962,Angélica Pilar Gamboa,53,M,Puerto Salgar,3,2024-07-12
+963,Alejandra Aguirre Patiño,44,F,Sabana de Torres,3,2024-01-24
+964,Andrés David Reyes,71,M,Caldono,3,2025-03-20
+965,César Villamizar,34,M,Uribe,17,2023-07-24
+966,Rafael Hernández Escobar,26,F,San Sebastián,7,2025-04-09
+967,Edith Edith Flórez Chaparro,50,M,San José del Fragua,14,2024-04-08
+968,Laura María Pineda,70,M,Guatapé,17,2024-07-06
+969,Elizabeth Martha González Muñoz,37,F,Toledo,18,2024-01-09
+970,Blanca Enith Arias García,30,M,Malambo,13,2023-09-15
+971,Cecilia Isabel Barreto Peña,45,M,Suratá,18,2023-07-17
+972,Patricia Castellanos Salcedo,65,M,Tibasosa,4,2024-12-02
+973,Lucía Cecilia Calderón Acevedo,46,F,Tasco,1,2025-01-29
+974,Rosa Yohana Díaz,30,M,Fortul,18,2023-07-19
+975,Karen Córdoba,63,M,Yarumal,1,2024-03-09
+976,Hermes Néstor Castro Jiménez,52,F,Yalí,13,2025-06-02
+977,Gustavo Palacios,78,M,Distracción,10,2023-12-29
+978,Laura Montes López,23,F,Piamonte,11,2023-10-10
+979,Adolfo Benavides Ramírez,35,F,Rionegro,9,2025-02-21
+980,Elmer Alberto Soto Marín,68,M,Puerto Alegría,9,2024-07-09
+981,Sofía Arenas Herrera,22,F,Río de Oro,5,2024-11-19
+982,Manuel César Rojas Mejía,64,F,Taraira,1,2024-01-31
+983,Pablo Enrique Díaz,42,M,El Litoral del San Juan,17,2024-02-11
+984,Judith Ardila Rodríguez,19,F,Une,2,2025-01-11
+985,Luis Álvarez Pérez,27,F,Medio Atrato,13,2024-09-19
+986,Jorge Giraldo Velásquez,73,M,Medio Atrato,9,2024-09-13
+987,María Ibarra,47,M,Juan de Acosta,4,2024-01-12
+988,Consuelo Zapata Bonilla,67,M,Pueblo Rico,5,2024-07-26
+989,Carlos Cardozo Tovar,76,F,Manaure Balcón del Cesar,11,2023-11-13
+990,Carlos Hernández Riascos,62,M,Alpujarra,19,2025-05-25
+991,Norberto Quintero Figueroa,22,F,Ibagué,3,2024-11-15
+992,María Ana Romero Pacheco,72,F,Santa Rosa,12,2024-06-15
+993,Julio Espitia,73,F,San Onofre,19,2023-08-22
+994,Jennifer Dolores López,50,F,Corozal,19,2023-09-28
+995,Cecilia Gómez,71,F,Talaigua Nuevo,13,2024-08-27
+996,Daniela Blanca Gómez Álvarez,18,F,El Tambo,7,2024-11-29
+997,Juan Gómez,35,F,Mosquera,15,2024-04-13
+998,Liliana Francy Ramírez,49,M,El Rosal,7,2025-01-02
+999,Andrés Kevin Quintero Cerón,64,M,Agustín Codazzi,8,2024-04-26
+1000,María Aida Acosta,66,F,Barranco de Loba,5,2023-11-14
+1001,José Pérez,28,F,Peque,14,2025-02-28
+1002,Carmen Lara Acosta,38,M,Maripí,4,2024-12-30
+1003,Ramiro Fabián Rentería,43,F,Puerto Nare,10,2023-08-16
+1004,Martha María Cruz,42,M,Galeras,15,2025-06-01
+1005,Juan Ronald Serna,39,M,Sáchica,18,2025-01-16
+1006,Alejandra Moreno,76,M,Totoró,13,2023-12-24
+1007,Antonio Marino Rodríguez,44,F,Cumaral,8,2024-04-20
+1008,Jhon José Gómez,66,F,Sativanorte,9,2025-04-16
+1009,Alex Lozano,30,M,Manta,16,2023-10-09
+1010,Luz Sánchez Niño,50,M,Córdoba,19,2023-06-26
+1011,Dagoberto Torres Buitrago,51,M,Talaigua Nuevo,16,2024-12-16
+1012,Carmen Morales Carrillo,58,M,Repelón,7,2025-04-29
+1013,Carlos Sandoval,52,M,Santa Bárbara,14,2024-01-27
+1014,Antonio Brian Vargas Sanabria,18,F,Cajibío,14,2025-05-13
+1015,Patricia Suárez Narváez,38,M,Ciénaga,4,2024-06-26
+1016,Tatiana Ayala Moreno,65,F,Honda,15,2025-01-19
+1017,Elizabeth Valderrama Álvarez,72,M,Sabanalarga,3,2024-07-17
+1018,Myriam Lucía García Barragán,23,F,Montenegro,5,2024-06-23
+1019,Jorge Jhon Rengifo Parra,45,F,El Carmen,1,2023-06-21
+1020,Juan Augusto Trujillo,34,F,San Alberto,3,2023-10-28
+1021,Adriana Martha Durán Tovar,22,F,Albania,15,2023-07-04
+1022,Alfonso Giraldo Castro,48,F,Jordán,8,2023-09-13
+1023,Vanessa Pardo,22,F,Plato,4,2024-10-25
+1024,Felipe Jairo Rico,55,M,Topaipí,2,2023-12-14
+1025,Leydi Carvajal,20,F,Flandes,10,2024-07-25
+1026,Luz Gómez Díaz,70,M,Zarzal,4,2025-04-28
+1027,Camilo Gutiérrez,40,F,Simití,3,2023-07-20
+1028,José Alexis Ruiz Alzate,54,F,Siachoque,2,2025-01-17
+1029,Luis Freddy Narváez,70,M,Barranca de Upía,17,2024-06-23
+1030,Milena Quiroga Peña,54,F,La Chorrera,13,2024-08-30
+1031,Blanca Carmen Posada,27,M,Guavatá,5,2025-01-13
+1032,Alfonso Carlos Guevara Ortiz,27,M,Leiva,9,2025-02-26
+1033,Alexander Ordóñez,36,M,Arcabuco,6,2024-06-26
+1034,Armando Suárez,34,M,Leticia,5,2023-10-23
+1035,Johana Estella Bastidas Cantillo,38,F,Santa Rosa de Osos,10,2023-12-21
+1036,Enrique Andrés Jiménez Acosta,31,F,Taraira,8,2023-08-27
+1037,Miriam Guerra,26,M,Coromoro,7,2025-04-13
+1038,Angie Dora Posada,63,F,Charta,7,2024-11-06
+1039,Pedro García González,18,F,Campohermoso,6,2024-06-16
+1040,Carlos Segundo Hernández Rivas,68,M,Suaza,3,2025-05-19
+1041,Maritza Cruz,62,F,Monguí,19,2024-10-22
+1042,Gabriel Campo,30,M,Mallama,15,2023-07-29
+1043,Carlos Eliecer Rodríguez,21,M,Guatapé,4,2023-07-19
+1044,Yaneth María Cuesta Cortés,79,F,Maní,12,2024-05-12
+1045,Cristina Sandoval,18,F,Tocancipá,6,2025-02-11
+1046,Gloria Derly Andrade,66,F,Guaitarilla,19,2025-04-08
+1047,Ramón Ruiz Martínez,57,M,El Carmen de Viboral,4,2024-11-14
+1048,Melissa Orozco Arrieta,49,M,Neiva,15,2023-11-08
+1049,Orlando Luis Ríos,51,F,Funza,9,2023-10-14
+1050,Claudia Andrea Guerrero Zuluaga,45,F,Ariguaní,5,2025-06-01
+1051,Enrique Reyes Mejía,48,F,Somondoco,13,2023-08-21
+1052,Carlos Salamanca,25,F,Providencia,18,2023-08-02
+1053,Vanessa Victoria Montoya Arango,56,M,San Antonio del Tequendama,5,2025-03-24
+1054,Natalia Yéssica Buitrago Sepúlveda,43,F,Flandes,16,2024-04-02
+1055,Aura Rodríguez,75,M,Moñitos,19,2024-04-15
+1056,Leidy Gaviria,51,M,Silvania,14,2024-12-22
+1057,Enrique Henry Bermúdez,71,F,Guayabal de Síquima,16,2024-06-11
+1058,Javier Correa Vargas,71,F,Arboledas,15,2024-12-02
+1059,Laura Morales,20,F,Nuquí,4,2024-11-23
+1060,José Ordóñez,76,M,Solita,7,2024-12-18
+1061,Óscar Cardona Jaramillo,67,F,Vegachí,16,2024-10-24
+1062,Ofelia Liliana Aguilar,29,F,Concordia,8,2024-05-07
+1063,Bibiana Liliana Cruz,18,M,Cuítiva,17,2024-07-17
+1064,Sandra Pabón,71,F,Suaza,16,2023-06-18
+1065,David Vanegas,61,M,Iles,10,2024-07-24
+1066,Sonia Andrade Restrepo,22,F,Sitionuevo,10,2024-02-29
+1067,Sandra Silvia Vargas,47,M,Cabrera,2,2024-08-22
+1068,Antonio Moreno,47,F,Zona Bananera,9,2024-08-01
+1069,Anyi Bustamante,76,F,San Francisco,17,2024-10-24
+1070,Luis Serna Ortiz,74,M,Ricaurte,11,2023-10-18
+1071,Felipe Daniel Rodríguez,34,M,Santana,10,2023-11-20
+1072,Yenny Karina Fuentes,65,F,El Roble,17,2023-10-12
+1073,Cristina Rincón,64,M,El Carmen de Bolívar,4,2025-04-26
+1074,Jhon Sandoval Gallego,40,M,La Jagua del Pilar,16,2025-05-26
+1075,Adriana Becerra Salazar,32,M,Santa María,15,2024-01-06
+1076,Amparo Marina Ordóñez Correa,54,M,Belén,5,2024-12-24
+1077,Fernanda Díaz,38,F,Valparaíso,6,2025-02-05
+1078,Jorge Polo Cabrera,31,F,Puerto Leguízamo,17,2023-11-18
+1079,Cecilia María Molina,19,M,Cunday,1,2023-06-26
+1080,Francisco Ernesto Guerrero,28,M,Unión Panamericana,19,2025-02-22
+1081,Olga Nidia Hernández,68,M,Turbaco,4,2025-01-11
+1082,Guillermo Rodrigo Ballesteros Londoño,56,M,Olaya,17,2024-12-31
+1083,Ximena Marina Ávila Torres,55,F,Soplaviento,9,2023-10-04
+1084,Nicolás Estiven Barbosa,77,F,Tota,2,2025-04-24
+1085,Alexis Gregorio Prieto Trujillo,51,M,Ariguaní,8,2024-04-08
+1086,Victoria Ramírez Niño,55,M,Itagüí,15,2024-12-03
+1087,Luz Carmen Escobar,67,M,Soledad,7,2024-02-20
+1088,José Jairo Pérez,51,F,Santa Sofía,6,2024-08-20
+1089,Patricia Gutiérrez,35,M,Támara,1,2024-03-04
+1090,Alejandra Ordóñez Bermúdez,47,F,Aranzazu,15,2025-03-09
+1091,Fredy Aldair Giraldo,32,M,Mallama,7,2024-05-12
+1092,Susana Sonia Alvarado,44,F,Campoalegre,17,2024-10-20
+1093,Josefina Mantilla,68,M,Ricaurte,2,2025-05-20
+1094,Juan Barrios Murillo,51,F,San José del Palmar,9,2024-12-01
+1095,Pablo Camacho,69,M,Sácama,9,2023-11-05
+1096,Verónica Yina Hurtado,74,M,Condoto,13,2024-07-20
+1097,Mauricio Molina Londoño,55,M,Apía,6,2025-01-26
+1098,Martha Uribe Gutiérrez,50,F,Yopal,6,2024-07-28
+1099,Alfonso Fabio Rodríguez,41,M,Santiago,3,2023-06-25
+1100,Gloria Alicia Tovar Ortega,32,F,San Estanislao,17,2025-04-03
+1101,Luis Alvarado,77,F,Dolores,17,2024-06-30
+1102,Zoraida Ávila Vallejo,47,M,San José de Cúcuta,12,2025-01-05
+1103,María Patiño,72,M,La Victoria,16,2023-06-23
+1104,Antonio Vega,59,M,López de Micay,15,2024-04-22
+1105,Nancy Ofelia Gómez,68,F,San Jacinto del Cauca,13,2023-07-08
+1106,Diana Claudia Castillo,34,M,El Peñón,1,2024-12-22
+1107,Julián Acosta,22,F,Sabanalarga,17,2024-11-11
+1108,Carlos Rodríguez Hoyos,46,F,Castilla la Nueva,3,2023-09-10
+1109,Yamid Díaz Pérez,21,M,Alejandría,15,2024-03-12
+1110,José Romero Morales,27,M,Cartagena de Indias,4,2024-09-22
+1111,Germán Gerardo Muñoz,73,M,Lloró,4,2023-11-08
+1112,David Javier Quiroz,34,M,Arroyohondo,18,2024-12-31
+1113,Andrés Olaya,27,M,Quibdó,17,2025-03-31
+1114,Enrique Camargo Martínez,34,M,Ovejas,19,2024-03-05
+1115,Claudia Ortiz,77,F,Tunja,11,2024-11-19
+1116,Cecilia Betancur,37,F,El Rosario,3,2025-03-07
+1117,Steven Luis Caballero Ardila,41,F,Betania,8,2023-12-12
+1118,María Martínez Rojas,22,M,Guadalupe,14,2023-06-18
+1119,Pablo Medina Gutiérrez,51,F,Buenaventura,1,2025-03-14
+1120,Edwin Rodríguez Reyes,23,F,Orito,14,2025-02-18
+1121,Daniela María Bustamante Giraldo,70,F,San Pedro,2,2025-01-26
+1122,David Fernando Flórez,19,F,Remedios,4,2024-01-02
+1123,James Orozco Perea,30,F,La Jagua del Pilar,19,2023-09-04
+1124,Guillermo Ávila,79,M,Ulloa,6,2023-08-07
+1125,Esther María Monroy Camacho,60,M,Sativasur,1,2024-06-12
+1126,Cristina Gaviria Rodríguez,60,F,Pácora,17,2024-07-28
+1127,Sofía Mejía,65,F,Villanueva,8,2024-07-08
+1128,Marcela Angulo,28,F,Sucre,19,2023-07-12
+1129,Marcela Galindo,68,M,Barbacoas,1,2024-03-10
+1130,Maritza María Castro Sánchez,64,M,El Águila,5,2023-09-01
+1131,Rosario Angulo,74,F,Santa Rosa,16,2024-02-11
+1132,Gloria Daza León,40,M,Apartadó,6,2024-07-18
+1133,Franklin Portilla Bohórquez,72,M,Policarpa,8,2024-01-13
+1134,Rubén Adolfo Carrillo,33,F,Cumaribo,13,2024-12-12
+1135,Javier Emiro Torres,48,M,Agrado,16,2024-01-06
+1136,Jazmín Bolívar,28,M,Socorro,3,2023-07-25
+1137,Liliana Martínez,71,F,Andes,19,2024-12-20
+1138,Santiago Franco Mendoza,33,M,Pasca,12,2024-07-04
+1139,Deisy Alvarado Duarte,25,M,Herveo,16,2024-03-28
+1140,María Marlene Parra Meza,21,F,Imués,11,2025-04-07
+1141,Raúl Padilla Ramos,57,M,Magüí,10,2024-11-06
+1142,Carlos Orjuela Díaz,21,M,Socotá,4,2024-02-16
+1143,Magdalena María Posada Delgado,73,F,Barrancominas,12,2024-08-08
+1144,Luz Jennifer Vanegas Agudelo,42,F,Distracción,2,2024-09-26
+1145,Teresa Valencia,20,F,Samaná,19,2023-08-18
+1146,Mauricio Calderón Herrera,49,M,Suaza,5,2024-05-12
+1147,Gabriel Hernández,20,F,Riohacha,8,2024-05-30
+1148,Daniela Ingrid Villa,44,M,Villanueva,7,2024-05-23
+1149,Edwar Castañeda,46,F,Mahates,14,2024-01-17
+1150,Diana Caro Montenegro,49,M,Morales,3,2025-05-26
+1151,Arley López,67,F,Túquerres,18,2024-12-04
+1152,Rafael Alexander Bolívar,78,F,Oicatá,16,2024-12-11
+1153,Victoria Palacios Jaramillo,75,F,Cumaral,19,2025-05-12
+1154,Andrés Orlando Andrade,68,F,Floresta,19,2025-04-10
+1155,Enrique José Luna Martínez,36,M,Salamina,18,2024-02-18
+1156,Miguel Gutiérrez,38,F,Tunja,16,2024-12-26
+1157,María Luz Villamizar López,22,F,Santo Tomás,8,2025-03-28
+1158,Harvey Luis Muñoz Torres,35,M,Simacota,1,2023-07-01
+1159,Jaider González Mosquera,45,F,Amalfi,17,2023-10-06
+1160,José Jorge García,59,M,Samaniego,12,2023-09-25
+1161,Esperanza Torres Campo,78,F,Fusagasugá,11,2023-12-23
+1162,Gustavo Camilo Vega Buitrago,39,F,Ginebra,5,2024-08-02
+1163,Cecilia Milena Rodríguez Muñoz,38,F,Aratoca,12,2024-11-13
+1164,Jonathan Velasco,23,M,Providencia,17,2024-09-27
+1165,Angie Vélez Torres,18,F,Caramanta,6,2024-01-12
+1166,Laura Margarita Restrepo Jiménez,22,F,El Retén,1,2024-06-18
+1167,Fredy Niño,58,F,Suesca,5,2024-07-01
+1168,Jesús Rendón Martínez,29,M,Amalfi,14,2023-07-05
+1169,Socorro Rendón Trujillo,43,M,La Llanada,5,2025-02-03
+1170,Edwin Caicedo,63,F,Tesalia,1,2024-05-08
+1171,Esperanza Edith Bautista,51,M,Candelaria,18,2024-03-17
+1172,Esteban Eduardo Gil Camacho,66,F,San Jacinto del Cauca,16,2024-06-07
+1173,César Edwin Trujillo Aguirre,31,F,Silvia,9,2024-01-11
+1174,Janeth Bibiana Carrillo,43,F,Sesquilé,19,2024-01-14
+1175,Victoria Pérez,62,F,Silvia,5,2024-03-02
+1176,Stella Morales,44,F,Río Iró,2,2025-01-20
+1177,Nancy Oviedo,26,F,Sipí,15,2025-03-09
+1178,Kelly Cardona,43,F,Yopal,7,2023-09-13
+1179,Yésica Guerrero,74,M,El Carmen de Viboral,4,2024-10-07
+1180,Gloria Sandra Correa Agudelo,64,M,Sardinata,1,2023-07-13
+1181,Lucero Esther Henao Andrade,74,M,Puerto Berrío,13,2023-08-06
+1182,Paola Rodríguez Vallejo,39,M,Nocaima,7,2023-07-23
+1183,Andrea Ana Gómez Cárdenas,64,M,Puerto Parra,15,2025-03-31
+1184,Beatriz Esther Jiménez,73,M,Piedras,14,2023-07-31
+1185,Vanessa Karen Ríos,47,M,Ubaque,19,2023-12-29
+1186,Antonio Garzón,60,F,Fresno,18,2024-04-20
+1187,Jesús Villamizar,65,F,María la Baja,10,2025-03-07
+1188,Tania Laura Rojas Ariza,78,F,Coveñas,9,2024-05-03
+1189,Lorena Yaneth Ávila Rincón,34,F,San Vicente Ferrer,8,2024-06-20
+1190,Sofía Vásquez,43,M,Ciudad Bolívar,10,2024-09-02
+1191,Elena Jiménez,53,M,El Tablón de Gómez,17,2024-04-10
+1192,Sandra Mónica Torres,18,F,Valle del Guamuez,2,2024-10-17
+1193,Yesid Jorge Serna Muñoz,25,F,Bagadó,6,2024-10-11
+1194,Marlén Carmen Ospino Vanegas,66,M,Dagua,5,2025-05-01
+1195,Laura Mariela Rojas,52,F,Altos del Rosario,9,2025-02-26
+1196,Alberto Torres Quiroga,78,F,Cubará,5,2023-09-18
+1197,Claudia Marisol Campo Ramírez,69,F,Simití,18,2023-07-25
+1198,Ángela Patricia Herrera Álvarez,32,F,San Martín,9,2023-11-29
+1199,Leonor Ingrid Valencia López,64,M,Turbaco,17,2024-05-03
+1200,Nel Acosta Peña,73,F,El Roble,17,2023-11-07
+1201,Camilo Sánchez,39,F,Pradera,12,2024-06-12
+1202,Gabriel Guerrero Díaz,31,M,San José,7,2024-03-21
+1203,Esther Molano Obando,43,M,Vistahermosa,3,2024-03-19
+1204,Edwin Lozano,45,F,Anorí,10,2025-04-12
+1205,Camila Gladys Carrillo,40,M,Albania,2,2024-02-27
+1206,Esperanza López Yepes,31,F,Ciénega,3,2023-10-27
+1207,Daniela Silva,41,F,Támesis,16,2024-03-14
+1208,Yurany Luz Torres,19,M,La Apartada,2,2025-02-24
+1209,Alexandra Cárdenas,62,F,Bagadó,10,2024-06-30
+1210,Jesús Gutiérrez Vanegas,43,F,Sibaté,6,2023-08-15
+1211,Javier Junior Ríos,31,F,San Fernando,11,2025-05-03
+1212,Hugo Gutiérrez Mejía,76,F,Chita,7,2023-06-17
+1213,Diego Gómez García,73,M,Concordia,15,2023-11-09
+1214,César Andrés Corredor,68,M,Yacopí,6,2024-08-23
+1215,Laura Londoño,24,F,Toledo,9,2023-06-09
+1216,Sandra Muñoz,20,M,La Vega,12,2024-04-17
+1217,Daniela Álvarez Ramos,64,F,Sucre,19,2023-12-05
+1218,Candelaria Romero Vélez,40,F,Melgar,3,2025-06-01
+1219,Andrés Augusto Luna,63,F,Íquira,15,2024-11-12
+1220,Katherine Patricia Muñoz,60,F,Rioblanco,2,2024-10-18
+1221,Daniela Salazar Castañeda,64,F,Marsella,2,2024-06-13
+1222,Luis Faber Montoya González,77,M,Villa del Rosario,3,2024-04-25
+1223,José Morales Espinosa,62,F,Tópaga,6,2025-05-11
+1224,Amparo Buitrago,35,M,Apartadó,15,2025-02-24
+1225,Rafael Camilo Gómez,75,M,Altos del Rosario,10,2025-04-29
+1226,Juan Franco,55,F,Palmar de Varela,9,2024-06-27
+1227,Lucía Karen Torres Galvis,52,F,Bituima,1,2023-11-07
+1228,José Alexis Gómez,68,F,Santo Domingo,16,2023-09-23
+1229,Andrés Moreno Ángel,32,F,Tipacoque,6,2024-06-09
+1230,Smith Marín,42,F,Valparaíso,9,2024-12-04
+1231,Roberto Alejandro Cifuentes,72,M,Elías,4,2024-01-28
+1232,Karen Restrepo,54,F,Valencia,2,2024-10-18
+1233,Álvaro Hurtado Gil,45,F,Chinú,4,2024-10-20
+1234,Juliana Ángel,27,M,Cerrito,1,2025-05-28
+1235,Enrique Antonio Fonseca Martínez,56,M,Purificación,19,2023-06-24
+1236,Alberto Camilo Melo,74,F,Arauquita,10,2024-09-19
+1237,Miguel Carvajal Morales,34,M,Jesús María,15,2024-01-14
+1238,Andrés Jeison Ramírez Carrillo,56,F,González,19,2025-03-03
+1239,Lilian Pineda García,39,M,Sucre,16,2024-05-10
+1240,Juan Jesús Díaz Zapata,43,M,Guaitarilla,4,2024-01-21
+1241,Luis Cortés Bohórquez,79,F,Carmen de Apicalá,2,2023-08-12
+1242,Liliana Gutiérrez Castaño,61,M,Argelia,13,2023-07-01
+1243,Fernando Torres,42,M,Colosó,1,2025-04-27
+1244,Claudia Dary Escobar Torres,34,M,Piojó,17,2024-05-07
+1245,Rafael Torres,30,M,Arboledas,13,2024-08-24
+1246,Lina Lucila González Aguirre,37,M,Tangua,4,2024-03-11
+1247,Katherin Vargas Contreras,42,M,El Carmen,7,2025-03-14
+1248,Evelio Bohórquez,21,F,Puerto Caicedo,17,2024-09-15
+1249,Julia Sánchez,27,F,San Luis,9,2024-12-30
+1250,Patricia María Salgado Márquez,20,M,Cerro de San Antonio,4,2023-08-13
+1251,Manuel Torres Gómez,58,F,Miraflores,19,2023-07-12
+1252,Omar Juan Sánchez,62,F,Tutazá,1,2023-12-31
+1253,José Becerra,35,F,Gama,10,2025-03-13
+1254,Yury Mantilla,64,M,El Peñón,4,2025-02-08
+1255,Lina Ángela Álvarez Ordóñez,53,F,Segovia,9,2023-10-16
+1256,Gregorio Benavides,64,M,Uramita,13,2023-10-23
+1257,Carlos Jairo Sánchez,39,F,Tibirita,14,2024-03-18
+1258,Clara Garzón,51,M,Suratá,10,2023-08-08
+1259,Rubiela Campo,64,M,El Zulia,6,2024-04-18
+1260,Sandra Yolanda Hernández,25,F,Momil,16,2025-02-03
+1261,Magaly Lucía Caro Vargas,57,F,Leiva,6,2024-01-19
+1262,Óscar Ortiz Rangel,66,M,San Juanito,17,2023-09-24
+1263,Cecilia Chaparro Vanegas,61,F,Espinal,10,2024-09-07
+1264,Mariela Rivera,36,F,Caldas,18,2023-07-26
+1265,Claudia Rosario García,59,F,La Argentina,18,2024-01-06
+1266,Cecilia Hernández López,58,M,Chima,3,2024-10-26
+1267,María Diana Moreno Arias,54,M,El Retorno,15,2025-04-14
+1268,Daniel Sánchez,23,F,Baranoa,15,2023-11-26
+1269,John Tomás Ramírez,69,F,Tipacoque,4,2024-09-13
+1270,Betty Consuelo Jiménez Maldonado,43,F,Nueva Granada,9,2025-02-02
+1271,Alberto Edgar Santos Parra,51,M,Viterbo,19,2024-12-29
+1272,Constanza Lorena Torres Santos,76,M,Macaravita,17,2025-01-04
+1273,Adela Daza,73,F,La Estrella,11,2024-12-29
+1274,María Escobar,76,F,Rionegro,9,2023-08-08
+1275,Carlos Alexander Molina Castro,62,F,Santa Bárbara,10,2024-08-03
+1276,Gustavo Juan Camacho Salazar,23,F,Tierralta,18,2023-07-05
+1277,Fernanda María Chacón,54,F,Los Andes,13,2025-04-11
+1278,Alba Andrea Rodríguez Delgado,74,F,Puerto Leguízamo,8,2024-04-06
+1279,Esteban Calderón,50,M,Palmar,7,2023-06-11
+1280,Estiven Castro Villegas,70,F,Toribío,17,2024-06-14
+1281,Inés Martínez,39,M,Quípama,15,2025-04-21
+1282,Carmenza Emilce Herrera,38,F,Acevedo,15,2024-12-07
+1283,Jairo Carlos Ordóñez Luna,23,F,Betulia,1,2024-08-26
+1284,Víctor Nelson Bustamante Quintero,23,M,San José de Cúcuta,14,2025-05-04
+1285,Andrea Marín Martínez,72,M,Trujillo,5,2025-01-21
+1286,Betty Ángela Beltrán Serrano,65,M,Sogamoso,11,2024-11-10
+1287,Melissa Flórez,21,M,Suratá,16,2024-09-20
+1288,Jaime Rivas,47,F,Florencia,2,2023-07-15
+1289,William Adrián García,28,M,Barranca de Upía,8,2024-03-20
+1290,José Perea Mercado,79,F,Plato,11,2025-04-11
+1291,César Murillo,79,M,Guacarí,18,2025-02-16
+1292,Jhon Alfredo Morales Gómez,47,F,Santa María,3,2024-07-30
+1293,Alexander Carvajal Martínez,48,F,San Pedro,1,2024-03-29
+1294,Alicia Tatiana Suárez Giraldo,41,F,San Carlos de Guaroa,11,2024-02-01
+1295,Yadira Janeth Villa,72,F,La Unión,16,2024-10-15
+1296,Yulieth Hernández,26,F,Quipile,18,2024-07-21
+1297,Adriana Rojas,72,F,Río de Oro,16,2024-09-23
+1298,Eduardo Gabriel Carrillo,20,M,Pueblo Bello,10,2024-08-26
+1299,Karina Mejía Herrera,68,F,San Jerónimo,18,2024-05-14
+1300,Moisés Rincón Cortés,48,M,López de Micay,6,2024-08-31
+1301,Vanesa Ivonne Díaz Cárdenas,57,M,Garagoa,19,2024-08-26
+1302,Alba Vargas Villegas,54,F,Ábrego,4,2025-01-28
+1303,Paulina Olga Rodríguez Mercado,53,M,Pueblo Rico,13,2025-03-28
+1304,Adriana Ximena Sarmiento,41,F,Sora,14,2024-02-10
+1305,Jorge Carlos Fernández,48,M,Sáchica,3,2024-10-28
+1306,Fernando Carlos Ramos,23,F,San Andrés,10,2024-03-12
+1307,Marina María Guerrero,19,M,Silos,6,2024-07-10
+1308,Armando Miguel Vargas Garzón,37,F,Palocabildo,1,2024-08-10
+1309,Luis Alejandro Mendoza,45,F,Puerto Alegría,14,2024-12-01
+1310,Andrea Julieth Gutiérrez Agudelo,28,F,Santa Sofía,8,2024-06-20
+1311,Patricia María Rojas,21,F,Altamira,19,2024-11-21
+1312,Fabián Alonso Valencia,32,M,Linares,14,2023-07-31
+1313,Nubia Niño Espitia,23,F,San José de Cúcuta,10,2024-02-06
+1314,Mireya Jiménez Arias,71,M,Salazar,17,2024-03-26
+1315,Santiago Jaime Sierra,66,M,Pailitas,9,2023-10-21
+1316,Carlos Marín Bedoya,47,M,Puerto Caicedo,6,2025-05-28
+1317,Armando Hernández,73,F,Candelaria,11,2024-07-22
+1318,José David Lozano León,55,M,Facatativá,7,2025-03-26
+1319,Víctor Óscar Velásquez,68,M,Yotoco,17,2023-09-08
+1320,Cecilia Leidy Gil,79,M,Santa Rosa de Osos,1,2023-07-04
+1321,Iván David Pineda,74,F,Lenguazaque,5,2023-10-12
+1322,María Arboleda Pérez,19,F,Inírida,9,2024-09-26
+1323,Antonio Augusto González Velasco,32,M,Villarrica,18,2024-10-09
+1324,Wilber Sebastián Rodríguez Guevara,28,F,Briceño,2,2023-08-08
+1325,Fernanda Álvarez,25,F,Planeta Rica,11,2024-11-30
+1326,Andrea Yenny Vargas Martínez,43,M,El Retorno,6,2024-01-15
+1327,Carlos Caicedo García,68,M,Retiro,8,2025-01-03
+1328,Antonio Henao,62,F,Guadalupe,4,2023-06-18
+1329,Mariela Cárdenas Benítez,61,M,Murillo,18,2025-04-16
+1330,Diana Méndez,22,F,Sabanas de San Ángel,11,2024-05-20
+1331,Jean Castillo Betancur,23,F,Pana Pana,5,2025-04-21
+1332,Jhon Trujillo López,43,F,Arboledas,15,2024-05-06
+1333,María Adriana Chacón Cano,71,F,Tuta,18,2023-07-03
+1334,Michael Pardo Rodríguez,21,F,Firavitoba,2,2024-12-14
+1335,Carolina Andrea Ortiz,36,F,Pore,11,2025-05-11
+1336,Andrés Óscar Castro Ríos,37,M,Santiago,13,2024-09-14
+1337,Angie León Aguilar,50,M,Roberto Payán,4,2023-07-23
+1338,Nancy Carolina Jaramillo Vásquez,37,F,San Vicente del Caguán,7,2024-08-24
+1339,Camilo Smith Castañeda,66,F,Tenerife,11,2024-05-01
+1340,Carmen Vásquez,29,F,Bojacá,4,2024-03-12
+1341,Ernesto Óscar Muñoz,64,M,Abejorral,15,2023-07-02
+1342,Arnulfo Villamizar Meneses,18,F,Labateca,1,2024-12-22
+1343,Paola Sierra,43,M,Galán,3,2024-04-21
+1344,Alirio Rubio Ramírez,31,F,Acacías,14,2025-01-09
+1345,Hugo Martínez,55,F,El Litoral del San Juan,6,2023-06-14
+1346,Bernardo Gildardo Rojas,54,M,Tarazá,18,2025-02-11
+1347,Wilson Jesús Gómez Hernández,79,M,San Luis,1,2025-02-01
+1348,Libia Patricia Mejía Castro,28,F,Santa Rosa de Cabal,6,2024-11-21
+1349,Helena García,53,F,San Pablo,6,2024-09-29
+1350,Juan Gómez,30,F,Abejorral,16,2024-10-21
+1351,Luis Angulo,60,M,Algarrobo,5,2023-12-17
+1352,Jazmín Lorena Fernández Gutiérrez,20,M,Buenavista,17,2024-11-20
+1353,José Flórez,50,M,San Diego,10,2024-10-17
+1354,Nelly Beltrán Delgado,23,M,Granada,18,2023-12-07
+1355,Jimena Sandra Acevedo,67,M,Nechí,7,2024-10-20
+1356,Adriana Ariza,73,M,California,3,2024-02-27
+1357,Augusto Arturo Romero,27,F,Cocorná,13,2025-04-20
+1358,Carlos Fernando Gómez Hernández,22,F,Chivolo,15,2024-11-22
+1359,Juan Jair Páez,40,M,San José del Palmar,19,2023-07-26
+1360,Karol Bedoya,27,F,Puerto López,3,2024-12-11
+1361,Carolina Dahiana Rueda Ávila,61,F,Puerto Carreño,4,2024-09-09
+1362,Esteban Alonso Suárez,19,M,Arauquita,5,2024-01-04
+1363,Piedad López,30,F,Samaniego,1,2023-09-15
+1364,José Wilson Contreras Silva,57,M,Cumbal,4,2024-07-02
+1365,Ana Carmen Amaya León,19,M,Guaduas,12,2025-03-07
+1366,Patricia Díaz,37,F,El Tambo,10,2025-04-05
+1367,Luis Alfonso Bejarano Sánchez,18,M,Morroa,13,2024-09-13
+1368,Inés Carmen Zapata,54,M,Iles,14,2024-07-14
+1369,Ricardo Yesid Calderón,26,M,Caramanta,5,2025-04-19
+1370,Armando Marín Hernández,34,M,El Playón,4,2025-03-14
+1371,Jairo Yeferson Fernández Jaimes,26,M,Corrales,14,2024-09-29
+1372,Miguel Torres,28,M,El Playón,10,2023-08-17
+1373,María Elcy Bravo,32,M,Guamal,17,2023-10-27
+1374,Angélica Cárdenas,41,M,Belalcázar,10,2023-11-06
+1375,Maritza Sofía López,55,F,San Joaquín,7,2023-07-25
+1376,Orlando Manuel Perdomo Hurtado,72,F,Santiago de Tolú,16,2023-08-26
+1377,Iván Valencia Durán,52,F,Nilo,1,2024-07-18
+1378,Libardo Orlando Álvarez,47,M,Santa Bárbara,17,2023-08-12
+1379,Nelson Jiménez,48,M,Giraldo,9,2023-12-24
+1380,Andrea Romero Castro,66,F,Chámeza,6,2024-06-12
+1381,Andrea Claudia Soto Orozco,22,F,Bagadó,19,2023-06-24
+1382,Fabiola Karol Meza,79,F,Yondó,13,2023-08-17
+1383,Mario García,77,M,Paz de Ariporo,3,2023-08-20
+1384,Gilberto Castro García,61,F,Guapi,7,2023-08-04
+1385,Jorge Julio Romero Pabón,67,F,Río Iró,9,2023-07-20
+1386,Carlos Pedro Rodríguez Ruiz,31,M,Carmen de Apicalá,5,2023-12-20
+1387,Víctor Óscar Velásquez,70,F,Bajo Baudó,10,2024-04-24
+1388,María Jessica Arias Guerra,73,M,San Andrés,17,2023-08-01
+1389,Julia Luz Valencia,28,M,Andes,12,2025-03-11
+1390,Carlos Patiño Álvarez,26,M,Tarso,16,2023-07-13
+1391,Eduardo Juan García Guerra,51,F,Sucre,3,2025-05-30
+1392,María Mary Contreras Serna,29,F,Chinchiná,9,2024-10-12
+1393,Germán Cárdenas García,52,M,Tubará,15,2024-02-29
+1394,Inés Pulido,52,F,Hatonuevo,5,2025-05-19
+1395,Steven Carlos Correa Triana,18,F,Armenia,13,2025-03-11
+1396,Stella Lorena Guerrero Álvarez,57,F,Galán,14,2024-12-17
+1397,Carmen Laura Narváez,39,F,Algeciras,15,2024-12-07
+1398,Deisy Hurtado Duarte,77,M,Puerto Tejada,16,2024-02-03
+1399,Andrés Jesús Valderrama,46,F,Urrao,13,2023-09-24
+1400,Antonio Alexander Bernal,25,M,Bojacá,17,2024-10-03
+1401,Sandra Mercado Ramírez,28,M,Soplaviento,8,2023-09-03
+1402,David José Reyes,58,F,Belén de Umbría,2,2023-11-04
+1403,Luis Beltrán,54,M,Machetá,5,2024-02-29
+1404,Paula María Pérez Alvarado,31,F,Caicedonia,6,2023-06-10
+1405,Juan Arturo Martínez,77,F,Chivor,12,2024-03-15
+1406,Luz María Galvis Cabrera,47,M,San Pablo de Borbur,18,2023-12-18
+1407,Pedro Cuéllar,52,M,Momil,1,2025-05-25
+1408,Cecilia Vanegas,38,M,Villahermosa,17,2025-02-07
+1409,Antonio Segundo Zapata,54,M,Soatá,11,2024-12-24
+1410,Oswaldo Fernando González,22,F,Sabanagrande,10,2023-11-26
+1411,Enrique Montes Osorio,36,F,Choachí,19,2023-08-10
+1412,Martha Arango Morales,76,F,Paz de Ariporo,14,2025-04-16
+1413,Elkin Peña Morales,31,M,Curillo,10,2025-01-26
+1414,Israel Martínez Bedoya,43,M,Guadalupe,15,2025-03-22
+1415,Cecilia Alexandra Contreras,79,M,Gutiérrez,19,2024-09-23
+1416,Marta Patricia Murillo,21,F,Chaparral,4,2024-08-27
+1417,Cindy Martha Quintero,42,M,Lebrija,2,2023-11-12
+1418,Luz Bolívar Caicedo,62,F,Sotará Paispamba,9,2024-12-23
+1419,Claudia Emilia Gaviria,59,M,Consacá,10,2024-08-20
+1420,Luis David Rodríguez,42,F,Cepitá,11,2023-08-04
+1421,Sofía Dayana Guzmán,35,F,Cucunubá,14,2025-05-09
+1422,Sandra Julia Pinzón Hernández,57,M,Garagoa,7,2024-01-02
+1423,Enrique Santiago Sánchez,25,M,Ventaquemada,15,2024-05-30
+1424,Yenny Ortiz,56,F,Arenal,19,2023-09-24
+1425,Guillermo Eliecer Figueroa Hoyos,57,F,Sucre,15,2025-02-24
+1426,Liliana García Hurtado,31,M,San Bernardo,8,2024-06-07
+1427,José Leonardo Flórez Mejía,49,M,Puerto Concordia,11,2023-09-21
+1428,Rubiela Luna Bautista,68,F,Hato Corozal,9,2025-01-31
+1429,Diana Arroyo,78,M,La Unión,15,2024-02-11
+1430,Katherine Contreras,55,F,San Juan de Rioseco,1,2025-02-07
+1431,Carmen Rincón,50,F,Mercaderes,1,2024-10-31
+1432,Rubén Prada,40,M,Guática,19,2024-01-25
+1433,Luis García,32,M,Filadelfia,3,2024-09-08
+1434,Alejandro Ballesteros,50,M,Yalí,10,2024-04-06
+1435,Luz Soto Álvarez,42,M,Malambo,8,2023-08-28
+1436,Aleida María Ramírez Arrieta,34,M,Puerto Nariño,15,2025-01-23
+1437,Jesús Cuéllar Duarte,50,F,Dabeiba,10,2023-06-09
+1438,Martín Sánchez,64,F,Guateque,1,2023-12-31
+1439,Orlando Anderson Monroy Rengifo,72,M,Calarcá,18,2023-12-27
+1440,Paola Granados,19,M,La Montañita,2,2023-10-16
+1441,Alejandra Flórez,31,M,Guayabal de Síquima,19,2024-11-03
+1442,Jhon Álvarez Barrera,70,F,Pueblo Nuevo,13,2025-01-15
+1443,José Camargo Guerra,57,M,Pamplonita,1,2023-12-22
+1444,Leidy María González,57,M,Busbanzá,2,2025-06-05
+1445,Jesús Darwin Uribe,68,F,Piedecuesta,16,2023-12-24
+1446,Andrea Andrea Soto,56,F,Toca,15,2024-12-09
+1447,Yesid Smith Palacios,68,M,Santa Helena del Opón,13,2023-12-26
+1448,Elena Eugenia Martínez,23,M,Patía,16,2024-12-23
+1449,Lina María Jaimes Sánchez,23,M,Concepción,17,2025-05-11
+1450,Andrés Bejarano,20,F,Quebradanegra,7,2025-03-16
+1451,Felipe Granados Roa,24,M,La Sierra,17,2025-02-03
+1452,Elvira Hernández Delgado,68,M,Milán,7,2023-10-07
+1453,Álvaro Javier Gallego,25,M,Palocabildo,13,2024-08-04
+1454,Jaime Lara Arias,59,F,Ciénega,5,2023-09-15
+1455,Fanny Milena Cáceres,69,F,Pital,17,2024-11-14
+1456,María Lozano Calderón,32,M,El Roble,3,2023-12-21
+1457,José Milton Alzate,64,M,Uribia,7,2024-11-07
+1458,Juan Eduardo Mendoza,46,F,San Carlos,17,2024-09-12
+1459,Andrea Ariza Velásquez,50,F,La Pedrera,7,2023-09-19
+1460,Laura Sierra,69,F,Cereté,1,2023-07-23
+1461,Manuel Andrés Perdomo Torres,47,F,Valledupar,17,2024-04-10
+1462,Sofía Correa,56,F,Santuario,17,2024-07-04
+1463,Blanca Damaris Sierra,44,F,Salgar,11,2023-10-20
+1464,Alejandra Paola Arrieta,53,F,María la Baja,3,2024-09-08
+1465,Alejandro Murcia,46,F,Colón,15,2024-02-28
+1466,Luis Marín,55,F,Ulloa,11,2025-05-12
+1467,Fernanda Luz Martínez Vargas,74,M,Bucarasica,16,2024-05-11
+1468,Germán Rincón Hernández,50,M,Cantagallo,9,2023-08-31
+1469,Andrea Castro,78,M,Barbacoas,1,2023-10-05
+1470,Wilson Milton Suárez Mejía,54,F,Carmen del Darién,16,2024-08-12
+1471,Milton Germán Hernández,44,M,Villavieja,9,2024-06-12
+1472,Nancy Nubia Ariza,72,F,Cabrera,19,2024-02-10
+1473,María Guzmán,50,F,El Tambo,12,2023-09-18
+1474,Carlos Cruz,79,M,Teruel,19,2024-09-06
+1475,María Correa,21,F,Pupiales,9,2023-09-25
+1476,Virginia María León,39,M,Caicedonia,7,2023-11-11
+1477,Alberto Cristian Gómez Giraldo,19,M,Carolina,14,2025-05-02
+1478,Jhoan Delgado Ruiz,27,M,Puerto Triunfo,19,2024-03-18
+1479,Arturo Ronald Reyes,22,F,Villahermosa,19,2024-09-11
+1480,Daniel Guillermo Ortiz Medina,76,M,San Diego,2,2024-06-13
+1481,Luz Fernanda Rodríguez Castro,27,F,San José de Toluviejo,9,2024-05-21
+1482,Jorge Agustín Vega,50,M,Pueblo Nuevo,13,2025-01-01
+1483,Andrea Mosquera González,71,M,El Cerrito,15,2024-12-23
+1484,José Darío Guzmán Valencia,55,M,Rovira,3,2023-08-26
+1485,Segundo Alberto Sanabria Pérez,30,F,Maní,11,2024-03-11
+1486,Henry Edgar Medina,48,F,Páez,14,2024-12-16
+1487,José José Romero,64,F,Belén,8,2024-09-03
+1488,Rosalba Elena Rendón,53,M,Tunja,18,2024-03-15
+1489,Daniel Fernández,62,M,El Litoral del San Juan,19,2025-02-07
+1490,Miguel Humberto Bernal Velásquez,41,F,Morroa,16,2024-12-12
+1491,Marino Rosero Quiroz,69,F,Manizales,2,2025-03-17
+1492,Mariela Vargas Vargas,73,F,Hatonuevo,8,2025-01-11
+1493,Manuel José Guzmán,32,F,Galán,6,2024-06-02
+1494,Fernanda Angulo Osorio,46,F,Galeras,12,2024-01-15
+1495,Jesús Fabio Cortés Martínez,25,F,Guateque,15,2025-05-11
+1496,María Piedad Mejía Quintero,22,M,Villa Caro,8,2024-11-20
+1497,Freddy Vargas Ramírez,46,F,Samacá,4,2025-03-14
+1498,Eduardo Diego Rodríguez,64,M,Gachetá,15,2024-05-19
+1499,Giovanny Vargas Galvis,21,M,El Dovio,17,2024-09-21
+1500,Miller Anderson Rodríguez,29,F,Pitalito,13,2024-08-05
+1501,Leonardo Gómez,62,F,Covarachía,18,2024-12-18
+1502,Felipe Eduardo Vera,19,M,San José de Uré,2,2023-09-02
+1503,Sandra Guerrero,44,F,La Unión,13,2024-01-16
+1504,Leidy Raquel Maldonado,48,F,Cali,13,2024-10-13
+1505,Martha Castillo,68,M,Santa Lucía,15,2024-11-23
+1506,John Rivera,68,M,Suesca,10,2024-11-29
+1507,Lucy Mendoza Perea,53,M,La Tola,3,2024-05-18
+1508,Sandra Rodríguez,53,F,Santa Bárbara,19,2025-04-09
+1509,Mabel Martha Guerra Martínez,43,M,Mosquera,3,2025-03-06
+1510,Antonio Gabriel Hernández,60,F,Palocabildo,14,2024-03-31
+1511,Martín Castañeda,44,M,Recetor,8,2024-10-25
+1512,Elizabeth Camila López Herrera,22,M,Plato,4,2023-10-31
+1513,Carlos Ortiz,37,M,Uribe,11,2025-05-23
+1514,María Loaiza,28,F,Inírida,11,2024-08-08
+1515,Carolina Aida Ramírez Acosta,79,F,Fómeque,11,2024-11-03
+1516,Mauricio Alonso Molano Rodríguez,27,M,Granada,2,2025-05-05
+1517,Juan Felipe Díaz Saavedra,57,M,Cotorra,17,2024-01-05
+1518,Libardo Alberto Hurtado Sierra,55,M,San José del Palmar,9,2024-07-02
+1519,Misael Rafael Cortés,23,F,Yotoco,2,2024-03-22
+1520,Bayron Acevedo,25,M,Bucaramanga,15,2023-11-07
+1521,Jennifer Valencia,40,F,Isnos,16,2025-04-17
+1522,Vanessa González,64,M,Maceo,4,2024-02-12
+1523,Milena Ochoa Rivas,43,M,Saravena,8,2024-04-19
+1524,Erika Carolina Hernández Pineda,63,M,Barbacoas,9,2025-01-28
+1525,Carlos Meneses Gómez,60,M,Pensilvania,5,2025-01-02
+1526,Eduard Martínez,29,M,Cucaita,16,2023-11-17
+1527,Bryan José Mantilla Sánchez,43,M,Palmar de Varela,13,2023-10-23
+1528,Andrés Luis Zambrano,30,F,Victoria,7,2023-09-24
+1529,Marina Salcedo,57,M,San José de Cúcuta,17,2023-10-04
+1530,Luis Carlos López,79,F,Tibacuy,3,2025-04-09
+1531,Jesús Rivera Vargas,35,M,San Sebastián,5,2024-12-26
+1532,Hernán Ramos,42,M,Ebéjico,19,2023-10-14
+1533,Alberto Martín Marín Ortiz,50,F,Pitalito,12,2023-10-13
+1534,Domingo Montoya Parra,64,M,Pajarito,7,2024-12-04
+1535,Cecilia Hernández,57,F,Yondó,9,2024-03-16
+1536,Piedad Vergara,77,F,Puerto Nare,6,2025-02-22
+1537,Fabián Bernal Hernández,60,M,Alpujarra,17,2024-10-01
+1538,Flor Ximena Agudelo,29,F,Paime,16,2024-01-13
+1539,Edwin Jorge Díaz,61,F,Funes,3,2024-01-20
+1540,Fernando Peña Forero,53,M,Baraya,4,2023-12-15
+1541,Yesid López,65,F,Moniquirá,10,2024-06-13
+1542,Arturo Jean Romero Sierra,21,M,Villahermosa,5,2023-07-17
+1543,Luz Ortega Molano,22,M,Manaure Balcón del Cesar,10,2024-08-11
+1544,Diana Mariana Serna Carrillo,73,M,Busbanzá,12,2023-08-20
+1545,Yolanda Miryam Vásquez Ramírez,54,M,Sabaneta,10,2023-08-14
+1546,Jhon Garzón,25,F,El Guamo,13,2023-08-06
+1547,Fernando Sandoval,59,M,Florida,11,2023-09-22
+1548,León González,66,M,El Litoral del San Juan,16,2025-04-25
+1549,Esteban Sánchez,45,F,Ubalá,8,2025-02-23
+1550,Paola Rodríguez Galindo,48,M,Rionegro,8,2024-08-13
+1551,Manuela Luz Rodríguez Ortiz,75,M,San Cristóbal,8,2023-09-02
+1552,Fredy Arteaga,26,F,Tarso,13,2025-01-08
+1553,Diego Andrés Granados Gallego,71,F,Cali,2,2024-08-20
+1554,Juan Fernando Moreno Martínez,68,F,Floridablanca,12,2024-07-13
+1555,Germán Felipe Cardona Sánchez,46,F,Subachoque,10,2025-02-10
+1556,María Danna Santos Benítez,31,F,Medio Atrato,12,2024-09-18
+1557,Enrique Méndez Rodríguez,57,F,Tuchín,11,2024-11-14
+1558,Yolanda Vanessa Gutiérrez Londoño,58,F,Carolina,15,2025-02-25
+1559,Nora Carvajal,39,M,Sasaima,16,2024-06-08
+1560,Carlos Anderson Sierra,28,F,Albania,17,2024-06-12
+1561,Wilder Gustavo Castro,40,F,Sutatausa,2,2024-08-14
+1562,Enrique Alonso Gómez,18,F,Natagaima,18,2023-11-22
+1563,Anderson Londoño Carmona,63,M,El Retén,12,2023-07-18
+1564,Daniel Álvarez,54,M,Agustín Codazzi,19,2024-09-19
+1565,Johana Nelly Martínez,38,F,Mapiripán,18,2024-11-12
+1566,Helena Sofía Palacios,43,F,San Juanito,17,2023-06-27
+1567,Julio Ojeda Rodríguez,63,F,Tota,6,2024-05-04
+1568,Luis Wilber Bedoya,53,M,Hacarí,15,2023-11-07
+1569,Vanessa María Acosta Ospina,71,M,San Cayetano,3,2025-05-13
+1570,Edgar Manrique Ruiz,40,F,Hacarí,6,2025-05-09
+1571,Marleny Camargo,74,M,Jesús María,3,2024-09-19
+1572,Francisco Martínez,18,F,La Jagua de Ibirico,1,2025-03-21
+1573,María Lizeth Romero,71,M,Villagómez,13,2024-11-06
+1574,Mariana Lizeth Rojas,72,M,Mistrató,14,2025-02-24
+1575,Luz López Rivera,68,F,San Juan de Betulia,13,2023-12-25
+1576,Ximena Emilia Gómez Agudelo,57,F,Solano,4,2025-03-04
+1577,Jorge Páez,32,F,Acacías,7,2025-01-17
+1578,Andrés Rodríguez,38,F,Montecristo,10,2024-02-03
+1579,Wilmer Rodríguez,64,M,San José de Toluviejo,7,2024-12-14
+1580,Edison Torres Pabón,26,M,Balboa,15,2024-05-02
+1581,Diego Hernán Bonilla Pabón,70,M,Cumaribo,15,2024-07-24
+1582,Norma Palacio Rodríguez,26,F,Tangua,4,2024-09-27
+1583,Milena Martínez,27,M,Pueblo Nuevo,6,2025-04-14
+1584,Olga Chaparro Jaimes,69,F,Achí,5,2023-08-06
+1585,María Romero Hernández,74,M,Argelia,12,2024-11-29
+1586,Enrique Restrepo,70,F,Victoria,1,2025-03-12
+1587,Liliana Castro,43,F,Sahagún,8,2023-12-03
+1588,Milena Herrera,58,M,Pital,1,2024-01-14
+1589,Patricia Chacón Herrera,52,F,San José del Palmar,5,2023-09-01
+1590,Carlos José Ruiz Pacheco,69,F,Pamplonita,6,2023-11-08
+1591,Jhon Gaitán,42,M,Isnos,3,2025-03-14
+1592,Andrea González,43,F,El Tablón de Gómez,15,2024-01-16
+1593,Luis Posada,28,F,Mapiripán,5,2023-06-15
+1594,Claudia Josefina Restrepo,55,F,Tenza,14,2024-05-20
+1595,María Andrea Espitia Restrepo,19,M,Honda,18,2025-01-27
+1596,Lizeth Lady Betancur Acosta,24,M,Útica,16,2024-09-13
+1597,Johana Elizabeth Bedoya Ballesteros,35,F,Piojó,6,2023-12-13
+1598,Ernesto García Figueroa,44,M,San Pablo,14,2025-06-02
+1599,José Samir Cortés Ávila,51,F,Siachoque,8,2023-12-14
+1600,Luis Parra Correa,44,F,Cota,7,2023-07-11
+1601,Nancy Gómez,34,F,San Benito,8,2023-08-05
+1602,Maritza Cecilia Ortiz Díaz,60,F,Yolombó,13,2023-11-21
+1603,Margarita Correa Rodríguez,76,F,Betulia,6,2024-06-05
+1604,Sonia González,61,M,Toca,18,2023-08-14
+1605,Stella Quintero,76,F,Amalfi,2,2025-05-09
+1606,Eugenia Parra Díaz,68,M,Labateca,8,2025-05-05
+1607,Carmen Alba Domínguez,71,M,Aguachica,11,2024-03-10
+1608,Patricia Katerine Barrera,41,F,Sáchica,1,2023-09-08
+1609,Miriam Angie Melo,42,F,Cucunubá,6,2024-10-05
+1610,Sandra Lorena Barrios Portilla,24,M,Mapiripán,16,2025-04-25
+1611,José Hernán Rodríguez Ávila,69,M,Belén,12,2023-12-16
+1612,Javier Gallego Erazo,23,M,Galán,11,2024-12-07
+1613,Paola Andrea González Zapata,70,F,Villanueva,10,2024-04-12
+1614,Carlos Ramos,41,M,Puerto Rico,3,2023-06-26
+1615,Fabián Orlando González,50,F,Pensilvania,13,2023-07-05
+1616,Leidy Lilia Muñoz,66,F,Teruel,3,2025-04-25
+1617,Hernán Alfonso Uribe Londoño,46,F,Becerril,15,2025-03-18
+1618,Cristian Restrepo,60,M,Toribío,16,2024-10-22
+1619,María Rojas Orozco,39,F,Silos,13,2024-07-08
+1620,María Hernández,43,F,Providencia,17,2023-10-28
+1621,Eduardo Antonio Sierra Castro,45,F,Sahagún,3,2023-12-20
+1622,John Juan Tamayo,67,F,Nuquí,11,2024-09-18
+1623,Alberto Andrés Lozano Palacios,38,F,Padilla,19,2024-03-02
+1624,José Manuel Restrepo García,66,M,Santa Rosa del Sur,11,2024-03-09
+1625,Carolina Blanca Pacheco,24,F,Purificación,16,2023-07-18
+1626,Milton Mendoza Cifuentes,34,F,Cerrito,3,2023-11-20
+1627,Enrique Tovar,37,M,Chivolo,6,2023-10-02
+1628,Socorro Claudia Ayala,58,F,Puerto Caicedo,14,2025-01-09
+1629,Rosalba Bravo,66,M,Espinal,18,2023-07-09
+1630,Fernando Juan Moreno Velasco,37,F,Apía,17,2024-05-17
+1631,Mauricio Rodríguez Romero,71,M,Santa Bárbara de Pinto,4,2024-06-10
+1632,Katerine Teresa Sandoval Pérez,39,M,Guapotá,15,2024-02-18
+1633,Lady Ramírez,45,F,Córdoba,11,2025-04-20
+1634,Santiago Rodríguez,78,F,La Ceja,3,2023-08-27
+1635,Jeison Prieto Díaz,57,F,San Felipe,3,2024-05-15
+1636,John Jhon Osorio,66,M,Timbío,16,2024-06-12
+1637,Jhoan Orlando Castaño Vergara,24,M,La Salina,5,2024-01-01
+1638,Luis Diego Meza Rodríguez,18,M,Baranoa,10,2025-03-03
+1639,Yasmín Buitrago,49,F,Durania,19,2023-12-21
+1640,Octavio Cristian Escobar,30,M,Caicedonia,4,2025-01-26
+1641,Cecilia Rosa Rojas,47,M,Puerto Colombia,19,2023-12-26
+1642,Gladys Orozco,40,F,Briceño,11,2024-09-19
+1643,Camila Vargas,68,M,El Carmen de Viboral,2,2023-10-11
+1644,Andrés Enrique Sánchez Rivera,76,M,Chivatá,10,2025-02-26
+1645,Manuel Martínez Rendón,73,F,Zapayán,11,2024-06-27
+1646,Arturo Jaider Amaya Torres,36,M,San Juan de Betulia,16,2023-06-30
+1647,Nelson Villamizar Quintero,79,F,La Unión,19,2025-01-24
+1648,David Lozano,49,F,Aguadas,11,2024-03-12
+1649,Simón Maldonado,47,F,Cerro de San Antonio,14,2024-12-20
+1650,Beatriz Paola Alfonso,46,F,Briceño,2,2024-11-20
+1651,Juan Hernández López,66,F,San Jerónimo,5,2023-12-16
+1652,Luz Valencia,62,M,Viracachá,5,2024-08-21
+1653,Manuel Carvajal Parra,46,M,Barranquilla,19,2024-11-12
+1654,Lina Leonor Rivera Hernández,47,F,Florencia,12,2024-02-16
+1655,Eugenia Sandra Cardozo Ríos,33,F,Vélez,18,2024-02-03
+1656,Alicia Bedoya Acosta,57,M,Andalucía,4,2024-01-09
+1657,Paola Arévalo Melo,36,F,Pupiales,17,2024-08-18
+1658,María Deyanira Domínguez,35,F,Lejanías,10,2023-12-08
+1659,María Benavides Pérez,18,F,Tarazá,6,2024-05-19
+1660,Enrique Hurtado,31,M,Beltrán,14,2024-10-01
+1661,Arley Andrés Ríos,68,M,Cimitarra,11,2023-06-09
+1662,Eduardo Ardila Campo,64,F,Quebradanegra,11,2024-09-25
+1663,Eduardo Javier Gómez,67,F,Soplaviento,18,2025-04-30
+1664,Henry Edilberto Moreno,19,M,Taraira,18,2025-03-09
+1665,Yolanda Díaz,71,M,Moniquirá,11,2023-08-07
+1666,María Alba López Jiménez,45,F,San Gil,12,2025-01-30
+1667,Lucía Bermúdez,66,F,Puracé,5,2024-08-02
+1668,Gregorio Mora Márquez,67,M,El Banco,9,2023-08-18
+1669,Adriana María Díaz Arroyo,47,M,Tona,9,2024-07-25
+1670,Eder Gómez Acosta,55,M,Cumbitara,10,2023-11-22
+1671,Harvey Sandoval González,68,F,Santa Lucía,19,2024-10-30
+1672,Lidia Ortiz,21,M,Puerto Asís,1,2025-03-13
+1673,Andrey Leonardo Martínez Sánchez,18,F,Santa María,7,2024-05-27
+1674,Ever Óscar Morales,25,M,Charta,4,2024-04-15
+1675,Fredy Arturo Delgado Moreno,46,M,Pinchote,1,2025-01-03
+1676,Magaly Natalia Martínez,72,M,Cáchira,15,2025-04-17
+1677,María Reyes,56,M,Buenavista,8,2023-11-26
+1678,Luis Juan Melo Moreno,20,F,Nóvita,12,2023-11-01
+1679,María Osorio,49,F,Tangua,18,2023-09-08
+1680,María Bonilla Jiménez,27,M,San Jerónimo,15,2023-12-18
+1681,Dario Andrés Loaiza Cárdenas,27,F,Santa Catalina,17,2025-05-24
+1682,Óscar Díaz,36,M,Solano,14,2023-07-17
+1683,Carmen Palacios Ocampo,63,M,Topaipí,14,2025-01-03
+1684,Humberto Sebastián Escobar Hernández,51,M,Pisba,18,2024-04-20
+1685,José Didier Rodríguez,77,M,Pulí,18,2024-09-05
+1686,Carlos Padilla Montes,50,F,Santa Ana,16,2024-08-25
+1687,Doris Valencia,40,M,Cerinza,1,2024-12-06
+1688,Gloria Arango,72,M,La Uvita,11,2025-04-13
+1689,Johana Maritza Ortiz,45,F,Anapoima,15,2024-05-06
+1690,Fredy Gonzalo Burgos Vanegas,49,M,Iza,12,2023-07-11
+1691,Andrea Serrano Garzón,67,M,Guapi,8,2023-11-18
+1692,Gabriel López,24,M,Maceo,6,2025-03-28
+1693,Eduardo Elkin Valencia Murcia,46,F,Somondoco,3,2024-12-29
+1694,Elizabeth Emilce Ramos Fernández,25,M,Curumaní,13,2025-02-07
+1695,Emilio Gómez Pérez,18,F,Puerto Rondón,13,2023-10-26
+1696,Jeferson Fernando Rojas,74,M,Florencia,2,2023-07-17
+1697,Pablo José Correa,72,M,Lorica,5,2024-10-25
+1698,David Fernando Córdoba Escobar,20,F,La Salina,17,2025-01-03
+1699,Olga Sánchez Saavedra,41,M,Santiago,6,2023-08-02
+1700,Juan Angulo Cárdenas,40,M,Córdoba,2,2024-06-26
+1701,Yaneth Mejía Arroyo,76,F,Pueblo Bello,4,2024-07-31
+1702,María Ospina,78,F,Enciso,11,2024-08-25
+1703,Mercedes Ortega,25,F,Anzoátegui,8,2024-05-18
+1704,Johanna Alix Herrera,71,F,San Martín de Loba,12,2024-06-25
+1705,Luz Mary Rodríguez,74,F,Iles,8,2024-11-16
+1706,Juan Leonardo Niño,64,M,Castilla la Nueva,11,2024-02-29
+1707,Rafael Henry Álvarez,54,F,Jericó,8,2024-11-30
+1708,Lucía Aura Carmona,20,M,El Cairo,8,2023-10-21
+1709,Nelly Esperanza Mendoza Rueda,68,M,Gutiérrez,17,2025-04-04
+1710,Isabel Milena Camacho García,50,M,Piedras,16,2024-06-09
+1711,Claudia Camargo Castaño,45,F,Buesaco,14,2023-11-26
+1712,Andrés López Ramírez,64,F,Yacuanquer,11,2024-05-04
+1713,Luz Sara Gutiérrez Acosta,25,M,Paratebueno,7,2025-05-19
+1714,Gloria Angélica Meza Sánchez,51,F,Los Córdobas,16,2025-02-05
+1715,Jessica Ramírez López,52,F,Policarpa,13,2024-10-10
+1716,Jesús Wilson Rodríguez Ochoa,49,F,Puerto Gaitán,15,2025-03-17
+1717,Marina Acosta Sánchez,41,F,Fresno,16,2023-12-13
+1718,Fabián José Gómez Ardila,31,M,Albania,9,2023-09-11
+1719,Alexandra Torres Alzate,49,M,La Guadalupe,3,2024-11-04
+1720,Julia Castro,73,F,Roberto Payán,19,2025-01-21
+1721,Enrique Carlos Mendoza,63,M,Miraflores,5,2024-10-19
+1722,Luis Rosero Guerrero,60,F,Piendamó - Tunía,10,2024-04-13
+1723,Andrea Clemencia Muñoz Miranda,33,F,Manizales,17,2024-02-09
+1724,Edward Rincón,21,M,El Carmen de Chucurí,15,2023-10-23
+1725,Carlos González Mena,69,M,Marinilla,8,2023-08-06
+1726,Patricia Rodríguez Pérez,54,M,Jerusalén,15,2024-06-13
+1727,Yuri Palacios,71,F,Curillo,14,2023-09-23
+1728,María García,38,M,Trinidad,7,2024-05-10
+1729,Héctor Adalberto Gutiérrez,31,F,Riofrío,12,2024-04-06
+1730,Arturo Carlos Hernández Ramírez,48,M,Puerto Colombia,17,2024-08-28
+1731,Marina Hurtado Castro,72,M,Viracachá,17,2023-11-07
+1732,Laura Villa Correa,65,F,El Cocuy,10,2025-04-21
+1733,Walter Carlos Ramírez,35,F,Hato,19,2024-04-09
+1734,Verónica Parra González,24,F,Corozal,14,2023-08-11
+1735,Mauricio Becerra,27,F,Salazar,11,2024-11-01
+1736,Marleny Jiménez Zapata,24,F,Guamo,2,2024-06-20
+1737,Esteban Castaño Jaimes,50,F,Iza,18,2024-07-02
+1738,María Salamanca,40,F,Montebello,7,2024-02-27
+1739,Lucía Lucía Ayala Álvarez,38,F,Nariño,12,2024-10-22
+1740,Alberto Alberto Caballero,36,M,Jerusalén,2,2025-03-20
+1741,Frank Carlos Camacho Zambrano,65,F,Puerto Tejada,18,2025-05-10
+1742,Marcela Stella Londoño Quintero,78,F,San José de Pare,6,2025-02-14
+1743,Dario Diego Andrade,36,M,Nariño,10,2025-05-21
+1744,Domingo Gaitán Hernández,53,F,San José,15,2024-01-13
+1745,Víctor Eduardo Lara,46,M,Olaya Herrera,5,2023-12-27
+1746,David Jesús Cruz Ruiz,77,M,San Zenón,3,2024-06-04
+1747,Paola Martínez,35,F,Sahagún,5,2024-11-06
+1748,Fabio Bastidas,19,M,Piamonte,8,2023-11-22
+1749,Fernando Edinson Palacio,18,F,San José del Guaviare,8,2023-07-14
+1750,Ariel Trujillo Fajardo,64,M,Cubarral,8,2023-12-30
+1751,Arturo Rentería,22,M,Florencia,12,2024-12-26
+1752,Alejandra Ortiz,37,M,El Litoral del San Juan,8,2024-01-09
+1753,Andrés Jhon Zapata,28,F,Mahates,11,2024-02-27
+1754,Erika Daniela Martínez,59,F,Vélez,14,2025-02-01
+1755,Luis Enrique Benítez Rojas,19,M,Sardinata,8,2024-04-17
+1756,Alexis Mercado Contreras,20,M,Páez,10,2023-11-04
+1757,Alexander Alzate Amaya,40,F,Zaragoza,7,2025-05-26
+1758,Erick Rodríguez Torres,72,F,Urrao,17,2024-12-12
+1759,Fidel Víctor Mejía,29,M,Tutazá,4,2025-03-26
+1760,Edgar Blanco Vega,37,M,El Paujíl,13,2024-01-28
+1761,Deyanira Mónica Forero,22,F,Medio Baudó,4,2024-01-11
+1762,Andrés Villamizar Calderón,54,F,Convención,5,2024-10-02
+1763,Santiago Héctor Pérez,55,F,Vigía del Fuerte,4,2024-12-10
+1764,Patricia Magaly Vega Ávila,47,F,Santa Helena del Opón,18,2024-06-24
+1765,Cecilia Guzmán Velásquez,26,F,El Rosario,6,2024-09-15
+1766,Fernando Oviedo,51,M,Armenia,2,2023-06-26
+1767,Leidy Rojas García,70,F,Montenegro,11,2025-04-26
+1768,Marcela Guzmán,61,M,San Carlos,14,2024-05-13
+1769,Inés Gutiérrez,52,F,Nunchía,5,2024-04-21
+1770,Diego Mosquera,69,M,Corozal,6,2023-08-31
+1771,Alberto Orlando Narváez Cardona,75,F,Distracción,10,2023-07-01
+1772,María Marta Márquez Daza,39,F,Pore,8,2024-05-12
+1773,Sonia Aguirre,61,M,Palmar de Varela,14,2025-01-15
+1774,Sebastián Moreno Rivera,41,M,Margarita,3,2024-09-15
+1775,Andrea María Bermúdez,34,F,Heliconia,12,2024-01-20
+1776,Zulma Hoyos,27,F,Guasca,16,2024-07-13
+1777,Nidia Karen Barbosa,47,F,Itagüí,17,2024-06-09
+1778,José Correa,73,F,Confines,1,2024-05-31
+1779,César Carlos Sepúlveda Salazar,76,F,Armenia,10,2023-10-03
+1780,Rosa López,63,M,Valle de San José,10,2023-12-20
+1781,Julio Carvajal,40,M,Cacahual,2,2023-07-14
+1782,Cristina González,49,F,La Macarena,9,2023-11-13
+1783,Fernando Becerra,34,M,Elías,13,2024-02-15
+1784,David Burgos,67,M,Toribío,16,2023-06-22
+1785,Pablo Camilo Martínez Mora,68,M,Hatonuevo,18,2025-05-19
+1786,Gerson Miguel Cuéllar,34,F,Tamalameque,19,2024-09-19
+1787,Claudia Lizeth Mejía,31,M,Belén de los Andaquíes,12,2023-10-26
+1788,Álvaro Quiroz Palacio,26,F,Piedras,8,2024-01-11
+1789,Elena Patricia Rincón,57,M,Sogamoso,17,2023-10-24
+1790,Ramiro Fabio Polo,19,F,Balboa,15,2024-11-07
+1791,Sonia Ana Silva,62,M,Villarrica,10,2023-06-22
+1792,Karen Carrillo,42,F,Vigía del Fuerte,15,2025-01-26
+1793,Amparo Franco Muñoz,56,F,San Cristóbal,15,2023-10-27
+1794,Luis Diego Vargas Ortega,26,M,Retiro,7,2024-01-22
+1795,Eduardo Padilla,71,F,San Rafael,13,2023-09-06
+1796,Felipe Rodríguez Vargas,39,F,Puerto Rico,17,2023-07-05
+1797,Maritza Vallejo,60,F,Turbo,9,2023-06-28
+1798,Juan Giraldo Meneses,63,F,Firavitoba,8,2024-04-06
+1799,Juan Mejía Sierra,21,F,El Guamo,18,2024-03-28
+1800,Daniel Hurtado Betancur,43,F,Roberto Payán,13,2024-09-26
+1801,Argemiro Salgado Guzmán,75,F,Güicán de la Sierra,16,2025-02-08
+1802,Andrea Cárdenas López,46,F,Belén,9,2025-02-15
+1803,Luis Cortés Morales,62,M,Palmas del Socorro,12,2025-02-05
+1804,Alejandra Diana Hernández,51,M,Quibdó,12,2025-04-14
+1805,Rosa Gómez,40,F,Montebello,6,2023-10-03
+1806,Esteban Cortés,54,F,Venadillo,19,2023-10-07
+1807,Eliecer Castrillón Barbosa,28,M,Pulí,7,2024-02-18
+1808,Óscar Iván Mosquera Moreno,23,M,Pueblo Bello,3,2023-12-16
+1809,David Sánchez Cano,35,M,Vianí,16,2024-12-10
+1810,Carlos García Arias,38,F,Fundación,18,2024-09-15
+1811,Maritza Andrea Saavedra,59,M,Taminango,16,2023-09-02
+1812,Luisa Inés Romero Bermúdez,53,F,El Paujíl,7,2023-09-04
+1813,José Alex Restrepo,58,F,Güepsa,4,2024-04-10
+1814,Javier Castillo Valencia,55,M,Macanal,8,2025-03-04
+1815,Diana Johana Gil,51,F,San Bernardo,13,2025-05-28
+1816,Paola Rodríguez Rodríguez,34,F,Lenguazaque,13,2024-02-12
+1817,Natalia García,54,F,Gómez Plata,17,2024-11-16
+1818,María Ingrid Arrieta,42,F,Briceño,17,2023-06-14
+1819,Aníbal Restrepo Quintero,55,M,Guachené,5,2024-12-29
+1820,Antonio González,75,M,Río Quito,6,2025-01-23
+1821,María Rosalba Agudelo Buitrago,29,F,La Playa,19,2024-09-24
+1822,Alfonso Gómez,40,F,Mistrató,13,2023-12-17
+1823,Nancy Ruiz,70,M,Nátaga,14,2023-10-16
+1824,Jairo Velandia Bermúdez,59,F,Algarrobo,4,2025-03-21
+1825,Luz Sánchez,39,M,Jericó,7,2024-08-01
+1826,John Patiño Cuesta,38,F,Betulia,8,2024-02-08
+1827,Juan Córdoba,44,F,Galapa,13,2024-03-29
+1828,Estella Andrea Cardona Díaz,74,M,San Carlos,6,2024-02-11
+1829,María Marín,48,M,Marinilla,6,2024-11-07
+1830,Armando Jeison Herrera Moreno,23,M,Gamarra,3,2024-10-23
+1831,Johana Luz Rojas,44,M,Fosca,3,2025-03-26
+1832,Edwin José Castillo,57,F,El Peñón,13,2023-07-25
+1833,Ernesto Carlos Castillo Espinosa,51,M,Apía,2,2023-06-28
+1834,Olga Maritza Londoño Galindo,29,F,Turbaná,16,2024-10-07
+1835,Diana Magda Salazar Gómez,62,M,San Eduardo,6,2025-02-13
+1836,Alicia Isabel Ríos Londoño,74,M,La Mesa,8,2025-04-16
+1837,Martha Lina Angarita,70,F,Puerto Asís,8,2023-09-17
+1838,Viviana Cruz,24,M,Yavaraté,6,2023-10-21
+1839,Nora Díaz Ardila,27,M,Chiquinquirá,14,2024-12-08
+1840,Enrique Antonio Rodríguez Delgado,62,M,Morichal,3,2025-06-06
+1841,Alexander Pabón González,34,M,Capitanejo,10,2023-09-20
+1842,Johan Pacheco,43,F,Urrao,3,2024-02-15
+1843,Daniel Daniel Gómez Rendón,38,F,Mapiripán,12,2024-09-29
+1844,Elizabeth Consuelo Yepes Murillo,45,M,Tamalameque,17,2025-02-18
+1845,Damaris Ligia Acosta,79,M,Becerril,5,2025-02-08
+1846,Janeth Rubio Maldonado,75,M,Chía,9,2024-02-24
+1847,Diana Alzate,63,F,Puerto Nare,7,2025-03-06
+1848,Daniel Nicolás Saavedra Duarte,19,F,Cañasgordas,4,2023-07-30
+1849,Jhon José Amaya,77,F,San José de la Montaña,13,2024-06-08
+1850,Gloria Marina Flórez Vargas,71,F,Tibaná,13,2023-07-30
+1851,Martha Pardo Álvarez,60,M,Argelia,10,2025-01-02
+1852,Sandra Jiménez Hernández,18,M,Piamonte,18,2024-10-05
+1853,Deyanira Mosquera,68,M,Tibú,17,2025-04-28
+1854,Stiven Mejía,70,F,Policarpa,13,2024-06-05
+1855,Leidy Ceballos Díaz,53,M,El Molino,17,2023-09-03
+1856,Liliana Mariela Carvajal,68,F,Paz de Ariporo,4,2024-12-07
+1857,Stella María Sarmiento,43,F,Santa Rosa de Viterbo,1,2024-06-20
+1858,Guillermo Valencia Martínez,46,M,Nariño,1,2024-10-06
+1859,Juan Méndez,38,M,Pamplonita,15,2023-09-22
+1860,Luisa Patricia Gaviria,28,M,El Santuario,13,2024-02-23
+1861,Clara Torres Fuentes,57,F,Palmar de Varela,17,2024-10-24
+1862,Diego Obando Osorio,28,F,Totoró,8,2024-01-24
+1863,Pedro Pardo Pinto,53,M,Cabuyaro,18,2024-07-26
+1864,Dora Paola Burgos,66,M,Repelón,13,2024-01-22
+1865,Nubia Carmenza Quiroga,76,F,Úmbita,14,2023-10-01
+1866,Alejandro Alejandro Delgado Agudelo,56,M,Choachí,8,2024-01-28
+1867,Henry Andrés Mosquera Morales,57,F,Lérida,8,2024-02-09
+1868,Gustavo Horacio López Ríos,52,F,Hatonuevo,15,2025-04-15
+1869,Arley Guillermo Moreno Valencia,71,M,Pinchote,13,2025-06-01
+1870,Alexis Felipe Arteaga Peña,51,M,Ospina,7,2025-04-04
+1871,Teresa Karina Mejía Benítez,72,M,Gutiérrez,5,2024-07-24
+1872,Mercedes Gómez,64,M,Sativasur,17,2025-01-25
+1873,Alejandro Enrique Meza,41,F,Santa Fé de Antioquia,16,2024-05-10
+1874,César Rigoberto Rodríguez,71,F,San Martín,2,2024-07-05
+1875,Lida Delgado Giraldo,39,F,La Esperanza,18,2024-05-21
+1876,Uriel Javier Valencia,22,M,La Victoria,17,2024-10-24
+1877,Esneider Jaramillo Cabrera,73,F,Ginebra,7,2024-11-29
+1878,Ángel Alejandro Fernández Parada,50,M,Puerto Asís,13,2023-11-02
+1879,Carlos Rojas,75,M,Carolina,18,2024-05-06
+1880,Carlos Silva,53,M,Cimitarra,14,2024-01-16
+1881,Nury Acosta,64,M,Beltrán,18,2025-02-12
+1882,Katerine Yolanda Loaiza,37,M,Boyacá,13,2024-09-07
+1883,Erika Andrea Martínez,36,M,Ubalá,11,2024-07-13
+1884,Claudia Linda Guevara,52,F,Santo Domingo,16,2023-08-26
+1885,Stella Gallego,69,M,Entrerríos,17,2024-12-19
+1886,Nelson Navarro Córdoba,60,F,Arbeláez,8,2024-01-02
+1887,Javier Antonio Zapata Morales,34,F,La Florida,19,2024-12-09
+1888,Alexis López Cruz,79,M,La Palma,15,2023-12-22
+1889,Paola Roa,76,M,Balboa,9,2024-10-28
+1890,Tatiana Herrera,62,M,Timbío,10,2023-11-08
+1891,Betty Katerine Betancur,60,F,Tutazá,12,2023-12-19
+1892,Gloria Cruz González,51,M,Andes,1,2023-09-16
+1893,Liliana Doris Rodríguez Ramos,26,F,Facatativá,9,2024-12-06
+1894,Alfonso Peña Torres,43,M,Contadero,15,2025-03-14
+1895,Danny William Salamanca Rico,19,M,Vijes,1,2024-06-24
+1896,María Ana Osorio Montes,70,F,Timbío,12,2024-10-01
+1897,Angie Rubiela Sánchez,26,F,San Juanito,3,2025-03-20
+1898,Alexandra Johana Ramírez,26,M,Arcabuco,11,2025-02-25
+1899,Francisco Robinson Peña,57,F,El Guamo,2,2023-11-25
+1900,Liceth Parra,34,F,Maripí,16,2025-03-29
+1901,Andrea Martínez Hernández,18,F,La Gloria,9,2023-11-27
+1902,Jaime Carlos Rojas Hernández,42,F,La Montañita,15,2024-08-13
+1903,Fernando Juan Fonseca Parra,78,F,Villa de Leyva,12,2024-04-09
+1904,Edwin Javier Saavedra,60,M,Chitagá,1,2023-08-24
+1905,Javier Beltrán,57,M,Remolino,13,2023-06-30
+1906,Karen Ana Rengifo Riascos,59,F,Gachantivá,14,2024-06-18
+1907,Liseth Ana Vargas Vergara,42,M,Jambaló,8,2025-01-15
+1908,Javier Orozco,56,M,Bucarasica,8,2023-07-05
+1909,Luis Rubén Valencia,52,F,San Carlos de Guaroa,12,2023-09-28
+1910,Yeimy Corredor Fuentes,20,M,La Tebaida,1,2023-10-02
+1911,Omaira Rodríguez,67,F,Anserma,11,2024-05-27
+1912,William Jorge Navarro,54,F,Cuítiva,8,2024-12-05
+1913,Lucía Alba Carvajal Suárez,61,M,La Uvita,10,2024-03-12
+1914,Rodolfo Sierra Rodríguez,61,F,Guachucal,19,2024-10-13
+1915,José Martínez,68,F,Uribia,11,2024-03-02
+1916,Óscar Andrés Hernández,47,F,Santa Rosa,7,2024-09-30
+1917,Juan Wilson Díaz García,55,F,Calamar,11,2024-10-05
+1918,Antonio Jorge Fuentes Mendoza,51,F,Guatapé,17,2024-04-01
+1919,Esperanza Flórez,29,M,Lenguazaque,1,2023-07-27
+1920,Andrés González,36,M,San Vicente de Chucurí,8,2025-05-27
+1921,Luis Diego Muñoz,54,F,La Peña,6,2023-08-01
+1922,Beatriz Pineda,61,F,Zipaquirá,18,2023-06-12
+1923,Karen Blanca Mejía,76,M,Montebello,6,2024-12-15
+1924,William Albeiro Barrera,76,F,San Eduardo,5,2025-05-21
+1925,Freddy Martínez,66,M,Palmar,13,2025-04-18
+1926,Jorge Ramos,78,F,Cajibío,19,2025-01-09
+1927,Claudia Andrea Polo Hernández,34,F,Bello,8,2024-04-06
+1928,David Juan Nieto Castro,27,F,El Doncello,9,2023-12-14
+1929,Stiven Juan Niño,74,F,Cabrera,17,2023-10-21
+1930,Libardo Julio Jaimes,72,F,La Belleza,3,2023-06-10
+1931,Adriana Pardo Contreras,66,F,Belmira,19,2024-10-20
+1932,Arnulfo Edgar Vanegas Herrera,64,F,San Jerónimo,11,2025-02-22
+1933,Moisés Peña Cruz,29,M,San Diego,17,2023-10-25
+1934,Mariana Paola Arias Díaz,79,M,San Antonio,19,2024-01-06
+1935,Sandra Ávila Jiménez,33,M,Sácama,2,2024-12-04
+1936,Estela María López,41,F,Barrancominas,8,2023-10-13
+1937,Rosa Luz Hernández,36,F,Puerto Nariño,19,2023-11-06
+1938,Jorge Rafael Rueda Suárez,25,F,Viracachá,7,2023-09-05
+1939,Ana Mónica Bastidas,48,F,Guaitarilla,17,2025-04-18
+1940,Amparo Yuli Patiño,38,F,Abejorral,6,2023-07-29
+1941,Sebastián Pulido,34,F,Buriticá,19,2023-08-01
+1942,Emma Gómez,40,F,Hatonuevo,6,2025-04-12
+1943,Jenny Barreto Obando,54,M,Aldana,2,2025-05-10
+1944,Ramón Cruz Mendoza,71,F,Silvania,6,2024-04-03
+1945,Juan Gómez Cárdenas,33,M,Yalí,5,2024-04-03
+1946,Carmen Mejía Cruz,23,M,Contadero,19,2024-03-03
+1947,Mauricio Durán,25,F,Sabanalarga,4,2024-01-19
+1948,José Rodríguez Gómez,42,F,Sampués,17,2025-01-04
+1949,Esther Myriam Díaz Betancur,35,M,Villamaría,11,2023-12-13
+1950,Juan Díaz Carrillo,42,M,Pamplonita,4,2025-03-03
+1951,Luz Elizabeth Vargas,29,F,La Macarena,13,2023-07-21
+1952,Abel Rodríguez Velasco,32,F,La Plata,17,2024-04-26
+1953,Inés Ruiz,76,M,San Diego,9,2025-04-02
+1954,Patricia Matilde Valencia,43,F,Cañasgordas,4,2024-09-11
+1955,Luz Parra,58,F,San Bernardo,14,2024-10-16
+1956,Patricia Álvarez,62,F,Cereté,19,2025-02-11
+1957,Sergio Enrique Barreto,43,M,Ulloa,3,2024-02-19
+1958,Yasmín Moreno,64,M,Paipa,14,2023-09-04
+1959,Andrés Chacón,49,M,Firavitoba,8,2024-06-06
+1960,Gustavo Albeiro Álvarez Herrera,27,F,San Carlos,1,2024-11-03
+1961,Guillermo Pérez Quintero,33,F,Guaranda,10,2023-11-06
+1962,Yaneth Lorena Trujillo,24,M,El Santuario,18,2025-05-30
+1963,Vicente Arango Villegas,34,M,San José de Uré,16,2024-03-09
+1964,Carmen Deyanira Hernández Muñoz,40,M,Bugalagrande,8,2024-12-18
+1965,César Miguel Sarmiento,43,F,Matanza,1,2025-04-08
+1966,Germán Martín Guzmán,38,M,Villa del Rosario,12,2023-12-16
+1967,Astrid Muñoz Villa,39,M,Palestina,8,2023-12-07
+1968,Elsa Ruby Ayala,75,F,Toro,16,2024-04-13
+1969,Fabián López Giraldo,24,F,Berbeo,18,2025-02-13
+1970,Martha Barrios,31,F,San Agustín,4,2023-06-30
+1971,Beatriz Elvira Ortega,32,M,Chaguaní,6,2023-07-13
+1972,Alexander Galvis Vargas,70,F,Cravo Norte,12,2023-06-11
+1973,Jhoana Giraldo,24,F,Guadalajara de Buga,9,2024-12-18
+1974,Edison Daniel Tovar,26,M,El Guamo,15,2024-10-08
+1975,Nancy Esther Blanco Rojas,68,F,Puerto Nariño,16,2024-10-17
+1976,Martha Jiménez Pérez,65,M,Tota,12,2025-05-17
+1977,Constanza Juliana Lozano Rojas,25,M,Génova,14,2024-08-30
+1978,Adriana Myriam Arboleda Camargo,67,F,Simijaca,13,2023-10-31
+1979,Paula Claudia Delgado,76,F,Chivatá,2,2025-04-15
+1980,Juan Edgar Ríos,40,F,Barbosa,3,2024-05-02
+1981,Constanza Gil,46,F,Mesetas,10,2023-11-25
+1982,Lizeth Medina Hernández,35,F,Leticia,9,2024-03-25
+1983,Oliva María Vélez Torres,48,F,Santa Bárbara,8,2024-05-07
+1984,Paola Bustamante,47,M,El Piñón,10,2023-11-01
+1985,Lorena Jiménez Bermúdez,69,M,Piedecuesta,19,2023-11-28
+1986,Alberto Salazar Zuluaga,56,F,Unión Panamericana,3,2025-02-12
+1987,David Ángel Rodríguez,52,M,La Cumbre,5,2023-08-15
+1988,Bibiana Yaneth Cortés,35,F,Pácora,3,2024-03-19
+1989,Erika Oviedo Álvarez,76,M,Arauquita,16,2023-12-19
+1990,Efrain Pablo Fernández Rivera,59,M,Susa,17,2023-08-12
+1991,María Cardona Ramírez,56,M,San Pelayo,15,2023-09-24
+1992,Gustavo Cabrera,34,F,La Victoria,3,2023-06-11
+1993,Oliva Estella Rincón,31,M,Aipe,12,2023-07-22
+1994,Manuel Córdoba,48,F,Silos,9,2024-05-09
+1995,Josefa Sandra Reyes,41,M,Colombia,12,2023-09-12
+1996,Jesús Castro Romero,52,M,Miraflores,15,2024-02-15
+1997,Elizabeth Yulieth Sánchez Monroy,61,M,Sitionuevo,2,2023-11-25
+1998,Rocío Marleny Beltrán Sánchez,77,M,Florián,18,2024-10-03
+1999,Alberto Mauricio Velásquez Narváez,62,M,Balboa,12,2024-04-26
+2000,Magda Yaneth Cárdenas Mendoza,51,F,Uramita,4,2023-06-25
