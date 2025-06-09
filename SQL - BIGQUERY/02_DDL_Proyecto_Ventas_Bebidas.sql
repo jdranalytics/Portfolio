@@ -76,3 +76,44 @@ CREATE TABLE IF NOT EXISTS bebidas_analytics.ventas (
     FOREIGN KEY (region_id) REFERENCES bebidas_analytics.regiones(region_id),
     FOREIGN KEY (promocion_id) REFERENCES bebidas_analytics.promociones(promocion_id)
 );
+
+-- Vista para Predicción de Ventas
+CREATE OR REPLACE VIEW BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.vw_ventas_ml AS
+SELECT 
+    v.fecha,
+    v.producto_id,
+    v.region_id,
+    v.cantidad,
+    p.categoria,
+    p.marca,
+    MONTH(v.fecha) AS mes,
+    DAYOFWEEK(v.fecha) AS dia_semana,
+    AVG(v.precio_unitario) AS precio_promedio
+FROM BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.ventas v
+JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.productos p ON v.producto_id = p.producto_id
+GROUP BY v.fecha, v.producto_id, v.region_id, v.cantidad, p.categoria, p.marca, MONTH(v.fecha), DAYOFWEEK(v.fecha);
+
+-- Vista para Optimización de Precios
+CREATE OR REPLACE VIEW BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.vw_precios_ml AS
+SELECT 
+    v.producto_id,
+    v.precio_unitario AS precio,
+    p.categoria,
+    p.marca,
+    CASE WHEN v.cantidad > 0 THEN 1 ELSE 0 END AS compra,
+    MONTH(v.fecha) AS mes
+FROM BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.ventas v
+JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.productos p ON v.producto_id = p.producto_id;
+
+-- Vista para Predicción de Rotación de Inventario
+CREATE OR REPLACE VIEW BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.vw_inventario_ml AS
+SELECT 
+    i.producto_id,
+    i.region_id,
+    i.stock,
+    SUM(v.cantidad) / AVG(i.stock) AS rotacion,
+    AVG(v.cantidad) AS ventas_historicas,
+    MONTH(v.fecha) AS mes
+FROM BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.inventarios i
+LEFT JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.ventas v ON i.producto_id = v.producto_id AND i.region_id = v.region_id
+GROUP BY i.producto_id, i.region_id, i.stock, MONTH(v.fecha);
