@@ -1,21 +1,21 @@
 producto_id,nombre_producto,categoria,precio_base,costo_variable,marca
-1,Agua 250 mL x 6,Agua,375.0,200.0,Competidor2
-2,Manzana 600 mL x 6,Jugo,900.0,480.0,Mi Marca
-3,Agua 250 mL x 24,Agua,1500.0,800.0,Competidor2
-4,Energía 250 mL x 24,Bebida Energética,1500.0,800.0,Competidor1
-5,Cola 250 mL x 6,Gaseosa,375.0,200.0,Mi Marca
-6,Naranja 250 mL x 24,Jugo,1500.0,800.0,Mi Marca
-7,Agua 2000 mL x 6,Agua,3000.0,1600.0,Competidor1
-8,Energía 1000 mL x 6,Bebida Energética,1500.0,800.0,Mi Marca
-9,Agua 2000 mL x 12,Agua,6000.0,3200.0,Competidor1
-10,Naranja 600 mL x 12,Jugo,1800.0,960.0,Mi Marca
-11,Cola 2000 mL x 6,Gaseosa,3000.0,1600.0,Competidor1
-12,Manzana 1000 mL x 6,Jugo,1500.0,800.0,Competidor2
-13,Lima 250 mL x 12,Jugo,750.0,400.0,Mi Marca
-14,Energía 1000 mL x 24,Bebida Energética,6000.0,3200.0,Competidor2
-15,Manzana 600 mL x 24,Jugo,3600.0,1920.0,Mi Marca
-16,Cola 600 mL x 12,Gaseosa,1800.0,960.0,Mi Marca
-17,Naranja 250 mL x 12,Jugo,750.0,400.0,Competidor1
-18,Lima 1000 mL x 6,Jugo,1500.0,800.0,Competidor1
-19,Manzana 600 mL x 24,Jugo,3600.0,1920.0,Competidor1
-20,Agua 250 mL x 24,Agua,1500.0,800.0,Competidor2
+1,Limón 1000 mL x 6,Gaseosa,1500.0,800.0,Mi Marca
+2,Agua Sin Gas 1000 mL x 24,Agua,6000.0,3200.0,Competidor2
+3,Té 2000 mL x 12,Bebida,6000.0,3200.0,Mi Marca
+4,Limón 2000 mL x 6,Gaseosa,3000.0,1600.0,Mi Marca
+5,Naranja 600 mL x 24,Jugo,3600.0,1920.0,Mi Marca
+6,Agua 2000 mL x 24,Agua,12000.0,6400.0,Mi Marca
+7,Té 2000 mL x 24,Bebida,12000.0,6400.0,Competidor1
+8,Lima 1000 mL x 24,Jugo,6000.0,3200.0,Mi Marca
+9,Agua con Gas 250 mL x 24,Agua,1500.0,800.0,Competidor2
+10,Agua 1000 mL x 24,Agua,6000.0,3200.0,Competidor1
+11,Naranja 1000 mL x 12,Jugo,3000.0,1600.0,Mi Marca
+12,Manzana 250 mL x 24,Jugo,1500.0,800.0,Competidor2
+13,Manzanita 600 mL x 24,Gaseosa,3600.0,1920.0,Mi Marca
+14,Agua con Gas 1000 mL x 24,Agua,6000.0,3200.0,Competidor2
+15,Energía 600 mL x 6,Bebida Energética,900.0,480.0,Competidor1
+16,Agua 600 mL x 24,Agua,3600.0,1920.0,Competidor2
+17,Cola 1000 mL x 12,Gaseosa,3000.0,1600.0,Mi Marca
+18,Naranja 1000 mL x 12,Jugo,3000.0,1600.0,Mi Marca
+19,Cola 600 mL x 24,Gaseosa,3600.0,1920.0,Mi Marca
+20,Naranja 2000 mL x 6,Jugo,3000.0,1600.0,Competidor2
