@@ -1,11 +1,11 @@
 region_id,nombre_region,ciudad
-1,Caquetá,Sucre
-2,"Bogotá, D.C.",Cucunubá
-3,Valle del Cauca,Santa Fé de Antioquia
-4,Cesar,Yumbo
-5,La Guajira,Mistrató
-6,Quindío,Coromoro
-7,Quindío,Río Viejo
-8,Valle del Cauca,Mahates
-9,Atlántico,Barichara
-10,Boyacá,Confines
+1,"Bogotá, D.C.",Canalete
+2,Sucre,Río de Oro
+3,Chocó,Riofrío
+4,Guaviare,Barrancas
+5,Risaralda,Coello
+6,Arauca,Carmen del Darién
+7,La Guajira,Dosquebradas
+8,Meta,El Guamo
+9,Tolima,San Estanislao
+10,Valle del Cauca,Piedras

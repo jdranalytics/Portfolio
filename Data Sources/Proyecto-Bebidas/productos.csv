@@ -19,3 +19,23 @@ producto_id,nombre_producto,categoria,precio_base,costo_variable,marca
 18,Naranja 1000 mL x 12,Jugo,3000.0,1600.0,Mi Marca
 19,Cola 600 mL x 24,Gaseosa,3600.0,1920.0,Mi Marca
 20,Naranja 2000 mL x 6,Jugo,3000.0,1600.0,Competidor2
+21,Agua 600 mL x 6,Agua,900.0,480.0,Competidor2
+22,Manzana 600 mL x 12,Jugo,1800.0,960.0,Competidor2
+23,Energía 2000 mL x 6,Bebida Energética,3000.0,1600.0,Competidor2
+24,Agua 600 mL x 24,Agua,3600.0,1920.0,Competidor1
+25,Té 1000 mL x 12,Bebida,3000.0,1600.0,Competidor2
+26,Manzana 250 mL x 6,Jugo,375.0,200.0,Mi Marca
+27,Naranja 1000 mL x 6,Jugo,1500.0,800.0,Competidor2
+28,Lima 600 mL x 24,Jugo,3600.0,1920.0,Mi Marca
+29,Cola 250 mL x 24,Gaseosa,1500.0,800.0,Competidor2
+30,Cola 600 mL x 6,Gaseosa,900.0,480.0,Mi Marca
+31,Uva 250 mL x 24,Gaseosa,1500.0,800.0,Mi Marca
+32,Manzanita 2000 mL x 6,Gaseosa,3000.0,1600.0,Competidor2
+33,Limón 2000 mL x 6,Gaseosa,3000.0,1600.0,Competidor1
+34,Agua 2000 mL x 6,Agua,3000.0,1600.0,Mi Marca
+35,Naranja 2000 mL x 12,Jugo,6000.0,3200.0,Competidor1
+36,Té 2000 mL x 24,Bebida,12000.0,6400.0,Mi Marca
+37,Agua con Gas 250 mL x 6,Agua,375.0,200.0,Competidor1
+38,Agua Sin Gas 1000 mL x 6,Agua,1500.0,800.0,Mi Marca
+39,Piña 600 mL x 24,Gaseosa,3600.0,1920.0,Competidor1
+40,Limón 2000 mL x 6,Gaseosa,3000.0,1600.0,Competidor1

@@ -12,13 +12,13 @@ random.seed(42)
 # Parámetros
 n_ventas = 10000  # Número de transacciones totales
 n_clientes = 2000  # Número de clientes
-n_productos = 20   # Número de productos
+n_productos = 40   # Número de productos
 n_canales = 5      # Número de canales
 n_promociones = 10 # Número de promociones
 n_regiones = 10    # Número de regiones
 n_inventarios = 100 # Registros de inventario
 
-# 1. Tabla Regiones (generar ciudades primero)
+# 1. Tabla Regiones
 regiones = {
     'region_id': range(1, n_regiones + 1),
     'nombre_region': [fake.department() for _ in range(n_regiones)],
@@ -26,7 +26,7 @@ regiones = {
 }
 df_regiones = pd.DataFrame(regiones)
 
-# 2. Tabla Clientes (usar ciudades de df_regiones para asegurar cobertura)
+# 2. Tabla Clientes
 ciudades_regiones = df_regiones['ciudad'].tolist()
 n_clientes_por_ciudad = max(1, n_clientes // n_regiones)  # Mínimo 1 cliente por ciudad
 clientes = []
@@ -146,6 +146,7 @@ n_weeks = (end_date - start_date).days // 7 + 1  # Número de semanas (aprox. 12
 
 # Generar ventas mínimas por ciudad y producto (una por semana)
 ventas_minimas = []
+venta_id_counter = 1
 for region_id, region in df_regiones.iterrows():
     ciudad = region['ciudad']
     # Filtrar clientes de la ciudad específica
@@ -167,6 +168,7 @@ for region_id, region in df_regiones.iterrows():
         for week in range(n_weeks):
             fecha = start_date + timedelta(days=week * 7)
             ventas_minimas.append({
+                'venta_id': venta_id_counter,
                 'fecha': fecha,
                 'cliente_id': np.random.choice(clientes_ciudad),
                 'producto_id': producto_id,
@@ -175,14 +177,16 @@ for region_id, region in df_regiones.iterrows():
                 'region_id': region_id + 1,
                 'promocion_id': np.random.choice([None] + list(df_promociones['promocion_id']), p=[0.7] + [0.3/n_promociones]*n_promociones)
             })
+            venta_id_counter += 1
 
 df_ventas_minimas = pd.DataFrame(ventas_minimas)
-n_min_ventas = len(df_ventas_minimas)
 
 # Completar con ventas aleatorias hasta n_ventas
+n_min_ventas = len(df_ventas_minimas)
 n_random_ventas = n_ventas - n_min_ventas
 if n_random_ventas > 0:
     ventas_aleatorias = {
+        'venta_id': range(venta_id_counter, venta_id_counter + n_random_ventas),
         'fecha': [fake.date_time_between(start_date=start_date, end_date=end_date) for _ in range(n_random_ventas)],
         'cliente_id': np.random.choice(df_clientes['cliente_id'], n_random_ventas),
         'producto_id': np.random.choice(df_productos['producto_id'], n_random_ventas),
@@ -209,3 +213,10 @@ df_inventarios.to_csv('inventarios.csv', index=False)
 df_ventas.to_csv('ventas.csv', index=False)
 
 print(f"Datasets generados y guardados como CSV. Total ventas: {len(df_ventas)}")
+print(f"Datasets generados y guardados como CSV. Total productos: {len(df_productos)}")
+print(f"Datasets generados y guardados como CSV. Total clientes: {len(df_clientes)}")
+print(f"Datasets generados y guardados como CSV. Total regiones: {len(df_regiones)}")
+print(f"Datasets generados y guardados como CSV. Total canales: {len(df_canales)}")
+print(f"Datasets generados y guardados como CSV. Total promociones: {len(df_promociones)}")
+print(f"Datasets generados y guardados como CSV. Total inventarios: {len(df_inventarios)}")
+# Fin del script
