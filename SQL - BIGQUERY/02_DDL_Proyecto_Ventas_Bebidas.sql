@@ -66,7 +66,6 @@ CREATE TABLE IF NOT EXISTS bebidas_analytics.ventas (
     cliente_id INTEGER,
     producto_id INTEGER,
     cantidad INTEGER,
-    precio_unitario FLOAT,
     canal_id INTEGER,
     region_id INTEGER,
     promocion_id INTEGER,
@@ -80,19 +79,44 @@ CREATE TABLE IF NOT EXISTS bebidas_analytics.ventas (
 -- Vista para Predicción de Ventas
 CREATE OR REPLACE VIEW BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.vw_ventas_ml AS
 SELECT 
-    v.fecha,
+    DATE_TRUNC('WEEK', v.fecha) AS semana,
     v.producto_id,
     v.region_id,
-    v.cantidad,
+    SUM(v.cantidad) AS cantidad,
     p.categoria,
     p.marca,
-    MONTH(v.fecha) AS mes,
-    DAYOFWEEK(v.fecha) AS dia_semana,
-    AVG(v.precio_unitario) AS precio_promedio
+    EXTRACT(WEEK FROM v.fecha) AS semana_del_ano,
+    EXTRACT(DAYOFWEEK FROM v.fecha) AS dia_semana_promedio,
+    AVG(v.precio_unitario) AS precio_promedio,
+    -- Ventas de la semana anterior (lag)
+    LAG(SUM(v.cantidad), 1) OVER (
+        PARTITION BY v.producto_id, v.region_id 
+        ORDER BY DATE_TRUNC('WEEK', v.fecha)
+    ) AS ventas_lag1,
+    -- Promedio móvil de las últimas 4 semanas
+    AVG(SUM(v.cantidad)) OVER (
+        PARTITION BY v.producto_id, v.region_id 
+        ORDER BY DATE_TRUNC('WEEK', v.fecha)
+        ROWS BETWEEN 4 PRECEDING AND 1 PRECEDING
+    ) AS ventas_promedio_movil,
+    -- Indicador de festividad (simplificado: diciembre es festivo)
+    CASE 
+        WHEN EXTRACT(MONTH FROM v.fecha) = 12 THEN 1 
+        ELSE 0 
+    END AS es_festividad
 FROM BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.ventas v
-JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.productos p ON v.producto_id = p.producto_id
-GROUP BY v.fecha, v.producto_id, v.region_id, v.cantidad, p.categoria, p.marca, MONTH(v.fecha), DAYOFWEEK(v.fecha);
-
+JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.productos p 
+    ON v.producto_id = p.producto_id
+GROUP BY 
+    DATE_TRUNC('WEEK', v.fecha),
+    v.producto_id,
+    v.region_id,
+    p.categoria,
+    p.marca,
+    EXTRACT(WEEK FROM v.fecha),
+    EXTRACT(DAYOFWEEK FROM v.fecha),
+    CASE WHEN EXTRACT(MONTH FROM v.fecha) = 12 THEN 1 ELSE 0 END;
+    
 -- Vista para Optimización de Precios
 CREATE OR REPLACE VIEW BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.vw_precios_ml AS
 SELECT 

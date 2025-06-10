@@ -18,10 +18,10 @@ n_promociones = 10 # Número de promociones
 n_regiones = 10    # Número de regiones
 n_inventarios = 100 # Registros de inventario
 
-# 1. Tabla Clientes (agregando nombres)
+# 1. Tabla Clientes
 clientes = {
     'cliente_id': range(1, n_clientes + 1),
-    'nombre': [fake.name() for _ in range(n_clientes)],  # Nombres realistas
+    'nombre': [fake.name() for _ in range(n_clientes)],
     'edad': np.random.randint(18, 80, n_clientes),
     'genero': np.random.choice(['M', 'F'], n_clientes),
     'ciudad': [fake.city() for _ in range(n_clientes)],
@@ -31,16 +31,49 @@ clientes = {
 df_clientes = pd.DataFrame(clientes)
 
 # 2. Tabla Productos
-categorias = ['Gaseosa', 'Jugo', 'Bebida Energética', 'Agua']
-marcas = ['Postobón', 'Competidor1', 'Competidor2']
-productos = {
-    'producto_id': range(1, n_productos + 1),
-    'nombre_producto': [f"{random.choice(['Cola', 'Naranja', 'Manzana', 'Lima', 'Energía', 'Agua'])} {i}" for i in range(1, n_productos + 1)],
-    'categoria': np.random.choice(categorias, n_productos),
-    'precio_base': np.round(np.random.uniform(1000, 5000, n_productos), 2),
-    'costo_variable': np.round(np.random.uniform(500, 3000, n_productos), 2),
-    'marca': np.random.choice(marcas, n_productos)
+volumenes = [250, 600, 1000, 2000]  # mL
+cajas = [6, 12, 24]  # Unidades por caja
+categorias = {
+    'Cola': 'Gaseosa',
+    'Naranja': 'Jugo',
+    'Manzana': 'Jugo',
+    'Lima': 'Jugo',
+    'Energía': 'Bebida Energética',
+    'Agua': 'Agua'
 }
+marcas = ['Mi Marca', 'Competidor1', 'Competidor2']
+
+productos = []
+base_precio = 3000  # Precio base para 1L
+base_costo = 2000  # Costo base para 1L
+
+for i in range(n_productos):
+    sabor = random.choice(list(categorias.keys()))
+    volumen = random.choice(volumenes)
+    caja = random.choice(cajas)
+    marca = random.choice(marcas)
+    categoria = categorias[sabor]
+    
+    # Escalar precio y costo proporcionalmente al volumen (1L = 100%)
+    precio_factor = volumen / 1000  # 250 mL = 0.25, 600 mL = 0.6, 2L = 2.0
+    costo_factor = precio_factor * 0.8  # Costo es ~80% del precio proporcional
+    precio_base = base_precio * precio_factor
+    costo_variable = base_costo * costo_factor
+    
+    # Ajustar para caja (precio y costo por unidad, luego multiplicar por caja)
+    caja_factor = caja / 12  # 12 como base
+    precio_base *= caja_factor
+    costo_variable *= caja_factor
+    
+    productos.append({
+        'producto_id': i + 1,
+        'nombre_producto': f"{sabor} {volumen} mL x {caja}",
+        'categoria': categoria,
+        'precio_base': round(precio_base, 2),
+        'costo_variable': round(costo_variable, 2) if costo_variable < precio_base else round(precio_base * 0.7, 2),
+        'marca': marca
+    })
+
 df_productos = pd.DataFrame(productos)
 
 # 3. Tabla Canales
@@ -51,10 +84,10 @@ canales = {
 }
 df_canales = pd.DataFrame(canales)
 
-# 4. Tabla Regiones (usando department en lugar de state)
+# 4. Tabla Regiones
 regiones = {
     'region_id': range(1, n_regiones + 1),
-    'nombre_region': [fake.department() for _ in range(n_regiones)],  # Departamentos colombianos
+    'nombre_region': [fake.department() for _ in range(n_regiones)],
     'ciudad': [fake.city() for _ in range(n_regiones)]
 }
 df_regiones = pd.DataFrame(regiones)
@@ -79,7 +112,7 @@ inventarios = {
 }
 df_inventarios = pd.DataFrame(inventarios)
 
-# 7. Tabla Ventas
+# 7. Tabla Ventas (sin precio_unitario en datos crudos)
 start_date = datetime(2023, 1, 1)
 end_date = datetime(2025, 6, 8)
 ventas = {
@@ -88,13 +121,23 @@ ventas = {
     'cliente_id': np.random.choice(df_clientes['cliente_id'], n_ventas),
     'producto_id': np.random.choice(df_productos['producto_id'], n_ventas),
     'cantidad': np.random.randint(1, 10, n_ventas),
-    'precio_unitario': [df_productos.loc[df_productos['producto_id'] == pid, 'precio_base'].iloc[0] * (1 - random.uniform(0, 0.2)) for pid in np.random.choice(df_productos['producto_id'], n_ventas)],
     'canal_id': np.random.choice(df_canales['canal_id'], n_ventas),
     'region_id': np.random.choice(df_regiones['region_id'], n_ventas),
-    'promocion_id': np.random.choice(df_promociones['promocion_id'], n_ventas, p=[0.1] * n_promociones)
+    'promocion_id': np.random.choice([None] + list(df_promociones['promocion_id']), n_ventas, p=[0.7] + [0.3/n_promociones]*n_promociones)
 }
 df_ventas = pd.DataFrame(ventas)
-df_ventas['precio_unitario'] = df_ventas['precio_unitario'].round(2)
+
+# Calcular precio_unitario dinámicamente solo cuando se necesite
+def calcular_precio_unitario(row):
+    precio_base = df_productos.loc[df_productos['producto_id'] == row['producto_id'], 'precio_base'].iloc[0]
+    descuento = 0
+    if pd.notna(row['promocion_id']):
+        descuento = df_promociones.loc[df_promociones['promocion_id'] == row['promocion_id'], 'descuento_porcentaje'].iloc[0] / 100
+    precio_final = precio_base * (1 - random.uniform(0, 0.1) - descuento)  # Descuento aleatorio + promoción
+    return round(precio_final, 2)
+
+# Añadir precio_unitario como columna calculada (opcional para análisis, pero no en raw data)
+df_ventas['precio_unitario'] = df_ventas.apply(calcular_precio_unitario, axis=1)
 
 # Guardar los datasets como CSV
 df_clientes.to_csv('clientes.csv', index=False)
@@ -103,6 +146,8 @@ df_canales.to_csv('canales.csv', index=False)
 df_regiones.to_csv('regiones.csv', index=False)
 df_promociones.to_csv('promociones.csv', index=False)
 df_inventarios.to_csv('inventarios.csv', index=False)
+# Guardar ventas sin precio_unitario en raw data (opcional incluirlo como columna calculada)
+df_ventas.drop(columns=['precio_unitario'], inplace=True)  # Eliminar de raw data
 df_ventas.to_csv('ventas.csv', index=False)
 
 print("Datasets generados y guardados como CSV.")
