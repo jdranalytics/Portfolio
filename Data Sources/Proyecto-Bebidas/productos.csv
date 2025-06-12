@@ -1,41 +1,41 @@
-producto_id,nombre_producto,categoria,precio_base,costo_variable,marca
-1,Limón 1000 mL x 6,Gaseosa,1500.0,800.0,Mi Marca
-2,Agua Sin Gas 1000 mL x 24,Agua,6000.0,3200.0,Competidor2
-3,Té 2000 mL x 12,Bebida,6000.0,3200.0,Mi Marca
-4,Limón 2000 mL x 6,Gaseosa,3000.0,1600.0,Mi Marca
-5,Naranja 600 mL x 24,Jugo,3600.0,1920.0,Mi Marca
-6,Agua 2000 mL x 24,Agua,12000.0,6400.0,Mi Marca
-7,Té 2000 mL x 24,Bebida,12000.0,6400.0,Competidor1
-8,Lima 1000 mL x 24,Jugo,6000.0,3200.0,Mi Marca
-9,Agua con Gas 250 mL x 24,Agua,1500.0,800.0,Competidor2
-10,Agua 1000 mL x 24,Agua,6000.0,3200.0,Competidor1
-11,Naranja 1000 mL x 12,Jugo,3000.0,1600.0,Mi Marca
-12,Manzana 250 mL x 24,Jugo,1500.0,800.0,Competidor2
-13,Manzanita 600 mL x 24,Gaseosa,3600.0,1920.0,Mi Marca
-14,Agua con Gas 1000 mL x 24,Agua,6000.0,3200.0,Competidor2
-15,Energía 600 mL x 6,Bebida Energética,900.0,480.0,Competidor1
-16,Agua 600 mL x 24,Agua,3600.0,1920.0,Competidor2
-17,Cola 1000 mL x 12,Gaseosa,3000.0,1600.0,Mi Marca
-18,Naranja 1000 mL x 12,Jugo,3000.0,1600.0,Mi Marca
-19,Cola 600 mL x 24,Gaseosa,3600.0,1920.0,Mi Marca
-20,Naranja 2000 mL x 6,Jugo,3000.0,1600.0,Competidor2
-21,Agua 600 mL x 6,Agua,900.0,480.0,Competidor2
-22,Manzana 600 mL x 12,Jugo,1800.0,960.0,Competidor2
-23,Energía 2000 mL x 6,Bebida Energética,3000.0,1600.0,Competidor2
-24,Agua 600 mL x 24,Agua,3600.0,1920.0,Competidor1
-25,Té 1000 mL x 12,Bebida,3000.0,1600.0,Competidor2
-26,Manzana 250 mL x 6,Jugo,375.0,200.0,Mi Marca
-27,Naranja 1000 mL x 6,Jugo,1500.0,800.0,Competidor2
-28,Lima 600 mL x 24,Jugo,3600.0,1920.0,Mi Marca
-29,Cola 250 mL x 24,Gaseosa,1500.0,800.0,Competidor2
-30,Cola 600 mL x 6,Gaseosa,900.0,480.0,Mi Marca
-31,Uva 250 mL x 24,Gaseosa,1500.0,800.0,Mi Marca
-32,Manzanita 2000 mL x 6,Gaseosa,3000.0,1600.0,Competidor2
-33,Limón 2000 mL x 6,Gaseosa,3000.0,1600.0,Competidor1
-34,Agua 2000 mL x 6,Agua,3000.0,1600.0,Mi Marca
-35,Naranja 2000 mL x 12,Jugo,6000.0,3200.0,Competidor1
-36,Té 2000 mL x 24,Bebida,12000.0,6400.0,Mi Marca
-37,Agua con Gas 250 mL x 6,Agua,375.0,200.0,Competidor1
-38,Agua Sin Gas 1000 mL x 6,Agua,1500.0,800.0,Mi Marca
-39,Piña 600 mL x 24,Gaseosa,3600.0,1920.0,Competidor1
-40,Limón 2000 mL x 6,Gaseosa,3000.0,1600.0,Competidor1
+producto_id,nombre_producto,categoria,marca,volumen_ml_base,unidades_caja_base
+1,Té Verde 500mL x 6uds,Bebida de Té,Competidor2,500,6
+2,Té Verde 500mL x 12uds,Bebida de Té,Zulianita,500,12
+3,Jugo Lima 2000mL x 6uds,Jugo,Competidor1,2000,6
+4,Jugo Lima 1000mL x 6uds,Jugo,Zulianita,1000,6
+5,Energía Extrema 500mL x 4uds,Bebida Energética,Competidor2,500,4
+6,Té Negro 500mL x 6uds,Bebida de Té,Zulianita,500,6
+7,Agua Sin Gas 1L x 6uds,Agua,Zulianita,1000,6
+8,Agua Sin Gas 1L x 6uds,Agua,Zulianita,1000,6
+9,Agua Sin Gas 2L x 6uds,Agua,Competidor1,2000,6
+10,Cola 2000mL x 6uds,Gaseosa,Competidor1,2000,6
+11,Té Verde 300mL x 6uds,Bebida de Té,Zulianita,300,6
+12,Power Up 250mL x 4uds,Bebida Energética,Competidor2,250,4
+13,Energía Extrema 500mL x 6uds,Bebida Energética,Competidor2,500,6
+14,Jugo Naranja 250mL x 24uds,Jugo,Competidor1,250,24
+15,Agua con Gas 2L x 1uds,Agua,Competidor1,2000,1
+16,Power Up 250mL x 4uds,Bebida Energética,Competidor2,250,4
+17,Piña 1000mL x 24uds,Gaseosa,Competidor1,1000,24
+18,Jugo Naranja 2000mL x 24uds,Jugo,Zulianita,2000,24
+19,Cola 600mL x 24uds,Gaseosa,Zulianita,600,24
+20,Jugo Manzana 600mL x 24uds,Jugo,Competidor1,600,24
+21,Agua con Gas 2L x 1uds,Agua,Competidor1,2000,1
+22,Power Up 500mL x 6uds,Bebida Energética,Competidor2,500,6
+23,Energía Extrema 500mL x 4uds,Bebida Energética,Competidor2,500,4
+24,Power Up 500mL x 6uds,Bebida Energética,Zulianita,500,6
+25,Agua con Gas 5L x 1uds,Agua,Zulianita,5000,1
+26,Agua Sin Gas 1L x 1uds,Agua,Zulianita,1000,1
+27,Agua con Gas 500mL x 6uds,Agua,Zulianita,500,6
+28,Jugo Manzana 2000mL x 24uds,Jugo,Zulianita,2000,24
+29,Té Verde 1000mL x 12uds,Bebida de Té,Competidor2,1000,12
+30,Uva 600mL x 24uds,Gaseosa,Zulianita,600,24
+31,Jugo Lima 2000mL x 12uds,Jugo,Competidor1,2000,12
+32,Té Verde 1000mL x 6uds,Bebida de Té,Competidor2,1000,6
+33,Jugo Lima 600mL x 6uds,Jugo,Competidor1,600,6
+34,Jugo Lima 600mL x 12uds,Jugo,Competidor1,600,12
+35,Jugo Lima 2000mL x 12uds,Jugo,Zulianita,2000,12
+36,Power Up 500mL x 4uds,Bebida Energética,Competidor2,500,4
+37,Agua Sin Gas 2L x 1uds,Agua,Competidor1,2000,1
+38,Jugo Naranja 250mL x 12uds,Jugo,Competidor1,250,12
+39,Power Up 250mL x 4uds,Bebida Energética,Competidor2,250,4
+40,Agua Sin Gas 1L x 1uds,Agua,Competidor1,1000,1
