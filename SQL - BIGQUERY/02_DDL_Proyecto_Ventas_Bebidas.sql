@@ -98,7 +98,7 @@ SELECT
     r.nombre_region,
     p.categoria,
     p.nombre_producto,
-    CONCAT(r.nombre_region,'-', p.categoria) AS Region_Categoria,
+    CONCAT(r.nombre_region,'-', p.categoria, '-', p.nombre_producto) AS Region_Categoria_Producto,
     COUNT(DISTINCT(V.VENTA_ID)) AS TICKETS,
     SUM(v.cantidad) AS CANTIDAD,
     AVG(hp.precio_base) AS PRECIO_PROMEDIO,
@@ -135,7 +135,7 @@ SELECT
             ELSE
                 hp.precio_base * v.cantidad
         END
-    ) - SUM(hp.costo_variable * v.cantidad)) AS GANANCIA_BRUTA,
+    ) - SUM(hp.costo_variable * v.cantidad)) AS GANANCIA_NETA,
     CASE
         WHEN SUM(
             CASE
@@ -161,7 +161,7 @@ SELECT
                 END
             ) * 100
         ELSE 0
-    END AS MARGEN_GANANCIA_BRUTA_PORCENTAJE,
+    END AS MARGEN_GANANCIA_NETA_PORCENTAJE,
     SUM(
         CASE
             WHEN p.nombre_producto LIKE '%mL x %uds' THEN
