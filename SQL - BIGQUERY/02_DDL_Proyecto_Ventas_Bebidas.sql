@@ -222,3 +222,28 @@ FROM BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.inventarios i
 LEFT JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.ventas v ON i.producto_id = v.producto_id AND i.region_id = v.region_id
 GROUP BY i.producto_id, i.region_id, i.stock, MONTH(v.fecha);
 
+-- VISTA CLIENTES FULL
+
+CREATE OR REPLACE VIEW BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.VW_CLIENTES_FULL AS 
+
+WITH PRIMERA_COMPRA  AS (
+SELECT DISTINCT(CLIENTE_ID), MIN(FECHA) AS  "PRIMERA_COMPRA" FROM VENTAS GROUP BY CLIENTE_ID),
+
+ULTIMA_COMPRA  AS (
+SELECT DISTINCT(CLIENTE_ID), MAX(FECHA) AS  "ULTIMA_COMPRA" FROM VENTAS GROUP BY CLIENTE_ID)
+
+SELECT
+cl.cliente_id,
+cl.nombre,
+cl.genero,
+cl.edad,
+cl.ciudad,
+cl.frecuencia_compra,
+pc.primera_compra,
+uc.ultima_compra,
+DATEDIFF('months',pc.primera_compra, CURRENT_DATE()) AS tiempo_cliente_meses, 
+DATEDIFF('days',uc.ultima_compra, CURRENT_DATE()) AS dias_ultima_compra
+FROM CLIENTES cl
+LEFT JOIN ULTIMA_COMPRA uc ON cl.cliente_id = uc.cliente_id 
+LEFT JOIN PRIMERA_COMPRA pc ON cl.cliente_id = pc.cliente_id 
+ORDER BY cl.cliente_id ;
