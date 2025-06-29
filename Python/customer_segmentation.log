@@ -1,0 +1,14 @@
+2025-06-29 16:54:26,088 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 16:54:26,092 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 16:54:31,692 - INFO - Conexión a Snowflake exitosa
+2025-06-29 16:55:29,802 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 16:55:29,805 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 16:55:30,643 - INFO - Conexión a Snowflake exitosa
+2025-06-29 16:55:54,980 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 16:55:54,992 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 16:55:55,747 - INFO - Conexión a Snowflake exitosa
+2025-06-29 16:55:58,041 - INFO - Datos cargados: 2000 registros
+2025-06-29 17:02:01,447 - INFO - Datos preprocesados, escalados y transformados con PCA. Componentes seleccionados: 2 (PC1 y PC2)
+2025-06-29 17:02:38,500 - INFO - Número óptimo de clusters seleccionado: 9
+2025-06-29 17:04:12,773 - INFO - Número óptimo de clusters seleccionado: 9
+2025-06-29 17:04:56,521 - INFO - Métricas del modelo: Silhouette Score=0.312, Davies-Bouldin Score=0.900, Mean Squared Distance=1.290, Quality=Aceptable
