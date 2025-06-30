@@ -63,3 +63,43 @@
 2025-06-29 18:52:50,731 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
 2025-06-29 18:52:50,735 - INFO - Connecting to GLOBAL Snowflake domain
 2025-06-29 18:52:52,427 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:03:28,873 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:03:28,908 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:03:31,656 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:03:35,283 - INFO - Datos cargados: 2000 registros
+2025-06-29 20:03:36,208 - INFO - Datos preprocesados, escalados y transformados con PCA. Componentes seleccionados: 2 (PC1 y PC2)
+2025-06-29 20:03:40,679 - INFO - Número óptimo de clusters seleccionado: 9
+2025-06-29 20:03:42,033 - INFO - Métricas del modelo: Silhouette Score=0.312, Davies-Bouldin Score=0.900, Mean Squared Distance=1.290, Quality=Aceptable
+2025-06-29 20:03:44,789 - INFO - elbow_data_to_save columns: ['NUM_CLUSTERS', 'INERTIA', 'SILHOUETTE_SCORE', 'DAVIES_BOULDIN_SCORE', 'SELECTED', 'RUN_TIMESTAMP']
+2025-06-29 20:03:44,799 - INFO - elbow_data_to_save sample:
+   NUM_CLUSTERS       INERTIA  SILHOUETTE_SCORE  DAVIES_BOULDIN_SCORE  SELECTED                    RUN_TIMESTAMP
+0             1  15227.177884          0.000000              0.000000         0 2025-06-29 20:03:44.610466-05:00
+1             2   8752.958306          0.367046              1.022717         0 2025-06-29 20:03:44.610466-05:00
+2             3   6578.733080          0.327396              1.024926         0 2025-06-29 20:03:44.610466-05:00
+3             4   4952.271737          0.338855              0.875074         0 2025-06-29 20:03:44.610466-05:00
+4             5   4196.607183          0.319554              0.927017         0 2025-06-29 20:03:44.610466-05:00
+2025-06-29 20:03:44,806 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:03:44,808 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:03:45,530 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:03:45,769 - INFO - Schema set to BEBIDAS_PROJECT.BEBIDAS_ANALYTICS
+2025-06-29 20:03:46,016 - INFO - Table created or verified successfully
+2025-06-29 20:03:55,372 - INFO - Exported 10 rows to CLUSTERING_ELBOWS_METRICS
+2025-06-29 20:03:55,378 - INFO - cluster_results columns: ['CLIENTE_ID', 'CLUSTER', 'RUN_TIMESTAMP']
+2025-06-29 20:03:55,384 - INFO - cluster_results sample:
+   CLIENTE_ID  CLUSTER                    RUN_TIMESTAMP
+0           1        6 2025-06-29 20:03:44.610466-05:00
+1           2        4 2025-06-29 20:03:44.610466-05:00
+2           3        3 2025-06-29 20:03:44.610466-05:00
+3           4        6 2025-06-29 20:03:44.610466-05:00
+4           5        4 2025-06-29 20:03:44.610466-05:00
+2025-06-29 20:03:55,774 - INFO - Table created or verified successfully
+2025-06-29 20:03:56,061 - INFO - Table CLIENTES_CLUSTERS truncated
+2025-06-29 20:03:58,445 - INFO - Exported 2000 rows to CLIENTES_CLUSTERS
+2025-06-29 20:03:59,167 - INFO - Conteo actual en tablas Snowflake:
+2025-06-29 20:03:59,169 - INFO - - CLUSTERING_ELBOWS_METRICS: 70
+2025-06-29 20:03:59,171 - INFO - - CLIENTES_CLUSTERS: 2000
+2025-06-29 20:03:59,549 - INFO - Cargado Exitoso: Resultados de clustering y métricas guardados en Snowflake con DDL y write_pandas.
+2025-06-29 20:04:32,968 - INFO - Visualización de perfiles de clusters, gráfico PCA y pairplot generados.
+2025-06-29 20:04:33,286 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:04:33,289 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:04:34,252 - INFO - Conexión a Snowflake exitosa
