@@ -103,3 +103,46 @@
 2025-06-29 20:04:33,286 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
 2025-06-29 20:04:33,289 - INFO - Connecting to GLOBAL Snowflake domain
 2025-06-29 20:04:34,252 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:21:01,367 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:21:01,371 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:21:03,160 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:21:06,085 - INFO - Datos cargados: 2000 registros
+2025-06-29 20:21:06,946 - INFO - Datos preprocesados, escalados y transformados con PCA. Componentes seleccionados: 2 (PC1 y PC2)
+2025-06-29 20:21:09,537 - INFO - Número óptimo de clusters seleccionado: 9
+2025-06-29 20:21:10,056 - INFO - Métricas del modelo: Silhouette Score=0.312, Davies-Bouldin Score=0.900, Mean Squared Distance=1.290, Quality=Aceptable
+2025-06-29 20:21:10,892 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:21:10,893 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:21:11,446 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:21:32,546 - INFO - Visualización de perfiles de clusters, gráfico PCA y pairplot generados.
+2025-06-29 20:21:34,644 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:21:34,650 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:21:35,471 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:23:11,238 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:23:11,243 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:23:12,033 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:23:14,657 - INFO - Datos cargados: 2000 registros
+2025-06-29 20:23:15,569 - INFO - Datos preprocesados, escalados y transformados con PCA. Componentes seleccionados: 10 (PC1 y PC2)
+2025-06-29 20:23:18,087 - INFO - Número óptimo de clusters seleccionado: 7
+2025-06-29 20:23:18,929 - INFO - Métricas del modelo: Silhouette Score=0.096, Davies-Bouldin Score=2.064, Mean Squared Distance=11.729, Quality=Pobre
+2025-06-29 20:23:19,593 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:23:19,597 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:23:20,370 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:23:40,166 - INFO - Visualización de perfiles de clusters, gráfico PCA y pairplot generados.
+2025-06-29 20:23:40,440 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:23:40,444 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:23:41,267 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:24:17,504 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:24:17,506 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:24:18,294 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:24:21,115 - INFO - Datos cargados: 2000 registros
+2025-06-29 20:24:21,901 - INFO - Datos preprocesados, escalados y transformados con PCA. Componentes seleccionados: 2 (PC1 y PC2)
+2025-06-29 20:24:23,922 - INFO - Número óptimo de clusters seleccionado: 9
+2025-06-29 20:24:24,953 - INFO - Métricas del modelo: Silhouette Score=0.312, Davies-Bouldin Score=0.900, Mean Squared Distance=1.290, Quality=Aceptable
+2025-06-29 20:24:25,897 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:24:25,900 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:24:26,564 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:24:51,424 - INFO - Visualización de perfiles de clusters, gráfico PCA y pairplot generados.
+2025-06-29 20:24:51,733 - INFO - Snowflake Connector for Python Version: 3.15.0, Python Version: 3.10.11, Platform: Windows-10-10.0.19045-SP0
+2025-06-29 20:24:51,736 - INFO - Connecting to GLOBAL Snowflake domain
+2025-06-29 20:24:52,619 - INFO - Conexión a Snowflake exitosa
+2025-06-29 20:25:05,627 - INFO - Número óptimo de clusters seleccionado: 9
