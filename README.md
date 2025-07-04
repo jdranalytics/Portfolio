@@ -13,11 +13,12 @@ Aquí presento una colección de algunos de mis proyectos:
 PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:   [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ringoquimico/Portfolio) 
  
 - **Carpetas del portafolio**:  
-  - 📁 **Data Sources**: Fuentes de datos disponibles para los proyectos.  
-  - 📁 **Python**: Proyectos desarrollados en Python.  
-  - 📁 **R**: Proyectos desarrollados en R.
-  - 📁 **SQL-BigQuery**: Código SQL y modelos ML requeridos en proyectos full-stack.
-    
+  - 📁 **00_orchestrations**: Orquestaciones con python y Apache Airflow.  
+  - 📁 **01_call_center_analytics**: Proyectos desarrollados con data sintética. Incluye Python con orquestaciones con Apache Airflow, R y Shiny Apps. 
+  - 📁 **02_credit_risk_analytics**: Proyectos desarrollados con data sintética. Incluye Python con orquestaciones con Apache Airflow, R, Asistente AI con Streamlit, Power Apps + Power Automate y Shiny App. Backends en MS Fabric y BigQuery. 
+  - 📁 **03_people_analytics**: Proyecto desarrollado con data sintética. Incluye Python con orquestaciones con Apache Airflow, backend en MSSQL y visualización con Power BI.
+  - 📁 **04_beverages_sales_analytics**: Proyecto desarrollado con data sintética. Incluye Python y SQL con backend en Snowflake y visualizaciones en Tableau. (Aún en desarrollo)
+
 
 - **[Portafolio en Video](https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko)**  
   Demostraciones visuales de algunos de mis proyectos y habilidades en acción.  
