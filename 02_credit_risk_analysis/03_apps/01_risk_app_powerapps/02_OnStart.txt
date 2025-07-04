@@ -1,0 +1,209 @@
+Set(varLoading, true);
+
+Set(CurrentPage, 1); // Página inicial
+Set(PageSize, 500); // Tamaño de página
+Set(TotalRecords, 0); // Para rastrear el total de registros (opcional)
+
+
+
+ClearCollect(
+    UltimaFecha,FirstN(
+    SortByColumns(solicitudes_processed_warehouse, "fecha_solicitud", SortOrder.Descending),1)
+);
+Set(
+    FechaMaxima,
+    First(UltimaFecha).fecha_solicitud
+);
+Set(
+    FechaMinima,
+    DateAdd(FechaMaxima,-365,"Days"));
+
+Reset(DatePickerStart);
+Reset(DatePickerEnd);
+Reset(DropdownEstado);
+Reset(SearchIDSolicitud);
+Reset(SearchCedula);
+Reset(SearchApellido);
+Reset(SearchNombre);
+
+Set(varLoading,true);
+Set(varShowEditForm,false);
+Set(varVisuales_A,false);
+Set(varGrpDetalle_A,true);
+
+Set(
+    CurrentPage,
+    1
+);
+Set(
+    SqlQuery,
+    "SELECT 
+        sp.*,
+        sc.cluster,
+        pp.prediccion_aprobado,
+        ROUND(pp.score_aprobacion*100,1) AS 'probabilidad_aprobado'
+    FROM 
+        [PowerAppRiskApp].[dbo].[solicitudes_processed_warehouse] AS sp
+    LEFT JOIN
+        solicitudes_clustered AS sc ON sp.id_solicitud = sc.id_solicitud
+    LEFT JOIN
+        predicciones_pendientes AS pp ON sp.id_solicitud = pp.id_solicitud 
+        
+    
+    ORDER BY id_solicitud DESC OFFSET (" & CurrentPage & " - 1) * " & PageSize & " ROWS FETCH NEXT " & PageSize & " ROWS ONLY"
+);
+Set(
+    flowResponse,
+    ObtenerSolicitudesPaginadas.Run(SqlQuery)
+);
+Clear(FullSolicitudes);
+ForAll(
+    ParseJSON(flowResponse.results),
+    Collect(
+        FullSolicitudes,
+        {
+            id_solicitud: Text(ThisRecord.id_solicitud),
+            fecha_solicitud: Text(
+                DateTimeValue(Text(ThisRecord.fecha_solicitud)),
+                "yyyy-mm-dd"
+            ),
+            cedula_ciudadania: Text(ThisRecord.cedula_ciudadania),
+            nombre: Text(ThisRecord.nombre),
+            apellido: Text(ThisRecord.apellido),
+            edad: Value(ThisRecord.edad),
+            ingresos_anuales: Value(ThisRecord.ingresos_anuales),
+            puntaje_crediticio: Value(ThisRecord.puntaje_crediticio),
+            historial_pagos: Text(ThisRecord.historial_pagos),
+            deuda_actual: Value(ThisRecord.deuda_actual),
+            antiguedad_laboral: Value(ThisRecord.antiguedad_laboral),
+            estado_civil: Text(ThisRecord.estado_civil),
+            numero_dependientes: Value(ThisRecord.numero_dependientes),
+            tipo_empleo: Text(ThisRecord.tipo_empleo),
+            solicitud_credito: If(
+                IsBlank(ThisRecord.solicitud_credito),
+                Blank(),
+                Value(ThisRecord.solicitud_credito)
+            ),
+            inicio_mes: Text(
+                DateTimeValue(Text(ThisRecord.inicio_mes)),
+                "yyyy-mm-dd"
+            ),
+            inicio_semana: Text(
+                DateTimeValue(Text(ThisRecord.inicio_semana)),
+                "yyyy-mm-dd"
+            ),
+            estado_solicitud: Text(ThisRecord.estado_solicitud),
+            historial_pagos_encoded: Value(ThisRecord.historial_pagos_encoded),
+            estado_civil_encoded: Value(ThisRecord.estado_civil_encoded),
+            tipo_empleo_encoded: Value(ThisRecord.tipo_empleo_encoded),
+            // Nuevas columnas del LEFT JOIN
+            cluster: Value(ThisRecord.cluster),
+            prediccion_aprobado: Text(ThisRecord.prediccion_aprobado),
+            probabilidad_aprobado: Value(ThisRecord.probabilidad_aprobado)
+        }
+    )
+);
+
+// Calcular el total primero
+Set(
+    varTotal,
+    CountRows(FullSolicitudes)
+);
+
+
+// Colección con Estado
+ClearCollect(
+    colEstadosPorcentual,
+    AddColumns(
+        GroupBy(
+            FullSolicitudes,
+            estado_solicitud,
+            Grupo
+        ),
+        Conteo,
+        CountRows(Grupo),
+        Porcentaje,
+
+        If(varTotal<>0,
+        Round(
+            CountRows(Grupo) / varTotal * 100,
+            2
+        ),0)
+
+
+    )
+);
+// Colección con Historial de Pagos por Cliente
+ClearCollect(
+    colResumenHistorialPagos,
+    AddColumns(
+        GroupBy(
+            FullSolicitudes,
+            historial_pagos,
+            GrupoPorHistorial
+        ),
+        Categoria,
+        historial_pagos,
+        PersonasUnicas,
+        CountRows(
+            Distinct(
+                ShowColumns(
+                    GrupoPorHistorial,
+                    cedula_ciudadania
+                ),
+                cedula_ciudadania
+            )
+        ),
+        TotalPersona,
+        CountRows(
+            Distinct(
+                FullSolicitudes,
+                cedula_ciudadania
+            )
+        ),
+        Porcentaje,
+        If(
+            CountRows(Distinct(FullSolicitudes, cedula_ciudadania)) <> 0, // Check if the denominator is not zero
+            Round(
+                CountRows(
+                    Distinct(
+                        ShowColumns(
+                            GrupoPorHistorial,
+                            cedula_ciudadania
+                        ),
+                        cedula_ciudadania
+                    )
+                ) / CountRows(
+                    Distinct(
+                        FullSolicitudes,
+                        cedula_ciudadania
+                    )
+                ) * 100,
+                2
+            ),
+            0 // Return 0 if the denominator is zero
+        )
+    )
+);
+
+// Ver Visuales y Registros
+If(CountRows(FullSolicitudes)>=1, Set(varVisuales_A, true), Set(varVisuales_A, false));
+If(CountRows(FullSolicitudes)>=1, Set(varRegistros_A, true), Set(varRegistros_A, false));
+If(varTotal=0, Set(varNoDatos, true), Set(varNoDatos, false));
+
+
+Set(
+    TasaAprobacion,
+    If(
+        varTotal = 0 || CountRows(Filter(FullSolicitudes, !IsBlank(solicitud_credito))) = 0,
+        Blank(),
+        Text(
+            (CountRows(Filter(FullSolicitudes, solicitud_credito = 1)) / 
+             CountRows(Filter(FullSolicitudes, !IsBlank(solicitud_credito)))) * 100,
+            "[$-en-US]#.0%"
+        )
+    )
+);
+
+Set(varLoading,false);
+

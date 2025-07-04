@@ -1,0 +1,1 @@
+DDL y DQL para Snowflake
