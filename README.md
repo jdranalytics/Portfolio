@@ -14,9 +14,9 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:   [!
  
 - **Carpetas del portafolio**:  
   - 📁 **00_orchestrations**: Orquestaciones con python y Apache Airflow.  
-  - 📁 **01_call_center_analytics**: Proyectos desarrollados con data sintética. Incluye Python con orquestaciones con Apache Airflow, R y Shiny Apps. 
-  - 📁 **02_credit_risk_analytics**: Proyectos desarrollados con data sintética. Incluye Python con orquestaciones con Apache Airflow, R, Asistente AI con Streamlit, Power Apps + Power Automate y Shiny App. Backends en MS Fabric y BigQuery. 
-  - 📁 **03_people_analytics**: Proyecto desarrollado con data sintética. Incluye Python con orquestaciones con Apache Airflow, backend en MSSQL y visualización con Power BI.
+  - 📁 **01_call_center_analytics**: Proyectos desarrollados con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R y Shiny Apps. 
+  - 📁 **02_credit_risk_analytics**: Proyectos desarrollados con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R, Asistente AI con Streamlit, Power Apps + Power Automate y Shiny App. Backends en MS Fabric y BigQuery. 
+  - 📁 **03_people_analytics**: Proyecto desarrollado con data sintética. Incluye Python con orquestaciones usando Apache Airflow, backend en MSSQL y visualización con Power BI.
   - 📁 **04_beverages_sales_analytics**: Proyecto desarrollado con data sintética. Incluye Python y SQL con backend en Snowflake y visualizaciones en Tableau. (Aún en desarrollo)
 
 
