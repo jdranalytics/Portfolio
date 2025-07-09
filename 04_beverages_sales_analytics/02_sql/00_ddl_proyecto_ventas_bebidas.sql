@@ -63,21 +63,25 @@ CREATE TABLE IF NOT EXISTS bebidas_analytics.inventarios (
 );
 
 -- Tabla: Ventas
+
 CREATE TABLE IF NOT EXISTS bebidas_analytics.ventas (
     venta_id INTEGER PRIMARY KEY,
-    fecha TIMESTAMP,
+    fecha DATE,
     cliente_id INTEGER,
     producto_id INTEGER,
     cantidad INTEGER,
     canal_id INTEGER,
     region_id INTEGER,
     promocion_id INTEGER,
+    historico_precio_id INTEGER,
     FOREIGN KEY (cliente_id) REFERENCES bebidas_analytics.clientes(cliente_id),
     FOREIGN KEY (producto_id) REFERENCES bebidas_analytics.productos(producto_id),
     FOREIGN KEY (canal_id) REFERENCES bebidas_analytics.canales(canal_id),
     FOREIGN KEY (region_id) REFERENCES bebidas_analytics.regiones(region_id),
+    FOREIGN KEY (historico_precio_id) REFERENCES bebidas_analytics.historico_precios(historico_precio_id),
     FOREIGN KEY (promocion_id) REFERENCES bebidas_analytics.promociones(promocion_id)
 );
+
 
 -- CREACIÓN DE VISTAS
 

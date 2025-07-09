@@ -1,2001 +1,1501 @@
-cliente_id,nombre,edad,genero,ciudad,frecuencia_compra,ultima_compra
-1,Fabián Enrique Monsalve,56,F,Barranquilla,15,2023-08-11
-2,Patricia Marcela García Yepes,60,F,Villavicencio,7,2023-10-23
-3,Aura Hoyos Anaya,75,M,Cúcuta,11,2024-04-09
-4,Yerson Arias Camacho,28,F,Barranquilla,4,2023-11-02
-5,Yanet Muñoz,57,F,Ibagué,3,2023-10-29
-6,Victoria Lidia Perea García,39,M,Tunja,2,2024-05-27
-7,Viviana Garzón,41,F,Cartagena,6,2024-02-14
-8,Yulieth Xiomara Valencia Rojas,19,F,Bogotá,1,2023-09-28
-9,Maritza Ordóñez,29,F,Cali,12,2023-12-22
-10,Claudia Myriam Medina Rendón,42,M,Cúcuta,10,2023-06-28
-11,Fernando Humberto Salazar Díaz,45,F,Bucaramanga,16,2023-09-20
-12,Daniela Rincón Daza,32,F,Cartagena,15,2024-04-17
-13,Elena Johanna Arévalo,79,M,Cali,12,2023-12-21
-14,Felix Guerrero,72,F,Barranquilla,3,2024-03-25
-15,Carolina Carmen Pérez García,54,M,Bucaramanga,7,2023-11-30
-16,Mary Loaiza,38,M,Medellín,7,2023-11-08
-17,Ricardo Mantilla,35,F,Medellín,14,2024-01-29
-18,Miller Aníbal Díaz Rincón,67,F,Cúcuta,9,2023-10-19
-19,Henry Gustavo Cardona Ruiz,43,M,Medellín,2,2024-04-21
-20,Claudia Leonor Sanabria Bedoya,37,F,Bucaramanga,15,2024-04-18
-21,Mario Ernesto Chávez Moreno,77,M,Bucaramanga,12,2024-01-04
-22,Patricia Aura Amaya Mosquera,78,F,Tunja,15,2023-08-30
-23,Liliana Matilde Rodríguez,52,F,Cartagena,17,2024-01-21
-24,Esther Esperanza Ramos Ramírez,53,F,Bogotá,8,2023-09-13
-25,Fabio Alfredo Meza,21,F,Ibagué,6,2023-12-18
-26,Alfonso José Rubio,71,F,Villavicencio,4,2023-07-13
-27,Luis José Acosta,71,M,Medellín,18,2024-05-10
-28,Claudia María Garcés Martínez,43,F,Cúcuta,2,2023-09-04
-29,Paola Geraldine Ramírez,27,F,Medellín,4,2024-01-17
-30,Tatiana Ligia Maldonado Bravo,31,M,Villavicencio,16,2024-04-07
-31,Andrés Jesús Ríos,32,F,Cartagena,14,2024-03-20
-32,Karol Cárdenas,40,F,Tunja,8,2023-06-17
-33,Piedad Zapata,38,F,Bucaramanga,13,2023-10-12
-34,Miguel Bastidas,35,M,Tunja,13,2023-07-21
-35,Luis Ferney Peña Solano,58,M,Barranquilla,15,2023-11-04
-36,Natalia Sonia Arango,62,M,Medellín,7,2024-02-05
-37,Patricia Amparo Meza Martínez,26,F,Bogotá,1,2024-04-24
-38,Mariela Adriana Camacho,61,F,Barranquilla,11,2024-05-01
-39,María Helena Burbano,68,M,Cartagena,8,2023-08-29
-40,José Luis Rodríguez,52,M,Medellín,1,2023-12-16
-41,Dora María Padilla Ariza,76,M,Barranquilla,10,2023-08-19
-42,Edward Cardona Hernández,56,F,Medellín,9,2024-06-11
-43,María María Sierra Mejía,45,M,Cúcuta,9,2024-05-09
-44,Rosa Alzate Chávez,25,F,Cartagena,2,2024-03-10
-45,Didier Camilo Rentería Arias,50,F,Ibagué,5,2023-09-18
-46,Luz Karen Mejía Salazar,52,F,Bucaramanga,8,2024-04-04
-47,Oswaldo David Giraldo Triana,39,M,Cali,3,2023-09-07
-48,Carolina Díaz,18,M,Bucaramanga,5,2024-02-21
-49,Liliana Beltrán,64,F,Bucaramanga,3,2023-11-19
-50,José Fernando Moreno Garzón,18,M,Barranquilla,14,2023-10-30
-51,Fernando Romero,56,M,Cartagena,9,2023-09-06
-52,Luis Orlando Arboleda,32,M,Medellín,10,2023-10-22
-53,Irene Arias,77,M,Tunja,19,2023-07-14
-54,Marina Muñoz,49,M,Cali,17,2024-02-28
-55,Claudia Ríos,69,M,Villavicencio,4,2023-09-17
-56,Tomás Juan Rosero,47,M,Barranquilla,7,2023-08-17
-57,Patricia Ruiz,62,M,Cali,11,2024-05-16
-58,Alejandro Rojas Hurtado,46,F,Ibagué,13,2024-02-02
-59,Patricia López,49,M,Cúcuta,19,2024-04-18
-60,Martín Becerra Betancur,39,F,Cartagena,2,2023-12-13
-61,Mery Sánchez Ruiz,59,M,Villavicencio,6,2024-05-12
-62,Fernando Martínez,45,F,Barranquilla,12,2023-09-12
-63,Claudia Marcela Pérez Meza,61,F,Bucaramanga,11,2024-04-30
-64,Andrés Arias,75,M,Bogotá,7,2023-07-27
-65,Franco Hurtado,79,M,Barranquilla,1,2024-03-21
-66,José Tulio Romero Alarcón,74,M,Bogotá,13,2024-02-19
-67,Mery Dora Martínez Ardila,58,M,Bucaramanga,7,2024-03-06
-68,Arturo Rodríguez,23,F,Cúcuta,9,2024-01-18
-69,Nelson Rivas García,79,M,Cartagena,1,2023-06-20
-70,David Edwin Morales,68,F,Medellín,12,2023-11-02
-71,Elena Sandra Vargas,41,M,Barranquilla,9,2023-12-20
-72,Alonso Mendoza,69,M,Tunja,17,2023-11-01
-73,Luis Olaya,75,F,Bucaramanga,12,2023-06-25
-74,Augusto García,79,M,Barranquilla,2,2023-11-04
-75,Alejandro Romero,20,M,Ibagué,5,2024-05-30
-76,Elizabeth Ochoa Patiño,66,F,Cúcuta,17,2023-10-30
-77,Adalberto Arango,76,M,Ibagué,2,2023-12-24
-78,Viviana González,19,F,Cali,5,2024-06-07
-79,José Cabrera,49,M,Cartagena,1,2023-06-17
-80,Omar Eliecer Barreto,36,F,Cali,2,2023-08-02
-81,Rafael Agudelo Acosta,70,F,Barranquilla,6,2023-06-17
-82,Eva Ramos Rodríguez,49,M,Villavicencio,4,2024-05-08
-83,Ernesto Eduard Espinosa Cortés,72,M,Villavicencio,17,2023-11-07
-84,Esperanza Gloria Herrera,55,F,Cartagena,5,2024-01-05
-85,Jhon Londoño Domínguez,69,F,Tunja,6,2024-02-11
-86,Samuel Ruiz Vanegas,39,M,Cúcuta,16,2024-06-06
-87,Omar Jhon Rueda García,33,M,Tunja,9,2024-06-05
-88,Matilde Claudia Rodríguez Gómez,77,M,Cúcuta,6,2024-02-07
-89,Alfredo Wilson Barrios,33,M,Bucaramanga,3,2024-02-24
-90,Lucía Milena Marín,37,F,Barranquilla,4,2023-11-29
-91,Milena Gómez Pacheco,36,F,Cali,3,2023-09-03
-92,Miguel Esteban Miranda,36,F,Villavicencio,7,2024-03-01
-93,Wendy Bustamante,69,M,Ibagué,1,2023-08-20
-94,Octavio Díaz Mesa,57,F,Medellín,7,2023-09-01
-95,Fernando Julio Gómez,35,F,Bogotá,1,2023-06-29
-96,Liliana Lucía Méndez,28,F,Medellín,18,2024-03-24
-97,Luis Jimmy Cruz,40,M,Cali,10,2024-01-27
-98,Efrain Martínez,52,M,Cali,16,2023-10-02
-99,Dario Angulo Peña,43,F,Cúcuta,17,2023-07-29
-100,Libia Garzón Ortega,19,M,Tunja,16,2023-11-01
-101,Ana Cristina Maldonado,79,F,Medellín,5,2024-04-10
-102,José Andrés Reyes,54,F,Cúcuta,9,2023-11-26
-103,Álvaro López Romero,58,M,Cúcuta,19,2023-08-20
-104,Bibiana Lucía Parra López,65,F,Tunja,3,2023-10-08
-105,Nelson John Bustos Osorio,37,F,Ibagué,1,2024-01-17
-106,Guillermo David Silva,41,F,Villavicencio,11,2024-12-22
-107,Lilia Escobar,66,F,Cartagena,4,2024-12-18
-108,Carmen Doris Mejía,55,F,Villavicencio,3,2024-10-16
-109,Carlos Carvajal Torres,65,F,Bogotá,3,2024-06-22
-110,Adela Lorena Pedraza,42,M,Medellín,18,2024-07-23
-111,Nohora Ramírez,63,F,Villavicencio,2,2024-12-11
-112,Bibiana Sánchez,71,M,Cartagena,16,2025-01-22
-113,María Gladys Vargas,78,M,Bucaramanga,4,2025-05-07
-114,Harvey Andrés Mendoza Vargas,50,F,Medellín,1,2025-05-05
-115,Andrés Molano,31,M,Cartagena,16,2025-01-20
-116,Dairo Herrera,37,F,Cúcuta,8,2025-06-12
-117,Carlos Luna,24,M,Cali,17,2025-02-02
-118,Janneth Jiménez,50,F,Ibagué,12,2025-04-14
-119,Gloria Liliana Díaz,76,M,Bogotá,14,2024-09-05
-120,Dario Gabriel Díaz,47,F,Cartagena,6,2024-06-22
-121,César Serrano Ángel,62,M,Villavicencio,8,2025-03-03
-122,Lucía Sánchez,44,M,Cali,2,2024-10-28
-123,Jairo Gómez,38,F,Villavicencio,1,2025-03-04
-124,León Rojas Sánchez,45,M,Medellín,1,2024-09-05
-125,Diana Maldonado,22,F,Cartagena,16,2024-11-08
-126,Edilma Patiño Valencia,36,F,Villavicencio,3,2025-04-27
-127,Nora Piedad González,66,F,Tunja,17,2025-01-13
-128,Marina Stella Mesa,61,F,Barranquilla,14,2025-05-28
-129,Jesús Narváez,70,F,Cali,3,2024-07-13
-130,Lucía Moreno,77,M,Bucaramanga,5,2025-04-06
-131,Pedro Molina Acosta,41,M,Cali,17,2024-07-13
-132,Eduardo Juan Parra,63,M,Villavicencio,3,2025-03-02
-133,Enrique Muñoz,77,M,Villavicencio,1,2025-02-06
-134,Andrés Vergara Castillo,20,F,Bogotá,18,2025-05-20
-135,Dario David Arango,42,F,Tunja,3,2025-01-21
-136,Jorge Mejía,57,F,Bucaramanga,18,2025-04-21
-137,Gloria Ardila Gómez,49,M,Ibagué,2,2024-09-16
-138,Flor Bedoya,44,F,Bogotá,2,2024-11-07
-139,Emilio Ospina,43,M,Medellín,8,2025-01-15
-140,Rocío Rivera,50,M,Bucaramanga,11,2025-06-08
-141,Jackeline González,71,F,Cartagena,7,2025-05-04
-142,Óscar Adrián Fernández,46,F,Barranquilla,3,2024-09-28
-143,Patricia López,67,M,Bogotá,13,2025-02-23
-144,Yaneth Rosa Gutiérrez,77,F,Barranquilla,7,2025-05-13
-145,Diana Alfonso Carvajal,74,F,Tunja,13,2025-02-23
-146,Alfonso González,37,M,Medellín,8,2025-06-14
-147,Jhon Ramírez Caicedo,63,F,Medellín,14,2024-10-29
-148,Daniel Alzate,29,M,Ibagué,15,2025-05-20
-149,John Israel Ramos,45,F,Medellín,2,2024-10-16
-150,Luisa González Rodríguez,49,M,Villavicencio,19,2024-12-21
-151,Ricardo Vanegas Campo,42,F,Cali,17,2025-01-22
-152,Jair Rafael Jiménez Alzate,69,F,Cali,6,2024-12-07
-153,Julio Guzmán,32,F,Ibagué,11,2025-02-12
-154,Hernán Jesús Duarte,77,M,Villavicencio,1,2025-02-09
-155,Yeny Ávila Gómez,25,M,Cali,12,2025-04-11
-156,Marcela Rocío Ángel Cano,61,M,Cartagena,7,2024-06-19
-157,Martha Lucía Oviedo Arboleda,21,F,Villavicencio,13,2024-12-21
-158,Blanca Solano,49,F,Tunja,15,2024-07-29
-159,Silvia Isabel Luna,52,M,Cúcuta,8,2025-04-07
-160,Norma Karen Muñoz,69,F,Barranquilla,13,2024-07-28
-161,William Mejía,67,F,Villavicencio,10,2025-03-22
-162,David Silva,47,M,Barranquilla,17,2025-06-10
-163,Nancy Valencia,73,M,Cartagena,19,2024-08-05
-164,Jairo Camargo Salamanca,45,F,Cúcuta,5,2025-03-30
-165,Edith Yina Arévalo Henao,43,M,Bucaramanga,9,2024-11-19
-166,José Palacio Contreras,29,M,Ibagué,1,2025-02-28
-167,Rosa Herrera,75,F,Villavicencio,1,2025-04-20
-168,Alberto José Quintero,64,F,Ibagué,16,2024-12-30
-169,Juan Pinzón,42,F,Medellín,13,2024-09-09
-170,Andrea Yulieth Martínez Ortiz,70,M,Barranquilla,16,2024-06-23
-171,María Elena Trujillo,78,M,Barranquilla,5,2025-05-12
-172,Paola Montoya Portilla,39,M,Medellín,3,2024-08-09
-173,Daniel García,29,F,Bucaramanga,16,2024-10-23
-174,Jhon Saavedra Muñoz,68,M,Bogotá,14,2024-10-04
-175,Amparo Helena Muñoz Moreno,45,M,Tunja,15,2025-03-04
-176,Enrique Guillermo Castro Vega,66,F,Villavicencio,14,2025-06-12
-177,Carmen Mayra Jaramillo,79,F,Barranquilla,5,2024-09-01
-178,Gallego Jiménez Cortés,29,F,Tunja,16,2024-06-27
-179,Johanna Catalina Betancur,38,M,Barranquilla,4,2025-04-20
-180,Pablo Castillo Quiroz,50,F,Bogotá,5,2024-11-25
-181,Franklin Jairo Velásquez Marín,40,F,Medellín,10,2025-02-02
-182,Jhon Jesús Morales,71,M,Bogotá,4,2025-01-18
-183,Elena Sandra Ruiz,51,F,Barranquilla,10,2024-08-10
-184,Angélica Zambrano Díaz,75,M,Medellín,1,2025-04-19
-185,Gladys Nubia Pérez Torres,73,M,Bogotá,13,2024-09-22
-186,Andrés Garcés,21,F,Bucaramanga,16,2025-02-07
-187,Lina Silva González,72,F,Medellín,17,2024-06-27
-188,Jesús Jairo Cortés Arango,45,F,Villavicencio,12,2025-05-16
-189,Israel Rojas Cruz,67,M,Barranquilla,1,2025-06-06
-190,Diego Gómez,50,M,Cartagena,19,2025-06-06
-191,Omar Armando Rojas Ruiz,60,M,Ibagué,12,2024-12-12
-192,Nel Gerardo Salazar,20,M,Barranquilla,1,2025-04-12
-193,Armando Guerra Restrepo,57,F,Villavicencio,11,2025-05-02
-194,Benjamín Muñoz Orozco,61,M,Cali,13,2024-07-06
-195,Yurany Blanco,29,M,Tunja,14,2024-08-22
-196,Jaime Santiago Ríos Gómez,19,M,Tunja,19,2024-10-06
-197,Pablo Fabián Ortega Hurtado,67,M,Ibagué,17,2024-09-12
-198,Elsy Torres,43,F,Barranquilla,10,2024-06-18
-199,Julio Ríos Lozano,43,F,Ibagué,2,2024-09-07
-200,Fredy Augusto Ortiz,68,M,Cúcuta,7,2024-10-25
-201,Luisa Loaiza Beltrán,21,F,Barranquilla,18,2025-04-16
-202,Gilma Acosta Escobar,62,M,Medellín,4,2024-12-21
-203,Ángel Gallego Ospina,42,M,Medellín,4,2025-02-17
-204,Gloria Rangel López,27,M,Cúcuta,9,2024-11-25
-205,Francisco Jeferson González Ariza,41,F,Bucaramanga,3,2024-09-13
-206,Andrey Pinzón,66,M,Cúcuta,16,2024-12-19
-207,Liliana Stella Gutiérrez,53,F,Cúcuta,17,2024-08-20
-208,Alexander Gregorio Murillo,56,F,Ibagué,5,2024-09-20
-209,Mauricio Rueda,29,M,Bogotá,13,2025-01-22
-210,Ana Mercedes López,40,M,Medellín,3,2024-11-27
-211,Antonio Salazar Serrano,58,F,Bogotá,17,2025-03-23
-212,Frank Fabián González Herrera,66,F,Cúcuta,16,2024-06-18
-213,Mario Herrera,42,F,Bucaramanga,13,2024-07-14
-214,Wilfredo Álvaro Castro Anaya,76,M,Medellín,17,2024-06-26
-215,Mauricio Óscar Solano Muñoz,53,F,Barranquilla,9,2025-05-11
-216,Gerardo Mauricio Gómez Arenas,36,F,Barranquilla,9,2024-07-20
-217,Ariel José Díaz,24,F,Barranquilla,14,2024-07-07
-218,Luis Prieto,48,F,Villavicencio,19,2024-06-24
-219,Ángel Duarte Carrillo,75,M,Ibagué,16,2024-08-23
-220,William González,70,M,Cali,3,2024-11-09
-221,Angie Uribe Melo,29,M,Cúcuta,4,2025-01-22
-222,María Ruiz,70,M,Cali,16,2025-01-09
-223,Erika Ardila Sánchez,74,M,Cartagena,13,2025-06-02
-224,Arturo Delgado,70,F,Ibagué,7,2024-12-29
-225,Daniel Morales,31,M,Barranquilla,5,2025-06-13
-226,Miguel Albeiro Ramírez,52,M,Medellín,11,2025-03-24
-227,Gilberto Ángel Soto Amaya,28,F,Ibagué,15,2024-08-04
-228,Dayana Escobar,29,M,Villavicencio,10,2024-07-15
-229,Emerson Jhon Rodríguez,75,F,Medellín,17,2025-02-13
-230,Juliana Bohórquez,78,F,Bogotá,7,2024-08-01
-231,Daniela Lara Ruiz,63,M,Villavicencio,8,2024-09-29
-232,Juan Carlos Rodríguez,59,M,Bogotá,18,2025-04-02
-233,Jesús Enrique Bolívar Martínez,44,F,Medellín,2,2024-08-21
-234,Sara María Aguilar,22,M,Barranquilla,5,2024-12-21
-235,Ana Pérez,55,M,Cali,8,2025-01-07
-236,María Peña Pulido,65,M,Cúcuta,1,2024-08-29
-237,María Martínez,39,F,Ibagué,17,2025-05-05
-238,Yanet Lozano Rueda,24,M,Ibagué,13,2024-06-29
-239,Mayra Lilia Guzmán Méndez,21,F,Barranquilla,6,2025-06-14
-240,Carlos Hermes González Ortiz,77,M,Cúcuta,19,2024-12-27
-241,Catalina Leal,78,F,Bogotá,7,2024-06-15
-242,Yéssica López Solano,44,F,Cali,19,2024-10-28
-243,Steven Jaime Arteaga Medina,56,F,Cúcuta,3,2025-05-27
-244,Johanna Diana Pinto,62,M,Bogotá,18,2024-09-14
-245,Camilo Gómez Álvarez,45,F,Cúcuta,8,2025-02-09
-246,Esmeralda Liliana Pineda,78,M,Cartagena,9,2024-06-17
-247,Rosario Pérez,56,M,Ibagué,3,2025-05-18
-248,Esteban Correa,30,F,Cartagena,17,2025-01-08
-249,Mónica Martha Jiménez Sánchez,42,F,Cúcuta,1,2024-08-01
-250,Mercedes Clara Triana,55,M,Villavicencio,6,2025-04-21
-251,Hernán Mauricio Martínez,75,F,Ibagué,13,2024-10-18
-252,María Pérez Hernández,49,M,Cali,15,2024-11-03
-253,Jonathan Luis Méndez,38,F,Barranquilla,11,2024-11-04
-254,Yaneth Alicia Herrera,77,M,Cartagena,4,2025-05-02
-255,María Paula Torres,52,M,Barranquilla,18,2025-03-10
-256,Alejandro Vega,64,M,Bogotá,17,2025-02-10
-257,Ángela Zuluaga Alzate,31,M,Tunja,1,2025-01-22
-258,Andrés Julián Vásquez,70,F,Villavicencio,3,2024-12-22
-259,César Segundo Escobar Niño,33,M,Bogotá,11,2025-03-03
-260,Andrés Andrés Salcedo Córdoba,29,F,Bucaramanga,16,2024-08-03
-261,Gildardo Fernando Calderón Vanegas,25,F,Bogotá,12,2024-09-14
-262,Alfredo Valderrama,41,F,Bogotá,8,2024-11-17
-263,Antonio Hernando Montoya,75,F,Tunja,4,2024-11-16
-264,Carlos Rodríguez,43,F,Ibagué,18,2024-10-29
-265,Esperanza Romero Angulo,45,F,Villavicencio,5,2025-06-02
-266,Fernando Medina,58,F,Villavicencio,17,2025-02-12
-267,María Bedoya Beltrán,26,M,Cali,13,2025-04-19
-268,Jonatan Rojas Chacón,45,F,Bogotá,13,2024-10-19
-269,Eliana Marina Sierra Romero,63,M,Villavicencio,6,2024-07-16
-270,Martha Estrada Figueroa,35,M,Medellín,5,2024-12-08
-271,Alejandra Chacón,64,M,Cali,2,2024-10-21
-272,Juan Méndez Castro,27,F,Medellín,18,2024-12-12
-273,Luz Sánchez Chaparro,76,M,Tunja,5,2024-08-16
-274,Teresa Josefa López,72,F,Medellín,1,2025-05-17
-275,Edwin Bohórquez,71,M,Barranquilla,18,2025-03-12
-276,Yudy Johana González,49,M,Cúcuta,17,2024-11-24
-277,Esperanza Mariela Cuéllar,28,M,Medellín,17,2024-10-29
-278,Danny López,30,M,Tunja,2,2025-04-22
-279,Consuelo Mary Muñoz,58,M,Barranquilla,1,2025-01-17
-280,Marina González,38,F,Tunja,6,2024-07-31
-281,Vanessa Fernanda Fernández Parra,45,M,Tunja,5,2024-08-23
-282,Lina María Ramírez,48,M,Bogotá,6,2025-05-18
-283,Alberto Arteaga,20,M,Tunja,5,2024-09-17
-284,Angélica Becerra,70,M,Medellín,10,2025-01-09
-285,Andrey Trujillo,27,M,Cúcuta,17,2024-10-18
-286,Nury Posada,38,F,Tunja,9,2025-01-22
-287,Claudia Leal Gómez,63,M,Tunja,19,2025-04-22
-288,Adrián Jesús González Sierra,62,M,Villavicencio,4,2025-01-23
-289,Leidy Álvarez Valencia,79,M,Bucaramanga,17,2025-01-07
-290,Isabel Ramírez Álvarez,57,F,Cartagena,2,2025-05-19
-291,Sergio Esteban Hernández,45,M,Barranquilla,8,2025-03-29
-292,María Paula Vergara Muñoz,56,F,Bucaramanga,2,2024-07-10
-293,Johanna Lucía Fuentes Barrios,71,F,Barranquilla,3,2025-04-18
-294,Augusto Pineda,76,F,Cartagena,12,2025-03-18
-295,Vicente Camilo Beltrán Núñez,18,F,Cúcuta,12,2025-03-16
-296,Judith Rosa Arrieta Parra,22,F,Cali,17,2024-12-16
-297,Julio Gaviria Mendoza,65,M,Cartagena,15,2024-09-01
-298,Héctor Pedro Moreno Moreno,40,M,Ibagué,5,2024-07-28
-299,Alexander Andrés Rodríguez González,38,F,Bucaramanga,2,2024-12-22
-300,María Mery Camacho,28,M,Medellín,7,2024-07-08
-301,Luis Beltrán Espitia,55,F,Bogotá,2,2024-09-09
-302,María Ortiz,55,F,Ibagué,2,2024-08-07
-303,Carmen Katherine Pardo,35,F,Tunja,15,2024-12-29
-304,Elkin Vallejo León,44,M,Tunja,2,2025-02-18
-305,Inés Ángela Leal Galeano,69,M,Medellín,6,2024-09-03
-306,Guillermo Martínez,50,F,Medellín,15,2024-10-15
-307,Marco Luis Ortega López,77,F,Villavicencio,10,2024-09-24
-308,María Ruiz,68,M,Barranquilla,5,2024-11-30
-309,Fernanda Arteaga Mesa,46,F,Villavicencio,10,2024-07-09
-310,Javier Juan Caicedo Montenegro,73,M,Cartagena,10,2024-11-17
-311,Vilma Beatriz García Rubio,34,F,Cali,5,2025-03-28
-312,Jerson Manuel Galindo,51,F,Bucaramanga,2,2024-12-30
-313,Nelly Rincón López,30,F,Medellín,11,2025-04-06
-314,José Julio Pedraza Rodríguez,60,F,Barranquilla,11,2025-05-26
-315,Pablo Juan Zuluaga González,68,M,Bucaramanga,16,2024-08-28
-316,María Lorena Calderón,48,M,Cartagena,16,2024-07-10
-317,Carlos Rangel Rivera,25,F,Cali,8,2024-07-05
-318,Gabriel Mauricio León Ramos,21,F,Ibagué,3,2025-02-14
-319,José Fernando Uribe Medina,49,M,Villavicencio,18,2024-12-08
-320,Fredy Méndez Martínez,78,F,Cartagena,19,2024-10-30
-321,Rosalba Blanca Ramírez,36,M,Tunja,5,2024-07-13
-322,Juan Omar Rodríguez González,35,F,Villavicencio,10,2024-11-07
-323,Ana Cecilia Ospino Becerra,78,F,Bogotá,6,2024-12-29
-324,Andrey Arboleda Bernal,18,M,Villavicencio,9,2024-12-10
-325,Luis Jaime Carmona Trujillo,29,F,Cartagena,14,2025-05-19
-326,Jairo Jeferson Zuluaga Blanco,51,M,Medellín,14,2025-01-28
-327,Andrés José Marín Peña,43,M,Cali,9,2025-02-24
-328,Fernando Rojas,43,M,Cartagena,15,2025-05-24
-329,Josefina Luz Martínez García,74,F,Medellín,15,2025-01-18
-330,Laura Gloria Londoño Flórez,73,F,Medellín,11,2025-02-12
-331,Duván Sánchez Blanco,65,M,Villavicencio,17,2025-04-20
-332,Deicy Jaramillo,43,F,Cali,1,2025-06-09
-333,Jessica Angarita,25,M,Cartagena,3,2025-03-22
-334,Alejandra Ana Guevara,78,F,Cartagena,15,2024-09-04
-335,Carolina Isabel Paz,64,M,Tunja,14,2024-11-15
-336,Milena Duque,43,F,Barranquilla,14,2025-02-15
-337,Alexander Alfredo Martínez,41,F,Bucaramanga,13,2025-06-06
-338,María Luz Paz Ceballos,43,F,Barranquilla,19,2024-09-14
-339,Rita Orozco Forero,24,M,Cartagena,15,2024-12-14
-340,David Garzón,40,F,Villavicencio,11,2024-09-03
-341,Irene Ramírez Álvarez,64,F,Ibagué,13,2025-06-10
-342,Mauricio Fuentes Peña,35,F,Cartagena,6,2025-05-03
-343,José Valencia Luna,52,M,Bogotá,15,2024-12-16
-344,Blanca Silva,42,M,Medellín,5,2025-01-02
-345,Hernando Acosta Murillo,45,F,Cúcuta,7,2024-08-08
-346,Joaquín Miguel Quintero Molina,74,M,Cartagena,7,2025-04-16
-347,Vilma Velasco,39,F,Bogotá,12,2024-11-08
-348,Isabel María Peña,42,M,Bogotá,13,2025-01-28
-349,José González,37,M,Bucaramanga,4,2024-09-16
-350,César Angarita,27,M,Cali,9,2024-09-23
-351,Valentina Sánchez Bejarano,62,F,Cartagena,15,2025-01-28
-352,Arturo Gustavo Cantillo,53,M,Cali,2,2024-08-06
-353,Vanesa Myriam Pabón,64,F,Ibagué,8,2025-02-07
-354,Iván López,66,F,Villavicencio,19,2025-02-27
-355,Daniela Valeria Sánchez Gómez,59,M,Cúcuta,5,2024-12-20
-356,Alexander Israel Molina Díaz,23,F,Villavicencio,2,2024-10-29
-357,Karen Diana Henao,76,F,Bogotá,13,2024-09-11
-358,Erika Yineth Vargas,23,M,Medellín,1,2025-06-05
-359,Mario Ibarra,70,F,Medellín,6,2025-04-17
-360,Daniel Fernández Giraldo,23,M,Cali,16,2025-04-29
-361,Arley Ariza,21,F,Villavicencio,11,2025-03-23
-362,Valentina Cecilia Rivera,79,F,Bogotá,9,2024-07-28
-363,Carmen Mayerly Ballesteros Henao,72,M,Bucaramanga,19,2024-09-23
-364,Ricardo Hernández,48,F,Tunja,5,2025-04-27
-365,Lucía Carrillo Gamboa,53,F,Villavicencio,6,2025-04-04
-366,Luz Mariana Carvajal,19,F,Cali,11,2024-10-23
-367,Walter Alberto Hernández,21,M,Cúcuta,6,2025-05-07
-368,Rubiela Tovar Rosero,71,M,Cali,6,2024-08-11
-369,Paola Ramírez,68,F,Bogotá,2,2024-10-19
-370,Lorena Jhoana Nieto,32,M,Cartagena,8,2024-12-13
-371,Fernando González Mejía,43,M,Bucaramanga,13,2025-03-07
-372,Luis Saavedra Moreno,61,M,Bogotá,6,2024-12-22
-373,Rosa Galindo Rueda,43,F,Bucaramanga,4,2024-08-29
-374,Esteban Cristian Rico Mosquera,36,F,Barranquilla,1,2025-03-13
-375,Diana Trujillo,37,M,Barranquilla,12,2024-12-24
-376,Fernanda Castillo,64,M,Medellín,14,2024-09-21
-377,Dahiana Alba Torres,55,M,Bucaramanga,11,2024-11-29
-378,César Estrada Vélez,53,M,Villavicencio,11,2024-10-09
-379,Antonio David Pedraza,20,M,Cúcuta,6,2024-12-13
-380,Fernando Henry Murillo Patiño,67,F,Tunja,10,2024-10-02
-381,Omaira Martha Lozano García,22,M,Cali,10,2025-03-14
-382,Alba Orozco,61,F,Barranquilla,13,2024-08-14
-383,Nelly Galeano Álvarez,57,F,Cali,1,2025-04-14
-384,Leidy Patricia Guerrero,54,M,Cali,17,2024-08-20
-385,Lorena Emilia López,26,M,Cúcuta,15,2024-08-30
-386,Jhon Villamizar,41,F,Bogotá,3,2025-06-02
-387,Gloria Martha Ortega Torres,47,M,Cali,17,2024-11-29
-388,Alfonso Montenegro Jaimes,22,F,Bucaramanga,12,2024-10-31
-389,Diego Galvis Vargas,67,F,Cúcuta,11,2024-09-25
-390,Carlos Ochoa,26,F,Barranquilla,12,2025-01-20
-391,Augusto César Guerrero Pérez,52,M,Cartagena,1,2025-03-19
-392,Milton Forero Jaimes,57,F,Cali,8,2025-04-23
-393,Mayra Ana Ávila,28,M,Medellín,5,2025-06-12
-394,Yaneth Camila Mercado,31,F,Cúcuta,3,2025-01-28
-395,Daniel Juan Vargas Saavedra,38,M,Bogotá,5,2025-06-14
-396,Nataly Tatiana Ariza,36,M,Ibagué,14,2025-02-04
-397,Alberto Camilo Torres,43,F,Barranquilla,4,2025-05-11
-398,Jhon David Ballesteros García,42,M,Barranquilla,10,2024-10-09
-399,Jhon Edison Delgado Miranda,42,F,Ibagué,8,2024-12-31
-400,Óscar Ignacio Becerra Bautista,25,M,Bucaramanga,8,2024-07-23
-401,Marina Gómez,31,F,Cartagena,19,2024-07-27
-402,Eliecer Javier Polo Díaz,78,F,Barranquilla,1,2025-03-12
-403,Olga Toro,40,M,Barranquilla,15,2025-02-19
-404,Jairo Gómez,50,M,Bogotá,17,2024-09-14
-405,Valeria Loaiza Herrera,50,M,Barranquilla,2,2024-08-08
-406,Alejandra Liliana Guevara Gómez,31,M,Cúcuta,8,2025-02-18
-407,Carlos Gómez Ayala,57,M,Bucaramanga,7,2025-03-27
-408,Esperanza María Guerrero García,68,F,Cartagena,6,2024-11-30
-409,Luz Isabel Becerra,20,M,Medellín,19,2025-01-18
-410,Alexander Sánchez,25,F,Cartagena,15,2024-12-20
-411,Luz Mónica Morales,64,M,Bucaramanga,1,2024-10-19
-412,Yineth Saavedra Rojas,69,F,Villavicencio,7,2024-06-28
-413,Orlando Wilson Vélez Rojas,44,F,Cúcuta,6,2024-07-24
-414,Paula Acosta Duarte,74,M,Villavicencio,5,2024-07-15
-415,Yuliana María Romero Osorio,44,M,Bucaramanga,1,2024-07-23
-416,Sandra Vilma Soto,79,F,Bogotá,2,2025-01-30
-417,Elena Nidia Padilla Caro,27,M,Medellín,10,2025-03-13
-418,Tania Guzmán,50,F,Cartagena,6,2024-09-20
-419,Carlos Luis Angarita Gómez,30,M,Cali,15,2024-12-13
-420,Paula Vargas,53,M,Tunja,15,2025-02-14
-421,Miguel Julián Hernández Serrano,46,F,Cartagena,5,2024-11-06
-422,Mauricio Arnulfo Morales,46,M,Bogotá,4,2024-11-23
-423,Ricardo Pedro Luna Ortiz,29,M,Medellín,2,2024-10-18
-424,Carlos López Peña,44,M,Tunja,19,2025-03-29
-425,Manuela Guerrero,68,F,Cúcuta,4,2025-05-01
-426,Marcela Melissa Salazar,43,M,Bucaramanga,5,2024-07-06
-427,Hernán Becerra,37,M,Bucaramanga,10,2024-06-24
-428,José Salazar,57,F,Cúcuta,6,2024-07-16
-429,Juan Felipe Sarmiento Gómez,25,M,Tunja,15,2024-11-02
-430,Antonio Arroyo Montenegro,43,F,Villavicencio,11,2024-09-15
-431,Andrés Luis Torres Hoyos,29,F,Medellín,13,2025-01-23
-432,Mónica Pérez Cano,57,F,Cúcuta,18,2024-07-19
-433,José Gamboa Chávez,42,M,Tunja,15,2024-12-22
-434,Mariana Cifuentes,57,F,Barranquilla,11,2024-10-31
-435,Frank Alzate,29,F,Cartagena,4,2025-02-06
-436,Luz Paola Pabón Cardona,65,F,Bogotá,5,2024-11-05
-437,María Orozco,73,M,Cúcuta,8,2025-01-24
-438,Tatiana Pacheco,59,M,Bogotá,9,2025-01-19
-439,Fabio Cristian González Martínez,71,M,Villavicencio,14,2024-06-19
-440,Juan César Rentería Sánchez,57,M,Villavicencio,11,2025-02-07
-441,Fernando Nilson Navarro,40,M,Barranquilla,14,2024-10-09
-442,Marino Alfonso Daza,54,M,Bucaramanga,14,2025-03-02
-443,Aurelio Castillo,53,F,Cúcuta,1,2025-05-14
-444,Diego Augusto Marín Pineda,71,M,Medellín,19,2025-05-29
-445,Enrique González,57,M,Bucaramanga,15,2025-03-29
-446,Erick Valderrama,26,M,Tunja,9,2024-11-20
-447,Nelson Guerrero Herrera,27,F,Bucaramanga,9,2024-11-08
-448,Iván Herrera,52,M,Medellín,11,2024-08-30
-449,Patricia Blanco Herrera,55,F,Cartagena,7,2024-07-27
-450,Óscar Ramiro Barrera,35,M,Villavicencio,2,2025-02-02
-451,Cecilia Salazar García,44,M,Cartagena,11,2025-06-14
-452,Lady Antonia Palacios,76,F,Cúcuta,19,2025-03-29
-453,Marlon Parra Molano,71,F,Bucaramanga,7,2024-09-19
-454,Ana María Vanegas,69,F,Cúcuta,1,2024-11-15
-455,Ana Moreno Toro,66,M,Cartagena,11,2024-08-01
-456,Dairo Alberto Roa,39,F,Villavicencio,18,2025-05-14
-457,Manuel Duque,38,M,Cali,7,2025-03-10
-458,Luz Kelly Cortés,34,F,Barranquilla,9,2024-06-19
-459,Beatriz Lidia Campo,66,F,Cúcuta,8,2024-08-02
-460,Diego Ramírez López,66,M,Cúcuta,1,2024-10-01
-461,Jairo Luna,49,M,Cali,19,2025-01-11
-462,Fernanda Laura Palacios,76,F,Tunja,19,2024-11-22
-463,Eugenia Yurani Valencia Cruz,79,F,Tunja,17,2024-10-03
-464,Jenny Aguilar,62,M,Cartagena,16,2024-09-27
-465,Luis Bermúdez,57,M,Cúcuta,18,2025-05-31
-466,Ruth Alejandra López Martínez,18,F,Villavicencio,19,2025-05-09
-467,Martha Yuliana Gómez,64,F,Bogotá,2,2024-07-11
-468,Rodolfo Enrique Rojas Forero,71,F,Cartagena,17,2025-02-16
-469,Rubiela Gamboa,67,F,Cartagena,6,2025-03-07
-470,Mauricio Martínez Pérez,68,M,Barranquilla,4,2024-08-22
-471,Eduardo Edgar Jiménez,18,F,Cúcuta,7,2024-12-11
-472,Dahiana Flórez Serna,20,F,Tunja,10,2024-11-12
-473,Iván Mendoza Guerra,27,M,Tunja,14,2024-11-28
-474,Fernando Sánchez Pérez,51,F,Bucaramanga,1,2025-01-03
-475,Estela Pacheco,40,M,Ibagué,18,2024-11-03
-476,Maira Salas Garcés,24,M,Ibagué,8,2024-11-28
-477,José Medina Guzmán,18,M,Ibagué,3,2025-01-29
-478,Socorro Suárez,41,M,Barranquilla,8,2024-12-18
-479,Javier Barrios,71,M,Villavicencio,15,2024-07-12
-480,Margarita Muñoz,54,M,Ibagué,19,2025-05-27
-481,Camilo Cárdenas Alarcón,50,F,Cali,15,2024-09-21
-482,Nancy Pérez,25,F,Medellín,3,2024-11-27
-483,Carolina Johanna Bustamante Cantillo,49,F,Cartagena,14,2025-05-17
-484,Alfonso Gilberto Rodríguez Acosta,49,F,Villavicencio,14,2025-05-29
-485,Milena Lady Romero,60,F,Tunja,4,2025-04-25
-486,Marcos Andrade,69,M,Bucaramanga,14,2025-03-19
-487,Danna Rodríguez Carvajal,48,M,Medellín,16,2024-10-17
-488,Julio Guillermo Villamil,35,M,Barranquilla,10,2025-04-02
-489,María Ospina,24,M,Cartagena,19,2024-11-30
-490,Cecilia Méndez,65,M,Barranquilla,19,2025-02-19
-491,Santiago Carlos Bernal Tovar,53,M,Barranquilla,18,2024-10-16
-492,Alberto José Castro,19,M,Cali,15,2025-03-05
-493,Luz Gómez Ramírez,22,F,Bogotá,11,2024-10-11
-494,Teresa Morales,59,M,Bogotá,2,2024-11-05
-495,Felipe Gamboa Rodríguez,20,M,Barranquilla,12,2024-11-27
-496,Eduard Mendoza Salazar,37,M,Ibagué,5,2024-10-08
-497,Manuel Uribe González,55,F,Tunja,9,2025-03-19
-498,Viviana Mary Vásquez Gómez,51,M,Medellín,12,2024-09-27
-499,Andrea Diana Carrillo,52,F,Ibagué,12,2024-10-10
-500,Bryan Zapata Sánchez,41,M,Cúcuta,10,2024-10-13
-501,Mariana Olga Bonilla Silva,47,F,Tunja,14,2025-01-24
-502,John Iván Díaz González,40,F,Barranquilla,17,2025-01-17
-503,Emiro Alberto Vargas González,67,M,Cúcuta,17,2025-03-31
-504,Héctor Luis Contreras,31,M,Ibagué,8,2024-11-30
-505,Eugenia Paola Medina Castaño,19,M,Cúcuta,7,2025-01-22
-506,Lucía Gutiérrez,26,F,Barranquilla,11,2024-11-18
-507,Carolina Ariza,63,F,Cali,13,2025-05-09
-508,Elkin Rubio,51,M,Bogotá,5,2024-06-28
-509,Yéssica María Benavides Figueroa,28,F,Medellín,18,2025-06-10
-510,Andrés Felipe Angarita Zambrano,38,F,Cúcuta,4,2025-01-02
-511,Guillermo Efrén Rentería López,58,F,Barranquilla,2,2024-11-02
-512,Angie Yina Arias Hurtado,34,M,Cali,6,2025-05-11
-513,Lucía Lorena Vega Domínguez,75,F,Villavicencio,10,2025-04-03
-514,Mario Juan Ceballos Monroy,39,M,Ibagué,6,2025-05-21
-515,Jaime Henry Fonseca,44,F,Bogotá,2,2025-02-08
-516,Yaneth María Prieto,29,M,Villavicencio,7,2024-11-09
-517,Fernando Agudelo,27,M,Barranquilla,17,2025-01-09
-518,Milena Martínez Ariza,43,M,Medellín,14,2025-02-28
-519,José Valencia Quintero,19,F,Ibagué,11,2025-03-19
-520,Jhonatan Antonio Gómez Ramos,18,M,Cali,4,2025-02-14
-521,Ángel Gómez,68,F,Ibagué,11,2024-07-20
-522,Carmen Antonia Becerra,57,M,Villavicencio,4,2025-05-29
-523,Yamile Parra,66,M,Villavicencio,7,2024-07-25
-524,Sandra Libia Martínez Loaiza,57,M,Tunja,2,2024-10-29
-525,Luis González,72,M,Bucaramanga,5,2024-12-03
-526,Patricia Liliana Aguirre Salazar,73,M,Ibagué,4,2024-07-16
-527,Francisco Cristian Arroyo,64,F,Tunja,19,2025-02-05
-528,José Jiménez,52,F,Villavicencio,11,2024-10-19
-529,Juan Víctor Ramos,34,F,Cúcuta,13,2025-02-28
-530,Ana Lilia Hoyos Vargas,60,F,Villavicencio,9,2025-06-04
-531,Alonso Henry Ariza,43,F,Ibagué,9,2025-04-10
-532,Elvira Miryam Sanabria,26,F,Cali,17,2024-11-28
-533,Horacio Monroy,18,M,Ibagué,11,2025-01-04
-534,John Fernando Ocampo,57,F,Ibagué,7,2024-09-25
-535,Pablo Rodríguez,52,M,Cartagena,18,2025-03-06
-536,José Edgar Mosquera,54,F,Barranquilla,12,2024-08-13
-537,Alberto Arango Cárdenas,68,F,Cartagena,6,2024-06-16
-538,Carolina Torres,51,F,Villavicencio,19,2024-11-04
-539,Santiago Quiroga Martínez,54,F,Ibagué,17,2024-12-26
-540,Liseth Yenifer Núñez Valencia,78,M,Barranquilla,10,2025-03-20
-541,Antonio Córdoba González,74,M,Cartagena,17,2025-03-01
-542,Elsa Damaris Ortiz Rodríguez,64,F,Ibagué,16,2024-06-19
-543,Ruby Velasco,41,M,Medellín,8,2024-10-17
-544,Andrés Moreno,48,M,Cartagena,17,2025-03-07
-545,Liliana Martha Rojas Díaz,40,M,Barranquilla,16,2024-11-03
-546,Luis Arévalo,23,F,Cartagena,18,2025-04-21
-547,María Guerrero Delgado,42,F,Bucaramanga,15,2025-01-14
-548,Paola Díaz,76,F,Bucaramanga,9,2024-07-15
-549,Wilmer Calderón,62,F,Villavicencio,15,2024-08-14
-550,Felipe Mora,49,F,Medellín,16,2024-09-20
-551,Paola Moreno González,24,M,Cali,7,2025-03-02
-552,Gina Elsa Murillo,31,M,Cali,7,2024-12-29
-553,Héctor Rojas,26,M,Barranquilla,16,2024-07-26
-554,David José Mora,25,F,Cúcuta,18,2025-02-02
-555,Julián Navarro,48,F,Cali,7,2025-05-22
-556,Dario Gaitán Sánchez,52,F,Barranquilla,10,2025-04-25
-557,Patricia Prada,56,M,Medellín,14,2025-01-29
-558,Cecilia Cardona Salamanca,48,F,Cúcuta,3,2025-03-07
-559,Elvis Alejandro Flórez,61,F,Cúcuta,13,2024-07-01
-560,Cristina Beltrán,51,M,Bucaramanga,5,2025-04-03
-561,Paola Ramos,60,F,Villavicencio,12,2024-06-19
-562,Lorena Ruth Sánchez,56,M,Ibagué,17,2025-06-14
-563,Alberto Ramírez Tamayo,21,M,Cúcuta,13,2025-03-08
-564,Margarita Acevedo,35,M,Bogotá,16,2024-08-06
-565,Maritza Bejarano Bernal,62,F,Barranquilla,12,2024-08-27
-566,Omaira María Tamayo,79,F,Cúcuta,3,2024-09-30
-567,José Barrios Hurtado,59,F,Cúcuta,13,2025-03-10
-568,David Hernández Torres,30,F,Tunja,3,2024-12-07
-569,David Gil,76,M,Bogotá,14,2024-11-13
-570,Johan Julián Molano,69,M,Tunja,17,2025-06-04
-571,Josué Fredy Vega,46,F,Cúcuta,12,2024-09-17
-572,Edgar Ramos,74,F,Ibagué,12,2025-03-17
-573,Luz Ana Figueroa,64,M,Bogotá,10,2025-03-25
-574,Luis Gómez,47,M,Bucaramanga,7,2024-09-01
-575,Antonio José Quintero Castañeda,37,M,Cartagena,1,2024-12-09
-576,Augusto Andrés Hernández,47,M,Cúcuta,3,2024-07-22
-577,Leonardo Enrique Sandoval Aguirre,62,F,Cúcuta,18,2024-09-06
-578,Rubiela Sánchez,21,F,Villavicencio,5,2024-07-10
-579,Gladys Alcira Suárez,42,F,Villavicencio,1,2025-02-16
-580,Luis Johan Paz Mosquera,70,F,Tunja,15,2025-03-24
-581,Carlos Fernández Roa,26,M,Barranquilla,17,2025-06-02
-582,Lizeth Buitrago,74,F,Ibagué,4,2024-11-17
-583,José Flórez,29,M,Barranquilla,5,2024-12-05
-584,Melissa González García,78,M,Cartagena,11,2025-04-24
-585,Diana María Salas Castro,77,F,Cúcuta,7,2025-05-06
-586,Inés Peña,73,M,Ibagué,14,2024-09-14
-587,Rodrigo Carlos González,41,M,Bogotá,13,2024-08-20
-588,Rosalba Blanca Franco,51,M,Cúcuta,7,2025-04-12
-589,Sebastián Franco,69,F,Bucaramanga,8,2025-02-27
-590,Patricia Natalia Rodríguez Rojas,37,M,Cúcuta,19,2024-09-24
-591,Hermes José Morales,62,F,Cali,10,2024-10-12
-592,Brayan Barreto Ramos,60,F,Ibagué,9,2024-07-25
-593,Katherine Wendy Cifuentes Pérez,66,F,Cali,3,2025-04-14
-594,Yuli Luz Espitia González,73,F,Tunja,5,2024-06-24
-595,Sofía Ríos Sánchez,22,F,Villavicencio,15,2024-07-14
-596,Margarita Lucía López,40,M,Bogotá,9,2024-12-21
-597,Lorena Vargas,52,F,Cúcuta,17,2025-02-12
-598,Inés Gómez Daza,78,M,Tunja,10,2024-10-20
-599,Rosalba Barrera Restrepo,52,F,Tunja,18,2024-09-02
-600,Olga Lozano,79,M,Bogotá,3,2024-07-14
-601,Yesid Eduardo Gil,49,M,Medellín,6,2024-12-21
-602,Leonardo Martínez,30,F,Cúcuta,15,2024-08-24
-603,Edison Medina,42,M,Cali,4,2025-06-14
-604,Santiago Luis Triana Valencia,31,M,Ibagué,2,2025-05-26
-605,Joaquín Álvaro Zapata Vallejo,28,M,Cali,3,2025-03-18
-606,Andrés Ramírez,76,F,Bogotá,9,2024-10-01
-607,Flor Marina Mosquera Vélez,20,M,Cartagena,2,2024-11-07
-608,Leonardo José Muñoz,29,F,Cúcuta,9,2024-07-23
-609,Rodrigo Juan Mendoza,32,F,Bucaramanga,5,2025-01-03
-610,Vanesa Lucero Luna Gaitán,28,M,Barranquilla,2,2024-07-11
-611,Eduardo Luis Jaimes Cárdenas,41,F,Ibagué,15,2024-12-08
-612,Andrés Antonio Vanegas,55,F,Bucaramanga,5,2025-03-23
-613,Silvio Alcides Álvarez Ballesteros,65,F,Bucaramanga,18,2025-02-27
-614,Israel José Acevedo Marín,23,M,Cúcuta,16,2025-02-16
-615,Gilberto Castro,30,F,Cartagena,5,2025-06-01
-616,Dario Julio Vargas Páez,30,M,Cúcuta,18,2025-02-15
-617,Alberto Tovar,57,M,Cartagena,19,2024-10-18
-618,Sofía Morales Rodríguez,75,M,Medellín,8,2025-05-16
-619,Jean González,51,F,Ibagué,13,2024-12-23
-620,Mayra Patricia Jiménez,62,M,Bogotá,6,2024-07-09
-621,Adriana Viviana Acosta Gutiérrez,41,M,Villavicencio,16,2025-01-09
-622,Adriana Ruiz,57,F,Bogotá,1,2025-03-13
-623,Liliana Páez,76,M,Bucaramanga,16,2024-10-30
-624,Fabio Rodrigo Mejía Posada,58,M,Barranquilla,11,2024-10-14
-625,Lucía Moreno Sarmiento,62,M,Medellín,10,2024-09-27
-626,Ana Dayana Quiroga,53,M,Bogotá,6,2024-07-05
-627,Bernardo Hoyos,77,M,Bogotá,5,2024-10-06
-628,Cindy Alejandra Giraldo Ortiz,60,M,Barranquilla,19,2025-02-19
-629,Felipe Arrieta Leal,48,M,Barranquilla,10,2024-08-24
-630,Enrique Perdomo,27,F,Bogotá,11,2024-11-30
-631,Sandra Hilda Castro Espitia,70,F,Tunja,7,2024-10-23
-632,William Darwin Gil Fonseca,48,F,Cali,4,2025-03-29
-633,Fernando Duarte Ospino,19,F,Barranquilla,13,2025-02-25
-634,Paola Peña,46,F,Cali,7,2024-08-14
-635,Julián Efrén Hernández Ávila,19,F,Ibagué,13,2024-08-23
-636,Juan José Daza Oviedo,63,M,Medellín,17,2025-05-29
-637,Julio Díaz,58,M,Tunja,8,2025-03-25
-638,María Mariela Ordóñez Gómez,48,F,Barranquilla,13,2025-06-11
-639,Patricia Astrid Guzmán,52,F,Ibagué,6,2025-02-07
-640,Elvira Sonia Rojas,36,F,Cartagena,7,2025-03-01
-641,Tatiana Yuli Díaz,27,M,Bucaramanga,2,2024-07-23
-642,Mónica Lida Serna,45,F,Cali,15,2025-04-15
-643,Martha Estela López Vergara,47,M,Tunja,4,2025-05-06
-644,Nelson James Rodríguez Sánchez,37,F,Tunja,4,2024-07-19
-645,Julia Angie Muñoz Moreno,67,F,Medellín,17,2025-02-17
-646,Andrés Orlando Castro Perea,29,F,Cali,17,2025-05-29
-647,Jefferson Alberto Zapata Herrera,27,F,Cartagena,1,2025-01-29
-648,Eduard Arturo López,39,F,Medellín,18,2025-06-01
-649,Edison Jorge Mosquera Díaz,67,F,Tunja,15,2024-12-11
-650,María Gamboa,46,F,Bogotá,4,2024-11-18
-651,Inés Rodríguez,76,M,Cartagena,12,2024-08-08
-652,Cristina García,24,M,Tunja,11,2024-12-19
-653,María Granados,50,F,Cúcuta,15,2025-04-16
-654,Sara Díaz Narváez,32,F,Cúcuta,19,2025-06-03
-655,Antonio Franklin Roa Castro,28,F,Barranquilla,2,2025-01-15
-656,Dora Bustos Olaya,63,F,Medellín,4,2025-04-09
-657,Luis Rodríguez,34,M,Tunja,13,2025-01-09
-658,Karen Patricia Herrera,58,M,Barranquilla,15,2025-01-26
-659,Ángela Montes,72,M,Medellín,11,2024-11-22
-660,Esperanza Esperanza Quintero Ochoa,69,F,Cartagena,2,2024-09-18
-661,Germán Marín Ayala,64,F,Tunja,11,2025-04-26
-662,Sandra Yineth Caro,44,M,Medellín,17,2025-03-29
-663,Leidy Edna Cardona Palacios,79,F,Tunja,15,2025-01-12
-664,Dahiana Pérez Díaz,33,M,Bogotá,6,2025-02-01
-665,Alirio Iván Rodríguez,36,M,Bucaramanga,5,2025-04-30
-666,Esteban Héctor Angulo Salazar,20,M,Villavicencio,1,2024-12-24
-667,Alberto Díaz Galeano,75,F,Cúcuta,6,2024-12-20
-668,Martha Ibarra,32,F,Bucaramanga,3,2025-01-05
-669,Leidy Herrera,66,M,Medellín,12,2025-04-28
-670,Sofía Buitrago,35,M,Villavicencio,12,2025-01-28
-671,Gustavo David Arias,33,M,Bucaramanga,8,2024-12-30
-672,María Olga Lozano,77,F,Bogotá,17,2024-12-10
-673,Jesús César Lara Amaya,46,M,Cúcuta,8,2024-12-07
-674,Julián Eduardo Rodríguez Mora,32,M,Ibagué,14,2024-07-11
-675,María María Martínez,67,F,Medellín,7,2024-08-08
-676,Sandra Laura Díaz,20,M,Cúcuta,12,2025-04-23
-677,Alba Elvira Pulido Palacios,70,F,Bucaramanga,3,2025-02-05
-678,Jhon Acosta,37,F,Ibagué,15,2024-11-29
-679,Daniel Antonio Ortega,42,F,Cali,14,2024-08-13
-680,Sebastián Peña,24,M,Cúcuta,12,2024-08-18
-681,Liliana Ibarra,37,F,Cali,9,2025-02-15
-682,Andrés Felipe Páez Gutiérrez,55,F,Villavicencio,2,2024-12-08
-683,Luz Yineth Duarte Orjuela,41,F,Cartagena,11,2024-09-30
-684,Sofía Fanny Velásquez,30,M,Tunja,8,2024-11-23
-685,María Ruiz Flórez,38,F,Villavicencio,18,2025-04-21
-686,Gladys Nora Castillo Díaz,63,M,Ibagué,6,2025-04-07
-687,Daniela Bolaños,49,M,Ibagué,13,2024-07-20
-688,Milena Zapata Mosquera,42,M,Cúcuta,6,2024-11-08
-689,José Joel Valencia Gil,58,F,Tunja,11,2024-07-07
-690,Pedro Leonardo Ortiz,39,M,Cartagena,9,2024-09-23
-691,Cristina Lorena Palacio Quintero,34,F,Bucaramanga,14,2024-06-19
-692,Angie Rodríguez,49,M,Barranquilla,16,2025-06-11
-693,Fernando Pérez,71,F,Medellín,1,2025-02-23
-694,Amparo Fuentes Duarte,27,F,Cartagena,18,2025-05-16
-695,María Caicedo Parra,77,M,Ibagué,2,2024-08-03
-696,Elena Gómez García,50,M,Barranquilla,9,2024-10-09
-697,Hernando Gutiérrez,30,F,Ibagué,1,2024-10-03
-698,Nohora Marina Rojas Ramos,30,F,Tunja,7,2025-03-09
-699,William Toro Campo,19,F,Tunja,7,2025-05-12
-700,Gina Mosquera Mora,43,F,Cúcuta,18,2025-03-25
-701,Elsa Montenegro Cruz,32,F,Bucaramanga,10,2025-06-08
-702,Elmer Alejandro Pacheco,72,F,Bogotá,17,2024-08-18
-703,Luz Fernanda Restrepo,57,M,Ibagué,3,2024-08-16
-704,Alberto José Arango Martínez,76,F,Bucaramanga,9,2024-10-18
-705,Sara Teresa Ortiz Aguilar,23,M,Cali,7,2025-05-04
-706,Alejandro Benítez,48,F,Ibagué,9,2025-02-08
-707,María Saavedra,67,F,Barranquilla,8,2024-07-14
-708,Luis Cristobal Ospina,25,F,Bucaramanga,15,2024-08-05
-709,Felipe Gonzáles Martínez,76,M,Cartagena,7,2025-04-27
-710,Josué Kevin Delgado González,28,F,Bucaramanga,16,2025-05-16
-711,María Sarmiento,21,F,Cartagena,3,2025-05-03
-712,Alberto Castro,58,F,Tunja,10,2025-06-02
-713,Dary Socorro Espinosa,31,M,Cartagena,18,2024-09-22
-714,Jhon Gerardo Pineda,71,F,Villavicencio,12,2025-05-01
-715,Alexis Roa López,30,M,Bogotá,13,2024-08-30
-716,Luis Pablo Uribe Flórez,68,F,Villavicencio,19,2024-09-12
-717,Libia Alejandra Méndez,72,F,Barranquilla,4,2024-08-25
-718,Blanca Alexandra Portilla González,62,F,Medellín,19,2024-09-17
-719,Alejandro Alarcón,61,F,Barranquilla,6,2025-03-03
-720,Germán Antonio Gómez Gutiérrez,35,M,Cúcuta,5,2024-06-24
-721,Aldair Wilmar Serna,49,F,Ibagué,9,2024-10-28
-722,María Inés Salcedo Castro,76,M,Villavicencio,10,2024-08-01
-723,Paola Torres Córdoba,68,M,Barranquilla,15,2025-03-08
-724,Juan Leonardo López,50,M,Ibagué,12,2024-07-28
-725,Alberto Ariel Hernández Giraldo,66,F,Ibagué,5,2024-11-06
-726,Germán Salazar,21,F,Ibagué,12,2025-02-03
-727,Adrián Óscar Ochoa Cáceres,79,F,Bogotá,18,2025-03-01
-728,Wilmer Gutiérrez,66,M,Medellín,9,2024-09-19
-729,Miller Lara Bravo,53,F,Cartagena,2,2024-09-30
-730,Patricia Carolina Cardozo Rojas,53,F,Barranquilla,15,2025-02-21
-731,Amparo Lizeth Perdomo,51,F,Cúcuta,6,2025-02-04
-732,Blanca Pérez,56,F,Barranquilla,19,2024-08-21
-733,Manuel González,68,F,Cartagena,12,2024-12-27
-734,Carlos Eliecer García,20,M,Tunja,18,2025-03-21
-735,Esperanza Caicedo Parra,57,M,Bucaramanga,15,2024-09-18
-736,Ismael Julio Ramos Jaimes,50,M,Ibagué,8,2024-12-01
-737,Leandro Adolfo Salazar,53,F,Villavicencio,10,2024-06-21
-738,Augusto Pardo,61,F,Villavicencio,14,2025-05-28
-739,Dario César Henao Quintero,19,M,Bucaramanga,5,2025-05-20
-740,Mery Bonilla Granados,22,F,Cúcuta,13,2025-04-13
-741,Enrique Yeison Pardo Jaimes,58,F,Villavicencio,15,2024-10-25
-742,Antonio Álvaro Arias Sánchez,31,F,Bucaramanga,7,2025-01-01
-743,Eugenia Yohana Restrepo,42,F,Bucaramanga,2,2025-03-18
-744,Luisa Vanegas Sánchez,56,F,Ibagué,17,2024-10-18
-745,Manuel Hermes Martínez,76,M,Cartagena,2,2025-03-18
-746,Adriana Álvarez,52,M,Cartagena,5,2024-07-05
-747,Carolina María Contreras,18,F,Cartagena,12,2025-06-13
-748,Andrea Sánchez Quintero,73,F,Barranquilla,13,2024-11-19
-749,Andrés Rodrigo Agudelo,40,M,Medellín,11,2024-12-08
-750,Patricia Caro,27,M,Barranquilla,14,2025-05-19
-751,Jorge David Ordóñez,33,F,Bucaramanga,10,2024-11-09
-752,María Bibiana Vargas Calderón,29,F,Medellín,9,2024-08-23
-753,Zulma Martha Forero,18,M,Villavicencio,8,2024-08-25
-754,Marcela Chávez,60,F,Cali,1,2025-04-27
-755,Patricia Rocío Benavides Barrera,74,F,Barranquilla,11,2024-12-24
-756,Mireya Orozco,54,M,Barranquilla,5,2024-09-30
-757,Jairo Rolando Peña Herrera,29,M,Ibagué,17,2025-02-15
-758,Elcy Lilia Espinosa,66,F,Cartagena,12,2024-06-28
-759,Emilio Daniel López Bastidas,73,F,Tunja,15,2024-12-24
-760,Dolly Isabel Calderón Anaya,32,F,Villavicencio,12,2025-04-11
-761,Alexis Quintero Guzmán,76,M,Tunja,18,2024-08-22
-762,Alberto Juan Murillo Bedoya,31,F,Cartagena,9,2025-01-09
-763,Alonso Ortega,54,F,Medellín,1,2024-11-22
-764,Alberto Luis Pinto,72,M,Barranquilla,6,2025-05-17
-765,Sandra Cecilia Ávila Calderón,54,M,Cartagena,5,2024-10-27
-766,Yohana Deisy Romero Pérez,50,M,Barranquilla,19,2025-05-30
-767,María María Ramírez Vargas,31,F,Bucaramanga,10,2024-11-02
-768,José López,37,M,Cali,18,2025-04-01
-769,Marisol Lucía Cabrera,41,M,Cartagena,11,2024-09-15
-770,Gloria Salazar,79,F,Bogotá,18,2024-12-29
-771,Andrea Luisa Rodríguez,46,M,Villavicencio,7,2025-03-27
-772,José Jerson Rodríguez,48,F,Cali,15,2024-10-12
-773,Leidy Sandra Guzmán,60,F,Cartagena,12,2025-05-26
-774,Nicolás Esteban Perea Garzón,55,F,Bogotá,13,2024-11-19
-775,Eduardo Hurtado Morales,69,F,Bogotá,18,2025-02-16
-776,Hernando Mercado,59,F,Villavicencio,8,2024-11-29
-777,Angie Sandra Ruiz,67,M,Cartagena,1,2025-03-10
-778,David Herrera,72,F,Cali,6,2025-04-27
-779,Alejandro López,22,M,Ibagué,15,2024-08-03
-780,Brayan José Díaz,51,M,Medellín,11,2025-01-19
-781,Daniel Alberto Pérez Martínez,27,F,Bogotá,18,2025-02-03
-782,Catalina Diana Forero,35,M,Tunja,8,2024-07-25
-783,Nathalia Velasco Gómez,64,F,Cartagena,17,2024-09-18
-784,Jhon Soto Ramírez,29,M,Ibagué,8,2024-09-19
-785,Gabriela Carolina Rodríguez Vásquez,42,F,Ibagué,4,2025-05-20
-786,María Carolina Rojas Díaz,50,M,Ibagué,19,2024-10-27
-787,Marcela Forero Rojas,48,F,Bucaramanga,14,2024-07-19
-788,Juan Torres,70,F,Cali,5,2025-01-01
-789,Rodolfo Alexander Melo,58,F,Bogotá,2,2025-05-07
-790,Carmen Isabel Álvarez Cifuentes,67,F,Cartagena,6,2025-02-25
-791,Luz Alvarado,26,M,Ibagué,9,2024-10-17
-792,Sebastián Pérez Velásquez,42,F,Medellín,13,2024-12-05
-793,Esteban Julián Carvajal,26,M,Medellín,13,2025-01-18
-794,Andrés Monroy Pérez,48,M,Cúcuta,11,2025-02-09
-795,Johana Fernanda Acevedo García,21,F,Ibagué,6,2025-02-06
-796,Dora Gamboa Correa,63,F,Medellín,6,2025-03-01
-797,María Vargas Fonseca,36,F,Tunja,2,2025-02-13
-798,Elcy Claudia Navarro Muñoz,35,M,Bogotá,9,2024-10-25
-799,Camila Daza Aguilar,40,M,Cali,13,2024-09-09
-800,Cecilia Myriam Rosero,28,M,Cali,7,2024-11-10
-801,Paola Herrera Pérez,42,M,Tunja,15,2024-07-22
-802,Deicy Liliana Arias,18,F,Cartagena,7,2024-11-12
-803,Ana Angie Castro,32,M,Medellín,19,2025-05-09
-804,Valeria Agudelo Calderón,77,M,Barranquilla,1,2025-05-03
-805,Flor Esperanza Buitrago,66,F,Medellín,17,2024-12-12
-806,Fanny Eugenia Morales Silva,52,F,Villavicencio,6,2024-09-26
-807,Harold Uriel López Castro,43,M,Cúcuta,3,2024-09-24
-808,Javier Juan Montoya Arango,25,F,Tunja,14,2025-04-27
-809,Andrés Hoyos,27,F,Tunja,14,2025-02-10
-810,Edinson Miguel López Castro,26,M,Tunja,8,2024-08-22
-811,Camilo Antonio Rodríguez Molano,65,F,Barranquilla,6,2025-04-28
-812,María Cardona Pérez,45,M,Villavicencio,12,2025-02-10
-813,Laura Montoya Rodríguez,22,F,Cúcuta,16,2024-07-11
-814,Angélica Mónica Rodríguez,54,M,Ibagué,12,2025-02-04
-815,María Mónica López,53,M,Ibagué,11,2024-07-16
-816,Deicy Gómez Loaiza,65,M,Cartagena,6,2025-05-02
-817,Edilma Corredor,63,F,Tunja,12,2025-05-06
-818,Daniel Jairo González Vélez,76,M,Cúcuta,13,2025-05-31
-819,Isabel Ochoa Ceballos,38,M,Cartagena,11,2025-01-21
-820,María Yolima Chacón Angulo,72,F,Tunja,15,2024-07-21
-821,Omaira Orozco Suárez,70,F,Tunja,15,2024-12-19
-822,Luz Salazar,42,F,Bogotá,11,2024-06-18
-823,Juan Alirio León Torres,68,M,Tunja,4,2025-03-15
-824,Martha María Sanabria,38,M,Medellín,19,2025-05-18
-825,Antonio Efrain Vargas Triana,51,F,Barranquilla,4,2024-08-12
-826,Christian Benítez Molina,65,M,Barranquilla,14,2024-12-20
-827,Denis Mónica Castillo,44,M,Cartagena,15,2025-02-28
-828,Diana Rodríguez,45,M,Medellín,8,2025-03-18
-829,Felipe Fernando Rico Leal,33,F,Cali,4,2024-09-19
-830,Anderson Armando Morales,47,F,Barranquilla,2,2024-09-09
-831,Carlos Díaz Carrillo,66,M,Cali,4,2024-07-07
-832,Sebastián García,43,M,Villavicencio,11,2025-05-12
-833,Jhon Hernández Ramírez,24,M,Medellín,12,2025-03-01
-834,Enrique Nieto,27,M,Cali,13,2024-08-30
-835,Blanca Francia Miranda Jiménez,48,M,Bogotá,17,2025-01-05
-836,Astrid Montoya Angarita,59,M,Cúcuta,10,2024-12-08
-837,Dayana Dolly Parra López,73,F,Ibagué,4,2025-01-23
-838,Natalia Teresa Becerra Díaz,71,M,Tunja,1,2025-01-24
-839,José Hurtado García,61,F,Ibagué,13,2024-12-08
-840,Marcela Ángela Giraldo,59,M,Cartagena,13,2025-02-26
-841,Lucía Durán,72,F,Bogotá,9,2024-08-09
-842,Jairo Sebastián Cárdenas Benavides,43,M,Barranquilla,15,2025-05-05
-843,Hermes Gregorio García,27,F,Cartagena,10,2024-08-04
-844,Ruth Martínez,25,F,Cartagena,16,2024-09-05
-845,Antonio Marcos González,66,F,Ibagué,5,2024-10-07
-846,Juan Bustos Vanegas,21,F,Medellín,19,2025-02-26
-847,Maribel Mónica Navarro López,53,F,Barranquilla,7,2025-01-01
-848,Sergio Carlos Londoño Patiño,27,M,Cartagena,18,2025-01-03
-849,Óscar Jairo Ávila,36,F,Tunja,10,2025-03-08
-850,Julián Augusto García Perea,50,M,Barranquilla,18,2024-12-20
-851,Fidel Franco,22,M,Cúcuta,17,2024-11-27
-852,Sandra Agudelo Murcia,52,F,Medellín,2,2025-01-04
-853,Ángel Alejandro Moreno Fernández,50,M,Villavicencio,17,2024-08-20
-854,Josué Manuel Gómez,39,F,Barranquilla,5,2025-04-01
-855,Gilberto Gustavo Peña,32,M,Cali,7,2025-02-17
-856,Manuel Pablo Caicedo,49,M,Cartagena,10,2025-03-18
-857,Samuel Oviedo Hurtado,26,F,Cali,13,2025-06-05
-858,Emma María Valencia,78,M,Medellín,2,2025-04-23
-859,Daniela Aguilar Jiménez,52,M,Bogotá,18,2024-07-21
-860,Verónica Esmeralda Palacio,20,F,Cali,7,2025-02-05
-861,Lucía Becerra,58,M,Cartagena,11,2025-02-04
-862,María Cecilia Garcés Ramírez,56,F,Tunja,14,2024-11-08
-863,Humberto Rodríguez,36,F,Tunja,6,2024-11-17
-864,Diego Manuel López,59,F,Cartagena,7,2024-10-14
-865,Erick Bedoya Montoya,62,F,Ibagué,4,2024-07-23
-866,Gerson Carlos Valencia,57,M,Medellín,1,2025-01-25
-867,María Hurtado Montoya,53,M,Ibagué,9,2025-03-20
-868,Miller Hernán Bermúdez,25,M,Cartagena,6,2025-03-20
-869,Martha Bernal,58,M,Cúcuta,4,2024-06-29
-870,Miguel Fernando Cano,30,M,Cartagena,2,2024-10-24
-871,Paula Camila Mora,77,M,Villavicencio,12,2024-10-27
-872,Fernanda Diana Jaramillo Gómez,44,F,Villavicencio,8,2024-12-31
-873,Diana Nancy Castellanos Pérez,55,F,Ibagué,18,2024-09-23
-874,Eugenia Salazar Rodríguez,20,F,Ibagué,12,2025-04-26
-875,Carlos Angulo Sánchez,78,F,Medellín,3,2024-08-27
-876,Diana Daniela Ortiz,39,F,Tunja,2,2024-09-16
-877,Andrés Moreno,40,F,Bogotá,2,2024-09-13
-878,Edinson Yeison López,55,M,Cúcuta,3,2024-11-07
-879,Tatiana Piedad Cano,51,M,Bucaramanga,8,2025-01-21
-880,Leonardo Gregorio Pineda Díaz,39,F,Tunja,4,2024-12-01
-881,Brayan Eduardo Rodríguez Torres,22,M,Cartagena,15,2024-12-03
-882,Eduardo Arias Ríos,74,M,Bogotá,16,2025-03-28
-883,María Dora Hernández Rodríguez,59,F,Medellín,16,2024-08-11
-884,Cecilia Aura Alzate Duque,29,M,Barranquilla,16,2025-06-01
-885,Tatiana Cielo Martínez Reyes,29,F,Tunja,3,2025-05-09
-886,Yadira Solano,33,F,Tunja,13,2025-02-20
-887,Angélica Ballesteros Chaparro,40,F,Bogotá,19,2024-09-15
-888,Karen Guerrero Arias,57,F,Cartagena,5,2025-04-24
-889,Andrés Marlon Sandoval Álvarez,37,F,Tunja,12,2025-05-25
-890,Manuel Mora,18,M,Bogotá,6,2025-02-03
-891,Alejandra María Cáceres Carvajal,39,F,Cali,8,2025-01-19
-892,Marcela María Soto,56,F,Ibagué,1,2024-07-09
-893,Carmen Yaneth Rojas Rueda,70,F,Villavicencio,12,2024-12-22
-894,Dora Cantillo,55,F,Ibagué,2,2024-10-09
-895,Olga Benavides Moreno,78,F,Cartagena,4,2025-01-09
-896,Mary Rodríguez Sánchez,50,M,Cali,18,2025-05-23
-897,Mauricio Anderson Rojas Valencia,62,F,Tunja,9,2024-12-02
-898,Laura Carmona,38,F,Cúcuta,9,2025-02-16
-899,Juan Restrepo,18,M,Ibagué,3,2025-01-22
-900,Humberto Jhon Cano Vargas,69,F,Medellín,4,2024-10-13
-901,María Pérez Rangel,35,M,Ibagué,6,2024-12-12
-902,Luz Diana Rico Hernández,52,F,Bucaramanga,11,2025-05-27
-903,Stiven Christian Murcia Medina,32,F,Cúcuta,5,2024-11-30
-904,Claudia Gloria Hernández Galeano,69,F,Bucaramanga,12,2025-02-19
-905,Nelly Ramírez Pardo,64,M,Bucaramanga,10,2025-04-21
-906,Elena Cerón González,55,F,Medellín,13,2025-05-17
-907,Mauricio Fernández,52,F,Cali,10,2024-08-17
-908,Darío Calderón,47,F,Bucaramanga,6,2024-09-07
-909,Jhon Adrián Cardozo,20,F,Cúcuta,7,2025-02-26
-910,Alba Cárdenas,69,F,Ibagué,9,2025-02-08
-911,Antonio Agudelo,32,M,Cartagena,3,2024-09-01
-912,Ángel Aguirre Franco,19,M,Cúcuta,2,2025-04-26
-913,Marcela Yolanda Zapata,52,F,Villavicencio,14,2024-12-19
-914,Felipe René Castillo Naranjo,37,F,Bogotá,10,2025-05-03
-915,Betty Salazar Tovar,42,F,Ibagué,1,2024-11-24
-916,Inés Gómez Padilla,53,M,Medellín,14,2025-05-12
-917,Armando Orozco,18,F,Bucaramanga,16,2025-05-17
-918,Luz Cardona,71,F,Cartagena,3,2024-10-11
-919,Jader Jorge Ruiz Estrada,52,M,Bucaramanga,6,2025-01-03
-920,Andrea Esther Ángel Cardozo,42,M,Medellín,2,2025-06-08
-921,Alfredo García Ramírez,25,M,Cúcuta,2,2024-09-01
-922,Daniela Milena Guzmán,21,M,Villavicencio,15,2024-10-23
-923,Omar Gómez,21,M,Bogotá,12,2024-08-23
-924,David Michael Flórez,49,F,Villavicencio,13,2025-06-09
-925,Iván Pablo Acosta Caicedo,48,F,Ibagué,18,2025-02-13
-926,Esperanza Arias,46,F,Cúcuta,6,2025-02-01
-927,Lucía Rodríguez,49,M,Bogotá,11,2024-10-23
-928,Adriana Lucía Moreno Ojeda,79,F,Barranquilla,19,2024-09-08
-929,José Cano Vergara,48,M,Villavicencio,5,2024-11-19
-930,Frank Adolfo Villegas,36,F,Bucaramanga,10,2024-09-17
-931,Felipe Jorge Marín,42,F,Tunja,11,2025-03-19
-932,María Yepes Valderrama,67,M,Ibagué,15,2024-06-22
-933,Claudia Carolina Benítez Mejía,26,M,Ibagué,19,2024-07-29
-934,Andrés Osorio Cruz,26,M,Bogotá,9,2024-11-01
-935,Ernesto Alonso Uribe,45,F,Barranquilla,14,2025-03-07
-936,María Ruth Pacheco,68,M,Cartagena,16,2024-06-28
-937,Fabián Alberto Martínez Delgado,33,F,Villavicencio,1,2024-12-04
-938,María Elena Moreno Agudelo,21,F,Cali,7,2024-06-18
-939,Orlando Guillermo Díaz Carvajal,57,M,Cartagena,5,2025-04-27
-940,Yaneth Kelly Mesa Nieto,56,F,Ibagué,4,2024-10-09
-941,Mariana Cerón Barbosa,77,F,Ibagué,7,2024-07-15
-942,Fabián Ochoa Giraldo,67,M,Medellín,5,2024-11-16
-943,Cristian Óscar Gómez,69,M,Bogotá,3,2024-07-02
-944,Alejandro Fredy Mendoza,24,M,Tunja,14,2024-06-17
-945,Esteban Espinosa,24,M,Barranquilla,5,2024-08-03
-946,Patricia Kelly Narváez,79,M,Cali,2,2024-07-29
-947,Camilo Navarro Gómez,79,M,Cartagena,6,2025-01-26
-948,Graciela Bautista,32,M,Villavicencio,10,2025-03-21
-949,Rafael Gutiérrez,40,F,Bogotá,7,2025-03-04
-950,José Suárez Hernández,22,M,Villavicencio,13,2025-05-22
-951,José Rafael Díaz,38,F,Cúcuta,18,2025-05-19
-952,Diego Vega,62,M,Medellín,18,2024-08-25
-953,Liliana Amaya,54,M,Barranquilla,4,2024-11-13
-954,Ramiro Ariza,34,M,Medellín,17,2024-09-03
-955,Patricia Laura Velasco Delgado,77,M,Ibagué,4,2024-09-06
-956,Isabel Rosa Villamil,51,F,Medellín,16,2025-04-01
-957,Camilo Carlos Montes,77,F,Cali,8,2025-04-11
-958,Laura Claudia Toro,52,M,Ibagué,6,2025-04-08
-959,Diana Inés Pineda,59,M,Cartagena,10,2024-10-12
-960,Alba Burgos Salazar,30,M,Villavicencio,9,2025-05-08
-961,José Aguilar González,34,F,Cartagena,9,2024-08-15
-962,Andrés Salcedo,58,M,Cúcuta,2,2024-07-16
-963,María Gloria Castro,77,F,Ibagué,1,2024-10-22
-964,Miguel Gustavo Muñoz Cáceres,27,F,Ibagué,8,2024-07-27
-965,Danna Elsy Serrano,38,F,Barranquilla,11,2024-08-12
-966,Héctor Bustamante García,72,F,Ibagué,8,2025-01-07
-967,Martha García Caro,76,F,Villavicencio,8,2025-01-26
-968,Betty Muñoz,66,M,Cali,17,2024-11-18
-969,Daniela Margarita Rincón,77,M,Cúcuta,13,2024-08-14
-970,Raúl Luis Castillo,36,M,Barranquilla,12,2024-08-22
-971,Diana Pérez Hernández,18,M,Tunja,5,2024-08-15
-972,Jesús Pineda Herrera,25,M,Villavicencio,8,2024-12-26
-973,Fabián Josué Martínez,74,M,Cali,11,2024-09-29
-974,Patricia Amelia Sánchez Torres,18,M,Medellín,19,2024-08-01
-975,Ricardo Jorge Vallejo,41,M,Cartagena,17,2025-03-22
-976,Alberto Parra Arias,22,F,Cúcuta,8,2025-06-05
-977,Héctor Pérez,75,M,Bucaramanga,14,2024-10-12
-978,Helena Patricia Yepes,53,M,Villavicencio,15,2024-12-25
-979,Paula Arrieta,36,M,Cartagena,19,2024-06-20
-980,Héctor Camilo Gaviria Prada,45,M,Bogotá,11,2025-05-07
-981,Carmen Zapata,75,M,Cartagena,5,2025-02-10
-982,Sebastián Ronald Acevedo Oviedo,47,F,Cartagena,8,2025-06-04
-983,Sandra Nancy Mejía,27,F,Tunja,15,2024-10-10
-984,Aldemar John Ruiz Castro,49,F,Tunja,17,2025-02-13
-985,Óscar Andrey Gamboa,48,F,Ibagué,8,2025-05-24
-986,Ángel Rivera Escobar,42,M,Cali,2,2024-11-11
-987,Luz Hernández,32,F,Ibagué,3,2024-09-07
-988,Teresa Sandra Meneses Castillo,66,F,Villavicencio,4,2025-03-12
-989,María Zapata Pérez,31,M,Ibagué,9,2025-01-26
-990,Wilder Guillermo Suárez Pérez,42,F,Bucaramanga,18,2025-03-31
-991,Luis Vásquez Franco,27,M,Bucaramanga,4,2024-08-02
-992,Nancy Diana Caicedo Ruiz,29,M,Villavicencio,8,2024-09-15
-993,Ángel Julián Arias Bejarano,19,F,Villavicencio,13,2024-10-22
-994,Jaime Francisco Ortega Rodríguez,70,F,Cúcuta,16,2024-11-22
-995,Camila Alexandra Acosta,49,F,Ibagué,2,2024-12-26
-996,Daniel Andrés Bonilla Ardila,28,F,Bucaramanga,15,2025-06-07
-997,Yésica Eugenia González,34,F,Barranquilla,18,2025-04-26
-998,Jhon José Fernández,72,M,Barranquilla,8,2025-05-01
-999,Mónica Pérez,76,F,Tunja,18,2025-02-17
-1000,José Parada Giraldo,39,F,Cúcuta,12,2024-11-20
-1001,Carmen García,49,M,Barranquilla,14,2025-03-04
-1002,María Luz Posada,66,F,Cúcuta,3,2025-06-08
-1003,Diana Jaramillo González,75,F,Bogotá,7,2025-03-28
-1004,Fernanda Lucía Caicedo Bermúdez,66,F,Bucaramanga,9,2024-08-11
-1005,Liliana Ana Vargas,64,F,Ibagué,13,2025-04-29
-1006,Carlos John Pérez Padilla,79,M,Cúcuta,8,2025-03-04
-1007,Rodolfo Silva Gutiérrez,63,F,Cúcuta,14,2025-01-14
-1008,Carmenza Vergara,24,M,Cali,12,2025-06-07
-1009,Lorena Paola Ramírez,49,M,Ibagué,11,2024-07-05
-1010,Olga León,42,F,Bogotá,13,2024-10-07
-1011,Isabel Rosero,35,F,Cali,15,2024-11-18
-1012,Elvira Díaz Contreras,69,M,Villavicencio,18,2025-04-20
-1013,David Vallejo,48,M,Tunja,19,2024-10-06
-1014,Antonio Alexander Álvarez,40,F,Bucaramanga,12,2024-07-29
-1015,Enrique Camilo Mejía Prada,30,F,Medellín,11,2025-04-21
-1016,Juan Edgardo Sánchez,54,M,Ibagué,1,2025-01-01
-1017,Cecilia Salcedo,73,M,Medellín,19,2024-09-28
-1018,Vanessa Elena Ramírez,40,M,Villavicencio,7,2024-10-08
-1019,Hernán José Cortés,61,M,Ibagué,5,2025-03-08
-1020,César Fernando Alfonso Lozano,64,F,Bogotá,10,2024-11-08
-1021,Robinson López,75,F,Cali,8,2024-09-10
-1022,Eduardo Mena Gómez,18,F,Cúcuta,5,2024-11-05
-1023,María María Silva,20,M,Cali,4,2025-01-11
-1024,Jeison Arbey Ávila Garcés,57,M,Medellín,10,2025-04-21
-1025,María Ramos Rodríguez,51,M,Ibagué,10,2025-04-20
-1026,Cecilia Vargas,38,F,Cartagena,14,2025-04-02
-1027,Ariel Danny Alzate Giraldo,56,M,Bucaramanga,2,2024-07-03
-1028,Orlando Fabio Lara Orozco,58,F,Tunja,13,2025-03-30
-1029,María Correa,26,F,Cúcuta,4,2025-05-09
-1030,Sebastián Bautista Lozano,39,F,Medellín,12,2025-05-27
-1031,Sandra Castro Castro,34,F,Bucaramanga,14,2025-01-20
-1032,Mayerly Díaz,74,F,Villavicencio,11,2024-11-04
-1033,Alexander Quiroga Pedraza,33,M,Cúcuta,6,2024-10-22
-1034,Jesús Juan Rivera,73,M,Bucaramanga,5,2025-02-08
-1035,Diana Sofía Vargas,75,F,Ibagué,15,2025-02-28
-1036,Alberto Alejandro Prieto Mora,78,F,Villavicencio,10,2024-09-28
-1037,Yohana Castro,41,F,Bogotá,3,2024-07-25
-1038,Juan Espitia,43,M,Tunja,6,2024-10-09
-1039,Fernando Villamil,38,F,Medellín,8,2025-01-03
-1040,Alfonso Estrada García,56,M,Barranquilla,10,2024-08-18
-1041,Lucía García Peña,55,F,Cartagena,4,2024-08-30
-1042,Andrés Durán,77,M,Barranquilla,13,2025-05-13
-1043,Nel John Torres Velásquez,37,M,Medellín,7,2024-11-26
-1044,Marleny Astrid Jiménez Rodríguez,21,M,Cúcuta,14,2024-08-02
-1045,Carlos Bohórquez Salas,20,F,Medellín,5,2025-04-29
-1046,Horacio Ramírez Cárdenas,33,F,Medellín,4,2025-04-07
-1047,Luisa Buitrago,73,F,Ibagué,2,2024-12-18
-1048,Carmen Paulina Mena,47,F,Cali,19,2025-04-18
-1049,José Rojas,48,F,Cartagena,19,2024-07-17
-1050,Cecilia Montoya Molina,66,M,Bogotá,14,2025-04-06
-1051,Juan José Duarte,36,F,Bogotá,13,2024-07-28
-1052,Leandro Arbey Meza Molina,29,F,Bucaramanga,6,2025-02-23
-1053,Luz Velásquez Romero,70,M,Bogotá,4,2024-12-17
-1054,Eliecer Díaz,36,F,Cartagena,13,2025-03-21
-1055,Julio Murillo Triana,53,F,Bucaramanga,17,2025-06-02
-1056,Katherine Mary Loaiza,72,M,Bucaramanga,18,2025-02-09
-1057,Carolina López,69,M,Cúcuta,15,2024-11-30
-1058,Iván Bastidas,28,M,Cali,13,2025-03-25
-1059,Karol Hernández,50,M,Barranquilla,6,2025-03-17
-1060,Jennifer Liliana Calderón,21,F,Villavicencio,16,2025-03-27
-1061,Orlando Mejía,64,M,Cúcuta,15,2025-05-21
-1062,Silvia Márquez,23,M,Tunja,14,2024-06-20
-1063,Fabián Loaiza,77,M,Cali,7,2025-05-04
-1064,Angélica Karina Zapata,26,F,Cali,16,2024-08-05
-1065,Katherine Salgado León,22,M,Cali,10,2024-07-24
-1066,Harold Montenegro González,67,M,Medellín,13,2025-03-27
-1067,Andrés Rafael Benavides,60,M,Tunja,13,2025-02-20
-1068,Elena Cecilia Nieto,23,M,Cúcuta,13,2025-06-04
-1069,Dora Mejía Molina,68,M,Tunja,19,2025-03-01
-1070,Sandra Milena Calderón,59,M,Barranquilla,14,2024-06-15
-1071,Ismael Quintero,43,M,Ibagué,5,2024-08-18
-1072,Edwin Enrique Flórez Acosta,46,F,Tunja,5,2025-02-04
-1073,Fabio David Camacho Gutiérrez,37,M,Cali,10,2025-03-13
-1074,Alexis Jorge Pinto,22,F,Barranquilla,6,2025-03-07
-1075,María Bertha Miranda Mena,43,F,Ibagué,7,2024-08-09
-1076,Gerardo Alberto González Sandoval,56,F,Cartagena,3,2024-08-25
-1077,Julián Forero,18,F,Ibagué,4,2025-03-19
-1078,Denis Lucía Trujillo,23,M,Cartagena,14,2025-05-01
-1079,Antonio Gregorio Cuesta Angulo,77,F,Bogotá,4,2025-05-25
-1080,Alberto Jaramillo,38,F,Ibagué,12,2025-03-02
-1081,Luz Juliana Sánchez Delgado,59,F,Cartagena,7,2025-05-14
-1082,Manuel Chávez Leal,52,M,Villavicencio,14,2025-02-18
-1083,Luis Castro Palacio,73,F,Cali,16,2025-03-31
-1084,Alfonso Cortés,33,F,Medellín,10,2025-05-20
-1085,Yaneth Alba Gaitán,42,M,Ibagué,6,2025-06-03
-1086,José Javier Giraldo Duarte,61,M,Bucaramanga,13,2024-06-29
-1087,Fernando García Guerra,53,F,Tunja,11,2025-03-30
-1088,Mario Eduardo Luna,37,F,Cartagena,11,2025-02-05
-1089,Dayana Cecilia Ramírez Méndez,74,M,Cúcuta,4,2024-12-25
-1090,Abelardo Arroyo Herrera,67,M,Cartagena,7,2025-03-03
-1091,Nicolás Hernández,23,M,Ibagué,15,2025-02-01
-1092,Julia Muñoz,35,F,Cartagena,11,2024-11-17
-1093,Vanessa Camacho,37,F,Barranquilla,15,2024-12-16
-1094,Luz Gaviria Jaramillo,65,M,Cúcuta,10,2024-12-01
-1095,Edilma Marcela Cano,43,F,Ibagué,14,2024-11-06
-1096,Angie Alicia Garzón Sánchez,74,M,Medellín,18,2024-12-19
-1097,Blanca Londoño Rivera,22,M,Barranquilla,5,2024-06-26
-1098,Carolina Patricia Mejía,41,M,Cúcuta,19,2025-01-01
-1099,Andrea Ospina,68,M,Tunja,12,2024-07-16
-1100,Adolfo Giovanny Muñoz Ibarra,74,M,Bucaramanga,9,2024-12-28
-1101,Anyi Palacio Montoya,50,F,Tunja,4,2024-08-30
-1102,Elena López Palacios,59,M,Cartagena,7,2025-05-26
-1103,Javier Arteaga Cantillo,39,M,Cartagena,1,2025-03-28
-1104,Diego Pacheco,34,F,Bogotá,2,2024-10-11
-1105,Rosa Ana Moreno Camargo,45,F,Cúcuta,11,2025-01-17
-1106,Henry Peña,58,M,Cartagena,17,2024-07-03
-1107,Sandra Gladis Díaz Cabrera,34,F,Bogotá,6,2025-04-26
-1108,Miguel Daniel Vélez,63,F,Tunja,2,2024-08-23
-1109,Sandra Yéssica González,18,F,Bogotá,5,2024-11-28
-1110,Ofelia Nubia Martínez,19,F,Tunja,16,2024-09-01
-1111,Blanca María Lozano Benavides,74,F,Ibagué,10,2024-11-18
-1112,Nidia Martha Díaz Montenegro,51,F,Cartagena,16,2025-01-20
-1113,Claudia Claudia Meza Molano,68,M,Barranquilla,7,2025-05-09
-1114,Jairo Luis Guevara Gómez,39,F,Tunja,15,2024-10-19
-1115,Andrés Bonilla Alzate,57,F,Bucaramanga,10,2024-07-12
-1116,Alfonso Álvarez Guerrero,52,F,Barranquilla,19,2024-07-01
-1117,Alexander Ospina Camacho,66,F,Barranquilla,7,2024-11-16
-1118,Jorge Antonio Calderón,38,F,Tunja,4,2025-02-28
-1119,Jhon Ernesto Hernández Torres,63,F,Cartagena,15,2024-09-10
-1120,Luisa Torres Hernández,73,F,Cali,15,2025-01-23
-1121,Antonio Beltrán,39,F,Medellín,14,2024-12-11
-1122,Gloria Hernández Fernández,44,M,Bogotá,9,2025-04-08
-1123,Felipe Romero,57,F,Cartagena,17,2025-05-30
-1124,Ana Bravo,19,M,Ibagué,3,2024-08-07
-1125,Leonel Andrés Torres,25,F,Bogotá,1,2025-02-09
-1126,Alexander Luis Escobar,59,F,Tunja,3,2024-10-16
-1127,Tatiana Sierra,23,M,Bucaramanga,18,2025-05-19
-1128,Eider Rodríguez,60,M,Cali,5,2024-10-29
-1129,Leonardo Arias Villamizar,68,M,Medellín,12,2024-10-24
-1130,Patricia Ríos Ortega,27,F,Cartagena,9,2025-05-08
-1131,Gabriel César Narváez,53,M,Bucaramanga,8,2024-07-18
-1132,Silvia Concepción Pineda,72,M,Cúcuta,15,2024-12-04
-1133,Fernando Javier Sánchez,32,F,Cali,14,2025-04-07
-1134,Andrés Perea,57,F,Barranquilla,10,2024-09-28
-1135,Luisa Burbano Gómez,77,F,Cali,6,2025-05-22
-1136,Paula Rodríguez Ramírez,29,F,Villavicencio,7,2025-03-17
-1137,Iván Cristian Aguirre Henao,33,M,Bucaramanga,13,2025-06-08
-1138,Fernanda Mary Flórez Burbano,20,M,Villavicencio,18,2025-06-09
-1139,Hernando Velandia Miranda,60,F,Villavicencio,6,2024-10-30
-1140,María Damaris Pérez Cárdenas,50,F,Cartagena,1,2025-01-25
-1141,Andrés Vargas Buitrago,72,F,Cali,8,2025-06-07
-1142,Ángel Morales Martínez,54,F,Cartagena,16,2025-02-09
-1143,Fernanda Natalia Hernández Sánchez,60,M,Ibagué,4,2024-12-11
-1144,Sandra Gaitán,47,F,Cartagena,14,2025-06-05
-1145,Hernán Agudelo,71,M,Bucaramanga,9,2025-03-18
-1146,Efrain Eduardo Díaz López,29,M,Medellín,14,2025-05-24
-1147,Cecilia Catalina Gutiérrez Hurtado,72,F,Ibagué,1,2024-11-20
-1148,Miriam Morales Patiño,62,M,Medellín,13,2025-04-01
-1149,Andrés Jaime Pérez,51,F,Cali,6,2025-02-11
-1150,Carolina Elsa Ospina,75,M,Barranquilla,5,2024-07-14
-1151,Vicente Daniel Camargo,42,M,Cúcuta,1,2025-03-24
-1152,Libia Mora,21,M,Villavicencio,2,2025-05-04
-1153,Isabel Luz Narváez Camargo,43,F,Bucaramanga,5,2024-09-28
-1154,Marisol Martínez Ortiz,52,M,Medellín,9,2024-07-23
-1155,Jhon Cuéllar Zapata,69,F,Cúcuta,18,2024-08-15
-1156,Andrés Cabrera,23,M,Bogotá,12,2024-12-11
-1157,Angie Paola Córdoba,74,M,Cartagena,2,2024-11-13
-1158,Ruth Cortés,64,F,Villavicencio,12,2024-12-19
-1159,Andrey Wilmer Espinosa Ruiz,26,M,Medellín,2,2025-05-31
-1160,Ángel David Ariza,39,M,Ibagué,12,2025-05-10
-1161,José Mendoza,45,F,Bucaramanga,16,2024-08-15
-1162,Óscar Correa,38,F,Cartagena,1,2024-06-27
-1163,Martha Esperanza Salazar Montes,38,M,Tunja,2,2024-11-20
-1164,Blanca Santos Quintero,58,M,Cúcuta,15,2024-08-22
-1165,Carlos Barrera,35,F,Bucaramanga,11,2024-11-22
-1166,Andrés Castrillón Salazar,74,M,Medellín,16,2024-11-12
-1167,Jhony Salazar,39,M,Barranquilla,5,2024-11-18
-1168,Mercedes Medina Cerón,61,M,Ibagué,15,2024-09-03
-1169,Nicolás Elías Osorio,44,M,Bogotá,1,2025-01-18
-1170,María Isabel Caro Álvarez,37,M,Tunja,16,2025-04-21
-1171,Mauricio John Hernández,51,F,Villavicencio,3,2025-05-21
-1172,Eva María Hoyos,57,F,Bucaramanga,15,2024-09-06
-1173,Fernanda Zapata,56,F,Tunja,9,2024-08-18
-1174,Rodrigo Acevedo Villamil,37,F,Barranquilla,1,2025-03-08
-1175,Giovanni Blanco Martínez,25,M,Medellín,3,2025-03-21
-1176,Maritza Carvajal Medina,21,F,Ibagué,15,2025-01-06
-1177,Andrés Triana Fuentes,55,M,Cartagena,3,2025-02-24
-1178,Alicia Ariza Soto,74,M,Cúcuta,14,2025-03-21
-1179,María Ruby Castellanos Lozano,69,F,Medellín,4,2024-11-04
-1180,Pedro Castro,29,M,Cali,7,2024-12-21
-1181,Daniel Rincón Martínez,26,M,Bogotá,13,2025-05-27
-1182,Jaime Díaz Ávila,32,F,Bogotá,19,2024-11-07
-1183,Anyi Bautista Díaz,50,F,Cartagena,2,2024-11-26
-1184,Rocío Lorena Díaz,73,F,Ibagué,6,2025-05-21
-1185,Alirio Libardo Herrera Olaya,31,F,Medellín,8,2025-03-06
-1186,María Piedad Espinosa,79,M,Medellín,19,2024-07-22
-1187,Alejandro Adolfo Osorio,47,M,Barranquilla,14,2024-09-28
-1188,Ruby Angélica García Solano,76,F,Villavicencio,17,2024-08-12
-1189,Sandra Nidia Riascos,42,F,Cali,14,2025-01-07
-1190,Yesid Vega,43,F,Cúcuta,16,2024-11-13
-1191,Liliana Guerrero Restrepo,74,M,Ibagué,14,2024-10-24
-1192,Armando Martínez Acosta,68,M,Bucaramanga,10,2024-10-15
-1193,Edgar Pardo Cruz,36,M,Villavicencio,13,2024-09-09
-1194,Isabel Milena Arteaga Rodríguez,24,F,Cúcuta,9,2025-04-29
-1195,Fredy José Ospino,76,F,Tunja,19,2024-09-19
-1196,Miguel Enrique Escobar Figueroa,64,F,Cali,14,2024-08-22
-1197,Francisco Solano,73,F,Cúcuta,4,2025-02-13
-1198,Laura Luz Gutiérrez González,57,M,Medellín,9,2024-09-16
-1199,María López,50,F,Ibagué,14,2025-06-03
-1200,Esther Córdoba Gil,28,M,Tunja,3,2025-04-18
-1201,María Silva Vega,58,M,Cúcuta,14,2024-07-20
-1202,David Stiven González,47,M,Cartagena,4,2024-09-15
-1203,Carmen González,76,F,Bogotá,8,2025-01-18
-1204,José Nicolás Jiménez,19,M,Bucaramanga,14,2025-06-10
-1205,Luis Arias Ortiz,39,M,Barranquilla,16,2025-05-30
-1206,Johan Peña López,46,F,Ibagué,17,2025-05-08
-1207,Milena Álvarez,65,F,Ibagué,12,2024-09-22
-1208,Jaime Manuel Mejía,52,M,Barranquilla,14,2024-12-16
-1209,Gildardo Pineda,67,M,Bucaramanga,5,2024-08-03
-1210,Ana Carolina Rojas Angarita,65,F,Medellín,5,2024-09-07
-1211,Consuelo Chacón Quiroz,20,F,Bucaramanga,1,2025-03-22
-1212,Sofía Erika Arias Vélez,70,M,Villavicencio,9,2024-07-17
-1213,Wilson Guillermo Medina Romero,78,M,Bucaramanga,4,2025-06-07
-1214,Steven Mosquera,52,M,Bogotá,2,2025-05-15
-1215,Alba Gómez,41,F,Cúcuta,1,2025-01-03
-1216,María Blanca Granados,25,M,Cartagena,15,2025-04-04
-1217,Dora Dora Osorio Peña,57,F,Barranquilla,12,2025-04-23
-1218,Luz Ana Arenas,63,M,Medellín,15,2025-03-22
-1219,María Ríos,58,M,Ibagué,8,2024-10-12
-1220,Consuelo Sara Ardila,38,M,Medellín,6,2024-07-15
-1221,Rosalba Marina Rosero,37,M,Barranquilla,19,2025-05-14
-1222,Ricardo Dany Peña Rodríguez,21,M,Tunja,7,2025-02-26
-1223,Luz Campo Padilla,45,F,Bogotá,4,2025-02-27
-1224,María García Mena,39,F,Bogotá,13,2024-11-18
-1225,Mario Rueda Ocampo,20,F,Bucaramanga,12,2024-09-01
-1226,Cecilia Marisol Vargas Bohórquez,19,F,Barranquilla,2,2024-11-14
-1227,Ana Hernández Díaz,44,M,Cali,9,2024-11-05
-1228,Carlos Sergio Quintero,18,F,Tunja,6,2025-05-24
-1229,Guillermo Fredy Ardila Medina,23,F,Barranquilla,18,2025-05-17
-1230,Gloria Arias,34,M,Medellín,12,2024-10-02
-1231,Yaneth Mónica Durán,23,F,Villavicencio,8,2025-01-24
-1232,Jairo Jorge Cárdenas,36,F,Barranquilla,10,2024-06-23
-1233,Helena Johanna Giraldo Salazar,18,M,Tunja,13,2024-08-23
-1234,Gloria Olga Castillo Ortega,66,M,Barranquilla,8,2024-06-15
-1235,Silvia Beltrán Angulo,31,M,Barranquilla,16,2024-11-12
-1236,Leidy Mendoza,62,F,Bucaramanga,17,2025-02-28
-1237,Nancy Ramírez Vargas,30,M,Cali,6,2024-10-10
-1238,Fernando Cárdenas,66,F,Tunja,17,2024-06-30
-1239,Ximena Julia Bravo,79,F,Bogotá,11,2025-02-06
-1240,Aida Astrid Fernández Ramírez,37,F,Cartagena,1,2025-03-30
-1241,Alejandra María Vera,43,M,Cali,17,2024-06-23
-1242,Óscar Valencia,79,F,Cali,11,2025-04-28
-1243,Lucía Fuentes Moreno,71,F,Villavicencio,9,2024-12-11
-1244,Isabel Erika Aguirre,26,F,Cartagena,5,2024-06-17
-1245,Fidel Nilson Parra Ospina,66,M,Cali,17,2025-01-03
-1246,Ruth Olga Arboleda Díaz,41,M,Medellín,19,2024-11-28
-1247,María Solano,76,M,Bogotá,9,2025-05-08
-1248,Cecilia Galeano,56,M,Cali,11,2024-06-29
-1249,Álvaro Wilmer Rendón,63,M,Bogotá,11,2024-07-17
-1250,Alexander Ramírez Rivera,30,M,Bucaramanga,14,2024-08-05
-1251,Mariana Luisa González Uribe,62,M,Barranquilla,8,2024-12-30
-1252,Nohora Cecilia Espinosa,61,M,Tunja,12,2025-04-16
-1253,María Arrieta,25,F,Bucaramanga,13,2024-12-11
-1254,Maricela Marcela Rueda,29,M,Bogotá,16,2025-03-31
-1255,Iván Cabrera Cortés,50,M,Cali,7,2024-06-30
-1256,Myriam Martínez Medina,45,F,Cartagena,5,2024-11-10
-1257,Carlos Cruz,25,M,Bogotá,14,2025-02-08
-1258,Sebastián Castillo Gómez,40,F,Cali,13,2024-09-27
-1259,José Gómez Moreno,64,M,Cúcuta,17,2024-09-14
-1260,Fabián Caicedo Flórez,64,F,Villavicencio,18,2024-08-23
-1261,Esperanza Isabel Torres,35,F,Medellín,4,2025-03-01
-1262,Juana Alarcón,47,M,Medellín,4,2025-05-19
-1263,Diana Claudia Giraldo,35,M,Ibagué,19,2024-12-16
-1264,León Luis Franco Ortiz,64,F,Ibagué,8,2025-06-10
-1265,Oswaldo Alexander Solano,37,M,Bucaramanga,1,2025-05-20
-1266,Sandra Ramírez Quintero,29,F,Villavicencio,19,2024-07-08
-1267,Esther Barreto,32,M,Tunja,7,2024-09-23
-1268,Claudia María Salcedo Pérez,19,M,Medellín,9,2024-12-11
-1269,Mayra Luisa Burbano,27,F,Ibagué,19,2025-04-06
-1270,Freddy Herrera Quintero,28,M,Villavicencio,10,2025-05-05
-1271,Mary Ariza Luna,31,F,Barranquilla,19,2025-01-21
-1272,Emilio Ignacio Rodríguez,71,M,Tunja,7,2024-07-18
-1273,John Francisco Bejarano,45,M,Bogotá,6,2025-02-06
-1274,Ángela González Forero,44,M,Villavicencio,2,2024-06-17
-1275,Orlando Giovanny Hernández,46,F,Cartagena,3,2024-07-05
-1276,Patricia María Castillo Erazo,33,F,Ibagué,8,2025-03-12
-1277,Anderson Diego Becerra,19,M,Bogotá,9,2024-11-08
-1278,Carlos Arroyo Mena,79,F,Bogotá,3,2025-03-13
-1279,María Gómez Patiño,60,M,Ibagué,13,2024-12-30
-1280,Antonio Kevin Arrieta Pineda,32,F,Cúcuta,5,2025-05-17
-1281,Abelardo Sandoval,38,F,Cúcuta,17,2025-06-13
-1282,Leonel Garzón,48,M,Medellín,6,2024-08-23
-1283,Carolina Vallejo Moreno,45,M,Ibagué,11,2024-07-19
-1284,Alejandra María Marín Vega,35,F,Ibagué,3,2024-07-23
-1285,Adrián David Mesa,62,M,Medellín,9,2025-04-02
-1286,Myriam Suárez García,70,F,Medellín,12,2025-04-25
-1287,Humberto Delgado Vargas,51,F,Bucaramanga,3,2024-12-12
-1288,Samuel Ardila Orozco,20,F,Tunja,12,2024-10-23
-1289,José Manuel Martínez Castillo,32,M,Cali,8,2024-06-30
-1290,Julián Manuel Reyes Gonzáles,28,F,Medellín,4,2024-08-12
-1291,Elsy Correa,77,M,Cali,7,2025-04-20
-1292,Juan Sánchez,51,F,Cartagena,5,2024-12-24
-1293,Nidia Rojas,24,F,Tunja,5,2025-03-09
-1294,Eliana Rojas Ocampo,73,M,Tunja,1,2025-04-23
-1295,María Iris Rangel,64,F,Villavicencio,19,2024-11-14
-1296,Mary Viviana Castro Sánchez,46,F,Bucaramanga,18,2024-06-15
-1297,John Stiven Mantilla,45,M,Cúcuta,11,2025-05-24
-1298,Dario Harold Suárez Betancur,64,M,Tunja,11,2024-08-10
-1299,Wilson Jorge Pérez,66,M,Villavicencio,6,2025-05-10
-1300,Mónica Olaya Arias,22,F,Cartagena,2,2025-02-13
-1301,Isabel González Hernández,65,F,Ibagué,12,2025-05-07
-1302,Luis José Mosquera,55,M,Villavicencio,4,2025-01-03
-1303,Edwin Vargas,66,M,Tunja,18,2024-07-06
-1304,María Diana Ramírez,22,F,Cúcuta,3,2024-09-21
-1305,Leonardo Álvarez,28,M,Medellín,4,2025-03-22
-1306,Adriana Díaz,43,M,Medellín,14,2024-12-22
-1307,Liliana Velásquez Hurtado,71,M,Villavicencio,10,2025-05-09
-1308,Esperanza Aguirre Corredor,68,F,Barranquilla,6,2024-10-17
-1309,Ismael Medina,76,M,Cúcuta,15,2024-08-11
-1310,Yulieth María Monroy,70,F,Ibagué,10,2025-06-12
-1311,Aurora Gómez Cardona,54,F,Barranquilla,5,2024-11-01
-1312,Óscar Pinzón,59,F,Cúcuta,5,2024-07-12
-1313,Lina López Prieto,52,M,Bucaramanga,6,2025-01-20
-1314,Leonardo Zambrano Rincón,21,F,Ibagué,9,2024-07-31
-1315,Milton Jiménez,66,M,Cúcuta,13,2025-04-19
-1316,Wilmer Corredor Rodríguez,76,M,Cúcuta,17,2024-10-21
-1317,Alejandra García Zuluaga,62,F,Medellín,16,2024-10-01
-1318,Andrea Alejandra Alvarado,39,F,Bucaramanga,5,2024-10-09
-1319,Lida Milena Roa Arango,54,M,Cúcuta,17,2024-07-03
-1320,María Rojas Rodríguez,30,F,Bucaramanga,13,2024-08-02
-1321,Luz Mary Gómez,39,M,Cartagena,19,2024-10-18
-1322,Jairo Mario Rodríguez,20,F,Bucaramanga,2,2024-07-18
-1323,Leonor María Rodríguez Parra,49,M,Cali,19,2024-09-12
-1324,Luz Amaya,75,M,Ibagué,14,2025-04-26
-1325,Gabriela Johana Forero,61,M,Medellín,12,2024-09-23
-1326,Carmen Caicedo Arteaga,28,M,Medellín,4,2025-05-22
-1327,Edwin Marín Gómez,68,M,Medellín,3,2025-02-13
-1328,María Johana Carvajal,30,M,Medellín,2,2025-03-05
-1329,Gloria Milena Mejía,28,F,Cúcuta,19,2024-08-29
-1330,Isaac Carlos Caicedo Pinto,78,M,Medellín,3,2024-07-12
-1331,Viviana Forero Bolaños,77,F,Bucaramanga,8,2024-11-10
-1332,Mary Bravo,39,M,Cali,19,2025-01-25
-1333,Gustavo Rodríguez,54,M,Villavicencio,8,2024-12-10
-1334,Edison Cristian Escobar,45,M,Bogotá,17,2025-04-02
-1335,Mauricio Pulido,54,F,Tunja,19,2024-06-16
-1336,Esther Michel Sierra Soto,44,M,Villavicencio,2,2024-12-06
-1337,Nelly Vanessa Gómez,28,F,Villavicencio,13,2024-06-28
-1338,Luz Garzón Prieto,64,F,Bucaramanga,11,2025-04-22
-1339,Patricia Patricia Morales Martínez,56,F,Medellín,5,2025-02-23
-1340,Yaneth Rodríguez Guerrero,34,F,Cúcuta,9,2025-01-19
-1341,Javier Hernández,63,F,Bucaramanga,12,2025-05-03
-1342,Fabián Martínez Castellanos,23,M,Cúcuta,19,2024-09-25
-1343,Mary González Álvarez,36,F,Bogotá,16,2025-06-12
-1344,Zulma Nathalia López,61,F,Cartagena,6,2025-01-03
-1345,Jhon Rodrigo Salas,72,F,Tunja,4,2024-08-25
-1346,María Liliana Gómez,55,M,Cartagena,1,2025-04-11
-1347,Gustavo David Barreto,79,F,Bucaramanga,15,2025-06-14
-1348,Juan Rodríguez,44,M,Medellín,19,2025-05-13
-1349,Luz Londoño,67,M,Tunja,19,2024-12-11
-1350,Richard Javier Hernández Sarmiento,70,F,Villavicencio,18,2025-06-01
-1351,María Castañeda Sepúlveda,45,M,Barranquilla,15,2024-08-13
-1352,Marlén Virginia Contreras,64,F,Cali,7,2025-01-25
-1353,Camilo Parra Galvis,62,M,Ibagué,16,2024-09-30
-1354,Edison Rubén Velásquez Parada,26,F,Barranquilla,13,2024-08-05
-1355,Paola Andrea Ortiz,34,M,Medellín,17,2024-12-22
-1356,Erick Moreno,50,F,Bucaramanga,8,2024-12-24
-1357,Milena Ceballos Gómez,36,M,Villavicencio,6,2025-01-12
-1358,Diego Rojas Jaramillo,20,M,Bucaramanga,5,2025-03-19
-1359,Andrés Alberto Pérez,30,M,Medellín,14,2025-05-06
-1360,Rubiela Inés Martínez Hernández,78,M,Cartagena,16,2025-03-05
-1361,Andrea Cardona Álvarez,67,F,Tunja,11,2025-04-28
-1362,Katherin Adela Guevara,20,F,Barranquilla,10,2025-04-25
-1363,Rolando Pardo,59,F,Cúcuta,16,2024-07-18
-1364,Guillermo Enrique Quintero Gamboa,29,F,Villavicencio,9,2025-03-24
-1365,Angie Ana Cardona,41,M,Tunja,15,2025-06-05
-1366,Katherine Johana Acevedo,52,M,Tunja,18,2024-07-07
-1367,Edith Susana Mora,25,F,Villavicencio,17,2025-04-21
-1368,David Luis Rodríguez,57,M,Bogotá,7,2025-02-06
-1369,Mayra Sepúlveda,20,M,Tunja,4,2024-10-18
-1370,Eva Marina Arias,42,M,Cartagena,1,2025-03-27
-1371,Esther Andrea Mosquera,32,M,Bogotá,13,2025-05-30
-1372,Teresa García Cortés,57,F,Cali,5,2024-10-29
-1373,Alirio Rivera,77,F,Cartagena,9,2024-07-26
-1374,Yeison Jiménez,18,F,Cartagena,3,2024-12-15
-1375,Andrés Ortiz,19,M,Bucaramanga,8,2024-11-16
-1376,Josué Felipe Gómez Delgado,40,M,Bucaramanga,2,2025-06-05
-1377,Miguel Sánchez León,63,F,Bogotá,4,2024-12-21
-1378,José Prada Mercado,47,M,Cali,6,2025-02-12
-1379,Joaquín Lozano,28,M,Cali,8,2025-05-17
-1380,Astrid Guzmán Monroy,20,F,Tunja,13,2025-02-25
-1381,Mónica Marlene Vanegas Mejía,62,F,Cúcuta,2,2024-06-21
-1382,Martha López Trujillo,62,M,Medellín,19,2024-08-26
-1383,Omaira Arrieta Ardila,76,F,Cali,16,2024-08-05
-1384,Domingo Gómez Ríos,19,F,Bogotá,17,2024-07-29
-1385,Raúl Anaya,72,F,Medellín,10,2024-07-01
-1386,Fernando Castro,77,F,Villavicencio,6,2025-01-19
-1387,Alexandra Mary Jaimes,77,F,Barranquilla,2,2024-10-11
-1388,Ricardo Andrés González,43,M,Cúcuta,15,2024-10-20
-1389,Alberto Carlos León Hernández,48,F,Cúcuta,2,2025-01-26
-1390,Leidy Patricia Peña,56,M,Ibagué,8,2024-07-02
-1391,Eduardo Julián Salcedo,40,F,Bucaramanga,7,2024-07-30
-1392,Ángela Blanco Suárez,70,M,Cali,1,2025-04-22
-1393,Gloria Magda Barrera Castro,34,M,Bucaramanga,13,2024-09-22
-1394,Ángel Alfredo Molina,38,M,Cartagena,19,2024-07-29
-1395,María Camargo Escobar,74,M,Bucaramanga,17,2024-08-27
-1396,Marcos Calderón,72,M,Tunja,10,2025-06-13
-1397,Alejandra Burbano,27,F,Tunja,8,2025-01-05
-1398,Luz Claudia Castillo Mosquera,71,F,Medellín,18,2024-08-02
-1399,Estela Duque Ramos,31,F,Bogotá,14,2024-09-20
-1400,Michael Juan Velasco Castro,69,M,Cali,15,2025-02-18
-1401,Vilma Patricia Valencia,39,F,Cali,4,2024-09-27
-1402,Alejandra Mónica Rentería,30,M,Tunja,8,2025-01-05
-1403,Ignacio Moreno,35,F,Bogotá,14,2025-03-02
-1404,Augusto Miguel Hurtado,51,F,Medellín,2,2024-10-31
-1405,Yeison Correa,28,M,Cartagena,12,2025-03-19
-1406,Liliana Ramírez,66,M,Ibagué,17,2025-02-23
-1407,Juliana Gloria Caicedo,75,M,Cúcuta,18,2025-02-07
-1408,Antonia Janeth Mejía Corredor,49,F,Ibagué,6,2025-01-19
-1409,Mercedes Amelia Pérez,34,M,Tunja,18,2025-02-14
-1410,Sergio Eduardo Leal Vargas,25,M,Ibagué,6,2024-06-20
-1411,Edier Guillermo Delgado,22,F,Cúcuta,11,2025-05-30
-1412,Miryam Toro Osorio,74,M,Cartagena,11,2024-11-17
-1413,Irma Contreras,36,M,Barranquilla,2,2024-09-01
-1414,Adolfo Alfredo Gómez,61,F,Villavicencio,4,2025-05-04
-1415,María Muñoz,35,M,Medellín,19,2025-05-02
-1416,Gabriel Eduardo Murcia Duque,30,M,Bucaramanga,17,2025-05-17
-1417,Flor Hernández Rodríguez,23,F,Cúcuta,12,2024-11-18
-1418,Smith Rafael Palacios,68,M,Medellín,17,2024-10-22
-1419,Edinson Alberto Pinto,75,M,Cartagena,1,2024-10-15
-1420,Ingrid Camacho,77,M,Tunja,10,2025-01-28
-1421,Darwin Cortés Ramírez,64,M,Ibagué,11,2025-05-01
-1422,José Andrés Espinosa,30,M,Villavicencio,1,2024-07-16
-1423,Jimena Ceballos,41,F,Cartagena,11,2025-02-04
-1424,Eduar Luis Vargas,34,F,Bogotá,15,2024-12-22
-1425,Alcira Guerrero,42,F,Barranquilla,9,2024-06-29
-1426,Alejandro David Montenegro,38,F,Cúcuta,19,2024-10-31
-1427,Carlos Rafael Morales,36,F,Tunja,5,2025-04-09
-1428,Gladis Rendón,59,M,Bogotá,5,2024-07-20
-1429,Luis Daniel Acosta,71,F,Bogotá,7,2025-04-29
-1430,Milena Diana Arias Moreno,45,F,Barranquilla,9,2025-03-08
-1431,José Arenas,52,M,Cartagena,16,2025-04-28
-1432,Andrés Harold Ardila Giraldo,35,F,Barranquilla,14,2024-06-27
-1433,Milena Ester Vásquez Garzón,52,F,Cali,9,2024-09-08
-1434,Camilo Giraldo,77,M,Cartagena,9,2024-09-30
-1435,Luz Rubiela Londoño Lozano,30,F,Cartagena,5,2024-09-15
-1436,Esther Tatiana Camacho,30,F,Bucaramanga,2,2025-05-04
-1437,Andrés Carlos Ariza,33,M,Medellín,9,2024-12-31
-1438,Dario Rojas,55,M,Bogotá,1,2024-08-12
-1439,Johana Velásquez,53,M,Ibagué,13,2024-08-29
-1440,Fernando Fernández Márquez,62,F,Cúcuta,9,2025-03-06
-1441,Jenny Alba Ramírez Vargas,41,F,Cali,7,2024-10-09
-1442,Orlando Morales,53,F,Cali,3,2025-04-23
-1443,Adrián Alirio Ramírez Patiño,45,F,Cúcuta,12,2024-06-17
-1444,Juan Gustavo Triana Tovar,61,M,Villavicencio,8,2025-01-01
-1445,Ximena Padilla,71,F,Barranquilla,1,2024-10-23
-1446,Carolina Salas González,53,M,Villavicencio,11,2024-11-15
-1447,Amparo María Meneses,52,M,Villavicencio,17,2024-11-08
-1448,Carlos Jorge Lozano,71,F,Bucaramanga,10,2024-10-08
-1449,Michael Luna,70,F,Medellín,15,2024-10-19
-1450,Nelly Díaz,70,F,Cúcuta,14,2024-07-05
-1451,Fabio Luis Álvarez,30,M,Bogotá,6,2024-11-09
-1452,Arturo Wilson Betancur,41,F,Cúcuta,17,2024-10-15
-1453,José Adolfo Arias,53,F,Bogotá,10,2025-04-24
-1454,Andrés Andrés Maldonado,52,M,Ibagué,3,2025-03-15
-1455,María Cárdenas,64,F,Medellín,17,2025-01-20
-1456,Elena Carolina Quintero Rodríguez,29,F,Bucaramanga,11,2024-07-26
-1457,José López,42,F,Tunja,6,2025-05-05
-1458,Fabián Ariel Rodríguez,18,F,Cúcuta,16,2024-08-03
-1459,Johana Mariela Rico Díaz,64,M,Tunja,8,2025-03-27
-1460,Francisco Iván Mercado Torres,45,F,Cúcuta,12,2024-10-15
-1461,Marino Forero Arias,44,F,Cúcuta,10,2024-09-17
-1462,Alejandro Alberto Garzón Suárez,76,M,Cartagena,9,2024-07-08
-1463,Doris Edilma Burbano,51,M,Medellín,6,2024-06-15
-1464,Marina Rengifo,24,F,Cúcuta,1,2025-02-18
-1465,Arnulfo Aguirre Morales,72,F,Bogotá,7,2024-09-29
-1466,Elizabeth Peña,69,M,Bucaramanga,12,2025-04-08
-1467,Jorge Cárdenas,33,F,Cali,11,2025-01-27
-1468,Fernando Hurtado Naranjo,70,F,Tunja,13,2024-09-23
-1469,Mery Teresa Restrepo Velásquez,24,F,Ibagué,15,2025-04-14
-1470,Juan Vera Carvajal,68,M,Bucaramanga,11,2024-07-11
-1471,Angie Myriam Lara Calderón,25,M,Medellín,8,2025-01-30
-1472,Fernanda Muñoz,62,F,Cúcuta,4,2025-03-03
-1473,Iván Danilo Pineda,57,M,Medellín,9,2025-01-26
-1474,Jazmín Alexandra Flórez,46,F,Barranquilla,2,2024-09-04
-1475,José Yesid Ortega,45,M,Cúcuta,15,2025-03-05
-1476,Alfredo Carlos Loaiza,77,M,Tunja,12,2025-05-09
-1477,Lorena Becerra Páez,43,F,Cúcuta,8,2025-04-19
-1478,Rafael Serna Rentería,26,M,Villavicencio,5,2024-08-06
-1479,Manuel Sánchez Cano,73,F,Medellín,18,2024-09-20
-1480,Jorge Ariza Herrera,28,M,Cúcuta,9,2024-11-14
-1481,Alix Ordóñez Villegas,34,M,Cartagena,12,2025-02-19
-1482,Antonio Marlon Aguilar,24,F,Bucaramanga,10,2025-02-07
-1483,Aura Lina Gómez,76,M,Barranquilla,19,2024-08-11
-1484,Marlene Martínez Rentería,28,M,Bucaramanga,8,2025-01-31
-1485,Julián Juan Díaz Rojas,57,F,Cali,15,2024-08-23
-1486,Walter Delgado,48,F,Medellín,11,2024-10-15
-1487,Jackeline Rendón Murillo,60,M,Villavicencio,17,2024-12-06
-1488,Juan Edilson Castillo,64,F,Medellín,6,2024-12-27
-1489,Alejandra Torres,41,F,Villavicencio,15,2024-06-27
-1490,Jairo Quiroga,48,M,Villavicencio,14,2025-01-17
-1491,Rosa Eugenia Bonilla,67,F,Barranquilla,17,2024-11-24
-1492,Johanna Figueroa,67,M,Bucaramanga,9,2024-12-10
-1493,Felipe Luis Bautista,28,F,Bucaramanga,1,2024-07-13
-1494,Diego Mena,67,F,Cali,2,2024-12-14
-1495,Carlos López,32,F,Barranquilla,14,2024-10-16
-1496,Martha Ramos Muñoz,22,F,Medellín,6,2024-08-03
-1497,Jhon Sierra Bermúdez,79,F,Cali,18,2025-02-10
-1498,Paola Maribel Franco Guzmán,31,F,Cartagena,14,2024-10-15
-1499,David Miguel Molina,30,M,Barranquilla,3,2025-01-01
-1500,Aura Palacios,47,F,Cali,8,2025-05-07
-1501,Alejandro Alexander Cardozo Rico,61,M,Tunja,11,2025-01-14
-1502,Elsa Laura Carvajal Romero,61,M,Cali,17,2024-06-16
-1503,Fabián Alberto Ramírez Valderrama,65,M,Medellín,13,2024-11-19
-1504,Fernanda Caro,67,M,Cali,12,2024-10-14
-1505,Andrea Olga Flórez,23,M,Ibagué,16,2025-06-02
-1506,Virginia Henao Giraldo,21,M,Ibagué,16,2024-09-04
-1507,Hernán Ortega Rincón,73,F,Tunja,12,2024-06-18
-1508,Adriana Ospina,28,M,Tunja,18,2025-03-25
-1509,Ángel Cardona,36,M,Ibagué,6,2025-02-03
-1510,Mario Buitrago,71,F,Tunja,6,2024-06-23
-1511,Viviana María Restrepo,21,F,Tunja,19,2025-04-28
-1512,Alejandro José Romero,46,M,Bucaramanga,2,2024-11-04
-1513,David Galvis Alvarado,34,M,Bucaramanga,11,2024-10-08
-1514,José Hernández Muñoz,70,F,Cali,2,2025-05-09
-1515,Alexander Quintero García,51,M,Ibagué,8,2024-12-01
-1516,Luis Armando Ruiz Daza,30,F,Medellín,8,2024-09-15
-1517,Andrés Kevin Riascos,47,F,Ibagué,4,2025-01-29
-1518,Leonardo Sergio Gómez,64,F,Ibagué,1,2024-09-02
-1519,David Alberto Cuéllar,60,M,Cartagena,17,2025-02-28
-1520,Carmen Bedoya,76,F,Cartagena,18,2024-08-27
-1521,Elena Méndez Soto,39,M,Tunja,12,2024-11-07
-1522,Antonio Vásquez,26,M,Bogotá,10,2025-02-02
-1523,Jorge Sánchez,53,M,Bucaramanga,10,2024-08-25
-1524,Javier Henry Vásquez,60,M,Villavicencio,10,2025-05-30
-1525,Rosa Cano Castellanos,77,F,Medellín,2,2024-06-24
-1526,Enrique Forero,72,F,Cartagena,16,2024-08-07
-1527,Yohana Carmen Osorio,44,F,Ibagué,5,2024-11-18
-1528,Anderson Vargas León,44,M,Ibagué,3,2025-05-29
-1529,Martha Leticia Durán,61,M,Bogotá,13,2024-06-24
-1530,Laura Mendoza Pérez,27,F,Bogotá,9,2024-07-03
-1531,Janeth María Palacios Márquez,71,F,Bucaramanga,2,2025-06-13
-1532,Guillermo Vega Toro,68,M,Cartagena,7,2025-03-22
-1533,Mariana Daniela Camargo Martínez,66,M,Medellín,3,2024-06-26
-1534,Blanca María García,52,M,Medellín,7,2024-11-20
-1535,Ruby Karen Serna Giraldo,44,F,Tunja,14,2024-08-09
-1536,Ricardo Castaño Cardona,34,F,Tunja,13,2024-10-16
-1537,Isabel Janeth Loaiza,69,M,Villavicencio,18,2025-05-23
-1538,Javier Rodríguez,21,M,Cúcuta,18,2025-02-07
-1539,Amparo Laura Vergara,18,F,Ibagué,13,2025-01-26
-1540,Yuri Marina Caro Bolaños,37,F,Tunja,10,2024-08-23
-1541,Nelson Henry Rodríguez,76,M,Villavicencio,9,2024-07-30
-1542,Héctor Faber Pérez Erazo,58,M,Bogotá,1,2024-07-16
-1543,Javier Escobar,34,F,Ibagué,2,2025-03-06
-1544,Patricia González Salgado,73,M,Tunja,9,2025-05-01
-1545,Daniela Cuesta Álvarez,46,F,Barranquilla,5,2024-12-11
-1546,Orlando Carrillo,28,F,Bucaramanga,19,2025-04-06
-1547,Yenny Ramírez,38,M,Tunja,12,2024-10-29
-1548,Daniel Roger Osorio Giraldo,43,M,Ibagué,19,2024-08-29
-1549,Maritza Paola Castellanos González,62,F,Villavicencio,7,2024-08-28
-1550,Inés Laura Vargas Ballesteros,64,M,Cali,7,2025-01-01
-1551,César Marco Cruz,43,F,Bogotá,5,2024-10-24
-1552,Ingrid Amanda Pérez Cárdenas,38,F,Ibagué,4,2024-12-10
-1553,María Martínez Vega,40,F,Medellín,15,2024-09-25
-1554,Javier Lozano,67,F,Bucaramanga,13,2024-11-15
-1555,Lorena Peña,46,F,Medellín,9,2025-02-16
-1556,Sandra Patricia Montes,65,M,Villavicencio,16,2025-05-16
-1557,María Salazar,56,F,Cali,14,2024-07-07
-1558,Iván David Guevara,74,M,Bogotá,4,2024-12-19
-1559,Amparo Marcela Rodríguez Zapata,75,M,Barranquilla,3,2024-08-04
-1560,Alirio González,54,M,Ibagué,3,2025-02-25
-1561,Sonia Paula Ariza Valencia,64,F,Ibagué,8,2024-09-06
-1562,Dary Rodríguez Torres,78,F,Villavicencio,2,2025-03-30
-1563,Jorge Hernán Mesa Arias,46,F,Villavicencio,10,2024-07-22
-1564,Evelio Enrique González,21,M,Tunja,2,2024-08-05
-1565,Augusto Moreno Osorio,74,M,Cali,13,2025-02-06
-1566,Daniel Camargo,22,M,Bucaramanga,9,2025-05-11
-1567,Juan Joan Jiménez Ríos,74,M,Bucaramanga,6,2024-07-14
-1568,Diego Sepúlveda,54,M,Cartagena,10,2024-10-13
-1569,Edwar Ramírez,57,M,Cúcuta,7,2024-08-28
-1570,Martha Esmeralda González Palacios,55,M,Cúcuta,3,2024-12-19
-1571,Mario Miguel Rivas,68,F,Bucaramanga,15,2024-12-25
-1572,Gregorio Miguel García Arteaga,21,F,Tunja,12,2024-12-27
-1573,Manuel José Naranjo,55,M,Bogotá,4,2024-12-10
-1574,Luz Rodríguez González,64,M,Bucaramanga,5,2025-01-29
-1575,Luz Montoya Méndez,30,M,Medellín,18,2024-09-09
-1576,Jorge Serrano,47,F,Bucaramanga,5,2024-11-27
-1577,María Luz Calderón,42,F,Medellín,19,2025-02-08
-1578,Diego Jorge Uribe Vega,31,M,Villavicencio,16,2024-07-21
-1579,Camilo Jesús Rojas,76,M,Cúcuta,4,2024-11-11
-1580,Fernando Humberto Herrera,56,F,Cartagena,8,2025-02-11
-1581,Luis Sánchez,66,F,Cartagena,10,2024-10-18
-1582,Andrés Bryan Ortiz,27,F,Tunja,2,2025-02-22
-1583,Sebastián César Herrera Manrique,79,M,Cali,17,2024-11-20
-1584,Santiago Ramos,28,F,Bucaramanga,10,2024-08-05
-1585,Felipe José Rodríguez,39,M,Medellín,17,2024-11-18
-1586,María Natalia Cabrera,21,F,Tunja,15,2025-03-08
-1587,Joan Rosero Solano,42,M,Cali,5,2024-08-23
-1588,Arley Jhon Vega Peña,55,M,Bucaramanga,1,2024-11-15
-1589,Helena María Aguilar,42,M,Cartagena,4,2024-09-24
-1590,Mabel Carvajal,34,M,Cúcuta,2,2025-03-08
-1591,Isabel Pérez,57,M,Cali,7,2024-08-21
-1592,Catalina Anaya Acevedo,76,F,Tunja,1,2024-12-06
-1593,Clara Medina Rentería,64,M,Medellín,7,2024-11-09
-1594,Ferney Galvis Forero,78,F,Cartagena,17,2025-05-01
-1595,Alfonso Emerson Moreno Rivera,51,M,Villavicencio,9,2025-04-10
-1596,Alberto Jonathan Pérez Restrepo,46,M,Cúcuta,13,2025-05-11
-1597,Luis Castillo Zapata,23,F,Bucaramanga,3,2025-01-18
-1598,Zoraida Antonia González Galindo,34,M,Cali,17,2024-07-17
-1599,Antonio Hugo Pérez,29,F,Villavicencio,15,2025-01-23
-1600,María Cárdenas Angulo,62,M,Medellín,1,2024-10-19
-1601,Cecilia Monsalve,34,M,Cúcuta,15,2025-01-22
-1602,Jorge Rafael Patiño,53,F,Villavicencio,4,2025-05-12
-1603,Sofía Patricia Padilla,35,M,Bucaramanga,19,2025-02-20
-1604,José Fredy Ortiz Rincón,60,F,Bogotá,3,2024-07-15
-1605,Elena Dora Velásquez Rodríguez,57,F,Bucaramanga,1,2024-10-17
-1606,Paola Elizabeth Serna Rodríguez,31,F,Cartagena,4,2025-01-17
-1607,Camilo Betancur,41,M,Cali,19,2024-09-01
-1608,Julián Agudelo Vergara,23,M,Barranquilla,1,2024-10-02
-1609,Constanza Alexandra Villamizar Trujillo,66,F,Bucaramanga,19,2024-06-16
-1610,Fernando Narváez,70,M,Ibagué,5,2025-03-08
-1611,Elvia Muñoz,44,F,Barranquilla,6,2025-03-05
-1612,Andrea Paola Ramírez Delgado,57,M,Barranquilla,16,2024-09-22
-1613,Sindy Parra Díaz,79,M,Cali,19,2025-02-16
-1614,Alejandro Jesús Díaz Zapata,29,F,Cali,11,2024-10-04
-1615,Federico Alberto Molina,27,M,Medellín,4,2024-12-05
-1616,Dario Andrés Rodríguez,61,M,Cartagena,2,2024-09-12
-1617,Daniel Benítez,73,F,Medellín,19,2024-12-05
-1618,Patricia Alzate,74,M,Villavicencio,8,2024-09-23
-1619,Alexander Solano,24,F,Villavicencio,3,2024-06-16
-1620,Gloria Yuly Quintero Ortiz,67,F,Villavicencio,19,2025-02-25
-1621,Fernanda Muñoz Espitia,68,F,Bogotá,16,2025-01-28
-1622,Yesid Rafael Castro Álvarez,25,F,Bucaramanga,1,2024-06-22
-1623,Ronald Carlos Castro Martínez,66,F,Tunja,11,2025-05-09
-1624,Luis Jesús Fuentes Rivera,22,M,Cali,12,2024-06-28
-1625,Emilio Meneses Roa,34,F,Tunja,1,2025-05-01
-1626,Gloria Juliana Cárdenas Rojas,22,M,Cúcuta,14,2024-11-20
-1627,Andrea Rodríguez,22,F,Cali,1,2024-10-25
-1628,Elizabeth Marlene Mejía Ávila,79,F,Cali,16,2024-10-20
-1629,Doris Nancy Moreno,58,M,Cali,5,2024-12-16
-1630,Armando Camilo Zapata,76,F,Tunja,15,2024-07-19
-1631,María Benavides,56,F,Cali,1,2024-11-28
-1632,Pablo Pedro Sánchez Ruiz,30,F,Ibagué,7,2024-06-24
-1633,Elías Acevedo Rodríguez,32,M,Bogotá,14,2024-09-15
-1634,Antonio Rivera Córdoba,40,M,Cúcuta,18,2025-05-08
-1635,Carlos Escobar,27,M,Bucaramanga,8,2025-02-21
-1636,Óscar Fonseca,43,F,Barranquilla,10,2024-10-24
-1637,Armando Ospina Osorio,34,F,Ibagué,6,2024-10-13
-1638,Elena Ortiz,75,M,Tunja,9,2024-06-28
-1639,José Rodríguez Benavides,22,F,Cartagena,9,2024-11-04
-1640,Alexander Andrés Vega,66,M,Ibagué,17,2024-06-19
-1641,Jhon José Gómez,29,M,Barranquilla,3,2024-12-14
-1642,Lucía Herrera,27,F,Villavicencio,3,2024-11-19
-1643,Jesús Francisco Moreno,33,F,Barranquilla,10,2024-08-24
-1644,René Jean Zapata,55,F,Cartagena,11,2025-04-01
-1645,Sandra Lucía Álvarez,72,M,Ibagué,15,2024-06-16
-1646,Yuli Diana Ochoa Castañeda,55,F,Barranquilla,9,2024-09-18
-1647,Jackeline Pinzón,71,F,Bucaramanga,12,2025-01-23
-1648,María González,36,F,Tunja,3,2024-12-27
-1649,Karen Pérez,64,F,Ibagué,2,2024-10-19
-1650,Ramiro Manuel Rodríguez Agudelo,39,M,Ibagué,6,2025-04-02
-1651,Lucy Isabel Zapata,32,M,Cartagena,10,2024-10-04
-1652,Paola Gilma Giraldo Arévalo,26,M,Cúcuta,16,2025-04-11
-1653,Rosa Salcedo Moreno,23,M,Villavicencio,4,2025-02-25
-1654,Luis Sebastián Ibarra,76,F,Villavicencio,2,2025-05-13
-1655,José Luis Rojas,46,F,Cúcuta,1,2024-10-12
-1656,José Mendoza,36,F,Cali,10,2024-07-13
-1657,Patricia Inés Sánchez Muñoz,70,M,Barranquilla,19,2024-10-04
-1658,Luis Orozco,65,M,Tunja,4,2024-06-20
-1659,Ariel Jhon Carvajal,51,F,Cali,13,2025-02-25
-1660,Juan Hernando Trujillo Bustamante,45,M,Cartagena,17,2024-12-09
-1661,Rafael Velasco,62,F,Bogotá,7,2024-08-04
-1662,José Andrés Murillo,66,M,Ibagué,4,2025-02-21
-1663,Andrés Iván Martínez Bravo,36,M,Bucaramanga,10,2025-06-04
-1664,Christian Pinzón Sierra,53,M,Villavicencio,13,2025-05-02
-1665,José Gonzalo Castro,63,F,Medellín,6,2025-03-07
-1666,Miguel Antonio Torres,65,F,Villavicencio,17,2024-07-20
-1667,Luis José Barrera Ávila,27,F,Medellín,18,2025-04-30
-1668,Alejandro Mauricio Suárez Ángel,52,F,Cartagena,15,2025-02-01
-1669,Carolina Martha Martínez,32,F,Medellín,9,2025-01-17
-1670,Alejandro Erick Rodríguez,44,F,Cali,19,2025-02-28
-1671,Paola Catalina Hernández,73,F,Cartagena,17,2025-05-15
-1672,Andrea Martha Villamizar,60,M,Ibagué,9,2025-05-01
-1673,Dora Yina Valencia Díaz,59,F,Villavicencio,13,2025-04-02
-1674,Jairo Lozano Martínez,57,M,Cali,17,2025-04-20
-1675,Yeimy Cecilia Ruiz,70,M,Cúcuta,15,2025-04-10
-1676,Elizabeth Elena Moreno,49,F,Medellín,15,2024-09-22
-1677,Andrés Alexander Ramos,50,M,Barranquilla,14,2024-08-20
-1678,Paola Valencia,22,M,Ibagué,16,2024-10-06
-1679,Nancy Ingrid Parada Rodríguez,51,F,Bucaramanga,11,2024-11-30
-1680,Iván Iván Monsalve García,78,F,Bogotá,3,2025-06-14
-1681,Rosa Torres Padilla,79,F,Cúcuta,1,2025-05-22
-1682,Carmen Valencia,28,F,Bogotá,18,2025-04-17
-1683,Catalina Castañeda,47,F,Cúcuta,10,2025-04-22
-1684,Laura Fernández Rengifo,35,F,Villavicencio,19,2025-02-28
-1685,Juan Andrés Hernández,53,M,Bucaramanga,13,2024-12-23
-1686,Julio Ramírez Jaramillo,73,F,Barranquilla,3,2024-10-18
-1687,Carlos Arturo Sanabria Vergara,27,F,Cúcuta,1,2025-01-08
-1688,Patricia Ruiz García,72,F,Medellín,14,2024-12-12
-1689,Claudia Osorio Daza,25,M,Bucaramanga,14,2025-02-04
-1690,Sara Castro,59,M,Barranquilla,9,2025-04-24
-1691,Lida Galindo Sánchez,78,F,Bogotá,11,2025-05-01
-1692,Daniel Esneider Giraldo Portilla,42,M,Bucaramanga,17,2025-03-09
-1693,Alberto Rosero,77,F,Medellín,1,2024-08-12
-1694,Marina Sepúlveda Blanco,71,M,Bucaramanga,9,2024-08-03
-1695,Teresa Lisbeth Ibarra,35,F,Cali,2,2024-08-12
-1696,Alejandra Bonilla,78,F,Cali,11,2024-11-06
-1697,Fernanda Espitia,76,F,Bogotá,6,2025-01-27
-1698,Carlos Sebastián Burgos Mesa,75,F,Cartagena,4,2024-12-04
-1699,Arturo Nilson Pérez,67,F,Ibagué,11,2025-04-05
-1700,Liliana Adriana Flórez,54,M,Cali,18,2024-07-26
-1701,Luis Vásquez,51,M,Ibagué,11,2024-12-02
-1702,Ana Luz López,75,M,Ibagué,13,2025-02-20
-1703,Juan Álvarez Gómez,21,F,Tunja,7,2024-11-01
-1704,Ángela Sandra Ramírez González,78,M,Bogotá,4,2025-02-15
-1705,Marcela Marisol González Molano,45,M,Medellín,1,2024-09-16
-1706,Rosa Esperanza Jiménez,72,M,Bogotá,14,2024-10-20
-1707,Juan Camilo González,55,F,Cartagena,1,2024-10-10
-1708,Jenny Emilse Salcedo,55,F,Barranquilla,16,2025-02-24
-1709,Cristian José Zuluaga Castro,46,M,Cali,17,2025-02-14
-1710,Cristian Jesús Camacho,27,F,Villavicencio,18,2024-12-31
-1711,Johan Javier Garzón Arias,24,M,Tunja,13,2024-11-11
-1712,Luis Mora,64,F,Villavicencio,19,2024-10-30
-1713,Felipe García Rodríguez,52,F,Cúcuta,5,2024-12-04
-1714,Rosa Fernanda Ortiz,18,F,Medellín,12,2025-04-13
-1715,Hugo González Giraldo,77,M,Cartagena,10,2025-05-02
-1716,Antonio Herrera,40,M,Barranquilla,13,2024-08-16
-1717,Milena Daniela Quintero,72,F,Cartagena,5,2025-05-10
-1718,Jaime Martínez,53,F,Medellín,10,2025-05-02
-1719,María María Mora Forero,66,F,Bogotá,7,2025-01-27
-1720,Magnolia López,33,M,Barranquilla,17,2025-05-15
-1721,Jhon Efrain Pacheco,38,M,Cúcuta,9,2024-11-04
-1722,Isabel Moreno,23,M,Tunja,13,2025-05-26
-1723,María Padilla Zuluaga,52,M,Ibagué,9,2024-08-09
-1724,Karen Franco,71,M,Medellín,10,2024-08-19
-1725,Yulieth Camargo Marín,40,M,Medellín,12,2024-12-03
-1726,Carlos Bautista,40,F,Ibagué,3,2024-10-03
-1727,Patricia Paola Murillo Soto,47,M,Tunja,9,2025-03-27
-1728,Mario José Vega,46,M,Villavicencio,5,2024-08-27
-1729,Inés Hernández Velásquez,40,M,Bogotá,14,2025-04-21
-1730,Patricia Angie Quintero Palacios,69,M,Villavicencio,16,2025-01-12
-1731,Mabel Rodríguez Vargas,40,M,Tunja,17,2024-09-29
-1732,José Daniel Melo,72,F,Barranquilla,2,2024-08-06
-1733,Estiven Mesa,54,F,Cali,12,2024-12-17
-1734,Liliana Ramírez Herrera,35,F,Cartagena,1,2024-07-08
-1735,Martha Luz Moreno,47,M,Cúcuta,11,2025-03-30
-1736,Luis Rodríguez,49,F,Bogotá,19,2024-06-24
-1737,María Arboleda Contreras,31,F,Tunja,10,2024-11-23
-1738,Patricia Patricia Rodríguez,64,F,Bucaramanga,19,2024-08-06
-1739,Hernán Castellanos,53,F,Barranquilla,9,2025-05-17
-1740,César Enrique López,59,F,Tunja,11,2024-08-01
-1741,Eduardo Jaramillo,31,M,Cúcuta,15,2024-07-27
-1742,María Tatiana Carvajal Castillo,71,M,Cali,19,2025-04-08
-1743,Antonio Silvio Ortega,71,M,Medellín,8,2025-05-30
-1744,Amparo Rodríguez,60,M,Villavicencio,9,2024-09-20
-1745,María Ospino,64,M,Bucaramanga,1,2024-12-19
-1746,Julieth López Beltrán,36,M,Medellín,10,2024-11-02
-1747,María Luz Ramírez Parra,57,M,Villavicencio,10,2024-12-13
-1748,Gerardo Brayan Ocampo,18,M,Villavicencio,18,2024-12-18
-1749,Ana Salas,51,M,Villavicencio,13,2025-02-07
-1750,María Paula Angulo Bernal,71,M,Villavicencio,2,2024-12-29
-1751,Camilo Jhon Garzón,46,F,Villavicencio,15,2024-09-27
-1752,María María Castillo Buitrago,30,F,Bogotá,17,2024-10-28
-1753,Luz María Naranjo,70,F,Cúcuta,7,2024-08-20
-1754,Javier Carlos Jaramillo Córdoba,41,F,Ibagué,17,2025-02-25
-1755,Isabel Guevara,24,M,Bogotá,5,2024-12-03
-1756,María Piedad Rodríguez,43,M,Cúcuta,3,2025-01-16
-1757,Carol Hurtado Méndez,24,F,Bucaramanga,17,2024-11-09
-1758,Mariela Figueroa Trujillo,56,M,Cartagena,1,2024-10-17
-1759,Alfonso Prada Molina,66,F,Bogotá,17,2024-09-24
-1760,Carlos Diego Gómez,60,M,Bucaramanga,3,2024-08-27
-1761,Francisco Esteban Mendoza,32,M,Medellín,11,2024-11-04
-1762,Manuel Ramos Hernández,49,F,Bucaramanga,16,2024-09-13
-1763,Edisson Alberto Díaz,42,F,Barranquilla,9,2024-11-21
-1764,Pedro Humberto Rodríguez Arteaga,73,F,Medellín,1,2024-12-06
-1765,Paola Martínez Arteaga,46,M,Tunja,16,2024-09-20
-1766,Gilma Carolina Prada Hernández,58,M,Bucaramanga,12,2025-06-10
-1767,Alfredo Solano,68,F,Cali,9,2025-05-13
-1768,Ligia Elena Valencia,24,F,Bogotá,19,2025-01-08
-1769,Luz Buitrago Moreno,36,F,Bucaramanga,9,2025-05-10
-1770,Paola Patricia Pérez,62,M,Villavicencio,3,2024-10-16
-1771,Amparo Erika Triana,28,M,Bucaramanga,14,2024-07-10
-1772,Eduardo Mario Sánchez,47,M,Cali,8,2025-02-07
-1773,Sebastián Isaías Pacheco,35,M,Ibagué,16,2024-07-29
-1774,Patricia Luz Castellanos,19,F,Ibagué,8,2024-09-19
-1775,Patricia Luz Lozano,39,F,Cali,12,2024-12-03
-1776,Javier Jaime Vera,64,M,Cali,8,2024-11-04
-1777,Mary Cecilia Mora,53,M,Medellín,17,2025-01-08
-1778,Gloria Nubia Giraldo,62,F,Ibagué,2,2024-11-24
-1779,Inés Gutiérrez Mora,30,M,Bogotá,15,2025-01-09
-1780,Iván Alfonso Restrepo Gómez,37,F,Cartagena,10,2024-08-03
-1781,Felipe Jesús Giraldo,46,M,Barranquilla,19,2025-04-26
-1782,Vanessa Amelia Carvajal,20,F,Bogotá,14,2024-12-30
-1783,Martha Antonia Herrera,57,M,Barranquilla,4,2025-01-07
-1784,Víctor Leonardo Sierra,76,F,Bogotá,11,2024-09-04
-1785,Ramiro Aguirre Barrios,75,M,Bucaramanga,11,2025-06-10
-1786,Isabel Adriana Romero Gil,49,M,Cartagena,11,2025-01-29
-1787,Edgar José Parra,19,F,Villavicencio,17,2024-07-17
-1788,Jaime Andrés Mejía Pinzón,26,F,Cúcuta,2,2024-06-26
-1789,Judith Yuly Murillo Alvarado,78,F,Villavicencio,15,2024-10-28
-1790,Nelly Esther Arenas Ojeda,65,M,Ibagué,4,2025-03-02
-1791,Robinson Andrés Mosquera,25,M,Cartagena,5,2025-03-23
-1792,María Martha García García,65,M,Bogotá,7,2024-07-01
-1793,Jorge Serna,49,F,Barranquilla,17,2024-07-04
-1794,Hernando Manrique,52,M,Cartagena,19,2024-12-10
-1795,Cristina Campo Parra,61,M,Bucaramanga,7,2024-06-19
-1796,Roberto Díaz García,45,M,Bogotá,6,2025-03-30
-1797,Nelsy Perdomo,46,F,Bucaramanga,17,2024-12-16
-1798,Stella Rincón,33,M,Cartagena,3,2025-03-07
-1799,Anderson Patiño Ruiz,38,F,Medellín,4,2025-03-24
-1800,Miguel Uribe,59,M,Bucaramanga,10,2025-04-02
-1801,Aleida Lizeth Cardona Castañeda,29,F,Cúcuta,13,2024-10-08
-1802,Alejandro Hurtado Flórez,28,F,Cúcuta,16,2024-07-16
-1803,Mary Mosquera Fonseca,25,F,Ibagué,8,2025-02-17
-1804,Ferney William Bolaños,62,M,Cúcuta,2,2025-03-21
-1805,Fabián Osorio,47,F,Bucaramanga,12,2025-06-07
-1806,Javier Rojas Alzate,27,F,Cali,11,2025-01-01
-1807,María Martínez Rodríguez,32,F,Ibagué,17,2025-02-17
-1808,Javier Iván Jaimes,43,F,Ibagué,18,2024-11-30
-1809,Rosa Luisa Mosquera,29,M,Bucaramanga,18,2025-02-18
-1810,Alejandra Pérez Ríos,79,F,Villavicencio,17,2025-05-11
-1811,Gina Toro Uribe,79,F,Cartagena,15,2025-04-16
-1812,José López,20,F,Medellín,3,2025-05-31
-1813,Viviana Alba Loaiza,47,M,Cúcuta,1,2024-12-12
-1814,Carlos Ochoa Montes,47,M,Medellín,14,2024-08-16
-1815,Julián Franco Polo,30,M,Cúcuta,4,2024-12-20
-1816,Lucía Escobar Hurtado,24,F,Tunja,10,2025-05-01
-1817,Alejandra María Montenegro García,56,M,Cali,15,2024-10-21
-1818,Julio Granados Rodríguez,32,F,Villavicencio,6,2024-10-28
-1819,Julián José Rojas Naranjo,41,F,Cartagena,5,2024-06-22
-1820,Inés Amparo Delgado,37,F,Bucaramanga,1,2024-08-25
-1821,Reinaldo Felipe Gallego González,45,F,Medellín,1,2025-04-06
-1822,Alejandra Leonor Pérez Rodríguez,54,M,Medellín,6,2024-11-16
-1823,Mauricio Moreno,78,M,Bucaramanga,3,2024-10-07
-1824,Rocío María López,32,M,Cartagena,14,2024-09-23
-1825,Elvis José Sánchez,67,F,Cartagena,6,2024-11-15
-1826,Julián Humberto Bonilla Delgado,42,F,Ibagué,14,2024-10-27
-1827,Luis Rodrigo Mora,76,F,Tunja,8,2025-01-16
-1828,Rafael Cardona,46,M,Cúcuta,8,2024-07-23
-1829,Steven Rubén Reyes García,30,F,Cali,18,2024-09-28
-1830,Harold Omar Yepes,19,F,Ibagué,11,2025-04-01
-1831,José Giraldo Romero,50,F,Bucaramanga,6,2024-12-02
-1832,Rocío Leidy Martínez,65,M,Ibagué,12,2024-12-27
-1833,Luis Miguel Henao Sánchez,60,M,Bogotá,10,2025-02-08
-1834,Myriam Julieth Rojas,20,M,Bucaramanga,3,2025-03-15
-1835,Freddy Vargas Fernández,48,M,Tunja,16,2024-09-26
-1836,Ricardo Orlando Herrera,78,M,Cúcuta,17,2024-07-26
-1837,Andrés López,52,F,Cartagena,11,2024-07-13
-1838,Sebastián Vargas Valencia,76,M,Bogotá,19,2025-03-26
-1839,Olga Muñoz Martínez,71,M,Medellín,16,2024-06-22
-1840,María Liliana Ospina Ortiz,70,M,Cúcuta,6,2024-10-19
-1841,Elvia Blanca Mora Martínez,48,F,Bucaramanga,18,2025-06-02
-1842,Cecilia Marta Cabrera,66,F,Villavicencio,4,2024-10-29
-1843,Javier Alexis Lozano Muñoz,49,M,Cali,15,2024-10-29
-1844,Omar Zapata Serrano,60,F,Bogotá,3,2025-02-08
-1845,Myriam Katherine Contreras,20,F,Cali,5,2024-09-06
-1846,Fabián Chávez,38,M,Tunja,10,2024-07-27
-1847,Lorena Milena Pérez,36,M,Ibagué,4,2025-01-17
-1848,Gustavo Castro,78,M,Bogotá,19,2025-01-15
-1849,María Acosta,60,F,Cali,10,2025-03-13
-1850,Zulma Maldonado,78,M,Medellín,16,2024-10-15
-1851,Andrés Steven Salazar Rincón,36,M,Barranquilla,11,2025-05-24
-1852,Margarita María Sierra,63,F,Bucaramanga,5,2025-05-31
-1853,Eduardo Camilo Perdomo,76,M,Bucaramanga,19,2025-04-20
-1854,Arturo Cifuentes,38,F,Cúcuta,18,2024-08-16
-1855,Javier Domingo Garzón,21,F,Tunja,17,2025-05-29
-1856,Beatriz Rivera,59,F,Bogotá,6,2025-05-17
-1857,Leidy Lida Pérez Vásquez,42,F,Tunja,11,2025-03-30
-1858,Nancy Martínez,49,M,Cali,18,2024-10-06
-1859,Jairo Eduardo Herrera,44,M,Ibagué,18,2025-04-30
-1860,Edith Sánchez,73,M,Bucaramanga,11,2025-06-02
-1861,Stella Diana Hernández,38,F,Bucaramanga,5,2024-11-10
-1862,Edilma Morales Medina,40,M,Ibagué,9,2025-01-26
-1863,Alfonso Andrés Rodríguez,71,F,Medellín,19,2024-10-19
-1864,Arturo Bernal,18,F,Tunja,7,2024-11-05
-1865,Edgar Hernando Erazo,21,M,Cali,15,2024-10-08
-1866,Jefferson Jorge Henao Burbano,57,F,Villavicencio,18,2024-07-19
-1867,Edwin Ariel Tovar,64,M,Bucaramanga,14,2024-11-10
-1868,Gladis Yaneth Vargas,31,F,Cúcuta,18,2024-07-12
-1869,Diana Chaparro Campo,65,M,Bucaramanga,11,2025-03-26
-1870,Mirian Nidia Guerrero,32,F,Cartagena,8,2025-01-07
-1871,Elizabeth Martha Puentes Guzmán,71,F,Barranquilla,6,2025-02-21
-1872,María Linda Martínez,20,F,Medellín,13,2025-03-14
-1873,Laura Leidy Naranjo Rincón,30,F,Bogotá,5,2024-12-31
-1874,Abelardo Carlos Salcedo Quiroz,66,F,Cali,2,2024-06-21
-1875,Lorena Fernanda Ochoa García,53,F,Ibagué,11,2024-10-06
-1876,Mauricio Jaime Meneses Guzmán,25,F,Villavicencio,8,2024-12-08
-1877,José Fernando Bohórquez,60,F,Cúcuta,8,2024-07-19
-1878,María Cecilia Ávila Estrada,46,F,Villavicencio,17,2025-06-05
-1879,Nathalia Duque Ortega,37,F,Medellín,16,2024-08-25
-1880,Alberto Marlon Martínez Correa,63,F,Cartagena,11,2025-02-10
-1881,José Marlon Ortiz,24,F,Cartagena,13,2024-10-31
-1882,Jesús Ardila Ramírez,76,M,Ibagué,16,2024-10-13
-1883,Carmen Claudia Romero Melo,44,M,Barranquilla,9,2025-06-07
-1884,Edwin Pablo Rodríguez Castillo,52,M,Tunja,5,2025-01-18
-1885,Luis Miguel Bermúdez,59,M,Cartagena,15,2024-08-04
-1886,Luis Álvarez,48,M,Ibagué,8,2025-01-16
-1887,Milena María Sandoval,32,M,Barranquilla,14,2025-02-06
-1888,Yaneth Gómez Bernal,37,F,Medellín,7,2024-11-28
-1889,Dario Torres,70,M,Cali,12,2024-06-22
-1890,Fabio Ruiz,66,M,Medellín,10,2025-03-04
-1891,Carlos Guillermo Álvarez Gómez,47,M,Ibagué,19,2024-10-01
-1892,Leandro Carvajal,63,M,Cali,2,2025-01-20
-1893,Estella Zapata Sánchez,67,M,Ibagué,12,2025-04-07
-1894,Andrés Ávila,75,F,Medellín,18,2024-07-07
-1895,Estella Johana Duarte,55,F,Bucaramanga,10,2024-07-08
-1896,Marina Yolanda Guevara,49,F,Bucaramanga,15,2024-09-08
-1897,Daniel Eduardo Díaz,54,F,Medellín,3,2025-01-22
-1898,Lizeth Patricia Portilla Oviedo,54,F,Villavicencio,8,2025-04-16
-1899,Carlos Fernando López,25,F,Villavicencio,12,2024-09-11
-1900,John Carlos Gómez Martínez,73,M,Cartagena,8,2024-08-10
-1901,María Díaz Burbano,28,F,Cartagena,8,2024-12-13
-1902,Jackeline Durán Herrera,46,F,Cali,10,2024-07-17
-1903,Paola Díaz Ochoa,56,F,Cali,17,2025-06-08
-1904,Dolores Becerra Medina,53,M,Bucaramanga,13,2024-07-23
-1905,Inés Rodríguez Castillo,49,F,Villavicencio,5,2025-04-03
-1906,Jesús Muñoz,43,F,Barranquilla,4,2025-02-15
-1907,María Cecilia Fernández Castañeda,48,F,Medellín,6,2024-06-15
-1908,Alejandra Yaneth Villamizar Flórez,41,M,Barranquilla,2,2025-01-23
-1909,María Restrepo Arteaga,48,M,Cali,11,2024-10-14
-1910,Samuel Alonso Correa,45,F,Barranquilla,5,2024-10-27
-1911,Ramiro José Ramírez,55,F,Ibagué,8,2025-03-22
-1912,Luz Murillo,63,F,Bogotá,3,2025-03-05
-1913,Sebastián Trujillo Gallego,61,F,Bucaramanga,17,2024-08-24
-1914,Andrea Páez Beltrán,18,M,Villavicencio,10,2024-08-05
-1915,Mercedes Jaramillo Becerra,74,M,Tunja,10,2024-08-21
-1916,Martha Fernández,70,F,Bucaramanga,2,2024-11-02
-1917,Luis Fredy Vanegas,26,F,Ibagué,13,2024-09-07
-1918,Armando Carrillo,42,F,Villavicencio,18,2025-05-20
-1919,Ronal Rafael Barreto Torres,68,F,Cali,8,2025-04-03
-1920,David Ávila Gil,34,M,Tunja,10,2024-09-02
-1921,Martín Herrera,32,M,Medellín,7,2024-12-23
-1922,Andrés Rojas,30,M,Medellín,9,2025-03-10
-1923,Alfonso Antonio Suárez Mora,57,F,Cartagena,18,2024-09-23
-1924,María Amaya Rosero,30,F,Cúcuta,9,2025-04-11
-1925,Patricia Paz,29,F,Ibagué,6,2025-01-26
-1926,Felipe Leal Agudelo,36,F,Villavicencio,7,2025-02-07
-1927,Dagoberto Luis Vanegas,74,M,Cúcuta,16,2025-04-07
-1928,Hugo Juan Moreno,35,F,Cúcuta,7,2024-10-02
-1929,Joel Velasco Fernández,21,M,Tunja,8,2024-09-14
-1930,Juan David Cárdenas Ramírez,30,M,Medellín,17,2024-09-24
-1931,Laura González Caicedo,66,M,Cali,6,2025-05-21
-1932,Rubiela Mendoza Agudelo,36,M,Bucaramanga,14,2024-11-26
-1933,Edwin Adrián Fernández,48,F,Medellín,4,2025-04-24
-1934,Judith Patiño,77,M,Ibagué,8,2025-05-07
-1935,Andrea Zapata,42,M,Ibagué,6,2025-01-01
-1936,Elena Elena Jaramillo,55,F,Villavicencio,3,2024-09-26
-1937,Alejandra Sofía García,45,M,Bucaramanga,13,2025-04-10
-1938,Darwin Alberto Rangel,71,F,Cali,16,2024-12-21
-1939,Camilo Rodríguez Gómez,39,F,Villavicencio,6,2025-05-09
-1940,Fernando Ochoa Quintero,25,M,Tunja,8,2025-03-26
-1941,Víctor Acosta Salazar,79,M,Cali,6,2025-02-14
-1942,María Adriana Díaz,31,F,Cali,3,2024-08-19
-1943,Rocío Ángela Correa,27,M,Cúcuta,12,2024-11-11
-1944,Lucy Velásquez López,66,M,Villavicencio,5,2025-01-10
-1945,Luisa Cecilia Luna Vera,79,F,Bogotá,9,2024-07-10
-1946,Alexander Edilson Cáceres Zapata,48,F,Medellín,7,2025-04-13
-1947,Antonio Hernández,39,F,Villavicencio,13,2024-08-21
-1948,Fernando Cardozo Caballero,62,M,Cali,10,2024-07-20
-1949,Alejandro Álvaro Jaimes Durán,67,M,Cartagena,13,2025-03-30
-1950,Luis López González,34,F,Cali,4,2024-11-20
-1951,Eduardo Guerrero,50,M,Cali,15,2024-08-14
-1952,David Ospino Parada,30,M,Bucaramanga,8,2025-03-26
-1953,Esteban Isidro Suárez Perdomo,67,M,Barranquilla,13,2024-07-07
-1954,Esther Doris Gutiérrez,40,F,Bucaramanga,8,2025-02-27
-1955,Alonso David Arévalo,25,M,Villavicencio,15,2024-08-14
-1956,Sara Arboleda Jiménez,76,M,Cartagena,7,2025-02-05
-1957,Elena Daza Gutiérrez,54,M,Medellín,16,2024-07-04
-1958,Fabiola Isabel Vélez Romero,72,F,Cartagena,18,2024-09-02
-1959,Nelly Diana Arias Aguilar,34,F,Barranquilla,7,2025-06-03
-1960,María Johanna Castillo Escobar,30,F,Villavicencio,18,2024-11-01
-1961,Mireya Torres Torres,46,F,Cartagena,18,2024-06-28
-1962,Yenny Escobar,30,M,Cali,16,2025-06-03
-1963,Marlon García Bedoya,72,M,Cartagena,8,2024-10-28
-1964,Lucía Ocampo López,36,F,Tunja,15,2024-10-23
-1965,Cristhian Alexander Serna Ortiz,26,F,Villavicencio,10,2025-05-01
-1966,Germán Monroy Martínez,61,M,Medellín,1,2024-08-28
-1967,Carlos Sánchez,74,F,Villavicencio,9,2025-06-11
-1968,Nelcy Osorio,71,M,Cali,1,2025-03-22
-1969,Mercedes Luz Mercado Mejía,61,M,Tunja,11,2024-06-19
-1970,Ángel Mateo Mejía Álvarez,51,F,Tunja,9,2025-02-11
-1971,Gladys Yulieth Ortiz,49,M,Cali,12,2025-05-09
-1972,Carlos Alfredo Torres,50,M,Cali,14,2024-11-22
-1973,Marcela Amalia Gómez Galeano,74,M,Tunja,8,2024-06-20
-1974,Edilma Esther Guerrero Ortiz,25,M,Tunja,12,2024-10-01
-1975,Ana Moreno,18,M,Bucaramanga,8,2025-05-17
-1976,Olga Montoya Méndez,59,F,Tunja,19,2025-01-13
-1977,María Estella Molina Gómez,28,M,Bogotá,11,2024-07-24
-1978,Manuel Franco,48,M,Bogotá,1,2024-08-24
-1979,Fernando Moreno Aguirre,49,F,Medellín,8,2024-12-24
-1980,Vicente Sánchez Patiño,40,F,Bogotá,6,2025-05-16
-1981,Natalia Niño Triana,39,F,Tunja,6,2025-02-17
-1982,Yesid Ricardo Peña,54,M,Cartagena,19,2024-08-04
-1983,Efrén Óscar Castro Quintero,71,F,Barranquilla,9,2025-06-11
-1984,María González,66,M,Tunja,19,2025-05-01
-1985,Rolando Luis Rosero Barrera,28,F,Cúcuta,17,2024-06-28
-1986,Nathalia Pérez,38,M,Tunja,2,2024-11-20
-1987,Dario Sandoval,57,M,Bogotá,7,2024-07-21
-1988,Rubén David Giraldo,45,M,Ibagué,17,2025-04-26
-1989,Johan Emilio Castro,23,M,Villavicencio,6,2024-12-21
-1990,Yadira Francy Delgado,45,F,Cartagena,6,2024-09-12
-1991,Inés Gloria Valencia,72,M,Cartagena,19,2025-03-02
-1992,Jair Marín Lozano,69,F,Ibagué,17,2024-07-23
-1993,Alicia Villegas Ardila,60,F,Barranquilla,13,2025-04-25
-1994,Vanessa Ruiz Cardona,69,F,Cúcuta,17,2025-03-29
-1995,María Contreras Patiño,58,F,Cartagena,14,2024-12-23
-1996,Miguel Herrera Pérez,36,F,Ibagué,3,2025-06-09
-1997,Luis Fernández Caicedo,63,F,Medellín,1,2025-05-19
-1998,Javier García Rodríguez,59,F,Bogotá,16,2024-10-16
-1999,David Silva,57,M,Cali,12,2024-11-02
-2000,Beatriz Flórez,25,F,Ibagué,16,2025-01-27
+cliente_id,nombre,edad,genero,ciudad,region_id,frecuencia_compra,ultima_compra
+1,Gladys Marina Jaimes,32,M,Barranquilla,4,3,2023-12-03
+2,Humberto Ramírez Martínez,56,F,Cali,3,4,2023-07-16
+3,Socorro Arenas,28,F,Bogotá,1,3,2023-12-28
+4,Gloria Mary Rodríguez Andrade,41,M,Cali,3,1,2023-07-16
+5,Patricia Benavides Gómez,41,F,Bogotá,1,2,2023-09-09
+6,Bibiana Ibarra Serrano,77,M,Bogotá,1,2,2024-01-16
+7,Gladis Ramírez,39,M,Medellín,2,1,2023-07-21
+8,Pablo Omar Loaiza Castro,44,M,Bogotá,1,4,2024-04-26
+9,José Villa Pinto,45,F,Bogotá,1,3,2023-11-25
+10,Marcela Andrea Santos Gutiérrez,79,M,Bogotá,1,4,2024-03-08
+11,Nelly Lina Mosquera Moreno,72,F,Bogotá,1,2,2024-05-01
+12,Paola Milena Parra,54,M,Medellín,2,4,2023-09-21
+13,Cecilia Cecilia Jiménez Perdomo,56,F,Bogotá,1,3,2024-03-03
+14,Alexander Orlando Valencia,31,F,Cartagena,5,4,2024-01-03
+15,María Guzmán,70,F,Medellín,2,2,2023-07-09
+16,Luz Vásquez,77,M,Medellín,2,4,2024-03-02
+17,Luz María Salas,64,M,Medellín,2,4,2023-09-23
+18,Jean Antonio Suárez,67,F,Medellín,2,2,2024-02-02
+19,Alfredo Granados,23,F,Medellín,2,4,2024-05-18
+20,Jesús Edilberto López,46,M,Cali,3,2,2024-03-20
+21,Olga León Vélez,51,F,Barranquilla,4,2,2024-05-22
+22,Manuel Díaz Marín,48,F,Cartagena,5,2,2024-02-13
+23,Julieth Ángela Solano,40,F,Bogotá,1,3,2024-04-27
+24,Liliana Marcela Fonseca,38,F,Cartagena,5,1,2024-01-13
+25,Andrés Víctor Castro Mendoza,70,F,Medellín,2,1,2024-04-11
+26,Andrés Luis Páez Gómez,77,F,Cartagena,5,2,2024-04-23
+27,Sandra Medina Castillo,32,M,Bogotá,1,1,2023-07-16
+28,Marcela Sandra Cardona,26,F,Bogotá,1,1,2023-10-18
+29,José Ortiz,41,M,Bogotá,1,1,2023-09-12
+30,Alfonso Ariza,25,M,Bogotá,1,3,2023-09-25
+31,Natalia Garcés,22,F,Barranquilla,4,3,2023-12-24
+32,Anderson Álvarez,45,M,Cali,3,3,2024-01-15
+33,Nancy González,51,M,Cali,3,1,2024-02-28
+34,Luz Cecilia Camacho Castillo,79,F,Medellín,2,4,2024-03-07
+35,Liliana Agudelo,57,F,Barranquilla,4,1,2023-11-01
+36,Andrés Romero,52,M,Cali,3,3,2023-10-27
+37,Efrain Valencia,18,M,Barranquilla,4,3,2024-03-17
+38,William Sánchez,31,M,Medellín,2,2,2023-08-22
+39,Yéssica Carvajal,32,F,Medellín,2,3,2023-10-08
+40,Gabriel Christian Hernández,68,M,Medellín,2,2,2023-12-01
+41,Pilar Sánchez,69,M,Cali,3,4,2023-07-22
+42,Rodrigo Ramírez Durán,54,M,Cali,3,4,2023-08-22
+43,Erika Katherine Mora,60,M,Medellín,2,3,2024-02-08
+44,Fernanda Pérez,24,M,Cartagena,5,4,2023-12-23
+45,Álvaro Santiago Suárez López,19,F,Bogotá,1,3,2023-07-19
+46,William Miguel Quintero Vallejo,70,F,Medellín,2,1,2024-05-20
+47,Elías Rico López,61,F,Barranquilla,4,4,2024-02-19
+48,Juan Mauricio Salazar Fernández,75,M,Cartagena,5,2,2023-08-31
+49,Cristian Andrés Moreno,79,M,Medellín,2,4,2023-12-23
+50,Diego Gutiérrez,79,M,Bogotá,1,1,2024-03-02
+51,Enrique Álvarez Mosquera,20,M,Medellín,2,4,2024-02-09
+52,Sergio Méndez,26,F,Medellín,2,2,2024-05-30
+53,Alexandra Ballesteros,59,F,Cali,3,1,2023-09-15
+54,Jorge Guzmán,71,F,Cartagena,5,4,2023-07-26
+55,Fabio Ortiz,69,M,Cali,3,4,2024-02-28
+56,Jesús Guzmán López,69,F,Cartagena,5,2,2023-07-24
+57,Patricia Martha Acosta,20,M,Cali,3,2,2023-06-19
+58,Eduar Jhon García Agudelo,34,M,Medellín,2,1,2023-06-05
+59,Patricia Suárez Castaño,45,F,Cartagena,5,1,2023-06-20
+60,Sandra Luz Ángel,50,M,Medellín,2,3,2024-01-11
+61,Robinson Jhon Díaz,70,F,Cali,3,3,2024-04-10
+62,Johanna Marín Valderrama,49,M,Cartagena,5,2,2023-12-30
+63,José Ramos Cardona,73,M,Bogotá,1,4,2023-09-12
+64,Julián Vargas,41,M,Barranquilla,4,1,2023-08-05
+65,Jeison Diego Contreras Carrillo,39,M,Cartagena,5,4,2023-09-30
+66,María Mosquera,50,M,Bogotá,1,3,2023-06-27
+67,Ana Martínez Mendoza,33,M,Medellín,2,4,2023-08-07
+68,Andrés Narváez Burgos,76,F,Cali,3,3,2024-01-30
+69,Eduardo Pérez Moreno,36,F,Barranquilla,4,3,2023-09-11
+70,Flor Álvarez Rangel,58,M,Bogotá,1,4,2023-10-30
+71,Diana María Sánchez Caballero,35,F,Medellín,2,4,2024-03-27
+72,Lilia Nohora Arrieta,74,M,Cali,3,1,2023-08-05
+73,Andrea Catherine Forero Delgado,47,F,Cartagena,5,2,2023-10-19
+74,Alonso Pérez,33,F,Bogotá,1,3,2024-04-15
+75,Patricia Tamayo,77,M,Cali,3,4,2024-05-14
+76,Edinson Sánchez Chávez,79,F,Cartagena,5,2,2023-10-03
+77,Edison Steven Jaimes,76,M,Cartagena,5,1,2023-08-03
+78,Carolina Rivera Hernández,36,F,Medellín,2,1,2023-09-09
+79,Johana Zuluaga Soto,71,F,Barranquilla,4,8,2025-01-26
+80,Johan Armando Molina,28,M,Cali,3,5,2025-04-13
+81,Argemiro Rosero Serna,57,F,Barranquilla,4,14,2024-10-23
+82,Ana Lucía Salazar Castellanos,42,M,Medellín,2,7,2025-02-05
+83,Manuel Chaparro Agudelo,63,F,Bogotá,1,15,2025-04-25
+84,Adriana Elena Agudelo,33,M,Cali,3,7,2025-03-19
+85,Yenny Elizabeth Torres Barreto,21,M,Bogotá,1,15,2025-03-15
+86,Juan Ospina Camacho,73,F,Bogotá,1,10,2025-05-22
+87,Manuela Lizeth Salamanca,34,F,Barranquilla,4,14,2025-05-22
+88,Isabel Olga Angulo,76,M,Cali,3,6,2024-12-10
+89,Harold Gaitán,63,F,Medellín,2,12,2024-12-24
+90,Luz Aguilar,68,F,Cartagena,5,11,2024-06-11
+91,Elsy Isabel Duque,51,M,Cali,3,13,2024-08-28
+92,Alejandra Chávez Cárdenas,50,M,Cali,3,5,2024-12-28
+93,Luis Alberto Guzmán,66,F,Cali,3,8,2025-03-06
+94,Fabio López,47,M,Cartagena,5,5,2025-01-27
+95,María Gloria Velásquez Ramírez,77,M,Cartagena,5,11,2024-06-20
+96,Óscar Juan Castro,66,F,Cartagena,5,11,2024-08-24
+97,Rosa López Delgado,77,M,Cali,3,10,2024-06-24
+98,Maritza Consuelo Palacios,38,F,Medellín,2,9,2025-03-13
+99,Luis Leonardo Escobar,20,F,Medellín,2,12,2024-11-05
+100,Felipe Villa,48,F,Cali,3,7,2025-04-22
+101,Armando Jhon Rojas,63,F,Cartagena,5,16,2025-02-19
+102,José Gómez Carvajal,39,M,Cali,3,6,2024-12-10
+103,Diana Gutiérrez Sierra,59,F,Medellín,2,6,2025-02-26
+104,Albeiro Dario Díaz Palacio,50,M,Barranquilla,4,16,2024-11-03
+105,Sergio Jaramillo,46,F,Medellín,2,11,2024-09-22
+106,Astrid Ramírez Beltrán,67,M,Medellín,2,13,2025-01-15
+107,Oswaldo José Velasco,75,M,Cartagena,5,15,2024-07-03
+108,Vanessa Paola Sepúlveda,37,M,Cali,3,15,2024-07-18
+109,Carolina Yolanda Rodríguez,33,F,Cali,3,13,2025-03-18
+110,Valentina Moreno García,45,F,Medellín,2,9,2024-06-03
+111,Clara Ramírez Restrepo,39,M,Medellín,2,7,2024-10-17
+112,Manuel Juan Villa,79,M,Bogotá,1,14,2025-01-17
+113,Victoria Alejandra Reyes Aguirre,39,M,Cali,3,11,2024-09-02
+114,Jorge Daniel Nieto Arboleda,32,F,Bogotá,1,8,2025-01-22
+115,Fernando Eduard Díaz,70,F,Medellín,2,10,2025-04-02
+116,Diego Figueroa Guzmán,23,M,Medellín,2,11,2024-09-27
+117,Laura Beatriz Palacios,52,M,Medellín,2,9,2025-05-15
+118,Cecilia Ordóñez Villamizar,30,F,Barranquilla,4,13,2024-08-07
+119,Pedro Ortiz,34,F,Medellín,2,16,2024-08-23
+120,Jesús Gómez,72,F,Medellín,2,9,2025-02-25
+121,Pedro Norberto Melo Vélez,79,M,Bogotá,1,10,2024-08-16
+122,Juan Caballero Parra,18,F,Cali,3,16,2024-07-01
+123,Omar Orozco,51,F,Bogotá,1,17,2024-11-18
+124,Elizabeth Margarita Trujillo Patiño,57,M,Barranquilla,4,10,2025-04-26
+125,Francisco Rivera,78,M,Cali,3,11,2024-07-20
+126,Lucía Romero Rojas,72,M,Cali,3,11,2025-01-08
+127,Edwin Héctor Arango Burgos,54,F,Medellín,2,16,2025-05-02
+128,Andrea Ramírez Narváez,45,M,Medellín,2,14,2025-02-16
+129,Camilo González Rueda,79,F,Medellín,2,6,2024-06-05
+130,Elías Ortiz,43,F,Medellín,2,10,2025-04-05
+131,José David Trujillo Hernández,50,F,Medellín,2,10,2025-01-02
+132,Patricia Nayibe Rodríguez,27,F,Medellín,2,10,2025-05-01
+133,Luz Mónica Benavides Quintero,69,M,Cartagena,5,11,2024-10-02
+134,Dahiana Elsa Ospina,75,F,Cali,3,17,2024-08-19
+135,Johanna Guevara Triana,62,F,Cali,3,5,2024-12-17
+136,Mariana Uribe López,19,M,Cartagena,5,14,2024-11-26
+137,María Lidia Ortiz Hoyos,67,M,Cali,3,9,2025-05-05
+138,Miguel Johan Vargas,68,M,Medellín,2,6,2025-04-07
+139,Edilberto Ángel Navarro,18,M,Cali,3,11,2024-11-13
+140,Luis Andrés Sánchez,61,M,Cartagena,5,13,2024-07-04
+141,Rocío Paola Rodríguez,67,M,Bogotá,1,7,2025-04-29
+142,Danilo Corredor,25,M,Bogotá,1,13,2025-01-03
+143,Adalberto León Mesa Gallego,79,F,Cali,3,15,2024-08-25
+144,Augusto Luis Castro,21,F,Medellín,2,8,2024-08-29
+145,Isabel Karen Villamizar,28,M,Medellín,2,10,2024-11-25
+146,Mónica Ospina López,38,M,Barranquilla,4,14,2025-05-03
+147,Stella Mosquera Naranjo,54,M,Cali,3,15,2024-08-16
+148,Omar Castellanos,66,M,Barranquilla,4,13,2024-12-01
+149,Rosa Díaz,56,F,Medellín,2,9,2025-01-11
+150,José Bonilla,49,M,Barranquilla,4,13,2025-04-19
+151,Esperanza Paola Bravo,40,M,Cali,3,6,2025-02-07
+152,Estela Herrera Pérez,34,M,Bogotá,1,8,2024-12-22
+153,Jackeline Elvira Portilla Tovar,39,M,Barranquilla,4,10,2025-03-05
+154,Carlos Augusto Ramírez Silva,29,M,Medellín,2,8,2024-11-17
+155,Alba Zapata Torres,26,M,Barranquilla,4,14,2025-05-17
+156,Leonor Mary Correa Moreno,64,F,Cali,3,10,2024-11-01
+157,Alba Gamboa,29,M,Bogotá,1,11,2025-01-31
+158,Andrés Mosquera,53,M,Cali,3,8,2025-02-17
+159,Milena Salazar,56,M,Barranquilla,4,13,2025-01-31
+160,Luz Gutiérrez,56,F,Medellín,2,9,2025-03-01
+161,Nelly Mercedes Bautista Jiménez,40,M,Medellín,2,17,2025-01-02
+162,Nelson José Reyes González,26,F,Cartagena,5,7,2025-01-28
+163,Patricia Espinosa Gómez,78,F,Cali,3,15,2025-04-17
+164,Andrés Yeison Sierra Benavides,57,F,Medellín,2,13,2025-01-12
+165,Sandra Mora Murcia,75,F,Barranquilla,4,15,2024-07-19
+166,Carlos Moreno,55,M,Medellín,2,10,2024-11-28
+167,Jimena Bravo,18,F,Medellín,2,15,2024-09-25
+168,María Gómez,24,M,Medellín,2,9,2025-01-12
+169,Amparo Ángela Muñoz,77,M,Medellín,2,9,2025-01-05
+170,Marta Ávila,71,M,Barranquilla,4,8,2024-11-25
+171,Miguel Germán Jiménez Palacio,56,F,Cartagena,5,17,2025-02-19
+172,Albeiro Molina,67,F,Medellín,2,7,2024-07-02
+173,Viviana Franco Mesa,25,M,Barranquilla,4,16,2025-02-22
+174,Alfonso García Ortiz,20,M,Barranquilla,4,16,2024-06-01
+175,Cristina Pérez Díaz,66,M,Medellín,2,15,2025-05-18
+176,Isabel Espitia Zapata,70,F,Medellín,2,14,2024-09-04
+177,Luis Dario Ortiz,49,M,Bogotá,1,16,2024-12-18
+178,Andrea Paola Jiménez,38,M,Bogotá,1,10,2025-01-22
+179,Fabián Brayan Guevara Restrepo,36,F,Medellín,2,10,2024-12-06
+180,John Steven Zapata,58,M,Medellín,2,15,2024-06-02
+181,David Marino Ruiz,71,M,Cali,3,6,2025-04-02
+182,Diana Franco Bermúdez,29,F,Bogotá,1,12,2024-11-04
+183,Jorge Jaramillo,41,F,Medellín,2,13,2024-10-17
+184,Hernando Hernández Silva,45,F,Medellín,2,9,2024-10-26
+185,Ángela Toro,77,F,Medellín,2,17,2025-02-11
+186,Ibeth Luz Álvarez Ortiz,44,F,Cartagena,5,10,2024-09-21
+187,Jesús Gamboa Melo,70,F,Medellín,2,6,2025-02-15
+188,Alexis Alexander García,35,M,Barranquilla,4,8,2024-07-07
+189,Juan Valderrama,19,F,Cali,3,9,2024-07-28
+190,Andrés Jefferson Bolaños,76,M,Barranquilla,4,13,2024-07-05
+191,Jhonny Moreno,50,F,Bogotá,1,11,2024-10-30
+192,Nelson Herrera Daza,64,M,Medellín,2,5,2024-07-29
+193,Karol Esperanza López Barreto,42,F,Barranquilla,4,10,2025-04-29
+194,Carmen Patricia Uribe Salazar,51,M,Barranquilla,4,6,2024-09-19
+195,Óscar Miguel Jiménez Gutiérrez,38,F,Bogotá,1,8,2024-11-15
+196,Carlos Alberto Ramos,34,M,Barranquilla,4,13,2025-02-21
+197,Claudia Quintero Parra,70,M,Cartagena,5,11,2025-01-29
+198,Sonia Laura Mesa Carmona,27,F,Barranquilla,4,11,2024-10-17
+199,Dario Daniel Caicedo,31,M,Medellín,2,7,2024-06-29
+200,Fabio Ordóñez,30,F,Cartagena,5,5,2024-09-20
+201,Fernando Valencia Vanegas,49,F,Cali,3,5,2024-11-16
+202,Nelly Cristina Guevara Chaparro,75,F,Bogotá,1,14,2025-04-01
+203,Hugo Vargas,76,F,Barranquilla,4,11,2025-01-15
+204,Luis Emilio Vélez Giraldo,22,F,Cali,3,6,2025-01-09
+205,Mario Cuesta,64,M,Cali,3,15,2024-08-11
+206,Edgardo Sánchez Alvarado,19,M,Cali,3,11,2024-10-27
+207,Esteban Díaz Ocampo,77,F,Cartagena,5,7,2024-07-17
+208,Gladys Luisa Acevedo,35,F,Cali,3,11,2024-11-29
+209,Roger Gómez,69,M,Cartagena,5,8,2024-06-28
+210,Andrés Leonardo Reyes García,32,F,Medellín,2,12,2024-12-26
+211,Eugenia Villamil,34,M,Medellín,2,12,2024-08-31
+212,Vanessa Blanca Giraldo,34,F,Medellín,2,9,2024-12-14
+213,Angie Yenny Ruiz,41,M,Medellín,2,5,2024-12-07
+214,José Mercado,19,M,Cali,3,7,2025-03-26
+215,Carlos Felipe Correa,40,M,Cali,3,8,2025-03-21
+216,Sandra Ana Mejía Zapata,21,F,Cali,3,11,2025-05-19
+217,Ana Dayana Niño García,20,F,Medellín,2,10,2025-04-15
+218,Uriel Cristobal Gómez Castro,49,F,Medellín,2,8,2025-04-05
+219,Alejandro Núñez Zapata,38,M,Bogotá,1,17,2024-08-13
+220,Dagoberto Elver Forero,78,F,Medellín,2,7,2024-08-17
+221,Juliana Sofía Mejía Garzón,22,M,Cali,3,9,2025-05-01
+222,Luz Pérez Díaz,66,F,Cartagena,5,18,2024-08-08
+223,Jean Miguel Hernández,26,F,Cali,3,17,2025-01-17
+224,Libia Ana Romero Moreno,39,M,Medellín,2,16,2024-06-08
+225,Camilo Manuel Yepes,65,M,Barranquilla,4,15,2024-06-18
+226,Stella Guzmán Sarmiento,18,F,Medellín,2,6,2024-11-30
+227,Elena Ordóñez,69,M,Cali,3,5,2024-07-24
+228,Emilio Gallego Ariza,43,F,Medellín,2,14,2025-01-06
+229,Samuel Alberto Ramírez,19,M,Cali,3,12,2025-01-31
+230,Andrés Javier Rincón Herrera,73,M,Bogotá,1,16,2024-07-05
+231,Claudia Acevedo,40,F,Cali,3,12,2024-06-19
+232,Enrique Arturo Vargas,52,M,Medellín,2,7,2024-12-26
+233,Orlando Escobar Peña,45,F,Barranquilla,4,16,2025-02-22
+234,William Eduardo Arias Álvarez,56,F,Medellín,2,12,2024-08-16
+235,Luz Velásquez Cáceres,42,M,Cali,3,17,2024-09-24
+236,Junior Ortiz,27,M,Medellín,2,9,2025-01-15
+237,Jessica Andrea Gaviria Restrepo,64,F,Medellín,2,15,2024-10-24
+238,Carlos Giovanni Barreto Castro,25,F,Cali,3,12,2024-09-05
+239,Emilse Anaya,59,M,Cali,3,6,2024-08-28
+240,Héctor Serrano,43,F,Medellín,2,10,2025-05-01
+241,María Marcela Amaya Valencia,76,M,Medellín,2,7,2025-04-28
+242,Nelcy María González Ortiz,50,M,Cali,3,11,2024-11-01
+243,Deyanira Rangel,23,M,Bogotá,1,11,2024-08-27
+244,Ligia Liliana Córdoba,79,F,Barranquilla,4,10,2024-11-25
+245,Camilo Hernán Gómez Guzmán,72,M,Cartagena,5,14,2024-12-05
+246,Nel Arévalo,54,F,Bogotá,1,8,2024-09-07
+247,Rubén Alejandro Franco,19,F,Bogotá,1,14,2024-07-18
+248,Nayibe Karen Ojeda,71,M,Bogotá,1,8,2025-04-27
+249,Víctor Alfonso Beltrán,79,M,Barranquilla,4,14,2025-01-09
+250,Dayana Rodríguez,25,F,Cali,3,7,2025-03-27
+251,Vanesa Santos Becerra,22,F,Barranquilla,4,8,2024-11-01
+252,Gladys Daza,36,F,Medellín,2,15,2025-04-29
+253,Francisco Martínez,29,M,Barranquilla,4,6,2024-09-23
+254,David Castaño Guerrero,55,M,Cali,3,5,2024-08-23
+255,Paola Bertha Gutiérrez Murillo,20,M,Medellín,2,9,2025-05-18
+256,Jorge Óscar Alzate Vega,27,M,Medellín,2,12,2024-07-26
+257,Fabián José Rojas Daza,19,M,Cali,3,13,2025-02-21
+258,Luis Vera Chacón,18,M,Barranquilla,4,13,2024-11-21
+259,Steven Ramos Mendoza,26,M,Bogotá,1,10,2025-03-13
+260,Elena Rocío Torres,52,F,Cali,3,15,2025-01-03
+261,Mauricio Ospina,77,F,Barranquilla,4,5,2024-11-03
+262,Juan Iván Díaz,73,M,Bogotá,1,7,2025-05-05
+263,Luis Galindo,52,M,Bogotá,1,15,2024-10-29
+264,Liliana García,39,F,Barranquilla,4,5,2024-09-13
+265,Lucía Castillo Tovar,54,F,Barranquilla,4,14,2024-10-23
+266,Christian Luis Mora,22,M,Bogotá,1,8,2024-06-16
+267,Andrea Estela Hernández,42,M,Cartagena,5,17,2025-01-25
+268,Andrea Barrera,57,F,Medellín,2,15,2024-09-21
+269,Daniel Francisco Mendoza,49,M,Barranquilla,4,13,2024-07-07
+270,Jaime Gómez,32,M,Cali,3,11,2025-05-28
+271,Lilia Ruiz,64,M,Medellín,2,15,2025-01-06
+272,Valentina Ortiz Rodríguez,57,F,Cali,3,7,2025-01-04
+273,Antonio Villa,23,F,Cali,3,8,2025-02-02
+274,Flor Andrea Morales,25,F,Cali,3,8,2025-03-21
+275,Carolina Mejía Villamizar,46,M,Barranquilla,4,9,2025-05-27
+276,Geraldine Ramírez,44,F,Barranquilla,4,8,2025-05-06
+277,Diana Martínez Duque,78,M,Barranquilla,4,11,2024-06-29
+278,Lina Alejandra Romero Carmona,21,F,Bogotá,1,14,2025-03-19
+279,Alejandro Martín Jaramillo Valderrama,76,F,Barranquilla,4,7,2024-11-23
+280,Edinson Mena Ardila,30,M,Bogotá,1,5,2025-01-06
+281,Cecilia Luisa García,69,F,Medellín,2,9,2025-03-31
+282,Manuel Manuel Rivera Ardila,64,F,Bogotá,1,13,2024-06-05
+283,Ximena Mónica Mejía Mora,68,M,Bogotá,1,7,2025-01-21
+284,Nidia Clara Galvis González,60,M,Cali,3,10,2025-04-21
+285,Yanet Herrera Rojas,79,F,Barranquilla,4,11,2025-04-26
+286,Constanza Aida Suárez Díaz,25,M,Cali,3,14,2025-04-28
+287,Luis Edwin Ramírez,29,F,Cartagena,5,15,2024-10-15
+288,Yaneth Rubiela Solano,42,M,Medellín,2,15,2024-10-28
+289,Antonio Segundo Vanegas,29,F,Barranquilla,4,14,2025-02-02
+290,Luz Arenas Rodríguez,22,F,Cartagena,5,9,2024-12-31
+291,Mariana Liliana Forero Marín,59,M,Barranquilla,4,11,2024-11-22
+292,Cecilia Angie Ospina Mosquera,68,M,Bogotá,1,17,2024-11-10
+293,María Rocío Bravo,28,M,Barranquilla,4,13,2024-09-07
+294,Inés Cifuentes Vera,38,F,Bogotá,1,6,2024-10-13
+295,Yeison Carrillo Leal,74,M,Bogotá,1,9,2025-02-17
+296,Wilmer Ríos Mosquera,57,M,Medellín,2,12,2024-12-08
+297,María Pérez Gómez,70,M,Medellín,2,11,2025-04-05
+298,Hermes Elvis Mena,70,F,Barranquilla,4,15,2024-09-20
+299,Eugenia Esther Benítez Fajardo,69,M,Bogotá,1,14,2024-11-08
+300,Eliecer Alcides Amaya,19,M,Cartagena,5,15,2025-05-06
+301,Liliana Lucy González,44,M,Medellín,2,7,2025-04-30
+302,Blanca González,42,M,Medellín,2,8,2024-06-15
+303,William López,41,M,Medellín,2,9,2024-08-24
+304,Leonardo Martínez,60,F,Barranquilla,4,6,2025-05-24
+305,Rocío Paz Agudelo,38,M,Bogotá,1,15,2024-12-09
+306,Luis Jefferson Hernández Giraldo,58,M,Cartagena,5,13,2024-06-24
+307,Andrey Rojas Zuluaga,45,M,Medellín,2,9,2024-10-06
+308,Fernanda Constanza Ramírez Ruiz,18,F,Medellín,2,14,2024-08-04
+309,Ángela Angélica Niño Castro,73,M,Medellín,2,13,2025-03-05
+310,Adriana Arboleda,47,F,Bogotá,1,6,2024-07-25
+311,Alfredo Armando Ayala,18,F,Cali,3,13,2025-03-10
+312,Alejandro Rafael Perea,19,F,Medellín,2,8,2025-03-05
+313,Julián Galvis Rivera,55,M,Medellín,2,5,2025-01-24
+314,Felipe Alirio Martínez Méndez,46,M,Bogotá,1,8,2025-04-08
+315,Jorge Ríos,27,F,Barranquilla,4,13,2025-04-04
+316,Alberto Peña Ardila,77,M,Cali,3,8,2024-08-04
+317,Ana Josefina Aguirre Ramos,49,F,Cartagena,5,12,2025-03-03
+318,Alberto Pablo Mora Camargo,18,M,Cali,3,13,2025-02-15
+319,Elizabeth Angie Buitrago,40,M,Medellín,2,13,2025-01-06
+320,Victoria Pérez Ramírez,64,M,Bogotá,1,14,2024-11-26
+321,Manuel Moreno Rodríguez,45,M,Cartagena,5,7,2025-04-26
+322,Miller Andrés Guerrero,49,F,Bogotá,1,13,2024-10-23
+323,María Anyi Gamboa Silva,33,F,Barranquilla,4,15,2024-12-03
+324,Rocío Lozano Silva,38,F,Cali,3,10,2024-11-10
+325,William Rangel Duarte,24,F,Cartagena,5,13,2024-12-30
+326,María Mercedes Vásquez Cifuentes,38,M,Barranquilla,4,13,2024-12-26
+327,Gloria Yamile González Muñoz,77,F,Cali,3,8,2024-08-18
+328,Isabel Ibarra Ramírez,22,F,Cartagena,5,6,2024-06-13
+329,Walter Raúl Caballero,20,M,Barranquilla,4,15,2025-01-10
+330,Claudia Martínez,22,M,Medellín,2,12,2024-06-09
+331,Yaneth Cardona Valencia,26,F,Barranquilla,4,12,2024-09-29
+332,Miriam Triana Gutiérrez,69,F,Medellín,2,11,2025-01-27
+333,Juan Agudelo Salgado,34,F,Barranquilla,4,12,2024-12-24
+334,Gustavo Hernández Angarita,40,F,Cartagena,5,15,2024-10-08
+335,Carlos Camacho Mejía,34,F,Medellín,2,5,2025-01-20
+336,Santiago Murillo Díaz,62,M,Cali,3,14,2025-03-13
+337,Carlos Jader Paz,39,M,Bogotá,1,12,2025-04-19
+338,Kevin Lozano Ariza,46,M,Bogotá,1,9,2024-06-26
+339,Julia Luz Álvarez Lara,28,F,Medellín,2,7,2024-12-17
+340,Fredy Antonio Pérez Muñoz,59,F,Cali,3,7,2025-02-22
+341,José Bolívar Gaitán,34,M,Medellín,2,15,2025-01-07
+342,Yamid Rodríguez Rentería,29,M,Medellín,2,14,2025-01-25
+343,Esteban Andrés Pérez,38,M,Bogotá,1,11,2025-04-06
+344,Juan Jorge García Vargas,44,F,Medellín,2,16,2025-02-04
+345,David Jhon Acosta,74,M,Cali,3,7,2025-04-12
+346,María Milena Gutiérrez,34,F,Cali,3,13,2025-05-05
+347,Natalia Yuliana Camargo,75,F,Medellín,2,11,2024-10-21
+348,Julio Alejandro Arias,60,M,Bogotá,1,6,2025-02-15
+349,Carolina Gómez García,68,F,Bogotá,1,8,2024-09-28
+350,Manuel Abelardo Guevara Parra,28,F,Barranquilla,4,10,2025-03-20
+351,Elena Luz Torres Barrera,56,F,Barranquilla,4,10,2024-10-10
+352,Esperanza Angie Hernández,72,M,Cartagena,5,8,2025-03-26
+353,Diego Yair Beltrán,22,F,Cartagena,5,15,2025-02-12
+354,Gloria Maritza Lara Gómez,64,F,Medellín,2,6,2024-10-22
+355,Orlando Alberto Méndez,60,M,Cali,3,8,2025-01-19
+356,Marcela Lorena Ortiz Osorio,19,M,Cali,3,7,2025-02-12
+357,Álvaro Hernández,34,M,Bogotá,1,14,2025-01-11
+358,Cecilia Ana Rincón Álvarez,57,F,Cali,3,16,2025-05-28
+359,Santos González Muñoz,20,F,Medellín,2,16,2024-12-23
+360,Patricia Erika Rico,68,F,Bogotá,1,10,2024-07-13
+361,Fernando Paul Sierra Henao,36,M,Cali,3,12,2024-12-20
+362,José Gutiérrez,27,M,Bogotá,1,5,2024-11-06
+363,Jesús Carlos Pérez,29,F,Medellín,2,12,2024-10-22
+364,Bayron Fernando Giraldo Fonseca,48,M,Barranquilla,4,14,2024-07-08
+365,José Pineda Vera,71,F,Cali,3,5,2025-05-11
+366,Estella Álvarez,35,M,Cartagena,5,11,2024-12-29
+367,Edison Rincón Alvarado,43,M,Bogotá,1,15,2025-01-20
+368,Ana Durán,34,M,Cali,3,16,2025-03-08
+369,Teresa Monroy,75,M,Cali,3,17,2025-01-13
+370,Yeison Rubén Martínez Ospino,68,F,Barranquilla,4,11,2025-02-10
+371,Marina Duarte,40,M,Cartagena,5,13,2024-10-07
+372,Andrea Socorro Morales,69,M,Barranquilla,4,7,2025-01-26
+373,Alba María Bermúdez,59,M,Medellín,2,8,2024-10-21
+374,Josefina Rodríguez Calderón,41,M,Cali,3,6,2024-09-04
+375,Horacio Jesús Silva,60,F,Cartagena,5,7,2024-09-04
+376,Fredy Parra Mendoza,61,M,Barranquilla,4,17,2025-05-14
+377,Cecilia Paola Ruiz Gil,46,F,Cali,3,13,2025-03-18
+378,Adriana Lucía Mendoza Parra,50,F,Barranquilla,4,16,2024-10-10
+379,Marta Consuelo Saavedra Díaz,19,M,Barranquilla,4,15,2025-05-16
+380,Verónica Uribe,47,M,Barranquilla,4,8,2025-02-21
+381,José García Díaz,35,F,Bogotá,1,12,2024-09-02
+382,Tulia Hernández Vásquez,63,F,Bogotá,1,7,2024-09-20
+383,Armando José Cardona Erazo,70,F,Medellín,2,5,2024-12-30
+384,Kevin López,61,M,Cali,3,16,2025-02-26
+385,Marina María Salazar,42,M,Barranquilla,4,15,2024-08-14
+386,Estella Mosquera,18,F,Medellín,2,13,2024-06-27
+387,Sebastián García,31,F,Bogotá,1,5,2024-08-21
+388,Luz Milena Mercado,79,M,Medellín,2,7,2024-07-16
+389,María Loaiza,70,F,Medellín,2,15,2024-08-01
+390,Juan Buitrago Monsalve,74,F,Bogotá,1,14,2025-04-16
+391,Freddy Cristhian Rodríguez Velandia,75,M,Bogotá,1,9,2024-06-30
+392,Alexander Miguel Barrios Polo,23,M,Bogotá,1,9,2024-08-11
+393,Vanessa Julieth López,41,M,Cartagena,5,15,2025-01-23
+394,Felipe Suárez Córdoba,69,F,Bogotá,1,7,2024-12-27
+395,Walter Durán Marín,71,M,Cartagena,5,14,2025-04-14
+396,Gloria Isabel Rivera,27,M,Medellín,2,8,2025-04-01
+397,Yeison Mauricio Camargo Burbano,58,M,Medellín,2,7,2025-05-01
+398,Adolfo Guerrero,23,M,Barranquilla,4,16,2024-09-14
+399,Pablo Luis López Mendoza,40,M,Cali,3,9,2024-11-04
+400,Carlos Ángel Pineda,75,M,Cartagena,5,15,2024-12-28
+401,Jorge César Rodríguez Peña,35,F,Medellín,2,16,2025-01-02
+402,Leidy Fernanda Cortés,49,M,Bogotá,1,5,2024-12-09
+403,Efrain Bautista,78,M,Cali,3,12,2024-10-21
+404,Blanca Ortiz,31,M,Cali,3,16,2025-03-14
+405,Eliana Gómez,73,M,Medellín,2,6,2025-03-10
+406,Lorena Yanet Orjuela,51,F,Bogotá,1,15,2024-06-19
+407,Esperanza Natalia Sierra Cruz,57,M,Barranquilla,4,16,2024-08-21
+408,Alejandro José Rojas,51,F,Barranquilla,4,10,2024-06-01
+409,Julieth Luz Jiménez Ávila,22,F,Medellín,2,11,2024-07-31
+410,Lucía Marina Navarro,54,F,Cali,3,15,2025-02-18
+411,Kelly Ariza Palacios,67,F,Cartagena,5,10,2025-01-03
+412,Alba Gutiérrez,73,F,Barranquilla,4,8,2024-10-10
+413,Julia Marcela Morales,30,M,Cali,3,7,2025-01-19
+414,Martín Antonio Duarte Naranjo,36,F,Barranquilla,4,6,2025-03-30
+415,José Díaz,76,M,Medellín,2,14,2024-07-08
+416,Paola Morales Orozco,62,M,Medellín,2,15,2024-08-11
+417,Felipe Óscar Torres,44,F,Cali,3,10,2025-02-05
+418,Juana Mercado,62,F,Barranquilla,4,12,2024-12-27
+419,Edith Acosta,40,F,Bogotá,1,14,2025-05-13
+420,Orlando Antonio Suárez,70,F,Barranquilla,4,16,2025-02-10
+421,Laura Ariza Lara,53,F,Bogotá,1,13,2024-09-05
+422,Esperanza Luz Quiroga Sarmiento,30,F,Bogotá,1,13,2024-07-16
+423,Edgar Luis Bedoya,57,M,Cali,3,5,2024-06-10
+424,Felipe Salazar,41,M,Cali,3,7,2024-07-30
+425,Camilo Cabrera Rodríguez,36,F,Bogotá,1,7,2024-06-25
+426,Cristian Ortega,49,F,Cali,3,13,2024-10-14
+427,Yeferson Gómez,21,F,Bogotá,1,11,2024-09-02
+428,Alejandra Inés Torres,44,F,Bogotá,1,9,2025-03-25
+429,Maritza Escobar Quiroz,34,F,Barranquilla,4,5,2024-11-08
+430,Mónica María Flórez Velásquez,43,F,Medellín,2,11,2025-05-01
+431,Blanca Galindo Morales,64,M,Barranquilla,4,7,2024-12-22
+432,Helena López Beltrán,69,M,Cali,3,9,2024-08-10
+433,Fabián Manuel Serrano Nieto,50,F,Bogotá,1,12,2025-03-14
+434,José Córdoba González,40,F,Medellín,2,8,2025-02-09
+435,Constanza Álvarez Palacio,46,F,Medellín,2,7,2024-12-24
+436,Juan Alberto Gutiérrez Daza,58,M,Bogotá,1,6,2024-11-12
+437,Margarita Martha Quintero Cárdenas,28,F,Barranquilla,4,12,2024-07-30
+438,María Rodríguez Monsalve,37,F,Barranquilla,4,6,2024-10-08
+439,Juan Andrés Gómez,61,F,Cartagena,5,7,2024-08-27
+440,Elsa Matilde Duarte López,54,M,Cartagena,5,10,2025-01-26
+441,Isabel Moreno,74,M,Medellín,2,9,2024-10-28
+442,Yazmín Tamayo,75,F,Medellín,2,8,2025-05-01
+443,Enrique Rodríguez Gómez,78,M,Bogotá,1,11,2025-02-18
+444,Bibiana Rosa Mercado,29,F,Cali,3,5,2025-05-15
+445,Eduardo Arrieta,42,M,Bogotá,1,14,2024-12-23
+446,Esneider Jairo Manrique Morales,44,F,Bogotá,1,10,2025-01-10
+447,María Vélez Luna,20,M,Barranquilla,4,7,2024-09-13
+448,Mercedes Lozano,75,M,Cartagena,5,10,2025-02-20
+449,Óscar Cifuentes,42,F,Barranquilla,4,9,2024-08-17
+450,María González Londoño,61,F,Bogotá,1,13,2025-03-16
+451,Jaime Ferney Muñoz Velasco,65,M,Cali,3,8,2024-07-11
+452,Luz Acosta,70,F,Cali,3,12,2024-10-18
+453,Mercedes María Gómez,30,M,Medellín,2,14,2025-01-03
+454,Cindy Elena Parra,47,F,Medellín,2,13,2025-03-21
+455,Camila Álvarez,48,F,Medellín,2,7,2025-04-29
+456,Francisco Morales Pinto,55,M,Barranquilla,4,14,2025-04-04
+457,Leonardo Eduardo Castañeda,68,F,Barranquilla,4,15,2024-10-29
+458,Alberto Andrés Torres,74,F,Medellín,2,15,2025-01-26
+459,Luis César Martínez,37,M,Cali,3,11,2024-12-08
+460,Benjamín Jeison Pérez,67,F,Barranquilla,4,16,2025-02-02
+461,Antonio Luis Castillo Torres,50,M,Medellín,2,6,2024-09-08
+462,Segundo Carlos Jiménez,43,F,Barranquilla,4,5,2025-02-13
+463,Luis Gómez,56,F,Bogotá,1,13,2024-09-30
+464,Cecilia Ramírez,51,F,Barranquilla,4,17,2024-06-22
+465,Luz Pinto González,57,M,Cali,3,14,2024-08-02
+466,Dagoberto Parra,26,F,Cartagena,5,8,2024-10-18
+467,Julián Hernández,49,M,Bogotá,1,16,2024-05-31
+468,Alejandro González Cárdenas,25,F,Cartagena,5,7,2025-03-12
+469,Claudia Carolina Bejarano,76,M,Medellín,2,9,2024-09-21
+470,Leonor Salcedo,33,F,Cali,3,13,2024-12-07
+471,Inés Ligia Álvarez Ruiz,43,M,Barranquilla,4,11,2025-04-30
+472,Sandra Vargas Villa,77,F,Bogotá,1,8,2024-12-25
+473,Edgar Serna,40,F,Bogotá,1,7,2024-06-08
+474,Carolina Janeth Pérez,75,M,Barranquilla,4,16,2025-04-13
+475,Lucila Loaiza Sierra,62,F,Medellín,2,13,2024-12-14
+476,Silvia Johanna Marín,49,M,Medellín,2,13,2024-12-31
+477,Jorge Ramos Ángel,36,F,Bogotá,1,6,2024-07-21
+478,Andrea Pérez Hernández,58,M,Cartagena,5,10,2025-02-07
+479,Lizeth María Domínguez,68,M,Bogotá,1,8,2025-02-14
+480,Cristina Rubiela Buitrago,50,M,Bogotá,1,12,2025-01-21
+481,José Armando Beltrán Gutiérrez,48,F,Barranquilla,4,5,2024-06-29
+482,Orlando José Mantilla,21,F,Medellín,2,14,2025-03-25
+483,John Bernal Escobar,67,M,Medellín,2,9,2025-02-24
+484,Juan Castro,53,F,Cali,3,7,2025-04-07
+485,Aníbal David Rivas Sierra,53,F,Medellín,2,10,2025-04-26
+486,Lina Catalina Peña,56,F,Barranquilla,4,6,2025-03-22
+487,Alberto José Álvarez Miranda,71,M,Cali,3,8,2024-07-25
+488,Gloria Niño,57,M,Cali,3,8,2024-10-15
+489,Vanessa Ruiz,25,F,Bogotá,1,5,2025-04-13
+490,Jairo Cardona Martínez,31,F,Cali,3,12,2024-08-04
+491,Joan Ortiz,22,F,Bogotá,1,7,2025-02-09
+492,Wilder Perea,77,M,Medellín,2,16,2024-07-25
+493,Cristian Rivera López,37,F,Cali,3,13,2024-10-24
+494,Andrés Alexander Cantillo Santos,76,M,Bogotá,1,12,2024-07-10
+495,Carlos Jiménez,52,M,Medellín,2,15,2024-12-03
+496,Jacqueline Lozano Díaz,57,F,Medellín,2,10,2024-05-31
+497,Fernanda Marina López,40,M,Medellín,2,13,2024-09-09
+498,Carlos Ortiz,31,F,Bogotá,1,16,2025-01-28
+499,Carlos Salazar Sánchez,29,F,Medellín,2,17,2024-09-18
+500,Elvira Gutiérrez Hernández,37,F,Medellín,2,15,2025-02-18
+501,Gonzalo Maicol Franco,71,F,Medellín,2,6,2025-05-05
+502,Liliana Esther Martínez,64,M,Cali,3,16,2024-11-26
+503,María Gutiérrez García,73,F,Barranquilla,4,11,2025-02-20
+504,Orlando Camilo Toro Angulo,32,F,Cali,3,14,2024-09-16
+505,Lilia Díaz León,19,M,Medellín,2,8,2024-07-19
+506,Leider César Rubio Franco,46,M,Cartagena,5,10,2024-10-25
+507,Jorge Orjuela Pérez,54,M,Bogotá,1,13,2024-08-19
+508,María Cabrera,68,F,Bogotá,1,11,2024-12-19
+509,Nancy María Gil,67,F,Medellín,2,17,2025-05-03
+510,Claudia Hernández González,46,M,Medellín,2,7,2025-04-01
+511,José Antonio López,64,M,Medellín,2,13,2024-08-23
+512,Lizeth Carmen Arroyo,55,F,Medellín,2,7,2025-05-24
+513,Rosa Julieth Aguirre Chacón,62,F,Bogotá,1,13,2025-04-07
+514,Humberto Ortiz,72,F,Bogotá,1,6,2024-12-23
+515,Josefa Beatriz Medina,72,F,Bogotá,1,6,2024-09-10
+516,Myriam Marina Uribe,39,M,Barranquilla,4,11,2024-07-18
+517,Angie Fernanda González,72,F,Cali,3,6,2024-09-27
+518,Mayra Contreras,35,M,Bogotá,1,16,2025-04-09
+519,Constanza Arias,57,M,Barranquilla,4,17,2025-05-16
+520,Manuel Luis Correa,21,M,Barranquilla,4,14,2024-07-14
+521,David Córdoba Salamanca,33,F,Bogotá,1,5,2025-05-25
+522,Emilio Álvarez,58,F,Cali,3,10,2024-08-04
+523,Rosalba María Maldonado Hernández,23,M,Cartagena,5,6,2024-09-23
+524,Arnulfo Juan Aguirre Castro,42,F,Barranquilla,4,15,2025-04-08
+525,Nubia Jiménez,48,M,Bogotá,1,14,2024-07-21
+526,Jairo Alex Ortiz Arrieta,55,F,Cali,3,9,2025-02-23
+527,Karina Norma Marín Gallego,23,F,Cali,3,9,2024-06-27
+528,Yasmín Fernanda Mendoza Aguilar,40,M,Barranquilla,4,6,2024-12-08
+529,Jeferson Rodríguez Ortega,71,M,Bogotá,1,6,2024-06-27
+530,Paola Martínez Vásquez,18,F,Medellín,2,14,2024-08-28
+531,Yasmín Gloria García Parra,38,M,Medellín,2,16,2025-04-15
+532,Andrea Mosquera,49,M,Cali,3,14,2025-05-04
+533,Miryam Cerón,43,M,Bogotá,1,8,2025-03-25
+534,Luis Díaz Mercado,31,F,Bogotá,1,7,2024-08-12
+535,Felipe Enrique Contreras Muñoz,20,M,Medellín,2,6,2025-04-29
+536,Daniel Muñoz,19,F,Cartagena,5,17,2025-03-05
+537,Inés Dayana Cuesta,42,F,Barranquilla,4,10,2025-01-17
+538,Alexandra Zuluaga Rivera,54,M,Medellín,2,11,2025-03-23
+539,Carmen Andrea Daza Marín,65,M,Cali,3,10,2024-07-21
+540,Patricia Ramírez,61,M,Barranquilla,4,11,2024-08-10
+541,Jaime José Ramos León,72,F,Bogotá,1,10,2024-10-14
+542,Wendy Ángel,42,F,Cartagena,5,9,2025-03-02
+543,Willian López,38,M,Bogotá,1,8,2025-01-03
+544,Jairo Daza,31,M,Bogotá,1,12,2025-01-18
+545,Héctor Montes,69,F,Medellín,2,9,2025-01-08
+546,Miguel Salcedo Mejía,59,F,Cali,3,8,2024-10-14
+547,Esneider David Castañeda,30,F,Medellín,2,7,2024-09-06
+548,Diana María González Alvarado,28,M,Bogotá,1,17,2025-05-23
+549,Gloria Marta Torres Naranjo,48,M,Barranquilla,4,17,2024-10-01
+550,Stiven Navarro Estrada,78,F,Barranquilla,4,15,2024-12-05
+551,Mery Carolina Pérez Mantilla,21,F,Cartagena,5,13,2025-01-07
+552,Iván Medina Díaz,61,F,Barranquilla,4,12,2024-10-11
+553,Ruth Jiménez,30,M,Bogotá,1,15,2025-05-01
+554,Fernando Ángel,39,F,Barranquilla,4,11,2025-05-29
+555,Jorge Quintero,32,F,Barranquilla,4,15,2024-10-22
+556,Miguel Ocampo,78,F,Medellín,2,14,2025-05-07
+557,Eduardo Jesús Rodríguez,66,F,Barranquilla,4,13,2025-01-28
+558,Wilson Galvis Orjuela,41,M,Medellín,2,11,2025-03-30
+559,Miguel Sánchez García,27,M,Medellín,2,9,2024-10-22
+560,Jorge López,27,M,Barranquilla,4,6,2024-10-07
+561,Fabiola Ángela Martínez Rueda,64,M,Cali,3,13,2024-08-26
+562,Omar Manuel Blanco,50,M,Barranquilla,4,8,2025-03-11
+563,José Pedro Ortega Ramírez,65,M,Bogotá,1,10,2024-07-24
+564,Gloria Medina Cantillo,49,M,Cali,3,8,2024-08-10
+565,Inés Sánchez,30,M,Medellín,2,17,2025-02-11
+566,Elvira López,19,F,Medellín,2,14,2024-09-17
+567,Elsa Piedad Sanabria Quintero,35,M,Cali,3,7,2024-06-05
+568,Héctor John Barbosa,56,M,Medellín,2,16,2025-05-27
+569,Milena Isabel Reyes,41,F,Bogotá,1,6,2025-01-10
+570,Lorena Andrade Díaz,55,F,Cali,3,8,2025-05-14
+571,Luis Díaz Salazar,53,F,Barranquilla,4,12,2024-12-15
+572,María Jennifer Sánchez,20,M,Cartagena,5,11,2024-09-02
+573,Lorena Cruz Contreras,23,M,Medellín,2,13,2025-04-17
+574,Eduardo Suárez,66,F,Bogotá,1,13,2024-11-27
+575,Yazmín Luisa Amaya Rueda,61,M,Cali,3,7,2024-06-11
+576,Elena Ana Jiménez Lozano,25,F,Medellín,2,10,2024-09-26
+577,Nelson Luis Díaz Rivas,78,F,Cali,3,8,2024-06-15
+578,Andrea Arrieta Vargas,19,M,Bogotá,1,8,2025-04-21
+579,Ricardo César Ramos,52,F,Medellín,2,7,2024-11-04
+580,Jesús Juan Cárdenas Vargas,25,F,Medellín,2,12,2025-05-10
+581,Leonor Lina Naranjo González,30,M,Cartagena,5,17,2025-03-01
+582,Valentina Herrera Alarcón,59,F,Bogotá,1,16,2025-03-03
+583,Carmen Claudia Rodríguez Guerra,29,M,Barranquilla,4,15,2024-09-14
+584,Yaneth Luz Hernández,33,F,Barranquilla,4,14,2024-10-21
+585,Rodrigo José Rodríguez,57,F,Medellín,2,12,2024-08-07
+586,Natalia Bustos Jiménez,73,F,Barranquilla,4,10,2025-03-04
+587,Andrés Escobar,38,F,Barranquilla,4,5,2025-02-19
+588,Carlos Castaño,25,M,Medellín,2,12,2024-08-09
+589,Edna Rivera Jaramillo,29,F,Cali,3,6,2024-06-03
+590,Alexander Figueroa Castro,31,F,Barranquilla,4,8,2024-11-22
+591,Wilson Hernán Flórez,62,F,Bogotá,1,6,2024-09-18
+592,Jorge Alexander Hoyos Guerrero,44,M,Bogotá,1,15,2024-12-05
+593,Fernando Santos Garzón,20,F,Medellín,2,16,2024-07-14
+594,Nidia Muñoz Martínez,35,M,Cartagena,5,13,2024-07-13
+595,Jacqueline Ríos Méndez,60,M,Cartagena,5,11,2025-03-27
+596,Nelson Castañeda,69,F,Cali,3,12,2024-11-23
+597,Milena María Montenegro,35,M,Bogotá,1,6,2024-09-26
+598,Andrea Gladys Sánchez Garzón,59,F,Cali,3,8,2025-04-08
+599,Marcos William Mosquera,24,F,Bogotá,1,12,2025-01-03
+600,Alexis Leonardo Sierra Castellanos,52,F,Medellín,2,15,2024-06-21
+601,Isabel Salcedo,31,F,Bogotá,1,7,2024-07-12
+602,Elizabeth Velandia,42,F,Cali,3,7,2024-09-05
+603,Diana Rodríguez,50,F,Medellín,2,16,2025-05-24
+604,Andrea González,71,F,Cali,3,5,2024-06-26
+605,Andrés Jesús Velasco,58,F,Medellín,2,10,2024-08-01
+606,Carlos Kevin Cortés Arévalo,51,F,Cali,3,16,2024-10-30
+607,David Lozano Rojas,42,M,Bogotá,1,10,2025-01-10
+608,Janneth Muñoz,29,F,Bogotá,1,10,2024-08-26
+609,Cristian Gómez,77,M,Medellín,2,9,2024-08-24
+610,Gabriela Tatiana Ariza,60,F,Bogotá,1,11,2025-05-26
+611,Mario Correa Henao,36,M,Cali,3,7,2025-01-30
+612,Marcela Osorio Silva,51,F,Cali,3,8,2024-11-11
+613,Sandra Luisa Bedoya,28,F,Bogotá,1,14,2025-04-08
+614,Ana Paola Palacios,40,M,Medellín,2,15,2024-11-01
+615,Patricia Leticia Ardila Muñoz,26,F,Bogotá,1,14,2025-03-12
+616,Sofía Villamizar Rueda,33,F,Bogotá,1,7,2025-05-04
+617,Patricia Rivas,56,F,Medellín,2,6,2024-10-15
+618,Inés Karen Arroyo,77,F,Bogotá,1,5,2025-03-29
+619,Alexander Juan Hernández,55,M,Cali,3,10,2024-12-24
+620,Aura Luz López Salazar,69,M,Bogotá,1,7,2024-12-01
+621,Doris Carmen Álvarez,45,F,Medellín,2,8,2025-05-02
+622,Juliana Álvarez,39,M,Barranquilla,4,12,2025-04-29
+623,Yuli Rodríguez,44,M,Medellín,2,14,2024-11-25
+624,María Vargas Ariza,38,F,Barranquilla,4,11,2024-07-20
+625,Clemencia Olga Herrera Gallego,56,M,Bogotá,1,13,2024-07-01
+626,Victoria Delgado,43,F,Medellín,2,5,2024-11-21
+627,Santiago Rivera,54,M,Bogotá,1,11,2024-07-02
+628,Brayan Leonardo Ceballos,66,F,Medellín,2,9,2025-02-22
+629,Juan Mejía,72,M,Barranquilla,4,10,2025-02-17
+630,Jairo Julio Rivera Solano,51,F,Bogotá,1,16,2025-01-03
+631,Andrés Edison Mora,58,M,Medellín,2,7,2025-05-25
+632,Luis Jhon Martínez,59,M,Barranquilla,4,8,2025-01-18
+633,María Molina,58,F,Cartagena,5,15,2024-09-06
+634,Mercedes Cristina Rincón,58,M,Cali,3,6,2024-12-02
+635,Angélica Rocío Rincón Rodríguez,46,M,Medellín,2,6,2024-12-26
+636,Estella García,77,F,Cartagena,5,16,2024-06-15
+637,María Marín Fajardo,72,F,Barranquilla,4,10,2024-12-16
+638,Luz Omaira Loaiza,25,M,Cartagena,5,14,2024-12-01
+639,Martha Kelly Osorio Figueroa,41,M,Bogotá,1,5,2024-07-22
+640,Johana Ana Gamboa,61,M,Bogotá,1,8,2024-12-27
+641,Sandra Sánchez,30,F,Cali,3,12,2024-09-04
+642,Johana García,18,M,Barranquilla,4,16,2025-04-19
+643,Diana Gladys Portilla Ortiz,41,M,Bogotá,1,8,2025-04-18
+644,Patricia Lilia Acosta Gutiérrez,57,F,Medellín,2,10,2024-10-22
+645,Leidy Alejandra Flórez Castañeda,32,M,Medellín,2,8,2024-10-10
+646,Olga Mendoza Caicedo,68,M,Barranquilla,4,12,2024-05-31
+647,Alejandra Ximena Villegas,47,F,Bogotá,1,15,2025-03-07
+648,Paula Luz Rubio,55,M,Medellín,2,14,2024-07-27
+649,Nubia Luz Herrera,57,M,Medellín,2,6,2024-12-12
+650,Manuel Torres Gómez,67,M,Medellín,2,14,2025-04-14
+651,Leonardo Jairo Escobar,21,F,Medellín,2,5,2024-11-24
+652,María Gómez Cruz,75,M,Cali,3,15,2024-06-14
+653,Vanessa Cecilia González Lara,53,F,Medellín,2,7,2025-01-13
+654,Antonio Sanabria,30,M,Bogotá,1,15,2024-09-28
+655,Ariel Gutiérrez,32,M,Bogotá,1,7,2024-10-12
+656,Miguel Edwin Ortiz Vallejo,26,M,Cali,3,13,2025-02-11
+657,Antonio Vera Sánchez,77,F,Medellín,2,13,2024-07-22
+658,Olga Cruz,69,F,Bogotá,1,14,2024-11-21
+659,Valentina Cortés Cifuentes,49,M,Bogotá,1,9,2024-09-17
+660,Giovanny Elías Moreno Perea,52,F,Cali,3,5,2025-03-10
+661,Alexander Miguel Ortiz Rojas,29,M,Barranquilla,4,12,2024-10-06
+662,Leonardo Valencia,79,M,Cali,3,7,2024-10-23
+663,Adriana Castro,63,M,Barranquilla,4,13,2025-02-06
+664,Mirian Cano Melo,28,F,Cali,3,14,2025-04-03
+665,Edith Dolores García Anaya,42,F,Barranquilla,4,12,2025-03-23
+666,Milena Flórez,38,M,Bogotá,1,7,2024-07-22
+667,Claudia Valencia,48,M,Barranquilla,4,8,2025-05-09
+668,Luz Diana Pérez López,61,M,Bogotá,1,8,2024-08-05
+669,Rosa Leidy Zapata Gómez,78,M,Cali,3,11,2024-07-07
+670,Juan Elías Ospina,71,M,Cali,3,15,2024-11-06
+671,Oswaldo Andrés González,56,F,Cali,3,13,2024-12-04
+672,Jairo Buitrago,64,F,Barranquilla,4,15,2024-10-23
+673,Pablo Eduar Quiroga,25,M,Cali,3,16,2025-03-06
+674,Ángel Ruiz,21,F,Barranquilla,4,10,2024-10-31
+675,Esperanza Laura Castro,59,F,Medellín,2,7,2025-01-08
+676,Jairo Cruz,63,M,Cali,3,16,2025-02-04
+677,Luis Espinosa Delgado,30,M,Medellín,2,7,2025-04-03
+678,Luis López,59,F,Medellín,2,10,2025-03-16
+679,Jairo Zapata Rivera,34,F,Bogotá,1,16,2024-09-26
+680,Rubén Peña,74,F,Cartagena,5,14,2025-04-22
+681,Elena Isabel Rico Roa,23,F,Barranquilla,4,8,2024-07-18
+682,Marlon Eduar Bastidas,21,M,Cartagena,5,7,2024-09-04
+683,Mario Quintero Ibarra,41,F,Barranquilla,4,8,2024-09-14
+684,Lucía Cecilia Pérez Bermúdez,55,M,Bogotá,1,8,2025-01-18
+685,Janeth Villegas,38,F,Cali,3,11,2025-04-11
+686,Nelson Pedro Torres,77,M,Bogotá,1,12,2024-10-06
+687,Gabriela Isabel Caicedo,24,F,Medellín,2,8,2024-08-13
+688,Elvia Loaiza Rojas,33,F,Bogotá,1,8,2024-12-17
+689,María Ligia Espinosa,73,F,Cali,3,13,2025-02-13
+690,Fernando Gutiérrez,35,M,Cali,3,14,2025-05-18
+691,Armando Álvaro Ospino Alzate,63,M,Medellín,2,7,2024-10-05
+692,Jhoana Elena González,29,F,Cali,3,11,2024-12-01
+693,Julio Pablo Valderrama,48,F,Barranquilla,4,16,2024-06-20
+694,Manuel Torres Ariza,53,F,Medellín,2,8,2025-03-11
+695,Germán Jesús Cárdenas,50,F,Barranquilla,4,13,2024-09-28
+696,Alexandra Alzate Cabrera,45,M,Bogotá,1,10,2025-01-16
+697,Sofía Rivera,62,M,Cartagena,5,15,2025-04-10
+698,Alejandra Henao,37,F,Cali,3,6,2024-07-24
+699,María León,77,M,Cartagena,5,12,2024-08-06
+700,Óscar José Moreno,33,M,Cali,3,13,2024-11-29
+701,Alfonso Esteban Salgado,27,F,Cali,3,16,2024-12-13
+702,Alfonso Francisco Buitrago,66,F,Bogotá,1,7,2025-04-29
+703,Clara Mary Muñoz Ortega,34,M,Medellín,2,11,2024-09-23
+704,Magda Esther Bonilla Zambrano,59,M,Cartagena,5,8,2024-07-26
+705,Fernando Ángel Guerrero,46,F,Barranquilla,4,15,2025-01-17
+706,Marina Yulieth Toro,38,F,Medellín,2,10,2025-04-30
+707,Aníbal Pérez,43,F,Barranquilla,4,9,2024-12-10
+708,Javier Caballero Ramírez,52,M,Cartagena,5,12,2025-01-10
+709,Carlos González García,23,M,Barranquilla,4,14,2025-05-30
+710,Sebastián Cristian González Pérez,61,F,Bogotá,1,12,2024-06-19
+711,José Zambrano,41,M,Barranquilla,4,14,2024-07-17
+712,Raquel Ortiz Fuentes,41,F,Bogotá,1,9,2025-04-01
+713,Jorge Maldonado Acosta,45,M,Medellín,2,17,2025-01-04
+714,Vanessa Puentes Vargas,31,F,Medellín,2,8,2024-08-01
+715,Eliana Rojas García,71,M,Medellín,2,16,2024-06-19
+716,Gerson Gutiérrez Torres,23,F,Barranquilla,4,17,2024-06-15
+717,Álvaro Quintero,73,M,Medellín,2,16,2025-01-02
+718,Enrique López Leal,60,M,Cali,3,9,2024-12-25
+719,Julio Restrepo,50,M,Cali,3,10,2025-02-11
+720,María Clara Pérez Bolívar,32,F,Bogotá,1,13,2024-10-16
+721,Luz Muñoz Mendoza,41,M,Cali,3,15,2024-10-12
+722,Esperanza Duarte Muñoz,43,F,Medellín,2,12,2025-05-01
+723,Diana Ávila Cruz,74,M,Medellín,2,14,2025-01-02
+724,Luis Ortiz Forero,22,M,Cartagena,5,17,2025-01-07
+725,Sonia Suárez,41,M,Bogotá,1,13,2024-09-13
+726,Esneider Fajardo,38,F,Medellín,2,8,2025-05-12
+727,Michael Contreras,50,F,Bogotá,1,14,2025-05-09
+728,Alexandra López Córdoba,59,M,Bogotá,1,10,2024-08-12
+729,Cecilia Rodríguez,50,M,Cali,3,12,2024-11-10
+730,Vilma Galeano Gómez,51,F,Bogotá,1,14,2024-07-19
+731,Matilde Sandra Vergara Sarmiento,56,F,Cali,3,16,2024-07-04
+732,Manuel Suárez Hernández,23,F,Cali,3,5,2025-03-30
+733,María Ana Caro Galvis,27,M,Barranquilla,4,11,2025-03-04
+734,Alexander Rubén Sanabria,65,M,Cartagena,5,11,2024-12-22
+735,Augusto Trujillo,33,F,Bogotá,1,7,2024-07-31
+736,Karen Guzmán,39,F,Cali,3,8,2025-05-29
+737,Cristian Pardo,55,F,Barranquilla,4,14,2025-03-11
+738,Fabiola Morales Medina,68,M,Cartagena,5,16,2024-12-25
+739,Dora Rojas,24,M,Bogotá,1,5,2024-06-30
+740,Lucía Duarte Amaya,21,F,Cali,3,8,2024-08-21
+741,Paula Gladys Martínez,73,F,Medellín,2,9,2025-04-12
+742,Lizeth Nidia Durán,69,F,Cali,3,10,2024-08-28
+743,Laura Rodríguez Duarte,45,F,Cali,3,14,2024-08-04
+744,Leidy María Delgado Fajardo,42,F,Bogotá,1,5,2024-11-15
+745,Ximena María Salas,50,F,Cartagena,5,8,2025-03-06
+746,Margoth Restrepo,56,F,Barranquilla,4,10,2024-06-10
+747,Paola Gabriela Villamil Rodríguez,67,M,Barranquilla,4,13,2024-07-29
+748,Ruth Barrios,28,F,Medellín,2,8,2025-03-29
+749,Felipe Andrés Jiménez,77,F,Bogotá,1,18,2025-05-16
+750,Carlos Ramiro Morales Rosero,38,F,Cali,3,15,2024-07-01
+751,Jair Luis Martínez,32,F,Cali,3,12,2024-07-29
+752,Luz Fabiola Rivera Rojas,77,F,Medellín,2,13,2024-07-16
+753,Marta Cortés Murillo,24,F,Barranquilla,4,12,2024-12-26
+754,Sandra Alejandra Cabrera,44,F,Medellín,2,8,2025-02-16
+755,Javier Jair Amaya Salazar,45,M,Medellín,2,14,2024-12-07
+756,Juan Pablo Delgado,54,F,Bogotá,1,13,2024-11-17
+757,Mercedes Nataly Hernández Alvarado,23,F,Medellín,2,10,2025-01-18
+758,Janneth López López,26,F,Barranquilla,4,12,2024-06-21
+759,Maritza Martínez Perea,62,M,Cartagena,5,13,2025-04-27
+760,Luz Erika Ramírez,30,F,Cali,3,10,2025-05-12
+761,Johanna Jaramillo Suárez,75,M,Cartagena,5,8,2025-03-06
+762,Jhon Darío López Mesa,22,M,Bogotá,1,12,2025-01-20
+763,Claudia Quintero Fuentes,42,F,Medellín,2,8,2024-08-01
+764,Luz Jimena Sánchez,79,M,Bogotá,1,7,2024-08-30
+765,Juan Alberto Ocampo,46,M,Bogotá,1,8,2025-05-02
+766,Lida Montes Velásquez,23,M,Cartagena,5,9,2025-03-05
+767,María Guerra,64,F,Medellín,2,15,2025-02-20
+768,Camilo Torres Álvarez,51,F,Medellín,2,14,2025-05-27
+769,Luz Adela Salas,47,F,Barranquilla,4,8,2025-01-20
+770,Humberto Sánchez Carvajal,43,F,Bogotá,1,11,2025-05-08
+771,Stella Cuéllar Mejía,69,F,Medellín,2,6,2024-11-24
+772,David Jair Moreno,35,F,Barranquilla,4,15,2024-10-20
+773,Dina Lina Ávila,39,M,Medellín,2,15,2025-05-06
+774,Humberto Ballesteros,47,M,Barranquilla,4,10,2024-10-14
+775,Antonio Torres,78,F,Bogotá,1,8,2024-12-04
+776,María García Rincón,57,F,Medellín,2,7,2025-02-21
+777,Alejandro David Pineda,37,F,Bogotá,1,13,2025-02-18
+778,Yulieth María Rojas,40,F,Barranquilla,4,6,2025-03-27
+779,Elena Guerrero,42,M,Cali,3,8,2024-10-02
+780,Augusto Villamizar,38,M,Medellín,2,12,2024-06-05
+781,Inés Vargas,63,F,Medellín,2,15,2025-05-19
+782,Mariela Castillo Salazar,56,M,Barranquilla,4,9,2025-03-01
+783,Stella Silva,32,F,Bogotá,1,8,2024-10-04
+784,José Luis Muñoz,76,M,Cartagena,5,8,2024-12-07
+785,William Julio Ramírez Giraldo,51,F,Bogotá,1,13,2024-08-25
+786,Claudia Andrea Riascos Narváez,70,F,Bogotá,1,12,2024-07-04
+787,Yuly Arias,31,M,Medellín,2,7,2024-12-27
+788,Lucy Paula Cabrera,57,F,Bogotá,1,9,2025-05-06
+789,Lucero Bustamante,39,F,Cartagena,5,17,2024-09-17
+790,Carlos Giraldo,68,M,Medellín,2,15,2024-07-16
+791,Cecilia Ramírez Bohórquez,45,F,Cali,3,17,2025-03-04
+792,Emilio Hernández,26,M,Cali,3,12,2024-09-09
+793,Giovanni Rincón,36,M,Cali,3,14,2025-01-18
+794,José Erazo,55,M,Bogotá,1,9,2025-01-21
+795,Elena Lucía Páez,47,M,Bogotá,1,9,2024-08-21
+796,Luz Murillo,42,F,Medellín,2,5,2024-08-19
+797,Roberto Delgado Garzón,76,F,Medellín,2,10,2025-03-04
+798,Luz Ortiz Arias,21,F,Bogotá,1,15,2024-10-08
+799,Oliva Martínez Agudelo,78,F,Barranquilla,4,13,2024-07-12
+800,Jair Alexis Londoño,72,F,Cartagena,5,12,2025-05-05
+801,Liliana Polo,29,M,Medellín,2,6,2024-06-09
+802,Alejandra Mosquera Correa,38,M,Cali,3,7,2025-03-16
+803,Carlos Bustos Palacios,61,M,Bogotá,1,8,2025-04-25
+804,Paola Cardona Gutiérrez,78,M,Bogotá,1,11,2025-02-01
+805,Edith Beltrán,51,F,Barranquilla,4,9,2024-11-07
+806,Amparo Michel Álvarez,40,M,Bogotá,1,6,2024-11-07
+807,Stiven Hernández,29,F,Medellín,2,14,2025-05-08
+808,Myriam Rodríguez Rivera,69,M,Medellín,2,14,2024-06-25
+809,Fernanda Sepúlveda Garcés,68,F,Cali,3,12,2024-12-12
+810,Carlos Espinosa,68,F,Barranquilla,4,10,2025-05-13
+811,Jorge Alberto Campo,45,F,Medellín,2,12,2024-08-29
+812,Luz Paola Rodríguez Osorio,20,F,Barranquilla,4,12,2025-05-22
+813,Walter Andrés Córdoba,44,M,Medellín,2,7,2025-04-03
+814,Alexander Julio Pérez,40,F,Medellín,2,16,2025-04-12
+815,Andrea Rojas,35,M,Cartagena,5,11,2025-02-10
+816,Yesid Agudelo Pinzón,25,M,Bogotá,1,12,2024-09-22
+817,Clara Medina,46,M,Cartagena,5,17,2024-08-29
+818,José Ortega Alarcón,31,M,Cali,3,5,2024-08-18
+819,Fernando César Acosta Acevedo,30,M,Bogotá,1,9,2024-08-22
+820,Esperanza Romero,66,F,Barranquilla,4,11,2024-06-02
+821,Carlos Díaz,77,M,Bogotá,1,15,2025-05-23
+822,Enrique Francisco Gaitán Ospina,70,M,Medellín,2,16,2025-04-09
+823,Andrés Miguel Solano,79,M,Medellín,2,17,2024-08-12
+824,Daniel Fernando Rivera Castaño,66,M,Barranquilla,4,14,2024-07-22
+825,María Ceballos Vega,68,M,Bogotá,1,5,2024-12-14
+826,Alexandra Castrillón,56,M,Cali,3,13,2025-01-21
+827,Eduardo Sebastián Solano Restrepo,63,M,Medellín,2,9,2025-03-16
+828,Paola Barbosa Guerrero,36,F,Medellín,2,5,2025-05-18
+829,Hugo Andrés Torres Rojas,70,M,Cartagena,5,13,2024-09-13
+830,Alonso Jiménez Ángel,56,F,Barranquilla,4,5,2024-11-09
+831,Diana María Gómez,42,M,Barranquilla,4,16,2024-10-01
+832,Fernando Rueda Ruiz,64,M,Barranquilla,4,13,2024-09-17
+833,María Ingrid Pacheco,35,F,Cali,3,6,2025-03-31
+834,Lorena Ospino Rodríguez,50,M,Cali,3,7,2025-02-18
+835,Elvis Johan Buitrago,36,M,Medellín,2,9,2024-08-05
+836,Yudy Vanegas Salcedo,50,F,Barranquilla,4,13,2025-01-25
+837,Ignacio Miguel Acevedo Quiroga,58,M,Medellín,2,17,2024-08-15
+838,Jhoan Alberto Zapata Romero,58,F,Cali,3,7,2025-02-11
+839,Stella Ortiz,30,F,Cartagena,5,6,2025-01-30
+840,Francisco Velasco Gutiérrez,26,M,Bogotá,1,7,2024-09-05
+841,Beatriz González Vargas,37,F,Barranquilla,4,12,2025-02-10
+842,Fernando Luis Cabrera,55,M,Cartagena,5,11,2024-09-24
+843,Isabel Martha Ramírez Erazo,58,F,Barranquilla,4,14,2024-12-21
+844,Enrique Héctor Jiménez,72,M,Medellín,2,8,2024-11-29
+845,María Mejía,79,M,Cartagena,5,16,2024-12-28
+846,Guillermo Rivera,74,F,Barranquilla,4,15,2024-06-17
+847,Mercedes Becerra,35,F,Cali,3,11,2024-07-06
+848,Yaneth Johanna Carvajal Acosta,26,M,Bogotá,1,8,2024-11-17
+849,Beatriz Cardona,77,F,Barranquilla,4,11,2024-07-17
+850,Mayra Luz Ortega Beltrán,20,F,Medellín,2,6,2024-12-08
+851,Eugenia Díaz,57,M,Medellín,2,15,2024-08-30
+852,Elkin Pérez Torres,71,F,Medellín,2,16,2024-09-29
+853,Alexander Bravo Rodríguez,51,F,Medellín,2,6,2024-07-17
+854,Alexis Suárez,54,F,Cali,3,11,2024-07-05
+855,Eugenia Lucy Saavedra Londoño,37,M,Medellín,2,5,2024-08-30
+856,Bibiana María Vergara Blanco,45,M,Cali,3,16,2024-08-26
+857,Judith García,22,F,Bogotá,1,5,2024-12-09
+858,Maicol Elkin Gómez Caro,73,F,Barranquilla,4,7,2025-01-04
+859,Luis Camargo,21,M,Medellín,2,11,2024-11-21
+860,Germán Mena Vargas,73,F,Medellín,2,7,2025-05-27
+861,Arturo Andrés Guerrero,21,F,Cartagena,5,7,2024-07-11
+862,Emilse Niño Benavides,44,F,Cartagena,5,11,2024-08-26
+863,Víctor Luis Galvis Barbosa,76,M,Bogotá,1,8,2025-03-12
+864,Leonor Medina,54,F,Medellín,2,10,2025-04-05
+865,Marcela Milena Navarro Rodríguez,54,M,Cartagena,5,11,2024-12-09
+866,Fernanda María Marín Alvarado,35,F,Medellín,2,13,2024-10-30
+867,Camilo Franco,30,M,Cartagena,5,16,2025-05-28
+868,Fanny Milena Acevedo Prada,49,F,Bogotá,1,10,2025-03-10
+869,Ana Cecilia Escobar,54,M,Cali,3,12,2024-06-21
+870,Fabián Carlos Henao,62,F,Cali,3,5,2024-11-18
+871,Andrea González,68,M,Barranquilla,4,10,2025-02-14
+872,Katerine Graciela Maldonado,62,M,Barranquilla,4,17,2024-06-29
+873,Ana Judith Páez Melo,63,M,Bogotá,1,17,2024-11-22
+874,Martha María Ruiz Valencia,56,F,Cartagena,5,11,2025-03-05
+875,Jhonatan Vargas,41,M,Bogotá,1,7,2025-03-15
+876,Hermes Eduardo Martínez Hernández,51,M,Bogotá,1,7,2024-10-03
+877,Álvaro José Galindo,34,M,Medellín,2,9,2025-03-17
+878,David Jiménez,74,F,Cali,3,7,2025-04-09
+879,Alexis Jesús Alzate,56,M,Medellín,2,18,2024-08-20
+880,Lucía González Ávila,34,M,Bogotá,1,14,2024-12-21
+881,Juan Luis Uribe Sandoval,44,M,Cartagena,5,9,2024-11-25
+882,Alexandra Loaiza Calderón,62,M,Barranquilla,4,6,2025-04-10
+883,María Liliana Prieto,28,M,Bogotá,1,12,2025-05-20
+884,Bernardo Acosta,37,M,Barranquilla,4,11,2025-05-07
+885,Graciela Ortiz Morales,34,M,Cartagena,5,16,2025-04-01
+886,Yudy Espinosa Orjuela,61,F,Medellín,2,8,2025-05-15
+887,José Lozano Bernal,72,F,Barranquilla,4,10,2025-02-10
+888,Nicolás Duván Guerra,50,F,Medellín,2,8,2024-12-20
+889,Luisa Blanca Díaz Pérez,44,M,Medellín,2,14,2024-05-31
+890,Luz Lizeth Martínez Oviedo,34,M,Medellín,2,14,2024-12-04
+891,Olga Rojas,35,F,Cartagena,5,10,2024-08-06
+892,Gladys Patricia Herrera Martínez,64,F,Cali,3,7,2024-06-24
+893,Segundo Díaz Hernández,65,M,Cartagena,5,13,2025-03-12
+894,José Elkin Vanegas,62,M,Bogotá,1,15,2024-06-23
+895,Andrea Moreno,49,F,Barranquilla,4,6,2024-07-30
+896,Andrés Rodríguez,20,M,Medellín,2,7,2025-04-11
+897,Valentina Liliana Castro,63,M,Medellín,2,10,2025-04-14
+898,Fredy Pérez Lozano,49,F,Bogotá,1,13,2024-06-13
+899,Dubán Gustavo Vásquez,71,F,Barranquilla,4,12,2024-12-28
+900,Javier Monroy,38,F,Cali,3,15,2025-05-10
+901,Alejandro Castro Ariza,52,F,Medellín,2,7,2024-08-11
+902,Mauricio David Guerrero,52,M,Barranquilla,4,14,2025-05-22
+903,Lorena Cruz Castellanos,66,F,Cali,3,7,2025-05-03
+904,Viviana Elena Galvis,20,M,Bogotá,1,12,2025-05-24
+905,William Espinosa Morales,18,M,Barranquilla,4,9,2025-02-09
+906,Yenifer María Arboleda,25,M,Bogotá,1,9,2024-12-16
+907,Liliana Torres Camacho,53,M,Barranquilla,4,16,2024-07-03
+908,Wilman Rojas Cuéllar,40,M,Bogotá,1,7,2024-11-15
+909,Óscar Restrepo García,21,F,Bogotá,1,7,2024-10-26
+910,Luis Enrique Suárez,25,M,Medellín,2,11,2025-03-17
+911,Cecilia Marina Arenas Benavides,36,M,Bogotá,1,7,2024-12-01
+912,Rosa Vera,57,M,Medellín,2,11,2025-03-15
+913,Eugenia Cruz,77,F,Barranquilla,4,13,2024-06-17
+914,Anderson Alexander Hernández Ochoa,19,F,Bogotá,1,12,2025-05-28
+915,Felipe Miguel Díaz,77,F,Medellín,2,14,2024-09-24
+916,Nidia Claudia Chaparro,40,F,Medellín,2,12,2024-11-07
+917,Sebastián Marcos Marín,44,F,Medellín,2,15,2025-02-28
+918,Martha Mónica Mendoza,18,M,Medellín,2,12,2024-12-26
+919,Antonio Cruz,30,M,Bogotá,1,15,2025-03-01
+920,Andrés Chávez Trujillo,74,M,Medellín,2,8,2024-07-19
+921,Fanny Ramos Serrano,72,M,Bogotá,1,11,2025-01-23
+922,Manuel Rodríguez,25,F,Cali,3,16,2025-05-13
+923,Gabriel Zapata Medina,67,F,Cali,3,9,2024-12-22
+924,Cristhian Arteaga,69,M,Barranquilla,4,7,2024-09-19
+925,Paola Beatriz Valencia Flórez,47,M,Medellín,2,13,2025-02-17
+926,Fernando Medina,40,F,Bogotá,1,10,2024-07-28
+927,Armando Fabio Vanegas Pacheco,48,F,Medellín,2,7,2025-03-20
+928,Luis Tamayo,51,M,Bogotá,1,6,2024-10-17
+929,Luis Villegas Correa,32,M,Barranquilla,4,15,2025-01-20
+930,Valentina Ligia Medina,43,F,Medellín,2,6,2024-08-06
+931,Damaris Alejandra Sarmiento Jiménez,40,F,Barranquilla,4,12,2024-07-24
+932,Enrique Wilmer Torres Hoyos,23,M,Medellín,2,6,2024-12-12
+933,Graciela Paula Duarte,45,M,Bogotá,1,15,2025-05-07
+934,Fabián José Arboleda Rodríguez,36,M,Medellín,2,15,2025-05-10
+935,Lucía Leidy Gallego Correa,53,F,Medellín,2,7,2025-01-11
+936,José Gutiérrez Hoyos,66,F,Medellín,2,8,2025-01-31
+937,Nubia Garzón Morales,54,M,Cartagena,5,14,2025-03-25
+938,José Ramírez Rodríguez,46,M,Bogotá,1,16,2025-04-19
+939,Luis Francisco Gómez Pérez,27,M,Cali,3,15,2025-02-21
+940,Alba Posada Padilla,60,M,Medellín,2,13,2025-05-12
+941,Liliana Fernanda Sánchez Herrera,61,M,Cartagena,5,10,2025-05-25
+942,Andrés López Ramírez,42,F,Cali,3,6,2024-10-25
+943,Javier Blanco,36,M,Bogotá,1,16,2024-06-28
+944,Claudia Marcela Villa,54,F,Bogotá,1,11,2025-02-10
+945,Jhon Luis Caicedo López,58,M,Medellín,2,13,2025-03-03
+946,Miguel Edwin Vargas,52,F,Cali,3,7,2025-03-11
+947,Luis Mauricio Bolaños,58,M,Bogotá,1,16,2024-12-19
+948,Pedro López,53,M,Cali,3,7,2024-10-23
+949,Arturo César Londoño Díaz,26,F,Bogotá,1,6,2025-04-11
+950,Lina Escobar Restrepo,50,F,Barranquilla,4,11,2024-12-05
+951,Alexander Lozano,51,M,Cali,3,13,2024-11-29
+952,María Agudelo,53,F,Cartagena,5,14,2024-07-29
+953,Lucía Maritza López,61,F,Medellín,2,7,2025-01-27
+954,Martha Milena Cáceres Pabón,71,F,Cali,3,10,2024-08-23
+955,Estela Amparo Sánchez Mercado,77,M,Cartagena,5,6,2024-10-07
+956,Leonardo Luis Sandoval,66,F,Cali,3,7,2024-07-05
+957,Verónica Gloria Ortega Gutiérrez,61,M,Medellín,2,11,2025-02-03
+958,Salvador Santiago Medina Sánchez,30,M,Cali,3,10,2024-09-25
+959,Alberto Ariza,39,M,Medellín,2,12,2024-09-21
+960,Mary Lucía Mora Rivas,52,M,Cartagena,5,9,2024-06-06
+961,Andrea Vásquez,34,F,Medellín,2,8,2024-08-04
+962,Mauricio Leonel Ramos,46,M,Medellín,2,12,2024-08-06
+963,Manuel Bermúdez,77,F,Cartagena,5,14,2025-01-30
+964,Xiomara Luisa Carrillo,72,F,Barranquilla,4,12,2024-12-12
+965,Amparo Marcela Restrepo,75,F,Medellín,2,5,2024-11-12
+966,Nancy Ana Bravo,76,M,Bogotá,1,12,2025-03-27
+967,Daniela Mosquera Benavides,23,M,Bogotá,1,16,2024-07-28
+968,Milena Carolina Buitrago Moreno,72,F,Medellín,2,10,2024-07-19
+969,Beatriz Pérez,79,F,Medellín,2,12,2024-07-08
+970,Isabel Laura Espitia,24,F,Cali,3,11,2024-08-05
+971,Andrés Juan Sánchez Ramírez,28,F,Bogotá,1,7,2024-08-09
+972,José Ocampo Murillo Guerra,73,F,Cali,3,6,2025-04-08
+973,Luis Robinson Torres,57,M,Bogotá,1,12,2025-05-02
+974,José Leonardo Marín Ríos,51,F,Cartagena,5,16,2025-05-28
+975,Marcos Carlos Guzmán,21,F,Cali,3,14,2025-05-19
+976,Mónica Acevedo,22,F,Cartagena,5,15,2024-07-15
+977,Sonia Yolanda Montenegro Castañeda,32,F,Cali,3,10,2024-07-02
+978,Claudia Cecilia Rodríguez Pérez,76,F,Medellín,2,11,2024-12-10
+979,María López,43,M,Bogotá,1,13,2025-01-18
+980,Pedro Óscar Jaimes,36,M,Medellín,2,15,2024-12-31
+981,Gloria Pinzón,21,M,Medellín,2,10,2024-11-19
+982,Carmen Rosario Bravo Castellanos,69,F,Medellín,2,5,2024-06-13
+983,Angie Mena García,74,M,Barranquilla,4,14,2025-02-20
+984,Myriam Monsalve Oviedo,43,M,Cali,3,15,2024-06-09
+985,Felipe Jonatan Delgado,69,M,Bogotá,1,7,2024-06-16
+986,Jhonatan Ramírez,67,F,Bogotá,1,15,2025-03-04
+987,Jeison Cardona Quintero,78,F,Medellín,2,7,2025-04-15
+988,Lizeth Amparo Ávila Mora,23,F,Cartagena,5,10,2025-05-28
+989,María Constanza Solano,31,F,Barranquilla,4,11,2024-11-16
+990,Carlos Rubén Sánchez,46,F,Bogotá,1,7,2025-04-20
+991,Gustavo Carlos Ramírez,28,M,Bogotá,1,6,2025-01-25
+992,Luis Vanegas,45,F,Barranquilla,4,7,2025-02-15
+993,María López Ocampo,21,M,Bogotá,1,12,2025-04-29
+994,María Herrera,43,F,Barranquilla,4,13,2024-10-21
+995,Carlos Domínguez Rodríguez,54,M,Bogotá,1,14,2024-09-26
+996,Patricia Patricia Martínez Hernández,72,F,Cali,3,7,2024-06-05
+997,Diego Villamizar Sepúlveda,23,F,Bogotá,1,12,2024-07-04
+998,Paola Osorio Buitrago,78,F,Barranquilla,4,8,2024-08-29
+999,Antonio Andrés Rentería Ortiz,70,F,Cartagena,5,5,2025-05-18
+1000,Luz Carmen Bolaños,25,M,Cartagena,5,6,2024-09-14
+1001,Ricardo Martínez Carmona,49,F,Medellín,2,17,2024-09-06
+1002,Ramón Hernández,34,M,Medellín,2,5,2024-11-10
+1003,Erika Ángela Campo,39,M,Cali,3,9,2024-10-30
+1004,José Felipe Rodríguez,54,F,Cali,3,11,2024-07-10
+1005,Marcela Diana Restrepo Ayala,45,F,Medellín,2,10,2024-11-27
+1006,Mary Erika Burbano,77,F,Bogotá,1,10,2024-09-08
+1007,Enrique Brayan Castillo Ocampo,65,M,Medellín,2,7,2024-06-07
+1008,Alexander Ramírez,74,M,Medellín,2,12,2025-03-04
+1009,Eduard Omar Angulo Orozco,62,F,Cartagena,5,8,2024-12-13
+1010,Oswaldo Antonio Solano Miranda,73,M,Medellín,2,10,2024-09-20
+1011,Marleny Yamile Valencia,49,M,Cartagena,5,7,2024-07-21
+1012,Víctor Eduardo Jiménez,37,F,Medellín,2,13,2025-04-20
+1013,Juan Díaz,52,M,Bogotá,1,10,2024-07-15
+1014,Mario Prieto Cano,31,M,Cali,3,12,2025-05-03
+1015,Alejandra Arias Cardona,46,F,Cartagena,5,6,2025-01-24
+1016,Liliana Hernández García,21,M,Medellín,2,10,2024-08-08
+1017,Yaneth Ávila Hernández,43,M,Cartagena,5,7,2025-03-03
+1018,Esmeralda Clara Romero Hernández,27,M,Bogotá,1,10,2025-03-22
+1019,Felipe Quintero,75,M,Bogotá,1,14,2024-09-30
+1020,María Yanet Mosquera Bedoya,73,M,Bogotá,1,5,2024-06-11
+1021,Julieth María Zapata,22,F,Cartagena,5,15,2024-11-06
+1022,Patricia Diana Mesa Mosquera,52,F,Cali,3,15,2024-12-03
+1023,Andrea Yamile Salazar Rivera,62,F,Barranquilla,4,17,2024-07-07
+1024,Martín Ardila Martínez,24,F,Cartagena,5,12,2025-01-09
+1025,Eduardo Zapata Mosquera,31,F,Medellín,2,14,2024-06-19
+1026,Guillermo Danny López,32,F,Medellín,2,13,2024-09-01
+1027,Juliana Gómez,25,M,Bogotá,1,10,2024-10-18
+1028,Rodolfo Rodríguez,63,F,Cali,3,8,2024-09-10
+1029,Beatriz Angie Cardona Guzmán,75,M,Medellín,2,15,2025-03-28
+1030,Nataly Castro,20,M,Medellín,2,7,2024-06-30
+1031,Eliecer Marco Solano,78,F,Barranquilla,4,13,2024-09-12
+1032,Lorena Omaira Vargas,41,F,Barranquilla,4,7,2025-03-27
+1033,Mayra Gloria Córdoba,74,M,Bogotá,1,9,2025-04-08
+1034,Jhony Perdomo,69,M,Bogotá,1,13,2024-07-09
+1035,Susana González Pacheco,70,F,Medellín,2,10,2025-03-26
+1036,Luz Mercedes Puentes,74,F,Bogotá,1,15,2025-05-09
+1037,Sandra Cabrera Bohórquez,74,F,Medellín,2,11,2025-05-10
+1038,Luis Córdoba Velasco,55,M,Bogotá,1,14,2024-12-25
+1039,Marina Ana Polo,68,F,Bogotá,1,9,2025-05-28
+1040,Miguel Vargas Uribe,55,M,Cartagena,5,8,2025-02-04
+1041,Jhonatan Carlos Mejía González,22,M,Barranquilla,4,9,2025-05-12
+1042,Socorro Julieth Martínez,47,F,Cali,3,12,2025-02-05
+1043,Antonio Polo,44,M,Barranquilla,4,11,2025-03-02
+1044,Héctor Sierra Zambrano,76,M,Medellín,2,14,2025-01-02
+1045,Luis Juan Cárdenas,33,F,Medellín,2,11,2024-10-22
+1046,Elkin Palacios Serrano,38,F,Medellín,2,12,2025-03-02
+1047,Eliana Mabel Ramírez Zambrano,72,M,Medellín,2,5,2024-08-13
+1048,Raúl José Gallego Moreno,76,F,Barranquilla,4,15,2025-03-09
+1049,Milena Karina Osorio Quintero,49,F,Medellín,2,16,2024-08-29
+1050,Alfonso Rojas,21,F,Medellín,2,10,2024-12-10
+1051,Jonathan Medina,76,M,Cali,3,10,2024-08-21
+1052,Carolina Sandra Monroy Ortega,18,M,Bogotá,1,10,2024-07-31
+1053,Luz Arias Zambrano,34,M,Bogotá,1,14,2024-08-05
+1054,Inés López,32,F,Bogotá,1,13,2025-03-29
+1055,Jeisson Ortiz,18,M,Medellín,2,12,2024-08-22
+1056,David Giraldo Sánchez,78,F,Bogotá,1,13,2025-03-04
+1057,Paula Camacho Ardila,76,M,Medellín,2,14,2024-06-21
+1058,Adriana Ana Cano Gómez,23,F,Medellín,2,14,2024-11-09
+1059,Javier Cáceres Naranjo,34,M,Bogotá,1,9,2025-02-17
+1060,Andrés Santos,64,M,Barranquilla,4,5,2024-06-17
+1061,Yaneth Mireya Obando Riascos,34,M,Cali,3,12,2025-01-02
+1062,Diana Contreras Campo,49,F,Bogotá,1,15,2024-10-19
+1063,Henry Antonio Gómez,36,M,Medellín,2,8,2025-01-17
+1064,Luis Jesús León,31,F,Bogotá,1,9,2024-11-15
+1065,Beatriz Eliana Hernández,78,M,Cartagena,5,5,2024-09-21
+1066,Wilber Jhoan Pérez Vergara,46,M,Cali,3,9,2025-03-16
+1067,Andrés Mora,66,F,Cali,3,11,2024-10-23
+1068,Antonio Quintero,22,M,Medellín,2,8,2025-04-03
+1069,José Méndez,65,F,Bogotá,1,11,2024-11-24
+1070,Eduardo Mena Herrera,33,M,Cartagena,5,7,2025-01-10
+1071,Víctor Solano,48,F,Barranquilla,4,16,2024-06-01
+1072,Catalina Obando,39,M,Medellín,2,14,2024-10-15
+1073,Albert Pedro Rodríguez,24,F,Barranquilla,4,14,2024-09-20
+1074,María María Gallego Rincón,67,F,Cartagena,5,14,2025-02-14
+1075,Jesús Javier Domínguez,35,F,Cartagena,5,13,2025-02-24
+1076,Fabián Vergara,66,F,Bogotá,1,14,2024-07-21
+1077,Carmen Lina Castro Perdomo,44,F,Medellín,2,10,2025-03-28
+1078,Esteban Calderón Mesa,22,M,Cartagena,5,6,2024-09-09
+1079,Óscar Adolfo Rodríguez Quiroga,76,M,Bogotá,1,9,2024-07-25
+1080,Luz Peña,36,F,Medellín,2,7,2025-05-01
+1081,Federico Arrieta,47,M,Bogotá,1,10,2025-03-03
+1082,Fernando Julián Duarte,30,F,Cartagena,5,13,2024-10-11
+1083,Daniela Parra,40,F,Barranquilla,4,11,2024-09-19
+1084,Diego Luis Ardila,71,M,Medellín,2,13,2024-11-26
+1085,Flor Martha García,41,F,Cartagena,5,13,2024-08-27
+1086,Luis Rubén Herrera García,25,F,Cartagena,5,15,2024-07-13
+1087,Luis Córdoba,23,F,Bogotá,1,16,2024-07-09
+1088,María Kelly Díaz Sanabria,58,M,Cartagena,5,9,2025-01-17
+1089,Mónica Natalia Portilla Marín,58,M,Cali,3,6,2024-09-05
+1090,Johana Mesa Henao,76,M,Medellín,2,6,2025-03-18
+1091,Jimena Yamile Franco,52,F,Medellín,2,16,2024-08-26
+1092,Gallego Díaz,27,F,Medellín,2,6,2024-06-22
+1093,Doris Camargo,72,M,Bogotá,1,12,2024-11-10
+1094,María Yurany Marín,58,F,Bogotá,1,11,2024-08-26
+1095,Joaquín Caro Triana,37,M,Cali,3,9,2024-08-18
+1096,Rosa Luisa Moreno,51,F,Medellín,2,7,2024-07-26
+1097,Ernesto Rodríguez,44,F,Medellín,2,7,2024-06-22
+1098,Edison Luis Vera,65,F,Barranquilla,4,16,2025-03-02
+1099,Juliana Bautista,76,F,Medellín,2,16,2024-12-22
+1100,Álvaro Galeano Orozco,18,M,Barranquilla,4,7,2024-06-16
+1101,Isabel Liliana Benítez Oviedo,70,M,Medellín,2,17,2025-05-16
+1102,Rocío Valentina Romero Ortega,38,M,Cartagena,5,12,2024-12-24
+1103,Héctor Galeano,51,F,Cali,3,13,2025-04-08
+1104,Juan Enrique Navarro,18,M,Bogotá,1,15,2025-04-27
+1105,Carlos Ardila,26,F,Cartagena,5,9,2024-06-16
+1106,Johanna Palacio,53,M,Cartagena,5,8,2025-01-09
+1107,José Jhon Cárdenas,23,F,Barranquilla,4,16,2024-09-29
+1108,Liliana Acosta,67,M,Bogotá,1,11,2024-11-25
+1109,Campo Gallego,69,M,Medellín,2,11,2024-09-02
+1110,Gloria Marcela Rodríguez,45,M,Cartagena,5,10,2025-04-16
+1111,Patricia Cuéllar,26,M,Medellín,2,9,2025-02-20
+1112,Luis González Alarcón,45,M,Cartagena,5,16,2024-08-08
+1113,Yésica Ruth Torres,67,F,Cali,3,14,2024-11-14
+1114,Alejandro Torres Triana,70,M,Cali,3,15,2024-07-31
+1115,Luz Camargo Rincón,50,M,Bogotá,1,8,2025-01-15
+1116,Julio Guillermo Martínez Torres,51,F,Bogotá,1,11,2025-02-07
+1117,Carlos León,75,M,Barranquilla,4,6,2024-10-14
+1118,Tulio Alexander Ruiz,72,F,Medellín,2,6,2025-04-28
+1119,Johanna María Benavides,36,F,Barranquilla,4,7,2025-04-17
+1120,Alberto Cruz Mendoza,27,F,Bogotá,1,15,2025-03-08
+1121,Moisés Jefferson Franco,44,F,Medellín,2,6,2025-01-06
+1122,Germán Luis Garcés Bolaños,59,M,Bogotá,1,14,2024-10-19
+1123,María Consuelo Castro Flórez,60,M,Bogotá,1,15,2024-10-11
+1124,Orlando Lozano,45,M,Medellín,2,12,2025-05-03
+1125,Tatiana Rosa Cárdenas Rodríguez,35,F,Barranquilla,4,11,2024-12-08
+1126,Mauricio Cáceres Valencia,75,M,Medellín,2,10,2024-11-09
+1127,Paul Rodrigo López,53,F,Medellín,2,12,2025-01-31
+1128,Alberto Julio Ortiz,35,F,Barranquilla,4,11,2024-08-10
+1129,Elkin Galindo Mesa,75,M,Barranquilla,4,12,2024-11-16
+1130,Jairo Andrés Rentería Gamboa,24,M,Cali,3,9,2025-01-14
+1131,Luz Luz Sánchez,45,M,Bogotá,1,12,2024-08-19
+1132,Rafael Javier Guevara Romero,31,F,Barranquilla,4,6,2024-11-16
+1133,Fredy Mejía,55,F,Medellín,2,6,2025-02-23
+1134,Albeiro Felipe Polo,22,M,Bogotá,1,10,2024-07-23
+1135,Diego Vergara,67,M,Cartagena,5,15,2024-11-12
+1136,Alex Sebastián Gallego,37,M,Barranquilla,4,8,2024-06-04
+1137,Laura Nelly Mendoza,18,F,Barranquilla,4,7,2024-07-05
+1138,María Marcela Sierra,42,M,Cali,3,13,2025-03-11
+1139,Alberto Carvajal,42,M,Barranquilla,4,17,2025-01-21
+1140,Karol Mora Méndez,72,F,Bogotá,1,12,2024-12-03
+1141,Patricia Vargas,59,M,Medellín,2,11,2024-06-21
+1142,María Fernández Velásquez,33,M,Medellín,2,16,2024-08-23
+1143,Miriam Lucía Velásquez Ospina,26,F,Bogotá,1,6,2024-11-22
+1144,Katerine Sandra Mora,56,F,Barranquilla,4,8,2024-08-01
+1145,Laura Rodríguez,59,M,Barranquilla,4,16,2024-09-03
+1146,Brandon Antonio Guzmán Agudelo,33,M,Medellín,2,6,2025-01-05
+1147,Enrique Rodríguez Mendoza,26,M,Bogotá,1,15,2025-05-25
+1148,José Edilson García,49,F,Medellín,2,10,2024-09-10
+1149,Camilo Juan Sánchez Lara,40,M,Bogotá,1,8,2025-04-18
+1150,Fernando Junior Puentes,38,F,Barranquilla,4,6,2024-12-05
+1151,Yenny Mireya Romero,35,F,Barranquilla,4,11,2024-09-01
+1152,Jesús Cardona Giraldo,47,M,Cali,3,11,2025-05-07
+1153,Yaneth Rodríguez Perea,75,F,Barranquilla,4,15,2024-11-26
+1154,Ernesto Alberto Díaz Toro,26,F,Bogotá,1,8,2025-04-04
+1155,Sebastián Sergio Páez Sandoval,71,M,Bogotá,1,12,2025-02-02
+1156,Adrián Gómez,79,F,Medellín,2,8,2024-06-11
+1157,Anyi Aurora Bastidas,78,M,Cali,3,13,2024-06-11
+1158,Rosa Virginia Ramírez,36,M,Medellín,2,6,2024-07-06
+1159,Luis José González,59,M,Medellín,2,16,2025-03-12
+1160,Yuri Nubia Caro,30,F,Medellín,2,7,2024-11-17
+1161,Enrique Navarro Figueroa,65,M,Cali,3,5,2025-02-21
+1162,Johan Alberto Ruiz Castro,78,M,Medellín,2,6,2025-03-10
+1163,Mario Bustamante,43,M,Bogotá,1,12,2024-10-22
+1164,Giovanni Vélez,43,M,Bogotá,1,13,2024-10-27
+1165,Liliana Chaparro,66,M,Bogotá,1,7,2024-12-14
+1166,Álvaro Arias Díaz,79,M,Barranquilla,4,10,2024-12-04
+1167,Ingrid Ariza,20,M,Cali,3,15,2025-03-31
+1168,Inés Ocampo Hernández,43,F,Bogotá,1,10,2024-10-10
+1169,Raúl Ojeda Montoya,26,F,Barranquilla,4,16,2025-03-09
+1170,Segundo Gómez,74,F,Barranquilla,4,14,2024-08-17
+1171,Alberto Edilberto Ruiz Osorio,68,F,Medellín,2,15,2024-10-02
+1172,Jairo Rico,46,M,Cali,3,14,2025-02-01
+1173,Albeiro Torres Bermúdez,62,M,Barranquilla,4,7,2025-05-19
+1174,Martha Prada,63,F,Bogotá,1,7,2024-08-02
+1175,Alejandra Paola González López,68,F,Barranquilla,4,15,2024-07-23
+1176,Cecilia Calderón,39,F,Bogotá,1,7,2024-08-07
+1177,José Andrés Castro Castillo,32,F,Barranquilla,4,14,2024-10-30
+1178,Rocío Velásquez Arango,62,F,Cali,3,9,2024-06-10
+1179,Betty Sandra Sarmiento Rueda,71,M,Medellín,2,7,2025-02-27
+1180,Sandra Jiménez,76,F,Cartagena,5,9,2025-01-07
+1181,Miguel Sanabria,71,F,Bogotá,1,8,2024-12-23
+1182,Consuelo Bolívar,79,F,Bogotá,1,14,2024-07-20
+1183,Andrea Yurani Acosta,48,M,Bogotá,1,8,2025-05-18
+1184,Yudy María Rincón Cabrera,66,M,Cali,3,7,2025-02-23
+1185,Gustavo Emilio Rico Torres,32,F,Barranquilla,4,6,2024-11-24
+1186,Carlos Forero,26,F,Cali,3,15,2024-07-19
+1187,Danilo Ricardo Sánchez Prada,62,F,Barranquilla,4,16,2024-06-07
+1188,Carlos Chávez,69,M,Cali,3,13,2025-01-24
+1189,Iván Fernando Portilla,61,M,Cali,3,7,2025-03-31
+1190,Mauricio Vargas Marín,45,F,Cali,3,12,2025-03-27
+1191,Alejandro Javier Mercado,40,M,Cartagena,5,16,2024-10-13
+1192,Diana Duque,43,F,Medellín,2,7,2024-07-16
+1193,Juan Vallejo,39,F,Cali,3,16,2025-02-23
+1194,Luz Johana Ramírez Montes,78,M,Medellín,2,15,2025-01-15
+1195,Marcela Luz Gonzáles,57,M,Medellín,2,11,2024-11-20
+1196,Enrique Mauricio Márquez Chávez,76,F,Medellín,2,14,2024-11-10
+1197,David Javier Mercado Correa,32,F,Medellín,2,16,2024-07-30
+1198,Daniel Sebastián Ávila Pérez,67,F,Cali,3,5,2024-12-05
+1199,Luis Bonilla Rentería,35,F,Barranquilla,4,8,2025-01-27
+1200,Piedad Montenegro,55,M,Medellín,2,5,2025-05-26
+1201,Daniela Mabel Rodríguez,47,M,Cartagena,5,8,2025-04-08
+1202,John Horacio Ballesteros Barbosa,49,F,Medellín,2,6,2025-05-26
+1203,Carolina Dayana Gómez,30,M,Cali,3,10,2024-07-23
+1204,José Juan Gómez,27,M,Barranquilla,4,10,2024-06-17
+1205,Alejandra Shirley Caicedo Giraldo,21,F,Barranquilla,4,11,2024-08-10
+1206,Patricia María Gutiérrez,41,F,Cartagena,5,12,2024-12-20
+1207,Eugenia Fernández Forero,29,M,Cali,3,17,2024-06-10
+1208,Rita Mosquera Marín,39,F,Bogotá,1,13,2024-08-31
+1209,Iván Andrey Ortiz García,32,M,Cartagena,5,9,2025-01-14
+1210,Yesenia Angie Ávila López,65,F,Barranquilla,4,15,2025-03-15
+1211,Fredy González Rivera,76,F,Cartagena,5,16,2024-08-28
+1212,Pablo Javier Mejía Gómez,24,F,Barranquilla,4,14,2024-09-19
+1213,David Arturo Beltrán Fernández,25,M,Bogotá,1,12,2024-06-27
+1214,Yineth Meza Sánchez,55,F,Cali,3,6,2024-10-28
+1215,Hernán Carlos Vallejo,78,M,Cartagena,5,9,2024-12-14
+1216,Hernando Camargo,44,M,Bogotá,1,15,2024-10-11
+1217,William Buitrago,28,M,Cartagena,5,5,2025-03-02
+1218,Gabriel Cano García,28,F,Barranquilla,4,10,2025-02-17
+1219,Angie Patricia Jaramillo Martínez,55,M,Bogotá,1,11,2024-08-21
+1220,Esperanza Yolanda Rodríguez Ramírez,49,F,Cali,3,14,2025-01-11
+1221,María Ximena Acosta,60,F,Barranquilla,4,13,2025-03-11
+1222,Katherine Gloria Martínez,22,M,Cartagena,5,8,2025-03-05
+1223,Carolina Ortega Suárez,21,M,Medellín,2,15,2024-06-26
+1224,Adolfo Steven Peña Garzón,27,M,Medellín,2,8,2025-02-08
+1225,Javier Lozano García,36,M,Bogotá,1,14,2024-09-17
+1226,Enrique Trujillo,51,M,Medellín,2,14,2024-08-01
+1227,Virginia López Mosquera,22,M,Cali,3,10,2025-01-20
+1228,Eduardo Roa Ortega,21,F,Cartagena,5,10,2025-04-16
+1229,Alejandro Leandro Muñoz Vélez,55,M,Medellín,2,5,2024-08-11
+1230,Manuel Bernardo Quintero Díaz,71,F,Medellín,2,6,2024-06-04
+1231,David Pérez,38,F,Cartagena,5,13,2024-10-30
+1232,Santos Elías Mendoza Ávila,76,M,Bogotá,1,10,2024-10-06
+1233,Martha Bonilla,27,F,Cali,3,15,2024-11-27
+1234,Paula Martha Manrique Suárez,24,F,Barranquilla,4,7,2024-07-12
+1235,Diana Gloria Morales,29,F,Bogotá,1,5,2024-06-02
+1236,Fernando Esteban Castañeda,34,M,Cali,3,12,2025-01-06
+1237,Luz Carmen Torres,65,M,Bogotá,1,6,2024-10-07
+1238,María Maldonado Polo,32,F,Bogotá,1,13,2024-06-14
+1239,Manuel Rojas Villa,47,F,Barranquilla,4,15,2024-12-14
+1240,Andrés Jhon Mosquera,43,F,Cali,3,8,2024-08-22
+1241,Daniel Pablo Vega Ruiz,55,F,Cali,3,6,2024-12-03
+1242,Cecilia Barragán García,28,F,Bogotá,1,8,2024-09-22
+1243,Luz Castro Díaz,37,F,Cali,3,13,2024-12-02
+1244,Ariel Sierra,34,F,Bogotá,1,14,2024-06-23
+1245,María Carmen Navarro Marín,33,F,Barranquilla,4,9,2024-09-14
+1246,Jhon Santos Acosta,76,M,Medellín,2,13,2025-01-08
+1247,Leonardo Edwin Ruiz,70,M,Bogotá,1,13,2024-07-30
+1248,Alexis Eduardo Cifuentes Ramos,26,M,Cartagena,5,14,2024-11-27
+1249,Ricardo Norberto Olaya,59,M,Bogotá,1,8,2024-11-26
+1250,Dahiana Luz Ortega Páez,32,M,Cali,3,13,2025-03-07
+1251,Dary García Ortiz,37,F,Bogotá,1,11,2025-04-14
+1252,Jesús Jorge Agudelo García,29,M,Medellín,2,13,2024-08-22
+1253,Cecilia Sonia Pinzón Soto,47,M,Barranquilla,4,6,2024-06-01
+1254,Brayan Mercado,51,F,Cali,3,8,2025-05-08
+1255,María Catalina Lozano Suárez,51,M,Bogotá,1,13,2024-10-02
+1256,María Restrepo,41,F,Bogotá,1,9,2024-09-15
+1257,Michael Javier Salazar,37,M,Medellín,2,10,2025-05-23
+1258,Cecilia Arévalo,57,F,Barranquilla,4,10,2024-08-26
+1259,Manuel García,40,F,Bogotá,1,13,2024-10-24
+1260,Alejandra Clara Caballero,73,F,Bogotá,1,13,2024-10-24
+1261,Leticia Diana López Rivera,66,F,Medellín,2,16,2025-02-03
+1262,Fernando Valencia Pineda,39,F,Bogotá,1,9,2024-07-14
+1263,Paola Ester Palacios López,41,M,Medellín,2,6,2024-10-14
+1264,Mercedes María Carmona Murcia,19,M,Bogotá,1,13,2024-06-01
+1265,Carmen Vargas Rojas,63,F,Barranquilla,4,13,2024-06-12
+1266,Nelson Jhon Marín Vélez,27,F,Medellín,2,10,2025-01-18
+1267,Alejandro Molano,65,F,Cali,3,14,2025-05-16
+1268,Enrique Muñoz,72,M,Bogotá,1,12,2025-02-11
+1269,Andrés González Alzate,59,M,Barranquilla,4,17,2025-04-17
+1270,Patricia Esperanza Pinzón Bernal,39,M,Medellín,2,13,2024-10-22
+1271,Humberto Wilson Fernández Mosquera,68,F,Cali,3,16,2024-06-02
+1272,Nora María Vargas,59,M,Cali,3,15,2024-07-15
+1273,Josué José Ibarra,34,F,Barranquilla,4,13,2025-02-23
+1274,Jesús Ramírez Gutiérrez,43,M,Cartagena,5,15,2024-11-10
+1275,Omar Niño,33,M,Medellín,2,10,2025-05-03
+1276,Juan Edison Pérez González,24,M,Barranquilla,4,12,2025-04-17
+1277,María Carmenza Portilla,33,M,Barranquilla,4,8,2024-09-08
+1278,Olga Viviana Orozco Herrera,42,F,Medellín,2,13,2024-11-13
+1279,Luz María Jiménez,34,M,Bogotá,1,14,2024-07-27
+1280,Luz Rodríguez Muñoz,30,M,Medellín,2,11,2024-12-29
+1281,Yaneth Yuli Sánchez,71,F,Barranquilla,4,17,2024-10-01
+1282,Juan Sanabria,30,F,Cartagena,5,12,2024-11-27
+1283,Juan Estrada,73,F,Bogotá,1,11,2025-01-10
+1284,Enrique Agudelo Silva,45,M,Medellín,2,10,2024-08-08
+1285,Yolima Yaneth Burgos,39,F,Barranquilla,4,11,2025-02-13
+1286,Socorro Fanny Díaz Guerrero,25,F,Cartagena,5,11,2024-11-29
+1287,Emma Edith Pérez,49,M,Barranquilla,4,16,2024-12-10
+1288,Milena Lucía Fuentes Vásquez,76,F,Medellín,2,16,2024-06-06
+1289,Alba Sanabria,46,M,Barranquilla,4,6,2024-05-31
+1290,Carlos José Hernández,42,M,Bogotá,1,10,2025-05-03
+1291,Danny Humberto Barrera González,38,F,Medellín,2,14,2024-06-13
+1292,Alberto Sánchez,39,F,Medellín,2,9,2024-11-08
+1293,Ricardo Raúl Gutiérrez,37,F,Barranquilla,4,16,2025-04-27
+1294,Felipe Sánchez,50,M,Bogotá,1,5,2024-12-26
+1295,Luis García Pineda,25,F,Medellín,2,5,2024-07-10
+1296,Graciela Marcela Hernández Álvarez,25,M,Medellín,2,12,2025-03-08
+1297,Tatiana Villamil Pérez,30,M,Barranquilla,4,16,2025-02-22
+1298,Juan Duarte,42,M,Medellín,2,10,2025-02-15
+1299,David Pedro Muñoz Gallego,35,M,Medellín,2,12,2024-12-24
+1300,Nelson Parra,30,F,Cali,3,5,2024-07-27
+1301,Luz Lorena Londoño Gutiérrez,47,F,Medellín,2,7,2025-04-27
+1302,Dagoberto Sánchez,65,M,Barranquilla,4,11,2025-02-25
+1303,Fabio Manuel Maldonado Guerra,69,M,Medellín,2,6,2024-09-29
+1304,Jennifer María Cardona Caicedo,61,M,Medellín,2,14,2025-03-17
+1305,Eva Mercedes Torres,69,F,Bogotá,1,10,2024-09-23
+1306,Omaira Valentina Gonzáles Yepes,26,F,Barranquilla,4,6,2025-01-10
+1307,María Delia Molina,28,F,Barranquilla,4,5,2024-09-04
+1308,Ana Zapata Durán,29,M,Medellín,2,16,2024-10-09
+1309,Giovanni Felipe Ortiz Corredor,25,M,Cali,3,15,2024-10-22
+1310,Carlos Andrés Espitia,59,F,Cali,3,6,2024-09-08
+1311,Mauricio López Murillo,60,M,Barranquilla,4,8,2024-07-26
+1312,Andrés Gaviria Rojas,75,M,Bogotá,1,5,2024-08-11
+1313,Libia Lizeth Jiménez Cano,40,F,Cali,3,10,2024-12-26
+1314,Andrea Esther Ramírez Rodríguez,55,M,Medellín,2,11,2024-10-02
+1315,Sebastián Dany Marín Soto,58,M,Medellín,2,8,2025-04-23
+1316,Cecilia Mosquera,41,M,Medellín,2,8,2024-09-27
+1317,Juan Martínez Garzón,57,M,Cartagena,5,11,2024-11-10
+1318,Sandra Astrid Rosero Gutiérrez,34,F,Medellín,2,12,2024-12-08
+1319,Fernando Meza Muñoz,45,F,Bogotá,1,8,2025-04-29
+1320,Margarita Luz Osorio Cardozo,68,F,Cartagena,5,12,2024-10-02
+1321,Alfonso Humberto Trujillo,66,M,Medellín,2,9,2024-12-06
+1322,Paola Suárez Rodríguez,69,F,Cartagena,5,9,2025-01-24
+1323,Andrés Pablo Pinzón Bustos,72,F,Barranquilla,4,6,2025-03-19
+1324,Liliana Cortés Núñez,52,F,Medellín,2,8,2025-05-18
+1325,Jhon Carrillo,45,M,Medellín,2,14,2024-12-28
+1326,Ximena Andrea Buitrago Rodríguez,57,M,Medellín,2,17,2024-09-23
+1327,Andrés Pérez,67,F,Cartagena,5,14,2025-03-09
+1328,Ofelia Inés Bautista Ávila,26,M,Bogotá,1,12,2025-05-10
+1329,Pablo Quintero Guevara,41,M,Cali,3,14,2025-02-19
+1330,María Paula Cárdenas,20,F,Cartagena,5,15,2025-05-07
+1331,Javier Martínez,59,M,Medellín,2,14,2024-06-17
+1332,Fernando Armando Suárez,57,F,Cali,3,16,2025-05-28
+1333,Miguel Montoya,22,M,Cartagena,5,8,2024-06-26
+1334,Laura Diana Alarcón,66,M,Cartagena,5,15,2025-05-04
+1335,Milena Esperanza Mercado Miranda,70,F,Bogotá,1,7,2025-02-17
+1336,María Márquez,40,M,Barranquilla,4,17,2024-09-16
+1337,Diana Rodríguez Martínez,40,F,Cartagena,5,7,2025-02-23
+1338,Luz Duarte Díaz,65,M,Medellín,2,12,2024-07-22
+1339,Javier Andrés Murillo Martínez,47,M,Bogotá,1,11,2024-07-12
+1340,Laura Dayana Durán Cruz,37,M,Cali,3,15,2024-10-25
+1341,Amanda Mena Betancur,79,M,Bogotá,1,10,2024-06-15
+1342,Carmen Tulia Forero Salas,78,M,Bogotá,1,5,2025-03-10
+1343,Javier Fernández Ospino,69,M,Medellín,2,17,2024-08-25
+1344,Amanda Luz Molina Mejía,74,F,Bogotá,1,16,2024-07-27
+1345,Pilar Cardona Moreno,60,F,Medellín,2,11,2025-01-06
+1346,Augusto Ortega Torres,35,M,Cali,3,12,2025-04-17
+1347,Ramón Jesús Caicedo,40,F,Cali,3,8,2024-08-12
+1348,Emerson Luis Hurtado,27,M,Medellín,2,8,2024-08-29
+1349,Yaneth Margarita Rendón,72,M,Bogotá,1,8,2025-03-31
+1350,Lina Milena Torres Ospino,70,M,Bogotá,1,10,2025-03-15
+1351,Mauricio Jiménez Montoya,62,F,Bogotá,1,10,2024-09-30
+1352,John Alex Bermúdez,65,F,Bogotá,1,11,2025-01-26
+1353,Alberto Ardila,68,F,Cali,3,6,2024-07-04
+1354,Orlando Martínez,76,F,Bogotá,1,13,2024-12-04
+1355,Alberto Carrillo Serna,47,M,Medellín,2,11,2024-08-18
+1356,Jhony Sánchez Pérez,38,F,Cartagena,5,12,2025-03-05
+1357,Carmen Luz Fuentes Moreno,69,M,Bogotá,1,7,2025-02-10
+1358,Luz Bermúdez Díaz,57,M,Medellín,2,6,2024-07-24
+1359,María Estrada Romero,59,F,Medellín,2,5,2025-02-04
+1360,Marta Elsy Garzón Cardona,34,F,Barranquilla,4,16,2024-09-17
+1361,Andrea Astrid Ramos,33,F,Cartagena,5,11,2024-11-08
+1362,Rosa Maritza Gutiérrez Muñoz,43,M,Medellín,2,6,2025-05-21
+1363,Luis Galeano,65,F,Barranquilla,4,5,2025-04-14
+1364,Judith Rosario Salgado,31,M,Cali,3,11,2024-10-13
+1365,Roberto Guerrero Castro,71,M,Barranquilla,4,13,2025-03-27
+1366,Orlando Andrés Durán Marín,73,M,Medellín,2,6,2025-03-16
+1367,Iris Gloria Ramírez Londoño,75,M,Cali,3,11,2025-03-04
+1368,Olga Zambrano Zapata,43,M,Cali,3,13,2025-03-01
+1369,Rosa Lizeth Giraldo Sánchez,23,F,Medellín,2,10,2024-09-20
+1370,Juan Jhon López Alzate,34,M,Cartagena,5,7,2025-05-30
+1371,Daniel Amaya Murcia,72,M,Medellín,2,14,2025-02-12
+1372,Leonardo Zapata García,64,F,Barranquilla,4,8,2024-09-29
+1373,Luz Rodríguez Uribe,36,F,Bogotá,1,8,2024-09-10
+1374,Dahiana Jacqueline González Giraldo,75,F,Cali,3,9,2024-06-02
+1375,Fabián Salcedo,78,M,Medellín,2,14,2024-10-31
+1376,Pedro Sergio Morales,18,M,Medellín,2,14,2025-01-14
+1377,Mauricio Elías Gómez Miranda,75,F,Medellín,2,10,2025-04-29
+1378,Rosa Herrera González,64,F,Bogotá,1,11,2025-04-13
+1379,Oliva López Reyes,33,F,Cali,3,8,2024-11-22
+1380,Carlos Elver Mosquera Bedoya,45,F,Medellín,2,9,2025-04-29
+1381,Ana Garzón Moreno,71,F,Cali,3,7,2025-04-19
+1382,Olga Alejandra Álvarez Castro,48,M,Cartagena,5,15,2024-06-28
+1383,Amparo Castro Rodríguez,25,M,Bogotá,1,13,2024-07-31
+1384,Alexander Fabián Rodríguez,56,F,Medellín,2,13,2024-10-03
+1385,Jimena Yulieth Jaramillo,47,F,Medellín,2,16,2024-10-16
+1386,Abelardo Jorge Jiménez,22,M,Cali,3,12,2024-08-24
+1387,Jorge José Ochoa Ariza,60,F,Barranquilla,4,12,2024-10-04
+1388,Juan Manuel Murcia García,23,F,Barranquilla,4,13,2024-12-20
+1389,Yenifer Antonia Hernández Ortiz,61,F,Medellín,2,16,2025-02-22
+1390,Guillermo Castro Vega,59,F,Medellín,2,13,2024-12-06
+1391,Andrés Rodríguez González,26,M,Cali,3,13,2024-11-24
+1392,Luz Rendón,65,F,Cali,3,16,2024-08-20
+1393,Jeison Robert García Orozco,60,M,Barranquilla,4,8,2025-03-21
+1394,Óscar Carlos Díaz,34,M,Medellín,2,9,2024-11-21
+1395,Mónica Ibeth Salamanca,39,F,Medellín,2,8,2025-01-04
+1396,Harol Pérez Gutiérrez,18,F,Medellín,2,11,2025-03-02
+1397,Edilberto Óscar Gómez,28,M,Barranquilla,4,11,2024-11-24
+1398,Óscar Luis Arango Ochoa,77,F,Bogotá,1,15,2024-07-31
+1399,Pablo Sarmiento,35,M,Medellín,2,13,2024-07-21
+1400,Dario Álvaro Roa Muñoz,27,M,Bogotá,1,14,2025-04-23
+1401,Johana Escobar Castro,40,F,Medellín,2,11,2024-12-28
+1402,José Andrés Contreras,62,F,Bogotá,1,15,2024-11-28
+1403,Mauricio William Cárdenas Rodríguez,59,M,Barranquilla,4,14,2024-07-10
+1404,Carmen Luna Rojas,58,M,Medellín,2,17,2024-10-11
+1405,Isabel Pérez,51,F,Cali,3,8,2024-06-11
+1406,María Benavides,38,M,Bogotá,1,8,2024-08-26
+1407,Carolina Emma Mejía,72,M,Cartagena,5,12,2025-04-12
+1408,Karen Rueda,59,F,Cartagena,5,6,2024-11-21
+1409,Ibeth Camila Hernández,33,M,Bogotá,1,11,2024-08-02
+1410,Rita Claudia Rincón López,70,M,Medellín,2,8,2024-09-01
+1411,Mercedes Carvajal Bedoya,74,F,Cartagena,5,17,2024-11-03
+1412,María Ramírez Ortiz,30,F,Cali,3,15,2024-10-01
+1413,Fernando Quintero,43,M,Bogotá,1,13,2025-03-31
+1414,Enrique Carrillo,64,M,Cartagena,5,14,2025-04-27
+1415,Edwin Esteban Patiño,30,F,Bogotá,1,13,2025-04-12
+1416,Juan Pérez,34,F,Bogotá,1,5,2025-02-28
+1417,Carolina Claudia Serrano Mendoza,22,F,Barranquilla,4,9,2025-02-19
+1418,Luis Caicedo,46,M,Medellín,2,10,2025-03-15
+1419,María Elizabeth González,33,F,Bogotá,1,10,2025-01-11
+1420,Enrique Cárdenas,69,F,Cali,3,17,2024-12-15
+1421,Aníbal Méndez Leal,32,F,Barranquilla,4,10,2024-07-08
+1422,María Claudia Guerra Benítez,59,M,Bogotá,1,8,2024-07-09
+1423,Fernando Ramírez,69,M,Barranquilla,4,10,2025-05-15
+1424,José Agudelo Prieto,53,F,Barranquilla,4,9,2025-05-22
+1425,David Mora Rincón,35,M,Bogotá,1,11,2024-09-21
+1426,Andrea María Cáceres Rodríguez,62,M,Bogotá,1,11,2025-04-22
+1427,Julián Steven Cifuentes Sánchez,60,F,Barranquilla,4,13,2024-07-30
+1428,Jair Iván Serrano,39,F,Medellín,2,11,2024-11-30
+1429,Edinson Osorio Cárdenas,26,M,Medellín,2,8,2024-06-12
+1430,Rafael Iván Pacheco Loaiza,23,F,Medellín,2,8,2024-08-24
+1431,Marino Yeison Caicedo,49,F,Bogotá,1,15,2024-11-26
+1432,Jaime Marco Oviedo Beltrán,37,M,Medellín,2,6,2024-07-18
+1433,María Johana Valencia Cantillo,21,M,Bogotá,1,10,2024-08-02
+1434,Santiago Omar Ramírez,26,F,Bogotá,1,6,2025-04-14
+1435,Marina Rita Gómez,59,F,Bogotá,1,12,2024-12-23
+1436,Mónica Sandra Ochoa,78,M,Cali,3,8,2024-12-17
+1437,Silvia Eugenia Velásquez Amaya,49,F,Cartagena,5,8,2024-11-28
+1438,Carolina Calderón Moreno,19,F,Medellín,2,9,2024-09-21
+1439,Israel Álvarez,33,F,Cali,3,14,2025-01-02
+1440,César Rosero Mesa,60,F,Cartagena,5,13,2024-10-29
+1441,Judith Stella Ospina Martínez,38,F,Bogotá,1,5,2024-12-10
+1442,Alexander Misael Fernández,67,F,Bogotá,1,14,2024-09-19
+1443,Kelly Ángela Díaz Jiménez,45,F,Cartagena,5,5,2025-01-18
+1444,Cecilia Virginia Castro,70,F,Cali,3,5,2024-09-21
+1445,Lucía María Riascos,41,F,Medellín,2,13,2025-04-08
+1446,Raúl Antonio López,57,F,Bogotá,1,9,2025-02-20
+1447,Fernando Rodríguez Mena,59,M,Medellín,2,8,2025-01-22
+1448,Diana Virginia Morales,66,F,Cartagena,5,5,2025-01-09
+1449,Yadira Johana Romero Barrera,47,F,Cali,3,7,2024-07-14
+1450,José Cruz Acosta,49,M,Bogotá,1,12,2025-02-10
+1451,Jairo Carlos Angulo Chávez,57,M,Cali,3,17,2024-10-08
+1452,Augusto Gómez,59,M,Barranquilla,4,13,2024-07-13
+1453,Miguel Andrés Fuentes,62,F,Cali,3,9,2024-06-05
+1454,Cecilia Yazmín Figueroa Ortiz,60,M,Barranquilla,4,16,2025-02-03
+1455,Enrique Cristian Alfonso,49,F,Cartagena,5,15,2024-12-18
+1456,María Rojas López,57,M,Cartagena,5,16,2025-02-07
+1457,Fanny Cristina Palacios,49,M,Bogotá,1,17,2025-03-29
+1458,Leidy Jaramillo,56,F,Barranquilla,4,7,2024-11-03
+1459,Alberto César Rodríguez Pérez,77,F,Medellín,2,7,2024-06-21
+1460,Andrés Monsalve Moreno,19,M,Medellín,2,13,2025-05-09
+1461,Gustavo Jiménez Pardo,46,M,Cartagena,5,14,2025-01-20
+1462,María Gil,78,M,Cali,3,10,2025-01-28
+1463,Nancy Estefanía Acevedo Sandoval,63,F,Medellín,2,15,2025-01-22
+1464,Luis García,31,F,Cali,3,10,2025-04-17
+1465,Astrid Dayana Rubio Jaramillo,73,F,Medellín,2,17,2025-05-24
+1466,Marcela Rodríguez,39,F,Cartagena,5,9,2025-03-11
+1467,Mirian Lina Martínez,49,M,Cali,3,9,2024-06-12
+1468,Carlos William Giraldo González,55,M,Cali,3,9,2025-02-22
+1469,Piedad Carvajal,76,F,Bogotá,1,13,2024-10-02
+1470,María Olaya,57,M,Cali,3,9,2024-07-28
+1471,Milena Romero Rodríguez,23,F,Bogotá,1,13,2024-09-07
+1472,Luis Gómez Herrera,31,M,Cali,3,5,2025-04-19
+1473,Libia Prieto Ballesteros,32,F,Bogotá,1,12,2024-12-30
+1474,Manuela Paula Arévalo,64,F,Barranquilla,4,5,2024-07-03
+1475,María Leonor Quiroga,44,F,Medellín,2,6,2024-12-28
+1476,Carlos Gabriel Fuentes,76,F,Barranquilla,4,12,2025-04-06
+1477,César García,52,M,Bogotá,1,6,2024-12-21
+1478,John Serna Gómez,79,M,Bogotá,1,8,2024-07-07
+1479,Aura Rodríguez,37,M,Cartagena,5,15,2024-12-12
+1480,Adriana Barrera Ríos,23,M,Medellín,2,10,2024-11-04
+1481,María Myriam Bedoya Luna,19,M,Medellín,2,14,2024-11-03
+1482,Juan Montes,42,F,Medellín,2,11,2025-03-08
+1483,Luz Laura Palacios Villamizar,61,M,Medellín,2,12,2024-08-22
+1484,Antonio Ramírez Romero,41,M,Cartagena,5,12,2025-02-04
+1485,Yuri Beatriz Medina Montenegro,52,F,Barranquilla,4,12,2025-02-18
+1486,Elkin Solano Rincón,75,M,Barranquilla,4,8,2025-05-09
+1487,Angie María Díaz Cuéllar,46,F,Medellín,2,5,2024-06-12
+1488,Wendy Erazo,65,M,Cali,3,11,2025-05-18
+1489,Milena Bastidas,52,M,Cali,3,5,2025-03-16
+1490,Dary Mejía Gutiérrez,26,M,Cali,3,10,2025-03-07
+1491,Carmen Yamile Velandia Rodríguez,36,F,Medellín,2,9,2025-03-24
+1492,Ángel Carlos Vega,69,M,Medellín,2,16,2024-09-25
+1493,Clara Lucila Puentes Rangel,60,M,Barranquilla,4,10,2025-04-08
+1494,Luisa Reyes Narváez,59,F,Bogotá,1,15,2025-04-12
+1495,Jhoana Ana Romero,60,M,Medellín,2,8,2024-11-06
+1496,Yanet Ester Jaramillo Vera,36,F,Bogotá,1,15,2024-07-10
+1497,James Cristhian León,32,M,Cartagena,5,14,2025-01-30
+1498,Giovanny Jesús García,43,F,Bogotá,1,13,2025-03-12
+1499,Jesús Rafael Villamizar Valencia,36,F,Medellín,2,12,2025-02-21
+1500,Alba Liliana Sierra Angarita,55,M,Medellín,2,12,2024-10-25
