@@ -1,1501 +1,1501 @@
-cliente_id,nombre,edad,genero,ciudad,region_id,frecuencia_compra,ultima_compra
-1,Gladys Marina Jaimes,32,M,Barranquilla,4,3,2023-12-03
-2,Humberto Ramírez Martínez,56,F,Cali,3,4,2023-07-16
-3,Socorro Arenas,28,F,Bogotá,1,3,2023-12-28
-4,Gloria Mary Rodríguez Andrade,41,M,Cali,3,1,2023-07-16
-5,Patricia Benavides Gómez,41,F,Bogotá,1,2,2023-09-09
-6,Bibiana Ibarra Serrano,77,M,Bogotá,1,2,2024-01-16
-7,Gladis Ramírez,39,M,Medellín,2,1,2023-07-21
-8,Pablo Omar Loaiza Castro,44,M,Bogotá,1,4,2024-04-26
-9,José Villa Pinto,45,F,Bogotá,1,3,2023-11-25
-10,Marcela Andrea Santos Gutiérrez,79,M,Bogotá,1,4,2024-03-08
-11,Nelly Lina Mosquera Moreno,72,F,Bogotá,1,2,2024-05-01
-12,Paola Milena Parra,54,M,Medellín,2,4,2023-09-21
-13,Cecilia Cecilia Jiménez Perdomo,56,F,Bogotá,1,3,2024-03-03
-14,Alexander Orlando Valencia,31,F,Cartagena,5,4,2024-01-03
-15,María Guzmán,70,F,Medellín,2,2,2023-07-09
-16,Luz Vásquez,77,M,Medellín,2,4,2024-03-02
-17,Luz María Salas,64,M,Medellín,2,4,2023-09-23
-18,Jean Antonio Suárez,67,F,Medellín,2,2,2024-02-02
-19,Alfredo Granados,23,F,Medellín,2,4,2024-05-18
-20,Jesús Edilberto López,46,M,Cali,3,2,2024-03-20
-21,Olga León Vélez,51,F,Barranquilla,4,2,2024-05-22
-22,Manuel Díaz Marín,48,F,Cartagena,5,2,2024-02-13
-23,Julieth Ángela Solano,40,F,Bogotá,1,3,2024-04-27
-24,Liliana Marcela Fonseca,38,F,Cartagena,5,1,2024-01-13
-25,Andrés Víctor Castro Mendoza,70,F,Medellín,2,1,2024-04-11
-26,Andrés Luis Páez Gómez,77,F,Cartagena,5,2,2024-04-23
-27,Sandra Medina Castillo,32,M,Bogotá,1,1,2023-07-16
-28,Marcela Sandra Cardona,26,F,Bogotá,1,1,2023-10-18
-29,José Ortiz,41,M,Bogotá,1,1,2023-09-12
-30,Alfonso Ariza,25,M,Bogotá,1,3,2023-09-25
-31,Natalia Garcés,22,F,Barranquilla,4,3,2023-12-24
-32,Anderson Álvarez,45,M,Cali,3,3,2024-01-15
-33,Nancy González,51,M,Cali,3,1,2024-02-28
-34,Luz Cecilia Camacho Castillo,79,F,Medellín,2,4,2024-03-07
-35,Liliana Agudelo,57,F,Barranquilla,4,1,2023-11-01
-36,Andrés Romero,52,M,Cali,3,3,2023-10-27
-37,Efrain Valencia,18,M,Barranquilla,4,3,2024-03-17
-38,William Sánchez,31,M,Medellín,2,2,2023-08-22
-39,Yéssica Carvajal,32,F,Medellín,2,3,2023-10-08
-40,Gabriel Christian Hernández,68,M,Medellín,2,2,2023-12-01
-41,Pilar Sánchez,69,M,Cali,3,4,2023-07-22
-42,Rodrigo Ramírez Durán,54,M,Cali,3,4,2023-08-22
-43,Erika Katherine Mora,60,M,Medellín,2,3,2024-02-08
-44,Fernanda Pérez,24,M,Cartagena,5,4,2023-12-23
-45,Álvaro Santiago Suárez López,19,F,Bogotá,1,3,2023-07-19
-46,William Miguel Quintero Vallejo,70,F,Medellín,2,1,2024-05-20
-47,Elías Rico López,61,F,Barranquilla,4,4,2024-02-19
-48,Juan Mauricio Salazar Fernández,75,M,Cartagena,5,2,2023-08-31
-49,Cristian Andrés Moreno,79,M,Medellín,2,4,2023-12-23
-50,Diego Gutiérrez,79,M,Bogotá,1,1,2024-03-02
-51,Enrique Álvarez Mosquera,20,M,Medellín,2,4,2024-02-09
-52,Sergio Méndez,26,F,Medellín,2,2,2024-05-30
-53,Alexandra Ballesteros,59,F,Cali,3,1,2023-09-15
-54,Jorge Guzmán,71,F,Cartagena,5,4,2023-07-26
-55,Fabio Ortiz,69,M,Cali,3,4,2024-02-28
-56,Jesús Guzmán López,69,F,Cartagena,5,2,2023-07-24
-57,Patricia Martha Acosta,20,M,Cali,3,2,2023-06-19
-58,Eduar Jhon García Agudelo,34,M,Medellín,2,1,2023-06-05
-59,Patricia Suárez Castaño,45,F,Cartagena,5,1,2023-06-20
-60,Sandra Luz Ángel,50,M,Medellín,2,3,2024-01-11
-61,Robinson Jhon Díaz,70,F,Cali,3,3,2024-04-10
-62,Johanna Marín Valderrama,49,M,Cartagena,5,2,2023-12-30
-63,José Ramos Cardona,73,M,Bogotá,1,4,2023-09-12
-64,Julián Vargas,41,M,Barranquilla,4,1,2023-08-05
-65,Jeison Diego Contreras Carrillo,39,M,Cartagena,5,4,2023-09-30
-66,María Mosquera,50,M,Bogotá,1,3,2023-06-27
-67,Ana Martínez Mendoza,33,M,Medellín,2,4,2023-08-07
-68,Andrés Narváez Burgos,76,F,Cali,3,3,2024-01-30
-69,Eduardo Pérez Moreno,36,F,Barranquilla,4,3,2023-09-11
-70,Flor Álvarez Rangel,58,M,Bogotá,1,4,2023-10-30
-71,Diana María Sánchez Caballero,35,F,Medellín,2,4,2024-03-27
-72,Lilia Nohora Arrieta,74,M,Cali,3,1,2023-08-05
-73,Andrea Catherine Forero Delgado,47,F,Cartagena,5,2,2023-10-19
-74,Alonso Pérez,33,F,Bogotá,1,3,2024-04-15
-75,Patricia Tamayo,77,M,Cali,3,4,2024-05-14
-76,Edinson Sánchez Chávez,79,F,Cartagena,5,2,2023-10-03
-77,Edison Steven Jaimes,76,M,Cartagena,5,1,2023-08-03
-78,Carolina Rivera Hernández,36,F,Medellín,2,1,2023-09-09
-79,Johana Zuluaga Soto,71,F,Barranquilla,4,8,2025-01-26
-80,Johan Armando Molina,28,M,Cali,3,5,2025-04-13
-81,Argemiro Rosero Serna,57,F,Barranquilla,4,14,2024-10-23
-82,Ana Lucía Salazar Castellanos,42,M,Medellín,2,7,2025-02-05
-83,Manuel Chaparro Agudelo,63,F,Bogotá,1,15,2025-04-25
-84,Adriana Elena Agudelo,33,M,Cali,3,7,2025-03-19
-85,Yenny Elizabeth Torres Barreto,21,M,Bogotá,1,15,2025-03-15
-86,Juan Ospina Camacho,73,F,Bogotá,1,10,2025-05-22
-87,Manuela Lizeth Salamanca,34,F,Barranquilla,4,14,2025-05-22
-88,Isabel Olga Angulo,76,M,Cali,3,6,2024-12-10
-89,Harold Gaitán,63,F,Medellín,2,12,2024-12-24
-90,Luz Aguilar,68,F,Cartagena,5,11,2024-06-11
-91,Elsy Isabel Duque,51,M,Cali,3,13,2024-08-28
-92,Alejandra Chávez Cárdenas,50,M,Cali,3,5,2024-12-28
-93,Luis Alberto Guzmán,66,F,Cali,3,8,2025-03-06
-94,Fabio López,47,M,Cartagena,5,5,2025-01-27
-95,María Gloria Velásquez Ramírez,77,M,Cartagena,5,11,2024-06-20
-96,Óscar Juan Castro,66,F,Cartagena,5,11,2024-08-24
-97,Rosa López Delgado,77,M,Cali,3,10,2024-06-24
-98,Maritza Consuelo Palacios,38,F,Medellín,2,9,2025-03-13
-99,Luis Leonardo Escobar,20,F,Medellín,2,12,2024-11-05
-100,Felipe Villa,48,F,Cali,3,7,2025-04-22
-101,Armando Jhon Rojas,63,F,Cartagena,5,16,2025-02-19
-102,José Gómez Carvajal,39,M,Cali,3,6,2024-12-10
-103,Diana Gutiérrez Sierra,59,F,Medellín,2,6,2025-02-26
-104,Albeiro Dario Díaz Palacio,50,M,Barranquilla,4,16,2024-11-03
-105,Sergio Jaramillo,46,F,Medellín,2,11,2024-09-22
-106,Astrid Ramírez Beltrán,67,M,Medellín,2,13,2025-01-15
-107,Oswaldo José Velasco,75,M,Cartagena,5,15,2024-07-03
-108,Vanessa Paola Sepúlveda,37,M,Cali,3,15,2024-07-18
-109,Carolina Yolanda Rodríguez,33,F,Cali,3,13,2025-03-18
-110,Valentina Moreno García,45,F,Medellín,2,9,2024-06-03
-111,Clara Ramírez Restrepo,39,M,Medellín,2,7,2024-10-17
-112,Manuel Juan Villa,79,M,Bogotá,1,14,2025-01-17
-113,Victoria Alejandra Reyes Aguirre,39,M,Cali,3,11,2024-09-02
-114,Jorge Daniel Nieto Arboleda,32,F,Bogotá,1,8,2025-01-22
-115,Fernando Eduard Díaz,70,F,Medellín,2,10,2025-04-02
-116,Diego Figueroa Guzmán,23,M,Medellín,2,11,2024-09-27
-117,Laura Beatriz Palacios,52,M,Medellín,2,9,2025-05-15
-118,Cecilia Ordóñez Villamizar,30,F,Barranquilla,4,13,2024-08-07
-119,Pedro Ortiz,34,F,Medellín,2,16,2024-08-23
-120,Jesús Gómez,72,F,Medellín,2,9,2025-02-25
-121,Pedro Norberto Melo Vélez,79,M,Bogotá,1,10,2024-08-16
-122,Juan Caballero Parra,18,F,Cali,3,16,2024-07-01
-123,Omar Orozco,51,F,Bogotá,1,17,2024-11-18
-124,Elizabeth Margarita Trujillo Patiño,57,M,Barranquilla,4,10,2025-04-26
-125,Francisco Rivera,78,M,Cali,3,11,2024-07-20
-126,Lucía Romero Rojas,72,M,Cali,3,11,2025-01-08
-127,Edwin Héctor Arango Burgos,54,F,Medellín,2,16,2025-05-02
-128,Andrea Ramírez Narváez,45,M,Medellín,2,14,2025-02-16
-129,Camilo González Rueda,79,F,Medellín,2,6,2024-06-05
-130,Elías Ortiz,43,F,Medellín,2,10,2025-04-05
-131,José David Trujillo Hernández,50,F,Medellín,2,10,2025-01-02
-132,Patricia Nayibe Rodríguez,27,F,Medellín,2,10,2025-05-01
-133,Luz Mónica Benavides Quintero,69,M,Cartagena,5,11,2024-10-02
-134,Dahiana Elsa Ospina,75,F,Cali,3,17,2024-08-19
-135,Johanna Guevara Triana,62,F,Cali,3,5,2024-12-17
-136,Mariana Uribe López,19,M,Cartagena,5,14,2024-11-26
-137,María Lidia Ortiz Hoyos,67,M,Cali,3,9,2025-05-05
-138,Miguel Johan Vargas,68,M,Medellín,2,6,2025-04-07
-139,Edilberto Ángel Navarro,18,M,Cali,3,11,2024-11-13
-140,Luis Andrés Sánchez,61,M,Cartagena,5,13,2024-07-04
-141,Rocío Paola Rodríguez,67,M,Bogotá,1,7,2025-04-29
-142,Danilo Corredor,25,M,Bogotá,1,13,2025-01-03
-143,Adalberto León Mesa Gallego,79,F,Cali,3,15,2024-08-25
-144,Augusto Luis Castro,21,F,Medellín,2,8,2024-08-29
-145,Isabel Karen Villamizar,28,M,Medellín,2,10,2024-11-25
-146,Mónica Ospina López,38,M,Barranquilla,4,14,2025-05-03
-147,Stella Mosquera Naranjo,54,M,Cali,3,15,2024-08-16
-148,Omar Castellanos,66,M,Barranquilla,4,13,2024-12-01
-149,Rosa Díaz,56,F,Medellín,2,9,2025-01-11
-150,José Bonilla,49,M,Barranquilla,4,13,2025-04-19
-151,Esperanza Paola Bravo,40,M,Cali,3,6,2025-02-07
-152,Estela Herrera Pérez,34,M,Bogotá,1,8,2024-12-22
-153,Jackeline Elvira Portilla Tovar,39,M,Barranquilla,4,10,2025-03-05
-154,Carlos Augusto Ramírez Silva,29,M,Medellín,2,8,2024-11-17
-155,Alba Zapata Torres,26,M,Barranquilla,4,14,2025-05-17
-156,Leonor Mary Correa Moreno,64,F,Cali,3,10,2024-11-01
-157,Alba Gamboa,29,M,Bogotá,1,11,2025-01-31
-158,Andrés Mosquera,53,M,Cali,3,8,2025-02-17
-159,Milena Salazar,56,M,Barranquilla,4,13,2025-01-31
-160,Luz Gutiérrez,56,F,Medellín,2,9,2025-03-01
-161,Nelly Mercedes Bautista Jiménez,40,M,Medellín,2,17,2025-01-02
-162,Nelson José Reyes González,26,F,Cartagena,5,7,2025-01-28
-163,Patricia Espinosa Gómez,78,F,Cali,3,15,2025-04-17
-164,Andrés Yeison Sierra Benavides,57,F,Medellín,2,13,2025-01-12
-165,Sandra Mora Murcia,75,F,Barranquilla,4,15,2024-07-19
-166,Carlos Moreno,55,M,Medellín,2,10,2024-11-28
-167,Jimena Bravo,18,F,Medellín,2,15,2024-09-25
-168,María Gómez,24,M,Medellín,2,9,2025-01-12
-169,Amparo Ángela Muñoz,77,M,Medellín,2,9,2025-01-05
-170,Marta Ávila,71,M,Barranquilla,4,8,2024-11-25
-171,Miguel Germán Jiménez Palacio,56,F,Cartagena,5,17,2025-02-19
-172,Albeiro Molina,67,F,Medellín,2,7,2024-07-02
-173,Viviana Franco Mesa,25,M,Barranquilla,4,16,2025-02-22
-174,Alfonso García Ortiz,20,M,Barranquilla,4,16,2024-06-01
-175,Cristina Pérez Díaz,66,M,Medellín,2,15,2025-05-18
-176,Isabel Espitia Zapata,70,F,Medellín,2,14,2024-09-04
-177,Luis Dario Ortiz,49,M,Bogotá,1,16,2024-12-18
-178,Andrea Paola Jiménez,38,M,Bogotá,1,10,2025-01-22
-179,Fabián Brayan Guevara Restrepo,36,F,Medellín,2,10,2024-12-06
-180,John Steven Zapata,58,M,Medellín,2,15,2024-06-02
-181,David Marino Ruiz,71,M,Cali,3,6,2025-04-02
-182,Diana Franco Bermúdez,29,F,Bogotá,1,12,2024-11-04
-183,Jorge Jaramillo,41,F,Medellín,2,13,2024-10-17
-184,Hernando Hernández Silva,45,F,Medellín,2,9,2024-10-26
-185,Ángela Toro,77,F,Medellín,2,17,2025-02-11
-186,Ibeth Luz Álvarez Ortiz,44,F,Cartagena,5,10,2024-09-21
-187,Jesús Gamboa Melo,70,F,Medellín,2,6,2025-02-15
-188,Alexis Alexander García,35,M,Barranquilla,4,8,2024-07-07
-189,Juan Valderrama,19,F,Cali,3,9,2024-07-28
-190,Andrés Jefferson Bolaños,76,M,Barranquilla,4,13,2024-07-05
-191,Jhonny Moreno,50,F,Bogotá,1,11,2024-10-30
-192,Nelson Herrera Daza,64,M,Medellín,2,5,2024-07-29
-193,Karol Esperanza López Barreto,42,F,Barranquilla,4,10,2025-04-29
-194,Carmen Patricia Uribe Salazar,51,M,Barranquilla,4,6,2024-09-19
-195,Óscar Miguel Jiménez Gutiérrez,38,F,Bogotá,1,8,2024-11-15
-196,Carlos Alberto Ramos,34,M,Barranquilla,4,13,2025-02-21
-197,Claudia Quintero Parra,70,M,Cartagena,5,11,2025-01-29
-198,Sonia Laura Mesa Carmona,27,F,Barranquilla,4,11,2024-10-17
-199,Dario Daniel Caicedo,31,M,Medellín,2,7,2024-06-29
-200,Fabio Ordóñez,30,F,Cartagena,5,5,2024-09-20
-201,Fernando Valencia Vanegas,49,F,Cali,3,5,2024-11-16
-202,Nelly Cristina Guevara Chaparro,75,F,Bogotá,1,14,2025-04-01
-203,Hugo Vargas,76,F,Barranquilla,4,11,2025-01-15
-204,Luis Emilio Vélez Giraldo,22,F,Cali,3,6,2025-01-09
-205,Mario Cuesta,64,M,Cali,3,15,2024-08-11
-206,Edgardo Sánchez Alvarado,19,M,Cali,3,11,2024-10-27
-207,Esteban Díaz Ocampo,77,F,Cartagena,5,7,2024-07-17
-208,Gladys Luisa Acevedo,35,F,Cali,3,11,2024-11-29
-209,Roger Gómez,69,M,Cartagena,5,8,2024-06-28
-210,Andrés Leonardo Reyes García,32,F,Medellín,2,12,2024-12-26
-211,Eugenia Villamil,34,M,Medellín,2,12,2024-08-31
-212,Vanessa Blanca Giraldo,34,F,Medellín,2,9,2024-12-14
-213,Angie Yenny Ruiz,41,M,Medellín,2,5,2024-12-07
-214,José Mercado,19,M,Cali,3,7,2025-03-26
-215,Carlos Felipe Correa,40,M,Cali,3,8,2025-03-21
-216,Sandra Ana Mejía Zapata,21,F,Cali,3,11,2025-05-19
-217,Ana Dayana Niño García,20,F,Medellín,2,10,2025-04-15
-218,Uriel Cristobal Gómez Castro,49,F,Medellín,2,8,2025-04-05
-219,Alejandro Núñez Zapata,38,M,Bogotá,1,17,2024-08-13
-220,Dagoberto Elver Forero,78,F,Medellín,2,7,2024-08-17
-221,Juliana Sofía Mejía Garzón,22,M,Cali,3,9,2025-05-01
-222,Luz Pérez Díaz,66,F,Cartagena,5,18,2024-08-08
-223,Jean Miguel Hernández,26,F,Cali,3,17,2025-01-17
-224,Libia Ana Romero Moreno,39,M,Medellín,2,16,2024-06-08
-225,Camilo Manuel Yepes,65,M,Barranquilla,4,15,2024-06-18
-226,Stella Guzmán Sarmiento,18,F,Medellín,2,6,2024-11-30
-227,Elena Ordóñez,69,M,Cali,3,5,2024-07-24
-228,Emilio Gallego Ariza,43,F,Medellín,2,14,2025-01-06
-229,Samuel Alberto Ramírez,19,M,Cali,3,12,2025-01-31
-230,Andrés Javier Rincón Herrera,73,M,Bogotá,1,16,2024-07-05
-231,Claudia Acevedo,40,F,Cali,3,12,2024-06-19
-232,Enrique Arturo Vargas,52,M,Medellín,2,7,2024-12-26
-233,Orlando Escobar Peña,45,F,Barranquilla,4,16,2025-02-22
-234,William Eduardo Arias Álvarez,56,F,Medellín,2,12,2024-08-16
-235,Luz Velásquez Cáceres,42,M,Cali,3,17,2024-09-24
-236,Junior Ortiz,27,M,Medellín,2,9,2025-01-15
-237,Jessica Andrea Gaviria Restrepo,64,F,Medellín,2,15,2024-10-24
-238,Carlos Giovanni Barreto Castro,25,F,Cali,3,12,2024-09-05
-239,Emilse Anaya,59,M,Cali,3,6,2024-08-28
-240,Héctor Serrano,43,F,Medellín,2,10,2025-05-01
-241,María Marcela Amaya Valencia,76,M,Medellín,2,7,2025-04-28
-242,Nelcy María González Ortiz,50,M,Cali,3,11,2024-11-01
-243,Deyanira Rangel,23,M,Bogotá,1,11,2024-08-27
-244,Ligia Liliana Córdoba,79,F,Barranquilla,4,10,2024-11-25
-245,Camilo Hernán Gómez Guzmán,72,M,Cartagena,5,14,2024-12-05
-246,Nel Arévalo,54,F,Bogotá,1,8,2024-09-07
-247,Rubén Alejandro Franco,19,F,Bogotá,1,14,2024-07-18
-248,Nayibe Karen Ojeda,71,M,Bogotá,1,8,2025-04-27
-249,Víctor Alfonso Beltrán,79,M,Barranquilla,4,14,2025-01-09
-250,Dayana Rodríguez,25,F,Cali,3,7,2025-03-27
-251,Vanesa Santos Becerra,22,F,Barranquilla,4,8,2024-11-01
-252,Gladys Daza,36,F,Medellín,2,15,2025-04-29
-253,Francisco Martínez,29,M,Barranquilla,4,6,2024-09-23
-254,David Castaño Guerrero,55,M,Cali,3,5,2024-08-23
-255,Paola Bertha Gutiérrez Murillo,20,M,Medellín,2,9,2025-05-18
-256,Jorge Óscar Alzate Vega,27,M,Medellín,2,12,2024-07-26
-257,Fabián José Rojas Daza,19,M,Cali,3,13,2025-02-21
-258,Luis Vera Chacón,18,M,Barranquilla,4,13,2024-11-21
-259,Steven Ramos Mendoza,26,M,Bogotá,1,10,2025-03-13
-260,Elena Rocío Torres,52,F,Cali,3,15,2025-01-03
-261,Mauricio Ospina,77,F,Barranquilla,4,5,2024-11-03
-262,Juan Iván Díaz,73,M,Bogotá,1,7,2025-05-05
-263,Luis Galindo,52,M,Bogotá,1,15,2024-10-29
-264,Liliana García,39,F,Barranquilla,4,5,2024-09-13
-265,Lucía Castillo Tovar,54,F,Barranquilla,4,14,2024-10-23
-266,Christian Luis Mora,22,M,Bogotá,1,8,2024-06-16
-267,Andrea Estela Hernández,42,M,Cartagena,5,17,2025-01-25
-268,Andrea Barrera,57,F,Medellín,2,15,2024-09-21
-269,Daniel Francisco Mendoza,49,M,Barranquilla,4,13,2024-07-07
-270,Jaime Gómez,32,M,Cali,3,11,2025-05-28
-271,Lilia Ruiz,64,M,Medellín,2,15,2025-01-06
-272,Valentina Ortiz Rodríguez,57,F,Cali,3,7,2025-01-04
-273,Antonio Villa,23,F,Cali,3,8,2025-02-02
-274,Flor Andrea Morales,25,F,Cali,3,8,2025-03-21
-275,Carolina Mejía Villamizar,46,M,Barranquilla,4,9,2025-05-27
-276,Geraldine Ramírez,44,F,Barranquilla,4,8,2025-05-06
-277,Diana Martínez Duque,78,M,Barranquilla,4,11,2024-06-29
-278,Lina Alejandra Romero Carmona,21,F,Bogotá,1,14,2025-03-19
-279,Alejandro Martín Jaramillo Valderrama,76,F,Barranquilla,4,7,2024-11-23
-280,Edinson Mena Ardila,30,M,Bogotá,1,5,2025-01-06
-281,Cecilia Luisa García,69,F,Medellín,2,9,2025-03-31
-282,Manuel Manuel Rivera Ardila,64,F,Bogotá,1,13,2024-06-05
-283,Ximena Mónica Mejía Mora,68,M,Bogotá,1,7,2025-01-21
-284,Nidia Clara Galvis González,60,M,Cali,3,10,2025-04-21
-285,Yanet Herrera Rojas,79,F,Barranquilla,4,11,2025-04-26
-286,Constanza Aida Suárez Díaz,25,M,Cali,3,14,2025-04-28
-287,Luis Edwin Ramírez,29,F,Cartagena,5,15,2024-10-15
-288,Yaneth Rubiela Solano,42,M,Medellín,2,15,2024-10-28
-289,Antonio Segundo Vanegas,29,F,Barranquilla,4,14,2025-02-02
-290,Luz Arenas Rodríguez,22,F,Cartagena,5,9,2024-12-31
-291,Mariana Liliana Forero Marín,59,M,Barranquilla,4,11,2024-11-22
-292,Cecilia Angie Ospina Mosquera,68,M,Bogotá,1,17,2024-11-10
-293,María Rocío Bravo,28,M,Barranquilla,4,13,2024-09-07
-294,Inés Cifuentes Vera,38,F,Bogotá,1,6,2024-10-13
-295,Yeison Carrillo Leal,74,M,Bogotá,1,9,2025-02-17
-296,Wilmer Ríos Mosquera,57,M,Medellín,2,12,2024-12-08
-297,María Pérez Gómez,70,M,Medellín,2,11,2025-04-05
-298,Hermes Elvis Mena,70,F,Barranquilla,4,15,2024-09-20
-299,Eugenia Esther Benítez Fajardo,69,M,Bogotá,1,14,2024-11-08
-300,Eliecer Alcides Amaya,19,M,Cartagena,5,15,2025-05-06
-301,Liliana Lucy González,44,M,Medellín,2,7,2025-04-30
-302,Blanca González,42,M,Medellín,2,8,2024-06-15
-303,William López,41,M,Medellín,2,9,2024-08-24
-304,Leonardo Martínez,60,F,Barranquilla,4,6,2025-05-24
-305,Rocío Paz Agudelo,38,M,Bogotá,1,15,2024-12-09
-306,Luis Jefferson Hernández Giraldo,58,M,Cartagena,5,13,2024-06-24
-307,Andrey Rojas Zuluaga,45,M,Medellín,2,9,2024-10-06
-308,Fernanda Constanza Ramírez Ruiz,18,F,Medellín,2,14,2024-08-04
-309,Ángela Angélica Niño Castro,73,M,Medellín,2,13,2025-03-05
-310,Adriana Arboleda,47,F,Bogotá,1,6,2024-07-25
-311,Alfredo Armando Ayala,18,F,Cali,3,13,2025-03-10
-312,Alejandro Rafael Perea,19,F,Medellín,2,8,2025-03-05
-313,Julián Galvis Rivera,55,M,Medellín,2,5,2025-01-24
-314,Felipe Alirio Martínez Méndez,46,M,Bogotá,1,8,2025-04-08
-315,Jorge Ríos,27,F,Barranquilla,4,13,2025-04-04
-316,Alberto Peña Ardila,77,M,Cali,3,8,2024-08-04
-317,Ana Josefina Aguirre Ramos,49,F,Cartagena,5,12,2025-03-03
-318,Alberto Pablo Mora Camargo,18,M,Cali,3,13,2025-02-15
-319,Elizabeth Angie Buitrago,40,M,Medellín,2,13,2025-01-06
-320,Victoria Pérez Ramírez,64,M,Bogotá,1,14,2024-11-26
-321,Manuel Moreno Rodríguez,45,M,Cartagena,5,7,2025-04-26
-322,Miller Andrés Guerrero,49,F,Bogotá,1,13,2024-10-23
-323,María Anyi Gamboa Silva,33,F,Barranquilla,4,15,2024-12-03
-324,Rocío Lozano Silva,38,F,Cali,3,10,2024-11-10
-325,William Rangel Duarte,24,F,Cartagena,5,13,2024-12-30
-326,María Mercedes Vásquez Cifuentes,38,M,Barranquilla,4,13,2024-12-26
-327,Gloria Yamile González Muñoz,77,F,Cali,3,8,2024-08-18
-328,Isabel Ibarra Ramírez,22,F,Cartagena,5,6,2024-06-13
-329,Walter Raúl Caballero,20,M,Barranquilla,4,15,2025-01-10
-330,Claudia Martínez,22,M,Medellín,2,12,2024-06-09
-331,Yaneth Cardona Valencia,26,F,Barranquilla,4,12,2024-09-29
-332,Miriam Triana Gutiérrez,69,F,Medellín,2,11,2025-01-27
-333,Juan Agudelo Salgado,34,F,Barranquilla,4,12,2024-12-24
-334,Gustavo Hernández Angarita,40,F,Cartagena,5,15,2024-10-08
-335,Carlos Camacho Mejía,34,F,Medellín,2,5,2025-01-20
-336,Santiago Murillo Díaz,62,M,Cali,3,14,2025-03-13
-337,Carlos Jader Paz,39,M,Bogotá,1,12,2025-04-19
-338,Kevin Lozano Ariza,46,M,Bogotá,1,9,2024-06-26
-339,Julia Luz Álvarez Lara,28,F,Medellín,2,7,2024-12-17
-340,Fredy Antonio Pérez Muñoz,59,F,Cali,3,7,2025-02-22
-341,José Bolívar Gaitán,34,M,Medellín,2,15,2025-01-07
-342,Yamid Rodríguez Rentería,29,M,Medellín,2,14,2025-01-25
-343,Esteban Andrés Pérez,38,M,Bogotá,1,11,2025-04-06
-344,Juan Jorge García Vargas,44,F,Medellín,2,16,2025-02-04
-345,David Jhon Acosta,74,M,Cali,3,7,2025-04-12
-346,María Milena Gutiérrez,34,F,Cali,3,13,2025-05-05
-347,Natalia Yuliana Camargo,75,F,Medellín,2,11,2024-10-21
-348,Julio Alejandro Arias,60,M,Bogotá,1,6,2025-02-15
-349,Carolina Gómez García,68,F,Bogotá,1,8,2024-09-28
-350,Manuel Abelardo Guevara Parra,28,F,Barranquilla,4,10,2025-03-20
-351,Elena Luz Torres Barrera,56,F,Barranquilla,4,10,2024-10-10
-352,Esperanza Angie Hernández,72,M,Cartagena,5,8,2025-03-26
-353,Diego Yair Beltrán,22,F,Cartagena,5,15,2025-02-12
-354,Gloria Maritza Lara Gómez,64,F,Medellín,2,6,2024-10-22
-355,Orlando Alberto Méndez,60,M,Cali,3,8,2025-01-19
-356,Marcela Lorena Ortiz Osorio,19,M,Cali,3,7,2025-02-12
-357,Álvaro Hernández,34,M,Bogotá,1,14,2025-01-11
-358,Cecilia Ana Rincón Álvarez,57,F,Cali,3,16,2025-05-28
-359,Santos González Muñoz,20,F,Medellín,2,16,2024-12-23
-360,Patricia Erika Rico,68,F,Bogotá,1,10,2024-07-13
-361,Fernando Paul Sierra Henao,36,M,Cali,3,12,2024-12-20
-362,José Gutiérrez,27,M,Bogotá,1,5,2024-11-06
-363,Jesús Carlos Pérez,29,F,Medellín,2,12,2024-10-22
-364,Bayron Fernando Giraldo Fonseca,48,M,Barranquilla,4,14,2024-07-08
-365,José Pineda Vera,71,F,Cali,3,5,2025-05-11
-366,Estella Álvarez,35,M,Cartagena,5,11,2024-12-29
-367,Edison Rincón Alvarado,43,M,Bogotá,1,15,2025-01-20
-368,Ana Durán,34,M,Cali,3,16,2025-03-08
-369,Teresa Monroy,75,M,Cali,3,17,2025-01-13
-370,Yeison Rubén Martínez Ospino,68,F,Barranquilla,4,11,2025-02-10
-371,Marina Duarte,40,M,Cartagena,5,13,2024-10-07
-372,Andrea Socorro Morales,69,M,Barranquilla,4,7,2025-01-26
-373,Alba María Bermúdez,59,M,Medellín,2,8,2024-10-21
-374,Josefina Rodríguez Calderón,41,M,Cali,3,6,2024-09-04
-375,Horacio Jesús Silva,60,F,Cartagena,5,7,2024-09-04
-376,Fredy Parra Mendoza,61,M,Barranquilla,4,17,2025-05-14
-377,Cecilia Paola Ruiz Gil,46,F,Cali,3,13,2025-03-18
-378,Adriana Lucía Mendoza Parra,50,F,Barranquilla,4,16,2024-10-10
-379,Marta Consuelo Saavedra Díaz,19,M,Barranquilla,4,15,2025-05-16
-380,Verónica Uribe,47,M,Barranquilla,4,8,2025-02-21
-381,José García Díaz,35,F,Bogotá,1,12,2024-09-02
-382,Tulia Hernández Vásquez,63,F,Bogotá,1,7,2024-09-20
-383,Armando José Cardona Erazo,70,F,Medellín,2,5,2024-12-30
-384,Kevin López,61,M,Cali,3,16,2025-02-26
-385,Marina María Salazar,42,M,Barranquilla,4,15,2024-08-14
-386,Estella Mosquera,18,F,Medellín,2,13,2024-06-27
-387,Sebastián García,31,F,Bogotá,1,5,2024-08-21
-388,Luz Milena Mercado,79,M,Medellín,2,7,2024-07-16
-389,María Loaiza,70,F,Medellín,2,15,2024-08-01
-390,Juan Buitrago Monsalve,74,F,Bogotá,1,14,2025-04-16
-391,Freddy Cristhian Rodríguez Velandia,75,M,Bogotá,1,9,2024-06-30
-392,Alexander Miguel Barrios Polo,23,M,Bogotá,1,9,2024-08-11
-393,Vanessa Julieth López,41,M,Cartagena,5,15,2025-01-23
-394,Felipe Suárez Córdoba,69,F,Bogotá,1,7,2024-12-27
-395,Walter Durán Marín,71,M,Cartagena,5,14,2025-04-14
-396,Gloria Isabel Rivera,27,M,Medellín,2,8,2025-04-01
-397,Yeison Mauricio Camargo Burbano,58,M,Medellín,2,7,2025-05-01
-398,Adolfo Guerrero,23,M,Barranquilla,4,16,2024-09-14
-399,Pablo Luis López Mendoza,40,M,Cali,3,9,2024-11-04
-400,Carlos Ángel Pineda,75,M,Cartagena,5,15,2024-12-28
-401,Jorge César Rodríguez Peña,35,F,Medellín,2,16,2025-01-02
-402,Leidy Fernanda Cortés,49,M,Bogotá,1,5,2024-12-09
-403,Efrain Bautista,78,M,Cali,3,12,2024-10-21
-404,Blanca Ortiz,31,M,Cali,3,16,2025-03-14
-405,Eliana Gómez,73,M,Medellín,2,6,2025-03-10
-406,Lorena Yanet Orjuela,51,F,Bogotá,1,15,2024-06-19
-407,Esperanza Natalia Sierra Cruz,57,M,Barranquilla,4,16,2024-08-21
-408,Alejandro José Rojas,51,F,Barranquilla,4,10,2024-06-01
-409,Julieth Luz Jiménez Ávila,22,F,Medellín,2,11,2024-07-31
-410,Lucía Marina Navarro,54,F,Cali,3,15,2025-02-18
-411,Kelly Ariza Palacios,67,F,Cartagena,5,10,2025-01-03
-412,Alba Gutiérrez,73,F,Barranquilla,4,8,2024-10-10
-413,Julia Marcela Morales,30,M,Cali,3,7,2025-01-19
-414,Martín Antonio Duarte Naranjo,36,F,Barranquilla,4,6,2025-03-30
-415,José Díaz,76,M,Medellín,2,14,2024-07-08
-416,Paola Morales Orozco,62,M,Medellín,2,15,2024-08-11
-417,Felipe Óscar Torres,44,F,Cali,3,10,2025-02-05
-418,Juana Mercado,62,F,Barranquilla,4,12,2024-12-27
-419,Edith Acosta,40,F,Bogotá,1,14,2025-05-13
-420,Orlando Antonio Suárez,70,F,Barranquilla,4,16,2025-02-10
-421,Laura Ariza Lara,53,F,Bogotá,1,13,2024-09-05
-422,Esperanza Luz Quiroga Sarmiento,30,F,Bogotá,1,13,2024-07-16
-423,Edgar Luis Bedoya,57,M,Cali,3,5,2024-06-10
-424,Felipe Salazar,41,M,Cali,3,7,2024-07-30
-425,Camilo Cabrera Rodríguez,36,F,Bogotá,1,7,2024-06-25
-426,Cristian Ortega,49,F,Cali,3,13,2024-10-14
-427,Yeferson Gómez,21,F,Bogotá,1,11,2024-09-02
-428,Alejandra Inés Torres,44,F,Bogotá,1,9,2025-03-25
-429,Maritza Escobar Quiroz,34,F,Barranquilla,4,5,2024-11-08
-430,Mónica María Flórez Velásquez,43,F,Medellín,2,11,2025-05-01
-431,Blanca Galindo Morales,64,M,Barranquilla,4,7,2024-12-22
-432,Helena López Beltrán,69,M,Cali,3,9,2024-08-10
-433,Fabián Manuel Serrano Nieto,50,F,Bogotá,1,12,2025-03-14
-434,José Córdoba González,40,F,Medellín,2,8,2025-02-09
-435,Constanza Álvarez Palacio,46,F,Medellín,2,7,2024-12-24
-436,Juan Alberto Gutiérrez Daza,58,M,Bogotá,1,6,2024-11-12
-437,Margarita Martha Quintero Cárdenas,28,F,Barranquilla,4,12,2024-07-30
-438,María Rodríguez Monsalve,37,F,Barranquilla,4,6,2024-10-08
-439,Juan Andrés Gómez,61,F,Cartagena,5,7,2024-08-27
-440,Elsa Matilde Duarte López,54,M,Cartagena,5,10,2025-01-26
-441,Isabel Moreno,74,M,Medellín,2,9,2024-10-28
-442,Yazmín Tamayo,75,F,Medellín,2,8,2025-05-01
-443,Enrique Rodríguez Gómez,78,M,Bogotá,1,11,2025-02-18
-444,Bibiana Rosa Mercado,29,F,Cali,3,5,2025-05-15
-445,Eduardo Arrieta,42,M,Bogotá,1,14,2024-12-23
-446,Esneider Jairo Manrique Morales,44,F,Bogotá,1,10,2025-01-10
-447,María Vélez Luna,20,M,Barranquilla,4,7,2024-09-13
-448,Mercedes Lozano,75,M,Cartagena,5,10,2025-02-20
-449,Óscar Cifuentes,42,F,Barranquilla,4,9,2024-08-17
-450,María González Londoño,61,F,Bogotá,1,13,2025-03-16
-451,Jaime Ferney Muñoz Velasco,65,M,Cali,3,8,2024-07-11
-452,Luz Acosta,70,F,Cali,3,12,2024-10-18
-453,Mercedes María Gómez,30,M,Medellín,2,14,2025-01-03
-454,Cindy Elena Parra,47,F,Medellín,2,13,2025-03-21
-455,Camila Álvarez,48,F,Medellín,2,7,2025-04-29
-456,Francisco Morales Pinto,55,M,Barranquilla,4,14,2025-04-04
-457,Leonardo Eduardo Castañeda,68,F,Barranquilla,4,15,2024-10-29
-458,Alberto Andrés Torres,74,F,Medellín,2,15,2025-01-26
-459,Luis César Martínez,37,M,Cali,3,11,2024-12-08
-460,Benjamín Jeison Pérez,67,F,Barranquilla,4,16,2025-02-02
-461,Antonio Luis Castillo Torres,50,M,Medellín,2,6,2024-09-08
-462,Segundo Carlos Jiménez,43,F,Barranquilla,4,5,2025-02-13
-463,Luis Gómez,56,F,Bogotá,1,13,2024-09-30
-464,Cecilia Ramírez,51,F,Barranquilla,4,17,2024-06-22
-465,Luz Pinto González,57,M,Cali,3,14,2024-08-02
-466,Dagoberto Parra,26,F,Cartagena,5,8,2024-10-18
-467,Julián Hernández,49,M,Bogotá,1,16,2024-05-31
-468,Alejandro González Cárdenas,25,F,Cartagena,5,7,2025-03-12
-469,Claudia Carolina Bejarano,76,M,Medellín,2,9,2024-09-21
-470,Leonor Salcedo,33,F,Cali,3,13,2024-12-07
-471,Inés Ligia Álvarez Ruiz,43,M,Barranquilla,4,11,2025-04-30
-472,Sandra Vargas Villa,77,F,Bogotá,1,8,2024-12-25
-473,Edgar Serna,40,F,Bogotá,1,7,2024-06-08
-474,Carolina Janeth Pérez,75,M,Barranquilla,4,16,2025-04-13
-475,Lucila Loaiza Sierra,62,F,Medellín,2,13,2024-12-14
-476,Silvia Johanna Marín,49,M,Medellín,2,13,2024-12-31
-477,Jorge Ramos Ángel,36,F,Bogotá,1,6,2024-07-21
-478,Andrea Pérez Hernández,58,M,Cartagena,5,10,2025-02-07
-479,Lizeth María Domínguez,68,M,Bogotá,1,8,2025-02-14
-480,Cristina Rubiela Buitrago,50,M,Bogotá,1,12,2025-01-21
-481,José Armando Beltrán Gutiérrez,48,F,Barranquilla,4,5,2024-06-29
-482,Orlando José Mantilla,21,F,Medellín,2,14,2025-03-25
-483,John Bernal Escobar,67,M,Medellín,2,9,2025-02-24
-484,Juan Castro,53,F,Cali,3,7,2025-04-07
-485,Aníbal David Rivas Sierra,53,F,Medellín,2,10,2025-04-26
-486,Lina Catalina Peña,56,F,Barranquilla,4,6,2025-03-22
-487,Alberto José Álvarez Miranda,71,M,Cali,3,8,2024-07-25
-488,Gloria Niño,57,M,Cali,3,8,2024-10-15
-489,Vanessa Ruiz,25,F,Bogotá,1,5,2025-04-13
-490,Jairo Cardona Martínez,31,F,Cali,3,12,2024-08-04
-491,Joan Ortiz,22,F,Bogotá,1,7,2025-02-09
-492,Wilder Perea,77,M,Medellín,2,16,2024-07-25
-493,Cristian Rivera López,37,F,Cali,3,13,2024-10-24
-494,Andrés Alexander Cantillo Santos,76,M,Bogotá,1,12,2024-07-10
-495,Carlos Jiménez,52,M,Medellín,2,15,2024-12-03
-496,Jacqueline Lozano Díaz,57,F,Medellín,2,10,2024-05-31
-497,Fernanda Marina López,40,M,Medellín,2,13,2024-09-09
-498,Carlos Ortiz,31,F,Bogotá,1,16,2025-01-28
-499,Carlos Salazar Sánchez,29,F,Medellín,2,17,2024-09-18
-500,Elvira Gutiérrez Hernández,37,F,Medellín,2,15,2025-02-18
-501,Gonzalo Maicol Franco,71,F,Medellín,2,6,2025-05-05
-502,Liliana Esther Martínez,64,M,Cali,3,16,2024-11-26
-503,María Gutiérrez García,73,F,Barranquilla,4,11,2025-02-20
-504,Orlando Camilo Toro Angulo,32,F,Cali,3,14,2024-09-16
-505,Lilia Díaz León,19,M,Medellín,2,8,2024-07-19
-506,Leider César Rubio Franco,46,M,Cartagena,5,10,2024-10-25
-507,Jorge Orjuela Pérez,54,M,Bogotá,1,13,2024-08-19
-508,María Cabrera,68,F,Bogotá,1,11,2024-12-19
-509,Nancy María Gil,67,F,Medellín,2,17,2025-05-03
-510,Claudia Hernández González,46,M,Medellín,2,7,2025-04-01
-511,José Antonio López,64,M,Medellín,2,13,2024-08-23
-512,Lizeth Carmen Arroyo,55,F,Medellín,2,7,2025-05-24
-513,Rosa Julieth Aguirre Chacón,62,F,Bogotá,1,13,2025-04-07
-514,Humberto Ortiz,72,F,Bogotá,1,6,2024-12-23
-515,Josefa Beatriz Medina,72,F,Bogotá,1,6,2024-09-10
-516,Myriam Marina Uribe,39,M,Barranquilla,4,11,2024-07-18
-517,Angie Fernanda González,72,F,Cali,3,6,2024-09-27
-518,Mayra Contreras,35,M,Bogotá,1,16,2025-04-09
-519,Constanza Arias,57,M,Barranquilla,4,17,2025-05-16
-520,Manuel Luis Correa,21,M,Barranquilla,4,14,2024-07-14
-521,David Córdoba Salamanca,33,F,Bogotá,1,5,2025-05-25
-522,Emilio Álvarez,58,F,Cali,3,10,2024-08-04
-523,Rosalba María Maldonado Hernández,23,M,Cartagena,5,6,2024-09-23
-524,Arnulfo Juan Aguirre Castro,42,F,Barranquilla,4,15,2025-04-08
-525,Nubia Jiménez,48,M,Bogotá,1,14,2024-07-21
-526,Jairo Alex Ortiz Arrieta,55,F,Cali,3,9,2025-02-23
-527,Karina Norma Marín Gallego,23,F,Cali,3,9,2024-06-27
-528,Yasmín Fernanda Mendoza Aguilar,40,M,Barranquilla,4,6,2024-12-08
-529,Jeferson Rodríguez Ortega,71,M,Bogotá,1,6,2024-06-27
-530,Paola Martínez Vásquez,18,F,Medellín,2,14,2024-08-28
-531,Yasmín Gloria García Parra,38,M,Medellín,2,16,2025-04-15
-532,Andrea Mosquera,49,M,Cali,3,14,2025-05-04
-533,Miryam Cerón,43,M,Bogotá,1,8,2025-03-25
-534,Luis Díaz Mercado,31,F,Bogotá,1,7,2024-08-12
-535,Felipe Enrique Contreras Muñoz,20,M,Medellín,2,6,2025-04-29
-536,Daniel Muñoz,19,F,Cartagena,5,17,2025-03-05
-537,Inés Dayana Cuesta,42,F,Barranquilla,4,10,2025-01-17
-538,Alexandra Zuluaga Rivera,54,M,Medellín,2,11,2025-03-23
-539,Carmen Andrea Daza Marín,65,M,Cali,3,10,2024-07-21
-540,Patricia Ramírez,61,M,Barranquilla,4,11,2024-08-10
-541,Jaime José Ramos León,72,F,Bogotá,1,10,2024-10-14
-542,Wendy Ángel,42,F,Cartagena,5,9,2025-03-02
-543,Willian López,38,M,Bogotá,1,8,2025-01-03
-544,Jairo Daza,31,M,Bogotá,1,12,2025-01-18
-545,Héctor Montes,69,F,Medellín,2,9,2025-01-08
-546,Miguel Salcedo Mejía,59,F,Cali,3,8,2024-10-14
-547,Esneider David Castañeda,30,F,Medellín,2,7,2024-09-06
-548,Diana María González Alvarado,28,M,Bogotá,1,17,2025-05-23
-549,Gloria Marta Torres Naranjo,48,M,Barranquilla,4,17,2024-10-01
-550,Stiven Navarro Estrada,78,F,Barranquilla,4,15,2024-12-05
-551,Mery Carolina Pérez Mantilla,21,F,Cartagena,5,13,2025-01-07
-552,Iván Medina Díaz,61,F,Barranquilla,4,12,2024-10-11
-553,Ruth Jiménez,30,M,Bogotá,1,15,2025-05-01
-554,Fernando Ángel,39,F,Barranquilla,4,11,2025-05-29
-555,Jorge Quintero,32,F,Barranquilla,4,15,2024-10-22
-556,Miguel Ocampo,78,F,Medellín,2,14,2025-05-07
-557,Eduardo Jesús Rodríguez,66,F,Barranquilla,4,13,2025-01-28
-558,Wilson Galvis Orjuela,41,M,Medellín,2,11,2025-03-30
-559,Miguel Sánchez García,27,M,Medellín,2,9,2024-10-22
-560,Jorge López,27,M,Barranquilla,4,6,2024-10-07
-561,Fabiola Ángela Martínez Rueda,64,M,Cali,3,13,2024-08-26
-562,Omar Manuel Blanco,50,M,Barranquilla,4,8,2025-03-11
-563,José Pedro Ortega Ramírez,65,M,Bogotá,1,10,2024-07-24
-564,Gloria Medina Cantillo,49,M,Cali,3,8,2024-08-10
-565,Inés Sánchez,30,M,Medellín,2,17,2025-02-11
-566,Elvira López,19,F,Medellín,2,14,2024-09-17
-567,Elsa Piedad Sanabria Quintero,35,M,Cali,3,7,2024-06-05
-568,Héctor John Barbosa,56,M,Medellín,2,16,2025-05-27
-569,Milena Isabel Reyes,41,F,Bogotá,1,6,2025-01-10
-570,Lorena Andrade Díaz,55,F,Cali,3,8,2025-05-14
-571,Luis Díaz Salazar,53,F,Barranquilla,4,12,2024-12-15
-572,María Jennifer Sánchez,20,M,Cartagena,5,11,2024-09-02
-573,Lorena Cruz Contreras,23,M,Medellín,2,13,2025-04-17
-574,Eduardo Suárez,66,F,Bogotá,1,13,2024-11-27
-575,Yazmín Luisa Amaya Rueda,61,M,Cali,3,7,2024-06-11
-576,Elena Ana Jiménez Lozano,25,F,Medellín,2,10,2024-09-26
-577,Nelson Luis Díaz Rivas,78,F,Cali,3,8,2024-06-15
-578,Andrea Arrieta Vargas,19,M,Bogotá,1,8,2025-04-21
-579,Ricardo César Ramos,52,F,Medellín,2,7,2024-11-04
-580,Jesús Juan Cárdenas Vargas,25,F,Medellín,2,12,2025-05-10
-581,Leonor Lina Naranjo González,30,M,Cartagena,5,17,2025-03-01
-582,Valentina Herrera Alarcón,59,F,Bogotá,1,16,2025-03-03
-583,Carmen Claudia Rodríguez Guerra,29,M,Barranquilla,4,15,2024-09-14
-584,Yaneth Luz Hernández,33,F,Barranquilla,4,14,2024-10-21
-585,Rodrigo José Rodríguez,57,F,Medellín,2,12,2024-08-07
-586,Natalia Bustos Jiménez,73,F,Barranquilla,4,10,2025-03-04
-587,Andrés Escobar,38,F,Barranquilla,4,5,2025-02-19
-588,Carlos Castaño,25,M,Medellín,2,12,2024-08-09
-589,Edna Rivera Jaramillo,29,F,Cali,3,6,2024-06-03
-590,Alexander Figueroa Castro,31,F,Barranquilla,4,8,2024-11-22
-591,Wilson Hernán Flórez,62,F,Bogotá,1,6,2024-09-18
-592,Jorge Alexander Hoyos Guerrero,44,M,Bogotá,1,15,2024-12-05
-593,Fernando Santos Garzón,20,F,Medellín,2,16,2024-07-14
-594,Nidia Muñoz Martínez,35,M,Cartagena,5,13,2024-07-13
-595,Jacqueline Ríos Méndez,60,M,Cartagena,5,11,2025-03-27
-596,Nelson Castañeda,69,F,Cali,3,12,2024-11-23
-597,Milena María Montenegro,35,M,Bogotá,1,6,2024-09-26
-598,Andrea Gladys Sánchez Garzón,59,F,Cali,3,8,2025-04-08
-599,Marcos William Mosquera,24,F,Bogotá,1,12,2025-01-03
-600,Alexis Leonardo Sierra Castellanos,52,F,Medellín,2,15,2024-06-21
-601,Isabel Salcedo,31,F,Bogotá,1,7,2024-07-12
-602,Elizabeth Velandia,42,F,Cali,3,7,2024-09-05
-603,Diana Rodríguez,50,F,Medellín,2,16,2025-05-24
-604,Andrea González,71,F,Cali,3,5,2024-06-26
-605,Andrés Jesús Velasco,58,F,Medellín,2,10,2024-08-01
-606,Carlos Kevin Cortés Arévalo,51,F,Cali,3,16,2024-10-30
-607,David Lozano Rojas,42,M,Bogotá,1,10,2025-01-10
-608,Janneth Muñoz,29,F,Bogotá,1,10,2024-08-26
-609,Cristian Gómez,77,M,Medellín,2,9,2024-08-24
-610,Gabriela Tatiana Ariza,60,F,Bogotá,1,11,2025-05-26
-611,Mario Correa Henao,36,M,Cali,3,7,2025-01-30
-612,Marcela Osorio Silva,51,F,Cali,3,8,2024-11-11
-613,Sandra Luisa Bedoya,28,F,Bogotá,1,14,2025-04-08
-614,Ana Paola Palacios,40,M,Medellín,2,15,2024-11-01
-615,Patricia Leticia Ardila Muñoz,26,F,Bogotá,1,14,2025-03-12
-616,Sofía Villamizar Rueda,33,F,Bogotá,1,7,2025-05-04
-617,Patricia Rivas,56,F,Medellín,2,6,2024-10-15
-618,Inés Karen Arroyo,77,F,Bogotá,1,5,2025-03-29
-619,Alexander Juan Hernández,55,M,Cali,3,10,2024-12-24
-620,Aura Luz López Salazar,69,M,Bogotá,1,7,2024-12-01
-621,Doris Carmen Álvarez,45,F,Medellín,2,8,2025-05-02
-622,Juliana Álvarez,39,M,Barranquilla,4,12,2025-04-29
-623,Yuli Rodríguez,44,M,Medellín,2,14,2024-11-25
-624,María Vargas Ariza,38,F,Barranquilla,4,11,2024-07-20
-625,Clemencia Olga Herrera Gallego,56,M,Bogotá,1,13,2024-07-01
-626,Victoria Delgado,43,F,Medellín,2,5,2024-11-21
-627,Santiago Rivera,54,M,Bogotá,1,11,2024-07-02
-628,Brayan Leonardo Ceballos,66,F,Medellín,2,9,2025-02-22
-629,Juan Mejía,72,M,Barranquilla,4,10,2025-02-17
-630,Jairo Julio Rivera Solano,51,F,Bogotá,1,16,2025-01-03
-631,Andrés Edison Mora,58,M,Medellín,2,7,2025-05-25
-632,Luis Jhon Martínez,59,M,Barranquilla,4,8,2025-01-18
-633,María Molina,58,F,Cartagena,5,15,2024-09-06
-634,Mercedes Cristina Rincón,58,M,Cali,3,6,2024-12-02
-635,Angélica Rocío Rincón Rodríguez,46,M,Medellín,2,6,2024-12-26
-636,Estella García,77,F,Cartagena,5,16,2024-06-15
-637,María Marín Fajardo,72,F,Barranquilla,4,10,2024-12-16
-638,Luz Omaira Loaiza,25,M,Cartagena,5,14,2024-12-01
-639,Martha Kelly Osorio Figueroa,41,M,Bogotá,1,5,2024-07-22
-640,Johana Ana Gamboa,61,M,Bogotá,1,8,2024-12-27
-641,Sandra Sánchez,30,F,Cali,3,12,2024-09-04
-642,Johana García,18,M,Barranquilla,4,16,2025-04-19
-643,Diana Gladys Portilla Ortiz,41,M,Bogotá,1,8,2025-04-18
-644,Patricia Lilia Acosta Gutiérrez,57,F,Medellín,2,10,2024-10-22
-645,Leidy Alejandra Flórez Castañeda,32,M,Medellín,2,8,2024-10-10
-646,Olga Mendoza Caicedo,68,M,Barranquilla,4,12,2024-05-31
-647,Alejandra Ximena Villegas,47,F,Bogotá,1,15,2025-03-07
-648,Paula Luz Rubio,55,M,Medellín,2,14,2024-07-27
-649,Nubia Luz Herrera,57,M,Medellín,2,6,2024-12-12
-650,Manuel Torres Gómez,67,M,Medellín,2,14,2025-04-14
-651,Leonardo Jairo Escobar,21,F,Medellín,2,5,2024-11-24
-652,María Gómez Cruz,75,M,Cali,3,15,2024-06-14
-653,Vanessa Cecilia González Lara,53,F,Medellín,2,7,2025-01-13
-654,Antonio Sanabria,30,M,Bogotá,1,15,2024-09-28
-655,Ariel Gutiérrez,32,M,Bogotá,1,7,2024-10-12
-656,Miguel Edwin Ortiz Vallejo,26,M,Cali,3,13,2025-02-11
-657,Antonio Vera Sánchez,77,F,Medellín,2,13,2024-07-22
-658,Olga Cruz,69,F,Bogotá,1,14,2024-11-21
-659,Valentina Cortés Cifuentes,49,M,Bogotá,1,9,2024-09-17
-660,Giovanny Elías Moreno Perea,52,F,Cali,3,5,2025-03-10
-661,Alexander Miguel Ortiz Rojas,29,M,Barranquilla,4,12,2024-10-06
-662,Leonardo Valencia,79,M,Cali,3,7,2024-10-23
-663,Adriana Castro,63,M,Barranquilla,4,13,2025-02-06
-664,Mirian Cano Melo,28,F,Cali,3,14,2025-04-03
-665,Edith Dolores García Anaya,42,F,Barranquilla,4,12,2025-03-23
-666,Milena Flórez,38,M,Bogotá,1,7,2024-07-22
-667,Claudia Valencia,48,M,Barranquilla,4,8,2025-05-09
-668,Luz Diana Pérez López,61,M,Bogotá,1,8,2024-08-05
-669,Rosa Leidy Zapata Gómez,78,M,Cali,3,11,2024-07-07
-670,Juan Elías Ospina,71,M,Cali,3,15,2024-11-06
-671,Oswaldo Andrés González,56,F,Cali,3,13,2024-12-04
-672,Jairo Buitrago,64,F,Barranquilla,4,15,2024-10-23
-673,Pablo Eduar Quiroga,25,M,Cali,3,16,2025-03-06
-674,Ángel Ruiz,21,F,Barranquilla,4,10,2024-10-31
-675,Esperanza Laura Castro,59,F,Medellín,2,7,2025-01-08
-676,Jairo Cruz,63,M,Cali,3,16,2025-02-04
-677,Luis Espinosa Delgado,30,M,Medellín,2,7,2025-04-03
-678,Luis López,59,F,Medellín,2,10,2025-03-16
-679,Jairo Zapata Rivera,34,F,Bogotá,1,16,2024-09-26
-680,Rubén Peña,74,F,Cartagena,5,14,2025-04-22
-681,Elena Isabel Rico Roa,23,F,Barranquilla,4,8,2024-07-18
-682,Marlon Eduar Bastidas,21,M,Cartagena,5,7,2024-09-04
-683,Mario Quintero Ibarra,41,F,Barranquilla,4,8,2024-09-14
-684,Lucía Cecilia Pérez Bermúdez,55,M,Bogotá,1,8,2025-01-18
-685,Janeth Villegas,38,F,Cali,3,11,2025-04-11
-686,Nelson Pedro Torres,77,M,Bogotá,1,12,2024-10-06
-687,Gabriela Isabel Caicedo,24,F,Medellín,2,8,2024-08-13
-688,Elvia Loaiza Rojas,33,F,Bogotá,1,8,2024-12-17
-689,María Ligia Espinosa,73,F,Cali,3,13,2025-02-13
-690,Fernando Gutiérrez,35,M,Cali,3,14,2025-05-18
-691,Armando Álvaro Ospino Alzate,63,M,Medellín,2,7,2024-10-05
-692,Jhoana Elena González,29,F,Cali,3,11,2024-12-01
-693,Julio Pablo Valderrama,48,F,Barranquilla,4,16,2024-06-20
-694,Manuel Torres Ariza,53,F,Medellín,2,8,2025-03-11
-695,Germán Jesús Cárdenas,50,F,Barranquilla,4,13,2024-09-28
-696,Alexandra Alzate Cabrera,45,M,Bogotá,1,10,2025-01-16
-697,Sofía Rivera,62,M,Cartagena,5,15,2025-04-10
-698,Alejandra Henao,37,F,Cali,3,6,2024-07-24
-699,María León,77,M,Cartagena,5,12,2024-08-06
-700,Óscar José Moreno,33,M,Cali,3,13,2024-11-29
-701,Alfonso Esteban Salgado,27,F,Cali,3,16,2024-12-13
-702,Alfonso Francisco Buitrago,66,F,Bogotá,1,7,2025-04-29
-703,Clara Mary Muñoz Ortega,34,M,Medellín,2,11,2024-09-23
-704,Magda Esther Bonilla Zambrano,59,M,Cartagena,5,8,2024-07-26
-705,Fernando Ángel Guerrero,46,F,Barranquilla,4,15,2025-01-17
-706,Marina Yulieth Toro,38,F,Medellín,2,10,2025-04-30
-707,Aníbal Pérez,43,F,Barranquilla,4,9,2024-12-10
-708,Javier Caballero Ramírez,52,M,Cartagena,5,12,2025-01-10
-709,Carlos González García,23,M,Barranquilla,4,14,2025-05-30
-710,Sebastián Cristian González Pérez,61,F,Bogotá,1,12,2024-06-19
-711,José Zambrano,41,M,Barranquilla,4,14,2024-07-17
-712,Raquel Ortiz Fuentes,41,F,Bogotá,1,9,2025-04-01
-713,Jorge Maldonado Acosta,45,M,Medellín,2,17,2025-01-04
-714,Vanessa Puentes Vargas,31,F,Medellín,2,8,2024-08-01
-715,Eliana Rojas García,71,M,Medellín,2,16,2024-06-19
-716,Gerson Gutiérrez Torres,23,F,Barranquilla,4,17,2024-06-15
-717,Álvaro Quintero,73,M,Medellín,2,16,2025-01-02
-718,Enrique López Leal,60,M,Cali,3,9,2024-12-25
-719,Julio Restrepo,50,M,Cali,3,10,2025-02-11
-720,María Clara Pérez Bolívar,32,F,Bogotá,1,13,2024-10-16
-721,Luz Muñoz Mendoza,41,M,Cali,3,15,2024-10-12
-722,Esperanza Duarte Muñoz,43,F,Medellín,2,12,2025-05-01
-723,Diana Ávila Cruz,74,M,Medellín,2,14,2025-01-02
-724,Luis Ortiz Forero,22,M,Cartagena,5,17,2025-01-07
-725,Sonia Suárez,41,M,Bogotá,1,13,2024-09-13
-726,Esneider Fajardo,38,F,Medellín,2,8,2025-05-12
-727,Michael Contreras,50,F,Bogotá,1,14,2025-05-09
-728,Alexandra López Córdoba,59,M,Bogotá,1,10,2024-08-12
-729,Cecilia Rodríguez,50,M,Cali,3,12,2024-11-10
-730,Vilma Galeano Gómez,51,F,Bogotá,1,14,2024-07-19
-731,Matilde Sandra Vergara Sarmiento,56,F,Cali,3,16,2024-07-04
-732,Manuel Suárez Hernández,23,F,Cali,3,5,2025-03-30
-733,María Ana Caro Galvis,27,M,Barranquilla,4,11,2025-03-04
-734,Alexander Rubén Sanabria,65,M,Cartagena,5,11,2024-12-22
-735,Augusto Trujillo,33,F,Bogotá,1,7,2024-07-31
-736,Karen Guzmán,39,F,Cali,3,8,2025-05-29
-737,Cristian Pardo,55,F,Barranquilla,4,14,2025-03-11
-738,Fabiola Morales Medina,68,M,Cartagena,5,16,2024-12-25
-739,Dora Rojas,24,M,Bogotá,1,5,2024-06-30
-740,Lucía Duarte Amaya,21,F,Cali,3,8,2024-08-21
-741,Paula Gladys Martínez,73,F,Medellín,2,9,2025-04-12
-742,Lizeth Nidia Durán,69,F,Cali,3,10,2024-08-28
-743,Laura Rodríguez Duarte,45,F,Cali,3,14,2024-08-04
-744,Leidy María Delgado Fajardo,42,F,Bogotá,1,5,2024-11-15
-745,Ximena María Salas,50,F,Cartagena,5,8,2025-03-06
-746,Margoth Restrepo,56,F,Barranquilla,4,10,2024-06-10
-747,Paola Gabriela Villamil Rodríguez,67,M,Barranquilla,4,13,2024-07-29
-748,Ruth Barrios,28,F,Medellín,2,8,2025-03-29
-749,Felipe Andrés Jiménez,77,F,Bogotá,1,18,2025-05-16
-750,Carlos Ramiro Morales Rosero,38,F,Cali,3,15,2024-07-01
-751,Jair Luis Martínez,32,F,Cali,3,12,2024-07-29
-752,Luz Fabiola Rivera Rojas,77,F,Medellín,2,13,2024-07-16
-753,Marta Cortés Murillo,24,F,Barranquilla,4,12,2024-12-26
-754,Sandra Alejandra Cabrera,44,F,Medellín,2,8,2025-02-16
-755,Javier Jair Amaya Salazar,45,M,Medellín,2,14,2024-12-07
-756,Juan Pablo Delgado,54,F,Bogotá,1,13,2024-11-17
-757,Mercedes Nataly Hernández Alvarado,23,F,Medellín,2,10,2025-01-18
-758,Janneth López López,26,F,Barranquilla,4,12,2024-06-21
-759,Maritza Martínez Perea,62,M,Cartagena,5,13,2025-04-27
-760,Luz Erika Ramírez,30,F,Cali,3,10,2025-05-12
-761,Johanna Jaramillo Suárez,75,M,Cartagena,5,8,2025-03-06
-762,Jhon Darío López Mesa,22,M,Bogotá,1,12,2025-01-20
-763,Claudia Quintero Fuentes,42,F,Medellín,2,8,2024-08-01
-764,Luz Jimena Sánchez,79,M,Bogotá,1,7,2024-08-30
-765,Juan Alberto Ocampo,46,M,Bogotá,1,8,2025-05-02
-766,Lida Montes Velásquez,23,M,Cartagena,5,9,2025-03-05
-767,María Guerra,64,F,Medellín,2,15,2025-02-20
-768,Camilo Torres Álvarez,51,F,Medellín,2,14,2025-05-27
-769,Luz Adela Salas,47,F,Barranquilla,4,8,2025-01-20
-770,Humberto Sánchez Carvajal,43,F,Bogotá,1,11,2025-05-08
-771,Stella Cuéllar Mejía,69,F,Medellín,2,6,2024-11-24
-772,David Jair Moreno,35,F,Barranquilla,4,15,2024-10-20
-773,Dina Lina Ávila,39,M,Medellín,2,15,2025-05-06
-774,Humberto Ballesteros,47,M,Barranquilla,4,10,2024-10-14
-775,Antonio Torres,78,F,Bogotá,1,8,2024-12-04
-776,María García Rincón,57,F,Medellín,2,7,2025-02-21
-777,Alejandro David Pineda,37,F,Bogotá,1,13,2025-02-18
-778,Yulieth María Rojas,40,F,Barranquilla,4,6,2025-03-27
-779,Elena Guerrero,42,M,Cali,3,8,2024-10-02
-780,Augusto Villamizar,38,M,Medellín,2,12,2024-06-05
-781,Inés Vargas,63,F,Medellín,2,15,2025-05-19
-782,Mariela Castillo Salazar,56,M,Barranquilla,4,9,2025-03-01
-783,Stella Silva,32,F,Bogotá,1,8,2024-10-04
-784,José Luis Muñoz,76,M,Cartagena,5,8,2024-12-07
-785,William Julio Ramírez Giraldo,51,F,Bogotá,1,13,2024-08-25
-786,Claudia Andrea Riascos Narváez,70,F,Bogotá,1,12,2024-07-04
-787,Yuly Arias,31,M,Medellín,2,7,2024-12-27
-788,Lucy Paula Cabrera,57,F,Bogotá,1,9,2025-05-06
-789,Lucero Bustamante,39,F,Cartagena,5,17,2024-09-17
-790,Carlos Giraldo,68,M,Medellín,2,15,2024-07-16
-791,Cecilia Ramírez Bohórquez,45,F,Cali,3,17,2025-03-04
-792,Emilio Hernández,26,M,Cali,3,12,2024-09-09
-793,Giovanni Rincón,36,M,Cali,3,14,2025-01-18
-794,José Erazo,55,M,Bogotá,1,9,2025-01-21
-795,Elena Lucía Páez,47,M,Bogotá,1,9,2024-08-21
-796,Luz Murillo,42,F,Medellín,2,5,2024-08-19
-797,Roberto Delgado Garzón,76,F,Medellín,2,10,2025-03-04
-798,Luz Ortiz Arias,21,F,Bogotá,1,15,2024-10-08
-799,Oliva Martínez Agudelo,78,F,Barranquilla,4,13,2024-07-12
-800,Jair Alexis Londoño,72,F,Cartagena,5,12,2025-05-05
-801,Liliana Polo,29,M,Medellín,2,6,2024-06-09
-802,Alejandra Mosquera Correa,38,M,Cali,3,7,2025-03-16
-803,Carlos Bustos Palacios,61,M,Bogotá,1,8,2025-04-25
-804,Paola Cardona Gutiérrez,78,M,Bogotá,1,11,2025-02-01
-805,Edith Beltrán,51,F,Barranquilla,4,9,2024-11-07
-806,Amparo Michel Álvarez,40,M,Bogotá,1,6,2024-11-07
-807,Stiven Hernández,29,F,Medellín,2,14,2025-05-08
-808,Myriam Rodríguez Rivera,69,M,Medellín,2,14,2024-06-25
-809,Fernanda Sepúlveda Garcés,68,F,Cali,3,12,2024-12-12
-810,Carlos Espinosa,68,F,Barranquilla,4,10,2025-05-13
-811,Jorge Alberto Campo,45,F,Medellín,2,12,2024-08-29
-812,Luz Paola Rodríguez Osorio,20,F,Barranquilla,4,12,2025-05-22
-813,Walter Andrés Córdoba,44,M,Medellín,2,7,2025-04-03
-814,Alexander Julio Pérez,40,F,Medellín,2,16,2025-04-12
-815,Andrea Rojas,35,M,Cartagena,5,11,2025-02-10
-816,Yesid Agudelo Pinzón,25,M,Bogotá,1,12,2024-09-22
-817,Clara Medina,46,M,Cartagena,5,17,2024-08-29
-818,José Ortega Alarcón,31,M,Cali,3,5,2024-08-18
-819,Fernando César Acosta Acevedo,30,M,Bogotá,1,9,2024-08-22
-820,Esperanza Romero,66,F,Barranquilla,4,11,2024-06-02
-821,Carlos Díaz,77,M,Bogotá,1,15,2025-05-23
-822,Enrique Francisco Gaitán Ospina,70,M,Medellín,2,16,2025-04-09
-823,Andrés Miguel Solano,79,M,Medellín,2,17,2024-08-12
-824,Daniel Fernando Rivera Castaño,66,M,Barranquilla,4,14,2024-07-22
-825,María Ceballos Vega,68,M,Bogotá,1,5,2024-12-14
-826,Alexandra Castrillón,56,M,Cali,3,13,2025-01-21
-827,Eduardo Sebastián Solano Restrepo,63,M,Medellín,2,9,2025-03-16
-828,Paola Barbosa Guerrero,36,F,Medellín,2,5,2025-05-18
-829,Hugo Andrés Torres Rojas,70,M,Cartagena,5,13,2024-09-13
-830,Alonso Jiménez Ángel,56,F,Barranquilla,4,5,2024-11-09
-831,Diana María Gómez,42,M,Barranquilla,4,16,2024-10-01
-832,Fernando Rueda Ruiz,64,M,Barranquilla,4,13,2024-09-17
-833,María Ingrid Pacheco,35,F,Cali,3,6,2025-03-31
-834,Lorena Ospino Rodríguez,50,M,Cali,3,7,2025-02-18
-835,Elvis Johan Buitrago,36,M,Medellín,2,9,2024-08-05
-836,Yudy Vanegas Salcedo,50,F,Barranquilla,4,13,2025-01-25
-837,Ignacio Miguel Acevedo Quiroga,58,M,Medellín,2,17,2024-08-15
-838,Jhoan Alberto Zapata Romero,58,F,Cali,3,7,2025-02-11
-839,Stella Ortiz,30,F,Cartagena,5,6,2025-01-30
-840,Francisco Velasco Gutiérrez,26,M,Bogotá,1,7,2024-09-05
-841,Beatriz González Vargas,37,F,Barranquilla,4,12,2025-02-10
-842,Fernando Luis Cabrera,55,M,Cartagena,5,11,2024-09-24
-843,Isabel Martha Ramírez Erazo,58,F,Barranquilla,4,14,2024-12-21
-844,Enrique Héctor Jiménez,72,M,Medellín,2,8,2024-11-29
-845,María Mejía,79,M,Cartagena,5,16,2024-12-28
-846,Guillermo Rivera,74,F,Barranquilla,4,15,2024-06-17
-847,Mercedes Becerra,35,F,Cali,3,11,2024-07-06
-848,Yaneth Johanna Carvajal Acosta,26,M,Bogotá,1,8,2024-11-17
-849,Beatriz Cardona,77,F,Barranquilla,4,11,2024-07-17
-850,Mayra Luz Ortega Beltrán,20,F,Medellín,2,6,2024-12-08
-851,Eugenia Díaz,57,M,Medellín,2,15,2024-08-30
-852,Elkin Pérez Torres,71,F,Medellín,2,16,2024-09-29
-853,Alexander Bravo Rodríguez,51,F,Medellín,2,6,2024-07-17
-854,Alexis Suárez,54,F,Cali,3,11,2024-07-05
-855,Eugenia Lucy Saavedra Londoño,37,M,Medellín,2,5,2024-08-30
-856,Bibiana María Vergara Blanco,45,M,Cali,3,16,2024-08-26
-857,Judith García,22,F,Bogotá,1,5,2024-12-09
-858,Maicol Elkin Gómez Caro,73,F,Barranquilla,4,7,2025-01-04
-859,Luis Camargo,21,M,Medellín,2,11,2024-11-21
-860,Germán Mena Vargas,73,F,Medellín,2,7,2025-05-27
-861,Arturo Andrés Guerrero,21,F,Cartagena,5,7,2024-07-11
-862,Emilse Niño Benavides,44,F,Cartagena,5,11,2024-08-26
-863,Víctor Luis Galvis Barbosa,76,M,Bogotá,1,8,2025-03-12
-864,Leonor Medina,54,F,Medellín,2,10,2025-04-05
-865,Marcela Milena Navarro Rodríguez,54,M,Cartagena,5,11,2024-12-09
-866,Fernanda María Marín Alvarado,35,F,Medellín,2,13,2024-10-30
-867,Camilo Franco,30,M,Cartagena,5,16,2025-05-28
-868,Fanny Milena Acevedo Prada,49,F,Bogotá,1,10,2025-03-10
-869,Ana Cecilia Escobar,54,M,Cali,3,12,2024-06-21
-870,Fabián Carlos Henao,62,F,Cali,3,5,2024-11-18
-871,Andrea González,68,M,Barranquilla,4,10,2025-02-14
-872,Katerine Graciela Maldonado,62,M,Barranquilla,4,17,2024-06-29
-873,Ana Judith Páez Melo,63,M,Bogotá,1,17,2024-11-22
-874,Martha María Ruiz Valencia,56,F,Cartagena,5,11,2025-03-05
-875,Jhonatan Vargas,41,M,Bogotá,1,7,2025-03-15
-876,Hermes Eduardo Martínez Hernández,51,M,Bogotá,1,7,2024-10-03
-877,Álvaro José Galindo,34,M,Medellín,2,9,2025-03-17
-878,David Jiménez,74,F,Cali,3,7,2025-04-09
-879,Alexis Jesús Alzate,56,M,Medellín,2,18,2024-08-20
-880,Lucía González Ávila,34,M,Bogotá,1,14,2024-12-21
-881,Juan Luis Uribe Sandoval,44,M,Cartagena,5,9,2024-11-25
-882,Alexandra Loaiza Calderón,62,M,Barranquilla,4,6,2025-04-10
-883,María Liliana Prieto,28,M,Bogotá,1,12,2025-05-20
-884,Bernardo Acosta,37,M,Barranquilla,4,11,2025-05-07
-885,Graciela Ortiz Morales,34,M,Cartagena,5,16,2025-04-01
-886,Yudy Espinosa Orjuela,61,F,Medellín,2,8,2025-05-15
-887,José Lozano Bernal,72,F,Barranquilla,4,10,2025-02-10
-888,Nicolás Duván Guerra,50,F,Medellín,2,8,2024-12-20
-889,Luisa Blanca Díaz Pérez,44,M,Medellín,2,14,2024-05-31
-890,Luz Lizeth Martínez Oviedo,34,M,Medellín,2,14,2024-12-04
-891,Olga Rojas,35,F,Cartagena,5,10,2024-08-06
-892,Gladys Patricia Herrera Martínez,64,F,Cali,3,7,2024-06-24
-893,Segundo Díaz Hernández,65,M,Cartagena,5,13,2025-03-12
-894,José Elkin Vanegas,62,M,Bogotá,1,15,2024-06-23
-895,Andrea Moreno,49,F,Barranquilla,4,6,2024-07-30
-896,Andrés Rodríguez,20,M,Medellín,2,7,2025-04-11
-897,Valentina Liliana Castro,63,M,Medellín,2,10,2025-04-14
-898,Fredy Pérez Lozano,49,F,Bogotá,1,13,2024-06-13
-899,Dubán Gustavo Vásquez,71,F,Barranquilla,4,12,2024-12-28
-900,Javier Monroy,38,F,Cali,3,15,2025-05-10
-901,Alejandro Castro Ariza,52,F,Medellín,2,7,2024-08-11
-902,Mauricio David Guerrero,52,M,Barranquilla,4,14,2025-05-22
-903,Lorena Cruz Castellanos,66,F,Cali,3,7,2025-05-03
-904,Viviana Elena Galvis,20,M,Bogotá,1,12,2025-05-24
-905,William Espinosa Morales,18,M,Barranquilla,4,9,2025-02-09
-906,Yenifer María Arboleda,25,M,Bogotá,1,9,2024-12-16
-907,Liliana Torres Camacho,53,M,Barranquilla,4,16,2024-07-03
-908,Wilman Rojas Cuéllar,40,M,Bogotá,1,7,2024-11-15
-909,Óscar Restrepo García,21,F,Bogotá,1,7,2024-10-26
-910,Luis Enrique Suárez,25,M,Medellín,2,11,2025-03-17
-911,Cecilia Marina Arenas Benavides,36,M,Bogotá,1,7,2024-12-01
-912,Rosa Vera,57,M,Medellín,2,11,2025-03-15
-913,Eugenia Cruz,77,F,Barranquilla,4,13,2024-06-17
-914,Anderson Alexander Hernández Ochoa,19,F,Bogotá,1,12,2025-05-28
-915,Felipe Miguel Díaz,77,F,Medellín,2,14,2024-09-24
-916,Nidia Claudia Chaparro,40,F,Medellín,2,12,2024-11-07
-917,Sebastián Marcos Marín,44,F,Medellín,2,15,2025-02-28
-918,Martha Mónica Mendoza,18,M,Medellín,2,12,2024-12-26
-919,Antonio Cruz,30,M,Bogotá,1,15,2025-03-01
-920,Andrés Chávez Trujillo,74,M,Medellín,2,8,2024-07-19
-921,Fanny Ramos Serrano,72,M,Bogotá,1,11,2025-01-23
-922,Manuel Rodríguez,25,F,Cali,3,16,2025-05-13
-923,Gabriel Zapata Medina,67,F,Cali,3,9,2024-12-22
-924,Cristhian Arteaga,69,M,Barranquilla,4,7,2024-09-19
-925,Paola Beatriz Valencia Flórez,47,M,Medellín,2,13,2025-02-17
-926,Fernando Medina,40,F,Bogotá,1,10,2024-07-28
-927,Armando Fabio Vanegas Pacheco,48,F,Medellín,2,7,2025-03-20
-928,Luis Tamayo,51,M,Bogotá,1,6,2024-10-17
-929,Luis Villegas Correa,32,M,Barranquilla,4,15,2025-01-20
-930,Valentina Ligia Medina,43,F,Medellín,2,6,2024-08-06
-931,Damaris Alejandra Sarmiento Jiménez,40,F,Barranquilla,4,12,2024-07-24
-932,Enrique Wilmer Torres Hoyos,23,M,Medellín,2,6,2024-12-12
-933,Graciela Paula Duarte,45,M,Bogotá,1,15,2025-05-07
-934,Fabián José Arboleda Rodríguez,36,M,Medellín,2,15,2025-05-10
-935,Lucía Leidy Gallego Correa,53,F,Medellín,2,7,2025-01-11
-936,José Gutiérrez Hoyos,66,F,Medellín,2,8,2025-01-31
-937,Nubia Garzón Morales,54,M,Cartagena,5,14,2025-03-25
-938,José Ramírez Rodríguez,46,M,Bogotá,1,16,2025-04-19
-939,Luis Francisco Gómez Pérez,27,M,Cali,3,15,2025-02-21
-940,Alba Posada Padilla,60,M,Medellín,2,13,2025-05-12
-941,Liliana Fernanda Sánchez Herrera,61,M,Cartagena,5,10,2025-05-25
-942,Andrés López Ramírez,42,F,Cali,3,6,2024-10-25
-943,Javier Blanco,36,M,Bogotá,1,16,2024-06-28
-944,Claudia Marcela Villa,54,F,Bogotá,1,11,2025-02-10
-945,Jhon Luis Caicedo López,58,M,Medellín,2,13,2025-03-03
-946,Miguel Edwin Vargas,52,F,Cali,3,7,2025-03-11
-947,Luis Mauricio Bolaños,58,M,Bogotá,1,16,2024-12-19
-948,Pedro López,53,M,Cali,3,7,2024-10-23
-949,Arturo César Londoño Díaz,26,F,Bogotá,1,6,2025-04-11
-950,Lina Escobar Restrepo,50,F,Barranquilla,4,11,2024-12-05
-951,Alexander Lozano,51,M,Cali,3,13,2024-11-29
-952,María Agudelo,53,F,Cartagena,5,14,2024-07-29
-953,Lucía Maritza López,61,F,Medellín,2,7,2025-01-27
-954,Martha Milena Cáceres Pabón,71,F,Cali,3,10,2024-08-23
-955,Estela Amparo Sánchez Mercado,77,M,Cartagena,5,6,2024-10-07
-956,Leonardo Luis Sandoval,66,F,Cali,3,7,2024-07-05
-957,Verónica Gloria Ortega Gutiérrez,61,M,Medellín,2,11,2025-02-03
-958,Salvador Santiago Medina Sánchez,30,M,Cali,3,10,2024-09-25
-959,Alberto Ariza,39,M,Medellín,2,12,2024-09-21
-960,Mary Lucía Mora Rivas,52,M,Cartagena,5,9,2024-06-06
-961,Andrea Vásquez,34,F,Medellín,2,8,2024-08-04
-962,Mauricio Leonel Ramos,46,M,Medellín,2,12,2024-08-06
-963,Manuel Bermúdez,77,F,Cartagena,5,14,2025-01-30
-964,Xiomara Luisa Carrillo,72,F,Barranquilla,4,12,2024-12-12
-965,Amparo Marcela Restrepo,75,F,Medellín,2,5,2024-11-12
-966,Nancy Ana Bravo,76,M,Bogotá,1,12,2025-03-27
-967,Daniela Mosquera Benavides,23,M,Bogotá,1,16,2024-07-28
-968,Milena Carolina Buitrago Moreno,72,F,Medellín,2,10,2024-07-19
-969,Beatriz Pérez,79,F,Medellín,2,12,2024-07-08
-970,Isabel Laura Espitia,24,F,Cali,3,11,2024-08-05
-971,Andrés Juan Sánchez Ramírez,28,F,Bogotá,1,7,2024-08-09
-972,José Ocampo Murillo Guerra,73,F,Cali,3,6,2025-04-08
-973,Luis Robinson Torres,57,M,Bogotá,1,12,2025-05-02
-974,José Leonardo Marín Ríos,51,F,Cartagena,5,16,2025-05-28
-975,Marcos Carlos Guzmán,21,F,Cali,3,14,2025-05-19
-976,Mónica Acevedo,22,F,Cartagena,5,15,2024-07-15
-977,Sonia Yolanda Montenegro Castañeda,32,F,Cali,3,10,2024-07-02
-978,Claudia Cecilia Rodríguez Pérez,76,F,Medellín,2,11,2024-12-10
-979,María López,43,M,Bogotá,1,13,2025-01-18
-980,Pedro Óscar Jaimes,36,M,Medellín,2,15,2024-12-31
-981,Gloria Pinzón,21,M,Medellín,2,10,2024-11-19
-982,Carmen Rosario Bravo Castellanos,69,F,Medellín,2,5,2024-06-13
-983,Angie Mena García,74,M,Barranquilla,4,14,2025-02-20
-984,Myriam Monsalve Oviedo,43,M,Cali,3,15,2024-06-09
-985,Felipe Jonatan Delgado,69,M,Bogotá,1,7,2024-06-16
-986,Jhonatan Ramírez,67,F,Bogotá,1,15,2025-03-04
-987,Jeison Cardona Quintero,78,F,Medellín,2,7,2025-04-15
-988,Lizeth Amparo Ávila Mora,23,F,Cartagena,5,10,2025-05-28
-989,María Constanza Solano,31,F,Barranquilla,4,11,2024-11-16
-990,Carlos Rubén Sánchez,46,F,Bogotá,1,7,2025-04-20
-991,Gustavo Carlos Ramírez,28,M,Bogotá,1,6,2025-01-25
-992,Luis Vanegas,45,F,Barranquilla,4,7,2025-02-15
-993,María López Ocampo,21,M,Bogotá,1,12,2025-04-29
-994,María Herrera,43,F,Barranquilla,4,13,2024-10-21
-995,Carlos Domínguez Rodríguez,54,M,Bogotá,1,14,2024-09-26
-996,Patricia Patricia Martínez Hernández,72,F,Cali,3,7,2024-06-05
-997,Diego Villamizar Sepúlveda,23,F,Bogotá,1,12,2024-07-04
-998,Paola Osorio Buitrago,78,F,Barranquilla,4,8,2024-08-29
-999,Antonio Andrés Rentería Ortiz,70,F,Cartagena,5,5,2025-05-18
-1000,Luz Carmen Bolaños,25,M,Cartagena,5,6,2024-09-14
-1001,Ricardo Martínez Carmona,49,F,Medellín,2,17,2024-09-06
-1002,Ramón Hernández,34,M,Medellín,2,5,2024-11-10
-1003,Erika Ángela Campo,39,M,Cali,3,9,2024-10-30
-1004,José Felipe Rodríguez,54,F,Cali,3,11,2024-07-10
-1005,Marcela Diana Restrepo Ayala,45,F,Medellín,2,10,2024-11-27
-1006,Mary Erika Burbano,77,F,Bogotá,1,10,2024-09-08
-1007,Enrique Brayan Castillo Ocampo,65,M,Medellín,2,7,2024-06-07
-1008,Alexander Ramírez,74,M,Medellín,2,12,2025-03-04
-1009,Eduard Omar Angulo Orozco,62,F,Cartagena,5,8,2024-12-13
-1010,Oswaldo Antonio Solano Miranda,73,M,Medellín,2,10,2024-09-20
-1011,Marleny Yamile Valencia,49,M,Cartagena,5,7,2024-07-21
-1012,Víctor Eduardo Jiménez,37,F,Medellín,2,13,2025-04-20
-1013,Juan Díaz,52,M,Bogotá,1,10,2024-07-15
-1014,Mario Prieto Cano,31,M,Cali,3,12,2025-05-03
-1015,Alejandra Arias Cardona,46,F,Cartagena,5,6,2025-01-24
-1016,Liliana Hernández García,21,M,Medellín,2,10,2024-08-08
-1017,Yaneth Ávila Hernández,43,M,Cartagena,5,7,2025-03-03
-1018,Esmeralda Clara Romero Hernández,27,M,Bogotá,1,10,2025-03-22
-1019,Felipe Quintero,75,M,Bogotá,1,14,2024-09-30
-1020,María Yanet Mosquera Bedoya,73,M,Bogotá,1,5,2024-06-11
-1021,Julieth María Zapata,22,F,Cartagena,5,15,2024-11-06
-1022,Patricia Diana Mesa Mosquera,52,F,Cali,3,15,2024-12-03
-1023,Andrea Yamile Salazar Rivera,62,F,Barranquilla,4,17,2024-07-07
-1024,Martín Ardila Martínez,24,F,Cartagena,5,12,2025-01-09
-1025,Eduardo Zapata Mosquera,31,F,Medellín,2,14,2024-06-19
-1026,Guillermo Danny López,32,F,Medellín,2,13,2024-09-01
-1027,Juliana Gómez,25,M,Bogotá,1,10,2024-10-18
-1028,Rodolfo Rodríguez,63,F,Cali,3,8,2024-09-10
-1029,Beatriz Angie Cardona Guzmán,75,M,Medellín,2,15,2025-03-28
-1030,Nataly Castro,20,M,Medellín,2,7,2024-06-30
-1031,Eliecer Marco Solano,78,F,Barranquilla,4,13,2024-09-12
-1032,Lorena Omaira Vargas,41,F,Barranquilla,4,7,2025-03-27
-1033,Mayra Gloria Córdoba,74,M,Bogotá,1,9,2025-04-08
-1034,Jhony Perdomo,69,M,Bogotá,1,13,2024-07-09
-1035,Susana González Pacheco,70,F,Medellín,2,10,2025-03-26
-1036,Luz Mercedes Puentes,74,F,Bogotá,1,15,2025-05-09
-1037,Sandra Cabrera Bohórquez,74,F,Medellín,2,11,2025-05-10
-1038,Luis Córdoba Velasco,55,M,Bogotá,1,14,2024-12-25
-1039,Marina Ana Polo,68,F,Bogotá,1,9,2025-05-28
-1040,Miguel Vargas Uribe,55,M,Cartagena,5,8,2025-02-04
-1041,Jhonatan Carlos Mejía González,22,M,Barranquilla,4,9,2025-05-12
-1042,Socorro Julieth Martínez,47,F,Cali,3,12,2025-02-05
-1043,Antonio Polo,44,M,Barranquilla,4,11,2025-03-02
-1044,Héctor Sierra Zambrano,76,M,Medellín,2,14,2025-01-02
-1045,Luis Juan Cárdenas,33,F,Medellín,2,11,2024-10-22
-1046,Elkin Palacios Serrano,38,F,Medellín,2,12,2025-03-02
-1047,Eliana Mabel Ramírez Zambrano,72,M,Medellín,2,5,2024-08-13
-1048,Raúl José Gallego Moreno,76,F,Barranquilla,4,15,2025-03-09
-1049,Milena Karina Osorio Quintero,49,F,Medellín,2,16,2024-08-29
-1050,Alfonso Rojas,21,F,Medellín,2,10,2024-12-10
-1051,Jonathan Medina,76,M,Cali,3,10,2024-08-21
-1052,Carolina Sandra Monroy Ortega,18,M,Bogotá,1,10,2024-07-31
-1053,Luz Arias Zambrano,34,M,Bogotá,1,14,2024-08-05
-1054,Inés López,32,F,Bogotá,1,13,2025-03-29
-1055,Jeisson Ortiz,18,M,Medellín,2,12,2024-08-22
-1056,David Giraldo Sánchez,78,F,Bogotá,1,13,2025-03-04
-1057,Paula Camacho Ardila,76,M,Medellín,2,14,2024-06-21
-1058,Adriana Ana Cano Gómez,23,F,Medellín,2,14,2024-11-09
-1059,Javier Cáceres Naranjo,34,M,Bogotá,1,9,2025-02-17
-1060,Andrés Santos,64,M,Barranquilla,4,5,2024-06-17
-1061,Yaneth Mireya Obando Riascos,34,M,Cali,3,12,2025-01-02
-1062,Diana Contreras Campo,49,F,Bogotá,1,15,2024-10-19
-1063,Henry Antonio Gómez,36,M,Medellín,2,8,2025-01-17
-1064,Luis Jesús León,31,F,Bogotá,1,9,2024-11-15
-1065,Beatriz Eliana Hernández,78,M,Cartagena,5,5,2024-09-21
-1066,Wilber Jhoan Pérez Vergara,46,M,Cali,3,9,2025-03-16
-1067,Andrés Mora,66,F,Cali,3,11,2024-10-23
-1068,Antonio Quintero,22,M,Medellín,2,8,2025-04-03
-1069,José Méndez,65,F,Bogotá,1,11,2024-11-24
-1070,Eduardo Mena Herrera,33,M,Cartagena,5,7,2025-01-10
-1071,Víctor Solano,48,F,Barranquilla,4,16,2024-06-01
-1072,Catalina Obando,39,M,Medellín,2,14,2024-10-15
-1073,Albert Pedro Rodríguez,24,F,Barranquilla,4,14,2024-09-20
-1074,María María Gallego Rincón,67,F,Cartagena,5,14,2025-02-14
-1075,Jesús Javier Domínguez,35,F,Cartagena,5,13,2025-02-24
-1076,Fabián Vergara,66,F,Bogotá,1,14,2024-07-21
-1077,Carmen Lina Castro Perdomo,44,F,Medellín,2,10,2025-03-28
-1078,Esteban Calderón Mesa,22,M,Cartagena,5,6,2024-09-09
-1079,Óscar Adolfo Rodríguez Quiroga,76,M,Bogotá,1,9,2024-07-25
-1080,Luz Peña,36,F,Medellín,2,7,2025-05-01
-1081,Federico Arrieta,47,M,Bogotá,1,10,2025-03-03
-1082,Fernando Julián Duarte,30,F,Cartagena,5,13,2024-10-11
-1083,Daniela Parra,40,F,Barranquilla,4,11,2024-09-19
-1084,Diego Luis Ardila,71,M,Medellín,2,13,2024-11-26
-1085,Flor Martha García,41,F,Cartagena,5,13,2024-08-27
-1086,Luis Rubén Herrera García,25,F,Cartagena,5,15,2024-07-13
-1087,Luis Córdoba,23,F,Bogotá,1,16,2024-07-09
-1088,María Kelly Díaz Sanabria,58,M,Cartagena,5,9,2025-01-17
-1089,Mónica Natalia Portilla Marín,58,M,Cali,3,6,2024-09-05
-1090,Johana Mesa Henao,76,M,Medellín,2,6,2025-03-18
-1091,Jimena Yamile Franco,52,F,Medellín,2,16,2024-08-26
-1092,Gallego Díaz,27,F,Medellín,2,6,2024-06-22
-1093,Doris Camargo,72,M,Bogotá,1,12,2024-11-10
-1094,María Yurany Marín,58,F,Bogotá,1,11,2024-08-26
-1095,Joaquín Caro Triana,37,M,Cali,3,9,2024-08-18
-1096,Rosa Luisa Moreno,51,F,Medellín,2,7,2024-07-26
-1097,Ernesto Rodríguez,44,F,Medellín,2,7,2024-06-22
-1098,Edison Luis Vera,65,F,Barranquilla,4,16,2025-03-02
-1099,Juliana Bautista,76,F,Medellín,2,16,2024-12-22
-1100,Álvaro Galeano Orozco,18,M,Barranquilla,4,7,2024-06-16
-1101,Isabel Liliana Benítez Oviedo,70,M,Medellín,2,17,2025-05-16
-1102,Rocío Valentina Romero Ortega,38,M,Cartagena,5,12,2024-12-24
-1103,Héctor Galeano,51,F,Cali,3,13,2025-04-08
-1104,Juan Enrique Navarro,18,M,Bogotá,1,15,2025-04-27
-1105,Carlos Ardila,26,F,Cartagena,5,9,2024-06-16
-1106,Johanna Palacio,53,M,Cartagena,5,8,2025-01-09
-1107,José Jhon Cárdenas,23,F,Barranquilla,4,16,2024-09-29
-1108,Liliana Acosta,67,M,Bogotá,1,11,2024-11-25
-1109,Campo Gallego,69,M,Medellín,2,11,2024-09-02
-1110,Gloria Marcela Rodríguez,45,M,Cartagena,5,10,2025-04-16
-1111,Patricia Cuéllar,26,M,Medellín,2,9,2025-02-20
-1112,Luis González Alarcón,45,M,Cartagena,5,16,2024-08-08
-1113,Yésica Ruth Torres,67,F,Cali,3,14,2024-11-14
-1114,Alejandro Torres Triana,70,M,Cali,3,15,2024-07-31
-1115,Luz Camargo Rincón,50,M,Bogotá,1,8,2025-01-15
-1116,Julio Guillermo Martínez Torres,51,F,Bogotá,1,11,2025-02-07
-1117,Carlos León,75,M,Barranquilla,4,6,2024-10-14
-1118,Tulio Alexander Ruiz,72,F,Medellín,2,6,2025-04-28
-1119,Johanna María Benavides,36,F,Barranquilla,4,7,2025-04-17
-1120,Alberto Cruz Mendoza,27,F,Bogotá,1,15,2025-03-08
-1121,Moisés Jefferson Franco,44,F,Medellín,2,6,2025-01-06
-1122,Germán Luis Garcés Bolaños,59,M,Bogotá,1,14,2024-10-19
-1123,María Consuelo Castro Flórez,60,M,Bogotá,1,15,2024-10-11
-1124,Orlando Lozano,45,M,Medellín,2,12,2025-05-03
-1125,Tatiana Rosa Cárdenas Rodríguez,35,F,Barranquilla,4,11,2024-12-08
-1126,Mauricio Cáceres Valencia,75,M,Medellín,2,10,2024-11-09
-1127,Paul Rodrigo López,53,F,Medellín,2,12,2025-01-31
-1128,Alberto Julio Ortiz,35,F,Barranquilla,4,11,2024-08-10
-1129,Elkin Galindo Mesa,75,M,Barranquilla,4,12,2024-11-16
-1130,Jairo Andrés Rentería Gamboa,24,M,Cali,3,9,2025-01-14
-1131,Luz Luz Sánchez,45,M,Bogotá,1,12,2024-08-19
-1132,Rafael Javier Guevara Romero,31,F,Barranquilla,4,6,2024-11-16
-1133,Fredy Mejía,55,F,Medellín,2,6,2025-02-23
-1134,Albeiro Felipe Polo,22,M,Bogotá,1,10,2024-07-23
-1135,Diego Vergara,67,M,Cartagena,5,15,2024-11-12
-1136,Alex Sebastián Gallego,37,M,Barranquilla,4,8,2024-06-04
-1137,Laura Nelly Mendoza,18,F,Barranquilla,4,7,2024-07-05
-1138,María Marcela Sierra,42,M,Cali,3,13,2025-03-11
-1139,Alberto Carvajal,42,M,Barranquilla,4,17,2025-01-21
-1140,Karol Mora Méndez,72,F,Bogotá,1,12,2024-12-03
-1141,Patricia Vargas,59,M,Medellín,2,11,2024-06-21
-1142,María Fernández Velásquez,33,M,Medellín,2,16,2024-08-23
-1143,Miriam Lucía Velásquez Ospina,26,F,Bogotá,1,6,2024-11-22
-1144,Katerine Sandra Mora,56,F,Barranquilla,4,8,2024-08-01
-1145,Laura Rodríguez,59,M,Barranquilla,4,16,2024-09-03
-1146,Brandon Antonio Guzmán Agudelo,33,M,Medellín,2,6,2025-01-05
-1147,Enrique Rodríguez Mendoza,26,M,Bogotá,1,15,2025-05-25
-1148,José Edilson García,49,F,Medellín,2,10,2024-09-10
-1149,Camilo Juan Sánchez Lara,40,M,Bogotá,1,8,2025-04-18
-1150,Fernando Junior Puentes,38,F,Barranquilla,4,6,2024-12-05
-1151,Yenny Mireya Romero,35,F,Barranquilla,4,11,2024-09-01
-1152,Jesús Cardona Giraldo,47,M,Cali,3,11,2025-05-07
-1153,Yaneth Rodríguez Perea,75,F,Barranquilla,4,15,2024-11-26
-1154,Ernesto Alberto Díaz Toro,26,F,Bogotá,1,8,2025-04-04
-1155,Sebastián Sergio Páez Sandoval,71,M,Bogotá,1,12,2025-02-02
-1156,Adrián Gómez,79,F,Medellín,2,8,2024-06-11
-1157,Anyi Aurora Bastidas,78,M,Cali,3,13,2024-06-11
-1158,Rosa Virginia Ramírez,36,M,Medellín,2,6,2024-07-06
-1159,Luis José González,59,M,Medellín,2,16,2025-03-12
-1160,Yuri Nubia Caro,30,F,Medellín,2,7,2024-11-17
-1161,Enrique Navarro Figueroa,65,M,Cali,3,5,2025-02-21
-1162,Johan Alberto Ruiz Castro,78,M,Medellín,2,6,2025-03-10
-1163,Mario Bustamante,43,M,Bogotá,1,12,2024-10-22
-1164,Giovanni Vélez,43,M,Bogotá,1,13,2024-10-27
-1165,Liliana Chaparro,66,M,Bogotá,1,7,2024-12-14
-1166,Álvaro Arias Díaz,79,M,Barranquilla,4,10,2024-12-04
-1167,Ingrid Ariza,20,M,Cali,3,15,2025-03-31
-1168,Inés Ocampo Hernández,43,F,Bogotá,1,10,2024-10-10
-1169,Raúl Ojeda Montoya,26,F,Barranquilla,4,16,2025-03-09
-1170,Segundo Gómez,74,F,Barranquilla,4,14,2024-08-17
-1171,Alberto Edilberto Ruiz Osorio,68,F,Medellín,2,15,2024-10-02
-1172,Jairo Rico,46,M,Cali,3,14,2025-02-01
-1173,Albeiro Torres Bermúdez,62,M,Barranquilla,4,7,2025-05-19
-1174,Martha Prada,63,F,Bogotá,1,7,2024-08-02
-1175,Alejandra Paola González López,68,F,Barranquilla,4,15,2024-07-23
-1176,Cecilia Calderón,39,F,Bogotá,1,7,2024-08-07
-1177,José Andrés Castro Castillo,32,F,Barranquilla,4,14,2024-10-30
-1178,Rocío Velásquez Arango,62,F,Cali,3,9,2024-06-10
-1179,Betty Sandra Sarmiento Rueda,71,M,Medellín,2,7,2025-02-27
-1180,Sandra Jiménez,76,F,Cartagena,5,9,2025-01-07
-1181,Miguel Sanabria,71,F,Bogotá,1,8,2024-12-23
-1182,Consuelo Bolívar,79,F,Bogotá,1,14,2024-07-20
-1183,Andrea Yurani Acosta,48,M,Bogotá,1,8,2025-05-18
-1184,Yudy María Rincón Cabrera,66,M,Cali,3,7,2025-02-23
-1185,Gustavo Emilio Rico Torres,32,F,Barranquilla,4,6,2024-11-24
-1186,Carlos Forero,26,F,Cali,3,15,2024-07-19
-1187,Danilo Ricardo Sánchez Prada,62,F,Barranquilla,4,16,2024-06-07
-1188,Carlos Chávez,69,M,Cali,3,13,2025-01-24
-1189,Iván Fernando Portilla,61,M,Cali,3,7,2025-03-31
-1190,Mauricio Vargas Marín,45,F,Cali,3,12,2025-03-27
-1191,Alejandro Javier Mercado,40,M,Cartagena,5,16,2024-10-13
-1192,Diana Duque,43,F,Medellín,2,7,2024-07-16
-1193,Juan Vallejo,39,F,Cali,3,16,2025-02-23
-1194,Luz Johana Ramírez Montes,78,M,Medellín,2,15,2025-01-15
-1195,Marcela Luz Gonzáles,57,M,Medellín,2,11,2024-11-20
-1196,Enrique Mauricio Márquez Chávez,76,F,Medellín,2,14,2024-11-10
-1197,David Javier Mercado Correa,32,F,Medellín,2,16,2024-07-30
-1198,Daniel Sebastián Ávila Pérez,67,F,Cali,3,5,2024-12-05
-1199,Luis Bonilla Rentería,35,F,Barranquilla,4,8,2025-01-27
-1200,Piedad Montenegro,55,M,Medellín,2,5,2025-05-26
-1201,Daniela Mabel Rodríguez,47,M,Cartagena,5,8,2025-04-08
-1202,John Horacio Ballesteros Barbosa,49,F,Medellín,2,6,2025-05-26
-1203,Carolina Dayana Gómez,30,M,Cali,3,10,2024-07-23
-1204,José Juan Gómez,27,M,Barranquilla,4,10,2024-06-17
-1205,Alejandra Shirley Caicedo Giraldo,21,F,Barranquilla,4,11,2024-08-10
-1206,Patricia María Gutiérrez,41,F,Cartagena,5,12,2024-12-20
-1207,Eugenia Fernández Forero,29,M,Cali,3,17,2024-06-10
-1208,Rita Mosquera Marín,39,F,Bogotá,1,13,2024-08-31
-1209,Iván Andrey Ortiz García,32,M,Cartagena,5,9,2025-01-14
-1210,Yesenia Angie Ávila López,65,F,Barranquilla,4,15,2025-03-15
-1211,Fredy González Rivera,76,F,Cartagena,5,16,2024-08-28
-1212,Pablo Javier Mejía Gómez,24,F,Barranquilla,4,14,2024-09-19
-1213,David Arturo Beltrán Fernández,25,M,Bogotá,1,12,2024-06-27
-1214,Yineth Meza Sánchez,55,F,Cali,3,6,2024-10-28
-1215,Hernán Carlos Vallejo,78,M,Cartagena,5,9,2024-12-14
-1216,Hernando Camargo,44,M,Bogotá,1,15,2024-10-11
-1217,William Buitrago,28,M,Cartagena,5,5,2025-03-02
-1218,Gabriel Cano García,28,F,Barranquilla,4,10,2025-02-17
-1219,Angie Patricia Jaramillo Martínez,55,M,Bogotá,1,11,2024-08-21
-1220,Esperanza Yolanda Rodríguez Ramírez,49,F,Cali,3,14,2025-01-11
-1221,María Ximena Acosta,60,F,Barranquilla,4,13,2025-03-11
-1222,Katherine Gloria Martínez,22,M,Cartagena,5,8,2025-03-05
-1223,Carolina Ortega Suárez,21,M,Medellín,2,15,2024-06-26
-1224,Adolfo Steven Peña Garzón,27,M,Medellín,2,8,2025-02-08
-1225,Javier Lozano García,36,M,Bogotá,1,14,2024-09-17
-1226,Enrique Trujillo,51,M,Medellín,2,14,2024-08-01
-1227,Virginia López Mosquera,22,M,Cali,3,10,2025-01-20
-1228,Eduardo Roa Ortega,21,F,Cartagena,5,10,2025-04-16
-1229,Alejandro Leandro Muñoz Vélez,55,M,Medellín,2,5,2024-08-11
-1230,Manuel Bernardo Quintero Díaz,71,F,Medellín,2,6,2024-06-04
-1231,David Pérez,38,F,Cartagena,5,13,2024-10-30
-1232,Santos Elías Mendoza Ávila,76,M,Bogotá,1,10,2024-10-06
-1233,Martha Bonilla,27,F,Cali,3,15,2024-11-27
-1234,Paula Martha Manrique Suárez,24,F,Barranquilla,4,7,2024-07-12
-1235,Diana Gloria Morales,29,F,Bogotá,1,5,2024-06-02
-1236,Fernando Esteban Castañeda,34,M,Cali,3,12,2025-01-06
-1237,Luz Carmen Torres,65,M,Bogotá,1,6,2024-10-07
-1238,María Maldonado Polo,32,F,Bogotá,1,13,2024-06-14
-1239,Manuel Rojas Villa,47,F,Barranquilla,4,15,2024-12-14
-1240,Andrés Jhon Mosquera,43,F,Cali,3,8,2024-08-22
-1241,Daniel Pablo Vega Ruiz,55,F,Cali,3,6,2024-12-03
-1242,Cecilia Barragán García,28,F,Bogotá,1,8,2024-09-22
-1243,Luz Castro Díaz,37,F,Cali,3,13,2024-12-02
-1244,Ariel Sierra,34,F,Bogotá,1,14,2024-06-23
-1245,María Carmen Navarro Marín,33,F,Barranquilla,4,9,2024-09-14
-1246,Jhon Santos Acosta,76,M,Medellín,2,13,2025-01-08
-1247,Leonardo Edwin Ruiz,70,M,Bogotá,1,13,2024-07-30
-1248,Alexis Eduardo Cifuentes Ramos,26,M,Cartagena,5,14,2024-11-27
-1249,Ricardo Norberto Olaya,59,M,Bogotá,1,8,2024-11-26
-1250,Dahiana Luz Ortega Páez,32,M,Cali,3,13,2025-03-07
-1251,Dary García Ortiz,37,F,Bogotá,1,11,2025-04-14
-1252,Jesús Jorge Agudelo García,29,M,Medellín,2,13,2024-08-22
-1253,Cecilia Sonia Pinzón Soto,47,M,Barranquilla,4,6,2024-06-01
-1254,Brayan Mercado,51,F,Cali,3,8,2025-05-08
-1255,María Catalina Lozano Suárez,51,M,Bogotá,1,13,2024-10-02
-1256,María Restrepo,41,F,Bogotá,1,9,2024-09-15
-1257,Michael Javier Salazar,37,M,Medellín,2,10,2025-05-23
-1258,Cecilia Arévalo,57,F,Barranquilla,4,10,2024-08-26
-1259,Manuel García,40,F,Bogotá,1,13,2024-10-24
-1260,Alejandra Clara Caballero,73,F,Bogotá,1,13,2024-10-24
-1261,Leticia Diana López Rivera,66,F,Medellín,2,16,2025-02-03
-1262,Fernando Valencia Pineda,39,F,Bogotá,1,9,2024-07-14
-1263,Paola Ester Palacios López,41,M,Medellín,2,6,2024-10-14
-1264,Mercedes María Carmona Murcia,19,M,Bogotá,1,13,2024-06-01
-1265,Carmen Vargas Rojas,63,F,Barranquilla,4,13,2024-06-12
-1266,Nelson Jhon Marín Vélez,27,F,Medellín,2,10,2025-01-18
-1267,Alejandro Molano,65,F,Cali,3,14,2025-05-16
-1268,Enrique Muñoz,72,M,Bogotá,1,12,2025-02-11
-1269,Andrés González Alzate,59,M,Barranquilla,4,17,2025-04-17
-1270,Patricia Esperanza Pinzón Bernal,39,M,Medellín,2,13,2024-10-22
-1271,Humberto Wilson Fernández Mosquera,68,F,Cali,3,16,2024-06-02
-1272,Nora María Vargas,59,M,Cali,3,15,2024-07-15
-1273,Josué José Ibarra,34,F,Barranquilla,4,13,2025-02-23
-1274,Jesús Ramírez Gutiérrez,43,M,Cartagena,5,15,2024-11-10
-1275,Omar Niño,33,M,Medellín,2,10,2025-05-03
-1276,Juan Edison Pérez González,24,M,Barranquilla,4,12,2025-04-17
-1277,María Carmenza Portilla,33,M,Barranquilla,4,8,2024-09-08
-1278,Olga Viviana Orozco Herrera,42,F,Medellín,2,13,2024-11-13
-1279,Luz María Jiménez,34,M,Bogotá,1,14,2024-07-27
-1280,Luz Rodríguez Muñoz,30,M,Medellín,2,11,2024-12-29
-1281,Yaneth Yuli Sánchez,71,F,Barranquilla,4,17,2024-10-01
-1282,Juan Sanabria,30,F,Cartagena,5,12,2024-11-27
-1283,Juan Estrada,73,F,Bogotá,1,11,2025-01-10
-1284,Enrique Agudelo Silva,45,M,Medellín,2,10,2024-08-08
-1285,Yolima Yaneth Burgos,39,F,Barranquilla,4,11,2025-02-13
-1286,Socorro Fanny Díaz Guerrero,25,F,Cartagena,5,11,2024-11-29
-1287,Emma Edith Pérez,49,M,Barranquilla,4,16,2024-12-10
-1288,Milena Lucía Fuentes Vásquez,76,F,Medellín,2,16,2024-06-06
-1289,Alba Sanabria,46,M,Barranquilla,4,6,2024-05-31
-1290,Carlos José Hernández,42,M,Bogotá,1,10,2025-05-03
-1291,Danny Humberto Barrera González,38,F,Medellín,2,14,2024-06-13
-1292,Alberto Sánchez,39,F,Medellín,2,9,2024-11-08
-1293,Ricardo Raúl Gutiérrez,37,F,Barranquilla,4,16,2025-04-27
-1294,Felipe Sánchez,50,M,Bogotá,1,5,2024-12-26
-1295,Luis García Pineda,25,F,Medellín,2,5,2024-07-10
-1296,Graciela Marcela Hernández Álvarez,25,M,Medellín,2,12,2025-03-08
-1297,Tatiana Villamil Pérez,30,M,Barranquilla,4,16,2025-02-22
-1298,Juan Duarte,42,M,Medellín,2,10,2025-02-15
-1299,David Pedro Muñoz Gallego,35,M,Medellín,2,12,2024-12-24
-1300,Nelson Parra,30,F,Cali,3,5,2024-07-27
-1301,Luz Lorena Londoño Gutiérrez,47,F,Medellín,2,7,2025-04-27
-1302,Dagoberto Sánchez,65,M,Barranquilla,4,11,2025-02-25
-1303,Fabio Manuel Maldonado Guerra,69,M,Medellín,2,6,2024-09-29
-1304,Jennifer María Cardona Caicedo,61,M,Medellín,2,14,2025-03-17
-1305,Eva Mercedes Torres,69,F,Bogotá,1,10,2024-09-23
-1306,Omaira Valentina Gonzáles Yepes,26,F,Barranquilla,4,6,2025-01-10
-1307,María Delia Molina,28,F,Barranquilla,4,5,2024-09-04
-1308,Ana Zapata Durán,29,M,Medellín,2,16,2024-10-09
-1309,Giovanni Felipe Ortiz Corredor,25,M,Cali,3,15,2024-10-22
-1310,Carlos Andrés Espitia,59,F,Cali,3,6,2024-09-08
-1311,Mauricio López Murillo,60,M,Barranquilla,4,8,2024-07-26
-1312,Andrés Gaviria Rojas,75,M,Bogotá,1,5,2024-08-11
-1313,Libia Lizeth Jiménez Cano,40,F,Cali,3,10,2024-12-26
-1314,Andrea Esther Ramírez Rodríguez,55,M,Medellín,2,11,2024-10-02
-1315,Sebastián Dany Marín Soto,58,M,Medellín,2,8,2025-04-23
-1316,Cecilia Mosquera,41,M,Medellín,2,8,2024-09-27
-1317,Juan Martínez Garzón,57,M,Cartagena,5,11,2024-11-10
-1318,Sandra Astrid Rosero Gutiérrez,34,F,Medellín,2,12,2024-12-08
-1319,Fernando Meza Muñoz,45,F,Bogotá,1,8,2025-04-29
-1320,Margarita Luz Osorio Cardozo,68,F,Cartagena,5,12,2024-10-02
-1321,Alfonso Humberto Trujillo,66,M,Medellín,2,9,2024-12-06
-1322,Paola Suárez Rodríguez,69,F,Cartagena,5,9,2025-01-24
-1323,Andrés Pablo Pinzón Bustos,72,F,Barranquilla,4,6,2025-03-19
-1324,Liliana Cortés Núñez,52,F,Medellín,2,8,2025-05-18
-1325,Jhon Carrillo,45,M,Medellín,2,14,2024-12-28
-1326,Ximena Andrea Buitrago Rodríguez,57,M,Medellín,2,17,2024-09-23
-1327,Andrés Pérez,67,F,Cartagena,5,14,2025-03-09
-1328,Ofelia Inés Bautista Ávila,26,M,Bogotá,1,12,2025-05-10
-1329,Pablo Quintero Guevara,41,M,Cali,3,14,2025-02-19
-1330,María Paula Cárdenas,20,F,Cartagena,5,15,2025-05-07
-1331,Javier Martínez,59,M,Medellín,2,14,2024-06-17
-1332,Fernando Armando Suárez,57,F,Cali,3,16,2025-05-28
-1333,Miguel Montoya,22,M,Cartagena,5,8,2024-06-26
-1334,Laura Diana Alarcón,66,M,Cartagena,5,15,2025-05-04
-1335,Milena Esperanza Mercado Miranda,70,F,Bogotá,1,7,2025-02-17
-1336,María Márquez,40,M,Barranquilla,4,17,2024-09-16
-1337,Diana Rodríguez Martínez,40,F,Cartagena,5,7,2025-02-23
-1338,Luz Duarte Díaz,65,M,Medellín,2,12,2024-07-22
-1339,Javier Andrés Murillo Martínez,47,M,Bogotá,1,11,2024-07-12
-1340,Laura Dayana Durán Cruz,37,M,Cali,3,15,2024-10-25
-1341,Amanda Mena Betancur,79,M,Bogotá,1,10,2024-06-15
-1342,Carmen Tulia Forero Salas,78,M,Bogotá,1,5,2025-03-10
-1343,Javier Fernández Ospino,69,M,Medellín,2,17,2024-08-25
-1344,Amanda Luz Molina Mejía,74,F,Bogotá,1,16,2024-07-27
-1345,Pilar Cardona Moreno,60,F,Medellín,2,11,2025-01-06
-1346,Augusto Ortega Torres,35,M,Cali,3,12,2025-04-17
-1347,Ramón Jesús Caicedo,40,F,Cali,3,8,2024-08-12
-1348,Emerson Luis Hurtado,27,M,Medellín,2,8,2024-08-29
-1349,Yaneth Margarita Rendón,72,M,Bogotá,1,8,2025-03-31
-1350,Lina Milena Torres Ospino,70,M,Bogotá,1,10,2025-03-15
-1351,Mauricio Jiménez Montoya,62,F,Bogotá,1,10,2024-09-30
-1352,John Alex Bermúdez,65,F,Bogotá,1,11,2025-01-26
-1353,Alberto Ardila,68,F,Cali,3,6,2024-07-04
-1354,Orlando Martínez,76,F,Bogotá,1,13,2024-12-04
-1355,Alberto Carrillo Serna,47,M,Medellín,2,11,2024-08-18
-1356,Jhony Sánchez Pérez,38,F,Cartagena,5,12,2025-03-05
-1357,Carmen Luz Fuentes Moreno,69,M,Bogotá,1,7,2025-02-10
-1358,Luz Bermúdez Díaz,57,M,Medellín,2,6,2024-07-24
-1359,María Estrada Romero,59,F,Medellín,2,5,2025-02-04
-1360,Marta Elsy Garzón Cardona,34,F,Barranquilla,4,16,2024-09-17
-1361,Andrea Astrid Ramos,33,F,Cartagena,5,11,2024-11-08
-1362,Rosa Maritza Gutiérrez Muñoz,43,M,Medellín,2,6,2025-05-21
-1363,Luis Galeano,65,F,Barranquilla,4,5,2025-04-14
-1364,Judith Rosario Salgado,31,M,Cali,3,11,2024-10-13
-1365,Roberto Guerrero Castro,71,M,Barranquilla,4,13,2025-03-27
-1366,Orlando Andrés Durán Marín,73,M,Medellín,2,6,2025-03-16
-1367,Iris Gloria Ramírez Londoño,75,M,Cali,3,11,2025-03-04
-1368,Olga Zambrano Zapata,43,M,Cali,3,13,2025-03-01
-1369,Rosa Lizeth Giraldo Sánchez,23,F,Medellín,2,10,2024-09-20
-1370,Juan Jhon López Alzate,34,M,Cartagena,5,7,2025-05-30
-1371,Daniel Amaya Murcia,72,M,Medellín,2,14,2025-02-12
-1372,Leonardo Zapata García,64,F,Barranquilla,4,8,2024-09-29
-1373,Luz Rodríguez Uribe,36,F,Bogotá,1,8,2024-09-10
-1374,Dahiana Jacqueline González Giraldo,75,F,Cali,3,9,2024-06-02
-1375,Fabián Salcedo,78,M,Medellín,2,14,2024-10-31
-1376,Pedro Sergio Morales,18,M,Medellín,2,14,2025-01-14
-1377,Mauricio Elías Gómez Miranda,75,F,Medellín,2,10,2025-04-29
-1378,Rosa Herrera González,64,F,Bogotá,1,11,2025-04-13
-1379,Oliva López Reyes,33,F,Cali,3,8,2024-11-22
-1380,Carlos Elver Mosquera Bedoya,45,F,Medellín,2,9,2025-04-29
-1381,Ana Garzón Moreno,71,F,Cali,3,7,2025-04-19
-1382,Olga Alejandra Álvarez Castro,48,M,Cartagena,5,15,2024-06-28
-1383,Amparo Castro Rodríguez,25,M,Bogotá,1,13,2024-07-31
-1384,Alexander Fabián Rodríguez,56,F,Medellín,2,13,2024-10-03
-1385,Jimena Yulieth Jaramillo,47,F,Medellín,2,16,2024-10-16
-1386,Abelardo Jorge Jiménez,22,M,Cali,3,12,2024-08-24
-1387,Jorge José Ochoa Ariza,60,F,Barranquilla,4,12,2024-10-04
-1388,Juan Manuel Murcia García,23,F,Barranquilla,4,13,2024-12-20
-1389,Yenifer Antonia Hernández Ortiz,61,F,Medellín,2,16,2025-02-22
-1390,Guillermo Castro Vega,59,F,Medellín,2,13,2024-12-06
-1391,Andrés Rodríguez González,26,M,Cali,3,13,2024-11-24
-1392,Luz Rendón,65,F,Cali,3,16,2024-08-20
-1393,Jeison Robert García Orozco,60,M,Barranquilla,4,8,2025-03-21
-1394,Óscar Carlos Díaz,34,M,Medellín,2,9,2024-11-21
-1395,Mónica Ibeth Salamanca,39,F,Medellín,2,8,2025-01-04
-1396,Harol Pérez Gutiérrez,18,F,Medellín,2,11,2025-03-02
-1397,Edilberto Óscar Gómez,28,M,Barranquilla,4,11,2024-11-24
-1398,Óscar Luis Arango Ochoa,77,F,Bogotá,1,15,2024-07-31
-1399,Pablo Sarmiento,35,M,Medellín,2,13,2024-07-21
-1400,Dario Álvaro Roa Muñoz,27,M,Bogotá,1,14,2025-04-23
-1401,Johana Escobar Castro,40,F,Medellín,2,11,2024-12-28
-1402,José Andrés Contreras,62,F,Bogotá,1,15,2024-11-28
-1403,Mauricio William Cárdenas Rodríguez,59,M,Barranquilla,4,14,2024-07-10
-1404,Carmen Luna Rojas,58,M,Medellín,2,17,2024-10-11
-1405,Isabel Pérez,51,F,Cali,3,8,2024-06-11
-1406,María Benavides,38,M,Bogotá,1,8,2024-08-26
-1407,Carolina Emma Mejía,72,M,Cartagena,5,12,2025-04-12
-1408,Karen Rueda,59,F,Cartagena,5,6,2024-11-21
-1409,Ibeth Camila Hernández,33,M,Bogotá,1,11,2024-08-02
-1410,Rita Claudia Rincón López,70,M,Medellín,2,8,2024-09-01
-1411,Mercedes Carvajal Bedoya,74,F,Cartagena,5,17,2024-11-03
-1412,María Ramírez Ortiz,30,F,Cali,3,15,2024-10-01
-1413,Fernando Quintero,43,M,Bogotá,1,13,2025-03-31
-1414,Enrique Carrillo,64,M,Cartagena,5,14,2025-04-27
-1415,Edwin Esteban Patiño,30,F,Bogotá,1,13,2025-04-12
-1416,Juan Pérez,34,F,Bogotá,1,5,2025-02-28
-1417,Carolina Claudia Serrano Mendoza,22,F,Barranquilla,4,9,2025-02-19
-1418,Luis Caicedo,46,M,Medellín,2,10,2025-03-15
-1419,María Elizabeth González,33,F,Bogotá,1,10,2025-01-11
-1420,Enrique Cárdenas,69,F,Cali,3,17,2024-12-15
-1421,Aníbal Méndez Leal,32,F,Barranquilla,4,10,2024-07-08
-1422,María Claudia Guerra Benítez,59,M,Bogotá,1,8,2024-07-09
-1423,Fernando Ramírez,69,M,Barranquilla,4,10,2025-05-15
-1424,José Agudelo Prieto,53,F,Barranquilla,4,9,2025-05-22
-1425,David Mora Rincón,35,M,Bogotá,1,11,2024-09-21
-1426,Andrea María Cáceres Rodríguez,62,M,Bogotá,1,11,2025-04-22
-1427,Julián Steven Cifuentes Sánchez,60,F,Barranquilla,4,13,2024-07-30
-1428,Jair Iván Serrano,39,F,Medellín,2,11,2024-11-30
-1429,Edinson Osorio Cárdenas,26,M,Medellín,2,8,2024-06-12
-1430,Rafael Iván Pacheco Loaiza,23,F,Medellín,2,8,2024-08-24
-1431,Marino Yeison Caicedo,49,F,Bogotá,1,15,2024-11-26
-1432,Jaime Marco Oviedo Beltrán,37,M,Medellín,2,6,2024-07-18
-1433,María Johana Valencia Cantillo,21,M,Bogotá,1,10,2024-08-02
-1434,Santiago Omar Ramírez,26,F,Bogotá,1,6,2025-04-14
-1435,Marina Rita Gómez,59,F,Bogotá,1,12,2024-12-23
-1436,Mónica Sandra Ochoa,78,M,Cali,3,8,2024-12-17
-1437,Silvia Eugenia Velásquez Amaya,49,F,Cartagena,5,8,2024-11-28
-1438,Carolina Calderón Moreno,19,F,Medellín,2,9,2024-09-21
-1439,Israel Álvarez,33,F,Cali,3,14,2025-01-02
-1440,César Rosero Mesa,60,F,Cartagena,5,13,2024-10-29
-1441,Judith Stella Ospina Martínez,38,F,Bogotá,1,5,2024-12-10
-1442,Alexander Misael Fernández,67,F,Bogotá,1,14,2024-09-19
-1443,Kelly Ángela Díaz Jiménez,45,F,Cartagena,5,5,2025-01-18
-1444,Cecilia Virginia Castro,70,F,Cali,3,5,2024-09-21
-1445,Lucía María Riascos,41,F,Medellín,2,13,2025-04-08
-1446,Raúl Antonio López,57,F,Bogotá,1,9,2025-02-20
-1447,Fernando Rodríguez Mena,59,M,Medellín,2,8,2025-01-22
-1448,Diana Virginia Morales,66,F,Cartagena,5,5,2025-01-09
-1449,Yadira Johana Romero Barrera,47,F,Cali,3,7,2024-07-14
-1450,José Cruz Acosta,49,M,Bogotá,1,12,2025-02-10
-1451,Jairo Carlos Angulo Chávez,57,M,Cali,3,17,2024-10-08
-1452,Augusto Gómez,59,M,Barranquilla,4,13,2024-07-13
-1453,Miguel Andrés Fuentes,62,F,Cali,3,9,2024-06-05
-1454,Cecilia Yazmín Figueroa Ortiz,60,M,Barranquilla,4,16,2025-02-03
-1455,Enrique Cristian Alfonso,49,F,Cartagena,5,15,2024-12-18
-1456,María Rojas López,57,M,Cartagena,5,16,2025-02-07
-1457,Fanny Cristina Palacios,49,M,Bogotá,1,17,2025-03-29
-1458,Leidy Jaramillo,56,F,Barranquilla,4,7,2024-11-03
-1459,Alberto César Rodríguez Pérez,77,F,Medellín,2,7,2024-06-21
-1460,Andrés Monsalve Moreno,19,M,Medellín,2,13,2025-05-09
-1461,Gustavo Jiménez Pardo,46,M,Cartagena,5,14,2025-01-20
-1462,María Gil,78,M,Cali,3,10,2025-01-28
-1463,Nancy Estefanía Acevedo Sandoval,63,F,Medellín,2,15,2025-01-22
-1464,Luis García,31,F,Cali,3,10,2025-04-17
-1465,Astrid Dayana Rubio Jaramillo,73,F,Medellín,2,17,2025-05-24
-1466,Marcela Rodríguez,39,F,Cartagena,5,9,2025-03-11
-1467,Mirian Lina Martínez,49,M,Cali,3,9,2024-06-12
-1468,Carlos William Giraldo González,55,M,Cali,3,9,2025-02-22
-1469,Piedad Carvajal,76,F,Bogotá,1,13,2024-10-02
-1470,María Olaya,57,M,Cali,3,9,2024-07-28
-1471,Milena Romero Rodríguez,23,F,Bogotá,1,13,2024-09-07
-1472,Luis Gómez Herrera,31,M,Cali,3,5,2025-04-19
-1473,Libia Prieto Ballesteros,32,F,Bogotá,1,12,2024-12-30
-1474,Manuela Paula Arévalo,64,F,Barranquilla,4,5,2024-07-03
-1475,María Leonor Quiroga,44,F,Medellín,2,6,2024-12-28
-1476,Carlos Gabriel Fuentes,76,F,Barranquilla,4,12,2025-04-06
-1477,César García,52,M,Bogotá,1,6,2024-12-21
-1478,John Serna Gómez,79,M,Bogotá,1,8,2024-07-07
-1479,Aura Rodríguez,37,M,Cartagena,5,15,2024-12-12
-1480,Adriana Barrera Ríos,23,M,Medellín,2,10,2024-11-04
-1481,María Myriam Bedoya Luna,19,M,Medellín,2,14,2024-11-03
-1482,Juan Montes,42,F,Medellín,2,11,2025-03-08
-1483,Luz Laura Palacios Villamizar,61,M,Medellín,2,12,2024-08-22
-1484,Antonio Ramírez Romero,41,M,Cartagena,5,12,2025-02-04
-1485,Yuri Beatriz Medina Montenegro,52,F,Barranquilla,4,12,2025-02-18
-1486,Elkin Solano Rincón,75,M,Barranquilla,4,8,2025-05-09
-1487,Angie María Díaz Cuéllar,46,F,Medellín,2,5,2024-06-12
-1488,Wendy Erazo,65,M,Cali,3,11,2025-05-18
-1489,Milena Bastidas,52,M,Cali,3,5,2025-03-16
-1490,Dary Mejía Gutiérrez,26,M,Cali,3,10,2025-03-07
-1491,Carmen Yamile Velandia Rodríguez,36,F,Medellín,2,9,2025-03-24
-1492,Ángel Carlos Vega,69,M,Medellín,2,16,2024-09-25
-1493,Clara Lucila Puentes Rangel,60,M,Barranquilla,4,10,2025-04-08
-1494,Luisa Reyes Narváez,59,F,Bogotá,1,15,2025-04-12
-1495,Jhoana Ana Romero,60,M,Medellín,2,8,2024-11-06
-1496,Yanet Ester Jaramillo Vera,36,F,Bogotá,1,15,2024-07-10
-1497,James Cristhian León,32,M,Cartagena,5,14,2025-01-30
-1498,Giovanny Jesús García,43,F,Bogotá,1,13,2025-03-12
-1499,Jesús Rafael Villamizar Valencia,36,F,Medellín,2,12,2025-02-21
-1500,Alba Liliana Sierra Angarita,55,M,Medellín,2,12,2024-10-25
+cliente_id,nombre,edad,genero,ciudad,region_id,frecuencia_compra,ultima_compra,canal_preferencia
+1,Paola López Henao,25,M,Barranquilla,4,3,2023-10-25,Hipermercado
+2,Ramiro Castaño Carvajal,28,M,Bogotá,1,1,2024-09-15,E-commerce
+3,Elena Guevara Sierra,20,F,Medellín,2,4,2024-03-30,E-commerce
+4,Milena Rojas,55,F,Cartagena,5,1,2024-02-21,Tienda de Conveniencia
+5,Edinson Isidro Córdoba Giraldo,75,F,Cartagena,5,4,2024-05-02,Supermercado
+6,Camilo Alejandro Saavedra Prada,76,M,Medellín,2,1,2023-10-09,Hipermercado
+7,Raúl Benjamín Cárdenas,32,F,Bogotá,1,2,2024-08-21,Farmacia
+8,Javier Ismael Gutiérrez Romero,72,F,Barranquilla,4,2,2024-03-19,E-commerce
+9,Luis Lozano Córdoba,24,M,Medellín,2,4,2024-05-04,Tienda de Conveniencia
+10,Mónica Camila Rincón,77,F,Bogotá,1,1,2024-03-17,Farmacia
+11,Luisa Magdalena Vanegas,19,F,Medellín,2,2,2024-05-29,E-commerce
+12,Antonio David Pabón Martínez,78,F,Medellín,2,4,2024-01-01,E-commerce
+13,Pablo Javier Valderrama Guerrero,67,F,Bogotá,1,3,2024-07-15,Hipermercado
+14,Manuel José Martínez,59,F,Medellín,2,4,2023-10-02,Supermercado
+15,Lizeth Lucía Carvajal Monroy,61,F,Bogotá,1,2,2024-01-30,Tienda de Conveniencia
+16,Gloria Sindy López,65,M,Cartagena,5,2,2024-01-13,Supermercado
+17,Fernanda Adriana Duque Monsalve,79,F,Cali,3,4,2023-12-04,Supermercado
+18,David Rivas,70,F,Medellín,2,1,2024-01-23,Hipermercado
+19,Armando Mosquera Palacios,62,M,Cartagena,5,2,2024-04-27,Supermercado
+20,Maira María García Martínez,24,M,Barranquilla,4,1,2023-10-16,Hipermercado
+21,Verónica Ruiz,28,M,Medellín,2,4,2024-02-29,Hipermercado
+22,Manuel Alonso Angulo Duarte,76,M,Barranquilla,4,1,2024-01-23,Tienda de Conveniencia
+23,Julio Jhon León Martínez,24,M,Medellín,2,2,2024-07-11,E-commerce
+24,Camilo Herrera,72,M,Medellín,2,4,2024-06-24,E-commerce
+25,María Ávila,57,F,Medellín,2,2,2024-02-18,Supermercado
+26,Carmen Rueda,64,F,Cali,3,3,2023-12-16,Hipermercado
+27,Oliva López Vargas,31,M,Barranquilla,4,3,2024-07-03,Supermercado
+28,Christian Marco León,59,F,Medellín,2,3,2024-08-10,Hipermercado
+29,Manuel Andrés Escobar Vargas,66,F,Bogotá,1,1,2024-05-01,Tienda de Conveniencia
+30,Nelson Morales Trujillo,40,M,Medellín,2,1,2024-05-01,Farmacia
+31,Álvaro David Acosta Camargo,30,F,Cali,3,1,2024-08-23,Hipermercado
+32,Stella Carmen Parra,19,F,Medellín,2,3,2023-10-15,Hipermercado
+33,Elena Pérez,45,F,Medellín,2,1,2023-11-12,Hipermercado
+34,Jairo Alberto Pérez García,28,F,Bogotá,1,4,2024-05-16,Tienda de Conveniencia
+35,Nelson Fredy Hoyos,79,M,Bogotá,1,2,2024-03-20,Hipermercado
+36,María Daniela Cantillo Navarro,69,M,Bogotá,1,1,2024-02-12,Hipermercado
+37,Mariela Giraldo,44,M,Medellín,2,1,2024-06-30,E-commerce
+38,Paola Stella Burbano,61,F,Bogotá,1,2,2024-07-08,E-commerce
+39,Carlos Cortés,41,M,Bogotá,1,3,2024-08-04,Hipermercado
+40,Nelson Mendoza Velasco,69,F,Medellín,2,4,2024-03-24,Farmacia
+41,Paola Yasmín Amaya Santos,54,M,Cali,3,2,2023-12-05,Tienda de Conveniencia
+42,Humberto Néstor Romero,19,F,Bogotá,1,4,2023-10-13,Supermercado
+43,Fabián Jaramillo Buitrago,18,M,Bogotá,1,2,2024-03-23,Hipermercado
+44,Camila Sánchez,49,F,Bogotá,1,2,2024-01-30,Hipermercado
+45,Jesús Mendoza Méndez,73,M,Cali,3,4,2024-08-22,E-commerce
+46,Gloria Concepción Vega Rodríguez,69,F,Barranquilla,4,1,2023-11-13,Hipermercado
+47,Daniela Carolina Navarro,33,M,Medellín,2,2,2023-12-06,Tienda de Conveniencia
+48,John David Ruiz,46,M,Medellín,2,1,2024-09-22,E-commerce
+49,Liliana Yuli Jiménez Vargas,43,M,Medellín,2,4,2024-01-09,Hipermercado
+50,Mary Mary Guerrero Álvarez,69,M,Bogotá,1,3,2024-03-21,Supermercado
+51,David Carlos Hernández,57,M,Medellín,2,1,2023-11-20,Supermercado
+52,Luis David Rojas Mercado,40,M,Medellín,2,3,2023-11-21,Hipermercado
+53,Julio Vélez,33,F,Cali,3,2,2024-09-07,Hipermercado
+54,Nelson Jiménez,19,M,Cali,3,4,2023-10-07,Supermercado
+55,Jhon Castellanos González,49,M,Cartagena,5,4,2024-03-10,Supermercado
+56,Carmen Gilma Bautista,65,F,Medellín,2,3,2023-12-03,Hipermercado
+57,Iris Barreto Cuesta,50,F,Barranquilla,4,3,2024-05-06,Hipermercado
+58,Jaime Andrés Hurtado,55,F,Bogotá,1,4,2024-04-17,E-commerce
+59,Claudia Luz Amaya Bedoya,42,M,Cali,3,4,2024-03-23,Hipermercado
+60,Sergio Franco Cárdenas,35,F,Bogotá,1,1,2024-03-20,E-commerce
+61,Alejandra Cárdenas,53,M,Medellín,2,2,2024-08-06,Farmacia
+62,Joel Silva Quiroz,37,F,Medellín,2,4,2024-08-24,Hipermercado
+63,Mónica Esperanza Molina López,50,F,Barranquilla,4,4,2024-04-29,Supermercado
+64,Gabriel Jaimes Mejía,39,F,Medellín,2,4,2024-05-17,Supermercado
+65,Eliana Ospina,71,F,Cartagena,5,2,2023-12-20,Hipermercado
+66,Andrea Angarita Bolívar,50,F,Medellín,2,3,2024-04-22,Hipermercado
+67,Adriana Catalina López,78,F,Medellín,2,3,2023-10-16,Hipermercado
+68,Wendy Graciela Garzón,34,F,Cali,3,3,2023-12-02,Tienda de Conveniencia
+69,José Manuel Salazar Andrade,23,M,Medellín,2,4,2024-03-10,Hipermercado
+70,Jorge Luis Gómez Zapata,66,F,Bogotá,1,4,2024-05-10,Farmacia
+71,Patricia María Hurtado,69,M,Cali,3,1,2023-12-30,Farmacia
+72,Wilson Jiménez,20,F,Medellín,2,1,2023-11-24,Farmacia
+73,Carlos Manuel Sánchez,75,M,Cali,3,2,2023-10-31,Farmacia
+74,Helena Carrillo,64,F,Bogotá,1,4,2023-10-19,Hipermercado
+75,María Mercedes Restrepo,19,F,Bogotá,1,3,2024-07-12,Supermercado
+76,Julio José Rodríguez,71,F,Barranquilla,4,1,2023-10-25,Hipermercado
+77,Isabel Molina Rodríguez,52,F,Medellín,2,3,2024-04-13,Tienda de Conveniencia
+78,Iris Gómez Rivera,24,M,Cali,3,1,2024-08-31,E-commerce
+79,John Torres Bustamante,63,F,Barranquilla,4,9,2025-06-02,Supermercado
+80,Andrés Mosquera Vargas,19,F,Medellín,2,7,2025-03-13,Hipermercado
+81,Luz Castaño,75,M,Cali,3,13,2025-09-02,Hipermercado
+82,Luis Ramiro Durán Martínez,69,F,Cali,3,11,2025-09-01,E-commerce
+83,René Álvaro Rueda,54,M,Medellín,2,11,2025-09-02,Supermercado
+84,Dora Vanegas,22,M,Barranquilla,4,14,2025-04-06,Hipermercado
+85,Maritza Ángela Arias Sánchez,47,M,Barranquilla,4,9,2025-09-17,E-commerce
+86,Aníbal Espinosa,30,F,Cali,3,8,2024-11-26,Supermercado
+87,Andrés Jhon Moreno Sánchez,36,F,Medellín,2,16,2025-04-19,Tienda de Conveniencia
+88,Ligia Giraldo,70,F,Bogotá,1,17,2025-04-06,E-commerce
+89,Luis Paz,18,F,Medellín,2,13,2024-12-06,Supermercado
+90,Vanessa Martha Pabón,79,F,Bogotá,1,15,2024-11-10,Hipermercado
+91,Ibeth Sepúlveda,33,M,Cali,3,14,2024-10-10,Hipermercado
+92,Miller Ariza,46,M,Cali,3,12,2025-05-12,Hipermercado
+93,Carlos Libardo Delgado,54,F,Medellín,2,7,2025-07-11,Hipermercado
+94,Margarita Isabel Lozano,64,M,Medellín,2,14,2025-05-08,E-commerce
+95,Jhon Rodríguez Rojas,43,F,Bogotá,1,9,2024-10-01,E-commerce
+96,Adriana Olga Valencia Ríos,47,M,Medellín,2,11,2025-02-02,E-commerce
+97,Yuly Ceballos,53,F,Bogotá,1,12,2024-11-02,Farmacia
+98,Edgar Villegas,75,F,Medellín,2,9,2025-02-01,Supermercado
+99,Luz Hernández,33,F,Cali,3,5,2025-08-09,Supermercado
+100,Myriam Torres Naranjo,49,M,Cartagena,5,13,2025-04-15,Tienda de Conveniencia
+101,Luis Nicolás Bedoya,77,M,Cali,3,9,2025-02-22,Hipermercado
+102,Omar Fernando García,29,M,Barranquilla,4,5,2025-09-04,Tienda de Conveniencia
+103,Gregorio Jaimes Quintero,61,M,Cartagena,5,5,2025-03-08,Farmacia
+104,María Castro Moreno,40,M,Bogotá,1,7,2024-11-10,Supermercado
+105,David Carlos Quintero,43,F,Medellín,2,15,2025-03-25,Tienda de Conveniencia
+106,Nidia Valencia,75,M,Medellín,2,7,2025-08-07,Hipermercado
+107,Eduardo Wilmer Maldonado,53,M,Cali,3,7,2025-02-16,Tienda de Conveniencia
+108,Luz Rosa Beltrán Arévalo,54,M,Cartagena,5,10,2025-02-03,Supermercado
+109,Lucy Quintero Bohórquez,65,F,Barranquilla,4,13,2025-04-03,Farmacia
+110,Diego Felipe Reyes García,40,F,Medellín,2,7,2025-02-18,Supermercado
+111,Fidel Augusto Rodríguez,40,M,Medellín,2,10,2025-09-07,Supermercado
+112,Adolfo Castillo,79,F,Bogotá,1,7,2024-11-20,Farmacia
+113,Andrés Armando Bonilla,66,F,Medellín,2,14,2025-09-22,Tienda de Conveniencia
+114,Claudia Guzmán,45,F,Barranquilla,4,14,2024-11-04,Hipermercado
+115,Stiven Andrés Becerra,70,M,Cali,3,9,2024-11-13,Supermercado
+116,Diego Reyes,38,F,Cali,3,8,2024-11-23,Supermercado
+117,Dario Luis Granados Mosquera,62,M,Barranquilla,4,10,2024-10-31,Tienda de Conveniencia
+118,José Francisco Portilla Rodríguez,75,M,Cartagena,5,15,2024-10-08,Farmacia
+119,Edith Carolina Becerra,35,M,Cartagena,5,8,2024-09-30,Hipermercado
+120,Jorge Brayan Jiménez,78,F,Barranquilla,4,16,2025-06-14,Supermercado
+121,Jesús David Ortiz,26,F,Medellín,2,12,2025-01-22,Hipermercado
+122,David Mendoza,55,M,Bogotá,1,17,2025-01-08,Supermercado
+123,Edison Rincón,69,M,Medellín,2,14,2025-03-23,Hipermercado
+124,Elisa Benítez Pacheco,23,F,Cartagena,5,11,2024-11-01,Tienda de Conveniencia
+125,Socorro Amparo Ávila Ospina,44,F,Barranquilla,4,8,2025-07-09,Supermercado
+126,Alexander Roberto Romero Cardona,62,M,Medellín,2,16,2025-09-23,Hipermercado
+127,Paulina Luz Ospina Buitrago,45,F,Medellín,2,7,2025-03-17,E-commerce
+128,James Camargo Rodríguez,45,F,Barranquilla,4,14,2025-08-22,Supermercado
+129,Alba Sánchez,73,M,Medellín,2,15,2025-08-28,Hipermercado
+130,David Ortiz Cuesta,62,F,Medellín,2,10,2025-01-25,Tienda de Conveniencia
+131,Iván Víctor Ruiz,77,M,Bogotá,1,10,2025-01-04,Farmacia
+132,Sofía Sánchez,35,M,Cali,3,9,2025-03-16,Farmacia
+133,Catalina Beatriz Salcedo Silva,18,M,Bogotá,1,16,2024-10-12,Hipermercado
+134,Constanza Alejandra Bastidas Gómez,74,M,Cali,3,12,2025-04-17,Farmacia
+135,Piedad Milena Olaya Jiménez,29,F,Cartagena,5,15,2024-12-25,Tienda de Conveniencia
+136,Lina Maribel Ramírez,43,F,Medellín,2,10,2025-08-16,E-commerce
+137,Fanny Patricia Sánchez García,54,M,Bogotá,1,15,2025-09-14,Hipermercado
+138,José Reyes Carrillo,34,M,Cartagena,5,9,2025-03-23,Supermercado
+139,José Hernández,65,M,Medellín,2,6,2025-03-13,Supermercado
+140,Juan Alexander Rincón Salamanca,22,M,Barranquilla,4,7,2025-08-01,Farmacia
+141,Claudia Ramírez,67,M,Medellín,2,15,2024-10-05,Farmacia
+142,Manuel Edwin Lozano Rengifo,18,F,Bogotá,1,10,2024-11-23,Hipermercado
+143,Ana Stella Quintero Bolaños,42,F,Medellín,2,5,2025-06-30,Supermercado
+144,Diana Valentina Londoño,52,M,Barranquilla,4,6,2025-01-07,Hipermercado
+145,Alejandra Edith Cárdenas,45,M,Bogotá,1,5,2025-02-15,E-commerce
+146,Nelcy Carmen Acevedo Benavides,70,M,Cartagena,5,10,2025-08-09,Farmacia
+147,Joaquín Rodríguez,36,M,Barranquilla,4,10,2024-11-07,Tienda de Conveniencia
+148,Flor Mary Caro Rodríguez,68,M,Medellín,2,9,2024-11-29,E-commerce
+149,Alejandro Córdoba Ríos,49,F,Bogotá,1,9,2024-11-24,Supermercado
+150,Fabián Pedro Zapata Ochoa,71,F,Bogotá,1,13,2024-10-11,Hipermercado
+151,Javier Cantillo,71,F,Medellín,2,8,2025-02-28,Tienda de Conveniencia
+152,Tatiana Olaya,34,F,Bogotá,1,11,2025-08-19,Tienda de Conveniencia
+153,Nidia Elisa Gil Silva,19,M,Barranquilla,4,13,2025-05-22,Supermercado
+154,Vanesa Teresa Mejía Delgado,51,F,Cartagena,5,7,2025-08-14,Supermercado
+155,Juan García Londoño,44,M,Cali,3,6,2024-11-06,Hipermercado
+156,Claudia Osorio Mejía,41,M,Medellín,2,7,2025-05-31,Supermercado
+157,Carlos John Delgado Silva,46,F,Medellín,2,13,2025-06-14,Supermercado
+158,Patricia Torres Bolívar,77,F,Cartagena,5,15,2025-07-05,Hipermercado
+159,Liliana Ángela Lara,19,M,Bogotá,1,13,2025-04-07,Supermercado
+160,Roberto Mauricio Velásquez,33,M,Cali,3,7,2025-05-10,Hipermercado
+161,Daniel Alfonso Mejía,21,F,Cali,3,12,2025-03-08,E-commerce
+162,Fernanda Molina,46,F,Cartagena,5,15,2025-08-12,Hipermercado
+163,Iván Julio Moreno Vera,38,M,Cali,3,6,2024-10-23,Hipermercado
+164,Elizabeth Rivas Fonseca,38,F,Medellín,2,6,2025-09-06,E-commerce
+165,Teresa Mireya Gaitán Restrepo,63,F,Cali,3,5,2024-10-24,Hipermercado
+166,Yolima Flórez,26,F,Medellín,2,5,2025-05-19,Supermercado
+167,Rafael Alfonso Zapata Ojeda,73,F,Medellín,2,15,2024-12-17,Supermercado
+168,Fabio Enrique Sánchez,66,M,Medellín,2,5,2025-06-14,Tienda de Conveniencia
+169,Jonathan Guzmán Orjuela,39,F,Bogotá,1,8,2025-03-17,Hipermercado
+170,Martha Barrera Parra,19,M,Barranquilla,4,16,2024-10-28,Supermercado
+171,Juan Jhon Giraldo Rojas,24,M,Bogotá,1,16,2025-02-08,Hipermercado
+172,Alejandro Zuluaga,62,F,Medellín,2,12,2024-11-27,Supermercado
+173,Ruth Vilma Gómez,42,M,Medellín,2,15,2025-06-20,Hipermercado
+174,Emiro Ernesto Medina,34,M,Bogotá,1,11,2025-08-07,Supermercado
+175,Antonio Castro,34,M,Medellín,2,11,2025-09-16,E-commerce
+176,Andrés Daza Córdoba,58,M,Medellín,2,9,2025-04-04,Hipermercado
+177,Juan Jairo Gil Salcedo,51,M,Bogotá,1,6,2025-07-05,Supermercado
+178,Javier Rubén Martínez,59,M,Cali,3,13,2025-02-11,Supermercado
+179,Cindy Dora Álvarez,51,M,Medellín,2,10,2024-10-27,Supermercado
+180,Heriberto David Rivera,74,M,Medellín,2,13,2024-12-21,Hipermercado
+181,Emilio Miguel Rodríguez Barrios,72,F,Bogotá,1,10,2025-08-05,E-commerce
+182,Luz Cristina Bastidas Bernal,47,M,Barranquilla,4,8,2025-03-24,E-commerce
+183,Daniela Ospino Rico,68,M,Cartagena,5,13,2024-11-07,E-commerce
+184,Leonel Jiménez Hurtado,23,F,Cali,3,13,2024-10-03,Farmacia
+185,Yina Gloria Castro,23,F,Cartagena,5,9,2025-02-23,Tienda de Conveniencia
+186,Ana Luz Cifuentes Beltrán,79,M,Medellín,2,5,2025-07-20,Supermercado
+187,Carlos Miranda Fonseca,68,M,Cali,3,7,2024-12-01,Supermercado
+188,Doris María Castañeda,36,F,Bogotá,1,10,2025-04-08,Hipermercado
+189,Julio Omar González Salgado,18,F,Barranquilla,4,5,2025-03-26,Supermercado
+190,Pablo Romero,53,M,Cali,3,11,2025-08-25,E-commerce
+191,Juan Jairo Pabón Rubio,27,M,Bogotá,1,8,2025-04-15,Hipermercado
+192,Magda Marina Muñoz,57,F,Cali,3,12,2025-01-12,Hipermercado
+193,Esteban Norbey Fuentes,34,M,Medellín,2,8,2025-08-26,Supermercado
+194,Angie Sandra Parada Prada,48,M,Cali,3,14,2025-02-04,Tienda de Conveniencia
+195,María Miriam Fernández,31,M,Barranquilla,4,10,2025-01-19,Farmacia
+196,Isabel Leonor González,52,M,Cartagena,5,13,2024-11-27,Hipermercado
+197,Marcela Rodríguez Cárdenas,46,F,Barranquilla,4,6,2025-04-18,Supermercado
+198,David Muñoz,52,M,Barranquilla,4,15,2024-11-13,Tienda de Conveniencia
+199,Alfonso Díaz García,43,F,Barranquilla,4,10,2025-07-01,Supermercado
+200,Eva Suárez,35,F,Medellín,2,8,2024-11-18,Supermercado
+201,Flor Forero,68,M,Medellín,2,13,2024-12-02,Hipermercado
+202,Manuel Ríos Gómez,50,M,Cali,3,11,2024-11-01,Hipermercado
+203,Milena María Rojas Martínez,31,M,Cartagena,5,5,2025-08-05,Hipermercado
+204,Mercedes Edilma Blanco,23,F,Bogotá,1,14,2025-06-09,Supermercado
+205,Lidia Daniela Monsalve Correa,69,M,Cali,3,8,2024-10-09,Hipermercado
+206,Nelly Paula Hernández,53,M,Cali,3,6,2025-04-16,Tienda de Conveniencia
+207,Karen Clara Díaz Ángel,44,M,Barranquilla,4,10,2025-05-12,Supermercado
+208,Freddy Restrepo,27,M,Bogotá,1,5,2025-08-03,Supermercado
+209,Juliana Delgado,48,M,Medellín,2,15,2025-07-14,Tienda de Conveniencia
+210,Sebastián Felipe Pérez Muñoz,32,M,Medellín,2,9,2025-05-26,Supermercado
+211,Nelly Mejía Rodríguez,29,M,Bogotá,1,13,2025-09-10,Hipermercado
+212,Esmeralda Rosa Blanco Vergara,53,F,Bogotá,1,6,2025-04-10,Supermercado
+213,Luz Flor Peña Rojas,28,F,Medellín,2,16,2025-01-02,Hipermercado
+214,Gonzalo Muñoz Vergara,40,M,Medellín,2,16,2025-06-16,Hipermercado
+215,Inés Muñoz,30,F,Cartagena,5,15,2025-04-16,E-commerce
+216,Jairo Flórez,77,M,Cali,3,6,2024-11-15,E-commerce
+217,Mireya Rocío Díaz Garzón,54,F,Cartagena,5,9,2024-11-07,Tienda de Conveniencia
+218,Martha Romero,26,F,Barranquilla,4,16,2025-01-24,Hipermercado
+219,Alejandra Correa,39,M,Barranquilla,4,8,2025-02-17,Farmacia
+220,Victoria Rico Ayala,43,F,Bogotá,1,12,2025-04-09,Hipermercado
+221,Isabel Stella Salamanca Gil,71,M,Bogotá,1,8,2025-04-21,Farmacia
+222,Patricia Cielo Hernández García,26,M,Cali,3,8,2024-12-01,Hipermercado
+223,Andrés García Pérez,43,M,Bogotá,1,15,2025-04-03,Tienda de Conveniencia
+224,Jhon Bernal Medina,28,F,Medellín,2,8,2025-07-07,Supermercado
+225,Luz Marín Henao,44,M,Medellín,2,7,2024-11-10,Hipermercado
+226,Andrés Alberto Mejía Narváez,69,F,Medellín,2,8,2025-08-12,Supermercado
+227,Santiago Rivera,60,F,Cartagena,5,9,2025-02-24,Hipermercado
+228,Carlos Galvis Parra,24,M,Bogotá,1,16,2025-06-11,Supermercado
+229,Alexander Nicolás González Patiño,39,F,Medellín,2,8,2025-02-11,Supermercado
+230,Edwin Adolfo Flórez Cardona,30,F,Medellín,2,13,2025-07-29,Supermercado
+231,Alfonso Garcés,79,F,Medellín,2,12,2024-12-30,Tienda de Conveniencia
+232,Junior Ramos,57,M,Bogotá,1,5,2025-09-02,Hipermercado
+233,Dario Iván Flórez,67,F,Medellín,2,7,2024-12-18,Supermercado
+234,María Peña,55,M,Medellín,2,11,2025-02-09,Hipermercado
+235,Alexandra Sofía Tovar,56,M,Bogotá,1,9,2024-11-03,Tienda de Conveniencia
+236,Hugo Vargas,77,M,Medellín,2,16,2025-03-11,Supermercado
+237,Rosario Viviana Vega Molano,24,M,Cartagena,5,12,2024-12-06,Tienda de Conveniencia
+238,Oliva Socorro Pinzón Caro,41,M,Bogotá,1,14,2024-10-06,Hipermercado
+239,Carlos José Galeano,20,M,Bogotá,1,14,2025-06-27,Tienda de Conveniencia
+240,Candelaria Doris Acevedo Pinzón,52,F,Cali,3,5,2024-12-04,Supermercado
+241,María Caicedo Barragán,60,F,Barranquilla,4,14,2025-09-18,Tienda de Conveniencia
+242,Jaime Delgado García,31,M,Cartagena,5,8,2025-08-18,E-commerce
+243,Vanessa Cecilia Ramírez,24,M,Cartagena,5,12,2025-05-01,E-commerce
+244,Angie María Vargas,36,F,Barranquilla,4,13,2025-06-12,E-commerce
+245,Isabel Mejía,37,M,Cartagena,5,7,2024-10-26,Tienda de Conveniencia
+246,Andrés Rivera López,72,F,Barranquilla,4,16,2025-08-03,Hipermercado
+247,Jesús León Trujillo,47,M,Cali,3,9,2024-11-07,Hipermercado
+248,Eduardo Alexander Restrepo,75,F,Barranquilla,4,6,2024-12-28,Hipermercado
+249,Esther Restrepo Carvajal,76,F,Bogotá,1,14,2024-10-29,Supermercado
+250,Ricardo Reyes Díaz,68,M,Barranquilla,4,12,2025-01-27,Hipermercado
+251,Patricia Rodríguez,56,M,Cali,3,15,2025-01-05,Supermercado
+252,Marlén Dora Martínez,43,F,Cali,3,11,2024-12-10,Hipermercado
+253,Leonardo Vicente Ramírez Barrios,35,F,Medellín,2,7,2024-12-29,E-commerce
+254,Alexander Antonio Sepúlveda Muñoz,51,M,Barranquilla,4,9,2025-04-25,Hipermercado
+255,María Heidy Rodríguez,40,M,Cali,3,10,2025-02-05,Tienda de Conveniencia
+256,Dario Carlos Sánchez,48,F,Bogotá,1,16,2025-07-21,Hipermercado
+257,Gustavo Ramírez,70,M,Medellín,2,14,2025-07-31,Supermercado
+258,Doris Fajardo Bermúdez,45,F,Cartagena,5,15,2025-08-21,Hipermercado
+259,Esther Hernández Soto,71,M,Medellín,2,15,2025-09-09,Hipermercado
+260,Claudia Silvia Silva,43,M,Bogotá,1,6,2025-06-09,Supermercado
+261,Rubén Mauricio Patiño,53,M,Barranquilla,4,10,2025-01-12,Hipermercado
+262,Alveiro Ochoa Fernández,72,M,Cali,3,12,2025-06-06,Farmacia
+263,Camilo Alexander Peña López,50,F,Cartagena,5,14,2025-09-18,Supermercado
+264,María Ríos,69,M,Cali,3,9,2024-12-03,E-commerce
+265,Jonathan Jairo Valencia Gómez,51,M,Medellín,2,5,2025-01-21,Supermercado
+266,Ramón Niño,57,M,Medellín,2,16,2025-08-23,Hipermercado
+267,Patricia García Aguilar,59,M,Medellín,2,6,2025-07-18,Supermercado
+268,Andrés Solano Ruiz,61,F,Bogotá,1,12,2025-04-06,E-commerce
+269,Alejandra Lilia Navarro Rincón,36,M,Medellín,2,8,2024-10-25,Supermercado
+270,Miguel Alfonso Salamanca,72,M,Bogotá,1,5,2025-02-13,Farmacia
+271,Alejandra Dolores Hurtado Rivera,34,M,Barranquilla,4,13,2025-08-27,Supermercado
+272,Olga Melba Delgado Camargo,42,F,Cali,3,10,2025-03-09,Tienda de Conveniencia
+273,Lorena Laura Ríos,58,M,Cali,3,14,2024-10-08,Supermercado
+274,Johanna María Cortés,24,M,Bogotá,1,15,2025-06-10,Supermercado
+275,Constanza Torres Rodríguez,24,F,Cali,3,13,2025-01-06,Hipermercado
+276,Alberto Restrepo,25,F,Barranquilla,4,9,2025-01-28,E-commerce
+277,Maira Rodríguez,69,M,Barranquilla,4,12,2024-12-01,Supermercado
+278,Jean Jesús Moreno,34,F,Medellín,2,8,2025-05-19,Tienda de Conveniencia
+279,Hugo Ruiz Duarte,51,M,Bogotá,1,14,2025-05-24,E-commerce
+280,Rocío Ana Velásquez Villamil,40,F,Cali,3,9,2025-04-30,Hipermercado
+281,Carmen Martha Soto Hoyos,46,F,Medellín,2,12,2025-09-12,Supermercado
+282,Juan Londoño Pineda,62,F,Barranquilla,4,14,2025-05-29,Supermercado
+283,Bryan León,47,M,Bogotá,1,7,2025-02-18,Tienda de Conveniencia
+284,María Rubiela Valencia García,49,M,Bogotá,1,13,2025-01-06,Hipermercado
+285,Luz María Durán Santos,66,M,Bogotá,1,13,2025-03-09,E-commerce
+286,Juan José Estrada,61,M,Medellín,2,10,2024-12-18,Supermercado
+287,Alberto Arturo Marín Álvarez,56,F,Barranquilla,4,14,2024-11-28,Hipermercado
+288,Fanny Judith Olaya Carmona,62,F,Barranquilla,4,10,2025-07-12,E-commerce
+289,María Pérez Arrieta,79,M,Medellín,2,14,2025-04-03,Hipermercado
+290,Luis Díaz,32,M,Medellín,2,15,2025-08-29,Farmacia
+291,Santos Fernández,76,F,Medellín,2,6,2025-04-17,E-commerce
+292,Santos Yesid Torres Herrera,23,M,Barranquilla,4,10,2025-06-03,E-commerce
+293,Rosa González,79,M,Cartagena,5,12,2024-11-25,Supermercado
+294,Elvis Vera,76,F,Bogotá,1,7,2025-01-08,Farmacia
+295,Hernán Marco Patiño Escobar,68,M,Barranquilla,4,9,2025-06-18,Hipermercado
+296,Lucía Nubia Valencia,58,M,Bogotá,1,16,2024-11-24,Hipermercado
+297,Herney Henry Mejía Vargas,22,F,Barranquilla,4,17,2025-03-25,Hipermercado
+298,Heidy Lozano Vanegas,75,M,Cartagena,5,12,2025-07-15,Farmacia
+299,Javier Andrés Arango,34,F,Medellín,2,15,2025-04-17,Hipermercado
+300,Ramón Páez Guzmán,73,M,Barranquilla,4,7,2025-07-07,Hipermercado
+301,William Cristian Correa Rodríguez,51,M,Cali,3,15,2025-01-19,Supermercado
+302,Enrique Joaquín Flórez Cruz,46,M,Medellín,2,14,2025-08-13,Hipermercado
+303,Paola Hernández,26,M,Cartagena,5,8,2025-04-15,Tienda de Conveniencia
+304,Alberto Gustavo Uribe Ríos,51,F,Cartagena,5,14,2024-11-06,Supermercado
+305,Sandra Garzón,43,F,Medellín,2,11,2024-12-13,Supermercado
+306,Silvia Ruiz,45,M,Cartagena,5,11,2025-02-06,E-commerce
+307,Gabriela Herrera Ramírez,79,M,Bogotá,1,5,2024-11-15,Tienda de Conveniencia
+308,Claudia García,51,F,Barranquilla,4,8,2024-10-29,Hipermercado
+309,Edwin David Rangel Quiroz,57,F,Barranquilla,4,6,2025-01-04,Tienda de Conveniencia
+310,Catherine Suárez,30,M,Bogotá,1,6,2024-11-21,E-commerce
+311,Ximena Alfonso,44,F,Cartagena,5,14,2025-06-18,E-commerce
+312,Óscar Cristian Vallejo,74,M,Barranquilla,4,12,2025-04-10,Farmacia
+313,Felipe Bayron Ojeda,70,F,Bogotá,1,12,2025-01-08,Tienda de Conveniencia
+314,Martha Espinosa,31,M,Bogotá,1,11,2025-06-18,Tienda de Conveniencia
+315,Antonio Jhonatan Galvis,44,M,Bogotá,1,13,2025-03-01,E-commerce
+316,Miryam Giraldo Giraldo,77,F,Cali,3,15,2025-09-26,Hipermercado
+317,María Nancy Martínez,36,F,Barranquilla,4,13,2025-07-25,E-commerce
+318,Magnolia Lucía Castro,45,F,Cali,3,13,2025-09-20,Farmacia
+319,Angélica Murillo,49,F,Bogotá,1,10,2024-10-09,Farmacia
+320,Diana Castrillón,29,F,Cartagena,5,6,2025-06-18,E-commerce
+321,Lucila María Beltrán González,43,F,Cali,3,5,2025-03-17,Hipermercado
+322,Liliana Rivas Hernández,46,F,Barranquilla,4,6,2025-03-04,Farmacia
+323,Arturo Mauricio Rodríguez,29,M,Cali,3,9,2025-08-23,Supermercado
+324,Mario Delgado,68,M,Medellín,2,6,2024-11-09,Hipermercado
+325,Jhoana Sindy Osorio Gaviria,51,M,Bogotá,1,16,2025-09-27,E-commerce
+326,Melissa Isabel López,56,M,Medellín,2,9,2025-08-21,Hipermercado
+327,María Ruiz Gutiérrez,49,F,Barranquilla,4,12,2025-07-22,Hipermercado
+328,María Carrillo,34,F,Cali,3,8,2024-10-12,Hipermercado
+329,Marina María Leal Ochoa,33,M,Medellín,2,13,2025-05-25,Farmacia
+330,Alejandra Magnolia Bernal Murillo,20,M,Medellín,2,9,2024-12-07,Hipermercado
+331,Rosa Hernández,51,M,Medellín,2,6,2025-02-22,Supermercado
+332,Patricia Lucía Ávila,29,F,Bogotá,1,8,2025-09-23,Supermercado
+333,Luz Gloria Restrepo Prada,46,M,Bogotá,1,14,2025-05-29,Hipermercado
+334,Daniela Liliana Rojas,69,M,Barranquilla,4,14,2025-07-10,Tienda de Conveniencia
+335,Ana Garcés Paz,41,F,Barranquilla,4,7,2025-01-28,Hipermercado
+336,Julián Muñoz Pérez,42,F,Cali,3,15,2025-07-29,Tienda de Conveniencia
+337,Fernando Díaz,53,M,Bogotá,1,12,2025-07-08,Supermercado
+338,Enrique Torres,39,F,Bogotá,1,12,2024-11-29,E-commerce
+339,Leidy Gallego,28,F,Medellín,2,11,2025-08-24,Tienda de Conveniencia
+340,César Lozano Hernández,35,F,Bogotá,1,5,2025-09-05,E-commerce
+341,Gerson Jorge Leal,50,F,Medellín,2,11,2025-01-11,Supermercado
+342,Viviana Alexandra Duque Díaz,68,F,Cartagena,5,11,2024-12-25,Supermercado
+343,Efrain Fajardo Daza,49,M,Medellín,2,16,2025-08-11,Farmacia
+344,Ingrid Ramírez Calderón,27,F,Cali,3,12,2025-02-17,Supermercado
+345,Andrés Murcia,50,M,Medellín,2,7,2025-06-24,Supermercado
+346,Elcy Duque,56,F,Barranquilla,4,6,2025-01-09,Hipermercado
+347,Yohana Erika Romero,67,M,Cali,3,12,2024-10-26,Supermercado
+348,Claudia Gómez Martínez,57,M,Bogotá,1,6,2024-12-09,Supermercado
+349,Martha Martínez Bonilla,26,M,Cartagena,5,8,2024-12-08,Supermercado
+350,Nelson Guzmán Cardona,67,F,Barranquilla,4,14,2025-03-03,Tienda de Conveniencia
+351,Isabel Alexandra Bohórquez,24,M,Medellín,2,9,2025-07-15,Tienda de Conveniencia
+352,María Ángela Velasco,39,F,Cali,3,9,2025-02-17,Supermercado
+353,Andrés Juan Osorio,31,M,Bogotá,1,8,2025-01-13,E-commerce
+354,Julieth Pulido,30,M,Bogotá,1,7,2025-08-28,Hipermercado
+355,Alexander Moreno,53,M,Bogotá,1,7,2025-04-06,Farmacia
+356,Luis Arroyo,49,M,Barranquilla,4,14,2025-07-13,Hipermercado
+357,Carolina Rosa López,54,F,Bogotá,1,6,2025-09-14,Supermercado
+358,Joel Andrés Ramírez,27,M,Cartagena,5,14,2025-01-04,Supermercado
+359,Laura Melissa Álvarez,32,M,Bogotá,1,8,2025-04-17,Hipermercado
+360,Rafael Eduardo Martínez Santos,48,F,Medellín,2,12,2025-07-19,Tienda de Conveniencia
+361,María María Mora,61,F,Medellín,2,14,2025-01-27,Hipermercado
+362,Óscar Sánchez,68,F,Medellín,2,9,2024-11-27,Supermercado
+363,Juan Felix Díaz,53,F,Medellín,2,14,2025-01-22,Supermercado
+364,Luz Pineda,68,M,Barranquilla,4,7,2025-03-26,Supermercado
+365,Andrea Martínez,62,F,Cartagena,5,15,2025-08-01,Hipermercado
+366,Mario Bryan Barrios,43,F,Barranquilla,4,13,2025-08-06,Hipermercado
+367,Ligia María Cruz,61,F,Cartagena,5,8,2024-11-03,E-commerce
+368,Alcira Peña Méndez,62,M,Bogotá,1,6,2024-10-05,Tienda de Conveniencia
+369,Xiomara Guzmán Sepúlveda,73,M,Barranquilla,4,12,2024-11-29,Hipermercado
+370,Laura Lucía Angarita,34,M,Cali,3,16,2024-11-28,E-commerce
+371,Margarita Ospina Erazo,54,M,Cartagena,5,14,2024-12-06,Hipermercado
+372,Elena Olga Romero Bravo,62,M,Barranquilla,4,5,2025-01-21,E-commerce
+373,Lizeth Elena Ávila Trujillo,27,M,Bogotá,1,16,2025-05-25,E-commerce
+374,Aida Martínez,22,F,Cali,3,17,2025-05-17,E-commerce
+375,Carlos Alexander Flórez,71,F,Cali,3,14,2024-12-16,Supermercado
+376,Yaneth Guerrero,29,M,Cali,3,16,2025-04-27,Hipermercado
+377,Claudia Angie Bernal,45,M,Barranquilla,4,5,2024-11-15,Tienda de Conveniencia
+378,Liliana Paola Granados Riascos,67,F,Bogotá,1,12,2025-09-09,E-commerce
+379,Leidy Sonia Zuluaga,43,M,Bogotá,1,6,2024-10-02,Hipermercado
+380,Jhonatan Arboleda Miranda,70,M,Bogotá,1,6,2025-08-18,Hipermercado
+381,Beatriz Córdoba Velásquez,29,F,Bogotá,1,10,2025-07-17,Supermercado
+382,Marcela Camila González,60,F,Cartagena,5,8,2024-11-15,Farmacia
+383,Yolanda Martínez Arango,56,M,Medellín,2,6,2025-06-17,Farmacia
+384,Esperanza Luz Jiménez,61,F,Medellín,2,14,2025-07-22,Hipermercado
+385,Sandra Vargas Castillo,69,F,Bogotá,1,9,2024-10-01,E-commerce
+386,Yéssica Damaris Salcedo,67,M,Bogotá,1,7,2025-09-10,Supermercado
+387,Hernán Moreno Vargas,55,M,Barranquilla,4,5,2025-07-12,E-commerce
+388,Franco Solano,72,F,Medellín,2,11,2024-12-15,Supermercado
+389,Marcela Salazar,43,F,Bogotá,1,16,2024-11-24,Hipermercado
+390,Mauricio Torres,42,F,Barranquilla,4,13,2024-11-25,E-commerce
+391,Claudia Milena Sánchez,33,F,Cali,3,9,2025-02-24,Hipermercado
+392,Ana Liliana Medina,79,F,Cali,3,9,2025-03-07,Supermercado
+393,Andrés Benavides Vergara,26,M,Cartagena,5,7,2025-05-18,E-commerce
+394,Yaneth Villa,70,M,Cartagena,5,15,2024-10-18,Tienda de Conveniencia
+395,José Alexander Arévalo,55,F,Bogotá,1,15,2025-03-13,Supermercado
+396,Estella Patricia Torres,35,M,Cali,3,9,2025-01-05,Tienda de Conveniencia
+397,Martha Garcés Garzón,18,F,Medellín,2,15,2024-10-26,Tienda de Conveniencia
+398,Segundo González Vera,18,F,Cali,3,11,2025-05-10,Hipermercado
+399,Marco José Contreras Suárez,77,M,Medellín,2,15,2025-09-21,Supermercado
+400,Kevin Gregorio Hernández,52,F,Cali,3,15,2025-08-05,Supermercado
+401,Milena Cifuentes Medina,63,F,Bogotá,1,11,2025-02-05,Supermercado
+402,Henry Moreno,38,F,Barranquilla,4,15,2025-05-30,Supermercado
+403,Ana Mosquera,70,M,Medellín,2,14,2025-03-26,Hipermercado
+404,Luis Arboleda Fonseca,65,M,Bogotá,1,16,2024-11-22,E-commerce
+405,Felipe Óscar Quintero Rodríguez,23,F,Cali,3,9,2025-09-19,Tienda de Conveniencia
+406,Estefanía Elena Peña Moreno,38,M,Barranquilla,4,6,2025-08-13,Supermercado
+407,Juan Jhon Triana,32,M,Cartagena,5,12,2025-02-27,E-commerce
+408,Néstor Sarmiento,38,M,Cartagena,5,9,2025-07-18,E-commerce
+409,María María Cruz,21,F,Bogotá,1,11,2025-01-08,E-commerce
+410,Tomás Vásquez,64,F,Medellín,2,9,2025-08-27,Hipermercado
+411,Juan Guillermo Lozano Torres,47,F,Cali,3,8,2025-04-04,E-commerce
+412,Alba Barreto Olaya,42,F,Medellín,2,7,2024-10-25,Hipermercado
+413,Luisa Agudelo Arias,30,M,Cali,3,13,2025-08-30,E-commerce
+414,Luis Alfredo Domínguez León,78,F,Medellín,2,13,2025-08-04,Tienda de Conveniencia
+415,Lucía Aguirre,24,F,Cartagena,5,14,2025-07-23,Hipermercado
+416,Dayana María Salgado Ávila,64,M,Medellín,2,5,2025-08-17,Supermercado
+417,Alfredo Uribe Quintero,45,M,Cali,3,12,2024-11-30,Supermercado
+418,Andrea María Palacios,75,M,Bogotá,1,15,2025-02-03,Supermercado
+419,Yolima Kelly Bautista Hernández,43,M,Cartagena,5,15,2025-08-25,Hipermercado
+420,Andrés Camilo Ramos Luna,53,F,Medellín,2,10,2025-06-14,Supermercado
+421,Andrea Castro Hernández,53,F,Cali,3,12,2024-11-26,E-commerce
+422,Jeison Alberto Bermúdez Muñoz,66,M,Medellín,2,5,2025-09-13,E-commerce
+423,Tulia Roa,39,F,Medellín,2,6,2024-12-27,Supermercado
+424,Beatriz Leidy Benítez,49,M,Cali,3,10,2025-04-15,Supermercado
+425,Enrique Stiven Burbano Ramírez,74,F,Medellín,2,15,2025-08-10,Supermercado
+426,Adriana Carvajal Páez,38,F,Cartagena,5,15,2025-08-28,E-commerce
+427,Dayana Heidy Naranjo,58,M,Medellín,2,8,2025-05-22,Hipermercado
+428,Santiago Pedro Rojas,21,F,Medellín,2,13,2025-05-13,Tienda de Conveniencia
+429,Lilia Ortiz,63,F,Cali,3,11,2025-02-01,Hipermercado
+430,Lucía Marcela Moreno,26,F,Cali,3,13,2025-07-18,Supermercado
+431,Ruby Laura Ospina Torres,21,M,Bogotá,1,5,2025-03-14,Hipermercado
+432,Luz Cárdenas,61,M,Barranquilla,4,5,2024-11-23,Supermercado
+433,Laura Consuelo Romero Ardila,20,F,Medellín,2,10,2025-06-30,Supermercado
+434,Doris Olga Villegas,40,F,Medellín,2,17,2024-12-25,Supermercado
+435,Andrés Adrián Rojas Mosquera,40,F,Medellín,2,7,2025-01-31,Farmacia
+436,Andrés Vargas Rendón,53,M,Bogotá,1,9,2025-04-23,Supermercado
+437,Andrés Ariza Ávila,47,M,Bogotá,1,14,2024-11-02,Hipermercado
+438,Rubiela Andrea Barragán García,29,F,Barranquilla,4,12,2024-11-02,Hipermercado
+439,Karina Pérez Salas,40,F,Medellín,2,8,2025-06-23,Hipermercado
+440,Edward José Benavides,57,F,Bogotá,1,7,2025-04-04,Farmacia
+441,Danny Rojas,23,F,Barranquilla,4,5,2024-12-06,Supermercado
+442,James Duarte,70,F,Barranquilla,4,7,2025-08-09,Tienda de Conveniencia
+443,Cindy Andrea Tovar Peña,53,M,Bogotá,1,10,2025-09-02,E-commerce
+444,José José Velásquez,38,F,Medellín,2,12,2025-06-24,Hipermercado
+445,Flor Claudia Velásquez,69,F,Cali,3,15,2024-11-06,Hipermercado
+446,Jessica Paola Vargas,23,M,Cartagena,5,12,2025-03-01,Tienda de Conveniencia
+447,Ángela Ángel,54,F,Medellín,2,11,2025-07-04,Farmacia
+448,Manuel Daza,55,F,Medellín,2,16,2025-05-18,Hipermercado
+449,Yenny Ramírez,31,F,Cali,3,7,2025-03-04,Supermercado
+450,Manuel Israel Gómez,26,M,Barranquilla,4,8,2025-05-16,Hipermercado
+451,Deicy Loaiza,52,F,Bogotá,1,9,2024-12-24,E-commerce
+452,Luis Melo Cáceres,19,M,Cali,3,9,2025-07-02,Farmacia
+453,María Niño Ortega,18,F,Medellín,2,12,2024-10-13,Supermercado
+454,Lucy González,52,M,Barranquilla,4,10,2024-10-18,Hipermercado
+455,Camilo Moreno Romero,25,M,Bogotá,1,11,2025-07-09,Hipermercado
+456,Silvia Castro,62,F,Medellín,2,6,2024-12-23,Hipermercado
+457,Dario Hoyos Moreno,23,F,Medellín,2,9,2025-04-15,E-commerce
+458,Sergio José Mejía Peña,68,M,Cali,3,6,2025-03-14,E-commerce
+459,Edwin Gutiérrez,79,M,Bogotá,1,7,2025-07-13,Hipermercado
+460,Jairo Quintero Díaz,26,M,Bogotá,1,6,2025-05-27,Supermercado
+461,Hernando Cabrera Rodríguez,45,F,Bogotá,1,8,2025-01-09,E-commerce
+462,Gildardo Córdoba López,50,F,Bogotá,1,8,2025-01-15,Supermercado
+463,Luis Mantilla López,56,F,Cartagena,5,9,2025-04-14,Tienda de Conveniencia
+464,Esteban Edison Ocampo,55,M,Bogotá,1,9,2025-08-08,Supermercado
+465,Diana Luisa Flórez Ortega,79,F,Bogotá,1,7,2025-08-13,Tienda de Conveniencia
+466,David Carlos Ramírez,31,M,Medellín,2,8,2025-06-15,Hipermercado
+467,Johanna Villa Andrade,72,F,Medellín,2,11,2025-08-14,Farmacia
+468,Luz María Rojas,27,M,Bogotá,1,11,2025-04-02,Hipermercado
+469,Paola Orozco,30,M,Bogotá,1,16,2025-03-03,Supermercado
+470,Alba González,35,M,Medellín,2,16,2025-01-14,Farmacia
+471,Carlos Gómez Forero,28,M,Medellín,2,9,2025-01-22,Hipermercado
+472,Gloria Carrillo,43,F,Barranquilla,4,10,2025-05-19,E-commerce
+473,Jesús Londoño,35,F,Barranquilla,4,9,2024-12-15,Hipermercado
+474,Duván Córdoba,55,F,Medellín,2,8,2025-04-03,Hipermercado
+475,Fernanda Elvia Quintero,34,F,Cartagena,5,10,2024-10-17,E-commerce
+476,Fernanda Isabel Duque,65,M,Cartagena,5,15,2024-12-29,Tienda de Conveniencia
+477,María Rodríguez Portilla,77,F,Barranquilla,4,5,2025-08-03,E-commerce
+478,Julio Naranjo,25,M,Barranquilla,4,10,2025-09-29,Hipermercado
+479,Edgardo Samuel Giraldo,77,M,Cali,3,11,2025-07-07,Supermercado
+480,Luz Eugenia Gómez Ramírez,61,M,Cartagena,5,14,2024-11-22,E-commerce
+481,Ronald Bohórquez,74,M,Cali,3,12,2024-10-16,E-commerce
+482,Leidy Ramírez,41,M,Bogotá,1,5,2025-01-01,E-commerce
+483,Sindy Sandoval Rodríguez,48,F,Medellín,2,10,2025-06-20,Hipermercado
+484,Claudia Pineda,24,M,Medellín,2,8,2025-01-22,Tienda de Conveniencia
+485,Arnulfo Jiménez Salcedo,47,F,Bogotá,1,7,2025-06-20,E-commerce
+486,Gloria Carmen Barreto Montoya,49,F,Medellín,2,13,2025-01-16,E-commerce
+487,Hernán Javier Becerra,42,M,Medellín,2,5,2025-06-16,Tienda de Conveniencia
+488,Michael Eduardo Rubio Acevedo,53,F,Cali,3,7,2025-04-10,E-commerce
+489,Antonio Gutiérrez Rojas,75,M,Barranquilla,4,8,2025-04-16,Supermercado
+490,Jenny Yaneth Romero Restrepo,44,F,Medellín,2,6,2025-06-19,E-commerce
+491,Mary Gloria Valencia Caicedo,48,F,Cali,3,7,2025-04-01,Supermercado
+492,Yohana Lozano,57,F,Bogotá,1,7,2024-10-25,Hipermercado
+493,Andrea Johanna Parada Ayala,31,F,Bogotá,1,12,2025-09-14,Hipermercado
+494,Felipe Pinto Quintero,47,F,Cali,3,16,2025-04-16,Farmacia
+495,Nancy Toro,66,F,Cali,3,10,2025-09-22,Hipermercado
+496,Damián Alexander Castro Carvajal,72,M,Medellín,2,10,2025-04-09,Tienda de Conveniencia
+497,Fernanda Jiménez Fuentes,38,M,Medellín,2,5,2025-08-27,Supermercado
+498,Inés Diana Castañeda Rubio,63,M,Cartagena,5,10,2025-08-12,Supermercado
+499,Luis Andrés Sierra,39,F,Cali,3,13,2025-02-24,E-commerce
+500,Neider Camilo Flórez,35,F,Cartagena,5,15,2024-12-16,E-commerce
+501,Carlos Ávila Flórez,48,M,Barranquilla,4,10,2024-12-01,Tienda de Conveniencia
+502,Eduard Miguel Tamayo Gil,39,M,Bogotá,1,8,2024-12-19,Hipermercado
+503,María Duarte,71,M,Cali,3,10,2025-04-11,Supermercado
+504,Daniel Gustavo Sandoval,64,M,Cali,3,12,2025-05-03,Tienda de Conveniencia
+505,Patricia Galeano Forero,33,F,Bogotá,1,9,2024-12-09,Hipermercado
+506,Javier Posada,21,F,Barranquilla,4,5,2025-04-13,Tienda de Conveniencia
+507,Carmen Omaira Hernández,60,M,Medellín,2,8,2024-10-25,Tienda de Conveniencia
+508,Jesús Juan Cárdenas Torres,44,M,Barranquilla,4,17,2025-02-12,Tienda de Conveniencia
+509,Dayana Murillo Sánchez,69,F,Medellín,2,7,2024-12-08,Tienda de Conveniencia
+510,Néstor Pedro Duarte Narváez,29,M,Barranquilla,4,11,2024-10-03,Tienda de Conveniencia
+511,José Jerson Betancur López,28,F,Cartagena,5,15,2024-11-30,Hipermercado
+512,María Garcés Cardona,36,M,Barranquilla,4,8,2024-11-26,Hipermercado
+513,Gilberto Mendoza,37,F,Medellín,2,16,2025-07-09,Hipermercado
+514,María Quintero,55,M,Bogotá,1,13,2025-07-28,E-commerce
+515,Javier Julio Murcia Galvis,55,F,Cali,3,11,2025-01-14,E-commerce
+516,María Palacios,34,M,Bogotá,1,9,2024-11-13,Hipermercado
+517,Henry Correa,41,M,Medellín,2,11,2024-12-15,Supermercado
+518,Jhon Andrey Pérez,79,F,Cali,3,15,2025-06-05,Supermercado
+519,Hernán Alexander Díaz Ortega,77,F,Cali,3,7,2024-11-20,Supermercado
+520,Elvira Gómez Fernández,39,F,Medellín,2,8,2025-01-20,E-commerce
+521,Cecilia Luz Rodríguez,36,F,Barranquilla,4,15,2025-07-03,Tienda de Conveniencia
+522,Norma Martha Suárez,50,F,Bogotá,1,9,2025-06-02,Supermercado
+523,Edwin Rodríguez,64,M,Bogotá,1,8,2025-02-19,Tienda de Conveniencia
+524,Mery Chacón Delgado,34,F,Cartagena,5,15,2025-06-19,Supermercado
+525,Leandro Ardila Manrique,32,F,Medellín,2,8,2025-02-25,E-commerce
+526,Isabel Camila Mora Martínez,74,F,Cali,3,12,2025-07-07,Supermercado
+527,Julio Torres Jaramillo,66,F,Medellín,2,16,2024-10-27,E-commerce
+528,Gloria Aura Sierra Gutiérrez,62,M,Medellín,2,10,2025-07-20,Supermercado
+529,Juan Luis Jaramillo Quintero,43,M,Bogotá,1,10,2024-12-06,Tienda de Conveniencia
+530,Gloria Carvajal Muñoz,66,M,Barranquilla,4,9,2025-06-23,E-commerce
+531,Daniela Lucy Ramírez,43,F,Cartagena,5,16,2025-01-28,Supermercado
+532,David Alberto Navarro,41,M,Cartagena,5,11,2024-11-27,Farmacia
+533,Miriam Rodríguez Santos,77,F,Barranquilla,4,9,2025-07-04,E-commerce
+534,Piedad Manuela Mosquera,53,M,Barranquilla,4,14,2025-05-11,Supermercado
+535,Felipe Pérez,45,M,Bogotá,1,13,2025-03-12,Hipermercado
+536,Felipe Jesús Castro,27,F,Medellín,2,8,2024-10-08,Tienda de Conveniencia
+537,Ana Graciela Pérez,23,F,Medellín,2,11,2024-10-02,Tienda de Conveniencia
+538,Doris Salgado Sánchez,37,F,Medellín,2,15,2025-07-14,E-commerce
+539,José William Correa,67,M,Cali,3,17,2024-10-23,Hipermercado
+540,Santiago Ramírez,49,F,Bogotá,1,12,2024-10-18,Hipermercado
+541,Andrés Andrés Restrepo Mejía,38,F,Bogotá,1,8,2025-09-07,Tienda de Conveniencia
+542,Jaime Cortés Jiménez,74,M,Medellín,2,15,2025-02-15,Hipermercado
+543,Iván Martínez,40,F,Cartagena,5,16,2025-06-02,E-commerce
+544,Enrique Julián Guerrero,42,M,Cali,3,11,2024-11-01,Hipermercado
+545,Elena Torres,70,F,Bogotá,1,14,2025-03-05,E-commerce
+546,Emilce Ramírez Correa,50,M,Bogotá,1,16,2025-06-02,Supermercado
+547,Yolanda Janeth Rodríguez,75,M,Bogotá,1,14,2025-07-06,Tienda de Conveniencia
+548,Natalia Hurtado Álvarez,51,F,Barranquilla,4,15,2024-10-29,Supermercado
+549,Luis López Perea,22,F,Barranquilla,4,12,2025-05-26,Hipermercado
+550,Luis Domínguez López,51,F,Barranquilla,4,12,2025-03-11,Supermercado
+551,María Rojas Castañeda,41,M,Cali,3,7,2024-10-10,Supermercado
+552,Edilma Ángela Castro,52,F,Bogotá,1,13,2025-03-30,Hipermercado
+553,Eliecer Cantillo Pérez,24,M,Barranquilla,4,7,2024-10-02,Hipermercado
+554,Felipe Rojas,69,F,Cali,3,8,2025-06-19,Tienda de Conveniencia
+555,Franco Sánchez Ocampo,69,F,Bogotá,1,14,2024-11-27,Supermercado
+556,Patricia Cruz Cardozo,66,M,Cali,3,15,2025-07-20,Tienda de Conveniencia
+557,Andrés Miguel Gil,25,F,Bogotá,1,6,2025-04-20,Hipermercado
+558,Yesid Álvarez Carmona,56,F,Medellín,2,5,2025-09-12,Tienda de Conveniencia
+559,María Amaya,36,M,Barranquilla,4,13,2025-04-18,Hipermercado
+560,Dahiana Eliana Martínez,25,F,Bogotá,1,7,2024-12-31,E-commerce
+561,Helena Quintero,72,M,Cali,3,15,2024-11-13,Supermercado
+562,Elvia Bejarano Delgado,23,F,Medellín,2,14,2025-04-06,Hipermercado
+563,Yamile Liliana Durán,20,M,Medellín,2,6,2024-11-26,Tienda de Conveniencia
+564,Alfonso López Yepes,45,M,Bogotá,1,7,2025-01-06,Supermercado
+565,Inés María Moreno,77,F,Bogotá,1,13,2025-01-02,Tienda de Conveniencia
+566,Carlos Leonardo Betancur,71,M,Medellín,2,9,2025-08-09,Supermercado
+567,María María Londoño,33,M,Barranquilla,4,14,2025-09-16,Supermercado
+568,Gladys Pérez Bolívar,51,F,Bogotá,1,12,2025-01-28,Supermercado
+569,Magnolia Jiménez Niño,44,M,Cartagena,5,11,2025-09-18,Supermercado
+570,Cecilia Luz Cruz Bravo,37,F,Bogotá,1,16,2025-08-13,E-commerce
+571,Ramiro Javier Zuluaga,78,F,Bogotá,1,16,2025-06-15,Supermercado
+572,Isabel Nubia Martínez,36,F,Barranquilla,4,15,2024-12-20,Supermercado
+573,Andrés Jairo Díaz,61,M,Medellín,2,14,2024-12-14,Tienda de Conveniencia
+574,Lina Cristina Díaz,29,F,Medellín,2,10,2025-04-02,Tienda de Conveniencia
+575,Alix Castro Padilla,43,F,Medellín,2,16,2024-11-18,E-commerce
+576,Victoria Alejandra Pardo,58,M,Medellín,2,5,2025-05-23,E-commerce
+577,Diego Camilo Morales,65,F,Barranquilla,4,7,2025-05-25,Supermercado
+578,Elizabeth Valencia Vásquez,47,M,Barranquilla,4,12,2024-11-15,Tienda de Conveniencia
+579,Ferney Rodríguez,51,F,Bogotá,1,8,2025-07-27,Supermercado
+580,Carolina Isabel Rivera Orozco,56,F,Cali,3,7,2024-10-21,E-commerce
+581,Alejandro Mora Garzón,72,M,Cali,3,16,2025-06-11,Farmacia
+582,Sebastián Stiven Calderón Vásquez,55,M,Cali,3,8,2025-01-27,Supermercado
+583,Adolfo Fabio Vega,63,F,Bogotá,1,10,2025-04-03,Hipermercado
+584,Jaime Díaz Duque,52,F,Barranquilla,4,9,2025-05-16,Tienda de Conveniencia
+585,Laura Laura Lozano Serrano,44,M,Cali,3,6,2025-02-21,Tienda de Conveniencia
+586,David Alberto Vergara Mena,53,M,Medellín,2,6,2025-03-22,Hipermercado
+587,Ronald López,31,M,Bogotá,1,13,2025-07-21,Hipermercado
+588,Óscar Giraldo Velásquez,31,F,Bogotá,1,9,2024-11-25,Hipermercado
+589,Cecilia Martínez Calderón,36,F,Medellín,2,12,2025-04-12,Tienda de Conveniencia
+590,Elvis Carlos Loaiza Castro,45,F,Barranquilla,4,7,2025-01-21,Supermercado
+591,Juan Enrique Mesa,77,M,Cali,3,13,2024-11-24,Supermercado
+592,Ricardo Vanegas,31,F,Medellín,2,15,2024-11-06,Tienda de Conveniencia
+593,Sebastián Cristian Fonseca Cárdenas,34,F,Bogotá,1,12,2025-03-22,E-commerce
+594,Sindy María Vargas Alzate,42,F,Bogotá,1,15,2024-10-08,Hipermercado
+595,Deisy Martínez,47,M,Medellín,2,10,2025-08-23,Hipermercado
+596,Constanza Angarita Flórez,19,M,Bogotá,1,9,2025-02-14,Tienda de Conveniencia
+597,Jhony Bermúdez Sierra,72,F,Cartagena,5,12,2025-04-08,E-commerce
+598,Carolina Katherine Medina,28,F,Medellín,2,5,2025-06-14,Hipermercado
+599,Dora Beatriz Jiménez,65,F,Cali,3,7,2025-04-05,Supermercado
+600,Gloria Mora Yepes,78,M,Cali,3,10,2025-02-12,E-commerce
+601,Jorge Ismael Montes Aguilar,41,F,Cali,3,15,2025-08-09,Tienda de Conveniencia
+602,Emilse Catalina Gil,57,F,Bogotá,1,5,2025-06-06,Supermercado
+603,Diana Laura Vargas,58,M,Medellín,2,12,2025-01-28,Tienda de Conveniencia
+604,Pablo Márquez Andrade,38,M,Bogotá,1,15,2025-08-05,E-commerce
+605,Sandra Daza,21,M,Cali,3,12,2025-04-30,Supermercado
+606,Eugenia Méndez,29,M,Bogotá,1,13,2025-02-13,Hipermercado
+607,Margarita Paola Vargas,51,M,Cali,3,7,2025-04-04,Farmacia
+608,María Flórez Parra,55,F,Cartagena,5,13,2025-03-03,Hipermercado
+609,Luisa Montoya,29,F,Medellín,2,11,2025-02-27,Hipermercado
+610,José Gutiérrez Granados,59,M,Cartagena,5,16,2025-03-09,Hipermercado
+611,Yolanda Sarmiento,57,F,Medellín,2,15,2024-12-05,Hipermercado
+612,Jesús Mauricio Londoño Parra,66,M,Medellín,2,8,2025-01-10,Hipermercado
+613,Lucía Alba Granados,25,M,Barranquilla,4,10,2025-02-07,E-commerce
+614,Jaime Carlos Arteaga Gómez,38,M,Bogotá,1,9,2025-03-19,Hipermercado
+615,Samuel Orlando Martínez,71,F,Bogotá,1,5,2024-10-15,Hipermercado
+616,Víctor José Sánchez,58,M,Medellín,2,14,2024-11-01,E-commerce
+617,Elena Guerra,72,M,Cali,3,14,2025-06-23,Tienda de Conveniencia
+618,Claudia Mendoza Guerrero,36,M,Medellín,2,12,2025-01-02,Supermercado
+619,Lizeth María Márquez,25,F,Medellín,2,6,2025-02-15,Supermercado
+620,Alexandra Caicedo,50,M,Medellín,2,10,2024-10-24,Supermercado
+621,Wilson Álvarez Suárez,25,M,Cartagena,5,15,2025-07-12,Tienda de Conveniencia
+622,Lina Rocío Arenas,66,M,Barranquilla,4,11,2025-03-29,Tienda de Conveniencia
+623,Danilo César Gutiérrez,47,M,Cali,3,9,2025-04-11,E-commerce
+624,Ximena Adriana Benavides,45,F,Medellín,2,8,2024-12-04,E-commerce
+625,Damaris Sandoval,68,M,Cartagena,5,9,2024-11-28,Hipermercado
+626,William Alfonso Álvarez,58,F,Cartagena,5,15,2025-03-07,Supermercado
+627,Yaneth Luz Angulo Alfonso,31,F,Cartagena,5,7,2025-06-11,Supermercado
+628,Isabel Villamil Suárez,45,M,Cartagena,5,8,2025-06-30,Supermercado
+629,Alberto Antonio Contreras Arrieta,46,F,Cali,3,9,2025-06-11,Supermercado
+630,Eliana Arévalo,34,M,Cali,3,8,2024-11-17,E-commerce
+631,Blanca Carvajal,32,F,Medellín,2,8,2025-02-26,E-commerce
+632,Tatiana Gómez,48,M,Bogotá,1,9,2024-10-21,Supermercado
+633,Óscar Jesús Ramos Ramírez,38,F,Barranquilla,4,12,2025-01-05,E-commerce
+634,William Meneses,26,M,Medellín,2,7,2025-03-22,E-commerce
+635,Jesús López,51,F,Barranquilla,4,11,2024-12-15,Hipermercado
+636,Mery Sofía Ortega López,58,M,Medellín,2,8,2025-09-27,Supermercado
+637,Alberto Cantillo Ardila,75,M,Medellín,2,12,2025-01-14,Supermercado
+638,Jorge Juan Castillo Palacios,41,M,Bogotá,1,15,2025-07-24,Hipermercado
+639,Fredy Cárdenas,21,M,Bogotá,1,6,2025-01-10,Hipermercado
+640,Adolfo Alejandro Alvarado,36,M,Barranquilla,4,14,2025-06-28,Farmacia
+641,Alexander Ospina Jiménez,60,M,Cali,3,15,2025-04-24,Supermercado
+642,Salvador Herrera Muñoz,25,F,Bogotá,1,5,2025-08-11,Tienda de Conveniencia
+643,Yurany Milena Garzón Sánchez,48,F,Cali,3,9,2025-03-15,Supermercado
+644,Karol Marleny Delgado,73,F,Bogotá,1,5,2025-01-02,Hipermercado
+645,Juan Jairo Herrera,44,F,Cartagena,5,7,2025-05-06,Hipermercado
+646,Luis Pinzón,68,F,Cartagena,5,11,2025-07-05,Hipermercado
+647,María Yeimy Ruiz,47,F,Barranquilla,4,11,2025-02-25,Hipermercado
+648,María Bertha Melo,77,M,Barranquilla,4,10,2024-10-26,Hipermercado
+649,Natalia Herrera,77,M,Cartagena,5,8,2025-07-04,Supermercado
+650,Ángel Manuel Castillo Ballesteros,79,F,Bogotá,1,5,2025-04-18,Supermercado
+651,Janeth Ángela Sarmiento Soto,21,M,Medellín,2,5,2025-07-25,Hipermercado
+652,Milena Pérez,62,F,Medellín,2,10,2025-04-29,Supermercado
+653,Elena María Medina González,59,F,Barranquilla,4,10,2024-12-30,Hipermercado
+654,Estiven Sánchez Rivas,61,M,Bogotá,1,8,2025-06-21,Supermercado
+655,María María Torres Rojas,41,M,Cali,3,12,2024-10-05,E-commerce
+656,Yury Villa Cárdenas,53,M,Bogotá,1,7,2025-08-28,Tienda de Conveniencia
+657,Alejandro Rojas Barbosa,39,M,Barranquilla,4,5,2025-06-11,Hipermercado
+658,Rosalba Valencia Cruz,38,F,Cali,3,13,2025-06-23,Hipermercado
+659,Luis Julián Correa,36,M,Medellín,2,10,2025-06-29,Supermercado
+660,Pilar Osorio Rengifo,64,F,Cali,3,9,2025-06-21,Hipermercado
+661,Milena Elizabeth Loaiza Hoyos,45,M,Bogotá,1,10,2025-08-13,Tienda de Conveniencia
+662,María Guerrero Rueda,75,F,Cali,3,5,2025-07-24,Hipermercado
+663,Pablo John Meneses Silva,65,F,Bogotá,1,11,2025-07-11,Hipermercado
+664,Ramiro Jorge Díaz,75,F,Barranquilla,4,9,2025-08-21,Supermercado
+665,Paola Gómez Peña,40,M,Medellín,2,11,2024-10-15,Supermercado
+666,Jaime Sánchez,70,F,Medellín,2,15,2025-06-24,Supermercado
+667,Hugo Carlos Cardona Rodríguez,64,F,Medellín,2,6,2025-07-24,Supermercado
+668,María Velandia,26,F,Cartagena,5,13,2025-04-21,Hipermercado
+669,Patricia Marcela Carvajal Meza,50,F,Bogotá,1,9,2025-02-21,Supermercado
+670,Fernando Mena Uribe,76,M,Bogotá,1,14,2024-10-23,Tienda de Conveniencia
+671,Johana Flórez Peña,46,F,Bogotá,1,12,2025-05-20,Hipermercado
+672,Flor Sepúlveda,79,M,Cali,3,8,2025-03-10,E-commerce
+673,Martha Ochoa Ramírez,47,M,Medellín,2,6,2025-04-08,Supermercado
+674,Dario Martínez Martínez,66,F,Cartagena,5,7,2025-06-11,Supermercado
+675,Yesid Andrés Castillo,53,M,Bogotá,1,11,2025-06-03,E-commerce
+676,José Rojas,57,F,Barranquilla,4,11,2024-12-31,E-commerce
+677,Francy Mosquera,18,F,Barranquilla,4,10,2025-08-30,Tienda de Conveniencia
+678,Geraldine Mónica Vergara,26,F,Cali,3,8,2025-03-13,E-commerce
+679,Nancy Sánchez Parra,52,F,Medellín,2,9,2025-06-08,E-commerce
+680,María Patricia Arévalo Toro,49,F,Cali,3,7,2025-04-13,Supermercado
+681,Stella Polo Benavides,57,M,Medellín,2,8,2025-06-12,Hipermercado
+682,Jorge Álvarez,55,F,Barranquilla,4,11,2025-01-26,Hipermercado
+683,Henry Javier Rodríguez Rivera,64,M,Bogotá,1,6,2025-08-05,Hipermercado
+684,Javier Moreno,31,F,Medellín,2,7,2025-01-16,Tienda de Conveniencia
+685,Alfonso López Flórez,70,M,Cartagena,5,12,2025-04-27,Hipermercado
+686,Yolanda Guerrero,30,M,Cali,3,6,2025-02-15,Hipermercado
+687,Helena Cecilia Daza,39,M,Medellín,2,7,2025-04-10,Supermercado
+688,Rosa Montoya,27,F,Barranquilla,4,6,2025-02-11,Tienda de Conveniencia
+689,Lorena María García Hernández,49,F,Cali,3,9,2025-02-16,E-commerce
+690,José Peña,41,M,Barranquilla,4,7,2024-11-10,Tienda de Conveniencia
+691,Efrain Ciro Barbosa,76,M,Cali,3,11,2025-01-16,E-commerce
+692,Diana Álvarez García,31,F,Medellín,2,14,2024-12-02,Hipermercado
+693,Juan Quiroz Velasco,58,F,Barranquilla,4,6,2024-12-07,Supermercado
+694,Carolina Ibarra,75,M,Medellín,2,5,2025-01-07,E-commerce
+695,Edison Luis Blanco,34,M,Barranquilla,4,17,2025-01-05,Supermercado
+696,Patricia Lida León,22,F,Barranquilla,4,14,2025-07-03,E-commerce
+697,Yeison Fernando Carvajal,74,M,Bogotá,1,14,2025-01-29,Farmacia
+698,Francisco Juan López Melo,21,F,Cali,3,8,2025-05-22,Tienda de Conveniencia
+699,Sara Duarte Quintero,66,F,Cartagena,5,7,2025-04-29,Hipermercado
+700,Nubia Álvarez,75,M,Cartagena,5,14,2024-12-01,E-commerce
+701,Ronald Rivera,42,F,Cali,3,17,2024-11-19,Farmacia
+702,Angélica Suárez Pineda,38,M,Bogotá,1,12,2025-01-19,E-commerce
+703,Valentina Cardona Ramírez,34,F,Cartagena,5,10,2025-07-05,Tienda de Conveniencia
+704,Yaneth Muñoz Acevedo,36,M,Medellín,2,15,2025-01-18,E-commerce
+705,José Willian Montoya,65,M,Bogotá,1,9,2025-06-07,Hipermercado
+706,Nathalia Díaz,31,M,Medellín,2,14,2024-12-21,E-commerce
+707,Diana López Galvis,35,M,Bogotá,1,14,2025-04-09,Tienda de Conveniencia
+708,Vicente Isidro León Morales,26,F,Barranquilla,4,8,2025-06-18,Hipermercado
+709,Cristian Morales Martínez,62,M,Barranquilla,4,11,2025-04-18,Hipermercado
+710,Elisa Andrea Gutiérrez Campo,53,F,Medellín,2,7,2025-05-26,Farmacia
+711,Esmeralda Sandra Castro,38,F,Medellín,2,7,2025-05-16,Supermercado
+712,Jorge Camilo González Mendoza,38,F,Medellín,2,13,2025-07-30,Supermercado
+713,Wilson Gómez,71,F,Cali,3,8,2025-02-11,Tienda de Conveniencia
+714,Orlando Omar Martínez García,63,M,Medellín,2,10,2025-05-30,Tienda de Conveniencia
+715,Leidy Esther Garcés,34,F,Cartagena,5,10,2024-11-27,Tienda de Conveniencia
+716,Luis Chávez Giraldo,55,M,Bogotá,1,16,2025-06-13,Supermercado
+717,Eduardo Pérez,42,F,Medellín,2,12,2025-05-25,Supermercado
+718,Rocío Martha Silva,37,M,Medellín,2,16,2024-12-27,Supermercado
+719,Leidy Fuentes Córdoba,44,F,Medellín,2,5,2025-02-01,Farmacia
+720,Alexander Reyes Londoño,58,F,Bogotá,1,10,2025-08-22,Hipermercado
+721,María Julieth Restrepo,70,M,Medellín,2,11,2025-01-26,E-commerce
+722,Leonor Zoraida Álvarez Bermúdez,74,F,Barranquilla,4,5,2025-08-09,Hipermercado
+723,Ivonne Amalia Gil,64,M,Cali,3,10,2024-12-27,Farmacia
+724,Jorge Ramírez Bolaños,40,M,Cali,3,15,2024-10-30,Tienda de Conveniencia
+725,Alberto León,21,F,Medellín,2,14,2025-07-24,Hipermercado
+726,Andrés Palacios Valencia,51,F,Barranquilla,4,8,2025-02-26,Farmacia
+727,Nelson Paz,57,M,Cali,3,12,2024-11-15,Supermercado
+728,Edilma Geraldine López Gaitán,67,M,Barranquilla,4,12,2025-05-10,Farmacia
+729,Anderson Alexander Becerra,61,M,Medellín,2,11,2025-01-26,Hipermercado
+730,Mauricio Guerrero,76,M,Cartagena,5,16,2025-01-11,Tienda de Conveniencia
+731,Edilma Barreto Zuluaga,57,F,Bogotá,1,8,2025-04-08,Tienda de Conveniencia
+732,Javier López,41,F,Medellín,2,5,2025-04-14,Farmacia
+733,Sergio Omar Daza Flórez,67,F,Cartagena,5,14,2025-08-12,Supermercado
+734,Andrés Alexander López Ávila,58,M,Cartagena,5,5,2025-01-01,Hipermercado
+735,Eugenia Ángela González,44,F,Bogotá,1,14,2024-11-09,Farmacia
+736,Luis Rodríguez,55,F,Cali,3,17,2025-01-26,E-commerce
+737,Manuel Álvarez,63,M,Barranquilla,4,11,2025-09-09,Supermercado
+738,Andrés Quintero Salcedo,61,M,Bogotá,1,8,2024-11-20,Hipermercado
+739,Antonio Andrés Salas,67,M,Bogotá,1,5,2024-11-22,Farmacia
+740,María Gloria Rodríguez,77,F,Bogotá,1,10,2024-11-08,Supermercado
+741,Sebastián González,74,F,Barranquilla,4,13,2025-07-14,Farmacia
+742,Cristina Josefina Guzmán Correa,72,F,Medellín,2,10,2025-06-20,Supermercado
+743,Óscar Morales,61,M,Bogotá,1,11,2025-02-15,E-commerce
+744,Maribel Adriana López Rodríguez,33,F,Cali,3,6,2025-03-15,Hipermercado
+745,Christian Silva,25,F,Barranquilla,4,7,2025-09-18,E-commerce
+746,Christian Cardozo Gómez,56,M,Medellín,2,9,2024-10-29,Supermercado
+747,Martha Ligia Díaz Rodríguez,39,F,Cali,3,9,2025-05-21,Tienda de Conveniencia
+748,Susana Julieth Martínez,45,F,Barranquilla,4,16,2025-08-23,Tienda de Conveniencia
+749,Alexis Ramírez Ángel,59,F,Barranquilla,4,17,2025-09-21,E-commerce
+750,Angélica Aura Díaz,44,F,Barranquilla,4,14,2025-02-15,Supermercado
+751,Rafael Fernando Carvajal,61,M,Medellín,2,10,2025-08-29,Hipermercado
+752,Jaime Aldemar Durán Bejarano,72,M,Cartagena,5,15,2025-08-30,E-commerce
+753,Enrique Santiago Henao,46,M,Cartagena,5,7,2024-12-29,E-commerce
+754,Álvaro Julián Carvajal Galvis,47,M,Cali,3,5,2024-10-27,E-commerce
+755,Wilder Armando Martínez López,31,M,Cartagena,5,8,2025-05-22,Supermercado
+756,Julio Felipe Duarte,70,M,Cartagena,5,7,2025-05-27,Hipermercado
+757,Laura Marcela Silva,75,F,Cali,3,6,2025-07-06,Hipermercado
+758,Sergio Prada Castañeda,28,M,Bogotá,1,9,2025-06-04,Supermercado
+759,Luis Sarmiento,39,F,Bogotá,1,15,2025-09-25,Farmacia
+760,Fabio Ramírez,22,F,Medellín,2,13,2024-11-08,Farmacia
+761,Alejandro Germán Ortiz Suárez,43,M,Cali,3,13,2025-07-05,Supermercado
+762,Sara Vanessa Trujillo Castellanos,72,M,Bogotá,1,7,2025-08-31,Hipermercado
+763,Eliana Alexandra Zuluaga,21,M,Cartagena,5,15,2025-06-26,Hipermercado
+764,Isidro Cuesta,62,M,Cartagena,5,16,2025-05-26,Supermercado
+765,Rosa Villegas Jiménez,56,F,Bogotá,1,14,2025-06-28,Hipermercado
+766,Edna Diana Corredor Parada,52,M,Medellín,2,14,2024-10-02,Hipermercado
+767,Yésica Inés Rodríguez,57,M,Medellín,2,5,2025-07-26,Tienda de Conveniencia
+768,Andrés Ariel Valderrama,59,F,Cali,3,9,2025-08-14,Tienda de Conveniencia
+769,Ligia León Pardo,70,F,Medellín,2,8,2025-06-23,Hipermercado
+770,Adolfo Orlando Romero Guerra,79,M,Medellín,2,9,2025-04-16,E-commerce
+771,José Jhony Martínez,71,F,Bogotá,1,15,2025-02-16,Hipermercado
+772,Marcos Jesús Rojas,56,F,Barranquilla,4,10,2024-11-05,Hipermercado
+773,Eduardo Alfonso Rojas,68,F,Medellín,2,10,2025-09-26,Hipermercado
+774,Stiven Ruiz,53,M,Cartagena,5,9,2025-03-24,Hipermercado
+775,José José Delgado,67,F,Barranquilla,4,16,2025-02-13,Hipermercado
+776,Esperanza Catalina Amaya Ceballos,31,M,Barranquilla,4,10,2024-10-04,Tienda de Conveniencia
+777,María Martínez Becerra,39,M,Medellín,2,11,2025-09-09,Hipermercado
+778,Marcela Martínez,76,M,Cali,3,12,2024-11-20,Supermercado
+779,Johana Sanabria Fonseca,79,M,Barranquilla,4,16,2024-11-26,E-commerce
+780,Armando Naranjo Zambrano,74,M,Cartagena,5,5,2025-02-20,E-commerce
+781,Javier Ríos,76,M,Cartagena,5,9,2025-07-21,Supermercado
+782,Rosa Rosa Torres,42,M,Bogotá,1,10,2024-12-23,Supermercado
+783,Isaac Castañeda Díaz,19,F,Cartagena,5,9,2025-07-25,Hipermercado
+784,Elena Pérez,40,F,Medellín,2,13,2024-11-14,Farmacia
+785,Delia Carmen Quintero,51,M,Barranquilla,4,13,2025-04-25,Hipermercado
+786,Magaly Medina Rivas,23,F,Bogotá,1,15,2024-11-17,Hipermercado
+787,Harold Romero,66,F,Bogotá,1,8,2025-02-07,E-commerce
+788,Viviana Mercado Duque,43,M,Cali,3,12,2024-11-21,Hipermercado
+789,Wilmar Ever Valencia,35,M,Barranquilla,4,9,2025-07-29,Supermercado
+790,Andrea Cortés,31,F,Barranquilla,4,8,2025-07-25,E-commerce
+791,Betty Martínez Roa,21,F,Cartagena,5,5,2025-06-05,Hipermercado
+792,Julio Felipe Giraldo,57,M,Barranquilla,4,7,2025-08-28,Supermercado
+793,Amparo Erika Márquez,23,F,Medellín,2,11,2025-08-06,Supermercado
+794,Matilde Rocío Ardila Mosquera,60,F,Cartagena,5,8,2025-09-19,Hipermercado
+795,María Gutiérrez,40,F,Bogotá,1,14,2025-02-24,Hipermercado
+796,Ricardo César Sierra Suárez,25,M,Barranquilla,4,13,2025-06-28,Supermercado
+797,Nidia Álvarez,72,M,Cartagena,5,14,2025-03-21,Tienda de Conveniencia
+798,Fabiola Cifuentes,77,M,Bogotá,1,8,2025-08-12,Supermercado
+799,Yurani Sandra Monsalve,22,M,Bogotá,1,5,2025-06-25,Hipermercado
+800,Jairo Óscar Parada Arroyo,45,F,Cartagena,5,6,2025-08-01,Hipermercado
+801,Leonardo García Salgado,79,F,Bogotá,1,11,2025-04-02,Tienda de Conveniencia
+802,Susana Blanco,19,F,Cali,3,15,2025-01-26,Hipermercado
+803,Reinaldo César Ordóñez Ramírez,71,M,Cartagena,5,12,2024-10-11,Supermercado
+804,Elisa Elsa López Arias,71,M,Bogotá,1,13,2025-03-24,Hipermercado
+805,María Helena Hernández Rodríguez,27,M,Cartagena,5,13,2025-05-26,Hipermercado
+806,Constanza Betancur Gutiérrez,27,M,Bogotá,1,15,2025-05-21,Hipermercado
+807,María Mena Acevedo,79,M,Cartagena,5,6,2025-09-26,E-commerce
+808,Elisa Rodríguez Hoyos,66,M,Bogotá,1,10,2024-10-15,Supermercado
+809,David Dario Estrada Rivera,27,F,Medellín,2,6,2025-05-25,Hipermercado
+810,Arturo Jaramillo,41,F,Barranquilla,4,16,2025-05-30,Supermercado
+811,Fabián Andrés Montoya,56,M,Cartagena,5,11,2024-12-07,Supermercado
+812,María Claudia García,37,F,Bogotá,1,11,2025-01-02,Hipermercado
+813,Gallego Kevin Gaviria Díaz,47,M,Cali,3,8,2025-02-10,Supermercado
+814,Eliana Peña Hernández,44,F,Cali,3,7,2025-01-26,Hipermercado
+815,Edison Jorge Álvarez,58,M,Barranquilla,4,15,2024-11-25,Supermercado
+816,Álvaro Romero Ramírez,21,M,Medellín,2,9,2025-07-27,E-commerce
+817,Paula Stella Cabrera Castro,32,M,Bogotá,1,8,2025-01-19,E-commerce
+818,Ernesto Molina Barreto,73,F,Cartagena,5,11,2025-01-12,E-commerce
+819,Sandra Sarmiento,45,M,Cali,3,9,2025-08-11,Supermercado
+820,Lucy Mejía,26,F,Medellín,2,5,2025-04-23,Farmacia
+821,Olga Wendy Arrieta Martínez,62,F,Cartagena,5,8,2025-05-21,Hipermercado
+822,Aurora Lina Londoño Prieto,55,M,Barranquilla,4,16,2025-06-08,Hipermercado
+823,María Orozco Hernández,52,F,Bogotá,1,17,2024-12-03,Hipermercado
+824,Fernanda Ximena Henao,32,F,Cartagena,5,10,2025-03-15,Hipermercado
+825,Ximena Claudia Suárez Orozco,45,M,Medellín,2,14,2025-07-04,Farmacia
+826,Johan Rangel Guzmán,62,F,Cali,3,15,2024-12-05,Supermercado
+827,Ariel Torres Zambrano,49,F,Bogotá,1,13,2024-12-01,Tienda de Conveniencia
+828,Alberto Cardona Valencia,65,F,Bogotá,1,5,2025-03-30,Hipermercado
+829,Yesid Manuel Pineda Rosero,79,F,Medellín,2,13,2025-06-09,Hipermercado
+830,Silvia Eva Agudelo,65,M,Cali,3,5,2024-11-20,E-commerce
+831,Andrés Carlos Jiménez,53,M,Cartagena,5,15,2025-09-03,Hipermercado
+832,Ángela Gabriela García Camargo,18,M,Bogotá,1,14,2025-02-21,Supermercado
+833,Nancy Andrea Lozano Ocampo,63,F,Cartagena,5,14,2025-03-31,Hipermercado
+834,Johana Prieto,42,M,Cartagena,5,5,2025-07-20,Supermercado
+835,Elena Liseth Sánchez,54,M,Barranquilla,4,5,2024-10-28,Farmacia
+836,Jazmín Alicia Muñoz,78,F,Barranquilla,4,6,2025-08-11,Hipermercado
+837,Gilberto Pinto,77,M,Medellín,2,11,2025-07-27,Hipermercado
+838,Fernando Obando Monsalve,39,F,Barranquilla,4,10,2025-07-16,Hipermercado
+839,Daniel Rubén Flórez Cruz,24,M,Bogotá,1,15,2024-12-06,Hipermercado
+840,Jaime Ángel Soto,18,M,Bogotá,1,12,2025-06-13,Hipermercado
+841,Julio Ferney Vásquez Castaño,18,F,Medellín,2,7,2025-01-31,Supermercado
+842,Santiago Jhonatan Parra,66,F,Bogotá,1,12,2025-05-22,Supermercado
+843,Julio Vásquez,64,F,Barranquilla,4,10,2024-10-07,Supermercado
+844,Sebastián Acosta Pérez,21,F,Bogotá,1,8,2025-02-07,Hipermercado
+845,Manuel Óscar Romero Aguirre,78,M,Cali,3,13,2025-01-04,Hipermercado
+846,Juan Bohórquez Rodríguez,72,F,Barranquilla,4,16,2025-09-07,Tienda de Conveniencia
+847,Cristina Cardona,59,M,Cartagena,5,13,2025-08-07,Hipermercado
+848,Cristian Sánchez,66,M,Medellín,2,17,2025-04-13,Hipermercado
+849,José Alfonso,56,F,Bogotá,1,15,2025-07-21,Tienda de Conveniencia
+850,Alberto Antonio Jaramillo,34,F,Barranquilla,4,14,2025-05-08,Supermercado
+851,César Gilberto Villamil,39,M,Medellín,2,12,2025-03-16,Hipermercado
+852,Sandra Gloria Cárdenas Rincón,69,M,Medellín,2,10,2025-09-18,Supermercado
+853,María Liliana Guerrero,38,F,Medellín,2,13,2025-01-30,Supermercado
+854,David Enrique Escobar Jiménez,39,F,Barranquilla,4,11,2025-02-27,Supermercado
+855,Duván Daniel Cardozo,49,F,Medellín,2,5,2024-12-02,Hipermercado
+856,Elsy Bautista Velásquez,77,M,Medellín,2,8,2025-01-12,Hipermercado
+857,Teresa López Ramírez,28,F,Bogotá,1,9,2024-11-15,Hipermercado
+858,Johan Jorge Martínez Muñoz,36,F,Bogotá,1,13,2025-03-22,Hipermercado
+859,Milton Patiño Cortés,64,M,Cali,3,13,2025-01-28,Supermercado
+860,Ángel Hernando López,64,F,Cali,3,5,2024-10-02,Supermercado
+861,Vanessa Ana Reyes,30,F,Bogotá,1,5,2024-10-30,Hipermercado
+862,Dora Laura Suárez Flórez,30,F,Cali,3,5,2025-09-18,Supermercado
+863,María Nelly Contreras,56,F,Medellín,2,6,2025-04-15,Farmacia
+864,José Rafael Gamboa,22,F,Cali,3,13,2025-03-26,Hipermercado
+865,José Efrén Pulido Mora,56,M,Cali,3,5,2025-08-27,Tienda de Conveniencia
+866,Sneider Nelson Barrera Ramírez,42,M,Bogotá,1,5,2025-03-22,Tienda de Conveniencia
+867,Stella Villamizar,49,F,Cali,3,8,2025-08-09,Supermercado
+868,Hugo Enrique Suárez,73,M,Barranquilla,4,15,2025-03-28,Supermercado
+869,Jorge Molina,61,M,Barranquilla,4,15,2025-08-19,Hipermercado
+870,Jhon Francisco Agudelo,36,M,Barranquilla,4,11,2025-03-30,Hipermercado
+871,Carlos Sánchez Sánchez,28,M,Medellín,2,6,2025-01-14,Hipermercado
+872,Carolina Navarro Sánchez,65,F,Barranquilla,4,15,2024-12-21,Farmacia
+873,Sergio Jhoan Álvarez Palacio,74,F,Barranquilla,4,14,2025-01-01,Hipermercado
+874,Luis Edilberto Suárez,66,M,Barranquilla,4,9,2025-06-10,Supermercado
+875,Héctor Hernando Salgado,32,F,Medellín,2,6,2025-01-28,Tienda de Conveniencia
+876,Mauricio Cruz Montes,71,F,Medellín,2,15,2025-06-14,Hipermercado
+877,Leonor Delgado Calderón,76,F,Bogotá,1,14,2025-01-08,Hipermercado
+878,Daniela Díaz,49,M,Bogotá,1,9,2025-05-18,Hipermercado
+879,Alberto Ibarra,45,M,Cali,3,7,2025-08-03,Hipermercado
+880,Ángela Córdoba Díaz,42,F,Barranquilla,4,7,2025-04-21,Supermercado
+881,Víctor Alexander Vásquez,65,M,Medellín,2,13,2024-12-13,Supermercado
+882,Eliecer Yeison Díaz,52,M,Cali,3,12,2024-12-30,Tienda de Conveniencia
+883,Carolina Herrera Caicedo,24,F,Cali,3,8,2024-12-12,Supermercado
+884,Rosalba Cortés,75,M,Medellín,2,15,2025-04-24,Hipermercado
+885,Edgar Jiménez,43,F,Cali,3,12,2025-01-21,Hipermercado
+886,María María Herrera Maldonado,59,F,Cali,3,16,2025-08-26,Supermercado
+887,César Rodríguez Puentes,33,F,Medellín,2,17,2025-09-19,Supermercado
+888,Rosa Patricia Suárez García,76,F,Medellín,2,13,2024-11-19,Hipermercado
+889,Silvia Duque Mosquera,34,F,Medellín,2,16,2025-06-25,E-commerce
+890,Eduardo Arenas,40,F,Bogotá,1,6,2024-10-06,Hipermercado
+891,Arturo Flórez,64,M,Medellín,2,5,2025-04-24,Supermercado
+892,Alicia Paola Ariza,47,M,Barranquilla,4,11,2025-09-20,Hipermercado
+893,María Xiomara Montoya,53,M,Cali,3,10,2025-04-25,Hipermercado
+894,Yesenia Aguirre,32,F,Bogotá,1,11,2025-08-20,Tienda de Conveniencia
+895,Patricia Francia Rentería Ramos,75,M,Cartagena,5,13,2025-03-23,Tienda de Conveniencia
+896,José Alberto Martínez Cerón,18,M,Medellín,2,8,2025-03-18,Hipermercado
+897,César Rivera Giraldo,52,M,Bogotá,1,10,2025-04-23,Tienda de Conveniencia
+898,Yeison Espitia Hernández,65,F,Cali,3,11,2025-09-14,Tienda de Conveniencia
+899,José David Díaz,57,M,Cartagena,5,15,2025-03-13,Tienda de Conveniencia
+900,Pablo Moreno,19,F,Cartagena,5,12,2025-03-14,Tienda de Conveniencia
+901,María Martínez,65,M,Cali,3,6,2025-04-09,E-commerce
+902,Isaac Luis Solano Trujillo,44,F,Cartagena,5,8,2024-12-12,Farmacia
+903,Marisol Janeth Rueda Muñoz,48,M,Bogotá,1,16,2025-08-31,Hipermercado
+904,Nubia Sánchez Córdoba,38,M,Cartagena,5,5,2024-12-28,Tienda de Conveniencia
+905,Carolina María Acosta,65,M,Cali,3,11,2025-08-24,Hipermercado
+906,Fernando Navarro,41,F,Bogotá,1,7,2025-08-15,E-commerce
+907,Valentina Flórez,32,F,Barranquilla,4,6,2025-02-16,E-commerce
+908,Carmen María Acosta Correa,38,M,Cali,3,17,2025-05-24,Supermercado
+909,Miguel Vargas,46,M,Medellín,2,16,2025-08-28,E-commerce
+910,Natalia Vásquez Arango,60,M,Medellín,2,7,2025-07-16,Supermercado
+911,Jairo Sandoval Figueroa,28,F,Cali,3,9,2024-12-20,Tienda de Conveniencia
+912,Sandra María Vargas,76,M,Medellín,2,6,2025-04-25,Supermercado
+913,Claudia Dayana Hernández Díaz,71,M,Medellín,2,8,2025-07-21,Hipermercado
+914,Francy Camila Romero,28,F,Barranquilla,4,16,2024-12-18,Supermercado
+915,Dairo Dario Gómez Jiménez,73,M,Medellín,2,6,2025-09-22,Tienda de Conveniencia
+916,Andrés Serrano,76,M,Cali,3,10,2025-02-26,E-commerce
+917,Víctor Martínez Molina,36,M,Cali,3,15,2025-08-20,Hipermercado
+918,Ruth Loaiza,29,F,Cali,3,12,2025-04-18,E-commerce
+919,Leonardo Antonio Moreno Rodríguez,63,F,Cali,3,11,2024-10-15,Hipermercado
+920,Andrea Elena Maldonado,72,M,Bogotá,1,6,2024-12-11,Tienda de Conveniencia
+921,John Bedoya Gallego,20,F,Barranquilla,4,13,2025-04-28,Farmacia
+922,David Carrillo Álvarez,19,M,Cartagena,5,14,2025-02-17,Tienda de Conveniencia
+923,Francisco Muñoz Pérez,43,M,Medellín,2,5,2025-05-06,Farmacia
+924,Yesid Perdomo,37,F,Bogotá,1,14,2025-04-28,Supermercado
+925,Erika Acosta Portilla,37,F,Bogotá,1,13,2025-03-04,Farmacia
+926,Gallego Rodríguez Parada,24,F,Cartagena,5,13,2024-12-20,Supermercado
+927,Alonso Víctor Pedraza Agudelo,41,F,Bogotá,1,14,2025-06-21,Supermercado
+928,Ángela Rita Vargas Rivera,59,M,Cartagena,5,14,2024-11-11,E-commerce
+929,Gabriel Rincón,70,F,Cali,3,12,2025-08-06,Farmacia
+930,María Graciela Rivera Ceballos,29,M,Medellín,2,9,2025-04-18,Hipermercado
+931,Harold Toro Mesa,36,F,Barranquilla,4,6,2025-02-06,Farmacia
+932,Carlos Osorio,51,M,Bogotá,1,6,2024-12-23,Hipermercado
+933,Fabio Antonio Ospina Pineda,49,F,Bogotá,1,9,2025-06-10,Farmacia
+934,Néstor Joaquín Pérez Murcia,74,F,Cali,3,10,2025-07-21,Farmacia
+935,Patricia Orozco,57,M,Medellín,2,14,2024-11-10,Hipermercado
+936,Daniel Javier Martínez,27,M,Bogotá,1,13,2024-12-29,E-commerce
+937,Martín Camilo Chaparro Carvajal,53,M,Medellín,2,6,2025-02-15,Hipermercado
+938,Ingrid Díaz Perdomo,55,M,Barranquilla,4,16,2025-02-02,E-commerce
+939,Fernanda Villamil,19,M,Bogotá,1,13,2025-01-05,E-commerce
+940,Antonio José Rivas Vélez,79,M,Barranquilla,4,13,2025-09-24,Supermercado
+941,Jesús Ortega Amaya,41,M,Barranquilla,4,11,2025-07-02,Hipermercado
+942,Alirio David Ojeda,48,F,Bogotá,1,13,2024-11-15,Hipermercado
+943,Flor Carvajal Castillo,51,M,Barranquilla,4,15,2025-04-13,Hipermercado
+944,Alexander Manuel Herrera Ospina,68,F,Barranquilla,4,11,2025-04-30,Supermercado
+945,Alejandro Francisco Romero,32,M,Cali,3,14,2025-01-03,E-commerce
+946,Diego Dario Rojas,26,F,Barranquilla,4,13,2025-01-20,Farmacia
+947,Humberto José Pinzón Zambrano,30,F,Bogotá,1,9,2025-02-03,Supermercado
+948,Álvaro José Castro,36,F,Medellín,2,15,2025-01-12,Hipermercado
+949,Eduardo Antonio León,33,M,Bogotá,1,12,2024-12-15,Tienda de Conveniencia
+950,Jairo Antonio Muñoz Cárdenas,79,F,Medellín,2,12,2025-08-01,Tienda de Conveniencia
+951,Fernando José Flórez,30,M,Barranquilla,4,5,2025-05-30,Supermercado
+952,Cecilia Rodríguez,77,M,Barranquilla,4,16,2025-04-09,Hipermercado
+953,Luis José Herrera Ayala,55,M,Medellín,2,13,2025-08-13,Supermercado
+954,Nayibe Medina,20,F,Barranquilla,4,11,2024-11-26,E-commerce
+955,Virginia Amanda Molina Arroyo,39,F,Bogotá,1,8,2025-08-20,Tienda de Conveniencia
+956,Luis Castro Rodríguez,74,F,Cartagena,5,11,2024-10-25,Supermercado
+957,Steven Óscar Zapata,29,M,Cartagena,5,7,2024-10-18,Tienda de Conveniencia
+958,Sebastián César Cruz Vanegas,58,M,Bogotá,1,10,2025-05-05,Supermercado
+959,José Ramos,39,F,Barranquilla,4,11,2025-05-29,Hipermercado
+960,Reinaldo Esteban Ortiz Medina,30,M,Barranquilla,4,16,2025-09-02,Supermercado
+961,Luz Elizabeth Duarte Quintero,30,M,Medellín,2,12,2025-01-02,Supermercado
+962,Martha Mary Ramírez Chacón,62,M,Medellín,2,14,2025-05-18,Farmacia
+963,Fernando Manuel Núñez Vélez,76,M,Bogotá,1,13,2024-12-29,Hipermercado
+964,Laura Laura Correa Rivera,78,F,Bogotá,1,13,2025-08-18,Tienda de Conveniencia
+965,Juan Pérez González,34,F,Medellín,2,12,2024-10-03,Hipermercado
+966,José Rodríguez,63,F,Cartagena,5,13,2024-11-09,Hipermercado
+967,María Castro,38,F,Bogotá,1,7,2024-10-19,E-commerce
+968,Duván Fuentes,32,M,Cali,3,12,2025-02-16,Hipermercado
+969,Adriana Suárez Jaimes,40,F,Medellín,2,8,2024-11-25,Supermercado
+970,Leidy Caicedo García,26,F,Medellín,2,9,2025-06-16,Tienda de Conveniencia
+971,Patricia Estefanía Guerra Ruiz,33,M,Barranquilla,4,5,2025-08-08,Tienda de Conveniencia
+972,Yaneth Díaz Chaparro,25,F,Barranquilla,4,6,2024-12-08,Farmacia
+973,Jonathan Gómez Pérez,68,M,Cali,3,6,2025-04-06,E-commerce
+974,Lucía Cárdenas Vásquez,49,F,Bogotá,1,13,2025-03-14,Tienda de Conveniencia
+975,Carmen Daniela Acosta,23,F,Cali,3,11,2025-05-15,Farmacia
+976,Valentina Cano,68,F,Medellín,2,7,2024-10-28,Supermercado
+977,Aurora Angulo,28,F,Barranquilla,4,14,2024-12-07,Hipermercado
+978,María Molano Rivera,57,M,Medellín,2,5,2025-06-09,Hipermercado
+979,Leticia Angie López Arroyo,36,F,Medellín,2,13,2025-03-02,Supermercado
+980,Patricia García,54,M,Medellín,2,10,2025-09-21,Supermercado
+981,Diana Margoth Jiménez,60,F,Barranquilla,4,9,2024-12-02,Hipermercado
+982,Karina Castaño,34,M,Medellín,2,16,2025-08-14,Supermercado
+983,Esther Marcela Ortiz Navarro,75,F,Cali,3,9,2025-06-22,Farmacia
+984,Luz Chaparro,45,M,Bogotá,1,8,2025-08-21,Hipermercado
+985,Gustavo Nicolás Orozco Montoya,29,F,Medellín,2,16,2025-06-05,Tienda de Conveniencia
+986,Ligia Suárez,61,M,Medellín,2,14,2024-11-09,Farmacia
+987,Pedro Adolfo Daza,48,F,Medellín,2,16,2024-11-29,Supermercado
+988,Isaac Romero,51,M,Cartagena,5,12,2025-05-15,Hipermercado
+989,Jorge Garcés,26,F,Bogotá,1,15,2025-01-26,E-commerce
+990,Luis Torres Gutiérrez,20,F,Barranquilla,4,8,2025-04-22,Supermercado
+991,Hugo Gustavo Barrera Meza,66,M,Bogotá,1,11,2025-06-25,Farmacia
+992,Gabriel Anaya Peña,43,M,Bogotá,1,8,2025-08-24,Supermercado
+993,Helena Sonia Bedoya García,29,M,Barranquilla,4,7,2024-11-03,Hipermercado
+994,Gloria Murcia Suárez,18,F,Medellín,2,8,2025-07-13,Supermercado
+995,Óscar Ávila Galvis,38,M,Barranquilla,4,14,2025-02-18,Farmacia
+996,Eduardo Cardona Mosquera,79,M,Barranquilla,4,9,2025-06-21,E-commerce
+997,David Esteban Caicedo Restrepo,75,F,Bogotá,1,6,2025-05-30,Supermercado
+998,Orlando Jeison Agudelo Rodríguez,41,M,Barranquilla,4,9,2025-04-12,Supermercado
+999,Luz Gómez,65,F,Cali,3,16,2024-11-28,Farmacia
+1000,William Gutiérrez,45,M,Cali,3,12,2024-11-17,Farmacia
+1001,Nora Murcia Guevara,57,F,Medellín,2,12,2025-01-10,Supermercado
+1002,Dario Páez,72,M,Medellín,2,15,2025-06-21,E-commerce
+1003,Edison Juan Martínez Jaramillo,54,F,Bogotá,1,10,2025-09-16,E-commerce
+1004,Rafael Rodolfo Martínez Cardona,65,F,Bogotá,1,10,2025-09-24,E-commerce
+1005,Shirley Becerra,28,F,Cali,3,6,2025-01-06,Supermercado
+1006,Cecilia Ríos,78,M,Bogotá,1,12,2025-07-23,Supermercado
+1007,Brayan Salazar,56,M,Medellín,2,11,2025-08-12,Tienda de Conveniencia
+1008,Hermes Pardo,72,M,Medellín,2,16,2025-03-29,Hipermercado
+1009,Paola García,39,F,Bogotá,1,9,2024-11-24,Supermercado
+1010,Andrea María León,59,F,Cali,3,11,2025-06-23,Hipermercado
+1011,Hernando Iván López,55,M,Barranquilla,4,16,2025-01-10,Tienda de Conveniencia
+1012,Alfredo Juan Serna,71,F,Bogotá,1,14,2024-11-05,E-commerce
+1013,Margarita María Torres,62,F,Barranquilla,4,5,2025-03-20,Hipermercado
+1014,Cristina Gloria Londoño,78,M,Bogotá,1,8,2025-08-01,Hipermercado
+1015,William Martínez Forero,48,M,Barranquilla,4,10,2024-10-11,Tienda de Conveniencia
+1016,Elizabeth Gómez Vargas,39,F,Cartagena,5,13,2025-02-10,E-commerce
+1017,Ángel Padilla,64,M,Medellín,2,5,2024-12-22,Supermercado
+1018,María Gloria Quiroz Granados,67,F,Medellín,2,17,2024-10-19,E-commerce
+1019,Marlene Eugenia Cruz Rojas,30,M,Cali,3,8,2025-07-22,Supermercado
+1020,Elena Álvarez Ortega,64,F,Medellín,2,12,2025-04-08,Tienda de Conveniencia
+1021,José Cristian Flórez,53,M,Bogotá,1,8,2025-04-08,Hipermercado
+1022,Susana García Guerrero,78,M,Barranquilla,4,17,2025-05-04,Tienda de Conveniencia
+1023,María Gómez Cano,52,F,Cartagena,5,6,2025-03-05,Farmacia
+1024,Luis Ordóñez,31,M,Medellín,2,8,2025-01-02,Supermercado
+1025,Diana Yolanda Suárez Ojeda,33,F,Cali,3,9,2024-11-18,E-commerce
+1026,Camilo Jesús Montes,62,F,Medellín,2,9,2025-04-21,E-commerce
+1027,Gustavo Jairo García Medina,60,M,Bogotá,1,8,2024-11-15,Supermercado
+1028,Isabel Claudia Beltrán Sandoval,24,F,Medellín,2,14,2025-08-05,Tienda de Conveniencia
+1029,Martha Cano Silva,33,M,Medellín,2,8,2025-02-20,Hipermercado
+1030,Andrés Lozano Díaz,70,M,Medellín,2,15,2025-01-30,E-commerce
+1031,Elizabeth Carolina Pérez González,62,M,Barranquilla,4,12,2025-06-23,Tienda de Conveniencia
+1032,Andrea Juliana Caro Moreno,78,F,Bogotá,1,10,2025-08-02,Farmacia
+1033,Jaime Mantilla Rosero,59,F,Barranquilla,4,9,2025-09-01,Supermercado
+1034,Gloria Nelly Rueda Mercado,27,F,Cali,3,14,2025-01-06,Hipermercado
+1035,Milena Karen Silva,20,F,Medellín,2,11,2025-08-12,E-commerce
+1036,Diana Palacio Pérez,34,M,Cali,3,5,2025-03-26,Hipermercado
+1037,Hernán Carlos Ríos,23,M,Medellín,2,7,2024-10-13,Supermercado
+1038,Jorge Sarmiento Mosquera,72,M,Bogotá,1,12,2025-06-03,Hipermercado
+1039,Felipe Ruiz,40,F,Bogotá,1,15,2025-03-06,Supermercado
+1040,Julieth Xiomara Martínez Pardo,26,M,Medellín,2,5,2025-01-12,Hipermercado
+1041,Yeison Pérez,64,F,Cali,3,16,2024-10-31,Hipermercado
+1042,Hugo Molina,62,F,Medellín,2,12,2024-12-04,E-commerce
+1043,Fernando Gustavo Rueda Palacios,63,F,Barranquilla,4,15,2025-02-19,Supermercado
+1044,Edith Yulieth Carmona,52,F,Barranquilla,4,12,2024-10-21,E-commerce
+1045,Ricardo Sánchez Herrera,38,M,Bogotá,1,6,2024-12-06,Hipermercado
+1046,Dario Carlos Sandoval,79,F,Cartagena,5,12,2025-09-27,E-commerce
+1047,Mery Hernández,71,M,Cartagena,5,6,2025-05-28,Hipermercado
+1048,Jessica Flórez,76,F,Bogotá,1,5,2024-11-04,Tienda de Conveniencia
+1049,Nelcy Palacio Mejía,64,F,Barranquilla,4,12,2024-09-30,Hipermercado
+1050,Blanca Ramírez Martínez,56,F,Cali,3,15,2025-08-28,Hipermercado
+1051,Jesús Triana,32,M,Bogotá,1,7,2025-01-22,Supermercado
+1052,Orlando Antonio Velásquez,63,M,Cartagena,5,13,2024-10-09,Hipermercado
+1053,Nidia Lilia Parra,60,M,Bogotá,1,13,2025-08-13,Hipermercado
+1054,Germán Valencia,22,F,Bogotá,1,5,2024-11-01,Tienda de Conveniencia
+1055,Edgar Puentes Álvarez,29,M,Medellín,2,8,2024-12-02,Hipermercado
+1056,Luz Olga Velasco Galvis,62,F,Bogotá,1,13,2025-09-13,Tienda de Conveniencia
+1057,César Betancur López,64,F,Barranquilla,4,9,2025-08-07,Hipermercado
+1058,Julieth Juliana García Mora,54,M,Bogotá,1,8,2025-04-18,Supermercado
+1059,Eduardo Raúl Torres,23,M,Bogotá,1,13,2024-10-15,E-commerce
+1060,Jhon Juan Torres González,35,M,Medellín,2,8,2025-03-13,E-commerce
+1061,Omar Vargas Calderón,40,F,Bogotá,1,11,2025-06-27,Hipermercado
+1062,Eduardo Pardo,69,M,Medellín,2,11,2025-09-12,Tienda de Conveniencia
+1063,Dario Luis Loaiza López,55,F,Bogotá,1,8,2025-01-10,E-commerce
+1064,Rocío Rojas Ramírez,26,F,Cali,3,9,2025-08-08,Tienda de Conveniencia
+1065,Ángel Prada Rincón,40,F,Bogotá,1,9,2025-04-25,E-commerce
+1066,Anyi Dora Álvarez Rodríguez,61,F,Bogotá,1,10,2025-06-19,E-commerce
+1067,Carmen Luz Salamanca Oviedo,21,M,Medellín,2,16,2024-12-08,Supermercado
+1068,Carolina Luna López,74,M,Barranquilla,4,16,2025-01-18,Supermercado
+1069,Julio Andrés Beltrán Bermúdez,76,F,Cartagena,5,8,2024-10-13,Tienda de Conveniencia
+1070,Mario Martínez,34,F,Medellín,2,15,2024-10-07,Hipermercado
+1071,Leonor Adriana Gómez,18,M,Cartagena,5,12,2024-10-08,Supermercado
+1072,Lorena Nelly Contreras,64,F,Bogotá,1,13,2024-10-09,Supermercado
+1073,Víctor César Orozco,18,M,Cartagena,5,5,2025-05-06,Farmacia
+1074,Juan Francisco Cárdenas Beltrán,41,F,Barranquilla,4,10,2025-01-25,Hipermercado
+1075,Liliana Elvia Martínez,60,M,Bogotá,1,8,2025-04-24,Farmacia
+1076,Constanza Cindy Romero Arias,66,F,Medellín,2,8,2025-07-27,Supermercado
+1077,Jhoana Yolanda Álvarez Sánchez,71,F,Barranquilla,4,6,2025-02-11,E-commerce
+1078,Edwin Córdoba,78,F,Medellín,2,9,2025-03-31,Tienda de Conveniencia
+1079,Eduardo Flórez Hernández,58,F,Bogotá,1,15,2025-05-26,Supermercado
+1080,Miguel Molina Pinto,62,F,Medellín,2,16,2025-03-09,Supermercado
+1081,Gloria Pérez Bonilla,58,F,Barranquilla,4,14,2025-03-07,E-commerce
+1082,Alberto Ojeda,29,F,Bogotá,1,7,2025-01-18,Supermercado
+1083,Segundo César Suárez,49,M,Medellín,2,15,2025-05-10,E-commerce
+1084,Santiago López Montoya,19,M,Barranquilla,4,7,2025-04-12,Hipermercado
+1085,Marina Gladys Gaviria Calderón,44,F,Cali,3,7,2025-01-28,E-commerce
+1086,Simón Armando Hurtado,29,M,Cartagena,5,14,2025-07-09,E-commerce
+1087,Martha Polo,27,F,Cali,3,9,2025-03-07,Supermercado
+1088,Angie Parra,75,F,Cali,3,9,2025-08-12,Hipermercado
+1089,Alirio Rodríguez,53,F,Bogotá,1,11,2025-07-27,Supermercado
+1090,Luis Jaramillo,62,F,Cali,3,9,2025-09-08,Hipermercado
+1091,Carolina Niño,49,M,Cartagena,5,9,2024-10-24,Hipermercado
+1092,Margarita Carmen Molina,31,M,Cali,3,10,2025-02-27,Supermercado
+1093,Carlos Diego Cárdenas,40,F,Cali,3,12,2025-02-13,Farmacia
+1094,Jesús Bastidas Ochoa,34,M,Bogotá,1,12,2024-11-09,Tienda de Conveniencia
+1095,Juan Muñoz,62,M,Cartagena,5,11,2025-05-01,Supermercado
+1096,Juan Pinzón Villegas,31,M,Cali,3,9,2025-05-02,Hipermercado
+1097,Edgar Rodríguez,45,M,Bogotá,1,5,2024-11-09,Hipermercado
+1098,Daniela Sandra González,30,M,Bogotá,1,11,2025-04-16,Tienda de Conveniencia
+1099,José Suárez Ayala,23,M,Cali,3,9,2025-08-01,Supermercado
+1100,María Jiménez López,22,F,Medellín,2,15,2025-04-30,Supermercado
+1101,José Sanabria Daza,61,M,Medellín,2,15,2025-05-14,Hipermercado
+1102,César Castaño,46,F,Cartagena,5,13,2024-11-03,Hipermercado
+1103,Lorena Prada,20,M,Bogotá,1,15,2025-08-24,Tienda de Conveniencia
+1104,Orlando Mosquera Valencia,19,M,Medellín,2,16,2025-01-18,Hipermercado
+1105,Iván Fabián Pérez Torres,68,M,Cali,3,8,2025-07-10,Hipermercado
+1106,Juan Eduardo Medina,61,F,Barranquilla,4,7,2025-06-28,Supermercado
+1107,María López,21,M,Cali,3,9,2024-11-19,Tienda de Conveniencia
+1108,José Jiménez Hoyos,60,M,Cartagena,5,11,2025-02-05,E-commerce
+1109,Santiago Bolívar,70,M,Medellín,2,14,2024-10-02,Hipermercado
+1110,Luis Méndez,25,F,Bogotá,1,11,2024-10-03,Hipermercado
+1111,Kevin Orjuela,60,M,Bogotá,1,16,2025-05-12,Hipermercado
+1112,María Marcela Bedoya Bedoya,56,M,Bogotá,1,14,2025-07-10,E-commerce
+1113,Iván Perdomo,44,M,Bogotá,1,12,2024-11-15,Supermercado
+1114,Lorena Milena Murillo Arenas,23,F,Medellín,2,12,2025-07-07,Hipermercado
+1115,Iván García Pulido,18,M,Medellín,2,8,2025-07-11,Supermercado
+1116,Beatriz Cecilia Muñoz Villamil,64,F,Cali,3,14,2025-04-17,E-commerce
+1117,Jazmín Rodríguez Pérez,42,F,Cali,3,12,2025-04-08,Hipermercado
+1118,Socorro Ríos Suárez,68,M,Barranquilla,4,15,2025-09-14,Hipermercado
+1119,Luis Arenas Ortiz,74,M,Bogotá,1,10,2025-02-12,Hipermercado
+1120,Patricia Mónica Herrera López,69,F,Barranquilla,4,15,2025-06-01,Hipermercado
+1121,Manuel Arévalo Morales,63,F,Medellín,2,9,2025-06-08,Tienda de Conveniencia
+1122,Astrid Hurtado Becerra,67,F,Cali,3,11,2025-02-14,Tienda de Conveniencia
+1123,John Enrique García García,36,M,Medellín,2,15,2025-05-24,E-commerce
+1124,Adela Bolaños Castro,45,M,Bogotá,1,9,2025-05-17,E-commerce
+1125,Rubén Espinosa Rodríguez,46,M,Medellín,2,7,2025-09-14,Hipermercado
+1126,Amanda Pérez Montoya,76,M,Cartagena,5,13,2024-12-04,E-commerce
+1127,María Ríos,55,F,Medellín,2,10,2025-02-28,Supermercado
+1128,Efrain José Sanabria Cruz,34,F,Medellín,2,13,2025-04-07,Supermercado
+1129,Diana Galvis Montoya,24,F,Bogotá,1,6,2025-01-01,Hipermercado
+1130,Mery Zapata,18,F,Medellín,2,7,2025-03-06,Hipermercado
+1131,Ana Jiménez,21,M,Cali,3,11,2025-09-21,E-commerce
+1132,Cecilia Elvira Pacheco,47,F,Bogotá,1,11,2025-02-26,Supermercado
+1133,Jean Sarmiento,41,M,Bogotá,1,14,2025-04-07,E-commerce
+1134,Alberto Ardila Osorio,44,F,Cali,3,9,2024-11-29,E-commerce
+1135,Jenny Hernández Palacios,33,M,Medellín,2,14,2025-07-13,Hipermercado
+1136,Nelson Hernández Martínez,63,F,Cali,3,9,2025-02-05,Supermercado
+1137,Carmen Alejandra Ávila Roa,39,M,Medellín,2,12,2024-11-19,Hipermercado
+1138,Jesús Sánchez,35,F,Cali,3,6,2024-11-04,Tienda de Conveniencia
+1139,Ximena Vargas,75,F,Bogotá,1,10,2025-02-01,Supermercado
+1140,Jhon Pérez Castillo,61,F,Medellín,2,12,2024-11-18,Hipermercado
+1141,María Dayana Hernández Torres,48,F,Medellín,2,14,2024-10-26,Supermercado
+1142,Nelsy Catalina Martínez Narváez,27,M,Bogotá,1,10,2024-12-26,Tienda de Conveniencia
+1143,Patricia Ortiz Gómez,71,M,Cali,3,12,2025-03-24,Hipermercado
+1144,Diego Tulio Galvis,70,M,Bogotá,1,13,2025-07-07,Supermercado
+1145,Laura García,71,F,Cali,3,7,2024-12-17,Hipermercado
+1146,Pablo Gómez,55,M,Bogotá,1,8,2025-09-06,Hipermercado
+1147,Elmer Pineda Rico,75,M,Medellín,2,16,2025-03-04,E-commerce
+1148,Diego Bustos Méndez,51,M,Bogotá,1,9,2025-09-10,Hipermercado
+1149,Alcides José Castellanos Salazar,23,F,Cali,3,13,2025-02-06,Tienda de Conveniencia
+1150,Hernando Rojas Ortiz,76,F,Medellín,2,16,2024-10-15,E-commerce
+1151,Héctor Rincón Cortés,72,M,Cali,3,13,2024-10-02,Hipermercado
+1152,Arturo Rivera,22,M,Bogotá,1,14,2025-01-09,Tienda de Conveniencia
+1153,José Pedro Acosta,27,M,Barranquilla,4,9,2024-12-15,Supermercado
+1154,Leandro Bravo,76,M,Medellín,2,13,2025-09-23,Supermercado
+1155,Luz Gil Guerrero,32,M,Bogotá,1,7,2024-12-12,Hipermercado
+1156,Gloria Martha Rosero Delgado,46,M,Medellín,2,11,2025-03-30,Tienda de Conveniencia
+1157,Rodrigo Alberto Páez,37,M,Medellín,2,7,2025-07-26,Tienda de Conveniencia
+1158,Isabel María Sánchez,25,M,Bogotá,1,9,2024-10-11,E-commerce
+1159,Jhoana Flor Rendón,30,M,Barranquilla,4,8,2025-06-26,Supermercado
+1160,Virginia Cano Aguirre,51,M,Cartagena,5,14,2024-10-01,Tienda de Conveniencia
+1161,Diego Moreno,18,F,Cali,3,11,2024-11-19,Supermercado
+1162,Luis Medina Soto,29,M,Medellín,2,14,2025-08-30,E-commerce
+1163,Sandra Ruiz,31,M,Barranquilla,4,5,2025-09-10,Tienda de Conveniencia
+1164,Inés María Valencia Barrera,64,M,Medellín,2,9,2024-10-16,Farmacia
+1165,Elizabeth Lina González,31,F,Bogotá,1,14,2025-02-14,Hipermercado
+1166,Sandra Suárez,45,M,Cali,3,6,2025-04-07,E-commerce
+1167,Mario Chávez,57,F,Medellín,2,13,2025-03-16,Hipermercado
+1168,Alfredo Nelson Jiménez Mora,74,F,Cali,3,9,2025-07-07,E-commerce
+1169,Elvia Yadira Carrillo Espinosa,41,F,Cartagena,5,8,2025-04-03,Supermercado
+1170,Miguel Fabián Niño Martínez,42,F,Medellín,2,13,2024-10-12,Hipermercado
+1171,Maritza Quiroga Martínez,27,M,Cali,3,11,2024-11-05,Hipermercado
+1172,Carolina Ríos Gaviria,30,F,Medellín,2,6,2024-12-04,Tienda de Conveniencia
+1173,Jorge Arturo Palacios Rendón,56,M,Cali,3,14,2025-05-30,Tienda de Conveniencia
+1174,Hugo Pérez Beltrán,61,F,Barranquilla,4,15,2025-04-13,Tienda de Conveniencia
+1175,Alexandra Cárdenas,39,M,Cali,3,15,2025-07-09,Supermercado
+1176,Juan Fernando Triana,72,F,Barranquilla,4,14,2025-04-22,Hipermercado
+1177,Aldemar Misael Guerrero,78,F,Barranquilla,4,5,2025-04-21,Tienda de Conveniencia
+1178,Omar Rueda Méndez,52,F,Cartagena,5,5,2025-08-14,Tienda de Conveniencia
+1179,Claudia Castro,71,F,Medellín,2,11,2025-06-29,Supermercado
+1180,Jaime Hernando Vanegas,61,M,Medellín,2,8,2025-03-28,E-commerce
+1181,Giovanny Alexander Guzmán,38,M,Cali,3,12,2025-06-09,Hipermercado
+1182,Humberto Jesús Osorio Correa,40,M,Bogotá,1,15,2025-06-14,Hipermercado
+1183,Yenny Alarcón Mejía,35,M,Cali,3,12,2025-07-23,Farmacia
+1184,Andrés Ochoa,44,M,Cali,3,5,2024-10-20,E-commerce
+1185,Diego Páez,68,F,Bogotá,1,6,2024-11-25,Tienda de Conveniencia
+1186,John Ortiz,23,M,Barranquilla,4,13,2025-02-09,Supermercado
+1187,Andrés Juan Lozano Velásquez,38,F,Barranquilla,4,15,2024-12-22,Hipermercado
+1188,Harold Acevedo Romero,40,F,Cali,3,14,2025-07-24,Hipermercado
+1189,Marcela Córdoba,45,M,Cartagena,5,9,2025-05-21,E-commerce
+1190,Juan Danilo Zapata,23,M,Medellín,2,6,2025-04-15,E-commerce
+1191,Francia María Hernández García,28,F,Medellín,2,15,2025-06-18,E-commerce
+1192,María Nubia Carmona Morales,52,M,Cartagena,5,6,2024-12-18,E-commerce
+1193,Arturo Julio Flórez,69,M,Bogotá,1,13,2025-06-17,Supermercado
+1194,Roger Durán,53,M,Medellín,2,13,2024-10-08,Tienda de Conveniencia
+1195,Fabio López,42,F,Barranquilla,4,5,2025-06-25,Supermercado
+1196,Jhonatan Hernán Sánchez,42,F,Cali,3,6,2024-11-21,Tienda de Conveniencia
+1197,Raúl David Rojas Bautista,36,M,Cartagena,5,11,2024-11-14,Supermercado
+1198,Fernando Mosquera,35,F,Bogotá,1,6,2025-06-13,Tienda de Conveniencia
+1199,Álvaro Dubán Rojas Ramírez,75,F,Cali,3,15,2025-09-21,Supermercado
+1200,Nancy Rosa Hernández,59,F,Bogotá,1,14,2025-07-02,E-commerce
+1201,Lucía González Garzón,69,M,Bogotá,1,14,2024-12-02,Hipermercado
+1202,Clara Castaño,57,M,Cali,3,15,2025-05-18,Hipermercado
+1203,Yéssica Pineda Sánchez,32,M,Medellín,2,15,2024-10-06,Hipermercado
+1204,Camila Torres Padilla,37,M,Cartagena,5,15,2025-02-03,Hipermercado
+1205,Felipe Carlos Ortiz,21,F,Cartagena,5,7,2024-10-13,Tienda de Conveniencia
+1206,Carmen Marisol Murillo,20,F,Bogotá,1,15,2025-03-08,E-commerce
+1207,Óscar Gutiérrez Rivera,54,M,Bogotá,1,15,2025-01-28,E-commerce
+1208,Enrique Angulo Aguirre,29,M,Barranquilla,4,15,2025-08-14,Supermercado
+1209,Diana Isabel Monsalve Quintero,24,F,Cartagena,5,15,2024-11-09,E-commerce
+1210,Jessica Martha Bustos,57,F,Medellín,2,12,2025-04-23,Hipermercado
+1211,Andrés Ortiz,43,M,Bogotá,1,13,2025-03-03,Hipermercado
+1212,Manuel Andrés Bejarano,67,F,Barranquilla,4,10,2025-04-02,Supermercado
+1213,Martín Augusto Perdomo Pérez,30,F,Bogotá,1,12,2025-04-29,Supermercado
+1214,Martha Luz Daza,20,F,Cali,3,13,2025-01-13,Supermercado
+1215,Alexander Samuel Ruiz,22,M,Medellín,2,8,2025-06-04,Supermercado
+1216,Yerson Mauricio Mora,64,F,Medellín,2,11,2025-05-12,Hipermercado
+1217,Efrén Arias Guevara,61,M,Barranquilla,4,13,2025-02-17,Tienda de Conveniencia
+1218,Fernando Didier Guzmán,55,F,Barranquilla,4,7,2025-06-04,E-commerce
+1219,José Arboleda,33,M,Bogotá,1,13,2025-05-01,Tienda de Conveniencia
+1220,Camilo Dagoberto Agudelo Correa,45,F,Bogotá,1,11,2025-06-28,Hipermercado
+1221,David Sergio Contreras,62,M,Medellín,2,9,2025-08-07,Supermercado
+1222,William Jorge Quintero,42,F,Barranquilla,4,13,2025-06-30,Tienda de Conveniencia
+1223,Javier Juan Bustamante Solano,79,M,Bogotá,1,13,2024-11-19,Tienda de Conveniencia
+1224,Herney Dagoberto Páez Cárdenas,43,M,Medellín,2,13,2025-07-18,Supermercado
+1225,Yesenia Valencia,28,F,Medellín,2,7,2025-05-22,E-commerce
+1226,Guillermo Ramírez,73,M,Cartagena,5,8,2024-11-18,Hipermercado
+1227,Iván Castro García,39,M,Barranquilla,4,14,2025-01-19,Hipermercado
+1228,Martha Herrera Hernández,25,F,Bogotá,1,12,2024-10-02,Supermercado
+1229,Juan Kevin Muñoz Rivera,71,M,Medellín,2,11,2025-06-06,Tienda de Conveniencia
+1230,Camilo Barreto,33,F,Barranquilla,4,13,2025-07-10,Farmacia
+1231,Gloria Ospina,28,F,Medellín,2,12,2024-11-20,E-commerce
+1232,Verónica Rojas Ortiz,54,M,Cali,3,9,2025-04-21,Hipermercado
+1233,Laura Garzón López,49,M,Medellín,2,5,2025-06-09,Tienda de Conveniencia
+1234,Alexander Salazar Muñoz,31,M,Cartagena,5,8,2025-09-21,Hipermercado
+1235,Andrés Adalberto Aguilar Fernández,35,F,Medellín,2,5,2025-06-01,E-commerce
+1236,Tatiana Beatriz Cruz Ortiz,23,M,Cartagena,5,12,2024-12-15,E-commerce
+1237,Judith Rincón,20,F,Cali,3,6,2024-11-23,Hipermercado
+1238,Karen Gutiérrez Salazar,78,F,Bogotá,1,15,2024-11-03,Farmacia
+1239,María María Montes,79,M,Cali,3,9,2025-03-16,Farmacia
+1240,Jairo Pablo Delgado,24,M,Bogotá,1,15,2025-09-09,E-commerce
+1241,José Serna,55,F,Medellín,2,12,2025-01-03,Supermercado
+1242,Miller Chávez Castillo,54,F,Medellín,2,13,2025-06-09,Hipermercado
+1243,Libia González Daza,38,M,Cali,3,14,2025-07-18,Hipermercado
+1244,Andrés Rodríguez Tamayo,67,F,Barranquilla,4,10,2025-03-21,Tienda de Conveniencia
+1245,Héctor Santiago Garzón,72,F,Bogotá,1,6,2025-03-20,Hipermercado
+1246,Luis Juan Soto Marín,23,M,Medellín,2,9,2025-07-19,Hipermercado
+1247,José González,33,M,Barranquilla,4,12,2024-11-11,Hipermercado
+1248,Andrés Jaimes,59,M,Cali,3,15,2024-11-23,Hipermercado
+1249,Andrés Mauricio Bonilla,39,F,Bogotá,1,6,2025-01-04,Farmacia
+1250,Andrea Fonseca Hernández,63,M,Bogotá,1,7,2025-04-21,E-commerce
+1251,Yadira Esmeralda Álvarez,18,F,Barranquilla,4,7,2025-05-03,Hipermercado
+1252,César Alexis Jaramillo Vélez,60,M,Medellín,2,9,2025-03-21,Hipermercado
+1253,Álvaro Palacios López,53,F,Barranquilla,4,6,2024-10-30,E-commerce
+1254,Leonardo Quintero,67,F,Bogotá,1,11,2024-11-17,Hipermercado
+1255,Carlos Gómez,35,F,Bogotá,1,14,2025-02-02,Hipermercado
+1256,Ana Rosario Puentes Calderón,59,M,Medellín,2,5,2025-01-10,Supermercado
+1257,Jhon Giraldo Gaitán,75,F,Barranquilla,4,7,2025-09-22,E-commerce
+1258,Martín Vergara,35,F,Bogotá,1,16,2025-03-28,Tienda de Conveniencia
+1259,Esperanza Rico,18,F,Barranquilla,4,12,2025-08-15,Hipermercado
+1260,Eliecer Hernández Ortiz,38,F,Barranquilla,4,5,2024-12-22,E-commerce
+1261,Antonio Moreno,68,F,Bogotá,1,14,2025-04-03,Hipermercado
+1262,Jairo Martínez,44,F,Bogotá,1,7,2025-07-11,Farmacia
+1263,Marta Quiroga Rivera,41,F,Medellín,2,13,2024-11-17,Hipermercado
+1264,Juan Javier Gonzáles,72,F,Bogotá,1,11,2025-02-22,Supermercado
+1265,Fernanda Salcedo Ramírez,28,F,Medellín,2,8,2025-04-23,Hipermercado
+1266,Laura Arias,48,F,Medellín,2,7,2025-03-09,E-commerce
+1267,Freddy Martínez,31,M,Medellín,2,6,2025-07-24,Hipermercado
+1268,Fernando Naranjo Villa,20,F,Barranquilla,4,14,2025-06-05,Farmacia
+1269,John Stiven Ramírez,52,F,Bogotá,1,13,2025-02-22,E-commerce
+1270,Antonia Leidy Pinzón Giraldo,54,M,Barranquilla,4,5,2025-01-20,Supermercado
+1271,Angélica Moreno,33,F,Medellín,2,8,2025-08-01,Supermercado
+1272,Lina Angie Vega Rodríguez,18,F,Bogotá,1,12,2024-12-02,Supermercado
+1273,Karol Sindy Sarmiento Hernández,76,M,Medellín,2,16,2025-06-14,E-commerce
+1274,Dina González Ortiz,32,F,Bogotá,1,12,2025-09-17,Hipermercado
+1275,Antonio Benítez Rodríguez,49,M,Barranquilla,4,9,2025-02-21,Hipermercado
+1276,Laura Sandra Gutiérrez,54,F,Bogotá,1,7,2025-09-14,Hipermercado
+1277,Mary Velasco,18,F,Cali,3,12,2025-03-25,Hipermercado
+1278,Ruth Candelaria Giraldo Beltrán,23,M,Medellín,2,11,2025-08-02,Tienda de Conveniencia
+1279,Mario Felipe Jiménez Forero,24,M,Bogotá,1,5,2025-02-10,Hipermercado
+1280,Diego Fajardo,72,F,Barranquilla,4,16,2025-06-18,Supermercado
+1281,Antonio Córdoba Arias,75,M,Barranquilla,4,15,2025-07-31,Supermercado
+1282,Luis Fabián Toro,46,F,Cali,3,12,2024-10-06,Hipermercado
+1283,José Julián Hernández Cárdenas,51,M,Cali,3,8,2025-09-22,E-commerce
+1284,María Lucila Restrepo Ortiz,75,F,Cali,3,14,2025-08-03,Supermercado
+1285,Margarita Esperanza García Tovar,78,F,Cartagena,5,6,2025-05-12,Tienda de Conveniencia
+1286,Carmen Orozco Hoyos,24,F,Cali,3,8,2025-05-19,Hipermercado
+1287,Ricardo Juan Rivera Bermúdez,77,M,Cali,3,7,2024-11-08,Supermercado
+1288,Julio Pabón,59,M,Bogotá,1,5,2025-05-18,Hipermercado
+1289,Miguel Fernández,79,M,Cali,3,14,2025-03-28,Supermercado
+1290,Eduardo Luis Gómez,75,F,Bogotá,1,5,2025-03-08,Hipermercado
+1291,Sebastián Roa Pérez,42,M,Medellín,2,8,2025-09-12,Hipermercado
+1292,Yésica María López González,28,F,Bogotá,1,11,2025-04-09,Supermercado
+1293,María Chávez,55,M,Cali,3,14,2024-10-28,Hipermercado
+1294,Elvira Navarro Gómez,34,F,Bogotá,1,13,2025-07-19,Hipermercado
+1295,José Fernando Ruiz,77,F,Barranquilla,4,10,2025-04-08,Hipermercado
+1296,David Méndez,70,F,Medellín,2,13,2025-09-29,Farmacia
+1297,Martha Natalia Ríos Castillo,35,M,Barranquilla,4,13,2025-05-21,Hipermercado
+1298,Patricia Uribe,59,F,Bogotá,1,13,2025-03-01,Tienda de Conveniencia
+1299,Arturo Mario Murillo,26,F,Cartagena,5,9,2025-02-23,Hipermercado
+1300,Daniel David Acosta Zambrano,76,F,Bogotá,1,5,2024-11-07,E-commerce
+1301,Yudy Diana Castillo Vargas,26,M,Cali,3,14,2025-04-09,Tienda de Conveniencia
+1302,Erika Marina Perdomo Mercado,43,M,Barranquilla,4,10,2025-09-11,E-commerce
+1303,Alejandra Alvarado Ramírez,35,F,Medellín,2,16,2025-05-22,Farmacia
+1304,Blanca Sara Guerrero,36,M,Bogotá,1,9,2024-12-03,Farmacia
+1305,Lidia Elvira Gallego Gómez,20,M,Medellín,2,5,2024-12-26,Hipermercado
+1306,José Ortega,69,F,Barranquilla,4,5,2025-04-22,Hipermercado
+1307,Andrés Duarte Díaz,53,F,Cali,3,10,2024-11-25,Hipermercado
+1308,Julia Sánchez Beltrán,66,M,Barranquilla,4,14,2025-07-28,Hipermercado
+1309,Mercedes Bedoya Gutiérrez,25,M,Bogotá,1,16,2025-01-04,Hipermercado
+1310,Luz Alvarado,33,M,Medellín,2,13,2024-10-29,Supermercado
+1311,Janeth Mosquera Gómez,31,M,Bogotá,1,15,2024-11-03,E-commerce
+1312,Marcela María Rodríguez,20,F,Barranquilla,4,5,2025-05-27,Hipermercado
+1313,Jhonatan Miguel Marín,31,F,Barranquilla,4,9,2025-01-03,Farmacia
+1314,Robinson Humberto Ramírez,30,F,Cartagena,5,5,2025-08-24,Supermercado
+1315,Carmen Serrano,38,F,Cali,3,13,2024-12-06,Supermercado
+1316,Doris Rivas,40,M,Bogotá,1,9,2024-10-20,E-commerce
+1317,Paola Delgado,19,F,Medellín,2,13,2025-02-11,E-commerce
+1318,Andrea García,29,F,Barranquilla,4,9,2025-05-01,Supermercado
+1319,Judith Anaya Cárdenas,36,F,Barranquilla,4,7,2025-04-04,Hipermercado
+1320,Juan Luis Ceballos,35,F,Medellín,2,12,2025-08-18,E-commerce
+1321,Olga Ortega,68,F,Barranquilla,4,9,2025-01-06,Supermercado
+1322,Juan Hoyos Escobar,37,M,Cali,3,12,2025-03-28,Supermercado
+1323,Claudia Lucy Duarte,76,M,Bogotá,1,10,2025-07-02,Tienda de Conveniencia
+1324,Edith Lucía González,54,M,Bogotá,1,8,2025-06-07,Supermercado
+1325,Juliana Gamboa Mosquera,38,F,Bogotá,1,8,2024-12-30,Hipermercado
+1326,José Sneider Sanabria Guevara,59,F,Barranquilla,4,10,2025-01-13,Supermercado
+1327,Richard Iván Oviedo Uribe,27,F,Medellín,2,8,2025-04-16,Hipermercado
+1328,Jhon Garcés Narváez,58,F,Medellín,2,11,2025-08-22,Hipermercado
+1329,Carmen Salas Zuluaga,48,M,Bogotá,1,16,2025-04-21,Tienda de Conveniencia
+1330,Javier Castrillón,30,F,Cali,3,5,2025-05-17,Supermercado
+1331,Flor María Escobar Zapata,35,M,Barranquilla,4,16,2024-10-14,Tienda de Conveniencia
+1332,Gloria Angulo García,51,F,Cartagena,5,7,2024-12-20,Tienda de Conveniencia
+1333,Yolima Olga Cruz,74,M,Medellín,2,13,2025-05-01,Hipermercado
+1334,Carmen León Agudelo,77,M,Medellín,2,14,2024-12-29,Hipermercado
+1335,Cristian Alexander Torres Aguirre,25,F,Bogotá,1,8,2025-09-19,Tienda de Conveniencia
+1336,Johanna Sarmiento Suárez,71,F,Medellín,2,17,2025-05-28,Supermercado
+1337,José Edwin Hernández Rodríguez,47,M,Barranquilla,4,10,2025-02-08,E-commerce
+1338,Martha Beatriz Rodríguez Amaya,18,F,Cartagena,5,8,2025-09-21,Supermercado
+1339,Jerson Corredor,39,F,Barranquilla,4,11,2025-07-15,Tienda de Conveniencia
+1340,Camilo Armando Valencia Restrepo,34,M,Cartagena,5,15,2025-01-06,E-commerce
+1341,David Alfonso Giraldo Reyes,73,F,Bogotá,1,7,2025-04-09,Hipermercado
+1342,Carolina Velásquez,79,M,Medellín,2,9,2025-03-23,Supermercado
+1343,Alicia Martínez García,45,M,Medellín,2,14,2025-02-06,Tienda de Conveniencia
+1344,María Patricia Hurtado,44,F,Barranquilla,4,9,2025-05-30,Hipermercado
+1345,Lucero Cecilia Rodríguez,43,M,Barranquilla,4,15,2024-11-14,E-commerce
+1346,John Guerrero,79,M,Bogotá,1,11,2025-05-01,E-commerce
+1347,Eliecer Néstor González,35,M,Medellín,2,12,2025-05-03,Tienda de Conveniencia
+1348,Natalia Ana Murillo,68,F,Medellín,2,6,2025-01-27,Supermercado
+1349,Mónica Carvajal,25,M,Cali,3,11,2025-07-03,Hipermercado
+1350,Ricardo Javier Barrera,28,F,Bogotá,1,10,2025-03-08,Tienda de Conveniencia
+1351,Wilfredo Giraldo Serna,30,F,Cali,3,15,2025-07-28,Supermercado
+1352,Ricardo Toro Melo,54,F,Medellín,2,15,2025-08-01,Supermercado
+1353,Rosa Yasmín López Parra,33,M,Bogotá,1,8,2025-08-29,Hipermercado
+1354,Andrés Ramón Martínez Burgos,35,M,Medellín,2,14,2025-03-04,E-commerce
+1355,William Perdomo Barrios,36,M,Bogotá,1,9,2025-05-04,E-commerce
+1356,Alfredo Torres,75,M,Barranquilla,4,8,2025-01-23,Supermercado
+1357,Jair Carvajal,30,M,Bogotá,1,6,2025-07-21,Farmacia
+1358,María Tatiana Moreno Rivera,24,F,Cali,3,11,2024-11-03,E-commerce
+1359,Luis Javier Moreno,57,F,Cali,3,15,2025-07-01,E-commerce
+1360,Martha Buitrago,22,M,Medellín,2,15,2024-10-24,Tienda de Conveniencia
+1361,Alexander Didier Ríos Sánchez,63,F,Barranquilla,4,15,2025-01-05,Hipermercado
+1362,Sebastián Ricardo Olaya,45,F,Medellín,2,16,2025-08-30,Supermercado
+1363,Antonio Silva Trujillo,38,F,Medellín,2,8,2025-09-03,E-commerce
+1364,David Espitia,78,M,Bogotá,1,5,2024-10-08,Supermercado
+1365,María Gilma Pineda,62,M,Medellín,2,12,2024-12-14,Hipermercado
+1366,Leonor Gloria Gómez,33,F,Bogotá,1,13,2025-09-17,E-commerce
+1367,Eugenia Quintero,59,M,Barranquilla,4,9,2024-11-20,Tienda de Conveniencia
+1368,Luz Quintero Hernández,45,M,Barranquilla,4,17,2025-09-01,Tienda de Conveniencia
+1369,Marcela Lozano López,73,M,Cartagena,5,10,2024-12-29,Hipermercado
+1370,Felipe Guevara Rincón,56,F,Cartagena,5,11,2025-05-05,E-commerce
+1371,Carlos Miguel Vásquez,21,M,Medellín,2,17,2025-03-01,Farmacia
+1372,Jesús Enrique Buitrago,54,F,Bogotá,1,5,2025-01-07,Supermercado
+1373,Rafael Mena Ramos,55,M,Bogotá,1,7,2025-01-29,Tienda de Conveniencia
+1374,Liceth Arroyo,27,F,Medellín,2,10,2025-09-06,Hipermercado
+1375,Antonio Juan Gaviria,57,F,Cartagena,5,11,2024-10-09,Supermercado
+1376,Carlos Acevedo Vásquez,54,M,Medellín,2,16,2025-03-31,Hipermercado
+1377,Jairo Roberto Agudelo Aguilar,52,F,Barranquilla,4,15,2025-05-10,E-commerce
+1378,Carlos Ochoa,21,M,Medellín,2,15,2025-01-17,Tienda de Conveniencia
+1379,Ricardo Ayala,45,F,Bogotá,1,14,2025-01-24,Hipermercado
+1380,Helena Miranda García,56,F,Medellín,2,8,2025-05-26,Hipermercado
+1381,Eliecer Monsalve Ávila,41,M,Bogotá,1,16,2024-10-25,Farmacia
+1382,Fredy Augusto Angulo Díaz,79,F,Cali,3,17,2024-11-22,E-commerce
+1383,Hernán Enrique Peña Contreras,26,F,Medellín,2,12,2024-10-06,Supermercado
+1384,Antonio Rueda,57,M,Medellín,2,12,2025-06-08,Farmacia
+1385,Bernardo Suárez,72,F,Medellín,2,14,2025-09-14,Supermercado
+1386,Yesid José Jaimes,64,M,Barranquilla,4,6,2025-08-18,Supermercado
+1387,Angélica Ximena Tovar,47,F,Cartagena,5,9,2025-08-04,Hipermercado
+1388,Luz Pulido,74,F,Cali,3,8,2025-06-27,E-commerce
+1389,Jorge David Salcedo Santos,38,F,Medellín,2,12,2024-10-25,E-commerce
+1390,Rosario Yamile Contreras,40,F,Barranquilla,4,9,2025-06-05,Hipermercado
+1391,Natalia Rosero,33,M,Bogotá,1,9,2024-10-16,Tienda de Conveniencia
+1392,César Arango,30,M,Medellín,2,10,2025-03-24,Hipermercado
+1393,Liseth Aguilar Escobar,37,F,Bogotá,1,7,2025-02-20,Supermercado
+1394,Germán Ramírez Bermúdez,61,M,Medellín,2,7,2025-05-01,Hipermercado
+1395,Jair Jhon Martínez Camacho,72,F,Medellín,2,9,2025-09-02,Tienda de Conveniencia
+1396,Alexander Marín,75,F,Medellín,2,15,2025-03-15,E-commerce
+1397,Enrique Jaimes Becerra,68,M,Barranquilla,4,15,2024-10-25,Farmacia
+1398,Alba Fanny Vásquez Villamizar,31,M,Bogotá,1,13,2025-01-05,Farmacia
+1399,Camilo Rodríguez,75,M,Bogotá,1,10,2025-09-14,E-commerce
+1400,Santos Fabián Villamizar,36,F,Cali,3,8,2024-11-21,Hipermercado
+1401,Andrés Edinson Gutiérrez Guerra,50,F,Bogotá,1,7,2025-08-06,Tienda de Conveniencia
+1402,María Magnolia Fernández Castro,48,F,Cartagena,5,5,2024-12-16,Hipermercado
+1403,Clara Sandra Villamizar Vergara,38,F,Cartagena,5,14,2025-07-21,Hipermercado
+1404,Guillermo Rodríguez Martínez,55,F,Cartagena,5,14,2025-02-09,E-commerce
+1405,Manuel Luis Suárez,35,M,Cartagena,5,15,2025-06-02,E-commerce
+1406,Helena Ana Mosquera,50,M,Cartagena,5,11,2025-07-22,Tienda de Conveniencia
+1407,Ligia Moreno Silva,57,M,Barranquilla,4,8,2024-11-10,Hipermercado
+1408,Luis Martínez,72,F,Medellín,2,14,2025-01-12,Supermercado
+1409,Juan Efrén Serna Caballero,73,M,Bogotá,1,9,2024-12-23,Tienda de Conveniencia
+1410,Jorge John Blanco Ramírez,66,M,Medellín,2,13,2024-10-05,Hipermercado
+1411,Rosario Escobar,36,F,Bogotá,1,15,2025-07-15,Tienda de Conveniencia
+1412,Edgar Rafael Polo,76,F,Cali,3,12,2025-06-19,Supermercado
+1413,Luz Sandra Sandoval,79,F,Bogotá,1,15,2024-10-16,Hipermercado
+1414,Junior Julio Romero,70,F,Barranquilla,4,8,2025-05-26,Farmacia
+1415,Patricia Salgado Quintero,62,F,Cali,3,11,2025-01-18,Hipermercado
+1416,David Córdoba Sarmiento,21,F,Bogotá,1,10,2025-02-08,E-commerce
+1417,Lina Mariela Rojas,22,F,Medellín,2,14,2025-07-24,E-commerce
+1418,Marina Riascos,34,F,Cartagena,5,17,2025-03-01,Supermercado
+1419,David Norbey Torres Torres,18,M,Barranquilla,4,14,2024-12-03,E-commerce
+1420,María Ruth Mora García,78,M,Barranquilla,4,15,2024-10-09,Hipermercado
+1421,Mery González,37,M,Barranquilla,4,11,2024-12-23,Hipermercado
+1422,María Escobar Muñoz,64,M,Bogotá,1,9,2025-05-20,Supermercado
+1423,Eduardo Prieto Franco,63,F,Medellín,2,12,2025-03-23,Hipermercado
+1424,Julieth Benavides,35,F,Cali,3,6,2025-08-20,Tienda de Conveniencia
+1425,Dolores Rocío Álvarez,24,F,Cali,3,13,2025-02-13,Supermercado
+1426,Martha Rojas,26,M,Bogotá,1,6,2025-09-20,Hipermercado
+1427,Luis Luis González,52,F,Medellín,2,15,2025-01-12,Farmacia
+1428,José Bermúdez Ortega,56,F,Medellín,2,10,2025-06-08,Supermercado
+1429,María María Parada,31,F,Cartagena,5,14,2024-10-01,E-commerce
+1430,Angélica Johanna Trujillo Santos,72,F,Bogotá,1,13,2024-10-31,Hipermercado
+1431,Aura María Mercado Pacheco,48,F,Bogotá,1,14,2025-05-09,Supermercado
+1432,Yesenia Gómez Romero,55,F,Medellín,2,15,2025-07-10,E-commerce
+1433,Jhon Martínez Restrepo,47,F,Medellín,2,12,2025-07-18,Hipermercado
+1434,Ligia Doris Acosta,58,M,Barranquilla,4,15,2024-12-19,Hipermercado
+1435,Laura Orozco,72,F,Cali,3,7,2025-06-30,E-commerce
+1436,Leydi Guerrero Palacios,68,F,Medellín,2,11,2025-07-29,Farmacia
+1437,Nora Cristina Vega Ruiz,67,M,Barranquilla,4,7,2025-07-13,E-commerce
+1438,Katherine Garzón Suárez,39,F,Medellín,2,6,2024-12-18,Farmacia
+1439,Lucía Castro,65,M,Bogotá,1,8,2024-10-31,E-commerce
+1440,Martha Lucía Ospina Rodríguez,27,M,Medellín,2,13,2025-02-19,Tienda de Conveniencia
+1441,Martha Ríos,22,F,Medellín,2,13,2025-06-29,Hipermercado
+1442,Henry Vásquez Sarmiento,38,F,Bogotá,1,17,2025-03-06,Supermercado
+1443,José Yepes,20,F,Cartagena,5,10,2025-03-02,Farmacia
+1444,José Delgado,52,M,Medellín,2,15,2024-10-19,Supermercado
+1445,Silvia Adriana Murcia Rodríguez,21,F,Medellín,2,13,2025-07-20,Tienda de Conveniencia
+1446,Milton Pérez Portilla,52,M,Cali,3,12,2025-08-16,Hipermercado
+1447,Mónica Galindo,19,F,Cartagena,5,15,2025-07-17,Tienda de Conveniencia
+1448,Esperanza López López,20,M,Medellín,2,16,2025-08-15,E-commerce
+1449,Rosalba María González Rentería,56,M,Cartagena,5,16,2025-09-24,Farmacia
+1450,Tatiana Moreno Gómez,30,F,Bogotá,1,15,2025-07-24,Supermercado
+1451,Yury Beatriz Palacio,33,F,Bogotá,1,17,2024-10-17,Tienda de Conveniencia
+1452,Manuel Polo,28,F,Medellín,2,7,2025-03-24,Hipermercado
+1453,Eugenia Lina Montes Molina,69,F,Bogotá,1,11,2024-11-14,Supermercado
+1454,Yazmín Gilma Mendoza Reyes,24,M,Bogotá,1,8,2024-12-16,Hipermercado
+1455,Lucía Rodríguez Bravo,37,M,Cartagena,5,6,2024-10-22,E-commerce
+1456,María Sierra Torres,24,M,Medellín,2,7,2024-11-17,Hipermercado
+1457,Olga León Herrera,40,M,Medellín,2,5,2025-04-09,E-commerce
+1458,Jairo Antonio Rodríguez Murcia,37,M,Medellín,2,12,2025-04-21,Tienda de Conveniencia
+1459,Daniel Aguirre Navarro,69,M,Barranquilla,4,6,2025-03-10,Supermercado
+1460,Valentina Arévalo Galeano,35,F,Barranquilla,4,11,2025-03-02,Hipermercado
+1461,Viviana Sofía Gallego Oviedo,48,F,Bogotá,1,10,2025-09-20,Hipermercado
+1462,Marina Ruiz Becerra,61,F,Medellín,2,16,2025-07-09,Hipermercado
+1463,Andrea María Quintero Gutiérrez,52,F,Bogotá,1,13,2025-04-26,E-commerce
+1464,Enrique Rojas,76,M,Medellín,2,6,2024-10-04,Hipermercado
+1465,Adriana Hurtado León,37,F,Medellín,2,13,2025-09-03,E-commerce
+1466,Ovidio Rueda Durán,24,F,Cali,3,16,2025-06-29,Hipermercado
+1467,Martha Sierra,45,F,Bogotá,1,10,2024-11-17,Hipermercado
+1468,Yudy Angarita,48,M,Barranquilla,4,10,2025-03-29,Supermercado
+1469,Luisa Edith González Duque,75,M,Cartagena,5,15,2025-08-07,Tienda de Conveniencia
+1470,Antonio Sánchez,46,F,Cartagena,5,12,2025-06-14,Hipermercado
+1471,Antonio Vargas,50,M,Cartagena,5,6,2025-06-24,E-commerce
+1472,Luis Arango,44,F,Cartagena,5,12,2025-07-07,Farmacia
+1473,Ana Dolly Roa,52,M,Barranquilla,4,6,2025-09-24,Supermercado
+1474,Luis Niño Mantilla,37,M,Barranquilla,4,11,2024-12-07,Tienda de Conveniencia
+1475,Jorge Torres Díaz,78,F,Bogotá,1,7,2025-05-26,E-commerce
+1476,Judith Daza Moreno,77,F,Bogotá,1,15,2025-07-27,Hipermercado
+1477,María Cortés,38,M,Medellín,2,17,2025-02-27,Hipermercado
+1478,Catalina Ortiz,22,F,Cartagena,5,11,2025-01-28,Farmacia
+1479,Carlos Eduar Vargas,55,M,Cali,3,17,2025-01-27,Supermercado
+1480,Yolanda Caicedo,76,F,Medellín,2,16,2025-07-04,E-commerce
+1481,Sebastián Gómez,64,M,Bogotá,1,5,2025-06-23,E-commerce
+1482,Luis Escobar Flórez,19,F,Cartagena,5,14,2025-02-03,Hipermercado
+1483,Marcos Carlos Castro,55,F,Medellín,2,11,2025-03-02,Supermercado
+1484,Camila Sonia Hernández Maldonado,70,M,Barranquilla,4,14,2025-01-19,Hipermercado
+1485,Mariana Carmen González,38,F,Bogotá,1,12,2025-07-08,Farmacia
+1486,Cristina Diana Gómez Paz,48,F,Bogotá,1,14,2025-01-10,Tienda de Conveniencia
+1487,Andrea Josefina Navarro Torres,47,F,Medellín,2,14,2025-08-14,Supermercado
+1488,Martha Alejandra Mosquera Díaz,37,M,Cali,3,15,2025-08-15,E-commerce
+1489,Tatiana Gómez Quintero,58,F,Medellín,2,11,2024-12-09,Farmacia
+1490,Doris Martínez Ramos,31,M,Bogotá,1,12,2024-12-19,Supermercado
+1491,Santiago Bravo,44,F,Cali,3,6,2025-04-22,Hipermercado
+1492,Mary Ramírez,45,F,Medellín,2,17,2025-05-13,Hipermercado
+1493,Víctor Yecid Montoya,24,F,Barranquilla,4,13,2025-08-24,Supermercado
+1494,Natalia Lara Vásquez,19,M,Medellín,2,9,2024-10-01,Supermercado
+1495,Fanny Margarita Giraldo López,27,F,Barranquilla,4,15,2024-12-15,Farmacia
+1496,Alirio Jorge Mendoza Díaz,23,M,Medellín,2,9,2024-10-29,Hipermercado
+1497,Diego Carrillo Gómez,75,F,Cali,3,17,2025-06-20,Tienda de Conveniencia
+1498,Jesús Carlos Ramírez Molina,37,M,Barranquilla,4,12,2024-10-06,Supermercado
+1499,Ricardo Arteaga,34,M,Medellín,2,14,2025-02-01,Supermercado
+1500,Olga Cecilia Salazar,58,M,Bogotá,1,6,2025-04-16,Farmacia

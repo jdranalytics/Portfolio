@@ -86,24 +86,24 @@ CREATE TABLE IF NOT EXISTS bebidas_analytics.ventas (
 -- CREACIÓN DE VISTAS
 
 CREATE OR REPLACE VIEW BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.vw_ventas_ml AS
-WITH LastCompleteMonth AS (
+    WITH LastCompleteMonth AS (
     SELECT
         CASE
-
             WHEN DATE_TRUNC('month', CURRENT_DATE()) > DATE_TRUNC('month', MAX(v.fecha)) THEN DATE_TRUNC('month', MAX(v.fecha))
             WHEN DATE_TRUNC('month', CURRENT_DATE()) = DATE_TRUNC('month', MAX(v.fecha)) THEN DATE_TRUNC('month', DATEADD(month, -1, CURRENT_DATE()))
-            
-            ELSE DATE_TRUNC('month', MAX(v.fecha)) 
+            ELSE DATE_TRUNC('month', MAX(v.fecha))
         END AS mes_limite
     FROM BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.ventas AS v
 )
 SELECT
-    DATE_TRUNC('month', v.fecha) AS MES,
     r.nombre_region,
     p.categoria,
     p.nombre_producto,
-    CONCAT(r.nombre_region,'-', p.categoria, '-', p.nombre_producto) AS Region_Categoria_Producto,
-    COUNT(DISTINCT(V.VENTA_ID)) AS TICKETS,
+    p.marca,
+    DATE_TRUNC('month', v.fecha) AS MES,
+    SUM(v.cantidad * p.volumen_ml_base * p.unidades_caja_base) / 1000000 AS m3_VENDIDOS,
+    CONCAT(r.nombre_region, '-', p.categoria, '-', p.nombre_producto) AS Region_Categoria_Producto,
+    COUNT(DISTINCT v.venta_id) AS TICKETS,
     SUM(v.cantidad) AS CANTIDAD,
     AVG(hp.precio_base) AS PRECIO_PROMEDIO,
     SUM(
@@ -123,14 +123,17 @@ SELECT
                 hp.precio_base * v.cantidad
         END
     )) AS DESCUENTOS,
-    (CASE WHEN SUM(hp.precio_base * v.cantidad) > 0 THEN ((SUM(hp.precio_base * v.cantidad) - SUM(
-        CASE
-            WHEN v.promocion_id IS NOT NULL THEN
-                hp.precio_base * (100 - pr.descuento_porcentaje) / 100 * v.cantidad
-            ELSE
-                hp.precio_base * v.cantidad
-        END
-    )) / SUM(hp.precio_base * v.cantidad)) * 100 ELSE 0 END) AS DESC_PORCENTAJE,
+    (CASE WHEN SUM(hp.precio_base * v.cantidad) > 0 THEN
+        ((SUM(hp.precio_base * v.cantidad) - SUM(
+            CASE
+                WHEN v.promocion_id IS NOT NULL THEN
+                    hp.precio_base * (100 - pr.descuento_porcentaje) / 100 * v.cantidad
+                ELSE
+                    hp.precio_base * v.cantidad
+                END
+        )) / SUM(hp.precio_base * v.cantidad)) * 100
+        ELSE 0
+    END) AS DESC_PORCENTAJE,
     SUM(hp.costo_variable * v.cantidad) AS COSTOS,
     (SUM(
         CASE
@@ -165,18 +168,7 @@ SELECT
                 END
             ) * 100
         ELSE 0
-    END AS MARGEN_GANANCIA_NETA_PORCENTAJE,
-    SUM(
-        CASE
-            WHEN p.nombre_producto LIKE '%mL x %uds' THEN
-                CAST(REGEXP_SUBSTR(p.nombre_producto, '([0-9]+)mL', 1, 1, 'e') AS DECIMAL) / 1000 *
-                CAST(REGEXP_SUBSTR(p.nombre_producto, 'x ([0-9]+)uds', 1, 1, 'e') AS DECIMAL) * v.cantidad
-            WHEN p.nombre_producto LIKE '%L x %uds' THEN
-                CAST(REGEXP_SUBSTR(p.nombre_producto, '([0-9]+)L', 1, 1, 'e') AS DECIMAL) *
-                CAST(REGEXP_SUBSTR(p.nombre_producto, 'x ([0-9]+)uds', 1, 1, 'e') AS DECIMAL) * v.cantidad
-            ELSE 0
-        END
-    ) / 1000 AS m3_VENDIDOS
+    END AS MARGEN_GANANCIA_NETA_PORCENTAJE
 FROM BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.ventas AS v
 LEFT JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.productos AS p
     ON v.producto_id = p.producto_id
@@ -186,18 +178,22 @@ LEFT JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.PROMOCIONES AS pr
     ON v.promocion_id = pr.promocion_id
 LEFT JOIN BEBIDAS_PROJECT.BEBIDAS_ANALYTICS.HISTORICO_PRECIOS AS hp
     ON v.historico_precio_id = hp.historico_precio_id,
-    LastCompleteMonth lcm -- Unimos la CTE
+    LastCompleteMonth lcm
 WHERE
     p.marca = 'Zulianita'
-    AND DATE_TRUNC('month', v.fecha) <= lcm.mes_limite -- Aplicamos el filtro de mes límite
+    AND DATE_TRUNC('month', v.fecha) <= lcm.mes_limite
 GROUP BY
-    MES,
     r.nombre_region,
     p.categoria,
-    p.nombre_producto
+    p.nombre_producto,
+    p.marca,
+    DATE_TRUNC('month', v.fecha)
 ORDER BY
-    MES,
-    r.nombre_region;
+    r.nombre_region,
+    p.categoria,
+    p.nombre_producto,
+    MES;
+
 
 -- Vista para Optimización de Precios
 
