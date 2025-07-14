@@ -125,13 +125,34 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:   [!
       <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Análisis de Sentimiento de Encuestas de Empleados</div>
     </td>
   </tr>
+  <tr>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/iQ_a5aLrg8Q">
+        <img src="https://img.youtube.com/vi/iQ_a5aLrg8Q/0.jpg" alt="Video 16" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Forecast Multiescenario con Snowflake ML</div>
+    </td>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/rLLFMvlWqzE">
+        <img src="https://img.youtube.com/vi/rLLFMvlWqzE/0.jpg" alt="Video 17" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Clustering en Snowflake con Notebook</div>
+    </td>
+    <td align="center" style="width: 33.33%;">
+      <a href="https://youtu.be/Ucr4E4u9S_g">
+        <img src="https://img.youtube.com/vi/Ucr4E4u9S_g/0.jpg" alt="Video 18" width="250"/>
+      </a>
+      <br><div style="word-wrap: break-word; max-width: 100%; text-align: center;">Forecast Multiescenario con KNIME</div>
+    </td>
+  </tr>
 </table>
+
 
 ## ⚙️ Lenguajes y herramientas usadas
 | Categoría                    | Herramientas                              |
 |------------------------------|-------------------------------------------|
 | **Lenguajes**                | Python, R, DAX, M, SQL                       |
-| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Apache Airflow, AI Generativa    |
+| **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Apache Airflow, AI Generativa, KNIME    |
 | **Bases de Datos y Nubes**   | Access, SQL Server, MySQL, Google Cloud, BigQuery, MS Fabric, Snowflake |
 | **Herramientas BI**          | Power BI, Tableau, Looker Studio, Shiny, Streamlit        |
 
