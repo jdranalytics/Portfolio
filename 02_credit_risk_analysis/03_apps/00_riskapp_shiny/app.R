@@ -32,13 +32,13 @@ for (pkg in required_packages) {
 }
 
 # CONFIGURACIÓN INICIAL ----
-project_id <- "adroit-terminus-450816-r9"
+project_id <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 dataset_id <- "solicitudes_credito"
-credentials_path <- "C:/Users/joey_/Desktop/AIRFLOW/adroit-terminus-450816-r9-1b90cfcf6a76.json"
-DISCORD_WEBHOOK_URL <- "https://discordapp.com/api/webhooks/1354192765130375248/MF7bEPPlHnrzgYnJJ4iev7xTr0TrxVpqKw_MOVVIRseppELwK0hBM7VMZf8DQnVPpvh6"
-OPENAI_API_KEY_PATH <- "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/openai.txt"
-GEMINI_API_KEY_PATH <- "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/gemini.txt"
-DEEPSEEK_API_KEY_PATH <- "C:/Users/joey_/Desktop/AIRFLOW/API KEYS/deepseek.txt"
+credentials_path <- "C:/XXXXXXXXXXXXXX/AIRFLOW/adroit-terminus-450816-r9-1b90cfcf6a76.json"
+DISCORD_WEBHOOK_URL <- "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+OPENAI_API_KEY_PATH <- "C:XXXXXXXXXXXXXXXXXXX/AIRFLOW/API KEYS/openai.txt"
+GEMINI_API_KEY_PATH <- "C:XXXXXXXXXXXXXXXX/Desktop/AIRFLOW/API KEYS/gemini.txt"
+DEEPSEEK_API_KEY_PATH <- "C:XXXXXXXXXXXXXX/Desktop/AIRFLOW/API KEYS/deepseek.txt"
 
 
 
