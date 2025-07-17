@@ -1,3 +1,7 @@
+####################################################################################################
+# ECOTRACKER - GESTOR DE RESIDUOS v. 1.0.0
+# By JDR Analytics
+####################################################################################################
 
 
 library(shiny)
@@ -64,6 +68,7 @@ dbExecute(con, "CREATE TABLE IF NOT EXISTS MecanismosEntrega (
 );")
 dbExecute(con, "CREATE TABLE IF NOT EXISTS Registros (
   ID INTEGER PRIMARY KEY AUTOINCREMENT,
+  Codigo TEXT NOT NULL UNIQUE,
   FechaRegistro DATE,
   CiudadID INTEGER,
   EstablecimientoID INTEGER,
@@ -84,6 +89,24 @@ dbExecute(con, "CREATE TABLE IF NOT EXISTS Registros (
   FOREIGN KEY (PresentacionID) REFERENCES Presentaciones(ID),
   FOREIGN KEY (GestorID) REFERENCES Gestores(ID),
   FOREIGN KEY (MecanismoID) REFERENCES MecanismosEntrega(ID)
+);")
+dbExecute(con, "CREATE TABLE IF NOT EXISTS RespaldoRegistros (
+  ID INTEGER PRIMARY KEY AUTOINCREMENT,
+  Codigo TEXT NOT NULL,
+  FechaRegistro DATE,
+  CiudadID INTEGER,
+  EstablecimientoID INTEGER,
+  ProcesoGeneradorID INTEGER,
+  ResiduoID INTEGER,
+  Descripcion TEXT,
+  Cantidad REAL,
+  PresentacionID INTEGER,
+  GestorID INTEGER,
+  MecanismoID INTEGER,
+  Certificado TEXT,
+  CreatedAt DATETIME,
+  UpdatedAt DATETIME,
+  DeletedAt DATETIME DEFAULT CURRENT_TIMESTAMP
 );")
 
 # Inserción de datos de ejemplo
@@ -156,9 +179,16 @@ dbExecute(con, "INSERT OR IGNORE INTO MecanismosEntrega (Nombre, CreatedAt, Upda
   ('Devolución vía correo postal o mensajería certificada', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
   ('Otro', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);")
 
-# Agregar columna Certificado si no existe
-if (!"Certificado" %in% dbGetQuery(con, "PRAGMA table_info(Registros)")$name) {
-  dbExecute(con, "ALTER TABLE Registros ADD COLUMN Certificado TEXT DEFAULT 'Pendiente';")
+# Agregar columna Codigo si no existe
+if (!"Codigo" %in% dbGetQuery(con, "PRAGMA table_info(Registros)")$name) {
+  dbExecute(con, "ALTER TABLE Registros ADD COLUMN Codigo TEXT NOT NULL DEFAULT ''")
+}
+
+# Función para generar código GR-0000000X
+generate_codigo <- function() {
+  last_id <- dbGetQuery(con, "SELECT MAX(ID) as max_id FROM Registros")$max_id
+  if (is.na(last_id)) last_id <- 0
+  sprintf("GR-%08d", last_id + 1)
 }
 
 # Interfaz de usuario con barra lateral
@@ -208,6 +238,7 @@ ui <- dashboardPage(
         .dataTables_wrapper .dataTables_paginate .paginate_button { background-color: #2A4F6A; color: #E6F0FA; border: 1px solid #225A8A; }
         .dataTables_wrapper .dataTables_paginate .paginate_button:hover { background-color: #2E6A9A; }
         .dataTables_wrapper .dataTables_paginate .paginate_button.current { background-color: #6BA8D1; }
+        .dataTable td {font-size: 12px !important;}
         .value-box { background-color: #2A4F6A; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .value-box .value { font-size: 24px; font-weight: 600; }
         .kpi-box { padding: 15px; border-radius: 8px; text-align: center; color: #FFFFFF; margin-bottom: 20px; }
@@ -223,7 +254,6 @@ ui <- dashboardPage(
         .form-row-spaced { margin-bottom: 25px; }
         .dt-selected-row { background-color: #6BA8D1 !important; color: #1E425A !important; }
         .modal-content label, .modal-content .control-label { color: #E6F0FA !important; }
-        
         #guardar_progress .progress { height: 20px; background: #1F3F5A; }
         #guardar_progress .progress-bar { background: #2E6A9A; }
         #edit_progress .progress { height: 20px; background: #1F3F5A; }
@@ -231,7 +261,7 @@ ui <- dashboardPage(
         #descripcion, #tipo_residuo, #grado_peligro, #estado_materia,
         #edit_descripcion, #edit_tipo_residuo, #edit_grado_peligro, #edit_estado_materia {
           background-color: #345C7D;
-          color: #E6F0FA !important;  /* Texto en color claro */
+          color: #E6F0FA !important;
           border: 1px solid #2E6A9A;
           border-radius: 5px;
         }
@@ -239,15 +269,17 @@ ui <- dashboardPage(
         #agregar_residuo, #editar_residuo, #refresh_residuos, #guardar_cambios,
         #borrar_registro_modal, #cerrar_modal, #guardar_cambios_residuo,
         #borrar_residuo_modal, #cerrar_modal_residuo {
-          background-color: #6B7280;
+          background-color: #2E6A9A;
           color: #FFFFFF;
-          cursor: not-allowed;
+          cursor: pointer;
         }
-        #editar, #refresh_registros, #agregar, #borrar_dimension, #refresh_dimensiones,
-        #agregar_residuo, #editar_residuo, #refresh_residuos, #guardar_cambios,
-        #borrar_registro_modal, #cerrar_modal, #guardar_cambios_residuo,
-        #borrar_residuo_modal, #cerrar_modal_residuo {
-          color: #FFFFFF !important;
+        #editar.enabled, #refresh_registros.enabled, #agregar.enabled, #borrar_dimension.enabled,
+        #refresh_dimensiones.enabled, #agregar_residuo.enabled, #editar_residuo.enabled,
+        #refresh_residuos.enabled, #guardar_cambios.enabled, #borrar_registro_modal.enabled,
+        #cerrar_modal.enabled, #guardar_cambios_residuo.enabled, #borrar_residuo_modal.enabled,
+        #cerrar_modal_residuo.enabled {
+          background-color: #2E6A9A !important;
+          cursor: pointer !important;
         }
       "))
     ),
@@ -297,7 +329,7 @@ ui <- dashboardPage(
         fluidRow(
           column(12,
             div(style = "display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;",
-              actionButton("guardar", "Guardar", disabled = "disabled"),
+              actionButton("guardar", "Guardar"),
               actionButton("limpiar", "Limpiar"),
               br(), br(),
               uiOutput("guardar_progress"),
@@ -415,11 +447,26 @@ ui <- dashboardPage(
         ),
         br(),
         fluidRow(
-          column(6, 
-            plotlyOutput("dashboard_pareto", height = "40vh"),
+          column(12, 
+            plotlyOutput("dashboard_doughnut_ciudad", height = "40vh"),
+            uiOutput("doughnut_ciudad_empty")
+          )),
+        br(),
+        fluidRow(
+          column(12, 
+            plotlyOutput("dashboard_stacked_establecimiento", height = "40vh"),
+            uiOutput("stacked_establecimiento_empty")
+          )
+        ),
+        br(),
+        fluidRow(
+          column(12, 
+            plotlyOutput("dashboard_pareto", height = "60vh"),
             uiOutput("pareto_empty")
-          ),
-          column(6, 
+          )),
+        br(),
+        fluidRow(
+          column(12, 
             plotlyOutput("dashboard_bar_tipo", height = "40vh"),
             uiOutput("bar_tipo_empty")
           )
@@ -497,31 +544,101 @@ server <- function(input, output, session) {
     }
   })
 
-
   # Validación y habilitación del botón Guardar
+observe({
+  # Asegurar que los inputs se evalúen solo cuando estén disponibles
+  req(input$fecha, input$ciudad, input$establecimiento, input$proceso, input$residuo,
+      input$descripcion_registro, input$cantidad, input$presentacion, input$gestor,
+      input$mecanismo, input$certificado)
+  
+  required_fields <- list(
+    fecha = as.character(input$fecha),  # Convertir fecha a string para validar
+    ciudad = input$ciudad,
+    establecimiento = input$establecimiento,
+    proceso = input$proceso,
+    residuo = input$residuo,
+    descripcion_registro = input$descripcion_registro,
+    cantidad = input$cantidad,
+    presentacion = input$presentacion,
+    gestor = input$gestor,
+    mecanismo = input$mecanismo,
+    certificado = input$certificado
+  )
+  
+  all_filled <- all(sapply(required_fields, function(x) {
+    !is.null(x) && 
+    (is.character(x) && x != "") || 
+    (is.numeric(x) && x > 0)
+  }))
+  
+  shinyjs::toggleState("guardar", condition = all_filled)
+  shinyjs::toggleClass("guardar", "enabled", condition = all_filled)
+})
+
+  # Validación y habilitación de botones en modales
   observe({
-    required_fields <- list(
-      fecha = input$fecha,
-      ciudad = input$ciudad,
-      establecimiento = input$establecimiento,
-      proceso = input$proceso,
-      residuo = input$residuo,
-      descripcion_registro = input$descripcion_registro,
-      cantidad = input$cantidad,
-      presentacion = input$presentacion,
-      gestor = input$gestor,
-      mecanismo = input$mecanismo,
-      certificado = input$certificado
+    required_edit_fields <- list(
+      ciudad = input$edit_ciudad,
+      establecimiento = input$edit_establecimiento,
+      proceso = input$edit_proceso,
+      residuo = input$edit_residuo,
+      descripcion = input$edit_descripcion_registro,
+      cantidad = input$edit_cantidad,
+      presentacion = input$edit_presentacion,
+      gestor = input$edit_gestor,
+      mecanismo = input$edit_mecanismo,
+      certificado = input$edit_certificado
     )
-    all_filled <- all(sapply(required_fields, function(x) {
+    all_edit_filled <- all(sapply(required_edit_fields, function(x) {
       !is.null(x) && x != "" && (!is.numeric(x) || (is.numeric(x) && x > 0))
     }))
-    shinyjs::toggleState("guardar", condition = all_filled)
+    shinyjs::toggleState("guardar_cambios", condition = all_edit_filled)
+    shinyjs::toggleClass("guardar_cambios", "enabled", condition = all_edit_filled)
+    shinyjs::toggleState("borrar_registro_modal", condition = TRUE)
+    shinyjs::toggleClass("borrar_registro_modal", "enabled", condition = TRUE)
+    shinyjs::toggleState("cerrar_modal", condition = TRUE)
+    shinyjs::toggleClass("cerrar_modal", "enabled", condition = TRUE)
+  })
+
+  observe({
+    required_residuo_fields <- list(
+      residuo = input$edit_residuo_nombre,
+      tipo = input$edit_residuo_tipo,
+      grado = input$edit_residuo_grado,
+      estado = input$edit_residuo_estado
+    )
+    all_residuo_filled <- all(sapply(required_residuo_fields, function(x) {
+      !is.null(x) && x != ""
+    }))
+    shinyjs::toggleState("guardar_cambios_residuo", condition = all_residuo_filled)
+    shinyjs::toggleClass("guardar_cambios_residuo", "enabled", condition = all_residuo_filled)
+    shinyjs::toggleState("borrar_residuo_modal", condition = TRUE)
+    shinyjs::toggleClass("borrar_residuo_modal", "enabled", condition = TRUE)
+    shinyjs::toggleState("cerrar_modal_residuo", condition = TRUE)
+    shinyjs::toggleClass("cerrar_modal_residuo", "enabled", condition = TRUE)
+  })
+
+  observe({
+    shinyjs::toggleState("editar", condition = length(input$registros_rows_selected) > 0)
+    shinyjs::toggleClass("editar", "enabled", condition = length(input$registros_rows_selected) > 0)
+    shinyjs::toggleState("refresh_registros", condition = TRUE)
+    shinyjs::toggleClass("refresh_registros", "enabled", condition = TRUE)
+    shinyjs::toggleState("agregar", condition = input$nuevo_valor != "")
+    shinyjs::toggleClass("agregar", "enabled", condition = input$nuevo_valor != "")
+    shinyjs::toggleState("borrar_dimension", condition = length(input$dimensiones_rows_selected) > 0)
+    shinyjs::toggleClass("borrar_dimension", "enabled", condition = length(input$dimensiones_rows_selected) > 0)
+    shinyjs::toggleState("refresh_dimensiones", condition = TRUE)
+    shinyjs::toggleClass("refresh_dimensiones", "enabled", condition = TRUE)
+    shinyjs::toggleState("agregar_residuo", condition = input$nuevo_residuo != "" && input$nuevo_tipo_residuo != "" && input$nuevo_grado_peligrosidad != "" && input$nuevo_estado_materia != "")
+    shinyjs::toggleClass("agregar_residuo", "enabled", condition = input$nuevo_residuo != "" && input$nuevo_tipo_residuo != "" && input$nuevo_grado_peligrosidad != "" && input$nuevo_estado_materia != "")
+    shinyjs::toggleState("editar_residuo", condition = length(input$dimensiones_residuos_rows_selected) > 0)
+    shinyjs::toggleClass("editar_residuo", "enabled", condition = length(input$dimensiones_residuos_rows_selected) > 0)
+    shinyjs::toggleState("refresh_residuos", condition = TRUE)
+    shinyjs::toggleClass("refresh_residuos", "enabled", condition = TRUE)
   })
 
   # Guardar nuevo registro
   observeEvent(input$guardar, {
-    # Validar campos requeridos
     required_fields <- list(
       fecha = input$fecha,
       ciudad = input$ciudad,
@@ -553,7 +670,6 @@ server <- function(input, output, session) {
     })
     
     tryCatch({
-      # Verificar que los valores de selectInput existan en las tablas correspondientes
       ciudad_id <- dbGetQuery(con, sprintf("SELECT ID FROM Ciudades WHERE Nombre = '%s'", input$ciudad))[[1, 1]]
       if (is.null(ciudad_id)) stop("Ciudad no válida")
       establecimiento_id <- dbGetQuery(con, sprintf("SELECT ID FROM Establecimientos WHERE Nombre = '%s'", input$establecimiento))[[1, 1]]
@@ -569,8 +685,10 @@ server <- function(input, output, session) {
       mecanismo_id <- dbGetQuery(con, sprintf("SELECT ID FROM MecanismosEntrega WHERE Nombre = '%s'", input$mecanismo))[[1, 1]]
       if (is.null(mecanismo_id)) stop("Mecanismo no válido")
 
-      query <- sprintf("INSERT INTO Registros (FechaRegistro, CiudadID, EstablecimientoID, ProcesoGeneradorID, ResiduoID, Descripcion, Cantidad, PresentacionID, GestorID, MecanismoID, Certificado, CreatedAt, UpdatedAt) VALUES ('%s', %d, %d, %d, %d, '%s', %f, %d, %d, %d, '%s', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)",
-                      input$fecha, ciudad_id, establecimiento_id, proceso_id, residuo_id, input$descripcion_registro,
+      codigo <- generate_codigo()
+
+      query <- sprintf("INSERT INTO Registros (Codigo, FechaRegistro, CiudadID, EstablecimientoID, ProcesoGeneradorID, ResiduoID, Descripcion, Cantidad, PresentacionID, GestorID, MecanismoID, Certificado, CreatedAt, UpdatedAt) VALUES ('%s', '%s', %d, %d, %d, %d, '%s', %f, %d, %d, %d, '%s', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)",
+                      codigo, input$fecha, ciudad_id, establecimiento_id, proceso_id, residuo_id, input$descripcion_registro,
                       input$cantidad, presentacion_id, gestor_id, mecanismo_id, input$certificado)
       dbExecute(con, query)
       Sys.sleep(0.7)
@@ -583,7 +701,6 @@ server <- function(input, output, session) {
       later::later(function() { output$guardar_msg <- renderUI({ NULL }) }, 2)
       registros_trigger(registros_trigger() + 1)
 
-      # Limpiar campos tras guardar registro
       updateDateInput(session, "fecha", value = Sys.Date())
       updateSelectInput(session, "ciudad", selected = "")
       updateSelectInput(session, "establecimiento", selected = "")
@@ -600,7 +717,6 @@ server <- function(input, output, session) {
       showNotification(sprintf("Error al guardar el registro: %s", e$message), type = "error", duration = 5)
     })
   }, ignoreInit = TRUE)
-
 
   # Limpiar campos de registro
   observeEvent(input$limpiar, {
@@ -626,7 +742,6 @@ server <- function(input, output, session) {
   # Trigger reactivo para refrescar registros
   registros_trigger <- reactiveVal(0)
 
-  # Dispara el refresco en los eventos relevantes
   observeEvent(input$refresh_registros, {
     registros_trigger(registros_trigger() + 1)
   })
@@ -654,7 +769,7 @@ server <- function(input, output, session) {
   # Consulta reactiva de registros
   registros_data <- reactive({
     registros_trigger() 
-    dbGetQuery(con, "SELECT r.ID, r.FechaRegistro, c.Nombre AS Ciudad, e.Nombre AS Establecimiento, pg.Nombre AS Proceso, rs.Residuo, r.Descripcion, r.Cantidad, p.Nombre AS Presentacion, g.Nombre AS Gestor, me.Nombre AS Mecanismo, r.Certificado FROM Registros r LEFT JOIN Ciudades c ON r.CiudadID = c.ID LEFT JOIN Establecimientos e ON r.EstablecimientoID = e.ID LEFT JOIN ProcesosGeneradores pg ON r.ProcesoGeneradorID = pg.ID LEFT JOIN Residuos rs ON r.ResiduoID = rs.ID LEFT JOIN Presentaciones p ON r.PresentacionID = p.ID LEFT JOIN Gestores g ON r.GestorID = g.ID LEFT JOIN MecanismosEntrega me ON r.MecanismoID = me.ID")
+    dbGetQuery(con, "SELECT r.ID, r.Codigo, r.FechaRegistro, c.Nombre AS Ciudad, e.Nombre AS Establecimiento, pg.Nombre AS Proceso, rs.Residuo, r.Descripcion, r.Cantidad, p.Nombre AS Presentacion, g.Nombre AS Gestor, me.Nombre AS Mecanismo, r.Certificado FROM Registros r LEFT JOIN Ciudades c ON r.CiudadID = c.ID LEFT JOIN Establecimientos e ON r.EstablecimientoID = e.ID LEFT JOIN ProcesosGeneradores pg ON r.ProcesoGeneradorID = pg.ID LEFT JOIN Residuos rs ON r.ResiduoID = rs.ID LEFT JOIN Presentaciones p ON r.PresentacionID = p.ID LEFT JOIN Gestores g ON r.GestorID = g.ID LEFT JOIN MecanismosEntrega me ON r.MecanismoID = me.ID")
   })
 
   output$registros <- renderDT({
@@ -797,18 +912,22 @@ server <- function(input, output, session) {
         title = "Editar Registro",
         fluidRow(class = "form-row-spaced",
           column(4,
+            tags$label("Código", style="color:#E6F0FA;"),
+            tags$label(registro$Codigo, style="color:#E6F0FA;")
+          ),
+          column(4,
             tags$label("Fecha del Registro", style="color:#E6F0FA;"),
             tags$label(as.character(as.Date(registro$FechaRegistro)), style="color:#E6F0FA;")
           ),
-          column(4, selectInput("edit_ciudad", "Ciudad", choices = c("", dbGetQuery(con, "SELECT Nombre FROM Ciudades")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM Ciudades WHERE ID = %d", registro$CiudadID))[[1]])),
-          column(4, selectInput("edit_establecimiento", "Establecimiento", choices = c("", dbGetQuery(con, "SELECT Nombre FROM Establecimientos")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM Establecimientos WHERE ID = %d", registro$EstablecimientoID))[[1]]))
+          column(4, selectInput("edit_ciudad", "Ciudad", choices = c("", dbGetQuery(con, "SELECT Nombre FROM Ciudades")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM Ciudades WHERE ID = %d", registro$CiudadID))[[1]]))
         ),
         fluidRow(class = "form-row-spaced",
+          column(4, selectInput("edit_establecimiento", "Establecimiento", choices = c("", dbGetQuery(con, "SELECT Nombre FROM Establecimientos")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM Establecimientos WHERE ID = %d", registro$EstablecimientoID))[[1]])),
           column(4, selectInput("edit_proceso", "Proceso Generador", choices = c("", dbGetQuery(con, "SELECT Nombre FROM ProcesosGeneradores")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM ProcesosGeneradores WHERE ID = %d", registro$ProcesoGeneradorID))[[1]])),
-          column(4, selectInput("edit_residuo", "Residuo", choices = c("", dbGetQuery(con, "SELECT Residuo FROM Residuos")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Residuo FROM Residuos WHERE ID = %d", registro$ResiduoID))[[1]])),
-          column(4, textInput("edit_descripcion_registro", "Descripción", value = registro$Descripcion))
+          column(4, selectInput("edit_residuo", "Residuo", choices = c("", dbGetQuery(con, "SELECT Residuo FROM Residuos")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Residuo FROM Residuos WHERE ID = %d", registro$ResiduoID))[[1]]))
         ),
         fluidRow(class = "form-row-spaced",
+          column(4, textInput("edit_descripcion_registro", "Descripción", value = registro$Descripcion)),
           column(4,
             tags$label("Descripción del Residuo", style="color:#E6F0FA;"),
             uiOutput("edit_descripcion_ui")
@@ -816,24 +935,27 @@ server <- function(input, output, session) {
           column(4,
             tags$label("Tipo de Residuo", style="color:#E6F0FA;"),
             uiOutput("edit_tipo_residuo_ui")
-          ),
-          column(4,
-            tags$label("Nivel de Peligro", style="color:#E6F0FA;"),
-            uiOutput("edit_grado_peligro_ui")
           )
         ),
         fluidRow(class = "form-row-spaced",
           column(4,
+            tags$label("Nivel de Peligro", style="color:#E6F0FA;"),
+            uiOutput("edit_grado_peligro_ui")
+          ),
+          column(4,
             tags$label("Estado de la Materia", style="color:#E6F0FA;"),
             uiOutput("edit_estado_materia_ui")
           ),
-          column(4, numericInput("edit_cantidad", "Cantidad (Kg)", value = registro$Cantidad, min = 0, step = 0.1)),
-          column(4, selectInput("edit_presentacion", "Presentación", choices = c("", dbGetQuery(con, "SELECT Nombre FROM Presentaciones")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM Presentaciones WHERE ID = %d", registro$PresentacionID))[[1]]))
+          column(4, numericInput("edit_cantidad", "Cantidad (Kg)", value = registro$Cantidad, min = 0, step = 0.1))
         ),
         fluidRow(class = "form-row-spaced",
+          column(4, selectInput("edit_presentacion", "Presentación", choices = c("", dbGetQuery(con, "SELECT Nombre FROM Presentaciones")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM Presentaciones WHERE ID = %d", registro$PresentacionID))[[1]])),
           column(4, selectInput("edit_gestor", "Gestor", choices = c("", dbGetQuery(con, "SELECT Nombre FROM Gestores")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM Gestores WHERE ID = %d", registro$GestorID))[[1]])),
-          column(4, selectInput("edit_mecanismo", "Mecanismo de Entrega", choices = c("", dbGetQuery(con, "SELECT Nombre FROM MecanismosEntrega")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM MecanismosEntrega WHERE ID = %d", registro$MecanismoID))[[1]])),
-          column(4, selectInput("edit_certificado", "Certificado", choices = c("Pendiente", "Recibido", "No Aplicable"), selected = registro$Certificado))
+          column(4, selectInput("edit_mecanismo", "Mecanismo de Entrega", choices = c("", dbGetQuery(con, "SELECT Nombre FROM MecanismosEntrega")[[1]]), selected = dbGetQuery(con, sprintf("SELECT Nombre FROM MecanismosEntrega WHERE ID = %d", registro$MecanismoID))[[1]]))
+        ),
+        fluidRow(class = "form-row-spaced",
+          column(4, selectInput("edit_certificado", "Certificado", choices = c("Pendiente", "Recibido", "No Aplicable"), selected = registro$Certificado)),
+          column(8)
         ),
         fluidRow(
           column(12,
@@ -900,17 +1022,32 @@ server <- function(input, output, session) {
     })
   })
 
-
-
-  # Borrar registro
+  # Borrar registro con respaldo
   observeEvent(input$borrar_registro_modal, {
-    id <- dbGetQuery(con, sprintf("SELECT ID FROM Registros LIMIT 1 OFFSET %d", input$registros_rows_selected - 1))[[1]]
-    dbExecute(con, sprintf("DELETE FROM Registros WHERE ID = %d", id))
-    output$edit_msg <- renderUI({ NULL })
-    showNotification("Registro eliminado con éxito", type = "warning", duration = 3)
-    later::later(function() { output$edit_msg <- renderUI({ NULL }) }, 2)
-    removeModal()
-    registros_trigger(registros_trigger() + 1)
+    selected_row <- input$registros_rows_selected
+    if (length(selected_row)) {
+      registro <- dbGetQuery(con, sprintf("SELECT * FROM Registros WHERE ID = %d", dbGetQuery(con, sprintf("SELECT ID FROM Registros LIMIT 1 OFFSET %d", selected_row - 1))[[1]]))
+      
+      # Insertar en RespaldoRegistros
+      backup_query <- sprintf(
+        "INSERT INTO RespaldoRegistros (Codigo, FechaRegistro, CiudadID, EstablecimientoID, ProcesoGeneradorID, ResiduoID, Descripcion, Cantidad, PresentacionID, GestorID, MecanismoID, Certificado, CreatedAt, UpdatedAt, DeletedAt) VALUES ('%s', '%s', %d, %d, %d, %d, '%s', %f, %d, %d, %d, '%s', '%s', '%s', CURRENT_TIMESTAMP)",
+        registro$Codigo, registro$FechaRegistro, registro$CiudadID, registro$EstablecimientoID, registro$ProcesoGeneradorID,
+        registro$ResiduoID, registro$Descripcion, registro$Cantidad, registro$PresentacionID, registro$GestorID,
+        registro$MecanismoID, registro$Certificado, registro$CreatedAt, registro$UpdatedAt
+      )
+      
+      tryCatch({
+        dbExecute(con, backup_query)
+        dbExecute(con, sprintf("DELETE FROM Registros WHERE ID = %d", registro$ID))
+        output$edit_msg <- renderUI({ NULL })
+        showNotification("Registro eliminado con éxito y respaldado", type = "warning", duration = 3)
+        later::later(function() { output$edit_msg <- renderUI({ NULL }) }, 2)
+        removeModal()
+        registros_trigger(registros_trigger() + 1)
+      }, error = function(e) {
+        showNotification(sprintf("Error al eliminar el registro: %s", e$message), type = "error", duration = 5)
+      })
+    }
   })
 
   # Agregar dimensión única
@@ -1092,7 +1229,22 @@ server <- function(input, output, session) {
     bar_agg <- aggregate(Cantidad ~ TipoResiduo, data = datos, sum, na.rm = TRUE)
     bar_agg$Toneladas <- bar_agg$Cantidad / 1000
     bar_agg <- bar_agg[order(bar_agg$Toneladas), ]
-    list(trend = trend_agg, pareto = pareto_agg, bar = bar_agg)
+    
+    # Aggregation for doughnut chart (tons by city)
+    ciudad_agg <- aggregate(Cantidad ~ Ciudad, data = datos, sum, na.rm = TRUE)
+    ciudad_agg$Toneladas <- ciudad_agg$Cantidad / 1000
+    ciudad_agg <- ciudad_agg[order(ciudad_agg$Toneladas, decreasing = TRUE), ]
+    
+    # Corrected aggregation for stacked bar chart (tons by establishment and waste type)
+    stacked_agg <- aggregate(Cantidad ~ Establecimiento + TipoResiduo, data = datos, FUN = sum, na.rm = TRUE)
+    stacked_agg$Toneladas <- stacked_agg$Cantidad / 1000  # Matches SQL (SUM(R.Cantidad)/1000)
+    stacked_agg <- stacked_agg[!is.na(stacked_agg$Establecimiento) & !is.na(stacked_agg$TipoResiduo), ] # Remove NA values
+    
+    # Debugging: Print the aggregated data to verify
+    print("Stacked Aggregation:")
+    print(stacked_agg)
+    
+    list(trend = trend_agg, pareto = pareto_agg, bar = bar_agg, ciudad = ciudad_agg, stacked = stacked_agg)
   })
 
   # KPIs
@@ -1164,6 +1316,100 @@ server <- function(input, output, session) {
 
   # Gráficos del Tablero
 
+
+  output$dashboard_doughnut_ciudad <- renderPlotly({
+    agg <- dashboard_agg()$ciudad
+    if (is.null(agg) || nrow(agg) == 0 || all(is.na(agg$Ciudad)) || all(is.na(agg$Toneladas))) {
+      output$doughnut_ciudad_empty <- renderUI({
+        tags$div(class = "alert alert-info", "No hay datos disponibles para el gráfico de proporción por ciudad.")
+      })
+      return(NULL)
+    }
+    output$doughnut_ciudad_empty <- renderUI({ NULL })
+    
+    n <- length(unique(agg$Ciudad))
+    colors <- viridisLite::viridis(n)
+    
+    # Prepare text colors based on city
+    text_colors <- ifelse(agg$Ciudad == "Medellín", "#000000", "#E6F0FA")
+    hover_colors <- ifelse(agg$Ciudad == "Medellín", "black", "white")
+    
+    # Calculate total tons for percentage
+    total_tons <- sum(agg$Toneladas)
+    
+    p <- plot_ly(data = agg, labels = ~Ciudad, values = ~Toneladas, type = "pie", hole = 0.4,
+                textinfo = "label+percent+value", texttemplate = "%{label}<br>%{percent:.1%}<br>%{value:.2f} Ton",
+                textposition = "inside",
+                textfont = list(color = ~text_colors),  # Dynamic text color per segment
+                hoverinfo = "text",
+                hovertext = ~paste0("<span style='color:", hover_colors, "'>",
+                                    "Ciudad: ", Ciudad, "<br>",
+                                    "Porcentaje: ", round(Toneladas / total_tons * 100, 1), "%<br>",
+                                    "Toneladas: ", round(Toneladas, 2), " Ton</span>"),
+                marker = list(colors = colors, line = list(color = "#162C40", width = 1)),
+                showlegend = FALSE)
+    
+    p <- p %>% layout(
+      title = list(text = "Proporción de Toneladas por Ciudad", font = list(color = "#E6F0FA", size = 12), xanchor = "left", x = 0.02),
+      plot_bgcolor = "#162C40",
+      paper_bgcolor = "#162C40",
+      margin = list(l = 50, r = 50, t = 50, b = 50),
+      hovermode = "closest",
+      hoverlabel = list(font = list(color = "#FFFFFF"))  # Default, overridden by hovertext
+    )
+    p
+  })
+
+
+  output$dashboard_stacked_establecimiento <- renderPlotly({
+    agg <- dashboard_agg()$stacked
+    if (is.null(agg) || nrow(agg) == 0 || all(is.na(agg$Establecimiento)) || all(is.na(agg$Toneladas))) {
+      output$stacked_establecimiento_empty <- renderUI({
+        tags$div(class = "alert alert-info", "No hay datos disponibles para el gráfico de residuos por establecimiento.")
+      })
+      return(NULL)
+    }
+    output$stacked_establecimiento_empty <- renderUI({ NULL })
+    
+    # Calculate total tons per establishment for sorting
+    total_tons_per_estab <- aggregate(Toneladas ~ Establecimiento, data = agg, sum, na.rm = TRUE)
+    total_tons_per_estab <- total_tons_per_estab[order(-total_tons_per_estab$Toneladas), ]
+    ordered_estabs <- total_tons_per_estab$Establecimiento
+    
+    # Order the agg data based on the sorted establishments
+    agg$Establecimiento <- factor(agg$Establecimiento, levels = ordered_estabs)
+    
+    unique_tipos <- unique(agg$TipoResiduo)
+    n <- length(unique_tipos)
+    colors <- viridisLite::viridis(n)
+    
+    p <- plot_ly()
+    for (i in seq_along(unique_tipos)) {
+      tipo <- unique_tipos[i]
+      data_tipo <- agg[agg$TipoResiduo == tipo, ]
+      p <- p %>% add_trace(data = data_tipo, x = ~Establecimiento, y = ~Toneladas, type = "bar",
+                          name = tipo, marker = list(color = colors[i]),
+                          text = ~ifelse(Toneladas > 0, paste(round(Toneladas, 2), "Ton"), ""),
+                          textposition = "outside",  # Labels outside
+                          textangle = 0,  # Rotate text 180 degrees
+                          textfont = list(size = 8, color = "#E6F0FA"),  # White labels, size 8
+                          hoverinfo = "text",
+                          hovertext = ~paste("Tipo de Residuo:", TipoResiduo, "<br>Toneladas:", round(Toneladas, 2), "Ton"))
+    }
+    p <- p %>% layout(
+      title = list(text = "Toneladas de Residuos por Establecimiento y Tipo", font = list(color = "#E6F0FA", size = 12), xanchor = "left", x = 0.02),
+      xaxis = list(title = "", tickfont = list(color = "#E6F0FA", size = 8), showgrid = FALSE, zeroline = FALSE, categoryorder = "array", categoryarray = ordered_estabs),
+      yaxis = list(title = "Toneladas", titlefont = list(color = "#E6F0FA", size = 10), tickfont = list(color = "#E6F0FA", size = 10), showgrid = FALSE, zeroline = FALSE),
+      barmode = "group",  # Grouped bars
+      plot_bgcolor = "#162C40",
+      paper_bgcolor = "#162C40",
+      margin = list(l = 60, r = 60, t = 50, b = 70),  # Increased margins for labels
+      hovermode = "x unified",
+      hoverlabel = list(font = list(color = "#FFFFFF")),
+      legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.2, font = list(color = "#E6F0FA", size = 8))
+    )
+    p
+  })
 
   output$dashboard_tendencia <- renderPlotly({
     agg <- dashboard_agg()$trend
@@ -1256,11 +1502,11 @@ server <- function(input, output, session) {
             title = "", 
             showgrid = FALSE, 
             zeroline = FALSE, 
-            showticklabels = FALSE,  # Esto elimina las etiquetas
-            ticks = "",             # Esto elimina las marcas de graduación
-            tickfont = list(color = "#E6F0FA", size = 8)
+            showticklabels = FALSE,  
+            ticks = "",             
+            tickfont = list(color = "#E6F0FA", size = 10)
           ),
-          yaxis = list(title = "", showgrid = FALSE, zeroline = FALSE, tickfont = list(color = "#E6F0FA", size = 8)),
+          yaxis = list(title = "", showgrid = FALSE, zeroline = FALSE, tickfont = list(color = "#E6F0FA", size = 10)),
           plot_bgcolor = "#162C40",
           paper_bgcolor = "#162C40",
           margin = list(l = 50, r = 50, t = 50, b = 50),
