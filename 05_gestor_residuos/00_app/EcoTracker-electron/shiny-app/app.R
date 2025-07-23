@@ -1286,34 +1286,51 @@ observe({
 
   output$kpi_peligrosos <- renderUI({
     datos <- dashboard_data()
-    total <- nrow(datos)
-    pct <- if (total > 0) round(100 * sum(grepl("Residuo Peligroso", datos$TipoResiduo), na.rm = TRUE) / total, 1) else 0
+    total <- sum(datos$Cantidad, na.rm = TRUE)
+    peligrosos <- sum(datos$Cantidad[grepl("Residuo Peligroso", datos$TipoResiduo, ignore.case = TRUE)], na.rm = TRUE)
+    
+    pct <- if (total > 0) round(100 * peligrosos / total, 1) else 0
+    
     tags$div(class = "kpi-box", style = "background:#E74C3C;",
-            tags$h4("% Residuos Peligrosos"),
-            tags$h2(paste0(pct, "%"))
-    )
-  })
-
-  output$kpi_no_peligrosos <- renderUI({
-    datos <- dashboard_data()
-    total <- nrow(datos)
-    pct <- if (total > 0) round(100 * sum(grepl("Residuo No Peligroso", datos$TipoResiduo), na.rm = TRUE) / total, 1) else 0
-    tags$div(class = "kpi-box", style = "background:#27AE60;",
-            tags$h4("% Residuos No Peligrosos"),
-            tags$h2(paste0(pct, "%"))
-    )
-  })
-
-  output$kpi_especiales <- renderUI({
-    datos <- dashboard_data()
-    total <- nrow(datos)
-    pct <- if (total > 0) round(100 * sum(grepl("Residuo Especial", datos$TipoResiduo), na.rm = TRUE) / total, 1) else 0
-    tags$div(class = "kpi-box", style = "background:#9B59B6;",
-            tags$h4("% Residuos Especiales"),
-            tags$h2(paste0(pct, "%"))
-    )
-  })
-
+             tags$h4("% Residuos Peligrosos"),
+             tags$h2(paste0(pct, "%"))
+  )})
+    
+    output$kpi_no_peligrosos <- renderUI({
+      datos <- dashboard_data()
+      total <- sum(datos$Cantidad, na.rm = TRUE)
+      no_peligrosos <- sum(
+        datos$Cantidad[
+          grepl("Residuo No Peligroso", datos$TipoResiduo, ignore.case = TRUE)
+        ], 
+        na.rm = TRUE
+      )
+      
+      pct <- if (total > 0) round(100 * no_peligrosos / total, 1) else 0
+      
+      tags$div(
+        class = "kpi-box", 
+        style = "background:#27AE60;",
+        tags$h4("% Residuos No Peligrosos"),
+        tags$h2(paste0(pct, "%"))
+      )
+    })
+    
+    output$kpi_especiales <- renderUI({
+      datos <- dashboard_data()
+      total <- sum(datos$Cantidad, na.rm = TRUE)
+      especiales <- sum(datos$Cantidad[grepl("Residuo Especial", datos$TipoResiduo, ignore.case = TRUE)], na.rm = TRUE)
+      
+      pct <- if (total > 0) round(100 * especiales / total, 1) else 0
+      
+      tags$div(
+        class = "kpi-box", 
+        style = "background:#9B59B6;",
+        tags$h4("% Residuos Especiales"),
+        tags$h2(paste0(pct, "%"))
+      )
+    })
+    
   # Gráficos del Tablero
 
 
