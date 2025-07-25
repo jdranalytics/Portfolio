@@ -153,7 +153,7 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE:   [!
 |------------------------------|-------------------------------------------|
 | **Lenguajes**                | Python, R, DAX, M, SQL                       |
 | **Productividad**            | Excel, Visual Basic Applications (VBA), PowerApps, Power Automate, Apache Airflow, AI Generativa, KNIME    |
-| **Bases de Datos y Nubes**   | Access, SQL Server, MySQL, Google Cloud, BigQuery, MS Fabric, Snowflake |
+| **Bases de Datos y Nubes**   | Access, SQL Server, MySQL, SQLite, Google Cloud, BigQuery, MS Fabric, Snowflake |
 | **Herramientas BI**          | Power BI, Tableau, Looker Studio, Shiny, Streamlit        |
 
 ## 📬 Contacto
