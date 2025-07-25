@@ -1,0 +1,95 @@
+{
+  "name": "shiny-electron-app",
+  "version": "1.0.0",
+  "description": "Your vision, our intelligence",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "shiny",
+    "electron",
+    "r",
+    "desktop"
+  ],
+  "author": {
+    "name": "JDR Analytics",
+    "email": "ing.jd.rojas@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.3",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.jdranalytics.shinyapp",
+    "productName": "EcoTracker",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "icons/**/*",
+	  "loading.html",
+      "node_modules/ps-node/**/*",
+      "!node_modules/**/*.md",
+      "!node_modules/**/*.ts",
+      "!node_modules/**/*.map",
+      "!dist/**"
+    ],
+    "extraResources": [
+      {
+        "from": "R-Portable/",
+        "to": "R-Portable",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "shiny-app/",
+        "to": "shiny-app",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "dashboard/",
+        "to": "dashboard",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "resources/",
+        "to": "resources",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "icons/JDR.ico",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "asar": true
+  },
+  "dependencies": {
+    "ps-node": "^0.1.6"
+  }
+}
