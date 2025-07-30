@@ -175,4 +175,4 @@ PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE: [![A
 #### Todos los videos demostrativos
 <!-- La misma tabla exacta que en la sección en inglés -->
 
-⭐️ If you like my work, leave a star on this repo! | ⭐️ ¡Si te gusta mi trabajo, déjame una estrella en este repo!
+⭐️ If you like my work, leave a star on this repo! | ¡Si te gusta mi trabajo, déjame una estrella en este repo!
