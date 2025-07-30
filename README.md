@@ -19,7 +19,7 @@ TO EFFICIENTLY ANALYZE THE CONTENT, VISIT: [![Ask DeepWiki](https://deepwiki.com
 - **📁 04_beverages_sales_analytics**: Project developed with synthetic data. Includes Python and SQL with backend in Snowflake and visualizations in Tableau
 - **📁 05_gestor_residuos**: Waste management system development project made with R + Shiny and packaged with Electron. This project consists of a full-stack solution with SQLite and contains a predefined Power BI dashboard to take data from the application
 
-### 🛠 Tools 
+### 🛠 Tools & Technologies
 
 | Category      | Tools                                                                 |
 |---------------|-----------------------------------------------------------------------|
