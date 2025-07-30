@@ -17,7 +17,7 @@ TO EFFICIENTLY ANALYZE THE CONTENT, VISIT: [![Ask DeepWiki](https://deepwiki.com
 - **📁 02_credit_risk_analytics**: Projects developed with synthetic data. Includes Python with orchestrations using Apache Airflow, R, AI Assistant with Streamlit, Power Apps + Power Automate and Shiny App. Backends in MS Fabric and BigQuery
 - **📁 03_people_analytics**: Project developed with synthetic data. Includes Python with orchestrations using Apache Airflow, backend in MSSQL and visualization with Power BI
 - **📁 04_beverages_sales_analytics**: Project developed with synthetic data. Includes Python and SQL with backend in Snowflake and visualizations in Tableau
-- **📁 05_gestor_de_residuos**: Waste management system development project made with R + Shiny and packaged with Electron. This project consists of a full-stack solution with SQLite and contains a predefined Power BI dashboard to take data from the application
+- **📁 05_gestor_residuos**: Waste management system development project made with R + Shiny and packaged with Electron. This project consists of a full-stack solution with SQLite and contains a predefined Power BI dashboard to take data from the application
 
 ### 🎥 Video Portfolio
 [Full Video Portfolio](https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko)
