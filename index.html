@@ -6,24 +6,25 @@
   <title>JDR Analytics Portfolio</title>
   <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6/babel.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #002143;
       color: #e0e7ff;
       font-family: 'Inter', sans-serif;
+      margin: 0;
     }
     .neon-text {
-      text-shadow: 0 0 5px #3b82f6, 0 0 10px #3b82f6, 0 0 20px #3b82f6;
+      text-shadow: 0 0 5px #60a5fa, 0 0 8px #60a5fa, 0 0 12px #60a5fa;
     }
     .neon-border {
-      box-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6;
+      box-shadow: 0 0 8px #60a5fa, 0 0 12px #60a5fa;
     }
     .video-grid iframe {
       width: 100%;
       height: 200px;
-      border: 2px solid #3b82f6;
+      border: 2px solid #60a5fa;
       border-radius: 8px;
     }
     @media (min-width: 768px) {
@@ -35,7 +36,7 @@
 </head>
 <body>
   <div id="root"></div>
-  <script type="text/babel">
+  <script>
     const { useState } = React;
 
     const App = () => {
@@ -80,7 +81,7 @@
           techTable: [
             { category: 'Lenguajes', tools: 'Python, R, SQL, VBA' },
             { category: 'Orquestación', tools: 'Apache Airflow' },
-            { category: 'Visualización', tools: 'Power BI, Tableau, Shiny Apps, Looker'},
+            { category: 'Visualización', tools: 'Power BI, Tableau, Shiny Apps, Looker' },
             { category: 'Backend', tools: 'MS Fabric, BigQuery, Snowflake, MSSQL, MySQL, SQLite' },
             { category: 'Frameworks', tools: 'Streamlit, Power Apps, Power Automate, KNIME, Electron' }
           ],
@@ -150,145 +151,300 @@
         { id: 'Ucr4E4u9S_g', title: 'Multi-Scenario Forecast with KNIME' }
       ];
 
-      return (
-        <div className="min-h-screen">
-          {/* Header */}
-          <header className="py-6 px-4 md:px-8 bg-[#002143] sticky top-0 z-10 neon-border">
-            <div className="max-w-7xl mx-auto flex justify-between items-center">
-              <img src="https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Logo%20JDR%20Analytics.png" alt="JDR Analytics Logo" className="h-20" />
-              <button
-                onClick={toggleLanguage}
-                className="bg-[#3b82f6] text-white px-4 py-2 rounded-lg hover:bg-[#2563eb] neon-text"
-              >
-                {content[language].toggleLang}
-              </button>
-            </div>
-          </header>
-
-          {/* Hero Section */}
-          <section className="py-12 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto text-center">
-              <img src="https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/banner%202.png" alt="Main Banner" className="w-full max-w-4xl mx-auto rounded-lg neon-border mb-6" />
-              <h1 className="text-4xl md:text-5xl font-bold neon-text mb-4">{content[language].welcome} </h1>
-              <p className="text-lg md:text-xl max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: content[language].intro }} />
-            </div>
-          </section>
-
-          {/* About Section */}
-          <section className="py-12 px-4 md:px-8 bg-[#1e1e2e]">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold neon-text mb-6">{content[language].about}</h2>
-              <ul className="list-disc list-inside space-y-2">
-                {content[language].aboutText.map((item, idx) => (
-                  <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
-                ))}
-              </ul>
-            </div>
-          </section>
-
-          {/* Work Section */}
-          <section className="py-12 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold neon-text mb-6">{content[language].work}</h2>
-              <p className="mb-4">{content[language].workText}</p>
-              <div className="flex flex-col md:flex-row gap-4">
-                <a href="https://github.com/jdranalytics/portfolio" className="bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text">
-                  {content[language].portfolioLink}
-                </a>
-                <a href="https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko" className="bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text">
-                  {content[language].videoPortfolioLink}
-                </a>
-              </div>
-            </div>
-          </section>
-
-          {/* Portfolio Section */}
-          <section className="py-12 px-4 md:px-8 bg-[#1e1e2e]">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold neon-text mb-6">{content[language].whatFind}</h2>
-              <p dangerouslySetInnerHTML={{ __html: content[language].whatFindText }} />
-              <p className="mt-4">{content[language].deepWiki} <a href="https://deepwiki.com/jdranalytics/Portfolio" className="text-[#3b82f6] hover:underline">DeepWiki</a></p>
-              <h3 className="text-2xl font-bold neon-text mt-8 mb-4">{content[language].folders}</h3>
-              <ul className="list-disc list-inside space-y-2">
-                {content[language].folderList.map((folder, idx) => (
-                  <li key={idx}><strong>{folder.name}</strong>: {folder.desc}</li>
-                ))}
-              </ul>
-            </div>
-          </section>
-
-          {/* Technologies Section */}
-          <section className="py-12 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold neon-text mb-6">{content[language].technologies}</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="bg-[#3b82f6]">
-                      <th className="p-4">Category</th>
-                      <th className="p-4">Tools</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {content[language].techTable.map((row, idx) => (
-                      <tr key={idx} className="border-b border-[#3b82f6]">
-                        <td className="p-4">{row.category}</td>
-                        <td className="p-4">{row.tools}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-
-          {/* Videos Section */}
-          <section className="py-12 px-4 md:px-8 bg-[#1e1e2e]">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold neon-text mb-6">{content[language].videos}</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 video-grid">
-                {videos.map((video) => (
-                  <div key={video.id} className="text-center">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${video.id}`}
-                      title={video.title}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
-                    <p className="mt-2">{video.title}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* Contact Section */}
-          <section className="py-12 px-4 md:px-8">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-3xl font-bold neon-text mb-6">{content[language].contact}</h2>
-              <p><a href="mailto:ing.jd.rojas@gmail.com" className="text-[#3b82f6] hover:underline">{content[language].contactEmail}</a></p>
-            </div>
-          </section>
-
-          {/* Fun Fact Section */}
-          <section className="py-12 px-4 md:px-8 bg-[#1e1e2e]">
-            <div className="max-w-7xl mx-auto text-center">
-              <h2 className="text-3xl font-bold neon-text mb-6">{content[language].funFact}</h2>
-              <p dangerouslySetInnerHTML={{ __html: content[language].funFactText }} />
-              <img src="https://media.giphy.com/media/lSVL6vdhdZVPW/giphy.gif" alt="Coffee GIF" className="mx-auto mt-4 w-48 rounded-lg neon-border" />
-            </div>
-          </section>
-
-          {/* Footer */}
-          <footer className="py-6 px-4 md:px-8 bg-[#0a0c1c] text-center neon-border">
-            <p>{content[language].star} ⭐️</p>
-          </footer>
-        </div>
+      return React.createElement(
+        'div',
+        { className: 'min-h-screen' },
+        // Header
+        React.createElement(
+          'header',
+          { className: 'py-6 px-4 md:px-8 bg-[#002143] sticky top-0 z-10 neon-border' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto flex justify-between items-center' },
+            React.createElement('img', {
+              src: 'https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Logo%20JDR%20Analytics.png',
+              alt: 'JDR Analytics Logo',
+              className: 'h-22'
+            }),
+            React.createElement(
+              'button',
+              {
+                onClick: toggleLanguage,
+                className: 'bg-[#3b82f6] text-white px-4 py-2 rounded-lg hover:bg-[#2563eb] neon-text'
+              },
+              content[language].toggleLang
+            )
+          )
+        ),
+        // Hero Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto text-center' },
+            React.createElement('img', {
+              src: 'https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/banner%202.png',
+              alt: 'Main Banner',
+              className: 'w-full max-w-4xl mx-auto rounded-lg neon-border mb-6'
+            }),
+            React.createElement(
+              'h1',
+              { className: 'text-4xl md:text-5xl font-bold neon-text mb-4' },
+              content[language].welcome 
+            ),
+            React.createElement('p', {
+              className: 'text-lg md:text-xl max-w-3xl mx-auto',
+              dangerouslySetInnerHTML: { __html: content[language].intro }
+            })
+          )
+        ),
+        // About Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].about
+            ),
+            React.createElement(
+              'ul',
+              { className: 'list-disc list-inside space-y-2' },
+              content[language].aboutText.map((item, idx) =>
+                React.createElement('li', {
+                  key: idx,
+                  dangerouslySetInnerHTML: { __html: item }
+                })
+              )
+            )
+          )
+        ),
+        // Work Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].work
+            ),
+            React.createElement(
+              'p',
+              { className: 'mb-4' },
+              content[language].workText
+            ),
+            React.createElement(
+              'div',
+              { className: 'flex flex-col md:flex-row gap-4' },
+              React.createElement(
+                'a',
+                {
+                  href: 'https://github.com/jdranalytics/portfolio',
+                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text'
+                },
+                content[language].portfolioLink
+              ),
+              React.createElement(
+                'a',
+                {
+                  href: 'https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko',
+                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text'
+                },
+                content[language].videoPortfolioLink
+              )
+            )
+          )
+        ),
+        // Portfolio Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].whatFind
+            ),
+            React.createElement('p', {
+              dangerouslySetInnerHTML: { __html: content[language].whatFindText }
+            }),
+            React.createElement(
+              'p',
+              { className: 'mt-4' },
+              content[language].deepWiki,
+              ' ',
+              React.createElement(
+                'a',
+                {
+                  href: 'https://deepwiki.com/jdranalytics/Portfolio',
+                  className: 'text-[#3b82f6] hover:underline'
+                },
+                'DeepWiki'
+              )
+            ),
+            React.createElement(
+              'h3',
+              { className: 'text-2xl font-bold neon-text mt-8 mb-4' },
+              content[language].folders
+            ),
+            React.createElement(
+              'ul',
+              { className: 'list-disc list-inside space-y-2' },
+              content[language].folderList.map((folder, idx) =>
+                React.createElement(
+                  'li',
+                  { key: idx },
+                  React.createElement('strong', null, folder.name),
+                  ': ',
+                  folder.desc
+                )
+              )
+            )
+          )
+        ),
+        // Technologies Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].technologies
+            ),
+            React.createElement(
+              'div',
+              { className: 'overflow-x-auto' },
+              React.createElement(
+                'table',
+                { className: 'w-full text-left border-collapse' },
+                React.createElement(
+                  'thead',
+                  null,
+                  React.createElement(
+                    'tr',
+                    { className: 'bg-[#3b82f6]' },
+                    React.createElement('th', { className: 'p-4' }, 'Category'),
+                    React.createElement('th', { className: 'p-4' }, 'Tools')
+                  )
+                ),
+                React.createElement(
+                  'tbody',
+                  null,
+                  content[language].techTable.map((row, idx) =>
+                    React.createElement(
+                      'tr',
+                      { key: idx, className: 'border-b border-[#60a5fa]' },
+                      React.createElement('td', { className: 'p-4' }, row.category),
+                      React.createElement('td', { className: 'p-4' }, row.tools)
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        // Videos Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].videos
+            ),
+            React.createElement(
+              'div',
+              { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 video-grid' },
+              videos.map((video) =>
+                React.createElement(
+                  'div',
+                  { key: video.id, className: 'text-center' },
+                  React.createElement('iframe', {
+                    src: `https://www.youtube.com/embed/${video.id}`,
+                    title: video.title,
+                    frameBorder: '0',
+                    allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+                    allowFullScreen: true
+                  }),
+                  React.createElement('p', { className: 'mt-2' }, video.title)
+                )
+              )
+            )
+          )
+        ),
+        // Contact Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].contact
+            ),
+            React.createElement(
+              'p',
+              null,
+              React.createElement(
+                'a',
+                {
+                  href: 'mailto:ing.jd.rojas@gmail.com',
+                  className: 'text-[#3b82f6] hover:underline'
+                },
+                content[language].contactEmail
+              )
+            )
+          )
+        ),
+        // Fun Fact Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto text-center' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].funFact
+            ),
+            React.createElement('p', {
+              dangerouslySetInnerHTML: { __html: content[language].funFactText }
+            }),
+            React.createElement('img', {
+              src: 'https://media.giphy.com/media/lSVL6vdhdZVPW/giphy.gif',
+              alt: 'Coffee GIF',
+              className: 'mx-auto mt-4 w-48 rounded-lg neon-border'
+            })
+          )
+        ),
+        // Footer
+        React.createElement(
+          'footer',
+          { className: 'py-6 px-4 md:px-8 bg-[#002143] text-center neon-border' },
+          React.createElement('p', null, content[language].star + ' ⭐️')
+        )
       );
     };
 
-    ReactDOM.render(<App />, document.getElementById('root'));
+    ReactDOM.render(React.createElement(App), document.getElementById('root'));
   </script>
 </body>
 </html>
