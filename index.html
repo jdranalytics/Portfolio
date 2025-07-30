@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Daniel Rojas - Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #2196F3; /* A nice bright blue */
+            --dark-blue: #1976D2; /* A darker shade for accents */
+            --light-blue: #BBDEFB; /* A very light blue for backgrounds */
+            --accent-blue: #03A9F4; /* Another blue for variety */
+            --text-dark: #333;
+            --text-light: #f4f4f4;
+            --section-bg-light: rgba(255, 255, 255, 0.9);
+            --section-bg-dark: rgba(0, 0, 0, 0.7);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, var(--light-blue), var(--primary-blue));
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: var(--section-bg-light);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--light-blue);
+        }
+
+        header h1 {
+            color: var(--dark-blue);
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .main-banner {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            font-size: 2em;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: var(--dark-blue);
+            font-size: 1.5em;
+            margin-top: 25px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5em;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '•';
+            color: var(--primary-blue);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        a {
+            color: var(--dark-blue);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-blue);
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .fun-facts {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed var(--light-blue);
+        }
+
+        .fun-facts img {
+            max-width: 150px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .portfolio-section {
+            background-color: var(--section-bg-light);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 180px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures images cover the area */
+            display: block;
+        }
+
+        .portfolio-item a {
+            padding: 15px;
+            display: block;
+            color: var(--text-dark);
+            text-decoration: none;
+        }
+
+        .portfolio-item a:hover {
+            text-decoration: underline;
+        }
+
+        .portfolio-item p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+            padding-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--dark-blue);
+            color: var(--text-light);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://drive.google.com/uc?export=view&id=1iLeRV4tXXIduFMTH0RmMDW8J8I0iTHUx" alt="Banner Principal | Main Banner" class="main-banner">
+            <h1>¡Bienvenidos a mi guarida! | Welcome to my lair! 👨‍💻📈💡</h1>
+        </header>
+
+        <section id="about">
+            <h2>Español</h2>
+            <p>Hola, mi nombre es <strong>José Daniel Rojas</strong>, soy un ingeniero químico apasionado de la <strong>analítica, ciencia de datos y sobre todo dar soluciones con impacto positivo</strong>. Este es mi rincón en GitHub, donde experimento, aprendo y comparto proyectos llevados a cabo con el fin de crear soluciones que generen valor.</p>
+            <p>Durante años, trabajé en <strong>laboratorios de ensayo, metrología química e ingeniería de procesos</strong> en la industria petrolera y petroquímica, evaluando y optimizando los procesos de las diferentes áreas de las plantas. Pero mi enfoque evolucionó: pasé de modelar operaciones unitarias y metrología química a aplicar mis habilidades en nuevos horizontes. Hoy, me dedico a transformar datos en soluciones, desde la optimización de <strong>procesos administrativos</strong> en diversas industrias para mejorar la productividad hasta el análisis de <strong>CSAT scores</strong> en el sector BPO (Contact Centers), identificando <em>pain points</em> clave para mejorar la satisfacción del cliente y los resultados operativos.</p>
+
+            <h3>🚀 Sobre mí</h3>
+            <ul>
+                <li>🏭 Ingeniero con <strong>amplia trayectoria</strong> en procesos, laboratorio y apasionado por los datos.</li>
+                <li>💡 Explorando ideas para la <strong>evaluación y mejora</strong> de procesos en diferentes contextos.</li>
+            </ul>
+
+            <h3>📊 Mi trabajo</h3>
+            <p>Parte de mi trabajo puede verse en mi repositorio público principal y en mi portafolio en video:</p>
+            <ul>
+                <li><strong><a href="https://github.com/ringoquimico/portfolio" target="_blank">Portfolio</a></strong> <br>Una colección de algunos de mis proyectos con data sintética (siempre protegiendo la confidencialidad).</li>
+                <li><strong><a href="https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko" target="_blank">Portafolio en Video</a></strong> <br>Demostraciones visuales de algunos proyectos y habilidades en acción (YOUTUBE).</li>
+            </ul>
+
+            <h3>📬 Contacto</h3>
+            <div class="contact-info">
+                <p><a href="mailto:ing.jd.rojas@gmail.com">ing.jd.rojas@gmail.com</a></p>
+            </div>
+
+            <div class="fun-facts">
+                <h3>☝🏻😌 Datos Curiosos</h3>
+                <p>"No hay código que no venga acompañado de un buen café... ☕"</p>
+                <img src="https://media.giphy.com/media/lSVL6vdhdZVPW/giphy.gif" alt="Cafecito">
+            </div>
+        </section>
+
+        <hr style="margin: 40px 0; border: 0; border-top: 1px dashed var(--primary-blue);">
+
+        <section id="english-section">
+            <h2>English</h2>
+            <p>Hello, I'm <strong>José Daniel Rojas</strong>, a chemical engineer passionate about <strong>analytics, data science and above all creating solutions with positive impact</strong>. This is my GitHub corner where I experiment, learn and share projects aimed at creating valuable solutions.</p>
+            <p>For years, I worked in <strong>testing laboratories, chemical metrology and process engineering</strong> in the oil and petrochemical industry, evaluating and optimizing processes across different plant areas. But my focus evolved: from modeling unit operations and chemical metrology to applying my skills in new horizons. Today, I dedicate myself to transforming data into solutions, from optimizing <strong>administrative processes</strong> across various industries to improve productivity, to analyzing <strong>CSAT scores</strong> in the BPO sector (Contact Centers), identifying key <em>pain points</em> to enhance customer satisfaction and operational results.</p>
+
+            <h3>🚀 About Me</h3>
+            <ul>
+                <li>🏭 Engineer with <strong>extensive experience</strong> in processes, laboratories, and passionate about data.</li>
+                <li>💡 Exploring ideas for <strong>evaluation and improvement</strong> of processes in different contexts.</li>
+            </ul>
+
+            <h3>📊 My Work</h3>
+            <p>Some of my work can be seen in my main public repository and video portfolio:</p>
+            <ul>
+                <li><strong><a href="https://github.com/ringoquimico/portfolio" target="_blank">Portfolio</a></strong> <br>A collection of some of my projects with synthetic data (always protecting confidentiality).</li>
+                <li><strong><a href="https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko" target="_blank">Video Portfolio</a></strong> <br>Visual demonstrations of some projects and skills in action (YOUTUBE).</li>
+            </ul>
+
+            <h3>📬 Contact</h3>
+            <div class="contact-info">
+                <p><a href="mailto:ing.jd.rojas@gmail.com">ing.jd.rojas@gmail.com</a></p>
+            </div>
+
+            <div class="fun-facts">
+                <h3>☝🏻😌 Fun Facts</h3>
+                <p>"No code comes without a good coffee... ☕"</p>
+                <img src="https://media.giphy.com/media/lSVL6vdhdZVPW/giphy.gif" alt="Coffee">
+            </div>
+        </section>
+
+        <section id="portfolio-details" class="portfolio-section">
+            <img src="https://drive.google.com/uc?export=view&id=1xzcguRioCBEcwwiqWm6c_1QdPPe9oKOA" alt="Main Banner" class="main-banner">
+            <h1><strong>Welcome to My Portfolio</strong> | <strong>Bienvenidos a mi Portafolio</strong> 📈💡</h1>
+
+            <h2>English</h2>
+            <h3>🚀 What You'll Find Here</h3>
+            <p>A collection of my projects featuring:</p>
+            <ul>
+                <li>Models and visualizations prepared with synthetic data (Always respecting confidentiality by avoiding real data)</li>
+                <li>These projects cover different business contexts and technologies according to needs. Main contexts include contact centers, credit risk, human resources, project management, asset management, restaurant management, sales force, regulatory compliance, among others.</li>
+            </ul>
+            <p>TO EFFICIENTLY ANALYZE THE CONTENT, VISIT: <a href="https://deepwiki.com/ringoquimico/Portfolio" target="_blank"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" style="height: 20px; vertical-align: middle;"></a></p>
+
+            <h3>📂 Portfolio Folders</h3>
+            <ul>
+                <li><strong>📁 00_orchestrations</strong>: Orchestrations with Python and Apache Airflow</li>
+                <li><strong>📁 01_call_center_analytics</strong>: Projects developed with synthetic data. Includes Python with orchestrations using Apache Airflow, R and Shiny Apps</li>
+                <li><strong>📁 02_credit_risk_analytics</strong>: Projects developed with synthetic data. Includes Python with orchestrations using Apache Airflow, R, AI Assistant with Streamlit, Power Apps + Power Automate and Shiny App. Backends in MS Fabric and BigQuery</li>
+                <li><strong>📁 03_people_analytics</strong>: Project developed with synthetic data. Includes Python with orchestrations using Apache Airflow, backend in MSSQL and visualization with Power BI</li>
+                <li><strong>📁 04_beverages_sales_analytics</strong>: Project developed with synthetic data. Includes Python and SQL with backend in Snowflake and visualizations in Tableau</li>
+                <li><strong>📁 05_gestor_residuos</strong>: Waste management system development project made with R + Shiny and packaged with Electron. This project consists of a full-stack solution with SQLite and contains a predefined Power BI dashboard to take data from the application</li>
+            </ul>
+
+            <h3>🎥 Video Portfolio</h3>
+            <p><a href="https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko" target="_blank">Full Video Portfolio</a></p>
+
+            <h4>All Video Demonstrations</h4>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/F6nQHX9olDo" target="_blank">
+                        <img src="https://img.youtube.com/vi/F6nQHX9olDo/0.jpg" alt="ContactApp 1.0.0 (R-Shiny)">
+                        <p>ContactApp 1.0.0 (R-Shiny)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/sBOK6WT38JU" target="_blank">
+                        <img src="https://img.youtube.com/vi/sBOK6WT38JU/0.jpg" alt="My.RCManager v.2.0 (Excel-Access-VBA)">
+                        <p>My.RCManager v.2.0 (Excel-Access-VBA)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/BLnl0NhVNxM" target="_blank">
+                        <img src="https://img.youtube.com/vi/BLnl0NhVNxM/0.jpg" alt="Apetitoso Restaurant (Power Apps+Automate)">
+                        <p>Apetitoso Restaurant (Power Apps+Automate)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/QmfAVkEeaIM" target="_blank">
+                        <img src="https://img.youtube.com/vi/QmfAVkEeaIM/0.jpg" alt="Automated Offer Module (Excel-VBA)">
+                        <p>Automated Offer Module (Excel-VBA)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/F13BJ3i9ilA" target="_blank">
+                        <img src="https://img.youtube.com/vi/F13BJ3i9ilA/0.jpg" alt="C5Manager v.1.0 (Excel+Access-VBA)">
+                        <p>C5Manager v.1.0 (Excel+Access-VBA)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/-2JqTp_lcnU" target="_blank">
+                        <img src="https://img.youtube.com/vi/-2JqTp_lcnU/0.jpg" alt="Airflow+BigQuery+ML (Risk Analysis)">
+                        <p>Airflow+BigQuery+ML (Risk Analysis)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/M9p6LTcJkOs" target="_blank">
+                        <img src="https://img.youtube.com/vi/M9p6LTcJkOs/0.jpg" alt="Excel-VBA | Power BI | Looker | Tableau">
+                        <p>Excel-VBA | Power BI | Looker | Tableau</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/eBS8BfjXEGM" target="_blank">
+                        <img src="https://img.youtube.com/vi/eBS8BfjXEGM/0.jpg" alt="MySQL Ingestion Process (AIRFLOW)">
+                        <p>MySQL Ingestion Process (AIRFLOW)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/1c89jF3w34I" target="_blank">
+                        <img src="https://img.youtube.com/vi/1c89jF3w34I/0.jpg" alt="Risk Analysis (Shiny App+AI Assistant)">
+                        <p>Risk Analysis (Shiny App+AI Assistant)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/fZLZ_h8GHq8" target="_blank">
+                        <img src="https://img.youtube.com/vi/fZLZ_h8GHq8/0.jpg" alt="AI Assistant for Risk Analysis (Python+Streamlit)">
+                        <p>AI Assistant for Risk Analysis (Python+Streamlit)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/NSE45GBUpMA" target="_blank">
+                        <img src="https://img.youtube.com/vi/NSE45GBUpMA/0.jpg" alt="Machine Learning in MS Fabric (Risk Analysis)">
+                        <p>Machine Learning in MS Fabric (Risk Analysis)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/XQCd9OFM0-E" target="_blank">
+                        <img src="https://img.youtube.com/vi/XQCd9OFM0-E/0.jpg" alt="RiskApp (Power Apps+Automate+Fabric)">
+                        <p>RiskApp (Power Apps+Automate+Fabric)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/uMMLRSNm-CI" target="_blank">
+                        <img src="https://img.youtube.com/vi/uMMLRSNm-CI/0.jpg" alt="Employee Turnover Prediction">
+                        <p>Employee Turnover Prediction</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/lSItMMBnrYU" target="_blank">
+                        <img src="https://img.youtube.com/vi/lSItMMBnrYU/0.jpg" alt="Overtime Hours Forecast">
+                        <p>Overtime Hours Forecast</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/9gq6r8f0UNg" target="_blank">
+                        <img src="https://img.youtube.com/vi/9gq6r8f0UNg/0.jpg" alt="Employee Survey Sentiment Analysis">
+                        <p>Employee Survey Sentiment Analysis</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/iQ_a5aLrg8Q" target="_blank">
+                        <img src="https://img.youtube.com/vi/iQ_a5aLrg8Q/0.jpg" alt="Multi-Scenario Forecast with Snowflake ML">
+                        <p>Multi-Scenario Forecast with Snowflake ML</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/rLLFMvlWqzE" target="_blank">
+                        <img src="https://img.youtube.com/vi/rLLFMvlWqzE/0.jpg" alt="Clustering in Snowflake with Notebook">
+                        <p>Clustering in Snowflake with Notebook</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/Ucr4E4u9S_g" target="_blank">
+                        <img src="https://img.youtube.com/vi/Ucr4E4u9S_g/0.jpg" alt="Multi-Scenario Forecast with KNIME">
+                        <p>Multi-Scenario Forecast with KNIME</p>
+                    </a>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px;">⭐️ If you like my work, leave a star on this repo! | ¡Si te gusta mi trabajo, déjame una estrella en este repo!</p>
+
+            <hr style="margin: 40px 0; border: 0; border-top: 1px dashed var(--primary-blue);">
+
+            <h2>Español</h2>
+            <h3>🚀 ¿Qué encontrarás aquí?</h3>
+            <p>Una colección de mis proyectos:</p>
+            <ul>
+                <li>Modelos y visualizaciones preparados con data sintética (Siempre respetando la confidencialidad evitando usar datos reales)</li>
+                <li>Estos proyectos abarcan diferentes contextos de negocio y diferentes tecnologías según las necesidades. Dentro de los principales contextos se encuentran: contact centers, riesgo crediticio, recursos humanos, gestión de proyectos, gestión de activos, gestión de restaurantes, fuerza de ventas, regulatoria, entre otros.</li>
+            </ul>
+            <p>PARA ANALIZAR DE FORMA EFICIENTE EL CONTENIDO, INGRESA AL SIGUIENTE ENLACE: <a href="https://deepwiki.com/ringoquimico/Portfolio" target="_blank"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" style="height: 20px; vertical-align: middle;"></a></p>
+
+            <h3>📂 Carpetas del portafolio</h3>
+            <ul>
+                <li><strong>📁 00_orchestrations</strong>: Orquestaciones con Python y Apache Airflow</li>
+                <li><strong>📁 01_call_center_analytics</strong>: Proyectos desarrollados con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R y Shiny Apps</li>
+                <li><strong>📁 02_credit_risk_analytics</strong>: Proyectos desarrollados con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R, Asistente AI con Streamlit, Power Apps + Power Automate y Shiny App. Backends en MS Fabric y BigQuery</li>
+                <li><strong>📁 03_people_analytics</strong>: Proyecto desarrollado con data sintética. Incluye Python con orquestaciones usando Apache Airflow, backend en MSSQL y visualización con Power BI</li>
+                <li><strong>📁 04_beverages_sales_analytics</strong>: Proyecto desarrollado con data sintética. Incluye Python y SQL con backend en Snowflake y visualizaciones en Tableau</li>
+                <li><strong>📁 05_gestor_de_residuos</strong>: Proyecto de desarrollo de un gestor de residuos realizado con R + Shiny y empacado con Electron. Este proyecto consiste en una solución full-stack con SQLite y contiene un tablero en Power BI ya predefinido para tomar datos de la aplicación</li>
+            </ul>
+
+            <h3>🎥 Portafolio en Video Completo</h3>
+            <p><a href="https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko" target="_blank">Portafolio completo en YouTube</a></p>
+
+            <h4>Todos los videos demostrativos</h4>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/F6nQHX9olDo" target="_blank">
+                        <img src="https://img.youtube.com/vi/F6nQHX9olDo/0.jpg" alt="ContactApp 1.0.0 (R-Shiny)">
+                        <p>ContactApp 1.0.0 (R-Shiny)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/sBOK6WT38JU" target="_blank">
+                        <img src="https://img.youtube.com/vi/sBOK6WT38JU/0.jpg" alt="My.RCManager v.2.0 (Excel-Access-VBA)">
+                        <p>My.RCManager v.2.0 (Excel-Access-VBA)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/BLnl0NhVNxM" target="_blank">
+                        <img src="https://img.youtube.com/vi/BLnl0NhVNxM/0.jpg" alt="Apetitoso Restaurant (Power Apps+Automate)">
+                        <p>Apetitoso Restaurant (Power Apps+Automate)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/QmfAVkEeaIM" target="_blank">
+                        <img src="https://img.youtube.com/vi/QmfAVkEeaIM/0.jpg" alt="Automated Offer Module (Excel-VBA)">
+                        <p>Automated Offer Module (Excel-VBA)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/F13BJ3i9ilA" target="_blank">
+                        <img src="https://img.youtube.com/vi/F13BJ3i9ilA/0.jpg" alt="C5Manager v.1.0 (Excel+Access-VBA)">
+                        <p>C5Manager v.1.0 (Excel+Access-VBA)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/-2JqTp_lcnU" target="_blank">
+                        <img src="https://img.youtube.com/vi/-2JqTp_lcnU/0.jpg" alt="Airflow+BigQuery+ML (Risk Analysis)">
+                        <p>Airflow+BigQuery+ML (Risk Analysis)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/M9p6LTcJkOs" target="_blank">
+                        <img src="https://img.youtube.com/vi/M9p6LTcJkOs/0.jpg" alt="Excel-VBA | Power BI | Looker | Tableau">
+                        <p>Excel-VBA | Power BI | Looker | Tableau</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/eBS8BfjXEGM" target="_blank">
+                        <img src="https://img.youtube.com/vi/eBS8BfjXEGM/0.jpg" alt="MySQL Ingestion Process (AIRFLOW)">
+                        <p>MySQL Ingestion Process (AIRFLOW)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/1c89jF3w34I" target="_blank">
+                        <img src="https://img.youtube.com/vi/1c89jF3w34I/0.jpg" alt="Risk Analysis (Shiny App+AI Assistant)">
+                        <p>Risk Analysis (Shiny App+AI Assistant)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/fZLZ_h8GHq8" target="_blank">
+                        <img src="https://img.youtube.com/vi/fZLZ_h8GHq8/0.jpg" alt="AI Assistant for Risk Analysis (Python+Streamlit)">
+                        <p>AI Assistant for Risk Analysis (Python+Streamlit)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/NSE45GBUpMA" target="_blank">
+                        <img src="https://img.youtube.com/vi/NSE45GBUpMA/0.jpg" alt="Machine Learning in MS Fabric (Risk Analysis)">
+                        <p>Machine Learning in MS Fabric (Risk Analysis)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/XQCd9OFM0-E" target="_blank">
+                        <img src="https://img.youtube.com/vi/XQCd9OFM0-E/0.jpg" alt="RiskApp (Power Apps+Automate+Fabric)">
+                        <p>RiskApp (Power Apps+Automate+Fabric)</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/uMMLRSNm-CI" target="_blank">
+                        <img src="https://img.youtube.com/vi/uMMLRSNm-CI/0.jpg" alt="Employee Turnover Prediction">
+                        <p>Employee Turnover Prediction</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/lSItMMBnrYU" target="_blank">
+                        <img src="https://img.youtube.com/vi/lSItMMBnrYU/0.jpg" alt="Overtime Hours Forecast">
+                        <p>Overtime Hours Forecast</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/9gq6r8f0UNg" target="_blank">
+                        <img src="https://img.youtube.com/vi/9gq6r8f0UNg/0.jpg" alt="Employee Survey Sentiment Analysis">
+                        <p>Employee Survey Sentiment Analysis</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/iQ_a5aLrg8Q" target="_blank">
+                        <img src="https://img.youtube.com/vi/iQ_a5aLrg8Q/0.jpg" alt="Multi-Scenario Forecast with Snowflake ML">
+                        <p>Multi-Scenario Forecast with Snowflake ML</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/rLLFMvlWqzE" target="_blank">
+                        <img src="https://img.youtube.com/vi/rLLFMvlWqzE/0.jpg" alt="Clustering in Snowflake with Notebook">
+                        <p>Clustering in Snowflake with Notebook</p>
+                    </a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://youtu.be/Ucr4E4u9S_g" target="_blank">
+                        <img src="https://img.youtube.com/vi/Ucr4E4u9S_g/0.jpg" alt="Multi-Scenario Forecast with KNIME">
+                        <p>Multi-Scenario Forecast with KNIME</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>⭐️ ¡Echa un vistazo a mi repo y déjame una estrella si mi trabajo es de tu agrado! | Take a look at my repo and leave a star if you like my work!</p>
+        </footer>
+    </div>
+</body>
+</html>
