@@ -156,7 +156,7 @@
           {/* Header */}
           <header className="py-6 px-4 md:px-8 bg-[#0a0c1c] sticky top-0 z-10 neon-border">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
-              <img src="https://drive.google.com/uc?export=view&id=168HQWtUO0tL9uCUJgtBLQVocswP40V1d" alt="JDR Analytics Logo" className="h-12" />
+              <img src="https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Logo%20JDR%20Analytics.png" alt="JDR Analytics Logo" className="h-12" />
               <button
                 onClick={toggleLanguage}
                 className="bg-[#3b82f6] text-white px-4 py-2 rounded-lg hover:bg-[#2563eb] neon-text"
@@ -169,7 +169,7 @@
           {/* Hero Section */}
           <section className="py-12 px-4 md:px-8">
             <div className="max-w-7xl mx-auto text-center">
-              <img src="https://drive.google.com/uc?export=view&id=1iLeRV4tXXIduFMTH0RmMDW8J8I0iTHUx" alt="Main Banner" className="w-full max-w-4xl mx-auto rounded-lg neon-border mb-6" />
+              <img src="https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Banner.png" alt="Main Banner" className="w-full max-w-4xl mx-auto rounded-lg neon-border mb-6" />
               <h1 className="text-4xl md:text-5xl font-bold neon-text mb-4">{content[language].welcome} 👨‍💻📈💡</h1>
               <p className="text-lg md:text-xl max-w-3xl mx-auto" dangerouslySetInnerHTML={{ __html: content[language].intro }} />
             </div>
@@ -206,14 +206,14 @@
           {/* Portfolio Section */}
           <section className="py-12 px-4 md:px-8 bg-[#1e1e2e]">
             <div className="max-w-7xl mx-auto">
-              <img src="https://drive.google.com/uc?export=view&id=1xzcguRioCBEcwwiqWm6c_1QdPPe9oKOA" alt="Portfolio Banner" className="w-full max-w-4xl mx-auto rounded-lg neon-border mb-6" />
+              <img src="https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/banner%202.png" alt="Portfolio Banner" className="w-full max-w-4xl mx-auto rounded-lg neon-border mb-6" />
               <h2 className="text-3xl font-bold neon-text mb-6">{content[language].whatFind}</h2>
               <p dangerouslySetInnerHTML={{ __html: content[language].whatFindText }} />
               <p className="mt-4">{content[language].deepWiki} <a href="https://deepwiki.com/jdranalytics/Portfolio" className="text-[#3b82f6] hover:underline">DeepWiki</a></p>
               <h3 className="text-2xl font-bold neon-text mt-8 mb-4">{content[language].folders}</h3>
               <ul className="list-disc list-inside space-y-2">
-                {content[language].folderList.map((folder, idx) => (
-                  <li key={idx}><strong>{folder.name}</strong>: {folder.desc}</li>
+                {content[language].aboutText.map((item, idx) => (
+                  <li key={idx} dangerouslySetInnerHTML={{ __html: item }} />
                 ))}
               </ul>
             </div>
