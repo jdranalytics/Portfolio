@@ -9,7 +9,7 @@ A collection of my projects featuring:
 * Models and visualizations prepared with synthetic data (Always respecting confidentiality by avoiding real data)
 * These projects cover different business contexts and technologies according to needs. Main contexts include contact centers, credit risk, human resources, project management, asset management, restaurant management, sales force, regulatory compliance, among others.
 
-TO EFFICIENTLY ANALYZE THE CONTENT, VISIT: [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ringoquimico/Portfolio)
+TO EFFICIENTLY ANALYZE THE CONTENT, VISIT: [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/jdranalytics/Portfolio)
 
 ### 📂 Portfolio Folders
 - **📁 00_orchestrations**: Orchestrations with Python and Apache Airflow
