@@ -6,11 +6,14 @@
   <title>JDR Analytics Portfolio</title>
   <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+  <!-- Note: For production, replace this CDN with a local Tailwind CSS installation using PostCSS or Tailwind CLI as per https://tailwindcss.com/docs/installation -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #002143;
+      background: linear-gradient(rgba(0, 33, 67, 0.7), rgba(30, 41, 59, 0.7)), url('https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Neural%20Pattern.jpg');
+      background-repeat: repeat;
+      background-size: auto; /* Maintains original image proportions for mosaic effect */
       color: #e0e7ff;
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -31,6 +34,26 @@
       .video-grid iframe {
         height: 250px;
       }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(59, 130, 246, 0.2);
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #60a5fa;
+    }
+    th {
+      background-color: #3b82f6;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(30, 41, 59, 0.5);
+    }
+    tr:hover {
+      background-color: rgba(96, 165, 250, 0.3);
     }
   </style>
 </head>
@@ -79,12 +102,15 @@
           star: '¡Si te gusta mi trabajo, déjame una estrella en este repo!',
           technologies: 'Tecnologías Usadas',
           techTable: [
-            { category: 'Lenguajes', tools: 'Python, R, SQL, VBA' },
-            { category: 'Orquestación', tools: 'Apache Airflow' },
-            { category: 'Servicios de Nube', tools: 'Google Cloud Platform, AWS S3' },
-            { category: 'Visualización', tools: 'Power BI, Tableau, Shiny Apps, Looker' },
-            { category: 'Backend', tools: 'MS Fabric, BigQuery, Snowflake, MSSQL, MySQL, SQLite' },
-            { category: 'Frameworks', tools: 'Streamlit, Power Apps, Power Automate, KNIME, Electron' },
+            { category: 'Lenguajes', tools: 'Python, R, SQL, DAX, FX', use: 'Procesamiento de datos, análisis estadístico' },
+            { category: 'Orquestación', tools: 'Apache Airflow', use: 'Automatización de datos, flujo de trabajo' },
+            { category: 'Almacenes de Datos en la Nube', tools: 'Snowflake, BigQuery (GCP), AWS S3, MS Fabric', use: 'Almacenamiento de datos escalable y ML' },
+            { category: 'Bases de Datos', tools: 'MSSQL Server, MySQL, SQLite', use: 'Gestión de datos local' },
+            { category: 'BI Empresarial', tools: 'Tableau, Power BI, Looker', use: 'Tableros ejecutivos y reportes' },
+            { category: 'Aplicaciones Web', tools: 'Shiny Apps, Streamlit', use: 'Interfaces analíticas interactivas' },
+            { category: 'Plataformas Low-Code', tools: 'Power Apps, Power Automate, KNIME', use: 'Automatización de procesos empresariales' },
+            { category: 'Aplicaciones de Escritorio', tools: 'Electron', use: 'Despliegue de escritorio multiplataforma' },
+            { category: 'Aprendizaje Automático', tools: 'Scikit-Learn, Prophet, XGBoost, Snowflake ML, BigQuery ML', use: 'Predicciones y análisis predictivos' }
           ],
           toggleLang: 'Switch to English'
         },
@@ -120,13 +146,15 @@
           star: 'If you like my work, leave a star on this repo!',
           technologies: 'Technologies Used',
           techTable: [
-            { category: 'Languages', tools: 'Python, R, SQL, VBA' },
-            { category: 'Orchestration', tools: 'Apache Airflow' },
-            { category: 'Cloud Service', tools: 'Google Cloud Platform, AWS S3' },
-            { category: 'Visualization', tools: 'Power BI, Tableau, Shiny Apps, Looker' },
-            { category: 'Backend', tools: 'MS Fabric, BigQuery, Snowflake, MSSQL, MySQL, SQLite' },
-            { category: 'Frameworks', tools: 'Streamlit, Power Apps, Power Automate, KNIME, Electron' }
-
+            { category: 'Languages', tools: 'Python, R, SQL, DAX, FX', use: 'Data processing, statistical analysis' },
+            { category: 'Orchestration', tools: 'Apache Airflow', use: 'Data pipeline automation, workflow' },
+            { category: 'Cloud Data Warehouses', tools: 'Snowflake, BigQuery (GCP), AWS S3, MS Fabric', use: 'Scalable data storage and ML' },
+            { category: 'Databases', tools: 'MSSQL Server, MySQL, SQLite', use: 'Local data management' },
+            { category: 'Enterprise BI', tools: 'Tableau, Power BI', use: 'Executive dashboards and reporting' },
+            { category: 'Web Applications', tools: 'Shiny Apps, Streamlit', use: 'Interactive analytics interfaces' },
+            { category: 'Low-Code Platforms', tools: 'Power Apps, Power Automate, KNIME', use: 'Business process automation' },
+            { category: 'Desktop Applications', tools: 'Electron', use: 'Cross-platform desktop deployment' },
+            { category: 'Machine Learning', tools: 'Scikit-Learn, Prophet, XGBoost, Snowflake ML, BigQuery ML', use: 'Forecasting and predictive analytics' }
           ],
           toggleLang: 'Cambiar a Español'
         }
@@ -336,9 +364,10 @@
                   null,
                   React.createElement(
                     'tr',
-                    { className: 'bg-[#3b82f6]' },
-                    React.createElement('th', { className: 'p-4' }, 'Category'),
-                    React.createElement('th', { className: 'p-4' }, 'Tools')
+                    null,
+                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Technology Category' : 'Tecnología'),
+                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Tools & Platforms' : 'Herramientas y Plataformas'),
+                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Primary Use Cases' : 'Casos de Uso Principales')
                   )
                 ),
                 React.createElement(
@@ -349,7 +378,8 @@
                       'tr',
                       { key: idx, className: 'border-b border-[#60a5fa]' },
                       React.createElement('td', { className: 'p-4' }, row.category),
-                      React.createElement('td', { className: 'p-4' }, row.tools)
+                      React.createElement('td', { className: 'p-4' }, row.tools),
+                      React.createElement('td', { className: 'p-4' }, row.use)
                     )
                   )
                 )
