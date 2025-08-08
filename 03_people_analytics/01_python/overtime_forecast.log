@@ -1,0 +1,2816 @@
+2025-08-08 12:58:21,577 - INFO - Conexión a la base de datos exitosa
+2025-08-08 12:58:24,165 - INFO - Datos cargados: 438 registros
+2025-08-08 12:58:24,538 - WARNING - Outliers detectados en Finance:
+     work_date department  total_overtime
+288 2024-12-01    Finance          219.91
+300 2024-12-15    Finance          224.39
+2025-08-08 12:58:24,554 - WARNING - Outliers detectados en HR:
+     work_date department  total_overtime
+301 2024-12-15         HR          257.14
+355 2025-02-16         HR          132.46
+2025-08-08 12:58:24,580 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+14  2024-01-14  Inventory          174.03
+134 2024-06-02  Inventory          344.03
+272 2024-11-10  Inventory          197.40
+290 2024-12-01  Inventory          417.73
+296 2024-12-08  Inventory          420.43
+302 2024-12-15  Inventory          427.05
+332 2025-01-19  Inventory          165.09
+2025-08-08 12:58:24,597 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+3   2023-12-31         IT          144.26
+15  2024-01-14         IT          143.43
+135 2024-06-02         IT          278.60
+303 2024-12-15         IT          304.75
+2025-08-08 12:58:24,634 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+154 2024-06-23  Marketing          327.00
+292 2024-12-01  Marketing          334.16
+304 2024-12-15  Marketing          339.43
+2025-08-08 12:58:24,653 - WARNING - Outliers detectados en Sales:
+     work_date department  total_overtime
+137 2024-06-02      Sales          362.88
+143 2024-06-09      Sales          442.26
+155 2024-06-23      Sales          354.37
+293 2024-12-01      Sales          525.83
+299 2024-12-08      Sales          472.26
+305 2024-12-15      Sales          471.93
+311 2024-12-22      Sales          397.47
+317 2024-12-29      Sales          355.57
+2025-08-08 12:58:24,871 - INFO - Analizando departamento: Finance
+2025-08-08 12:58:24,900 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            148.861644
+std                              23.179031
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             161.900000
+max                             201.120000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:58:27,282 - INFO - Gráfico de serie temporal renderizado para Finance
+2025-08-08 12:58:29,044 - INFO - Gráficos de distribución renderizados para Finance
+2025-08-08 12:58:31,556 - INFO - Gráfico de descomposición estacional renderizado para Finance
+2025-08-08 12:58:31,577 - INFO - Problemas de índice para Finance: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 12:58:31,579 - INFO - Analizando departamento: HR
+2025-08-08 12:58:31,600 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.410822
+std                              22.865674
+min                             140.610000
+25%                             183.020000
+50%                             196.640000
+75%                             210.730000
+max                             245.600000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:58:32,404 - INFO - Gráfico de serie temporal renderizado para HR
+2025-08-08 12:58:33,438 - INFO - Gráficos de distribución renderizados para HR
+2025-08-08 12:58:35,688 - INFO - Gráfico de descomposición estacional renderizado para HR
+2025-08-08 12:58:35,692 - INFO - Problemas de índice para HR: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 12:58:35,694 - INFO - Analizando departamento: Inventory
+2025-08-08 12:58:35,716 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            267.778904
+std                              24.906281
+min                             201.110000
+25%                             256.550000
+50%                             267.490000
+75%                             282.490000
+max                             334.470000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      4.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:58:36,512 - INFO - Gráfico de serie temporal renderizado para Inventory
+2025-08-08 12:58:37,589 - INFO - Gráficos de distribución renderizados para Inventory
+2025-08-08 12:58:40,540 - INFO - Gráfico de descomposición estacional renderizado para Inventory
+2025-08-08 12:58:40,544 - INFO - Problemas de índice para Inventory: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 12:58:40,547 - INFO - Analizando departamento: IT
+2025-08-08 12:58:40,566 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.087397
+std                              24.418686
+min                             155.200000
+25%                             194.160000
+50%                             211.460000
+75%                             223.580000
+max                             264.020000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:58:41,345 - INFO - Gráfico de serie temporal renderizado para IT
+2025-08-08 12:58:43,101 - INFO - Gráficos de distribución renderizados para IT
+2025-08-08 12:58:46,236 - INFO - Gráfico de descomposición estacional renderizado para IT
+2025-08-08 12:58:46,238 - INFO - Problemas de índice para IT: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 12:58:46,240 - INFO - Analizando departamento: Marketing
+2025-08-08 12:58:46,252 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            230.093973
+std                              30.660730
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             248.290000
+max                             313.990000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:58:47,119 - INFO - Gráfico de serie temporal renderizado para Marketing
+2025-08-08 12:58:49,265 - INFO - Gráficos de distribución renderizados para Marketing
+2025-08-08 12:58:52,089 - INFO - Gráfico de descomposición estacional renderizado para Marketing
+2025-08-08 12:58:52,092 - INFO - Problemas de índice para Marketing: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 12:58:52,096 - INFO - Analizando departamento: Sales
+2025-08-08 12:58:52,132 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            234.787671
+std                              28.125463
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             251.870000
+max                             314.420000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:58:53,126 - INFO - Gráfico de serie temporal renderizado para Sales
+2025-08-08 12:58:54,775 - INFO - Gráficos de distribución renderizados para Sales
+2025-08-08 12:58:57,538 - INFO - Gráfico de descomposición estacional renderizado para Sales
+2025-08-08 12:58:57,540 - INFO - Problemas de índice para Sales: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 12:58:57,616 - INFO - Resumen de estadísticas guardado en: EDA_Results\eda_summary_20250808_125824.csv
+2025-08-08 12:58:58,347 - INFO - Gráfico comparativo renderizado
+2025-08-08 12:59:43,507 - INFO - Conexión a la base de datos exitosa
+2025-08-08 12:59:46,488 - INFO - Datos cargados: 438 registros
+2025-08-08 12:59:46,516 - WARNING - Outliers detectados en Finance:
+     work_date department  total_overtime
+288 2024-12-01    Finance          219.91
+300 2024-12-15    Finance          224.39
+2025-08-08 12:59:46,536 - WARNING - Outliers detectados en HR:
+     work_date department  total_overtime
+301 2024-12-15         HR          257.14
+355 2025-02-16         HR          132.46
+2025-08-08 12:59:46,557 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+14  2024-01-14  Inventory          174.03
+134 2024-06-02  Inventory          344.03
+272 2024-11-10  Inventory          197.40
+290 2024-12-01  Inventory          417.73
+296 2024-12-08  Inventory          420.43
+302 2024-12-15  Inventory          427.05
+332 2025-01-19  Inventory          165.09
+2025-08-08 12:59:46,581 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+3   2023-12-31         IT          144.26
+15  2024-01-14         IT          143.43
+135 2024-06-02         IT          278.60
+303 2024-12-15         IT          304.75
+2025-08-08 12:59:46,630 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+154 2024-06-23  Marketing          327.00
+292 2024-12-01  Marketing          334.16
+304 2024-12-15  Marketing          339.43
+2025-08-08 12:59:46,718 - WARNING - Outliers detectados en Sales:
+     work_date department  total_overtime
+137 2024-06-02      Sales          362.88
+143 2024-06-09      Sales          442.26
+155 2024-06-23      Sales          354.37
+293 2024-12-01      Sales          525.83
+299 2024-12-08      Sales          472.26
+305 2024-12-15      Sales          471.93
+311 2024-12-22      Sales          397.47
+317 2024-12-29      Sales          355.57
+2025-08-08 12:59:46,737 - INFO - Analizando departamento: Finance
+2025-08-08 12:59:46,814 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            148.861644
+std                              23.179031
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             161.900000
+max                             201.120000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:59:48,243 - INFO - Gráfico de serie temporal renderizado para Finance
+2025-08-08 12:59:49,628 - INFO - Gráficos de distribución renderizados para Finance
+2025-08-08 12:59:53,053 - INFO - Gráfico de descomposición estacional renderizado para Finance
+2025-08-08 12:59:53,058 - INFO - Problemas de índice para Finance: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 12:59:53,061 - INFO - Analizando departamento: HR
+2025-08-08 12:59:53,081 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.410822
+std                              22.865674
+min                             140.610000
+25%                             183.020000
+50%                             196.640000
+75%                             210.730000
+max                             245.600000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:59:54,041 - INFO - Gráfico de serie temporal renderizado para HR
+2025-08-08 12:59:55,609 - INFO - Gráficos de distribución renderizados para HR
+2025-08-08 12:59:59,182 - INFO - Gráfico de descomposición estacional renderizado para HR
+2025-08-08 12:59:59,185 - INFO - Problemas de índice para HR: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 12:59:59,189 - INFO - Analizando departamento: Inventory
+2025-08-08 12:59:59,208 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            267.778904
+std                              24.906281
+min                             201.110000
+25%                             256.550000
+50%                             267.490000
+75%                             282.490000
+max                             334.470000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      4.000000
+Name: total_overtime, dtype: float64
+2025-08-08 12:59:59,911 - INFO - Gráfico de serie temporal renderizado para Inventory
+2025-08-08 13:00:01,160 - INFO - Gráficos de distribución renderizados para Inventory
+2025-08-08 13:00:03,895 - INFO - Gráfico de descomposición estacional renderizado para Inventory
+2025-08-08 13:00:03,899 - INFO - Problemas de índice para Inventory: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:00:03,901 - INFO - Analizando departamento: IT
+2025-08-08 13:00:03,923 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.087397
+std                              24.418686
+min                             155.200000
+25%                             194.160000
+50%                             211.460000
+75%                             223.580000
+max                             264.020000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:00:04,873 - INFO - Gráfico de serie temporal renderizado para IT
+2025-08-08 13:00:06,625 - INFO - Gráficos de distribución renderizados para IT
+2025-08-08 13:00:08,966 - INFO - Gráfico de descomposición estacional renderizado para IT
+2025-08-08 13:00:08,969 - INFO - Problemas de índice para IT: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:00:08,971 - INFO - Analizando departamento: Marketing
+2025-08-08 13:00:08,989 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            230.093973
+std                              30.660730
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             248.290000
+max                             313.990000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:00:09,929 - INFO - Gráfico de serie temporal renderizado para Marketing
+2025-08-08 13:00:11,324 - INFO - Gráficos de distribución renderizados para Marketing
+2025-08-08 13:00:13,786 - INFO - Gráfico de descomposición estacional renderizado para Marketing
+2025-08-08 13:00:13,791 - INFO - Problemas de índice para Marketing: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:00:13,794 - INFO - Analizando departamento: Sales
+2025-08-08 13:00:13,805 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            234.787671
+std                              28.125463
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             251.870000
+max                             314.420000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:00:14,865 - INFO - Gráfico de serie temporal renderizado para Sales
+2025-08-08 13:00:16,274 - INFO - Gráficos de distribución renderizados para Sales
+2025-08-08 13:00:18,595 - INFO - Gráfico de descomposición estacional renderizado para Sales
+2025-08-08 13:00:18,598 - INFO - Problemas de índice para Sales: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:00:18,603 - INFO - Resumen de estadísticas guardado en: EDA_Results\eda_summary_20250808_125946.csv
+2025-08-08 13:00:19,919 - INFO - Gráfico comparativo renderizado
+2025-08-08 13:01:34,835 - INFO - Iniciando análisis de estacionariedad y estacionalidad
+2025-08-08 13:01:34,846 - INFO - Generando ACF/PACF para Finance con 20 lags
+2025-08-08 13:01:36,698 - INFO - Gráficos ACF/PACF renderizados para Finance
+2025-08-08 13:01:36,713 - INFO - Estacionariedad para Finance: p-value=0.000000, estacionario=True
+2025-08-08 13:01:36,715 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 13:01:36,720 - INFO - Generando ACF/PACF para HR con 20 lags
+2025-08-08 13:01:37,956 - INFO - Gráficos ACF/PACF renderizados para HR
+2025-08-08 13:01:37,980 - INFO - Estacionariedad para HR: p-value=0.042635, estacionario=True
+2025-08-08 13:01:37,988 - INFO - Período estacional detectado para total_overtime: 17, picos significativos: [(5, 0.265556536703454), (17, 0.28543952986970467)]
+2025-08-08 13:01:38,002 - INFO - Generando ACF/PACF para Inventory con 20 lags
+2025-08-08 13:01:39,392 - INFO - Gráficos ACF/PACF renderizados para Inventory
+2025-08-08 13:01:39,405 - INFO - Estacionariedad para Inventory: p-value=0.000000, estacionario=True
+2025-08-08 13:01:39,409 - INFO - Período estacional detectado para total_overtime: 1, picos significativos: [(1, 0.24599616329022858)]
+2025-08-08 13:01:39,433 - INFO - Generando ACF/PACF para IT con 20 lags
+2025-08-08 13:01:40,713 - INFO - Gráficos ACF/PACF renderizados para IT
+2025-08-08 13:01:40,747 - INFO - Estacionariedad para IT: p-value=0.000001, estacionario=True
+2025-08-08 13:01:40,754 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 13:01:40,786 - INFO - Generando ACF/PACF para Marketing con 20 lags
+2025-08-08 13:01:41,978 - INFO - Gráficos ACF/PACF renderizados para Marketing
+2025-08-08 13:01:42,002 - INFO - Estacionariedad para Marketing: p-value=0.000000, estacionario=True
+2025-08-08 13:01:42,020 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 13:01:42,034 - INFO - Generando ACF/PACF para Sales con 20 lags
+2025-08-08 13:01:43,620 - INFO - Gráficos ACF/PACF renderizados para Sales
+2025-08-08 13:01:43,636 - INFO - Estacionariedad para Sales: p-value=0.000033, estacionario=True
+2025-08-08 13:01:43,638 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 13:01:43,854 - INFO - Análisis de estacionariedad y estacionalidad completado
+2025-08-08 13:06:56,816 - INFO - Conexión a la base de datos exitosa
+2025-08-08 13:06:59,375 - INFO - Datos cargados: 438 registros
+2025-08-08 13:06:59,398 - WARNING - Outliers detectados en Finance:
+     work_date department  total_overtime
+288 2024-12-01    Finance          219.91
+300 2024-12-15    Finance          224.39
+2025-08-08 13:06:59,420 - WARNING - Outliers detectados en HR:
+     work_date department  total_overtime
+301 2024-12-15         HR          257.14
+355 2025-02-16         HR          132.46
+2025-08-08 13:06:59,439 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+14  2024-01-14  Inventory          174.03
+134 2024-06-02  Inventory          344.03
+272 2024-11-10  Inventory          197.40
+290 2024-12-01  Inventory          417.73
+296 2024-12-08  Inventory          420.43
+302 2024-12-15  Inventory          427.05
+332 2025-01-19  Inventory          165.09
+2025-08-08 13:06:59,477 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+3   2023-12-31         IT          144.26
+15  2024-01-14         IT          143.43
+135 2024-06-02         IT          278.60
+303 2024-12-15         IT          304.75
+2025-08-08 13:06:59,495 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+154 2024-06-23  Marketing          327.00
+292 2024-12-01  Marketing          334.16
+304 2024-12-15  Marketing          339.43
+2025-08-08 13:06:59,520 - WARNING - Outliers detectados en Sales:
+     work_date department  total_overtime
+137 2024-06-02      Sales          362.88
+143 2024-06-09      Sales          442.26
+155 2024-06-23      Sales          354.37
+293 2024-12-01      Sales          525.83
+299 2024-12-08      Sales          472.26
+305 2024-12-15      Sales          471.93
+311 2024-12-22      Sales          397.47
+317 2024-12-29      Sales          355.57
+2025-08-08 13:06:59,544 - INFO - Analizando departamento: Finance
+2025-08-08 13:06:59,571 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            148.861644
+std                              23.179031
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             161.900000
+max                             201.120000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:07:00,520 - INFO - Gráfico de serie temporal renderizado para Finance
+2025-08-08 13:07:01,360 - INFO - Gráficos de distribución renderizados para Finance
+2025-08-08 13:07:04,011 - INFO - Gráfico de descomposición estacional renderizado para Finance
+2025-08-08 13:07:04,015 - INFO - Problemas de índice para Finance: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:07:04,017 - INFO - Analizando departamento: HR
+2025-08-08 13:07:04,029 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.410822
+std                              22.865674
+min                             140.610000
+25%                             183.020000
+50%                             196.640000
+75%                             210.730000
+max                             245.600000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:07:04,930 - INFO - Gráfico de serie temporal renderizado para HR
+2025-08-08 13:07:06,193 - INFO - Gráficos de distribución renderizados para HR
+2025-08-08 13:07:08,616 - INFO - Gráfico de descomposición estacional renderizado para HR
+2025-08-08 13:07:08,624 - INFO - Problemas de índice para HR: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:07:08,628 - INFO - Analizando departamento: Inventory
+2025-08-08 13:07:08,648 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            267.778904
+std                              24.906281
+min                             201.110000
+25%                             256.550000
+50%                             267.490000
+75%                             282.490000
+max                             334.470000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      4.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:07:09,422 - INFO - Gráfico de serie temporal renderizado para Inventory
+2025-08-08 13:07:11,133 - INFO - Gráficos de distribución renderizados para Inventory
+2025-08-08 13:07:12,899 - INFO - Gráfico de descomposición estacional renderizado para Inventory
+2025-08-08 13:07:12,903 - INFO - Problemas de índice para Inventory: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:07:12,905 - INFO - Analizando departamento: IT
+2025-08-08 13:07:12,918 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.087397
+std                              24.418686
+min                             155.200000
+25%                             194.160000
+50%                             211.460000
+75%                             223.580000
+max                             264.020000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:07:13,410 - INFO - Gráfico de serie temporal renderizado para IT
+2025-08-08 13:07:14,081 - INFO - Gráficos de distribución renderizados para IT
+2025-08-08 13:07:15,844 - INFO - Gráfico de descomposición estacional renderizado para IT
+2025-08-08 13:07:15,848 - INFO - Problemas de índice para IT: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:07:15,850 - INFO - Analizando departamento: Marketing
+2025-08-08 13:07:15,862 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            230.093973
+std                              30.660730
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             248.290000
+max                             313.990000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:07:16,376 - INFO - Gráfico de serie temporal renderizado para Marketing
+2025-08-08 13:07:17,047 - INFO - Gráficos de distribución renderizados para Marketing
+2025-08-08 13:07:18,616 - INFO - Gráfico de descomposición estacional renderizado para Marketing
+2025-08-08 13:07:18,620 - INFO - Problemas de índice para Marketing: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:07:18,622 - INFO - Analizando departamento: Sales
+2025-08-08 13:07:18,637 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            234.787671
+std                              28.125463
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             251.870000
+max                             314.420000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 13:07:19,186 - INFO - Gráfico de serie temporal renderizado para Sales
+2025-08-08 13:07:19,862 - INFO - Gráficos de distribución renderizados para Sales
+2025-08-08 13:07:21,167 - INFO - Gráfico de descomposición estacional renderizado para Sales
+2025-08-08 13:07:21,169 - INFO - Problemas de índice para Sales: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 13:07:21,175 - INFO - Resumen de estadísticas guardado en: EDA_Results\eda_summary_20250808_130659.csv
+2025-08-08 13:07:21,506 - INFO - Gráfico comparativo renderizado
+2025-08-08 13:07:21,663 - INFO - Iniciando análisis de estacionariedad y estacionalidad
+2025-08-08 13:07:21,670 - INFO - Generando ACF/PACF para Finance con 20 lags
+2025-08-08 13:07:22,651 - INFO - Gráficos ACF/PACF renderizados para Finance
+2025-08-08 13:07:22,660 - INFO - Estacionariedad para Finance: p-value=0.000000, estacionario=True
+2025-08-08 13:07:22,664 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 13:07:22,668 - INFO - Generando ACF/PACF para HR con 20 lags
+2025-08-08 13:07:23,400 - INFO - Gráficos ACF/PACF renderizados para HR
+2025-08-08 13:07:23,409 - INFO - Estacionariedad para HR: p-value=0.042635, estacionario=True
+2025-08-08 13:07:23,412 - INFO - Período estacional detectado para total_overtime: 17, picos significativos: [(5, 0.265556536703454), (17, 0.28543952986970467)]
+2025-08-08 13:07:23,417 - INFO - Generando ACF/PACF para Inventory con 20 lags
+2025-08-08 13:07:24,100 - INFO - Gráficos ACF/PACF renderizados para Inventory
+2025-08-08 13:07:24,109 - INFO - Estacionariedad para Inventory: p-value=0.000000, estacionario=True
+2025-08-08 13:07:24,115 - INFO - Período estacional detectado para total_overtime: 1, picos significativos: [(1, 0.24599616329022858)]
+2025-08-08 13:07:24,120 - INFO - Generando ACF/PACF para IT con 20 lags
+2025-08-08 13:07:24,670 - INFO - Gráficos ACF/PACF renderizados para IT
+2025-08-08 13:07:24,680 - INFO - Estacionariedad para IT: p-value=0.000001, estacionario=True
+2025-08-08 13:07:24,696 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 13:07:24,727 - INFO - Generando ACF/PACF para Marketing con 20 lags
+2025-08-08 13:07:25,344 - INFO - Gráficos ACF/PACF renderizados para Marketing
+2025-08-08 13:07:25,357 - INFO - Estacionariedad para Marketing: p-value=0.000000, estacionario=True
+2025-08-08 13:07:25,362 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 13:07:25,367 - INFO - Generando ACF/PACF para Sales con 20 lags
+2025-08-08 13:07:26,195 - INFO - Gráficos ACF/PACF renderizados para Sales
+2025-08-08 13:07:26,204 - INFO - Estacionariedad para Sales: p-value=0.000033, estacionario=True
+2025-08-08 13:07:26,208 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 13:07:26,234 - INFO - Análisis de estacionariedad y estacionalidad completado
+2025-08-08 13:07:26,424 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 13:07:27,196 - INFO - Usando seasonal=False para Finance con período 1
+2025-08-08 13:07:29,980 - INFO - Parámetros SARIMA para Finance: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 13:07:29,982 - WARNING - Orden nulo detectado para Finance. Usando Holt.
+2025-08-08 13:07:30,181 - INFO - Fold 0 para Finance: RMSE=49.23, MAE=43.27
+2025-08-08 13:07:30,228 - INFO - Fold 1 para Finance: RMSE=62.66, MAE=56.24
+2025-08-08 13:07:30,296 - INFO - Fold 2 para Finance: RMSE=22.04, MAE=19.05
+2025-08-08 13:07:30,345 - INFO - Fold 3 para Finance: RMSE=23.54, MAE=17.93
+2025-08-08 13:07:30,400 - INFO - Fold 4 para Finance: RMSE=27.27, MAE=22.61
+2025-08-08 13:07:30,403 - INFO - Holt entrenado para Finance: RMSE=36.95
+2025-08-08 13:07:30,915 - INFO - Usando seasonal=True para HR con período 17
+2025-08-08 13:07:41,658 - INFO - Parámetros SARIMA para HR: order=(0, 0, 0), seasonal_order=(0, 0, 1, 17)
+2025-08-08 13:07:41,856 - INFO - Prueba de Ljung-Box para HR: p-valor=0.0000
+2025-08-08 13:07:41,858 - WARNING - Residuos no son ruido blanco para HR (p-valor=0.0000)
+2025-08-08 13:07:41,859 - WARNING - SARIMA no válido para HR, usando Holt
+2025-08-08 13:07:41,928 - INFO - Fold 0 para HR: RMSE=24.18, MAE=16.21
+2025-08-08 13:07:41,966 - INFO - Fold 1 para HR: RMSE=37.87, MAE=29.91
+2025-08-08 13:07:42,008 - INFO - Fold 2 para HR: RMSE=36.53, MAE=31.00
+2025-08-08 13:07:42,049 - INFO - Fold 3 para HR: RMSE=20.41, MAE=17.25
+2025-08-08 13:07:42,089 - INFO - Fold 4 para HR: RMSE=29.42, MAE=24.54
+2025-08-08 13:07:42,091 - INFO - Holt entrenado para HR: RMSE=29.68
+2025-08-08 13:07:42,613 - INFO - Usando seasonal=False para Inventory con período 1
+2025-08-08 13:07:45,471 - INFO - Parámetros SARIMA para Inventory: order=(1, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 13:07:45,504 - INFO - Prueba de Ljung-Box para Inventory: p-valor=0.0850
+2025-08-08 13:07:45,550 - WARNING - Fold 0 para Inventory: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:45,562 - WARNING - Fold 1 para Inventory: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:45,576 - WARNING - Fold 2 para Inventory: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:45,588 - WARNING - Fold 3 para Inventory: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:45,602 - WARNING - Fold 4 para Inventory: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:45,604 - ERROR - No se pudieron calcular métricas de validación cruzada para Inventory
+2025-08-08 13:07:45,605 - WARNING - No se pudieron calcular métricas de validación cruzada para Inventory. Usando Holt.
+2025-08-08 13:07:45,740 - INFO - Fold 0 para Inventory: RMSE=30.06, MAE=22.65
+2025-08-08 13:07:45,811 - INFO - Fold 1 para Inventory: RMSE=35.48, MAE=25.63
+2025-08-08 13:07:45,851 - INFO - Fold 2 para Inventory: RMSE=24.34, MAE=18.96
+2025-08-08 13:07:45,889 - INFO - Fold 3 para Inventory: RMSE=22.55, MAE=15.91
+2025-08-08 13:07:45,933 - INFO - Fold 4 para Inventory: RMSE=24.84, MAE=21.98
+2025-08-08 13:07:45,936 - INFO - Holt entrenado para Inventory: RMSE=27.45
+2025-08-08 13:07:46,526 - INFO - Usando seasonal=False para IT con período 1
+2025-08-08 13:07:51,113 - INFO - Parámetros SARIMA para IT: order=(1, 0, 1), seasonal_order=(0, 0, 0, 0)
+2025-08-08 13:07:51,241 - INFO - Prueba de Ljung-Box para IT: p-valor=0.7994
+2025-08-08 13:07:51,255 - WARNING - Fold 0 para IT: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:51,271 - WARNING - Fold 1 para IT: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:51,283 - WARNING - Fold 2 para IT: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:51,296 - WARNING - Fold 3 para IT: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:51,308 - WARNING - Fold 4 para IT: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:51,310 - ERROR - No se pudieron calcular métricas de validación cruzada para IT
+2025-08-08 13:07:51,312 - WARNING - No se pudieron calcular métricas de validación cruzada para IT. Usando Holt.
+2025-08-08 13:07:51,381 - INFO - Fold 0 para IT: RMSE=23.45, MAE=20.18
+2025-08-08 13:07:51,419 - INFO - Fold 1 para IT: RMSE=17.37, MAE=11.34
+2025-08-08 13:07:51,468 - INFO - Fold 2 para IT: RMSE=32.13, MAE=29.31
+2025-08-08 13:07:51,524 - INFO - Fold 3 para IT: RMSE=35.22, MAE=29.33
+2025-08-08 13:07:51,566 - INFO - Fold 4 para IT: RMSE=32.84, MAE=30.06
+2025-08-08 13:07:51,569 - INFO - Holt entrenado para IT: RMSE=28.20
+2025-08-08 13:07:51,964 - INFO - Usando seasonal=False para Marketing con período 1
+2025-08-08 13:07:54,660 - INFO - Parámetros SARIMA para Marketing: order=(0, 1, 1), seasonal_order=(0, 0, 0, 0)
+2025-08-08 13:07:54,712 - INFO - Prueba de Ljung-Box para Marketing: p-valor=0.9257
+2025-08-08 13:07:54,724 - WARNING - Fold 0 para Marketing: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:54,737 - WARNING - Fold 1 para Marketing: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:54,751 - WARNING - Fold 2 para Marketing: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:54,764 - WARNING - Fold 3 para Marketing: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:54,776 - WARNING - Fold 4 para Marketing: Predicciones contienen NaN o no finitos
+2025-08-08 13:07:54,778 - ERROR - No se pudieron calcular métricas de validación cruzada para Marketing
+2025-08-08 13:07:54,780 - WARNING - No se pudieron calcular métricas de validación cruzada para Marketing. Usando Holt.
+2025-08-08 13:07:54,839 - INFO - Fold 0 para Marketing: RMSE=36.34, MAE=29.44
+2025-08-08 13:07:54,874 - INFO - Fold 1 para Marketing: RMSE=39.39, MAE=29.50
+2025-08-08 13:07:54,918 - INFO - Fold 2 para Marketing: RMSE=20.58, MAE=14.88
+2025-08-08 13:07:54,973 - INFO - Fold 3 para Marketing: RMSE=42.23, MAE=32.13
+2025-08-08 13:07:55,024 - INFO - Fold 4 para Marketing: RMSE=23.52, MAE=20.51
+2025-08-08 13:07:55,027 - INFO - Holt entrenado para Marketing: RMSE=32.41
+2025-08-08 13:07:55,447 - INFO - Usando seasonal=False para Sales con período 1
+2025-08-08 13:07:58,665 - INFO - Parámetros SARIMA para Sales: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 13:07:58,667 - WARNING - Orden nulo detectado para Sales. Usando Holt.
+2025-08-08 13:07:58,736 - INFO - Fold 0 para Sales: RMSE=32.44, MAE=22.28
+2025-08-08 13:07:58,772 - INFO - Fold 1 para Sales: RMSE=63.74, MAE=58.51
+2025-08-08 13:07:58,813 - INFO - Fold 2 para Sales: RMSE=33.35, MAE=29.51
+2025-08-08 13:07:58,857 - INFO - Fold 3 para Sales: RMSE=22.22, MAE=19.42
+2025-08-08 13:07:58,900 - INFO - Fold 4 para Sales: RMSE=15.26, MAE=12.99
+2025-08-08 13:07:58,902 - INFO - Holt entrenado para Sales: RMSE=33.40
+2025-08-08 13:07:59,320 - INFO - Entrenamiento de modelos completado
+2025-08-08 13:07:59,403 - INFO - Predicciones generadas para HOLT model
+2025-08-08 13:07:59,437 - INFO - Predicciones generadas para HOLT model
+2025-08-08 13:07:59,463 - INFO - Predicciones generadas para HOLT model
+2025-08-08 13:07:59,481 - INFO - Predicciones generadas para HOLT model
+2025-08-08 13:07:59,497 - INFO - Predicciones generadas para HOLT model
+2025-08-08 13:07:59,514 - INFO - Predicciones generadas para HOLT model
+2025-08-08 13:08:12,709 - INFO - Timestamp establecido: 2025-08-08 13:08:12.709717
+2025-08-08 13:08:12,933 - INFO - Modelo guardado para Finance (HOLT) en: Modelos Entrenados/overtime_forecast_model_Finance_holt.pkl
+2025-08-08 13:08:12,937 - INFO - Finance - Train data: len=58, mean=149.33, std=24.44
+2025-08-08 13:08:12,938 - INFO - Finance - Test data: len=15, mean=147.03, std=18.07
+2025-08-08 13:08:13,006 - INFO - Índices alineados para Finance: 15 fechas comunes
+2025-08-08 13:08:13,008 - INFO - Predicciones para Finance: min=147.52, max=149.80, mean=148.18
+2025-08-08 13:08:13,023 - INFO - Modelo guardado para HR (HOLT) en: Modelos Entrenados/overtime_forecast_model_HR_holt.pkl
+2025-08-08 13:08:13,028 - INFO - HR - Train data: len=58, mean=194.32, std=23.47
+2025-08-08 13:08:13,031 - INFO - HR - Test data: len=15, mean=199.62, std=20.55
+2025-08-08 13:08:13,106 - INFO - Índices alineados para HR: 15 fechas comunes
+2025-08-08 13:08:13,108 - INFO - Predicciones para HR: min=178.47, max=183.88, mean=180.04
+2025-08-08 13:08:13,139 - INFO - Modelo guardado para Inventory (HOLT) en: Modelos Entrenados/overtime_forecast_model_Inventory_holt.pkl
+2025-08-08 13:08:13,143 - INFO - Inventory - Train data: len=58, mean=268.28, std=26.20
+2025-08-08 13:08:13,144 - INFO - Inventory - Test data: len=15, mean=265.82, std=19.76
+2025-08-08 13:08:13,218 - INFO - Índices alineados para Inventory: 15 fechas comunes
+2025-08-08 13:08:13,221 - INFO - Predicciones para Inventory: min=281.95, max=283.31, mean=282.92
+2025-08-08 13:08:13,243 - INFO - Modelo guardado para IT (HOLT) en: Modelos Entrenados/overtime_forecast_model_IT_holt.pkl
+2025-08-08 13:08:13,247 - INFO - IT - Train data: len=58, mean=209.05, std=24.04
+2025-08-08 13:08:13,250 - INFO - IT - Test data: len=15, mean=214.11, std=26.32
+2025-08-08 13:08:13,338 - INFO - Índices alineados para IT: 15 fechas comunes
+2025-08-08 13:08:13,348 - INFO - Predicciones para IT: min=208.66, max=210.67, mean=210.08
+2025-08-08 13:08:13,375 - INFO - Modelo guardado para Marketing (HOLT) en: Modelos Entrenados/overtime_forecast_model_Marketing_holt.pkl
+2025-08-08 13:08:13,380 - INFO - Marketing - Train data: len=58, mean=226.27, std=31.05
+2025-08-08 13:08:13,383 - INFO - Marketing - Test data: len=15, mean=244.87, std=24.79
+2025-08-08 13:08:13,477 - INFO - Índices alineados para Marketing: 15 fechas comunes
+2025-08-08 13:08:13,482 - INFO - Predicciones para Marketing: min=231.19, max=231.38, mean=231.24
+2025-08-08 13:08:13,538 - INFO - Modelo guardado para Sales (HOLT) en: Modelos Entrenados/overtime_forecast_model_Sales_holt.pkl
+2025-08-08 13:08:13,543 - INFO - Sales - Train data: len=58, mean=233.72, std=30.12
+2025-08-08 13:08:13,545 - INFO - Sales - Test data: len=15, mean=238.93, std=18.73
+2025-08-08 13:08:13,649 - INFO - Índices alineados para Sales: 15 fechas comunes
+2025-08-08 13:08:13,652 - INFO - Predicciones para Sales: min=230.20, max=231.32, mean=230.52
+2025-08-08 13:08:14,437 - INFO - Conexión a la base de datos exitosa
+2025-08-08 13:08:14,438 - INFO - Conexión a la base de datos exitosa
+2025-08-08 13:08:16,461 - INFO - Predicciones y métricas guardadas exitosamente
+2025-08-08 13:08:16,646 - INFO - Conexión a la base de datos exitosa
+2025-08-08 14:21:15,182 - INFO - Conexión a la base de datos exitosa
+2025-08-08 14:21:23,373 - ERROR - Error cargando/procesando datos: Execution failed on sql 'SELECT work_date, department, total_overtime FROM Overtime_History': (208, b"Invalid object name 'Overtime_History'.DB-Lib error message 20018, severity 16:\nGeneral SQL Server error: Check messages from the SQL Server\n")
+2025-08-08 14:27:23,466 - INFO - Conexión a la base de datos exitosa
+2025-08-08 14:27:26,203 - INFO - Datos cargados: 438 registros
+2025-08-08 14:27:27,328 - INFO - Analizando departamento: Finance
+2025-08-08 14:27:27,581 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            150.855342
+std                              26.126019
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             166.740000
+max                             224.390000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: Finance, dtype: float64
+2025-08-08 14:27:27,585 - WARNING - Datos insuficientes para descomposición. Asumiendo aditiva.
+2025-08-08 14:27:27,586 - INFO - Analizando departamento: HR
+2025-08-08 14:27:27,606 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.360411
+std                              25.114875
+min                             132.460000
+25%                             182.310000
+50%                             196.640000
+75%                             211.710000
+max                             257.140000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: HR, dtype: float64
+2025-08-08 14:27:27,608 - WARNING - Datos insuficientes para descomposición. Asumiendo aditiva.
+2025-08-08 14:27:27,617 - INFO - Analizando departamento: IT
+2025-08-08 14:27:27,688 - WARNING - Outliers detectados en IT:
+                IT
+work_date         
+2024-12-15  304.75
+2025-08-08 14:27:27,789 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.432603
+std                              30.126310
+min                             143.430000
+25%                             193.780000
+50%                             211.460000
+75%                             224.830000
+max                             304.750000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: IT, dtype: float64
+2025-08-08 14:27:27,797 - WARNING - Datos insuficientes para descomposición. Asumiendo aditiva.
+2025-08-08 14:27:27,801 - INFO - Analizando departamento: Inventory
+2025-08-08 14:27:27,841 - WARNING - Outliers detectados en Inventory:
+            Inventory
+work_date            
+2024-01-14     174.03
+2024-12-01     417.73
+2024-12-08     420.43
+2024-12-15     427.05
+2025-01-19     165.09
+2025-08-08 14:27:27,878 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            271.523151
+std                              44.860200
+min                             165.090000
+25%                             251.610000
+50%                             267.490000
+75%                             285.940000
+max                             427.050000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      2.000000
+Name: Inventory, dtype: float64
+2025-08-08 14:27:27,880 - WARNING - Datos insuficientes para descomposición. Asumiendo aditiva.
+2025-08-08 14:27:27,882 - INFO - Analizando departamento: Marketing
+2025-08-08 14:27:27,897 - WARNING - Outliers detectados en Marketing:
+            Marketing
+work_date            
+2024-12-15     339.43
+2025-08-08 14:27:27,920 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            234.262329
+std                              37.002292
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             254.370000
+max                             339.430000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: Marketing, dtype: float64
+2025-08-08 14:27:27,930 - WARNING - Datos insuficientes para descomposición. Asumiendo aditiva.
+2025-08-08 14:27:27,933 - INFO - Analizando departamento: Sales
+2025-08-08 14:27:27,973 - WARNING - Outliers detectados en Sales:
+             Sales
+work_date         
+2024-06-02  362.88
+2024-06-09  442.26
+2024-06-23  354.37
+2024-12-01  525.83
+2024-12-08  472.26
+2024-12-15  471.93
+2024-12-22  397.47
+2024-12-29  355.57
+2025-08-08 14:27:28,046 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            254.639863
+std                              68.713127
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             262.260000
+max                             525.830000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: Sales, dtype: float64
+2025-08-08 14:27:28,048 - WARNING - Datos insuficientes para descomposición. Asumiendo aditiva.
+2025-08-08 14:29:21,055 - INFO - Conexión a la base de datos exitosa
+2025-08-08 14:29:23,046 - INFO - Datos cargados: 438 registros
+2025-08-08 14:29:23,065 - INFO - Analizando departamento: Finance
+2025-08-08 14:29:23,085 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            150.855342
+std                              26.126019
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             166.740000
+max                             224.390000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: Finance, dtype: float64
+2025-08-08 14:29:23,521 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 373.1755, Varianza multiplicativa: 0.0152)
+2025-08-08 14:29:24,569 - INFO - Analizando departamento: HR
+2025-08-08 14:29:24,585 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.360411
+std                              25.114875
+min                             132.460000
+25%                             182.310000
+50%                             196.640000
+75%                             211.710000
+max                             257.140000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: HR, dtype: float64
+2025-08-08 14:29:24,603 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 416.6087, Varianza multiplicativa: 0.0112)
+2025-08-08 14:29:24,740 - INFO - Analizando departamento: IT
+2025-08-08 14:29:24,755 - WARNING - Outliers detectados en IT:
+                IT
+work_date         
+2024-12-15  304.75
+2025-08-08 14:29:24,790 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.432603
+std                              30.126310
+min                             143.430000
+25%                             193.780000
+50%                             211.460000
+75%                             224.830000
+max                             304.750000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: IT, dtype: float64
+2025-08-08 14:29:24,820 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 517.7699, Varianza multiplicativa: 0.0114)
+2025-08-08 14:29:24,964 - INFO - Analizando departamento: Inventory
+2025-08-08 14:29:24,977 - WARNING - Outliers detectados en Inventory:
+            Inventory
+work_date            
+2024-01-14     174.03
+2024-12-01     417.73
+2024-12-08     420.43
+2024-12-15     427.05
+2025-01-19     165.09
+2025-08-08 14:29:25,002 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            271.523151
+std                              44.860200
+min                             165.090000
+25%                             251.610000
+50%                             267.490000
+75%                             285.940000
+max                             427.050000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      2.000000
+Name: Inventory, dtype: float64
+2025-08-08 14:29:25,019 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 959.9564, Varianza multiplicativa: 0.0120)
+2025-08-08 14:29:25,211 - INFO - Analizando departamento: Marketing
+2025-08-08 14:29:25,227 - WARNING - Outliers detectados en Marketing:
+            Marketing
+work_date            
+2024-12-15     339.43
+2025-08-08 14:29:25,285 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            234.262329
+std                              37.002292
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             254.370000
+max                             339.430000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: Marketing, dtype: float64
+2025-08-08 14:29:25,305 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 657.6533, Varianza multiplicativa: 0.0113)
+2025-08-08 14:29:25,665 - INFO - Analizando departamento: Sales
+2025-08-08 14:29:25,684 - WARNING - Outliers detectados en Sales:
+             Sales
+work_date         
+2024-06-02  362.88
+2024-06-09  442.26
+2024-06-23  354.37
+2024-12-01  525.83
+2024-12-08  472.26
+2024-12-15  471.93
+2024-12-22  397.47
+2024-12-29  355.57
+2025-08-08 14:29:25,743 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            254.639863
+std                              68.713127
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             262.260000
+max                             525.830000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: Sales, dtype: float64
+2025-08-08 14:29:25,762 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 1743.2297, Varianza multiplicativa: 0.0219)
+2025-08-08 14:31:02,302 - INFO - Conexión a la base de datos exitosa
+2025-08-08 14:31:03,724 - INFO - Datos cargados: 438 registros
+2025-08-08 14:31:03,747 - INFO - Analizando departamento: Finance
+2025-08-08 14:31:03,776 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            150.855342
+std                              26.126019
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             166.740000
+max                             224.390000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: Finance, dtype: float64
+2025-08-08 14:31:03,832 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 225.4265, Varianza multiplicativa: 0.0102)
+2025-08-08 14:31:04,099 - INFO - Analizando departamento: HR
+2025-08-08 14:31:04,124 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.360411
+std                              25.114875
+min                             132.460000
+25%                             182.310000
+50%                             196.640000
+75%                             211.710000
+max                             257.140000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: HR, dtype: float64
+2025-08-08 14:31:04,285 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 253.8238, Varianza multiplicativa: 0.0070)
+2025-08-08 14:31:04,536 - INFO - Analizando departamento: IT
+2025-08-08 14:31:04,694 - WARNING - Outliers detectados en IT:
+                IT
+work_date         
+2024-12-15  304.75
+2025-08-08 14:31:04,783 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.432603
+std                              30.126310
+min                             143.430000
+25%                             193.780000
+50%                             211.460000
+75%                             224.830000
+max                             304.750000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: IT, dtype: float64
+2025-08-08 14:31:04,835 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 427.4087, Varianza multiplicativa: 0.0097)
+2025-08-08 14:31:05,261 - INFO - Analizando departamento: Inventory
+2025-08-08 14:31:05,287 - WARNING - Outliers detectados en Inventory:
+            Inventory
+work_date            
+2024-01-14     174.03
+2024-12-01     417.73
+2024-12-08     420.43
+2024-12-15     427.05
+2025-01-19     165.09
+2025-08-08 14:31:05,321 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            271.523151
+std                              44.860200
+min                             165.090000
+25%                             251.610000
+50%                             267.490000
+75%                             285.940000
+max                             427.050000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      2.000000
+Name: Inventory, dtype: float64
+2025-08-08 14:31:05,388 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 859.4557, Varianza multiplicativa: 0.0113)
+2025-08-08 14:31:05,618 - INFO - Analizando departamento: Marketing
+2025-08-08 14:31:05,836 - WARNING - Outliers detectados en Marketing:
+            Marketing
+work_date            
+2024-12-15     339.43
+2025-08-08 14:31:05,875 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            234.262329
+std                              37.002292
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             254.370000
+max                             339.430000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: Marketing, dtype: float64
+2025-08-08 14:31:06,034 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 532.8364, Varianza multiplicativa: 0.0095)
+2025-08-08 14:31:06,382 - INFO - Analizando departamento: Sales
+2025-08-08 14:31:06,426 - WARNING - Outliers detectados en Sales:
+             Sales
+work_date         
+2024-06-02  362.88
+2024-06-09  442.26
+2024-06-23  354.37
+2024-12-01  525.83
+2024-12-08  472.26
+2024-12-15  471.93
+2024-12-22  397.47
+2024-12-29  355.57
+2025-08-08 14:31:06,469 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            254.639863
+std                              68.713127
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             262.260000
+max                             525.830000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: Sales, dtype: float64
+2025-08-08 14:31:06,483 - INFO - Descomposición seleccionada: multiplicative (Varianza aditiva: 911.1484, Varianza multiplicativa: 0.0123)
+2025-08-08 14:34:08,287 - INFO - Entrenando modelo para Finance
+2025-08-08 14:34:35,210 - INFO - MAE promedio SARIMA para Finance: 4.02
+2025-08-08 14:34:35,827 - INFO - MAE promedio Holt para Finance: 0.43
+2025-08-08 14:34:35,893 - INFO - Entrenando modelo para HR
+2025-08-08 14:35:04,766 - INFO - MAE promedio SARIMA para HR: 4.28
+2025-08-08 14:35:05,313 - INFO - MAE promedio Holt para HR: 0.31
+2025-08-08 14:35:05,388 - INFO - Entrenando modelo para IT
+2025-08-08 14:37:46,174 - INFO - MAE promedio SARIMA para IT: 2.89
+2025-08-08 14:37:46,992 - INFO - MAE promedio Holt para IT: 0.15
+2025-08-08 14:37:47,059 - INFO - Entrenando modelo para Inventory
+2025-08-08 14:38:10,390 - INFO - MAE promedio SARIMA para Inventory: 4.61
+2025-08-08 14:38:10,732 - INFO - MAE promedio Holt para Inventory: 0.19
+2025-08-08 14:38:10,775 - INFO - Entrenando modelo para Marketing
+2025-08-08 14:39:32,778 - INFO - MAE promedio SARIMA para Marketing: 0.13
+2025-08-08 14:39:34,721 - INFO - MAE promedio Holt para Marketing: 0.20
+2025-08-08 14:39:37,611 - INFO - Entrenando modelo para Sales
+2025-08-08 14:40:20,542 - INFO - MAE promedio SARIMA para Sales: 0.23
+2025-08-08 14:40:20,948 - INFO - MAE promedio Holt para Sales: 0.48
+2025-08-08 14:43:02,008 - INFO - Entrenando modelo para Finance
+2025-08-08 14:43:06,140 - INFO - MAE promedio SARIMA para Finance: 4.02
+2025-08-08 14:43:06,430 - INFO - MAE promedio Holt para Finance: 0.43
+2025-08-08 14:43:06,467 - INFO - Entrenando modelo para HR
+2025-08-08 14:43:09,906 - INFO - MAE promedio SARIMA para HR: 4.28
+2025-08-08 14:43:10,218 - INFO - MAE promedio Holt para HR: 0.31
+2025-08-08 14:43:10,251 - INFO - Entrenando modelo para IT
+2025-08-08 14:43:13,228 - INFO - MAE promedio SARIMA para IT: 0.11
+2025-08-08 14:43:13,857 - INFO - MAE promedio Holt para IT: 0.15
+2025-08-08 14:43:14,930 - INFO - Entrenando modelo para Inventory
+2025-08-08 14:43:19,274 - INFO - MAE promedio SARIMA para Inventory: 4.61
+2025-08-08 14:43:19,567 - INFO - MAE promedio Holt para Inventory: 0.19
+2025-08-08 14:43:19,603 - INFO - Entrenando modelo para Marketing
+2025-08-08 14:43:25,086 - INFO - MAE promedio SARIMA para Marketing: 0.13
+2025-08-08 14:43:25,551 - INFO - MAE promedio Holt para Marketing: 0.20
+2025-08-08 14:43:26,662 - INFO - Entrenando modelo para Sales
+2025-08-08 14:43:32,442 - INFO - MAE promedio SARIMA para Sales: 0.23
+2025-08-08 14:43:32,843 - INFO - MAE promedio Holt para Sales: 0.48
+2025-08-08 14:54:39,542 - INFO - Iniciando análisis de estacionariedad y estacionalidad
+2025-08-08 14:54:41,101 - INFO - Conexión a la base de datos exitosa
+2025-08-08 14:54:43,429 - INFO - Datos cargados: 438 registros
+2025-08-08 14:54:43,501 - WARNING - Outliers detectados en Finance:
+     work_date department  total_overtime
+288 2024-12-01    Finance          219.91
+300 2024-12-15    Finance          224.39
+2025-08-08 14:54:43,550 - WARNING - Outliers detectados en HR:
+     work_date department  total_overtime
+301 2024-12-15         HR          257.14
+355 2025-02-16         HR          132.46
+2025-08-08 14:54:43,610 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+14  2024-01-14  Inventory          174.03
+134 2024-06-02  Inventory          344.03
+272 2024-11-10  Inventory          197.40
+290 2024-12-01  Inventory          417.73
+296 2024-12-08  Inventory          420.43
+302 2024-12-15  Inventory          427.05
+332 2025-01-19  Inventory          165.09
+2025-08-08 14:54:43,641 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+3   2023-12-31         IT          144.26
+15  2024-01-14         IT          143.43
+135 2024-06-02         IT          278.60
+303 2024-12-15         IT          304.75
+2025-08-08 14:54:43,765 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+154 2024-06-23  Marketing          327.00
+292 2024-12-01  Marketing          334.16
+304 2024-12-15  Marketing          339.43
+2025-08-08 14:54:43,787 - WARNING - Outliers detectados en Sales:
+     work_date department  total_overtime
+137 2024-06-02      Sales          362.88
+143 2024-06-09      Sales          442.26
+155 2024-06-23      Sales          354.37
+293 2024-12-01      Sales          525.83
+299 2024-12-08      Sales          472.26
+305 2024-12-15      Sales          471.93
+311 2024-12-22      Sales          397.47
+317 2024-12-29      Sales          355.57
+2025-08-08 14:54:43,865 - INFO - Analizando departamento: Finance
+2025-08-08 14:54:43,882 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            148.861644
+std                              23.179031
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             161.900000
+max                             201.120000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 14:54:49,642 - INFO - Descomposición multiplicative para Finance
+2025-08-08 14:54:49,647 - INFO - Analizando departamento: HR
+2025-08-08 14:54:49,666 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.410822
+std                              22.865674
+min                             140.610000
+25%                             183.020000
+50%                             196.640000
+75%                             210.730000
+max                             245.600000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 14:54:54,563 - INFO - Descomposición multiplicative para HR
+2025-08-08 14:54:54,566 - INFO - Analizando departamento: Inventory
+2025-08-08 14:54:54,582 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            267.778904
+std                              24.906281
+min                             201.110000
+25%                             256.550000
+50%                             267.490000
+75%                             282.490000
+max                             334.470000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      4.000000
+Name: total_overtime, dtype: float64
+2025-08-08 14:55:00,477 - INFO - Descomposición multiplicative para Inventory
+2025-08-08 14:55:00,482 - INFO - Analizando departamento: IT
+2025-08-08 14:55:00,504 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.087397
+std                              24.418686
+min                             155.200000
+25%                             194.160000
+50%                             211.460000
+75%                             223.580000
+max                             264.020000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 14:55:06,625 - INFO - Descomposición multiplicative para IT
+2025-08-08 14:55:06,629 - INFO - Analizando departamento: Marketing
+2025-08-08 14:55:06,646 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            230.093973
+std                              30.660730
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             248.290000
+max                             313.990000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 14:55:09,712 - INFO - Descomposición multiplicative para Marketing
+2025-08-08 14:55:09,731 - INFO - Analizando departamento: Sales
+2025-08-08 14:55:09,746 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            234.787671
+std                              28.125463
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             251.870000
+max                             314.420000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 14:55:13,175 - INFO - Descomposición multiplicative para Sales
+2025-08-08 14:55:14,246 - INFO - Generando ACF/PACF para Finance con 20 lags
+2025-08-08 14:55:15,915 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 14:55:15,920 - INFO - Generando ACF/PACF para HR con 20 lags
+2025-08-08 14:55:16,822 - INFO - Período estacional detectado para total_overtime: 17
+2025-08-08 14:55:16,827 - INFO - Generando ACF/PACF para Inventory con 20 lags
+2025-08-08 14:55:17,895 - INFO - Período estacional detectado para total_overtime: 1
+2025-08-08 14:55:17,900 - INFO - Generando ACF/PACF para IT con 20 lags
+2025-08-08 14:55:18,719 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 14:55:18,722 - INFO - Generando ACF/PACF para Marketing con 20 lags
+2025-08-08 14:55:20,065 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 14:55:20,076 - INFO - Generando ACF/PACF para Sales con 20 lags
+2025-08-08 14:55:20,952 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 14:55:21,030 - INFO - Análisis de estacionariedad y estacionalidad completado
+2025-08-08 14:58:58,286 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 14:59:04,442 - INFO - Parámetros ARIMA para Finance: order=(0, 0, 0)
+2025-08-08 14:59:04,444 - WARNING - Orden nulo detectado para Finance. Usando Holt.
+2025-08-08 14:59:04,658 - INFO - Fold 0 para Finance: RMSE=49.23, MAE=43.27
+2025-08-08 14:59:04,769 - INFO - Fold 1 para Finance: RMSE=62.66, MAE=56.24
+2025-08-08 14:59:04,978 - INFO - Fold 2 para Finance: RMSE=22.04, MAE=19.05
+2025-08-08 14:59:05,080 - INFO - Fold 3 para Finance: RMSE=23.54, MAE=17.93
+2025-08-08 14:59:05,225 - INFO - Fold 4 para Finance: RMSE=27.27, MAE=22.61
+2025-08-08 14:59:05,228 - INFO - Holt entrenado para Finance: RMSE=36.95
+2025-08-08 14:59:09,278 - INFO - Parámetros ARIMA para HR: order=(0, 0, 0)
+2025-08-08 14:59:09,281 - WARNING - Orden nulo detectado para HR. Usando Holt.
+2025-08-08 14:59:09,466 - INFO - Fold 0 para HR: RMSE=24.18, MAE=16.21
+2025-08-08 14:59:09,556 - INFO - Fold 1 para HR: RMSE=37.87, MAE=29.91
+2025-08-08 14:59:09,664 - INFO - Fold 2 para HR: RMSE=36.53, MAE=31.00
+2025-08-08 14:59:09,780 - INFO - Fold 3 para HR: RMSE=20.41, MAE=17.25
+2025-08-08 14:59:09,900 - INFO - Fold 4 para HR: RMSE=29.42, MAE=24.54
+2025-08-08 14:59:09,904 - INFO - Holt entrenado para HR: RMSE=29.68
+2025-08-08 14:59:16,238 - INFO - Parámetros ARIMA para Inventory: order=(1, 0, 0)
+2025-08-08 14:59:16,552 - INFO - Prueba de Ljung-Box para Inventory: p-valor=0.7699
+2025-08-08 14:59:16,727 - INFO - Fold 0 para Inventory: RMSE=20.82, MAE=14.59
+2025-08-08 14:59:16,979 - INFO - Fold 1 para Inventory: RMSE=34.01, MAE=25.70
+2025-08-08 14:59:17,140 - INFO - Fold 2 para Inventory: RMSE=29.24, MAE=23.06
+2025-08-08 14:59:17,328 - INFO - Fold 3 para Inventory: RMSE=23.06, MAE=15.95
+2025-08-08 14:59:17,475 - INFO - Fold 4 para Inventory: RMSE=15.50, MAE=12.09
+2025-08-08 14:59:18,714 - INFO - Prueba de Ljung-Box para Inventory: p-valor=0.7699
+2025-08-08 14:59:18,716 - INFO - ARIMA entrenado para Inventory: RMSE=24.53
+2025-08-08 14:59:18,870 - ERROR - Error verificando alineación de patrones para Inventory: 'lower'
+2025-08-08 14:59:26,417 - INFO - Parámetros ARIMA para IT: order=(1, 0, 1)
+2025-08-08 14:59:26,743 - INFO - Prueba de Ljung-Box para IT: p-valor=0.9050
+2025-08-08 14:59:27,027 - INFO - Fold 0 para IT: RMSE=23.35, MAE=20.01
+2025-08-08 14:59:27,273 - INFO - Fold 1 para IT: RMSE=18.92, MAE=11.68
+2025-08-08 14:59:27,717 - INFO - Fold 2 para IT: RMSE=32.73, MAE=30.03
+2025-08-08 14:59:27,902 - INFO - Fold 3 para IT: RMSE=30.35, MAE=26.16
+2025-08-08 14:59:28,085 - INFO - Fold 4 para IT: RMSE=28.46, MAE=23.80
+2025-08-08 14:59:29,347 - INFO - Prueba de Ljung-Box para IT: p-valor=0.9050
+2025-08-08 14:59:29,349 - INFO - ARIMA entrenado para IT: RMSE=26.76
+2025-08-08 14:59:29,419 - ERROR - Error verificando alineación de patrones para IT: 'lower'
+2025-08-08 14:59:33,281 - INFO - Parámetros ARIMA para Marketing: order=(0, 1, 1)
+2025-08-08 14:59:33,398 - INFO - Prueba de Ljung-Box para Marketing: p-valor=0.9257
+2025-08-08 14:59:33,879 - INFO - Fold 0 para Marketing: RMSE=40.09, MAE=31.52
+2025-08-08 14:59:34,056 - INFO - Fold 1 para Marketing: RMSE=35.18, MAE=26.98
+2025-08-08 14:59:34,140 - INFO - Fold 2 para Marketing: RMSE=21.80, MAE=16.56
+2025-08-08 14:59:34,257 - INFO - Fold 3 para Marketing: RMSE=42.26, MAE=32.13
+2025-08-08 14:59:34,364 - INFO - Fold 4 para Marketing: RMSE=24.02, MAE=20.94
+2025-08-08 14:59:35,728 - INFO - Prueba de Ljung-Box para Marketing: p-valor=0.9257
+2025-08-08 14:59:35,729 - INFO - ARIMA entrenado para Marketing: RMSE=32.67
+2025-08-08 14:59:35,850 - ERROR - Error verificando alineación de patrones para Marketing: 'lower'
+2025-08-08 14:59:40,762 - INFO - Parámetros ARIMA para Sales: order=(0, 0, 0)
+2025-08-08 14:59:40,764 - WARNING - Orden nulo detectado para Sales. Usando Holt.
+2025-08-08 14:59:40,897 - INFO - Fold 0 para Sales: RMSE=32.44, MAE=22.28
+2025-08-08 14:59:40,959 - INFO - Fold 1 para Sales: RMSE=63.74, MAE=58.51
+2025-08-08 14:59:41,047 - INFO - Fold 2 para Sales: RMSE=33.35, MAE=29.51
+2025-08-08 14:59:41,107 - INFO - Fold 3 para Sales: RMSE=22.22, MAE=19.42
+2025-08-08 14:59:41,212 - INFO - Fold 4 para Sales: RMSE=15.26, MAE=12.99
+2025-08-08 14:59:41,217 - INFO - Holt entrenado para Sales: RMSE=33.40
+2025-08-08 14:59:42,183 - INFO - Entrenamiento de modelos completado
+2025-08-08 15:00:37,368 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:00:37,401 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:00:37,441 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:00:37,484 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:00:37,526 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:00:37,568 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:03:17,282 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:03:17,352 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:03:17,428 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:03:17,520 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:03:17,611 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:03:17,687 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:05:35,709 - INFO - Iniciando análisis de estacionariedad y estacionalidad
+2025-08-08 15:05:36,812 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:05:38,234 - INFO - Datos cargados: 438 registros
+2025-08-08 15:05:38,257 - WARNING - Outliers detectados en Finance:
+     work_date department  total_overtime
+288 2024-12-01    Finance          219.91
+300 2024-12-15    Finance          224.39
+2025-08-08 15:05:38,274 - WARNING - Outliers detectados en HR:
+     work_date department  total_overtime
+301 2024-12-15         HR          257.14
+355 2025-02-16         HR          132.46
+2025-08-08 15:05:38,288 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+14  2024-01-14  Inventory          174.03
+134 2024-06-02  Inventory          344.03
+272 2024-11-10  Inventory          197.40
+290 2024-12-01  Inventory          417.73
+296 2024-12-08  Inventory          420.43
+302 2024-12-15  Inventory          427.05
+332 2025-01-19  Inventory          165.09
+2025-08-08 15:05:38,303 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+3   2023-12-31         IT          144.26
+15  2024-01-14         IT          143.43
+135 2024-06-02         IT          278.60
+303 2024-12-15         IT          304.75
+2025-08-08 15:05:38,318 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+154 2024-06-23  Marketing          327.00
+292 2024-12-01  Marketing          334.16
+304 2024-12-15  Marketing          339.43
+2025-08-08 15:05:38,329 - WARNING - Outliers detectados en Sales:
+     work_date department  total_overtime
+137 2024-06-02      Sales          362.88
+143 2024-06-09      Sales          442.26
+155 2024-06-23      Sales          354.37
+293 2024-12-01      Sales          525.83
+299 2024-12-08      Sales          472.26
+305 2024-12-15      Sales          471.93
+311 2024-12-22      Sales          397.47
+317 2024-12-29      Sales          355.57
+2025-08-08 15:05:38,339 - INFO - Analizando departamento: Finance
+2025-08-08 15:05:38,353 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            148.861644
+std                              23.179031
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             161.900000
+max                             201.120000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:05:44,385 - INFO - Descomposición multiplicative para Finance
+2025-08-08 15:05:44,388 - INFO - Analizando departamento: HR
+2025-08-08 15:05:44,406 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.410822
+std                              22.865674
+min                             140.610000
+25%                             183.020000
+50%                             196.640000
+75%                             210.730000
+max                             245.600000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:05:49,185 - INFO - Descomposición multiplicative para HR
+2025-08-08 15:05:49,189 - INFO - Analizando departamento: Inventory
+2025-08-08 15:05:49,212 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            267.778904
+std                              24.906281
+min                             201.110000
+25%                             256.550000
+50%                             267.490000
+75%                             282.490000
+max                             334.470000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      4.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:05:54,579 - INFO - Descomposición multiplicative para Inventory
+2025-08-08 15:05:54,583 - INFO - Analizando departamento: IT
+2025-08-08 15:05:54,598 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.087397
+std                              24.418686
+min                             155.200000
+25%                             194.160000
+50%                             211.460000
+75%                             223.580000
+max                             264.020000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:05:59,111 - INFO - Descomposición multiplicative para IT
+2025-08-08 15:05:59,115 - INFO - Analizando departamento: Marketing
+2025-08-08 15:05:59,144 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            230.093973
+std                              30.660730
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             248.290000
+max                             313.990000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:06:02,675 - INFO - Descomposición multiplicative para Marketing
+2025-08-08 15:06:02,678 - INFO - Analizando departamento: Sales
+2025-08-08 15:06:02,692 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            234.787671
+std                              28.125463
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             251.870000
+max                             314.420000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:06:05,916 - INFO - Descomposición multiplicative para Sales
+2025-08-08 15:06:06,497 - INFO - Generando ACF/PACF para Finance con 20 lags
+2025-08-08 15:06:07,385 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:06:07,390 - INFO - Generando ACF/PACF para HR con 20 lags
+2025-08-08 15:06:08,576 - INFO - Período estacional detectado para total_overtime: 17
+2025-08-08 15:06:08,582 - INFO - Generando ACF/PACF para Inventory con 20 lags
+2025-08-08 15:06:09,424 - INFO - Período estacional detectado para total_overtime: 1
+2025-08-08 15:06:09,428 - INFO - Generando ACF/PACF para IT con 20 lags
+2025-08-08 15:06:10,572 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:06:10,578 - INFO - Generando ACF/PACF para Marketing con 20 lags
+2025-08-08 15:06:11,797 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:06:11,803 - INFO - Generando ACF/PACF para Sales con 20 lags
+2025-08-08 15:06:13,804 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:06:13,864 - INFO - Análisis de estacionariedad y estacionalidad completado
+2025-08-08 15:06:14,254 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 15:06:17,850 - INFO - Parámetros ARIMA para Finance: order=(0, 0, 0)
+2025-08-08 15:06:17,852 - WARNING - Orden nulo detectado para Finance. Usando Holt.
+2025-08-08 15:06:17,924 - INFO - Fold 0 para Finance: RMSE=49.23, MAE=43.27
+2025-08-08 15:06:17,973 - INFO - Fold 1 para Finance: RMSE=62.66, MAE=56.24
+2025-08-08 15:06:18,038 - INFO - Fold 2 para Finance: RMSE=22.04, MAE=19.05
+2025-08-08 15:06:18,099 - INFO - Fold 3 para Finance: RMSE=23.54, MAE=17.93
+2025-08-08 15:06:18,171 - INFO - Fold 4 para Finance: RMSE=27.27, MAE=22.61
+2025-08-08 15:06:18,175 - INFO - Holt entrenado para Finance: RMSE=36.95
+2025-08-08 15:06:20,706 - INFO - Parámetros ARIMA para HR: order=(0, 0, 0)
+2025-08-08 15:06:20,708 - WARNING - Orden nulo detectado para HR. Usando Holt.
+2025-08-08 15:06:20,795 - INFO - Fold 0 para HR: RMSE=24.18, MAE=16.21
+2025-08-08 15:06:20,843 - INFO - Fold 1 para HR: RMSE=37.87, MAE=29.91
+2025-08-08 15:06:20,889 - INFO - Fold 2 para HR: RMSE=36.53, MAE=31.00
+2025-08-08 15:06:20,936 - INFO - Fold 3 para HR: RMSE=20.41, MAE=17.25
+2025-08-08 15:06:20,993 - INFO - Fold 4 para HR: RMSE=29.42, MAE=24.54
+2025-08-08 15:06:20,995 - INFO - Holt entrenado para HR: RMSE=29.68
+2025-08-08 15:06:25,584 - INFO - Parámetros ARIMA para Inventory: order=(1, 0, 0)
+2025-08-08 15:06:25,683 - INFO - Prueba de Ljung-Box para Inventory: p-valor=0.7699
+2025-08-08 15:06:25,769 - INFO - Fold 0 para Inventory: RMSE=20.82, MAE=14.59
+2025-08-08 15:06:25,887 - INFO - Fold 1 para Inventory: RMSE=34.01, MAE=25.70
+2025-08-08 15:06:26,054 - INFO - Fold 2 para Inventory: RMSE=29.24, MAE=23.06
+2025-08-08 15:06:26,159 - INFO - Fold 3 para Inventory: RMSE=23.06, MAE=15.95
+2025-08-08 15:06:26,267 - INFO - Fold 4 para Inventory: RMSE=15.50, MAE=12.09
+2025-08-08 15:06:27,193 - INFO - Prueba de Ljung-Box para Inventory: p-valor=0.7699
+2025-08-08 15:06:27,194 - INFO - ARIMA entrenado para Inventory: RMSE=24.53
+2025-08-08 15:06:27,252 - ERROR - Error verificando alineación de patrones para Inventory: 'lower'
+2025-08-08 15:06:33,461 - INFO - Parámetros ARIMA para IT: order=(1, 0, 1)
+2025-08-08 15:06:33,682 - INFO - Prueba de Ljung-Box para IT: p-valor=0.9050
+2025-08-08 15:06:33,893 - INFO - Fold 0 para IT: RMSE=23.35, MAE=20.01
+2025-08-08 15:06:34,067 - INFO - Fold 1 para IT: RMSE=18.92, MAE=11.68
+2025-08-08 15:06:34,288 - INFO - Fold 2 para IT: RMSE=32.73, MAE=30.03
+2025-08-08 15:06:34,384 - INFO - Fold 3 para IT: RMSE=30.35, MAE=26.16
+2025-08-08 15:06:34,457 - INFO - Fold 4 para IT: RMSE=28.46, MAE=23.80
+2025-08-08 15:06:35,359 - INFO - Prueba de Ljung-Box para IT: p-valor=0.9050
+2025-08-08 15:06:35,361 - INFO - ARIMA entrenado para IT: RMSE=26.76
+2025-08-08 15:06:35,408 - ERROR - Error verificando alineación de patrones para IT: 'lower'
+2025-08-08 15:06:38,469 - INFO - Parámetros ARIMA para Marketing: order=(0, 1, 1)
+2025-08-08 15:06:38,522 - INFO - Prueba de Ljung-Box para Marketing: p-valor=0.9257
+2025-08-08 15:06:38,590 - INFO - Fold 0 para Marketing: RMSE=40.09, MAE=31.52
+2025-08-08 15:06:38,641 - INFO - Fold 1 para Marketing: RMSE=35.18, MAE=26.98
+2025-08-08 15:06:38,700 - INFO - Fold 2 para Marketing: RMSE=21.80, MAE=16.56
+2025-08-08 15:06:38,757 - INFO - Fold 3 para Marketing: RMSE=42.26, MAE=32.13
+2025-08-08 15:06:38,826 - INFO - Fold 4 para Marketing: RMSE=24.02, MAE=20.94
+2025-08-08 15:06:39,845 - INFO - Prueba de Ljung-Box para Marketing: p-valor=0.9257
+2025-08-08 15:06:39,847 - INFO - ARIMA entrenado para Marketing: RMSE=32.67
+2025-08-08 15:06:39,890 - ERROR - Error verificando alineación de patrones para Marketing: 'lower'
+2025-08-08 15:06:44,237 - INFO - Parámetros ARIMA para Sales: order=(0, 0, 0)
+2025-08-08 15:06:44,239 - WARNING - Orden nulo detectado para Sales. Usando Holt.
+2025-08-08 15:06:44,335 - INFO - Fold 0 para Sales: RMSE=32.44, MAE=22.28
+2025-08-08 15:06:44,371 - INFO - Fold 1 para Sales: RMSE=63.74, MAE=58.51
+2025-08-08 15:06:44,415 - INFO - Fold 2 para Sales: RMSE=33.35, MAE=29.51
+2025-08-08 15:06:44,456 - INFO - Fold 3 para Sales: RMSE=22.22, MAE=19.42
+2025-08-08 15:06:44,525 - INFO - Fold 4 para Sales: RMSE=15.26, MAE=12.99
+2025-08-08 15:06:44,527 - INFO - Holt entrenado para Sales: RMSE=33.40
+2025-08-08 15:06:45,572 - INFO - Entrenamiento de modelos completado
+2025-08-08 15:06:45,646 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:06:45,680 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:06:45,724 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:06:45,755 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:06:45,780 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:06:45,807 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:06:46,940 - INFO - Timestamp establecido: 2025-08-08 15:06:46.940767
+2025-08-08 15:06:47,080 - INFO - Modelo guardado para Finance (HOLT) en: Modelos Entrenados/overtime_forecast_model_Finance_holt.pkl
+2025-08-08 15:06:47,087 - INFO - Finance - Train data: len=58, mean=149.33, std=24.44
+2025-08-08 15:06:47,091 - INFO - Finance - Test data: len=15, mean=147.03, std=18.07
+2025-08-08 15:06:47,140 - INFO - Índices alineados para Finance: 15 fechas comunes
+2025-08-08 15:06:47,142 - INFO - Predicciones para Finance: min=147.52, max=149.80, mean=148.18
+2025-08-08 15:06:47,193 - INFO - Modelo guardado para HR (HOLT) en: Modelos Entrenados/overtime_forecast_model_HR_holt.pkl
+2025-08-08 15:06:47,196 - INFO - HR - Train data: len=58, mean=194.32, std=23.47
+2025-08-08 15:06:47,198 - INFO - HR - Test data: len=15, mean=199.62, std=20.55
+2025-08-08 15:06:47,277 - INFO - Índices alineados para HR: 15 fechas comunes
+2025-08-08 15:06:47,280 - INFO - Predicciones para HR: min=178.47, max=183.88, mean=180.04
+2025-08-08 15:06:47,443 - INFO - Modelo guardado para Inventory (ARIMA) en: Modelos Entrenados/overtime_forecast_model_Inventory_arima.pkl
+2025-08-08 15:06:47,447 - INFO - Inventory - Train data: len=58, mean=268.28, std=26.20
+2025-08-08 15:06:47,449 - INFO - Inventory - Test data: len=15, mean=265.82, std=19.76
+2025-08-08 15:06:47,491 - INFO - Índices alineados para Inventory: 15 fechas comunes
+2025-08-08 15:06:47,492 - INFO - Predicciones para Inventory: min=281.95, max=283.31, mean=282.92
+2025-08-08 15:06:47,549 - INFO - Modelo guardado para IT (ARIMA) en: Modelos Entrenados/overtime_forecast_model_IT_arima.pkl
+2025-08-08 15:06:47,553 - INFO - IT - Train data: len=58, mean=209.05, std=24.04
+2025-08-08 15:06:47,555 - INFO - IT - Test data: len=15, mean=214.11, std=26.32
+2025-08-08 15:06:47,598 - INFO - Índices alineados para IT: 15 fechas comunes
+2025-08-08 15:06:47,600 - INFO - Predicciones para IT: min=208.66, max=210.67, mean=210.08
+2025-08-08 15:06:47,709 - INFO - Modelo guardado para Marketing (ARIMA) en: Modelos Entrenados/overtime_forecast_model_Marketing_arima.pkl
+2025-08-08 15:06:47,715 - INFO - Marketing - Train data: len=58, mean=226.27, std=31.05
+2025-08-08 15:06:47,719 - INFO - Marketing - Test data: len=15, mean=244.87, std=24.79
+2025-08-08 15:06:47,788 - INFO - Índices alineados para Marketing: 15 fechas comunes
+2025-08-08 15:06:47,791 - INFO - Predicciones para Marketing: min=231.19, max=231.38, mean=231.24
+2025-08-08 15:06:47,810 - INFO - Modelo guardado para Sales (HOLT) en: Modelos Entrenados/overtime_forecast_model_Sales_holt.pkl
+2025-08-08 15:06:47,815 - INFO - Sales - Train data: len=58, mean=233.72, std=30.12
+2025-08-08 15:06:47,817 - INFO - Sales - Test data: len=15, mean=238.93, std=18.73
+2025-08-08 15:06:47,863 - INFO - Índices alineados para Sales: 15 fechas comunes
+2025-08-08 15:06:47,865 - INFO - Predicciones para Sales: min=230.20, max=231.32, mean=230.52
+2025-08-08 15:06:48,444 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:06:48,445 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:06:49,350 - INFO - Predicciones y métricas guardadas exitosamente
+2025-08-08 15:06:49,430 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:08:38,323 - INFO - Iniciando análisis de estacionariedad y estacionalidad
+2025-08-08 15:08:38,872 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:08:39,934 - INFO - Datos cargados: 438 registros
+2025-08-08 15:08:39,958 - WARNING - Outliers detectados en Finance:
+     work_date department  total_overtime
+288 2024-12-01    Finance          219.91
+300 2024-12-15    Finance          224.39
+2025-08-08 15:08:39,976 - WARNING - Outliers detectados en HR:
+     work_date department  total_overtime
+301 2024-12-15         HR          257.14
+355 2025-02-16         HR          132.46
+2025-08-08 15:08:39,994 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+14  2024-01-14  Inventory          174.03
+134 2024-06-02  Inventory          344.03
+272 2024-11-10  Inventory          197.40
+290 2024-12-01  Inventory          417.73
+296 2024-12-08  Inventory          420.43
+302 2024-12-15  Inventory          427.05
+332 2025-01-19  Inventory          165.09
+2025-08-08 15:08:40,016 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+3   2023-12-31         IT          144.26
+15  2024-01-14         IT          143.43
+135 2024-06-02         IT          278.60
+303 2024-12-15         IT          304.75
+2025-08-08 15:08:40,043 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+154 2024-06-23  Marketing          327.00
+292 2024-12-01  Marketing          334.16
+304 2024-12-15  Marketing          339.43
+2025-08-08 15:08:40,082 - WARNING - Outliers detectados en Sales:
+     work_date department  total_overtime
+137 2024-06-02      Sales          362.88
+143 2024-06-09      Sales          442.26
+155 2024-06-23      Sales          354.37
+293 2024-12-01      Sales          525.83
+299 2024-12-08      Sales          472.26
+305 2024-12-15      Sales          471.93
+311 2024-12-22      Sales          397.47
+317 2024-12-29      Sales          355.57
+2025-08-08 15:08:40,105 - INFO - Analizando departamento: Finance
+2025-08-08 15:08:40,130 - INFO - Estadísticas para Finance:
+count                            73.000000
+mean                            148.861644
+std                              23.179031
+min                              99.220000
+25%                             132.480000
+50%                             149.380000
+75%                             161.900000
+max                             201.120000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:08:44,148 - INFO - Descomposición multiplicative para Finance
+2025-08-08 15:08:44,153 - INFO - Analizando departamento: HR
+2025-08-08 15:08:44,171 - INFO - Estadísticas para HR:
+count                            73.000000
+mean                            195.410822
+std                              22.865674
+min                             140.610000
+25%                             183.020000
+50%                             196.640000
+75%                             210.730000
+max                             245.600000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:08:48,292 - INFO - Descomposición multiplicative para HR
+2025-08-08 15:08:48,295 - INFO - Analizando departamento: Inventory
+2025-08-08 15:08:48,313 - INFO - Estadísticas para Inventory:
+count                            73.000000
+mean                            267.778904
+std                              24.906281
+min                             201.110000
+25%                             256.550000
+50%                             267.490000
+75%                             282.490000
+max                             334.470000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      4.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:08:52,518 - INFO - Descomposición multiplicative para Inventory
+2025-08-08 15:08:52,520 - INFO - Analizando departamento: IT
+2025-08-08 15:08:52,533 - INFO - Estadísticas para IT:
+count                            73.000000
+mean                            210.087397
+std                              24.418686
+min                             155.200000
+25%                             194.160000
+50%                             211.460000
+75%                             223.580000
+max                             264.020000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:08:55,667 - INFO - Descomposición multiplicative para IT
+2025-08-08 15:08:55,672 - INFO - Analizando departamento: Marketing
+2025-08-08 15:08:55,687 - INFO - Estadísticas para Marketing:
+count                            73.000000
+mean                            230.093973
+std                              30.660730
+min                             154.820000
+25%                             208.560000
+50%                             232.100000
+75%                             248.290000
+max                             313.990000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:08:59,891 - INFO - Descomposición multiplicative para Marketing
+2025-08-08 15:08:59,895 - INFO - Analizando departamento: Sales
+2025-08-08 15:08:59,912 - INFO - Estadísticas para Sales:
+count                            73.000000
+mean                            234.787671
+std                              28.125463
+min                             167.690000
+25%                             217.760000
+50%                             241.670000
+75%                             251.870000
+max                             314.420000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:09:03,864 - INFO - Descomposición multiplicative para Sales
+2025-08-08 15:09:04,543 - INFO - Generando ACF/PACF para Finance con 20 lags
+2025-08-08 15:09:05,619 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:09:05,626 - INFO - Generando ACF/PACF para HR con 20 lags
+2025-08-08 15:09:06,916 - INFO - Período estacional detectado para total_overtime: 17
+2025-08-08 15:09:06,921 - INFO - Generando ACF/PACF para Inventory con 20 lags
+2025-08-08 15:09:07,852 - INFO - Período estacional detectado para total_overtime: 1
+2025-08-08 15:09:07,857 - INFO - Generando ACF/PACF para IT con 20 lags
+2025-08-08 15:09:09,001 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:09:09,009 - INFO - Generando ACF/PACF para Marketing con 20 lags
+2025-08-08 15:09:09,889 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:09:09,898 - INFO - Generando ACF/PACF para Sales con 20 lags
+2025-08-08 15:09:11,499 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:09:11,562 - INFO - Análisis de estacionariedad y estacionalidad completado
+2025-08-08 15:09:11,860 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 15:09:15,214 - INFO - Parámetros ARIMA para Finance: order=(0, 0, 0)
+2025-08-08 15:09:15,217 - WARNING - Orden nulo detectado para Finance. Usando Holt.
+2025-08-08 15:09:15,301 - INFO - Fold 0 para Finance: RMSE=49.23, MAE=43.27
+2025-08-08 15:09:15,343 - INFO - Fold 1 para Finance: RMSE=62.66, MAE=56.24
+2025-08-08 15:09:15,403 - INFO - Fold 2 para Finance: RMSE=22.04, MAE=19.05
+2025-08-08 15:09:15,452 - INFO - Fold 3 para Finance: RMSE=23.54, MAE=17.93
+2025-08-08 15:09:15,510 - INFO - Fold 4 para Finance: RMSE=27.27, MAE=22.61
+2025-08-08 15:09:15,513 - INFO - Holt entrenado para Finance: RMSE=36.95
+2025-08-08 15:09:18,369 - INFO - Parámetros ARIMA para HR: order=(0, 0, 0)
+2025-08-08 15:09:18,372 - WARNING - Orden nulo detectado para HR. Usando Holt.
+2025-08-08 15:09:18,524 - INFO - Fold 0 para HR: RMSE=24.18, MAE=16.21
+2025-08-08 15:09:18,580 - INFO - Fold 1 para HR: RMSE=37.87, MAE=29.91
+2025-08-08 15:09:18,626 - INFO - Fold 2 para HR: RMSE=36.53, MAE=31.00
+2025-08-08 15:09:18,692 - INFO - Fold 3 para HR: RMSE=20.41, MAE=17.25
+2025-08-08 15:09:18,753 - INFO - Fold 4 para HR: RMSE=29.42, MAE=24.54
+2025-08-08 15:09:18,755 - INFO - Holt entrenado para HR: RMSE=29.68
+2025-08-08 15:09:23,245 - INFO - Parámetros ARIMA para Inventory: order=(1, 0, 0)
+2025-08-08 15:09:23,344 - INFO - Prueba de Ljung-Box para Inventory: p-valor=0.7699
+2025-08-08 15:09:23,411 - INFO - Fold 0 para Inventory: RMSE=20.82, MAE=14.59
+2025-08-08 15:09:23,486 - INFO - Fold 1 para Inventory: RMSE=34.01, MAE=25.70
+2025-08-08 15:09:23,588 - INFO - Fold 2 para Inventory: RMSE=29.24, MAE=23.06
+2025-08-08 15:09:23,728 - INFO - Fold 3 para Inventory: RMSE=23.06, MAE=15.95
+2025-08-08 15:09:24,229 - INFO - Fold 4 para Inventory: RMSE=15.50, MAE=12.09
+2025-08-08 15:09:26,389 - INFO - Prueba de Ljung-Box para Inventory: p-valor=0.7699
+2025-08-08 15:09:26,394 - INFO - ARIMA entrenado para Inventory: RMSE=24.53
+2025-08-08 15:09:26,628 - ERROR - Error verificando alineación de patrones para Inventory: 'lower'
+2025-08-08 15:09:34,524 - INFO - Parámetros ARIMA para IT: order=(1, 0, 1)
+2025-08-08 15:09:34,802 - INFO - Prueba de Ljung-Box para IT: p-valor=0.9050
+2025-08-08 15:09:35,027 - INFO - Fold 0 para IT: RMSE=23.35, MAE=20.01
+2025-08-08 15:09:35,316 - INFO - Fold 1 para IT: RMSE=18.92, MAE=11.68
+2025-08-08 15:09:35,584 - INFO - Fold 2 para IT: RMSE=32.73, MAE=30.03
+2025-08-08 15:09:35,733 - INFO - Fold 3 para IT: RMSE=30.35, MAE=26.16
+2025-08-08 15:09:35,875 - INFO - Fold 4 para IT: RMSE=28.46, MAE=23.80
+2025-08-08 15:09:37,018 - INFO - Prueba de Ljung-Box para IT: p-valor=0.9050
+2025-08-08 15:09:37,019 - INFO - ARIMA entrenado para IT: RMSE=26.76
+2025-08-08 15:09:37,095 - ERROR - Error verificando alineación de patrones para IT: 'lower'
+2025-08-08 15:09:40,403 - INFO - Parámetros ARIMA para Marketing: order=(0, 1, 1)
+2025-08-08 15:09:40,471 - INFO - Prueba de Ljung-Box para Marketing: p-valor=0.9257
+2025-08-08 15:09:40,589 - INFO - Fold 0 para Marketing: RMSE=40.09, MAE=31.52
+2025-08-08 15:09:40,668 - INFO - Fold 1 para Marketing: RMSE=35.18, MAE=26.98
+2025-08-08 15:09:40,755 - INFO - Fold 2 para Marketing: RMSE=21.80, MAE=16.56
+2025-08-08 15:09:40,848 - INFO - Fold 3 para Marketing: RMSE=42.26, MAE=32.13
+2025-08-08 15:09:40,940 - INFO - Fold 4 para Marketing: RMSE=24.02, MAE=20.94
+2025-08-08 15:09:42,007 - INFO - Prueba de Ljung-Box para Marketing: p-valor=0.9257
+2025-08-08 15:09:42,008 - INFO - ARIMA entrenado para Marketing: RMSE=32.67
+2025-08-08 15:09:42,091 - ERROR - Error verificando alineación de patrones para Marketing: 'lower'
+2025-08-08 15:09:46,378 - INFO - Parámetros ARIMA para Sales: order=(0, 0, 0)
+2025-08-08 15:09:46,379 - WARNING - Orden nulo detectado para Sales. Usando Holt.
+2025-08-08 15:09:46,529 - INFO - Fold 0 para Sales: RMSE=32.44, MAE=22.28
+2025-08-08 15:09:46,606 - INFO - Fold 1 para Sales: RMSE=63.74, MAE=58.51
+2025-08-08 15:09:46,697 - INFO - Fold 2 para Sales: RMSE=33.35, MAE=29.51
+2025-08-08 15:09:46,775 - INFO - Fold 3 para Sales: RMSE=22.22, MAE=19.42
+2025-08-08 15:09:46,865 - INFO - Fold 4 para Sales: RMSE=15.26, MAE=12.99
+2025-08-08 15:09:46,869 - INFO - Holt entrenado para Sales: RMSE=33.40
+2025-08-08 15:09:47,876 - INFO - Entrenamiento de modelos completado
+2025-08-08 15:09:47,972 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:09:48,014 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:09:48,063 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:09:48,097 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:09:48,122 - INFO - Predicciones generadas para ARIMA model
+2025-08-08 15:09:48,143 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:09:49,117 - INFO - Timestamp establecido: 2025-08-08 15:09:49.117391
+2025-08-08 15:09:49,140 - INFO - Modelo guardado para Finance (HOLT) en: Modelos Entrenados/overtime_forecast_model_Finance_holt.pkl
+2025-08-08 15:09:49,147 - INFO - Finance - Train data: len=58, mean=149.33, std=24.44
+2025-08-08 15:09:49,150 - INFO - Finance - Test data: len=15, mean=147.03, std=18.07
+2025-08-08 15:09:49,214 - INFO - Índices alineados para Finance: 15 fechas comunes
+2025-08-08 15:09:49,216 - INFO - Predicciones para Finance: min=147.52, max=149.80, mean=148.18
+2025-08-08 15:09:49,239 - INFO - Modelo guardado para HR (HOLT) en: Modelos Entrenados/overtime_forecast_model_HR_holt.pkl
+2025-08-08 15:09:49,245 - INFO - HR - Train data: len=58, mean=194.32, std=23.47
+2025-08-08 15:09:49,247 - INFO - HR - Test data: len=15, mean=199.62, std=20.55
+2025-08-08 15:09:49,294 - INFO - Índices alineados para HR: 15 fechas comunes
+2025-08-08 15:09:49,297 - INFO - Predicciones para HR: min=178.47, max=183.88, mean=180.04
+2025-08-08 15:09:49,380 - INFO - Modelo guardado para Inventory (ARIMA) en: Modelos Entrenados/overtime_forecast_model_Inventory_arima.pkl
+2025-08-08 15:09:49,385 - INFO - Inventory - Train data: len=58, mean=268.28, std=26.20
+2025-08-08 15:09:49,388 - INFO - Inventory - Test data: len=15, mean=265.82, std=19.76
+2025-08-08 15:09:49,449 - INFO - Índices alineados para Inventory: 15 fechas comunes
+2025-08-08 15:09:49,452 - INFO - Predicciones para Inventory: min=281.95, max=283.31, mean=282.92
+2025-08-08 15:09:49,536 - INFO - Modelo guardado para IT (ARIMA) en: Modelos Entrenados/overtime_forecast_model_IT_arima.pkl
+2025-08-08 15:09:49,541 - INFO - IT - Train data: len=58, mean=209.05, std=24.04
+2025-08-08 15:09:49,543 - INFO - IT - Test data: len=15, mean=214.11, std=26.32
+2025-08-08 15:09:49,589 - INFO - Índices alineados para IT: 15 fechas comunes
+2025-08-08 15:09:49,591 - INFO - Predicciones para IT: min=208.66, max=210.67, mean=210.08
+2025-08-08 15:09:49,758 - INFO - Modelo guardado para Marketing (ARIMA) en: Modelos Entrenados/overtime_forecast_model_Marketing_arima.pkl
+2025-08-08 15:09:49,763 - INFO - Marketing - Train data: len=58, mean=226.27, std=31.05
+2025-08-08 15:09:49,766 - INFO - Marketing - Test data: len=15, mean=244.87, std=24.79
+2025-08-08 15:09:49,814 - INFO - Índices alineados para Marketing: 15 fechas comunes
+2025-08-08 15:09:49,816 - INFO - Predicciones para Marketing: min=231.19, max=231.38, mean=231.24
+2025-08-08 15:09:49,842 - INFO - Modelo guardado para Sales (HOLT) en: Modelos Entrenados/overtime_forecast_model_Sales_holt.pkl
+2025-08-08 15:09:49,846 - INFO - Sales - Train data: len=58, mean=233.72, std=30.12
+2025-08-08 15:09:49,848 - INFO - Sales - Test data: len=15, mean=238.93, std=18.73
+2025-08-08 15:09:49,898 - INFO - Índices alineados para Sales: 15 fechas comunes
+2025-08-08 15:09:49,900 - INFO - Predicciones para Sales: min=230.20, max=231.32, mean=230.52
+2025-08-08 15:09:50,397 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:09:50,398 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:09:50,684 - INFO - Predicciones y métricas guardadas exitosamente
+2025-08-08 15:09:50,791 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:14:10,994 - INFO - Iniciando análisis mensual de estacionariedad y estacionalidad
+2025-08-08 15:14:12,070 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:14:13,404 - INFO - Datos cargados: 438 registros
+2025-08-08 15:14:13,529 - WARNING - Outliers detectados en Finance:
+    work_date department  total_overtime
+0  2023-12-01    Finance          115.84
+36 2024-06-01    Finance          881.78
+72 2024-12-01    Finance          947.39
+90 2025-03-01    Finance          758.77
+2025-08-08 15:14:13,554 - WARNING - Outliers detectados en HR:
+   work_date department  total_overtime
+1 2023-12-01         HR          159.77
+2025-08-08 15:14:13,572 - WARNING - Outliers detectados en IT:
+   work_date department  total_overtime
+2 2023-12-01         IT          144.26
+2025-08-08 15:14:13,592 - WARNING - Outliers detectados en Inventory:
+    work_date department  total_overtime
+3  2023-12-01  Inventory          261.12
+75 2024-12-01  Inventory         1820.37
+2025-08-08 15:14:13,610 - WARNING - Outliers detectados en Marketing:
+    work_date department  total_overtime
+4  2023-12-01  Marketing          200.85
+76 2024-12-01  Marketing         1445.96
+2025-08-08 15:14:13,637 - WARNING - Outliers detectados en Sales:
+    work_date department  total_overtime
+5  2023-12-01      Sales          199.68
+41 2024-06-01      Sales         1641.62
+77 2024-12-01      Sales         2223.06
+2025-08-08 15:14:13,647 - INFO - Analizando departamento: Finance
+2025-08-08 15:14:13,665 - INFO - Estadísticas para Finance:
+count                            18.000000
+mean                            596.393333
+std                              47.848895
+min                             472.010000
+25%                             578.467500
+50%                             606.605000
+75%                             610.117500
+max                             710.630000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      2.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:14:16,126 - WARNING - No hay suficientes datos para la descomposición mensual en Finance
+2025-08-08 15:14:16,130 - INFO - Analizando departamento: HR
+2025-08-08 15:14:16,176 - INFO - Estadísticas para HR:
+count                             18.000000
+mean                             827.178056
+std                              122.512854
+min                              655.940000
+25%                              748.120000
+50%                              798.522500
+75%                              903.747500
+max                             1072.900000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:14:18,446 - WARNING - No hay suficientes datos para la descomposición mensual en HR
+2025-08-08 15:14:18,450 - INFO - Analizando departamento: IT
+2025-08-08 15:14:18,484 - INFO - Estadísticas para IT:
+count                             18.000000
+mean                             891.975833
+std                              161.710060
+min                              640.030000
+25%                              792.632500
+50%                              838.752500
+75%                              988.722500
+max                             1207.610000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:14:20,460 - WARNING - No hay suficientes datos para la descomposición mensual en IT
+2025-08-08 15:14:20,463 - INFO - Analizando departamento: Inventory
+2025-08-08 15:14:20,473 - INFO - Estadísticas para Inventory:
+count                             18.000000
+mean                            1103.342222
+std                              154.029782
+min                              805.120000
+25%                             1044.267500
+50%                             1060.230000
+75%                             1146.112500
+max                             1440.920000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       4.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:14:21,837 - WARNING - No hay suficientes datos para la descomposición mensual en Inventory
+2025-08-08 15:14:21,841 - INFO - Analizando departamento: Marketing
+2025-08-08 15:14:21,849 - INFO - Estadísticas para Marketing:
+count                             18.000000
+mean                             960.616667
+std                              133.283583
+min                              780.160000
+25%                              893.485000
+50%                              918.380000
+75%                              980.332500
+max                             1305.580000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       3.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:14:23,047 - WARNING - No hay suficientes datos para la descomposición mensual en Marketing
+2025-08-08 15:14:23,050 - INFO - Analizando departamento: Sales
+2025-08-08 15:14:23,067 - INFO - Estadísticas para Sales:
+count                             18.000000
+mean                             964.128333
+std                              109.562729
+min                              739.850000
+25%                              914.265000
+50%                              943.320000
+75%                              993.257500
+max                             1188.680000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       4.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:14:24,589 - WARNING - No hay suficientes datos para la descomposición mensual en Sales
+2025-08-08 15:14:25,050 - INFO - Generando ACF/PACF mensual para Finance con 9 lags
+2025-08-08 15:14:25,893 - WARNING - Datos mensuales insuficientes: 18 meses
+2025-08-08 15:14:25,899 - INFO - Generando ACF/PACF mensual para HR con 9 lags
+2025-08-08 15:14:26,964 - WARNING - Datos mensuales insuficientes: 18 meses
+2025-08-08 15:14:26,971 - INFO - Generando ACF/PACF mensual para IT con 9 lags
+2025-08-08 15:14:27,785 - WARNING - Datos mensuales insuficientes: 18 meses
+2025-08-08 15:14:27,791 - INFO - Generando ACF/PACF mensual para Inventory con 9 lags
+2025-08-08 15:14:28,612 - WARNING - Datos mensuales insuficientes: 18 meses
+2025-08-08 15:14:28,617 - INFO - Generando ACF/PACF mensual para Marketing con 9 lags
+2025-08-08 15:14:29,835 - WARNING - Datos mensuales insuficientes: 18 meses
+2025-08-08 15:14:29,838 - INFO - Generando ACF/PACF mensual para Sales con 9 lags
+2025-08-08 15:14:31,538 - WARNING - Datos mensuales insuficientes: 18 meses
+2025-08-08 15:14:31,609 - INFO - Análisis mensual de estacionariedad y estacionalidad completado
+2025-08-08 15:16:21,976 - INFO - Iniciando análisis mensual de estacionariedad y estacionalidad
+2025-08-08 15:16:24,124 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:16:26,568 - INFO - Datos cargados: 420 registros
+2025-08-08 15:16:26,684 - WARNING - Outliers detectados en Finance:
+    work_date department  total_overtime
+0  2023-12-01    Finance          115.84
+36 2024-06-01    Finance          881.78
+72 2024-12-01    Finance          947.39
+90 2025-03-01    Finance          758.77
+2025-08-08 15:16:26,700 - WARNING - Outliers detectados en HR:
+   work_date department  total_overtime
+1 2023-12-01         HR          159.77
+2025-08-08 15:16:26,721 - WARNING - Outliers detectados en IT:
+   work_date department  total_overtime
+2 2023-12-01         IT          144.26
+2025-08-08 15:16:26,736 - WARNING - Outliers detectados en Inventory:
+    work_date department  total_overtime
+3  2023-12-01  Inventory          261.12
+75 2024-12-01  Inventory         1820.37
+2025-08-08 15:16:26,755 - WARNING - Outliers detectados en Marketing:
+    work_date department  total_overtime
+4  2023-12-01  Marketing          200.85
+76 2024-12-01  Marketing         1445.96
+2025-08-08 15:16:26,799 - WARNING - Outliers detectados en Sales:
+    work_date department  total_overtime
+5  2023-12-01      Sales          199.68
+41 2024-06-01      Sales         1641.62
+77 2024-12-01      Sales         2223.06
+2025-08-08 15:16:26,810 - INFO - Analizando departamento: Finance
+2025-08-08 15:16:26,832 - INFO - Estadísticas para Finance:
+count                            17.000000
+mean                            604.061765
+std                              37.568238
+min                             547.840000
+25%                             580.710000
+50%                             608.100000
+75%                             610.790000
+max                             710.630000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:16:28,842 - WARNING - No hay suficientes datos para la descomposición mensual en Finance
+2025-08-08 15:16:28,862 - INFO - Analizando departamento: HR
+2025-08-08 15:16:28,881 - INFO - Estadísticas para HR:
+count                             17.000000
+mean                             838.528235
+std                              117.898992
+min                              662.130000
+25%                              748.240000
+50%                              809.380000
+75%                              921.920000
+max                             1072.900000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:16:30,212 - WARNING - No hay suficientes datos para la descomposición mensual en HR
+2025-08-08 15:16:30,214 - INFO - Analizando departamento: IT
+2025-08-08 15:16:30,233 - INFO - Estadísticas para IT:
+count                             17.000000
+mean                             906.855882
+std                              153.542263
+min                              751.540000
+25%                              804.550000
+50%                              839.260000
+75%                             1030.750000
+max                             1207.610000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:16:32,938 - WARNING - No hay suficientes datos para la descomposición mensual en IT
+2025-08-08 15:16:32,942 - INFO - Analizando departamento: Inventory
+2025-08-08 15:16:32,963 - INFO - Estadísticas para Inventory:
+count                             17.000000
+mean                            1121.071765
+std                              138.919626
+min                              986.610000
+25%                             1048.670000
+50%                             1061.820000
+75%                             1166.670000
+max                             1440.920000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       2.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:16:34,779 - WARNING - No hay suficientes datos para la descomposición mensual en Inventory
+2025-08-08 15:16:34,783 - INFO - Analizando departamento: Marketing
+2025-08-08 15:16:34,802 - INFO - Estadísticas para Marketing:
+count                             17.000000
+mean                             971.835294
+std                              129.053884
+min                              832.950000
+25%                              898.480000
+50%                              923.510000
+75%                              981.610000
+max                             1305.580000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       3.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:16:36,365 - WARNING - No hay suficientes datos para la descomposición mensual en Marketing
+2025-08-08 15:16:36,369 - INFO - Analizando departamento: Sales
+2025-08-08 15:16:36,381 - INFO - Estadísticas para Sales:
+count                             17.000000
+mean                             977.877059
+std                               96.885922
+min                              855.890000
+25%                              921.690000
+50%                              946.470000
+75%                             1005.330000
+max                             1188.680000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       3.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:16:37,879 - WARNING - No hay suficientes datos para la descomposición mensual en Sales
+2025-08-08 15:16:38,673 - INFO - Generando ACF/PACF mensual para Finance con 8 lags
+2025-08-08 15:16:39,565 - WARNING - Datos mensuales insuficientes: 17 meses
+2025-08-08 15:16:39,570 - INFO - Generando ACF/PACF mensual para HR con 8 lags
+2025-08-08 15:16:40,765 - WARNING - Datos mensuales insuficientes: 17 meses
+2025-08-08 15:16:40,770 - INFO - Generando ACF/PACF mensual para IT con 8 lags
+2025-08-08 15:16:42,159 - WARNING - Datos mensuales insuficientes: 17 meses
+2025-08-08 15:16:42,164 - INFO - Generando ACF/PACF mensual para Inventory con 8 lags
+2025-08-08 15:16:43,389 - WARNING - Datos mensuales insuficientes: 17 meses
+2025-08-08 15:16:43,394 - INFO - Generando ACF/PACF mensual para Marketing con 8 lags
+2025-08-08 15:16:44,891 - WARNING - Datos mensuales insuficientes: 17 meses
+2025-08-08 15:16:44,896 - INFO - Generando ACF/PACF mensual para Sales con 8 lags
+2025-08-08 15:16:45,961 - WARNING - Datos mensuales insuficientes: 17 meses
+2025-08-08 15:16:46,018 - INFO - Análisis mensual de estacionariedad y estacionalidad completado
+2025-08-08 15:28:28,721 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:28:30,373 - INFO - Datos cargados: 420 registros
+2025-08-08 15:28:30,395 - WARNING - Outliers detectados en Finance:
+     work_date department  total_overtime
+288 2024-12-01    Finance          219.91
+300 2024-12-15    Finance          224.39
+2025-08-08 15:28:30,413 - WARNING - Outliers detectados en HR:
+     work_date department  total_overtime
+355 2025-02-16         HR          132.46
+2025-08-08 15:28:30,431 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+14  2024-01-14  Inventory          174.03
+134 2024-06-02  Inventory          344.03
+290 2024-12-01  Inventory          417.73
+296 2024-12-08  Inventory          420.43
+302 2024-12-15  Inventory          427.05
+332 2025-01-19  Inventory          165.09
+2025-08-08 15:28:30,457 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+3   2023-12-31         IT          144.26
+15  2024-01-14         IT          143.43
+135 2024-06-02         IT          278.60
+303 2024-12-15         IT          304.75
+2025-08-08 15:28:30,482 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+292 2024-12-01  Marketing          334.16
+304 2024-12-15  Marketing          339.43
+2025-08-08 15:28:30,504 - WARNING - Outliers detectados en Sales:
+     work_date department  total_overtime
+137 2024-06-02      Sales          362.88
+143 2024-06-09      Sales          442.26
+155 2024-06-23      Sales          354.37
+293 2024-12-01      Sales          525.83
+299 2024-12-08      Sales          472.26
+305 2024-12-15      Sales          471.93
+311 2024-12-22      Sales          397.47
+317 2024-12-29      Sales          355.57
+2025-08-08 15:28:30,521 - INFO - Analizando departamento: Finance
+2025-08-08 15:28:30,545 - INFO - Estadísticas para Finance:
+count                            70.000000
+mean                            148.493429
+std                              23.530272
+min                              99.220000
+25%                             131.557500
+50%                             149.117500
+75%                             161.807500
+max                             201.120000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:28:34,638 - INFO - Gráfico de descomposición estacional renderizado para Finance
+2025-08-08 15:28:34,641 - INFO - Problemas de índice para Finance: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 15:28:34,643 - INFO - Analizando departamento: HR
+2025-08-08 15:28:34,656 - INFO - Estadísticas para HR:
+count                            70.000000
+mean                            195.274286
+std                              23.790781
+min                             140.610000
+25%                             182.487500
+50%                             196.385000
+75%                             210.547500
+max                             257.140000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:28:38,217 - INFO - Gráfico de descomposición estacional renderizado para HR
+2025-08-08 15:28:38,220 - INFO - Problemas de índice para HR: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 15:28:38,222 - INFO - Analizando departamento: Inventory
+2025-08-08 15:28:38,241 - INFO - Estadísticas para Inventory:
+count                            70.000000
+mean                            266.702429
+std                              26.764171
+min                             197.400000
+25%                             252.902500
+50%                             266.910000
+75%                             282.850000
+max                             334.470000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      3.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:28:42,480 - INFO - Gráfico de descomposición estacional renderizado para Inventory
+2025-08-08 15:28:42,483 - INFO - Problemas de índice para Inventory: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 15:28:42,484 - INFO - Analizando departamento: IT
+2025-08-08 15:28:42,502 - INFO - Estadísticas para IT:
+count                            70.000000
+mean                            209.946714
+std                              24.501749
+min                             155.200000
+25%                             194.285000
+50%                             211.440000
+75%                             223.105000
+max                             264.020000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:28:46,335 - INFO - Gráfico de descomposición estacional renderizado para IT
+2025-08-08 15:28:46,339 - INFO - Problemas de índice para IT: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 15:28:46,341 - INFO - Analizando departamento: Marketing
+2025-08-08 15:28:46,354 - INFO - Estadísticas para Marketing:
+count                            70.000000
+mean                            230.135714
+std                              32.711803
+min                             154.820000
+25%                             203.130000
+50%                             231.010000
+75%                             247.955000
+max                             327.000000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:28:50,508 - INFO - Gráfico de descomposición estacional renderizado para Marketing
+2025-08-08 15:28:50,512 - INFO - Problemas de índice para Marketing: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 15:28:50,517 - INFO - Analizando departamento: Sales
+2025-08-08 15:28:50,549 - INFO - Estadísticas para Sales:
+count                            70.000000
+mean                            234.427000
+std                              28.478968
+min                             167.690000
+25%                             217.587500
+50%                             242.310000
+75%                             251.840000
+max                             314.420000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:28:55,707 - INFO - Gráfico de descomposición estacional renderizado para Sales
+2025-08-08 15:28:55,710 - INFO - Problemas de índice para Sales: {'is_monotonic': True, 'has_duplicates': False, 'missing_dates': 0}
+2025-08-08 15:28:55,749 - INFO - Resumen de estadísticas guardado en: EDA_Results\eda_summary_20250808_152830.csv
+2025-08-08 15:32:55,693 - INFO - Conexión a la base de datos exitosa
+2025-08-08 15:32:58,093 - INFO - Datos cargados: 102 registros
+2025-08-08 15:32:58,124 - WARNING - Outliers detectados en Finance:
+    work_date department  total_overtime
+0  2023-12-01    Finance          115.84
+36 2024-06-01    Finance          881.78
+72 2024-12-01    Finance          947.39
+90 2025-03-01    Finance          758.77
+2025-08-08 15:32:58,153 - WARNING - Outliers detectados en HR:
+   work_date department  total_overtime
+1 2023-12-01         HR          159.77
+2025-08-08 15:32:58,189 - WARNING - Outliers detectados en Inventory:
+    work_date department  total_overtime
+2  2023-12-01  Inventory          261.12
+74 2024-12-01  Inventory         1820.37
+2025-08-08 15:32:58,211 - WARNING - Outliers detectados en IT:
+   work_date department  total_overtime
+3 2023-12-01         IT          144.26
+2025-08-08 15:32:58,254 - WARNING - Outliers detectados en Marketing:
+    work_date department  total_overtime
+4  2023-12-01  Marketing          200.85
+76 2024-12-01  Marketing         1445.96
+2025-08-08 15:32:58,294 - WARNING - Outliers detectados en Sales:
+    work_date department  total_overtime
+5  2023-12-01      Sales          199.68
+41 2024-06-01      Sales         1641.62
+77 2024-12-01      Sales         2223.06
+2025-08-08 15:32:58,315 - INFO - Analizando departamento: Finance
+2025-08-08 15:32:58,350 - INFO - Estadísticas para Finance:
+count                            17.000000
+mean                            604.061765
+std                              37.568238
+min                             547.840000
+25%                             580.710000
+50%                             608.100000
+75%                             610.790000
+max                             710.630000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:33:01,360 - WARNING - No hay suficientes datos para la descomposición estacional en Finance
+2025-08-08 15:33:01,368 - INFO - Analizando departamento: HR
+2025-08-08 15:33:01,401 - INFO - Estadísticas para HR:
+count                             17.000000
+mean                             838.528235
+std                              117.898992
+min                              662.130000
+25%                              748.240000
+50%                              809.380000
+75%                              921.920000
+max                             1072.900000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:33:03,563 - WARNING - No hay suficientes datos para la descomposición estacional en HR
+2025-08-08 15:33:03,566 - INFO - Analizando departamento: Inventory
+2025-08-08 15:33:03,583 - INFO - Estadísticas para Inventory:
+count                             17.000000
+mean                            1121.071765
+std                              138.919626
+min                              986.610000
+25%                             1048.670000
+50%                             1061.820000
+75%                             1166.670000
+max                             1440.920000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       2.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:33:05,446 - WARNING - No hay suficientes datos para la descomposición estacional en Inventory
+2025-08-08 15:33:05,451 - INFO - Analizando departamento: IT
+2025-08-08 15:33:05,470 - INFO - Estadísticas para IT:
+count                             17.000000
+mean                             906.855882
+std                              153.542263
+min                              751.540000
+25%                              804.550000
+50%                              839.260000
+75%                             1030.750000
+max                             1207.610000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:33:07,822 - WARNING - No hay suficientes datos para la descomposición estacional en IT
+2025-08-08 15:33:07,828 - INFO - Analizando departamento: Marketing
+2025-08-08 15:33:07,845 - INFO - Estadísticas para Marketing:
+count                             17.000000
+mean                             971.835294
+std                              129.053884
+min                              832.950000
+25%                              898.480000
+50%                              923.510000
+75%                              981.610000
+max                             1305.580000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       3.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:33:10,025 - WARNING - No hay suficientes datos para la descomposición estacional en Marketing
+2025-08-08 15:33:10,027 - INFO - Analizando departamento: Sales
+2025-08-08 15:33:10,043 - INFO - Estadísticas para Sales:
+count                             17.000000
+mean                             977.877059
+std                               96.885922
+min                              855.890000
+25%                              921.690000
+50%                              946.470000
+75%                             1005.330000
+max                             1188.680000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       3.000000
+Name: total_overtime, dtype: float64
+2025-08-08 15:33:12,335 - WARNING - No hay suficientes datos para la descomposición estacional en Sales
+2025-08-08 15:33:13,093 - INFO - Resumen de estadísticas guardado en: EDA_Results\eda_summary_20250808_153258.csv
+2025-08-08 15:33:52,955 - INFO - Iniciando análisis de estacionariedad y estacionalidad
+2025-08-08 15:33:52,962 - INFO - Generando ACF/PACF para Finance con 8 lags
+2025-08-08 15:33:54,957 - INFO - Estacionariedad para Finance: p-value=0.997361, estacionario=False
+2025-08-08 15:33:54,963 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:33:54,974 - INFO - Generando ACF/PACF para HR con 8 lags
+2025-08-08 15:33:56,928 - INFO - Estacionariedad para HR: p-value=0.782833, estacionario=False
+2025-08-08 15:33:56,936 - INFO - Período estacional detectado para total_overtime: 3, picos significativos: [(3, 0.6187633944498566)]
+2025-08-08 15:33:56,958 - INFO - Generando ACF/PACF para Inventory con 8 lags
+2025-08-08 15:33:58,417 - INFO - Estacionariedad para Inventory: p-value=0.000156, estacionario=True
+2025-08-08 15:33:58,421 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:33:58,429 - INFO - Generando ACF/PACF para IT con 8 lags
+2025-08-08 15:34:00,350 - INFO - Estacionariedad para IT: p-value=0.000000, estacionario=True
+2025-08-08 15:34:00,356 - INFO - Período estacional detectado para total_overtime: 3, picos significativos: [(3, 0.7059312020746442)]
+2025-08-08 15:34:00,364 - INFO - Generando ACF/PACF para Marketing con 8 lags
+2025-08-08 15:34:02,123 - INFO - Estacionariedad para Marketing: p-value=0.001655, estacionario=True
+2025-08-08 15:34:02,133 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:34:02,147 - INFO - Generando ACF/PACF para Sales con 8 lags
+2025-08-08 15:34:03,753 - INFO - Estacionariedad para Sales: p-value=0.083924, estacionario=False
+2025-08-08 15:34:03,758 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 15:34:03,821 - INFO - Análisis de estacionariedad y estacionalidad completado
+2025-08-08 15:41:32,670 - ERROR - No se pudieron generar predicciones para Finance: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:32,676 - ERROR - No se pudieron generar predicciones para HR: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:32,683 - ERROR - No se pudieron generar predicciones para Inventory: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:32,687 - ERROR - No se pudieron generar predicciones para IT: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:32,693 - ERROR - No se pudieron generar predicciones para Marketing: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:32,697 - ERROR - No se pudieron generar predicciones para Sales: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:45,674 - ERROR - No se pudieron generar predicciones para Finance: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:45,678 - ERROR - No se pudieron generar predicciones para HR: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:45,681 - ERROR - No se pudieron generar predicciones para Inventory: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:45,685 - ERROR - No se pudieron generar predicciones para IT: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:45,691 - ERROR - No se pudieron generar predicciones para Marketing: name 'department_forecast_functions' is not defined
+2025-08-08 15:41:45,701 - ERROR - No se pudieron generar predicciones para Sales: name 'department_forecast_functions' is not defined
+2025-08-08 15:49:20,353 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 15:49:22,045 - WARNING - Datos insuficientes o baja variabilidad para Finance (longitud=17, std=37.56824). Usando Holt.
+2025-08-08 15:49:22,399 - INFO - Fold 0 para Finance: RMSE=11.43, MAE=11.38
+2025-08-08 15:49:22,707 - INFO - Fold 1 para Finance: RMSE=31.21, MAE=29.91
+2025-08-08 15:49:22,882 - INFO - Fold 2 para Finance: RMSE=22.92, MAE=16.32
+2025-08-08 15:49:23,015 - INFO - Fold 3 para Finance: RMSE=33.77, MAE=27.84
+2025-08-08 15:49:23,236 - INFO - Fold 4 para Finance: RMSE=29.86, MAE=27.90
+2025-08-08 15:49:23,243 - INFO - Holt entrenado para Finance: RMSE=25.84
+2025-08-08 15:49:25,022 - WARNING - Datos insuficientes o baja variabilidad para HR (longitud=17, std=117.89899). Usando Holt.
+2025-08-08 15:49:25,335 - INFO - Fold 0 para HR: RMSE=149.72, MAE=134.26
+2025-08-08 15:49:25,478 - INFO - Fold 1 para HR: RMSE=60.63, MAE=48.16
+2025-08-08 15:49:25,660 - INFO - Fold 2 para HR: RMSE=171.60, MAE=162.24
+2025-08-08 15:49:26,006 - INFO - Fold 3 para HR: RMSE=201.30, MAE=193.18
+2025-08-08 15:49:26,160 - INFO - Fold 4 para HR: RMSE=125.86, MAE=97.40
+2025-08-08 15:49:26,164 - INFO - Holt entrenado para HR: RMSE=141.82
+2025-08-08 15:49:26,999 - WARNING - Datos insuficientes o baja variabilidad para Inventory (longitud=17, std=138.91963). Usando Holt.
+2025-08-08 15:49:27,407 - INFO - Fold 0 para Inventory: RMSE=269.73, MAE=267.91
+2025-08-08 15:49:27,579 - INFO - Fold 1 para Inventory: RMSE=132.00, MAE=103.29
+2025-08-08 15:49:27,697 - INFO - Fold 2 para Inventory: RMSE=194.37, MAE=191.44
+2025-08-08 15:49:27,969 - INFO - Fold 3 para Inventory: RMSE=57.72, MAE=52.00
+2025-08-08 15:49:28,385 - INFO - Fold 4 para Inventory: RMSE=257.40, MAE=220.07
+2025-08-08 15:49:28,680 - INFO - Holt entrenado para Inventory: RMSE=182.24
+2025-08-08 15:49:29,911 - WARNING - Datos insuficientes o baja variabilidad para IT (longitud=17, std=153.54226). Usando Holt.
+2025-08-08 15:49:30,096 - INFO - Fold 0 para IT: RMSE=221.13, MAE=221.08
+2025-08-08 15:49:30,219 - INFO - Fold 1 para IT: RMSE=138.65, MAE=115.18
+2025-08-08 15:49:30,325 - INFO - Fold 2 para IT: RMSE=196.15, MAE=180.62
+2025-08-08 15:49:30,446 - INFO - Fold 3 para IT: RMSE=235.08, MAE=234.53
+2025-08-08 15:49:30,545 - INFO - Fold 4 para IT: RMSE=173.08, MAE=133.45
+2025-08-08 15:49:30,548 - INFO - Holt entrenado para IT: RMSE=192.82
+2025-08-08 15:49:31,629 - WARNING - Datos insuficientes o baja variabilidad para Marketing (longitud=17, std=129.05388). Usando Holt.
+2025-08-08 15:49:31,814 - INFO - Fold 0 para Marketing: RMSE=299.70, MAE=298.79
+2025-08-08 15:49:31,933 - INFO - Fold 1 para Marketing: RMSE=91.97, MAE=72.61
+2025-08-08 15:49:32,129 - INFO - Fold 2 para Marketing: RMSE=105.63, MAE=105.62
+2025-08-08 15:49:32,335 - INFO - Fold 3 para Marketing: RMSE=59.10, MAE=48.17
+2025-08-08 15:49:32,485 - INFO - Fold 4 para Marketing: RMSE=204.84, MAE=178.95
+2025-08-08 15:49:32,492 - INFO - Holt entrenado para Marketing: RMSE=152.25
+2025-08-08 15:49:33,526 - WARNING - Datos insuficientes o baja variabilidad para Sales (longitud=17, std=96.88592). Usando Holt.
+2025-08-08 15:49:33,911 - INFO - Fold 0 para Sales: RMSE=49.95, MAE=39.10
+2025-08-08 15:49:34,040 - INFO - Fold 1 para Sales: RMSE=126.77, MAE=108.32
+2025-08-08 15:49:34,197 - INFO - Fold 2 para Sales: RMSE=148.57, MAE=147.66
+2025-08-08 15:49:34,373 - INFO - Fold 3 para Sales: RMSE=24.97, MAE=24.06
+2025-08-08 15:49:34,453 - INFO - Fold 4 para Sales: RMSE=174.47, MAE=126.36
+2025-08-08 15:49:34,458 - INFO - Holt entrenado para Sales: RMSE=104.94
+2025-08-08 15:49:35,414 - INFO - Entrenamiento de modelos completado
+2025-08-08 15:50:11,332 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:50:11,355 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:50:11,378 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:50:11,401 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:50:11,422 - INFO - Predicciones generadas para HOLT model
+2025-08-08 15:50:11,444 - INFO - Predicciones generadas para HOLT model
+2025-08-08 16:00:54,661 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 16:00:55,808 - ERROR - No se pudo entrenar el modelo para Finance: 'work_date'
+2025-08-08 16:00:55,814 - ERROR - No se pudo entrenar el modelo para HR: 'work_date'
+2025-08-08 16:00:55,819 - ERROR - No se pudo entrenar el modelo para Inventory: 'work_date'
+2025-08-08 16:00:55,827 - ERROR - No se pudo entrenar el modelo para IT: 'work_date'
+2025-08-08 16:00:55,832 - ERROR - No se pudo entrenar el modelo para Marketing: 'work_date'
+2025-08-08 16:00:55,839 - ERROR - No se pudo entrenar el modelo para Sales: 'work_date'
+2025-08-08 16:00:55,843 - INFO - Entrenamiento de modelos completado
+2025-08-08 16:01:50,319 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 16:01:51,539 - ERROR - No se pudo entrenar el modelo para Finance: 'work_date'
+2025-08-08 16:01:51,546 - ERROR - No se pudo entrenar el modelo para HR: 'work_date'
+2025-08-08 16:01:51,550 - ERROR - No se pudo entrenar el modelo para Inventory: 'work_date'
+2025-08-08 16:01:51,553 - ERROR - No se pudo entrenar el modelo para IT: 'work_date'
+2025-08-08 16:01:51,559 - ERROR - No se pudo entrenar el modelo para Marketing: 'work_date'
+2025-08-08 16:01:51,565 - ERROR - No se pudo entrenar el modelo para Sales: 'work_date'
+2025-08-08 16:01:51,568 - INFO - Entrenamiento de modelos completado
+2025-08-08 16:07:54,551 - INFO - Conexión a la base de datos exitosa
+2025-08-08 16:07:56,468 - INFO - Datos cargados: 102 registros
+2025-08-08 16:07:56,533 - WARNING - Outliers detectados en Finance:
+    work_date department  total_overtime
+0  2023-12-01    Finance          115.84
+36 2024-06-01    Finance          881.78
+72 2024-12-01    Finance          947.39
+90 2025-03-01    Finance          758.77
+2025-08-08 16:07:56,561 - WARNING - Outliers detectados en HR:
+   work_date department  total_overtime
+1 2023-12-01         HR          159.77
+2025-08-08 16:07:56,574 - WARNING - Outliers detectados en Inventory:
+    work_date department  total_overtime
+2  2023-12-01  Inventory          261.12
+74 2024-12-01  Inventory         1820.37
+2025-08-08 16:07:56,586 - WARNING - Outliers detectados en IT:
+   work_date department  total_overtime
+3 2023-12-01         IT          144.26
+2025-08-08 16:07:56,601 - WARNING - Outliers detectados en Marketing:
+    work_date department  total_overtime
+4  2023-12-01  Marketing          200.85
+76 2024-12-01  Marketing         1445.96
+2025-08-08 16:07:56,649 - WARNING - Outliers detectados en Sales:
+    work_date department  total_overtime
+5  2023-12-01      Sales          199.68
+41 2024-06-01      Sales         1641.62
+77 2024-12-01      Sales         2223.06
+2025-08-08 16:07:56,677 - INFO - Analizando departamento: Finance
+2025-08-08 16:07:56,712 - INFO - Estadísticas para Finance:
+count                            17.000000
+mean                            604.061765
+std                              37.568238
+min                             547.840000
+25%                             580.710000
+50%                             608.100000
+75%                             610.790000
+max                             710.630000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      1.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:07:59,610 - WARNING - No hay suficientes datos para la descomposición estacional en Finance
+2025-08-08 16:07:59,613 - INFO - Analizando departamento: HR
+2025-08-08 16:07:59,626 - INFO - Estadísticas para HR:
+count                             17.000000
+mean                             838.528235
+std                              117.898992
+min                              662.130000
+25%                              748.240000
+50%                              809.380000
+75%                              921.920000
+max                             1072.900000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:08:00,790 - WARNING - No hay suficientes datos para la descomposición estacional en HR
+2025-08-08 16:08:00,793 - INFO - Analizando departamento: Inventory
+2025-08-08 16:08:00,803 - INFO - Estadísticas para Inventory:
+count                             17.000000
+mean                            1121.071765
+std                              138.919626
+min                              986.610000
+25%                             1048.670000
+50%                             1061.820000
+75%                             1166.670000
+max                             1440.920000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       2.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:08:02,576 - WARNING - No hay suficientes datos para la descomposición estacional en Inventory
+2025-08-08 16:08:02,578 - INFO - Analizando departamento: IT
+2025-08-08 16:08:02,801 - INFO - Estadísticas para IT:
+count                             17.000000
+mean                             906.855882
+std                              153.542263
+min                              751.540000
+25%                              804.550000
+50%                              839.260000
+75%                             1030.750000
+max                             1207.610000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:08:04,733 - WARNING - No hay suficientes datos para la descomposición estacional en IT
+2025-08-08 16:08:04,740 - INFO - Analizando departamento: Marketing
+2025-08-08 16:08:04,768 - INFO - Estadísticas para Marketing:
+count                             17.000000
+mean                             971.835294
+std                              129.053884
+min                              832.950000
+25%                              898.480000
+50%                              923.510000
+75%                              981.610000
+max                             1305.580000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       3.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:08:06,788 - WARNING - No hay suficientes datos para la descomposición estacional en Marketing
+2025-08-08 16:08:06,791 - INFO - Analizando departamento: Sales
+2025-08-08 16:08:06,809 - INFO - Estadísticas para Sales:
+count                             17.000000
+mean                             977.877059
+std                               96.885922
+min                              855.890000
+25%                              921.690000
+50%                              946.470000
+75%                             1005.330000
+max                             1188.680000
+missing_count                      0.000000
+missing_percentage                 0.000000
+outlier_count_post_treatment       3.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:08:08,656 - WARNING - No hay suficientes datos para la descomposición estacional en Sales
+2025-08-08 16:08:08,856 - INFO - Resumen de estadísticas guardado en: EDA_Results\eda_summary_20250808_160756.csv
+2025-08-08 16:08:43,467 - INFO - Iniciando análisis de estacionariedad y estacionalidad
+2025-08-08 16:08:43,474 - INFO - Generando ACF/PACF para Finance con 8 lags
+2025-08-08 16:08:45,161 - INFO - Estacionariedad para Finance: p-value=0.997361, estacionario=False
+2025-08-08 16:08:45,165 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:08:45,170 - INFO - Generando ACF/PACF para HR con 8 lags
+2025-08-08 16:08:46,878 - INFO - Estacionariedad para HR: p-value=0.782833, estacionario=False
+2025-08-08 16:08:46,882 - INFO - Período estacional detectado para total_overtime: 3, picos significativos: [(3, 0.6187633944498566)]
+2025-08-08 16:08:46,887 - INFO - Generando ACF/PACF para Inventory con 8 lags
+2025-08-08 16:08:48,239 - INFO - Estacionariedad para Inventory: p-value=0.000156, estacionario=True
+2025-08-08 16:08:48,244 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:08:48,249 - INFO - Generando ACF/PACF para IT con 8 lags
+2025-08-08 16:08:49,536 - INFO - Estacionariedad para IT: p-value=0.000000, estacionario=True
+2025-08-08 16:08:49,540 - INFO - Período estacional detectado para total_overtime: 3, picos significativos: [(3, 0.7059312020746442)]
+2025-08-08 16:08:49,546 - INFO - Generando ACF/PACF para Marketing con 8 lags
+2025-08-08 16:08:50,483 - INFO - Estacionariedad para Marketing: p-value=0.001655, estacionario=True
+2025-08-08 16:08:50,487 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:08:50,491 - INFO - Generando ACF/PACF para Sales con 8 lags
+2025-08-08 16:08:51,983 - INFO - Estacionariedad para Sales: p-value=0.083924, estacionario=False
+2025-08-08 16:08:51,986 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:08:52,047 - INFO - Análisis de estacionariedad y estacionalidad completado
+2025-08-08 16:10:08,163 - WARNING - statsmodels version < 0.13 detected. acorr_ljungbox not available. Please update statsmodels to >= 0.13.0.
+2025-08-08 16:10:08,198 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 16:10:08,204 - ERROR - Error calculando correlaciones entre departamentos: 0
+2025-08-08 16:10:08,420 - WARNING - Datos insuficientes o baja variabilidad para Finance (longitud=16, std=38.29932). Usando Holt-Winters.
+2025-08-08 16:10:08,427 - ERROR - Error entrenando Holt-Winters para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:10:08,430 - WARNING - Error entrenando ARIMA para Finance: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:10:08,437 - ERROR - Error entrenando Holt-Winters para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:10:08,441 - ERROR - No se pudo entrenar el modelo para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:10:08,470 - WARNING - Datos insuficientes o baja variabilidad para HR (longitud=16, std=121.51818). Usando Holt-Winters.
+2025-08-08 16:10:08,931 - ERROR - Error en validación cruzada para HR: Too many splits=5 for number of samples=16 with test_size=12 and gap=0.
+2025-08-08 16:10:08,936 - INFO - Holt-Winters entrenado para HR: RMSE=inf
+2025-08-08 16:10:10,600 - WARNING - Datos insuficientes o baja variabilidad para Inventory (longitud=16, std=143.14395). Usando Holt-Winters.
+2025-08-08 16:10:10,604 - ERROR - Error entrenando Holt-Winters para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:10:10,608 - WARNING - Error entrenando ARIMA para Inventory: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:10:10,613 - ERROR - Error entrenando Holt-Winters para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:10:10,616 - ERROR - No se pudo entrenar el modelo para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:10:10,636 - WARNING - Datos insuficientes o baja variabilidad para IT (longitud=16, std=158.12110). Usando Holt-Winters.
+2025-08-08 16:10:11,253 - ERROR - Error en validación cruzada para IT: Too many splits=5 for number of samples=16 with test_size=12 and gap=0.
+2025-08-08 16:10:11,256 - INFO - Holt-Winters entrenado para IT: RMSE=inf
+2025-08-08 16:10:12,423 - WARNING - Datos insuficientes o baja variabilidad para Marketing (longitud=16, std=133.26089). Usando Holt-Winters.
+2025-08-08 16:10:12,427 - ERROR - Error entrenando Holt-Winters para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:10:12,432 - WARNING - Error entrenando ARIMA para Marketing: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:10:12,443 - ERROR - Error entrenando Holt-Winters para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:10:12,447 - ERROR - No se pudo entrenar el modelo para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:10:12,471 - WARNING - Datos insuficientes o baja variabilidad para Sales (longitud=16, std=99.71361). Usando Holt-Winters.
+2025-08-08 16:10:12,492 - ERROR - Error entrenando Holt-Winters para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:10:12,495 - WARNING - Error entrenando ARIMA para Sales: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:10:12,500 - ERROR - Error entrenando Holt-Winters para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:10:12,502 - ERROR - No se pudo entrenar el modelo para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:10:12,505 - INFO - Entrenamiento de modelos completado
+2025-08-08 16:15:25,428 - INFO - Conexión a la base de datos exitosa
+2025-08-08 16:15:27,481 - INFO - Datos cargados: 210 registros
+2025-08-08 16:15:27,504 - WARNING - Outliers detectados en Finance:
+     work_date department  total_overtime
+0   2023-12-30    Finance          115.84
+42  2024-03-30    Finance          148.64
+72  2024-05-31    Finance          395.67
+78  2024-06-15    Finance          384.95
+84  2024-06-30    Finance          389.98
+114 2024-09-15    Finance          393.47
+144 2024-11-30    Finance          411.85
+150 2024-12-15    Finance          535.54
+192 2025-03-30    Finance          171.68
+2025-08-08 16:15:27,521 - WARNING - Outliers detectados en HR:
+     work_date department  total_overtime
+1   2023-12-30         HR          159.77
+43  2024-03-30         HR          203.32
+85  2024-06-30         HR          558.49
+115 2024-09-15         HR          580.27
+151 2024-12-15         HR          630.66
+193 2025-03-30         HR          177.62
+2025-08-08 16:15:27,540 - WARNING - Outliers detectados en Inventory:
+     work_date department  total_overtime
+2   2023-12-30  Inventory          261.12
+44  2024-03-30  Inventory          262.32
+86  2024-06-30  Inventory          713.69
+116 2024-09-15  Inventory          807.59
+146 2024-11-30  Inventory          838.16
+152 2024-12-15  Inventory          982.21
+194 2025-03-30  Inventory          257.49
+2025-08-08 16:15:27,560 - WARNING - Outliers detectados en IT:
+     work_date department  total_overtime
+3   2023-12-30         IT          144.26
+45  2024-03-30         IT          214.84
+75  2024-05-31         IT          532.10
+87  2024-06-30         IT          625.36
+117 2024-09-15         IT          689.12
+153 2024-12-15         IT          710.33
+195 2025-03-30         IT          252.54
+2025-08-08 16:15:27,580 - WARNING - Outliers detectados en Marketing:
+     work_date department  total_overtime
+4   2023-12-30  Marketing          200.85
+46  2024-03-30  Marketing          197.03
+118 2024-09-15  Marketing          680.02
+148 2024-11-30  Marketing          648.15
+154 2024-12-15  Marketing          797.81
+196 2025-03-30  Marketing          256.12
+2025-08-08 16:15:27,619 - WARNING - Outliers detectados en Sales:
+     work_date department  total_overtime
+5   2023-12-30      Sales          199.68
+47  2024-03-30      Sales          270.74
+77  2024-05-31      Sales          805.14
+83  2024-06-15      Sales          668.79
+119 2024-09-15      Sales          713.39
+149 2024-11-30      Sales          998.09
+155 2024-12-15      Sales         1224.97
+197 2025-03-30      Sales          253.15
+2025-08-08 16:15:27,633 - INFO - Analizando departamento: Finance
+2025-08-08 16:15:27,655 - INFO - Estadísticas para Finance:
+count                            35.000000
+mean                            293.460571
+std                              17.823150
+min                             255.320000
+25%                             283.245000
+50%                             297.590000
+75%                             301.550000
+max                             330.290000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      2.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:15:29,971 - WARNING - No hay suficientes datos para la descomposición estacional en Finance
+2025-08-08 16:15:29,975 - INFO - Analizando departamento: HR
+2025-08-08 16:15:30,003 - INFO - Estadísticas para HR:
+count                            35.000000
+mean                            390.185143
+std                              32.228303
+min                             317.870000
+25%                             368.080000
+50%                             393.540000
+75%                             411.290000
+max                             454.930000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      0.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:15:32,344 - WARNING - No hay suficientes datos para la descomposición estacional en HR
+2025-08-08 16:15:32,345 - INFO - Analizando departamento: Inventory
+2025-08-08 16:15:32,361 - INFO - Estadísticas para Inventory:
+count                            35.000000
+mean                            532.748286
+std                              41.677346
+min                             437.850000
+25%                             509.200000
+50%                             536.100000
+75%                             549.745000
+max                             658.480000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      2.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:15:34,622 - WARNING - No hay suficientes datos para la descomposición estacional en Inventory
+2025-08-08 16:15:34,625 - INFO - Analizando departamento: IT
+2025-08-08 16:15:34,640 - INFO - Estadísticas para IT:
+count                            35.000000
+mean                            413.929714
+std                              31.403788
+min                             330.330000
+25%                             408.400000
+50%                             419.220000
+75%                             424.965000
+max                             497.280000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      7.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:15:36,250 - WARNING - No hay suficientes datos para la descomposición estacional en IT
+2025-08-08 16:15:36,254 - INFO - Analizando departamento: Marketing
+2025-08-08 16:15:36,264 - INFO - Estadísticas para Marketing:
+count                            35.000000
+mean                            466.528286
+std                              51.458813
+min                             353.270000
+25%                             439.160000
+50%                             464.580000
+75%                             490.410000
+max                             609.090000
+missing_count                     0.000000
+missing_percentage                0.000000
+outlier_count_post_treatment      2.000000
+Name: total_overtime, dtype: float64
+2025-08-08 16:15:38,908 - WARNING - No hay suficientes datos para la descomposición estacional en Marketing
+2025-08-08 16:15:38,971 - INFO - Analizando departamento: Sales
+2025-08-08 16:15:38,990 - INFO - Estadísticas para Sales:
+count                            35.00000
+mean                            471.49800
+std                              38.57774
+min                             390.17000
+25%                             451.57500
+50%                             473.44000
+75%                             483.08000
+max                             602.72000
+missing_count                     0.00000
+missing_percentage                0.00000
+outlier_count_post_treatment      3.00000
+Name: total_overtime, dtype: float64
+2025-08-08 16:15:40,586 - WARNING - No hay suficientes datos para la descomposición estacional en Sales
+2025-08-08 16:15:40,594 - INFO - Resumen de estadísticas guardado en: EDA_Results\eda_summary_20250808_161527.csv
+2025-08-08 16:15:57,821 - INFO - Iniciando análisis de estacionariedad y estacionalidad
+2025-08-08 16:15:57,830 - INFO - Generando ACF/PACF para Finance con 17 lags
+2025-08-08 16:15:59,121 - INFO - Estacionariedad para Finance: p-value=0.000270, estacionario=True
+2025-08-08 16:15:59,125 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:15:59,133 - INFO - Generando ACF/PACF para HR con 17 lags
+2025-08-08 16:16:01,475 - INFO - Estacionariedad para HR: p-value=0.000001, estacionario=True
+2025-08-08 16:16:01,477 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:16:01,483 - INFO - Generando ACF/PACF para Inventory con 17 lags
+2025-08-08 16:16:02,564 - INFO - Estacionariedad para Inventory: p-value=0.000000, estacionario=True
+2025-08-08 16:16:02,567 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:16:02,571 - INFO - Generando ACF/PACF para IT con 17 lags
+2025-08-08 16:16:03,715 - INFO - Estacionariedad para IT: p-value=0.000000, estacionario=True
+2025-08-08 16:16:03,717 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:16:03,722 - INFO - Generando ACF/PACF para Marketing con 17 lags
+2025-08-08 16:16:04,637 - INFO - Estacionariedad para Marketing: p-value=0.000030, estacionario=True
+2025-08-08 16:16:04,643 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:16:04,657 - INFO - Generando ACF/PACF para Sales con 17 lags
+2025-08-08 16:16:05,502 - INFO - Estacionariedad para Sales: p-value=0.000002, estacionario=True
+2025-08-08 16:16:05,504 - INFO - No se detectó estacionalidad clara para total_overtime, usando m=1
+2025-08-08 16:16:05,556 - INFO - Análisis de estacionariedad y estacionalidad completado
+2025-08-08 16:16:27,494 - WARNING - statsmodels version < 0.13 detected. acorr_ljungbox not available. Please update statsmodels to >= 0.13.0.
+2025-08-08 16:16:27,501 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 16:16:27,507 - ERROR - Error calculando correlaciones entre departamentos: 0
+2025-08-08 16:16:27,533 - WARNING - Datos insuficientes o baja variabilidad para Finance (longitud=16, std=20.40248). Usando Holt-Winters.
+2025-08-08 16:16:27,539 - ERROR - Error entrenando Holt-Winters para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,542 - WARNING - Error entrenando ARIMA para Finance: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:16:27,548 - ERROR - Error entrenando Holt-Winters para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,550 - ERROR - No se pudo entrenar el modelo para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,566 - WARNING - Datos insuficientes o baja variabilidad para HR (longitud=16, std=34.58098). Usando Holt-Winters.
+2025-08-08 16:16:27,576 - ERROR - Error entrenando Holt-Winters para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,579 - WARNING - Error entrenando ARIMA para HR: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:16:27,586 - ERROR - Error entrenando Holt-Winters para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,592 - ERROR - No se pudo entrenar el modelo para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,609 - WARNING - Datos insuficientes o baja variabilidad para Inventory (longitud=16, std=53.54154). Usando Holt-Winters.
+2025-08-08 16:16:27,616 - ERROR - Error entrenando Holt-Winters para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,619 - WARNING - Error entrenando ARIMA para Inventory: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:16:27,626 - ERROR - Error entrenando Holt-Winters para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,628 - ERROR - No se pudo entrenar el modelo para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,652 - WARNING - Datos insuficientes o baja variabilidad para IT (longitud=16, std=34.06732). Usando Holt-Winters.
+2025-08-08 16:16:27,661 - ERROR - Error entrenando Holt-Winters para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,663 - WARNING - Error entrenando ARIMA para IT: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:16:27,666 - ERROR - Error entrenando Holt-Winters para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,672 - ERROR - No se pudo entrenar el modelo para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,686 - WARNING - Datos insuficientes o baja variabilidad para Marketing (longitud=16, std=56.14595). Usando Holt-Winters.
+2025-08-08 16:16:27,693 - ERROR - Error entrenando Holt-Winters para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,695 - WARNING - Error entrenando ARIMA para Marketing: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:16:27,698 - ERROR - Error entrenando Holt-Winters para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,704 - ERROR - No se pudo entrenar el modelo para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,730 - WARNING - Datos insuficientes o baja variabilidad para Sales (longitud=16, std=48.94406). Usando Holt-Winters.
+2025-08-08 16:16:27,735 - ERROR - Error entrenando Holt-Winters para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,737 - WARNING - Error entrenando ARIMA para Sales: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:16:27,748 - ERROR - Error entrenando Holt-Winters para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,751 - ERROR - No se pudo entrenar el modelo para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:16:27,756 - INFO - Entrenamiento de modelos completado
+2025-08-08 16:19:58,909 - WARNING - statsmodels version < 0.13 detected. acorr_ljungbox not available. Please update statsmodels to >= 0.13.0.
+2025-08-08 16:19:58,933 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 16:19:58,941 - ERROR - Error calculando correlaciones entre departamentos: 0
+2025-08-08 16:20:01,496 - INFO - Parámetros ARIMA para Finance: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:01,500 - WARNING - Orden nulo detectado para Finance. Usando Holt-Winters.
+2025-08-08 16:20:01,505 - ERROR - Error entrenando Holt-Winters para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:20:01,507 - WARNING - Error entrenando ARIMA para Finance: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:01,511 - ERROR - Error entrenando Holt-Winters para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:20:01,513 - ERROR - No se pudo entrenar el modelo para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:20:03,783 - INFO - Parámetros ARIMA para HR: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:03,786 - WARNING - Orden nulo detectado para HR. Usando Holt-Winters.
+2025-08-08 16:20:03,790 - ERROR - Error entrenando Holt-Winters para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:20:03,796 - WARNING - Error entrenando ARIMA para HR: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:03,804 - ERROR - Error entrenando Holt-Winters para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:20:03,806 - ERROR - No se pudo entrenar el modelo para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:20:04,944 - INFO - Parámetros ARIMA para Inventory: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:04,947 - WARNING - Orden nulo detectado para Inventory. Usando Holt-Winters.
+2025-08-08 16:20:04,951 - ERROR - Error entrenando Holt-Winters para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:20:04,953 - WARNING - Error entrenando ARIMA para Inventory: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:04,956 - ERROR - Error entrenando Holt-Winters para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:20:04,958 - ERROR - No se pudo entrenar el modelo para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:20:09,790 - INFO - Parámetros ARIMA para IT: order=(2, 1, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:09,966 - ERROR - Error validando residuos para IT: module 'statsmodels.stats' has no attribute 'distributions'
+2025-08-08 16:20:09,968 - WARNING - ARIMA no válido para IT, usando Holt-Winters
+2025-08-08 16:20:09,971 - ERROR - Error entrenando Holt-Winters para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:20:09,974 - WARNING - Error entrenando ARIMA para IT: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:09,982 - ERROR - Error entrenando Holt-Winters para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:20:09,985 - ERROR - No se pudo entrenar el modelo para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:20:10,734 - INFO - Parámetros ARIMA para Marketing: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:10,736 - WARNING - Orden nulo detectado para Marketing. Usando Holt-Winters.
+2025-08-08 16:20:10,740 - ERROR - Error entrenando Holt-Winters para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:20:10,742 - WARNING - Error entrenando ARIMA para Marketing: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:10,746 - ERROR - Error entrenando Holt-Winters para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:20:10,749 - ERROR - No se pudo entrenar el modelo para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:20:11,770 - INFO - Parámetros ARIMA para Sales: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:11,772 - WARNING - Orden nulo detectado para Sales. Usando Holt-Winters.
+2025-08-08 16:20:11,776 - ERROR - Error entrenando Holt-Winters para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:20:11,778 - WARNING - Error entrenando ARIMA para Sales: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:11,782 - ERROR - Error entrenando Holt-Winters para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:20:11,786 - ERROR - No se pudo entrenar el modelo para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:20:11,790 - INFO - Entrenamiento de modelos completado
+2025-08-08 16:20:52,957 - WARNING - statsmodels version < 0.13 detected. acorr_ljungbox not available. Please update statsmodels to >= 0.13.0.
+2025-08-08 16:20:52,968 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 16:20:52,974 - ERROR - Error calculando correlaciones entre departamentos: 0
+2025-08-08 16:20:54,536 - INFO - Parámetros ARIMA para Finance: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:54,553 - WARNING - Orden nulo detectado para Finance. Usando Holt-Winters.
+2025-08-08 16:20:54,561 - ERROR - Error entrenando Holt-Winters para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:20:54,563 - WARNING - Error entrenando ARIMA para Finance: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:54,613 - ERROR - Error entrenando Holt-Winters para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:20:54,617 - ERROR - No se pudo entrenar el modelo para Finance: seasonal_periods must be larger than 1.
+2025-08-08 16:20:56,230 - INFO - Parámetros ARIMA para HR: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:56,232 - WARNING - Orden nulo detectado para HR. Usando Holt-Winters.
+2025-08-08 16:20:56,240 - ERROR - Error entrenando Holt-Winters para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:20:56,242 - WARNING - Error entrenando ARIMA para HR: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:56,247 - ERROR - Error entrenando Holt-Winters para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:20:56,258 - ERROR - No se pudo entrenar el modelo para HR: seasonal_periods must be larger than 1.
+2025-08-08 16:20:58,117 - INFO - Parámetros ARIMA para Inventory: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:20:58,125 - WARNING - Orden nulo detectado para Inventory. Usando Holt-Winters.
+2025-08-08 16:20:58,132 - ERROR - Error entrenando Holt-Winters para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:20:58,136 - WARNING - Error entrenando ARIMA para Inventory: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:20:58,141 - ERROR - Error entrenando Holt-Winters para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:20:58,146 - ERROR - No se pudo entrenar el modelo para Inventory: seasonal_periods must be larger than 1.
+2025-08-08 16:21:01,814 - INFO - Parámetros ARIMA para IT: order=(2, 1, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:21:01,996 - ERROR - Error validando residuos para IT: module 'statsmodels.stats' has no attribute 'distributions'
+2025-08-08 16:21:01,998 - WARNING - ARIMA no válido para IT, usando Holt-Winters
+2025-08-08 16:21:02,003 - ERROR - Error entrenando Holt-Winters para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:21:02,005 - WARNING - Error entrenando ARIMA para IT: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:21:02,009 - ERROR - Error entrenando Holt-Winters para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:21:02,011 - ERROR - No se pudo entrenar el modelo para IT: seasonal_periods must be larger than 1.
+2025-08-08 16:21:04,951 - INFO - Parámetros ARIMA para Marketing: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:21:04,954 - WARNING - Orden nulo detectado para Marketing. Usando Holt-Winters.
+2025-08-08 16:21:04,960 - ERROR - Error entrenando Holt-Winters para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:21:04,962 - WARNING - Error entrenando ARIMA para Marketing: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:21:04,967 - ERROR - Error entrenando Holt-Winters para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:21:04,971 - ERROR - No se pudo entrenar el modelo para Marketing: seasonal_periods must be larger than 1.
+2025-08-08 16:21:07,157 - INFO - Parámetros ARIMA para Sales: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:21:07,160 - WARNING - Orden nulo detectado para Sales. Usando Holt-Winters.
+2025-08-08 16:21:07,164 - ERROR - Error entrenando Holt-Winters para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:21:07,167 - WARNING - Error entrenando ARIMA para Sales: seasonal_periods must be larger than 1., usando Holt-Winters
+2025-08-08 16:21:07,171 - ERROR - Error entrenando Holt-Winters para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:21:07,173 - ERROR - No se pudo entrenar el modelo para Sales: seasonal_periods must be larger than 1.
+2025-08-08 16:21:07,176 - INFO - Entrenamiento de modelos completado
+2025-08-08 16:28:47,626 - WARNING - statsmodels version < 0.13 detected. acorr_ljungbox not available. Please update statsmodels to >= 0.13.0.
+2025-08-08 16:28:47,646 - INFO - Iniciando entrenamiento de modelos
+2025-08-08 16:28:47,650 - ERROR - Error calculando correlaciones entre departamentos: 0
+2025-08-08 16:28:47,672 - WARNING - Seasonal period 1 is invalid for Finance. Using non-seasonal ARIMA.
+2025-08-08 16:28:49,265 - INFO - Parámetros ARIMA para Finance: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:28:49,269 - WARNING - Orden nulo detectado para Finance. Usando Holt-Winters.
+2025-08-08 16:28:49,273 - WARNING - Seasonal period 1 is invalid for Finance. Using non-seasonal Holt-Winters.
+2025-08-08 16:28:49,401 - ERROR - Error en validación cruzada para Finance: Too many splits=5 for number of samples=32 with test_size=12 and gap=0.
+2025-08-08 16:28:49,404 - INFO - Holt-Winters entrenado para Finance: RMSE=inf
+2025-08-08 16:28:50,443 - WARNING - Seasonal period 1 is invalid for HR. Using non-seasonal ARIMA.
+2025-08-08 16:28:52,303 - INFO - Parámetros ARIMA para HR: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:28:52,305 - WARNING - Orden nulo detectado para HR. Usando Holt-Winters.
+2025-08-08 16:28:52,309 - WARNING - Seasonal period 1 is invalid for HR. Using non-seasonal Holt-Winters.
+2025-08-08 16:28:52,529 - ERROR - Error en validación cruzada para HR: Too many splits=5 for number of samples=32 with test_size=12 and gap=0.
+2025-08-08 16:28:52,535 - INFO - Holt-Winters entrenado para HR: RMSE=inf
+2025-08-08 16:28:55,019 - WARNING - Seasonal period 1 is invalid for Inventory. Using non-seasonal ARIMA.
+2025-08-08 16:28:57,214 - INFO - Parámetros ARIMA para Inventory: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:28:57,219 - WARNING - Orden nulo detectado para Inventory. Usando Holt-Winters.
+2025-08-08 16:28:57,291 - WARNING - Seasonal period 1 is invalid for Inventory. Using non-seasonal Holt-Winters.
+2025-08-08 16:28:57,443 - ERROR - Error en validación cruzada para Inventory: Too many splits=5 for number of samples=32 with test_size=12 and gap=0.
+2025-08-08 16:28:57,446 - INFO - Holt-Winters entrenado para Inventory: RMSE=inf
+2025-08-08 16:28:58,287 - WARNING - Seasonal period 1 is invalid for IT. Using non-seasonal ARIMA.
+2025-08-08 16:29:01,845 - INFO - Parámetros ARIMA para IT: order=(2, 1, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:29:01,971 - ERROR - Error validando residuos para IT: cannot import name 'chi2' from 'statsmodels.distributions' (c:\Users\joey_\AppData\Local\Programs\Python\Maestro_Yoda\lib\site-packages\statsmodels\distributions\__init__.py)
+2025-08-08 16:29:01,973 - WARNING - ARIMA no válido para IT, usando Holt-Winters
+2025-08-08 16:29:01,977 - WARNING - Seasonal period 1 is invalid for IT. Using non-seasonal Holt-Winters.
+2025-08-08 16:29:02,100 - ERROR - Error en validación cruzada para IT: Too many splits=5 for number of samples=32 with test_size=12 and gap=0.
+2025-08-08 16:29:02,103 - INFO - Holt-Winters entrenado para IT: RMSE=inf
+2025-08-08 16:29:03,273 - WARNING - Seasonal period 1 is invalid for Marketing. Using non-seasonal ARIMA.
+2025-08-08 16:29:06,709 - INFO - Parámetros ARIMA para Marketing: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:29:06,713 - WARNING - Orden nulo detectado para Marketing. Usando Holt-Winters.
+2025-08-08 16:29:06,717 - WARNING - Seasonal period 1 is invalid for Marketing. Using non-seasonal Holt-Winters.
+2025-08-08 16:29:06,869 - ERROR - Error en validación cruzada para Marketing: Too many splits=5 for number of samples=32 with test_size=12 and gap=0.
+2025-08-08 16:29:06,872 - INFO - Holt-Winters entrenado para Marketing: RMSE=inf
+2025-08-08 16:29:07,698 - WARNING - Seasonal period 1 is invalid for Sales. Using non-seasonal ARIMA.
+2025-08-08 16:29:09,887 - INFO - Parámetros ARIMA para Sales: order=(0, 0, 0), seasonal_order=(0, 0, 0, 0)
+2025-08-08 16:29:09,889 - WARNING - Orden nulo detectado para Sales. Usando Holt-Winters.
+2025-08-08 16:29:09,892 - WARNING - Seasonal period 1 is invalid for Sales. Using non-seasonal Holt-Winters.
+2025-08-08 16:29:10,054 - ERROR - Error en validación cruzada para Sales: Too many splits=5 for number of samples=32 with test_size=12 and gap=0.
+2025-08-08 16:29:10,058 - INFO - Holt-Winters entrenado para Sales: RMSE=inf
+2025-08-08 16:29:10,976 - INFO - Entrenamiento de modelos completado
