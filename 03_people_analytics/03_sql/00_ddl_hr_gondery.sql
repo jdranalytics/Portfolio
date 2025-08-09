@@ -156,7 +156,9 @@ SELECT
     ROUND(mae,2) AS mae,
     ROUND(smape,2) AS smape,
     ROUND(mase,2) AS mase,
+	ROUND(mape,2) AS mape,
     model_quality,
+	model_type,
     CASE 
         WHEN model_quality = 'Bueno' THEN 3
         WHEN model_quality = 'Aceptable' THEN 2
