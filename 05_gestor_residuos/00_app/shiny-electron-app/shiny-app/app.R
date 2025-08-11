@@ -28,8 +28,9 @@ library(DT)
 library(plotly)
 library(viridis)
 library(shinyjs) 
+library(writexl)
 
-#install.packages(c("shiny", "shinydashboard", "DBI", "RSQLite", "DT", "plotly", "viridis", "shinyjs"), dependencies = TRUE)
+#install.packages(c("shiny", "shinydashboard", "DBI", "RSQLite", "DT", "plotly", "viridis", "shinyjs", "writexl"), dependencies = TRUE)
 
 # Definición de operador %||% para valores por defecto
 `%||%` <- function(a, b) if (!is.null(a)) a else b
@@ -209,6 +210,13 @@ generate_codigo <- function() {
   sprintf("GR-%08d", last_id + 1)
 }
 
+# Helper function to determine if color is light (for contrast)
+is_light_color <- function(color) {
+  rgb <- col2rgb(color)
+  luminance <- (0.299 * rgb[1] + 0.587 * rgb[2] + 0.114 * rgb[3]) / 255
+  return(luminance > 0.5)  # True if light
+}
+
 # Interfaz de usuario con barra lateral
 ui <- dashboardPage(
 
@@ -257,12 +265,19 @@ ui <- dashboardPage(
         .form-control, select, textarea { background-color: #345C7D; color: #E6F0FA; border: 1px solid #2E6A9A; border-radius: 5px; }
         .form-control:focus { border-color: #6BA8D1; box-shadow: 0 0 0 0.2rem rgba(107, 168, 209, 0.25); }
         .dataTable { background-color: #2A4F6A; color: #E6F0FA; border: 1px solid #225A8A; border-radius: 5px; }
-        .dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataFilters_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate { color: #E6F0FA; }
-        .dataTables_wrapper .dataTables_filter input { background-color: #345C7D; color: #E6F0FA; border: 1px solid #2E6A9A; }
-        .dataTables_wrapper .dataTables_paginate .paginate_button { background-color: #2A4F6A; color: #E6F0FA; border: 1px solid #225A8A; }
-        .dataTables_wrapper .dataTables_paginate .paginate_button:hover { background-color: #2E6A9A; }
-        .dataTables_wrapper .dataTables_paginate .paginate_button.current { background-color: #6BA8D1; }
-        .dataTable td {font-size: 12px !important;}
+        .dataTables_wrapper .dataTables_paginate .paginate_button { background-color: #2A4F6A; color: #E6F0FA !important; border: 1px solid #225A8A; }
+        .dataTables_wrapper .dataTables_paginate .paginate_button:hover { background-color: #2E6A9A; color: #E6F0FA !important; }
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current { background-color: #6BA8D1; color: #E6F0FA !important; }
+        .dataTable td {font-size: 12px !important; color: #E6F0FA !important;}
+        .dataTables_wrapper label { color: #E6F0FA !important; }
+        .dataTables_wrapper .dataTables_length select { color: #E6F0FA !important; background-color: #345C7D; border: 1px solid #2E6A9A; }
+        .dataTables_wrapper .dataTables_length select option {
+          background-color: #345C7D !important;
+          color: #E6F0FA !important;}        
+        .dataTables_wrapper .dataTables_length select option:checked {
+          background-color: #6BA8D1 !important;
+          color: #E6F0FA !important;}
+        .dataTables_info {color: #E6F0FA !important;}
         .value-box { background-color: #2A4F6A; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .value-box .value { font-size: 24px; font-weight: 600; }
         .kpi-box { padding: 15px; border-radius: 8px; text-align: center; color: #FFFFFF; margin-bottom: 20px; }
@@ -365,6 +380,42 @@ ui <- dashboardPage(
       tabItem(
         tabName = "view_edit",
         fluidRow(
+          box(
+            width = 12,
+            title = "Filtros",
+            status = "primary",
+            solidHeader = TRUE,
+            collapsible = FALSE,
+            div(
+              style = "display: flex; flex-wrap: wrap; gap: 15px; padding: 15px;",
+              div(
+                style = "flex: 1; min-width: 200px;",
+                dateRangeInput("view_fecha", "Rango de Fechas:", start = Sys.Date() - 30, end = Sys.Date(), language = "es")
+              ),
+              div(
+                style = "flex: 1; min-width: 200px;",
+                selectInput("view_ciudad", "Ciudad:", choices = c("Todos", dbGetQuery(con, "SELECT Nombre FROM Ciudades")[[1]]), selected = "Todos")
+              ),
+              div(
+                style = "flex: 1; min-width: 200px;",
+                selectInput("view_establecimiento", "Establecimiento:", choices = c("Todos", dbGetQuery(con, "SELECT Nombre FROM Establecimientos")[[1]]), selected = "Todos")
+              ),
+              div(
+                style = "flex: 1; min-width: 200px;",
+                selectInput("view_tipo_residuo", "Tipo de Residuo:", choices = c("Todos", dbGetQuery(con, "SELECT DISTINCT TipoResiduo FROM Residuos")[[1]]), selected = "Todos")
+              ),
+              div(
+                style = "flex: 1; min-width: 200px;",
+                selectInput("view_certificado", "Certificado:", choices = c("Todos", "Pendiente", "Recibido", "No Aplicable"), selected = "Todos")
+              ),
+              div(
+                style = "flex: 1; min-width: 200px;",
+                textInput("search_codigo", "Buscar por Código")
+              )
+            )
+          )
+        ),
+        fluidRow(
           column(12, DTOutput("registros"))
         ),
         fluidRow(
@@ -443,6 +494,10 @@ ui <- dashboardPage(
               div(
                 style = "flex: 1; min-width: 200px;",
                 selectInput("dashboard_tipo_residuo", "Tipo de Residuo:", choices = c("Todos", dbGetQuery(con, "SELECT DISTINCT TipoResiduo FROM Residuos")[[1]]), selected = "Todos")
+              ),
+              div(
+                style = "flex: 1; min-width: 200px;",
+                selectInput("dashboard_certificado", "Certificado:", choices = c("Todos", "Pendiente", "Recibido", "No Aplicable"), selected = "Todos")
               )
             )
           )
@@ -472,8 +527,21 @@ ui <- dashboardPage(
         br(),
         fluidRow(
           column(12, 
+            plotlyOutput("dashboard_diff_pct", height = "40vh"),
+            uiOutput("diff_pct_empty")
+          )
+        ),
+        br(),
+        fluidRow(
+          column(12, 
             plotlyOutput("dashboard_doughnut_ciudad", height = "40vh"),
             uiOutput("doughnut_ciudad_empty")
+          )),
+        br(),
+        fluidRow(
+          column(12, 
+            plotlyOutput("dashboard_doughnut_gestor", height = "40vh"),
+            uiOutput("doughnut_gestor_empty")
           )),
         br(),
         fluidRow(
@@ -494,6 +562,41 @@ ui <- dashboardPage(
             plotlyOutput("dashboard_bar_tipo", height = "40vh"),
             uiOutput("bar_tipo_empty")
           )
+        ),
+        br(),
+        fluidRow(
+          column(12, 
+            plotlyOutput("top5_mecanismo", height = "40vh"),
+            uiOutput("top5_mecanismo_empty")
+          )
+        ),
+        br(),
+        fluidRow(
+          column(12, 
+            plotlyOutput("top5_presentacion", height = "40vh"),
+            uiOutput("top5_presentacion_empty")
+          )
+        ),
+        br(),
+        fluidRow(
+          column(12, 
+            plotlyOutput("top5_proceso", height = "40vh"),
+            uiOutput("top5_proceso_empty")
+          )
+        ),
+        br(),
+        fluidRow(
+          column(12, 
+            DTOutput("dashboard_table")
+          )
+        ),
+        fluidRow(
+          column(12,
+            div(style = "display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px;",
+              downloadButton("download_csv", "Descargar CSV"),
+              downloadButton("download_excel", "Descargar Excel")
+            )
+          )
         )
       )
     )
@@ -513,6 +616,9 @@ server <- function(input, output, session) {
     updateSelectInput(session, "dashboard_ciudad", choices = c("Todos", dbGetQuery(con, "SELECT Nombre FROM Ciudades")[[1]]))
     updateSelectInput(session, "dashboard_establecimiento", choices = c("Todos", dbGetQuery(con, "SELECT Nombre FROM Establecimientos")[[1]]))
     updateSelectInput(session, "dashboard_tipo_residuo", choices = c("Todos", dbGetQuery(con, "SELECT DISTINCT TipoResiduo FROM Residuos")[[1]]))
+    updateSelectInput(session, "view_ciudad", choices = c("Todos", dbGetQuery(con, "SELECT Nombre FROM Ciudades")[[1]]))
+    updateSelectInput(session, "view_establecimiento", choices = c("Todos", dbGetQuery(con, "SELECT Nombre FROM Establecimientos")[[1]]))
+    updateSelectInput(session, "view_tipo_residuo", choices = c("Todos", dbGetQuery(con, "SELECT DISTINCT TipoResiduo FROM Residuos")[[1]]))
   })
 
   # Campos dinámicos para nuevo registro
@@ -790,23 +896,114 @@ observe({
     residuos_trigger(residuos_trigger() + 1)
   })
 
+
+
+
+
+
+
+
   # Consulta reactiva de registros
+
   registros_data <- reactive({
-    registros_trigger() 
-    dbGetQuery(con, "SELECT r.ID, r.Codigo, r.FechaRegistro, c.Nombre AS Ciudad, e.Nombre AS Establecimiento, pg.Nombre AS Proceso, rs.Residuo, r.Descripcion, r.Cantidad, p.Nombre AS Presentacion, g.Nombre AS Gestor, me.Nombre AS Mecanismo, r.Certificado FROM Registros r LEFT JOIN Ciudades c ON r.CiudadID = c.ID LEFT JOIN Establecimientos e ON r.EstablecimientoID = e.ID LEFT JOIN ProcesosGeneradores pg ON r.ProcesoGeneradorID = pg.ID LEFT JOIN Residuos rs ON r.ResiduoID = rs.ID LEFT JOIN Presentaciones p ON r.PresentacionID = p.ID LEFT JOIN Gestores g ON r.GestorID = g.ID LEFT JOIN MecanismosEntrega me ON r.MecanismoID = me.ID")
+    # Forzar reactividad a todos los inputs relevantes
+    input$view_fecha
+    input$view_ciudad
+    input$view_establecimiento
+    input$view_tipo_residuo
+    input$view_certificado
+    input$search_codigo
+    registros_trigger()
+    
+    # Consulta base
+    query <- "SELECT r.ID, r.Codigo, r.FechaRegistro, c.Nombre AS Ciudad, e.Nombre AS Establecimiento, 
+                    pg.Nombre AS ProcesoGenerador, rs.Residuo, r.Descripcion, r.Cantidad, 
+                    p.Nombre AS Presentacion, g.Nombre AS Gestor, me.Nombre AS Mecanismo, 
+                    r.Certificado, rs.TipoResiduo 
+              FROM Registros r 
+              LEFT JOIN Ciudades c ON r.CiudadID = c.ID 
+              LEFT JOIN Establecimientos e ON r.EstablecimientoID = e.ID 
+              LEFT JOIN ProcesosGeneradores pg ON r.ProcesoGeneradorID = pg.ID 
+              LEFT JOIN Residuos rs ON r.ResiduoID = rs.ID 
+              LEFT JOIN Presentaciones p ON r.PresentacionID = p.ID 
+              LEFT JOIN Gestores g ON r.GestorID = g.ID 
+              LEFT JOIN MecanismosEntrega me ON r.MecanismoID = me.ID"
+    
+    # Construir condiciones WHERE
+    conditions <- c()
+    params <- list()
+    
+    # Filtro de fechas
+    if (!is.null(input$view_fecha) && length(input$view_fecha) == 2) {
+      conditions <- c(conditions, "r.FechaRegistro BETWEEN :fecha_inicio AND :fecha_fin")
+      params$fecha_inicio <- as.character(input$view_fecha[1])
+      params$fecha_fin <- as.character(input$view_fecha[2])
+    }
+    
+    # Filtro de ciudad
+    if (!is.null(input$view_ciudad) && input$view_ciudad != "Todos") {
+      conditions <- c(conditions, "c.Nombre = :ciudad")
+      params$ciudad <- input$view_ciudad
+    }
+    
+    # Filtro de establecimiento
+    if (!is.null(input$view_establecimiento) && input$view_establecimiento != "Todos") {
+      conditions <- c(conditions, "e.Nombre = :establecimiento")
+      params$establecimiento <- input$view_establecimiento
+    }
+    
+    # Filtro de tipo de residuo
+    if (!is.null(input$view_tipo_residuo) && input$view_tipo_residuo != "Todos") {
+      conditions <- c(conditions, "rs.TipoResiduo = :tipo_residuo")
+      params$tipo_residuo <- input$view_tipo_residuo
+    }
+    
+    # Filtro de certificado
+    if (!is.null(input$view_certificado) && input$view_certificado != "Todos") {
+      conditions <- c(conditions, "r.Certificado = :certificado")
+      params$certificado <- input$view_certificado
+    }
+    
+    # Búsqueda por código
+    if (!is.null(input$search_codigo) && input$search_codigo != "") {
+      conditions <- c(conditions, "r.Codigo LIKE :codigo")
+      params$codigo <- paste0("%", input$search_codigo, "%")
+    }
+    
+    # Combinar condiciones
+    if (length(conditions) > 0) {
+      query <- paste(query, "WHERE", paste(conditions, collapse = " AND "))
+    }
+    
+    # Ejecutar consulta
+    tryCatch({
+      datos <- dbGetQuery(con, query, params = params)
+      
+      # Verificar si hay datos
+      if (nrow(datos) == 0) {
+        showNotification("No se encontraron registros con los filtros aplicados", type = "warning")
+      }
+      
+      datos
+    }, error = function(e) {
+      showNotification(paste("Error al cargar registros:", e$message), type = "error")
+      data.frame() # Retorna dataframe vacío en caso de error
+    })
   })
 
+  # Renderizar el datatable 
   output$registros <- renderDT({
     registros <- registros_data()
     if (nrow(registros) == 0) {
       datatable(data.frame(Mensaje="No hay registros disponibles"), options = list(dom = 't'), rownames = FALSE)
     } else {
       datatable(
-        registros,
+        registros[, c("Codigo", "FechaRegistro", "Ciudad", "Establecimiento", "ProcesoGenerador", "Residuo", "Descripcion", "Cantidad", "Presentacion", "Gestor", "Mecanismo", "Certificado")],
         options = list(
           pageLength = 10,
           lengthMenu = c(5, 10, 25, 50),
           scrollX = TRUE,
+          dom = 'ltip',  # Removes search ('f')
           rowCallback = JS(
             "function(row, data, index) {",
             "  if ($.inArray(index, this.api().rows({selected:true}).indexes().toArray()) !== -1) {",
@@ -821,6 +1018,14 @@ observe({
       )
     }
   })
+
+
+
+
+
+
+
+
 
   # Trigger reactivo para dimensiones únicas
   dimensiones_trigger <- reactiveVal(0)
@@ -859,7 +1064,7 @@ observe({
             "}"
           )
         ),
-        class = "display",
+        class = "display compact",
         style = "bootstrap",
         selection = "single"
       )
@@ -886,6 +1091,7 @@ observe({
         options = list(
           pageLength = 10,
           scrollX = TRUE,
+          dom = 'ltip',  # Removes search ('f')
           rowCallback = JS(
             "function(row, data, index) {",
             "  if ($.inArray(index, this.api().rows({selected:true}).indexes().toArray()) !== -1) {",
@@ -894,7 +1100,7 @@ observe({
             "}"
           )
         ),
-        class = "display",
+        class = "display compact",
         style = "bootstrap",
         selection = "single"
       )
@@ -931,7 +1137,7 @@ observe({
   observeEvent(input$editar, {
     selected_row <- input$registros_rows_selected
     if (length(selected_row)) {
-      registro <- dbGetQuery(con, sprintf("SELECT * FROM Registros WHERE ID = %d", dbGetQuery(con, sprintf("SELECT ID FROM Registros LIMIT 1 OFFSET %d", selected_row - 1))[[1]]))
+      registro <- dbGetQuery(con, sprintf("SELECT * FROM Registros WHERE ID = %d", registros_data()$ID[selected_row]))
       showModal(modalDialog(
         title = "Editar Registro",
         fluidRow(class = "form-row-spaced",
@@ -1025,7 +1231,7 @@ observe({
     mecanismo_id <- dbGetQuery(con, sprintf("SELECT ID FROM MecanismosEntrega WHERE Nombre = '%s'", input$edit_mecanismo))[[1]]
 
     selected_row <- input$registros_rows_selected
-    registro_id <- dbGetQuery(con, sprintf("SELECT ID FROM Registros LIMIT 1 OFFSET %d", selected_row - 1))[[1]]
+    registro_id <- registros_data()$ID[selected_row]
 
     query <- sprintf(
       "UPDATE Registros SET CiudadID = %d, EstablecimientoID = %d, ProcesoGeneradorID = %d, ResiduoID = %d, Descripcion = '%s', Cantidad = %f, PresentacionID = %d, GestorID = %d, MecanismoID = %d, Certificado = '%s', UpdatedAt = CURRENT_TIMESTAMP WHERE ID = %d",
@@ -1050,7 +1256,8 @@ observe({
   observeEvent(input$borrar_registro_modal, {
     selected_row <- input$registros_rows_selected
     if (length(selected_row)) {
-      registro <- dbGetQuery(con, sprintf("SELECT * FROM Registros WHERE ID = %d", dbGetQuery(con, sprintf("SELECT ID FROM Registros LIMIT 1 OFFSET %d", selected_row - 1))[[1]]))
+      registro_id <- registros_data()$ID[selected_row]
+      registro <- dbGetQuery(con, sprintf("SELECT * FROM Registros WHERE ID = %d", registro_id))
       
       # Insertar en RespaldoRegistros
       backup_query <- sprintf(
@@ -1062,7 +1269,7 @@ observe({
       
       tryCatch({
         dbExecute(con, backup_query)
-        dbExecute(con, sprintf("DELETE FROM Registros WHERE ID = %d", registro$ID))
+        dbExecute(con, sprintf("DELETE FROM Registros WHERE ID = %d", registro_id))
         output$edit_msg <- renderUI({ NULL })
         showNotification("Registro eliminado con éxito y respaldado", type = "warning", duration = 3)
         later::later(function() { output$edit_msg <- renderUI({ NULL }) }, 2)
@@ -1196,12 +1403,17 @@ observe({
   # Tablero
   dashboard_data <- reactive({
     query <- "
-      SELECT r.FechaRegistro, r.Cantidad, rs.TipoResiduo, rs.GradoPeligrosidad, r.Certificado, 
-            rs.Residuo, c.Nombre AS Ciudad, e.Nombre AS Establecimiento
+      SELECT r.Codigo, r.FechaRegistro, r.Cantidad, rs.TipoResiduo, rs.GradoPeligrosidad, r.Certificado, 
+            rs.Residuo, c.Nombre AS Ciudad, e.Nombre AS Establecimiento, g.Nombre AS Gestor,
+            me.Nombre AS Mecanismo, p.Nombre AS Presentacion, pg.Nombre AS ProcesoGenerador, r.Descripcion
       FROM Registros r
       LEFT JOIN Ciudades c ON r.CiudadID = c.ID
       LEFT JOIN Establecimientos e ON r.EstablecimientoID = e.ID
       LEFT JOIN Residuos rs ON r.ResiduoID = rs.ID
+      LEFT JOIN Gestores g ON r.GestorID = g.ID
+      LEFT JOIN MecanismosEntrega me ON r.MecanismoID = me.ID
+      LEFT JOIN Presentaciones p ON r.PresentacionID = p.ID
+      LEFT JOIN ProcesosGeneradores pg ON r.ProcesoGeneradorID = pg.ID
     "
     datos <- dbGetQuery(con, query)
     if (!is.null(input$dashboard_fecha)) {
@@ -1217,21 +1429,31 @@ observe({
     if (!is.null(input$dashboard_tipo_residuo) && input$dashboard_tipo_residuo != "Todos") {
       datos <- datos[datos$TipoResiduo == input$dashboard_tipo_residuo, ]
     }
+    if (!is.null(input$dashboard_certificado) && input$dashboard_certificado != "Todos") {
+      datos <- datos[datos$Certificado == input$dashboard_certificado, ]
+    }
     datos
   })
 
   observe({
-    if (input$sidebar_menu == "dashboard" || is.null(input$sidebar_menu)) {
+    # Esta condición ahora se activa en el inicio y al visitar cualquiera de las dos pestañas con filtros de fecha.
+    if (input$sidebar_menu %in% c("dashboard", "view_edit") || is.null(input$sidebar_menu)) {
       query <- "SELECT MIN(FechaRegistro) AS min_date, MAX(FechaRegistro) AS max_date FROM Registros"
       dates <- dbGetQuery(con, query)
+      
       if (nrow(dates) > 0 && !is.na(dates$min_date) && !is.na(dates$max_date)) {
         min_date <- as.Date(dates$min_date)
         max_date <- as.Date(dates$max_date)
+        
+        # Actualiza el rango de fechas en ambas pestañas para que abarque todos los datos.
         updateDateRangeInput(session, "dashboard_fecha", start = min_date, end = max_date)
+        updateDateRangeInput(session, "view_fecha", start = min_date, end = max_date)
       } else {
+        # Si no hay datos, establece el rango a los últimos 30 días.
         default_start <- Sys.Date() - 30
         default_end <- Sys.Date()
         updateDateRangeInput(session, "dashboard_fecha", start = default_start, end = default_end)
+        updateDateRangeInput(session, "view_fecha", start = default_start, end = default_end)
       }
     }
   })
@@ -1244,6 +1466,7 @@ observe({
     trend_data$Mes <- as.Date(cut(as.Date(datos$FechaRegistro), "month"))
     trend_agg <- aggregate(Cantidad ~ Mes, data = trend_data, sum, na.rm = TRUE)
     trend_agg$Toneladas <- trend_agg$Cantidad / 1000
+    trend_agg$Diff_Pct <- c(NA, round((trend_agg$Toneladas[-1] - trend_agg$Toneladas[-nrow(trend_agg)]) / trend_agg$Toneladas[-nrow(trend_agg)] * 100, 1))
     
     pareto_agg <- aggregate(Cantidad ~ Residuo, data = datos, sum, na.rm = TRUE)
     pareto_agg <- pareto_agg[order(-pareto_agg$Cantidad), ]
@@ -1259,16 +1482,37 @@ observe({
     ciudad_agg$Toneladas <- ciudad_agg$Cantidad / 1000
     ciudad_agg <- ciudad_agg[order(ciudad_agg$Toneladas, decreasing = TRUE), ]
     
+    # Aggregation for doughnut chart (tons by gestor)
+    gestor_agg <- aggregate(Cantidad ~ Gestor, data = datos, sum, na.rm = TRUE)
+    gestor_agg$Toneladas <- gestor_agg$Cantidad / 1000
+    gestor_agg <- gestor_agg[order(gestor_agg$Toneladas, decreasing = TRUE), ]
+    
     # Corrected aggregation for stacked bar chart (tons by establishment and waste type)
     stacked_agg <- aggregate(Cantidad ~ Establecimiento + TipoResiduo, data = datos, FUN = sum, na.rm = TRUE)
     stacked_agg$Toneladas <- stacked_agg$Cantidad / 1000  # Matches SQL (SUM(R.Cantidad)/1000)
     stacked_agg <- stacked_agg[!is.na(stacked_agg$Establecimiento) & !is.na(stacked_agg$TipoResiduo), ] # Remove NA values
     
+    # Top 5 by Mecanismo
+    mecanismo_agg <- aggregate(Cantidad ~ Mecanismo, data = datos, sum, na.rm = TRUE)
+    mecanismo_agg$Toneladas <- mecanismo_agg$Cantidad / 1000
+    top5_mec <- head(mecanismo_agg[order(-mecanismo_agg$Toneladas), ], 5)
+    
+    # Top 5 by Presentacion
+    presentacion_agg <- aggregate(Cantidad ~ Presentacion, data = datos, sum, na.rm = TRUE)
+    presentacion_agg$Toneladas <- presentacion_agg$Cantidad / 1000
+    top5_pres <- head(presentacion_agg[order(-presentacion_agg$Toneladas), ], 5)
+    
+    # Top 5 by ProcesoGenerador
+    proceso_agg <- aggregate(Cantidad ~ ProcesoGenerador, data = datos, sum, na.rm = TRUE)
+    proceso_agg$Toneladas <- proceso_agg$Cantidad / 1000
+    top5_proc <- head(proceso_agg[order(-proceso_agg$Toneladas), ], 5)
+    
     # Debugging: Print the aggregated data to verify
     print("Stacked Aggregation:")
     print(stacked_agg)
     
-    list(trend = trend_agg, pareto = pareto_agg, bar = bar_agg, ciudad = ciudad_agg, stacked = stacked_agg)
+    list(trend = trend_agg, pareto = pareto_agg, bar = bar_agg, ciudad = ciudad_agg, stacked = stacked_agg, gestor = gestor_agg,
+         top5_mec = top5_mec, top5_pres = top5_pres, top5_proc = top5_proc)
   })
 
   # KPIs
@@ -1372,15 +1616,15 @@ observe({
     colors <- viridisLite::viridis(n)
     
     # Prepare text colors based on city
-    text_colors <- ifelse(agg$Ciudad == "Medellín", "#000000", "#E6F0FA")
-    hover_colors <- ifelse(agg$Ciudad == "Medellín", "black", "white")
+    text_colors <- sapply(colors, function(c) if (is_light_color(c)) "#E6F0FA" else "#E6F0FA")
+    hover_colors <- sapply(colors, function(c) if (is_light_color(c)) "black" else "white")
     
     # Calculate total tons for percentage
     total_tons <- sum(agg$Toneladas)
     
     p <- plot_ly(data = agg, labels = ~Ciudad, values = ~Toneladas, type = "pie", hole = 0.4,
                 textinfo = "label+percent+value", texttemplate = "%{label}<br>%{percent:.1%}<br>%{value:.2f} Ton",
-                textposition = "inside",
+                textposition = "outside",
                 textfont = list(color = ~text_colors),  # Dynamic text color per segment
                 hoverinfo = "text",
                 hovertext = ~paste0("<span style='color:", hover_colors, "'>",
@@ -1397,6 +1641,48 @@ observe({
       margin = list(l = 50, r = 50, t = 50, b = 50),
       hovermode = "closest",
       hoverlabel = list(font = list(color = "#FFFFFF"))  # Default, overridden by hovertext
+    )
+    p
+  })
+
+
+  output$dashboard_doughnut_gestor <- renderPlotly({
+    agg <- dashboard_agg()$gestor
+    if (is.null(agg) || nrow(agg) == 0 || all(is.na(agg$Gestor)) || all(is.na(agg$Toneladas))) {
+      output$doughnut_gestor_empty <- renderUI({
+        tags$div(class = "alert alert-info", "No hay datos disponibles para el gráfico de proporción por tipo de gestor.")
+      })
+      return(NULL)
+    }
+    output$doughnut_gestor_empty <- renderUI({ NULL })
+    
+    n <- length(unique(agg$Gestor))
+    colors <- viridisLite::viridis(n)
+    
+    text_colors <- sapply(colors, function(c) if (is_light_color(c)) "#E6F0FA" else "#E6F0FA")
+    hover_colors <- sapply(colors, function(c) if (is_light_color(c)) "black" else "white")
+    
+    total_tons <- sum(agg$Toneladas)
+    
+    p <- plot_ly(data = agg, labels = ~Gestor, values = ~Toneladas, type = "pie", hole = 0.4,
+                textinfo = "label+percent+value", texttemplate = "%{label}<br>%{percent:.1%}<br>%{value:.2f} Ton",
+                textposition = "outside",
+                textfont = list(color = ~text_colors),  
+                hoverinfo = "text",
+                hovertext = ~paste0("<span style='color:", hover_colors, "'>",
+                                    "Gestor: ", Gestor, "<br>",
+                                    "Porcentaje: ", round(Toneladas / total_tons * 100, 1), "%<br>",
+                                    "Toneladas: ", round(Toneladas, 2), " Ton</span>"),
+                marker = list(colors = colors, line = list(color = "#162C40", width = 1)),
+                showlegend = FALSE)
+    
+    p <- p %>% layout(
+      title = list(text = "Proporción de Toneladas por Tipo de Gestor", font = list(color = "#E6F0FA", size = 12), xanchor = "left", x = 0.02),
+      plot_bgcolor = "#162C40",
+      paper_bgcolor = "#162C40",
+      margin = list(l = 50, r = 50, t = 50, b = 50),
+      hovermode = "closest",
+      hoverlabel = list(font = list(color = "#FFFFFF"))
     )
     p
   })
@@ -1480,6 +1766,49 @@ observe({
     p
   })
 
+  output$dashboard_diff_pct <- renderPlotly({
+    agg <- dashboard_agg()$trend
+    if (is.null(agg) || nrow(agg) < 2 || all(is.na(agg$Diff_Pct[-1]))) {
+      output$diff_pct_empty <- renderUI({
+        tags$div(class = "alert alert-info", "No hay suficientes datos para calcular la diferencia mes a mes.")
+      })
+      return(NULL)
+    }
+    output$diff_pct_empty <- renderUI({ NULL })
+    
+    diff_data <- agg[-1, ]
+    diff_data$Color <- ifelse(diff_data$Diff_Pct < 0, "#27AE60", ifelse(diff_data$Diff_Pct == 0, "#F1C40F", "#E74C3C"))
+    
+    # Calculamos el rango del eje Y dinámicamente
+    y_min <- min(diff_data$Diff_Pct, na.rm = TRUE)
+    y_max <- max(diff_data$Diff_Pct, na.rm = TRUE)
+    y_buffer <- (y_max - y_min) * 0.20 # 20% de margen
+    
+    p <- plot_ly(data = diff_data, x = ~format(Mes, "%Y-%m"), y = ~Diff_Pct, type = "bar",
+                marker = list(color = ~Color),
+                # Texto de la etiqueta con % y posición externa
+                text = ~paste(round(Diff_Pct, 2), "%"),
+                textposition = "outside",
+                textfont = list(color = "#E6F0FA", size = 10),
+                hovertemplate = "<b>%{x}</b><br>Diferencia: %{y:.2f}%<extra></extra>") %>%
+            
+      layout(
+        title = list(text = "Diferencia Mes a Mes en Porcentaje (%)", font = list(color = "#E6F0FA", size = 12), xanchor = "left", x = 0.01),
+        xaxis = list(title = "", titlefont = list(color = "#E6F0FA"), tickfont = list(color = "#E6F0FA"),
+                    gridcolor = "#225A8A", zerolinecolor = "#225A8A"),
+        yaxis = list(title = "Diferencia (%)", titlefont = list(color = "#E6F0FA"), tickfont = list(color = "#E6F0FA"),
+                    gridcolor = "#225A8A", zerolinecolor = "#225A8A",
+                    hoverformat = ".2f",
+                    # Ajustamos el rango del eje Y
+                    range = c(y_min - y_buffer, y_max + y_buffer)),
+        plot_bgcolor = "#162C40",
+        paper_bgcolor = "#162C40",
+        margin = list(l = 50, r = 50, t = 50, b = 50),
+        hoverlabel = list(font = list(color = "#FFFFFF"))
+      )
+    p
+  })
+
   output$dashboard_pareto <- renderPlotly({
     agg <- dashboard_agg()$pareto
     if (is.null(agg) || nrow(agg) == 0 || all(is.na(agg$Residuo)) || all(is.na(agg$Toneladas))) {
@@ -1530,13 +1859,14 @@ observe({
       colors <- viridisLite::viridis(n)
       
       p <- plot_ly(data = agg, y = ~TipoResiduo, x = ~Toneladas, type = "bar",
-                  marker = list(color = colors)) %>%
-        add_trace(x = ~Toneladas, y = ~TipoResiduo, type = 'bar', 
+                  marker = list(color = colors),
+                  # Texto de la etiqueta en la barra
                   text = ~paste(round(Toneladas, 2), "Ton"), 
                   textposition = 'outside', 
                   textfont = list(color = '#E6F0FA', size = 10),
                   cliponaxis = FALSE, 
-                  hoverinfo = 'none') %>% 
+                  # Hover personalizado con dos decimales y nombre "Toneladas"
+                  hovertemplate = "<b>Toneladas</b>: %{x:.2f}<br><b>Tipo de Residuo</b>: %{y}<extra></extra>") %>%
         layout(
           title = list(text = "Toneladas de Residuos Generadas por Tipo de Residuo", font = list(color = "#E6F0FA", size = 12), xanchor = "left", x = 0.02),
           xaxis = list(
@@ -1556,8 +1886,199 @@ observe({
           showlegend = FALSE
         )
       p
+  })
+
+
+  output$top5_mecanismo <- renderPlotly({
+      agg <- dashboard_agg()$top5_mec
+      if (is.null(agg) || nrow(agg) == 0) {
+        output$top5_mecanismo_empty <- renderUI({
+          tags$div(class = "alert alert-info", "No hay datos disponibles para el top 5 por Mecanismo de Entrega.")
+        })
+        return(NULL)
+      }
+      output$top5_mecanismo_empty <- renderUI({ NULL })
+      
+      agg$Mecanismo <- factor(agg$Mecanismo, levels = agg$Mecanismo[order(agg$Toneladas, decreasing = FALSE)])
+      
+      n <- nrow(agg)
+      colors <- viridisLite::viridis(n)
+      
+      p <- plot_ly(data = agg, y = ~Mecanismo, x = ~Toneladas, type = "bar",
+                  marker = list(color = colors),
+                  # Texto de la etiqueta en la barra
+                  text = ~paste(round(Toneladas, 2), "Ton"), 
+                  textposition = 'outside', 
+                  textfont = list(color = '#E6F0FA', size = 10),
+                  cliponaxis = FALSE, 
+                  # Hover personalizado con dos decimales y nombre "Toneladas"
+                  hovertemplate = "<b>Toneladas</b>: %{x:.2f}<br><b>Mecanismo</b>: %{y}<extra></extra>") %>% 
+        layout(
+          title = list(text = "Top 5 Toneladas por Mecanismo de Entrega", font = list(color = "#E6F0FA", size = 12), xanchor = "left", x = 0.02),
+          xaxis = list(
+            title = "", 
+            showgrid = FALSE, 
+            zeroline = FALSE, 
+            showticklabels = FALSE,  
+            ticks = "",             
+            tickfont = list(color = "#E6F0FA", size = 10)
+          ),
+          yaxis = list(title = "", showgrid = FALSE, zeroline = FALSE, tickfont = list(color = "#E6F0FA", size = 10)),
+          plot_bgcolor = "#162C40",
+          paper_bgcolor = "#162C40",
+          margin = list(l = 50, r = 50, t = 50, b = 50),
+          hovermode = "y unified",
+          hoverlabel = list(font = list(color = "#FFFFFF")),
+          showlegend = FALSE
+        )
+      p
+  })
+
+
+  output$top5_presentacion <- renderPlotly({
+      agg <- dashboard_agg()$top5_pres
+      if (is.null(agg) || nrow(agg) == 0) {
+        output$top5_presentacion_empty <- renderUI({
+          tags$div(class = "alert alert-info", "No hay datos disponibles para el top 5 por Presentación.")
+        })
+        return(NULL)
+      }
+      output$top5_presentacion_empty <- renderUI({ NULL })
+      
+      agg$Presentacion <- factor(agg$Presentacion, levels = agg$Presentacion[order(agg$Toneladas, decreasing = FALSE)])
+      
+      n <- nrow(agg)
+      colors <- viridisLite::viridis(n)
+      
+      p <- plot_ly(data = agg, y = ~Presentacion, x = ~Toneladas, type = "bar",
+                  marker = list(color = colors),
+                  # Texto de la etiqueta en la barra
+                  text = ~paste(round(Toneladas, 2), "Ton"), 
+                  textposition = 'outside', 
+                  textfont = list(color = '#E6F0FA', size = 10),
+                  cliponaxis = FALSE, 
+                  # Hover personalizado con dos decimales y nombre "Toneladas"
+                  hovertemplate = "<b>Toneladas</b>: %{x:.2f}<br><b>Presentación</b>: %{y}<extra></extra>") %>%
+        layout(
+          title = list(text = "Top 5 Toneladas por Presentación", font = list(color = "#E6F0FA", size = 12), xanchor = "left", x = 0.02),
+          xaxis = list(
+            title = "", 
+            showgrid = FALSE, 
+            zeroline = FALSE, 
+            showticklabels = FALSE,  
+            ticks = "",             
+            tickfont = list(color = "#E6F0FA", size = 10)
+          ),
+          yaxis = list(title = "", showgrid = FALSE, zeroline = FALSE, tickfont = list(color = "#E6F0FA", size = 10)),
+          plot_bgcolor = "#162C40",
+          paper_bgcolor = "#162C40",
+          margin = list(l = 50, r = 50, t = 50, b = 50),
+          hovermode = "y unified",
+          hoverlabel = list(font = list(color = "#FFFFFF")),
+          showlegend = FALSE
+        )
+      p
+  })
+
+  output$top5_proceso <- renderPlotly({
+      agg <- dashboard_agg()$top5_proc
+      if (is.null(agg) || nrow(agg) == 0) {
+        output$top5_proceso_empty <- renderUI({
+          tags$div(class = "alert alert-info", "No hay datos disponibles para el top 5 por Proceso Generador.")
+        })
+        return(NULL)
+      }
+      output$top5_proceso_empty <- renderUI({ NULL })
+      
+      agg$ProcesoGenerador <- factor(agg$ProcesoGenerador, levels = agg$ProcesoGenerador[order(agg$Toneladas, decreasing = FALSE)])
+      
+      n <- nrow(agg)
+      colors <- viridisLite::viridis(n)
+      
+      p <- plot_ly(data = agg, y = ~ProcesoGenerador, x = ~Toneladas, type = "bar",
+                  marker = list(color = colors),
+                  # Texto de la etiqueta en la barra
+                  text = ~paste(round(Toneladas, 2), "Ton"), 
+                  textposition = 'outside', 
+                  textfont = list(color = '#E6F0FA', size = 10),
+                  cliponaxis = FALSE, 
+                  # Hover personalizado con dos decimales y nombre "Toneladas"
+                  hovertemplate = "<b>Toneladas</b>: %{x:.2f}<br><b>Proceso Generador</b>: %{y}<extra></extra>") %>%
+        layout(
+          title = list(text = "Top 5 Toneladas por Proceso Generador", font = list(color = "#E6F0FA", size = 12), xanchor = "left", x = 0.02),
+          xaxis = list(
+            title = "", 
+            showgrid = FALSE, 
+            zeroline = FALSE, 
+            showticklabels = FALSE,  
+            ticks = "",             
+            tickfont = list(color = "#E6F0FA", size = 10)
+          ),
+          yaxis = list(title = "", showgrid = FALSE, zeroline = FALSE, tickfont = list(color = "#E6F0FA", size = 10)),
+          plot_bgcolor = "#162C40",
+          paper_bgcolor = "#162C40",
+          margin = list(l = 50, r = 50, t = 50, b = 50),
+          hovermode = "y unified",
+          hoverlabel = list(font = list(color = "#FFFFFF")),
+          showlegend = FALSE
+        )
+      p
+  })
+
+
+
+  dashboard_table_data <- reactive({
+    datos <- dashboard_data()
+    datos$FechaRegistro <- as.character(datos$FechaRegistro)
+    datos$Cantidad <- round(datos$Cantidad, 2)
+    datos
+  })
+
+  output$dashboard_table <- renderDT({
+      datos <- dashboard_table_data()
+      if (nrow(datos) == 0) {
+        datatable(data.frame(Mensaje="No hay registros disponibles"), 
+                options = list(dom = 't'), 
+                rownames = FALSE)
+      } else {
+        datatable(
+          datos[, c("Codigo","FechaRegistro", "Ciudad", "Establecimiento", "ProcesoGenerador", "Residuo", "Descripcion", "Cantidad", "Presentacion", "Gestor", "Mecanismo", "Certificado")],
+          options = list(
+            pageLength = 10,
+            lengthMenu = c(5, 10, 25, 50),
+            scrollX = TRUE,
+            dom = 'ltip',
+            initComplete = JS(
+              "function(settings, json) {",
+              "$(this.api().table().body()).css({'background-color': 'transparent'});",
+              "}"
+            )
+          ),
+          class = "display compact", 
+          style = "default", 
+          selection = "none"
+        ) %>% 
+          formatStyle(1:ncol(datos), backgroundColor = styleEqual(c(0,1), c('#f9f9f9', 'white')))
+      }
     })
 
+  output$download_csv <- downloadHandler(
+    filename = function() {
+      "dashboard_data.csv"
+    },
+    content = function(file) {
+      write.csv(dashboard_table_data(), file, row.names = FALSE)
+    }
+  )
+
+  output$download_excel <- downloadHandler(
+    filename = function() {
+      "dashboard_data.xlsx"
+    },
+    content = function(file) {
+      write_xlsx(dashboard_table_data(), file)
+    }
+  )
 
 }
 
