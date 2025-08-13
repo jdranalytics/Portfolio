@@ -52,9 +52,23 @@ def is_workday(date):
     return date.weekday() < 5 and date not in us_holidays
 
 def generate_workday_data(n=1000):
+    # Adjust department distribution - 65% Sales, rest distributed among others
+    departments = ['Sales'] * 650 + ['Inventory'] * 100 + ['HR'] * 50 + ['IT'] * 100 + ['Marketing'] * 50 + ['Finance'] * 50
+    random.shuffle(departments)
+    
     # Define shift distribution: 40% Morning, 40% Afternoon, 20% Night
     shift_types = ['Morning'] * 400 + ['Afternoon'] * 400 + ['Night'] * 200
     random.shuffle(shift_types)
+
+    # Function to assign role based on department
+    def assign_role(department):
+        if department == 'Sales':
+            return random.choices(
+                ['Manager', 'Supervisor', 'Analyst', 'Associate', 'Clerk'],
+                weights=[0.02, 0.08, 0.1, 0.2, 0.6]
+            )[0]
+        else:
+            return random.choice(['Manager', 'Supervisor', 'Analyst', 'Associate', 'Clerk'])
 
     data = {
         'employee_id': range(1001, 1001 + n),
@@ -62,8 +76,8 @@ def generate_workday_data(n=1000):
         'last_name': [fake.last_name() for _ in range(n)],
         'gender': [],
         'age': [],
-        'department': [random.choice(['Sales', 'Inventory', 'HR', 'IT', 'Marketing', 'Finance']) for _ in range(n)],
-        'job_role': [],
+        'department': departments,
+        'job_role': [assign_role(dept) for dept in departments],
         'shift_type': shift_types,
         'hire_date': [fake.date_between(start_date='-10y', end_date='-30d') for _ in range(n)],
         'termination_date': [None] * n,
@@ -71,18 +85,20 @@ def generate_workday_data(n=1000):
         'salary': [],
         'location': [random.choice(['New York', 'Los Angeles', 'Chicago', 'Houston', 'Miami']) for _ in range(n)],
         'status': [],
-        'performance_score': []
+        'performance_score': [],
+        'high_absenteeism': [False] * n  # New field to track high absenteeism
     }
 
     for i in range(n):
         gender = random.choice(['Male', 'Female'])
         data['gender'].append(gender)
         data['first_name'].append(random.choice(male_names if gender == 'Male' else female_names))
-        role = random.choice(['Manager', 'Associate', 'Analyst', 'Clerk', 'Supervisor'])
-        data['job_role'].append(role)
+        role = data['job_role'][i]
         age_range = role_age_ranges[role]
         age = random.randint(age_range[0], age_range[1])
         data['age'].append(age)
+        
+        # Base salary calculation
         base_salary = {
             'Manager': random.uniform(80000, 120000),
             'Supervisor': random.uniform(60000, 90000),
@@ -90,18 +106,43 @@ def generate_workday_data(n=1000):
             'Associate': random.uniform(40000, 60000),
             'Clerk': random.uniform(30000, 50000)
         }[role]
-        data['salary'].append(round(base_salary * (1 + (age - 18) * 0.01), 2))
+        
+        # Adjust salary based on age and role
+        salary = round(base_salary * (1 + (age - 18) * 0.01), 2)
+        
         hire_date = data['hire_date'][i]
         hire_date_dt = datetime.combine(hire_date, datetime.min.time())
         days_since_hire = (datetime.today() - hire_date_dt).days
-
-        if random.random() < 0.15:
+        
+        # Termination probability based on role and department
+        termination_prob = 0.15  # Base probability
+        
+        # Factors increasing termination probability
+        if role == 'Clerk' and data['department'][i] == 'Sales':
+            termination_prob *= 1.5  # Higher turnover for sales clerks
+        if age < 25:
+            termination_prob *= 1.3  # Younger employees more likely to leave
+        
+        if random.random() < termination_prob:
             data['status'].append('Terminated')
             max_days = min(365 * 5, days_since_hire)
             if max_days < 30:
                 max_days = 30
-            days_employed = random.randint(30, max_days)
+
+            # Employees with poor performance leave sooner
+            performance_factor = random.random() * 0.5  # 0-0.5 multiplier for early termination
+            upper_limit = int(max_days * (1 - performance_factor))
+            if upper_limit < 30:
+                upper_limit = 30
+            days_employed = random.randint(30, upper_limit)
             data['termination_date'][i] = hire_date + timedelta(days=days_employed)
+            
+            # Mark some terminated employees as having high absenteeism (especially in Sales)
+            if data['department'][i] == 'Sales' and random.random() < 0.3:  # 30% of terminated sales
+                data['high_absenteeism'][i] = True
+            
+            # Reduce salary for terminated employees
+            salary *= random.uniform(0.85, 0.95)
         elif random.random() < 0.1:
             data['status'].append('On Leave')
             max_days = days_since_hire
@@ -111,10 +152,24 @@ def generate_workday_data(n=1000):
             data['onleave_date'][i] = hire_date + timedelta(days=days_employed)
         else:
             data['status'].append('Active')
-        if data['status'][i] == 'Terminated' and random.random() < 0.6:
-            data['performance_score'].append(random.randint(1, 5))
+        
+        data['salary'].append(round(salary, 2))
+        
+        # Generate performance score with bias based on termination status
+        if data['status'][i] == 'Terminated':
+            # Terminated employees more likely to have lower scores
+            score = random.choices(
+                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                weights=[0.15, 0.2, 0.2, 0.15, 0.1, 0.08, 0.06, 0.04, 0.01, 0.01]
+            )[0]
         else:
-            data['performance_score'].append(random.randint(1, 10))
+            # Active employees more likely to have higher scores
+            score = random.choices(
+                [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                weights=[0.01, 0.02, 0.05, 0.08, 0.1, 0.15, 0.2, 0.2, 0.1, 0.09]
+            )[0]
+        
+        data['performance_score'].append(score)
 
     df = pd.DataFrame(data)
     df['hire_date'] = pd.to_datetime(df['hire_date'])
@@ -133,7 +188,8 @@ def generate_kronos_data(workday_df=None):
         'work_date': [],
         'hours_worked': [],
         'shift_type': [],
-        'overtime_hours': []
+        'overtime_hours': [],
+        'original_shift_type': []  
     }
 
     entry_count = 0
@@ -144,6 +200,7 @@ def generate_kronos_data(workday_df=None):
         onleave_date = emp_data['onleave_date']
         department = emp_data['department']
         employee_shift = emp_data['shift_type']
+        is_high_absentee = emp_data['high_absenteeism']
 
         current_date = start_date
         while current_date <= end_date:
@@ -159,17 +216,41 @@ def generate_kronos_data(workday_df=None):
                 data['entry_id'].append(entry_count + 1)
                 data['employee_id'].append(emp_id)
                 data['work_date'].append(current_date)
-                if random.random() < 0.05:  # 5% chance of absence
+                data['original_shift_type'].append(employee_shift)  # Siempre guarda el turno real
+
+                # Adjust absence probability based on shift type and high absenteeism status
+                base_absence_prob = {
+                    'Morning': 0.015,  # 1.5% absence
+                    'Afternoon': 0.02,  # 2% absence
+                    'Night': 0.04  # 4% absence
+                }[employee_shift]
+                
+                # Increase absence probability for high absenteeism employees (mostly in Sales)
+                if is_high_absentee:
+                    base_absence_prob *= 3  # 3x higher absence rate
+                
+                if random.random() < base_absence_prob:
                     data['hours_worked'].append(0.0)
                     data['overtime_hours'].append(0.0)
                     data['shift_type'].append('None')
                 else:
                     data['hours_worked'].append(round(random.uniform(4, 8), 2))
                     data['shift_type'].append(employee_shift)
+                    
+                    # Calculate overtime with boosters
                     month = current_date.month
                     multiplier = overtime_multipliers.get(department, {'default': 1.0}).get(
                         'June' if month == 6 else 'December' if month == 12 else 'default', 1.0)
-                    overtime = round(random.uniform(0, 4) * multiplier, 2) if random.random() > 0.8 else 0
+                    
+                    # Base overtime probability (8% normally, 15% during boost months)
+                    overtime_prob = 0.15 if month in [6, 12] else 0.08
+                    
+                    if random.random() < overtime_prob:
+                        # Higher overtime during boost months
+                        overtime_max = 6 if month in [6, 12] else 4
+                        overtime = round(random.uniform(0, overtime_max) * multiplier, 2)
+                    else:
+                        overtime = 0
                     data['overtime_hours'].append(overtime)
                 entry_count += 1
             current_date += timedelta(days=1)
@@ -181,10 +262,12 @@ def generate_kronos_data(workday_df=None):
 
 def generate_survey_data(n=2000, workday_df=None):
     employee_ids = workday_df['employee_id'].tolist()
+    
+    # Score distribution with more weight to positive scores
     score_distribution = [5] * int(n * 0.35) + [4] * int(n * 0.35) + [3] * int(n * 0.20) + [1, 2] * int(n * 0.05)
     random.shuffle(score_distribution)
 
-    # 100 positive templates
+        # 100 positive templates
     positive_templates = [
         "I'm thrilled with my role. The {team} is {supportive} and offers {excellent} growth.",
         "The {workplace} vibe is {great}. Leadership truly {listens} to us.",
@@ -340,7 +423,7 @@ def generate_survey_data(n=2000, workday_df=None):
         "Team efforts are {fine} still.",
         "The {workplace} is {okay} for me.",
         "My role is {average} satisfying.",
-        "Management is {decent} occasionally.",
+        "Management is {decent} ocasionaly.",
         "Work-life balance is {acceptable} yet.",
         "The {team} is {fine} with me.",
         "The place is {okay} to be.",
@@ -485,21 +568,115 @@ def generate_survey_data(n=2000, workday_df=None):
         return response
 
     data = {
-        'survey_id': range(1, n + 1),
-        'employee_id': [random.choice(employee_ids) for _ in range(n)],
+        'survey_id': [],
+        'employee_id': [],
         'survey_date': [],
-        'satisfaction_score': score_distribution[:n],
+        'satisfaction_score': [],
         'response': []
     }
-    for i in range(n):
-        emp_id = data['employee_id'][i]
-        emp_data = workday_df[workday_df['employee_id'] == emp_id].iloc[0]
-        hire_date = emp_data['hire_date']
-        termination_date = emp_data['termination_date']
-        max_date = termination_date if termination_date is not pd.NaT else datetime(2025, 5, 23, 23, 59)
-        survey_date = fake.date_between(start_date=hire_date, end_date=max_date)
-        data['survey_date'].append(survey_date)
-        data['response'].append(generate_response(data['satisfaction_score'][i]))
+
+    survey_id_counter = 1
+    # Primero, aseguramos al menos una encuesta y evaluación por año de empleo
+    for idx, emp_row in workday_df.iterrows():
+        emp_id = emp_row['employee_id']
+        hire_date = emp_row['hire_date']
+        termination_date = emp_row['termination_date']
+        status = emp_row['status']
+        # Si fue terminado, la fecha máxima es la de terminación, si no, una fecha futura razonable
+        if pd.notnull(termination_date):
+            end_date = termination_date
+        else:
+            end_date = datetime(2025, 5, 23)
+        # Si el rango es inválido, ajusta
+        if hire_date > end_date:
+            end_date = hire_date
+
+        # Calcular años completos de empleo (al menos 1)
+        months_employed = max(1, ((end_date.year - hire_date.year) * 12 + (end_date.month - hire_date.month)))
+        years_employed = max(1, int(np.ceil(months_employed / 12)))
+        # Si fue terminado antes de 6 meses, solo una encuesta en la fecha de terminación
+        if pd.notnull(termination_date) and (termination_date - hire_date).days < 180:
+            survey_dates = [termination_date]
+        else:
+            # Una encuesta por año, distribuidas uniformemente
+            survey_dates = []
+            for y in range(years_employed):
+                survey_year = hire_date.year + y
+                # Encuesta en aniversario o antes de terminar
+                survey_dt = hire_date + pd.DateOffset(years=y)
+                if survey_dt > end_date:
+                    survey_dt = end_date
+                survey_dates.append(survey_dt)
+        for survey_dt in survey_dates:
+            # Score y respuesta
+            if status == 'Terminated' and pd.notnull(termination_date) and (termination_date - hire_date).days < 180:
+                # Si fue terminado antes de 6 meses, score bajo
+                score = random.choice([1, 2, 2, 3])
+            else:
+                # Score según lógica original
+                original_score = random.choices([5, 4, 3, 2, 1], weights=[0.35, 0.35, 0.2, 0.05, 0.05])[0]
+                # Ajuste por antigüedad
+                months_since_hire = (survey_dt.year - hire_date.year) * 12 + (survey_dt.month - hire_date.month)
+                if status == 'Terminated':
+                    score = max(1, original_score - random.choice([0, 0, 1, 1, 2]))
+                else:
+                    if months_since_hire > 12:
+                        score = min(5, original_score + random.choice([0, 0, 1]))
+                    elif months_since_hire > 6:
+                        score = min(5, original_score + random.choice([0, 0, 0, 1]))
+                    else:
+                        score = original_score
+            data['survey_id'].append(survey_id_counter)
+            data['employee_id'].append(emp_id)
+            data['survey_date'].append(survey_dt)
+            data['satisfaction_score'].append(score)
+            data['response'].append(generate_response(score))
+            survey_id_counter += 1
+
+    # Luego, si faltan encuestas para llegar a n, genera aleatorias (sin violar reglas)
+    extra_needed = n - len(data['survey_id'])
+    if extra_needed > 0:
+        for _ in range(extra_needed):
+            emp_id = random.choice(employee_ids)
+            emp_data = workday_df[workday_df['employee_id'] == emp_id].iloc[0]
+            hire_date = emp_data['hire_date']
+            termination_date = emp_data['termination_date']
+            status = emp_data['status']
+            if pd.notnull(termination_date):
+                end_date = termination_date
+            else:
+                end_date = datetime(2025, 5, 23)
+            # Asegura rango válido
+            if hire_date > end_date:
+                survey_dt = hire_date
+            else:
+                delta_days = (end_date - hire_date).days
+                if delta_days < 0:
+                    survey_dt = hire_date
+                else:
+                    survey_dt = hire_date + timedelta(days=random.randint(0, delta_days))
+            # Score y respuesta
+            if status == 'Terminated' and pd.notnull(termination_date) and (termination_date - hire_date).days < 180:
+                score = random.choice([1, 2, 2, 3])
+            else:
+                original_score = random.choices([5, 4, 3, 2, 1], weights=[0.35, 0.35, 0.2, 0.05, 0.05])[0]
+                months_since_hire = (survey_dt.year - hire_date.year) * 12 + (survey_dt.month - hire_date.month)
+                if status == 'Terminated':
+                    score = max(1, original_score - random.choice([0, 0, 1, 1, 2]))
+                else:
+                    if months_since_hire > 12:
+                        score = min(5, original_score + random.choice([0, 0, 1]))
+                    elif months_since_hire > 6:
+                        score = min(5, original_score + random.choice([0, 0, 0, 1]))
+                    else:
+                        score = original_score
+            data['survey_id'].append(survey_id_counter)
+            data['employee_id'].append(emp_id)
+            data['survey_date'].append(survey_dt)
+            data['satisfaction_score'].append(score)
+            data['response'].append(generate_response(score))
+            survey_id_counter += 1
+
     df = pd.DataFrame(data)
     df['survey_date'] = pd.to_datetime(df['survey_date'])
     df.to_csv('survey_data.csv', index=False)
@@ -512,10 +689,23 @@ def calculate_absenteeism(kronos_df):
                          (kronos_df['hours_worked'] == 0) & 
                          (kronos_df['overtime_hours'] == 0)].shape[0]
     absenteeism_percentage = (absences / total_weekday_records) * 100 if total_weekday_records > 0 else 0.0
+
+    # Calcular por turno usando original_shift_type
+    shift_absenteeism = {}
+    for shift in ['Morning', 'Afternoon', 'Night']:
+        shift_records = kronos_df[(kronos_df['is_weekday']) & (kronos_df['original_shift_type'] == shift)].shape[0]
+        shift_absences = kronos_df[(kronos_df['is_weekday']) &
+                                   (kronos_df['original_shift_type'] == shift) &
+                                   (kronos_df['hours_worked'] == 0) &
+                                   (kronos_df['overtime_hours'] == 0)].shape[0]
+        shift_percentage = (shift_absences / shift_records) * 100 if shift_records > 0 else 0.0
+        shift_absenteeism[shift] = round(shift_percentage, 2)
+
     return {
         'total_weekday_records': total_weekday_records,
         'absences': absences,
-        'absenteeism_percentage': round(absenteeism_percentage, 2)
+        'absenteeism_percentage': round(absenteeism_percentage, 2),
+        'by_shift': shift_absenteeism
     }
 
 # Generate datasets
@@ -526,15 +716,52 @@ survey_df = generate_survey_data(2000, workday_df)
 # Calculate absenteeism
 absenteeism_result = calculate_absenteeism(kronos_df)
 
+# Print department and role distribution
+print("\nDepartment Distribution:")
+print(workday_df['department'].value_counts(normalize=True) * 100)
+print("\nRole Distribution in Sales:")
+print(workday_df[workday_df['department'] == 'Sales']['job_role'].value_counts(normalize=True) * 100)
+
 # Verify shift distribution in Workday
-shift_distribution = workday_df['shift_type'].value_counts()
-print("\nDistribución de empleados por turno en Workday:")
+shift_distribution = workday_df['shift_type'].value_counts(normalize=True) * 100
+print("\nShift Distribution in Workday (%):")
 print(shift_distribution)
 
 # Verify shift distribution in Kronos (excluding absences)
-kronos_shift_distribution = kronos_df[kronos_df['shift_type'] != 'None']['shift_type'].value_counts()
-print("\nDistribución de registros por turno en Kronos (excluyendo ausencias):")
+kronos_shift_distribution = kronos_df[kronos_df['shift_type'] != 'None']['shift_type'].value_counts(normalize=True) * 100
+print("\nShift Distribution in Kronos (%, excluding absences):")
 print(kronos_shift_distribution)
+
+# Print termination statistics
+terminated_df = workday_df[workday_df['status'] == 'Terminated']
+print("\nTermination Statistics:")
+print(f"Total Terminated: {len(terminated_df)}")
+print(f"Terminated in Sales: {len(terminated_df[terminated_df['department'] == 'Sales'])}")
+print(f"Terminated Clerks: {len(terminated_df[terminated_df['job_role'] == 'Clerk'])}")
+print("\nPerformance Scores for Terminated vs Active:")
+print("Terminated:", terminated_df['performance_score'].mean())
+print("Active:", workday_df[workday_df['status'] == 'Active']['performance_score'].mean())
+
+# Print overtime statistics
+print("\nOvertime Statistics:")
+print(f"Overall Overtime Rate: {(kronos_df['overtime_hours'] > 0).mean() * 100:.2f}%")
+print(f"June Overtime Rate: {(kronos_df[kronos_df['work_date'].dt.month == 6]['overtime_hours'] > 0).mean() * 100:.2f}%")
+print(f"December Overtime Rate: {(kronos_df[kronos_df['work_date'].dt.month == 12]['overtime_hours'] > 0).mean() * 100:.2f}%")
+
+# Print absenteeism statistics
+print("\nAbsenteeism Statistics:")
+print(f"Total Weekday Records: {absenteeism_result['total_weekday_records']}")
+print(f"Absences: {absenteeism_result['absences']}")
+print(f"Absenteeism Percentage: {absenteeism_result['absenteeism_percentage']}%")
+print("\nAbsenteeism by Shift Type:")
+for shift, percentage in absenteeism_result['by_shift'].items():
+    print(f"{shift}: {percentage}%")
+
+# Print survey trends
+print("\nSurvey Score Trends Over Time:")
+survey_df['survey_month'] = survey_df['survey_date'].dt.to_period('M')
+monthly_scores = survey_df.groupby('survey_month')['satisfaction_score'].mean()
+print(monthly_scores.head(10))
 
 # Print samples
 print("\nWorkday Data Sample:")
@@ -546,7 +773,3 @@ print("\nID\tScore\tResponse")
 print("-" * 80)
 for _, row in survey_df.head().iterrows():
     print(f"{row['survey_id']}\t{row['satisfaction_score']}\t{row['response'][:100]}...")
-print("\nAbsenteeism Statistics:")
-print(f"Total Weekday Records: {absenteeism_result['total_weekday_records']}")
-print(f"Absences: {absenteeism_result['absences']}")
-print(f"Absenteeism Percentage: {absenteeism_result['absenteeism_percentage']}%")
