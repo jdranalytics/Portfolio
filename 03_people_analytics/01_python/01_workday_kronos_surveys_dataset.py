@@ -14,38 +14,66 @@ female_names = [fake.first_name_female() for _ in range(500)]
 # Role-based age distribution for realism
 role_age_ranges = {
     'Manager': (35, 60),
-    'Supervisor': (30, 55),
+    'Supervisor': (30, 60),
     'Analyst': (25, 45),
-    'Associate': (22, 40),
-    'Clerk': (18, 35)
+    'Associate': (22, 45),
+    'Clerk': (18, 45)
 }
 
 # Department-based overtime multipliers for June and December
 overtime_multipliers = {
-    'Sales': {'June': 1.5, 'December': 2.0, 'default': 1.0},
-    'Inventory': {'June': 1.2, 'December': 1.5, 'default': 1.0},
+    'Sales': {'June': 1.2, 'November': 1.2, 'December': 2.0, 'default': 1.0},
+    'Inventory': {'June': 1.2, 'November': 1.2, 'December': 2.0, 'default': 1.0},
     'HR': {'default': 0.8},
     'IT': {'default': 0.9},
-    'Marketing': {'June': 1.3, 'December': 1.3, 'default': 1.0},
+    'Marketing': {'June': 1.3, 'November': 1.3, 'December': 1.2, 'default': 1.0},
     'Finance': {'default': 0.7}
 }
 
-# U.S. federal holidays 2024-2025 (simplified list)
+# Ajusta el rango de fechas global
+DATA_START_DATE = datetime(2022, 1, 1)
+DATA_END_DATE = datetime(2025, 5, 23)
+
+# U.S. federal holidays 2022-2025 (solo dentro del rango)
 us_holidays = [
-    datetime(2024, 1, 1),  # New Year's Day
-    datetime(2024, 1, 15),  # Martin Luther King Jr. Day
-    datetime(2024, 2, 19),  # Presidents' Day
-    datetime(2024, 5, 27),  # Memorial Day
-    datetime(2024, 6, 19),  # Juneteenth
-    datetime(2024, 7, 4),   # Independence Day
-    datetime(2024, 9, 2),   # Labor Day
-    datetime(2024, 11, 11), # Veterans Day
-    datetime(2024, 11, 28), # Thanksgiving
-    datetime(2024, 12, 25), # Christmas
-    datetime(2025, 1, 1),   # New Year's Day
-    datetime(2025, 1, 20),  # Martin Luther King Jr. Day
-    datetime(2025, 2, 17),  # Presidents' Day
-    datetime(2025, 5, 26),  # Memorial Day
+    # 2022
+    datetime(2022, 1, 1),   # New Year's Day
+    datetime(2022, 1, 17),  # Martin Luther King Jr. Day
+    datetime(2022, 2, 21),  # Presidents' Day
+    datetime(2022, 5, 30),  # Memorial Day
+    datetime(2022, 6, 19),  # Juneteenth
+    datetime(2022, 7, 4),   # Independence Day
+    datetime(2022, 9, 5),   # Labor Day
+    datetime(2022, 11, 11), # Veterans Day
+    datetime(2022, 11, 24), # Thanksgiving
+    datetime(2022, 12, 25), # Christmas
+    # 2023
+    datetime(2023, 1, 1),
+    datetime(2023, 1, 16),
+    datetime(2023, 2, 20),
+    datetime(2023, 5, 29),
+    datetime(2023, 6, 19),
+    datetime(2023, 7, 4),
+    datetime(2023, 9, 4),
+    datetime(2023, 11, 10), # Veterans Day observed
+    datetime(2023, 11, 23),
+    datetime(2023, 12, 25),
+    # 2024
+    datetime(2024, 1, 1),
+    datetime(2024, 1, 15),
+    datetime(2024, 2, 19),
+    datetime(2024, 5, 27),
+    datetime(2024, 6, 19),
+    datetime(2024, 7, 4),
+    datetime(2024, 9, 2),
+    datetime(2024, 11, 11),
+    datetime(2024, 11, 28),
+    datetime(2024, 12, 25),
+    # 2025
+    datetime(2025, 1, 1),
+    datetime(2025, 1, 20),
+    datetime(2025, 2, 17),
+    datetime(2025, 5, 26),
 ]
 
 def is_workday(date):
@@ -79,7 +107,7 @@ def generate_workday_data(n=1000):
         'department': departments,
         'job_role': [assign_role(dept) for dept in departments],
         'shift_type': shift_types,
-        'hire_date': [fake.date_between(start_date='-10y', end_date='-30d') for _ in range(n)],
+        'hire_date': [],
         'termination_date': [None] * n,
         'onleave_date': [None] * n,
         'salary': [],
@@ -110,9 +138,15 @@ def generate_workday_data(n=1000):
         # Adjust salary based on age and role
         salary = round(base_salary * (1 + (age - 18) * 0.01), 2)
         
-        hire_date = data['hire_date'][i]
+        # hire_date entre DATA_START_DATE y DATA_END_DATE - 30 días
+        min_hire = DATA_START_DATE
+        max_hire = DATA_END_DATE - timedelta(days=30)
+        hire_date = fake.date_between_dates(date_start=min_hire, date_end=max_hire)
+        data['hire_date'].append(hire_date)
+        
+        # Ajusta termination_date y onleave_date para no salir del rango
         hire_date_dt = datetime.combine(hire_date, datetime.min.time())
-        days_since_hire = (datetime.today() - hire_date_dt).days
+        days_since_hire = (DATA_END_DATE - hire_date_dt).days
         
         # Termination probability based on role and department
         termination_prob = 0.15  # Base probability
@@ -128,14 +162,24 @@ def generate_workday_data(n=1000):
             max_days = min(365 * 5, days_since_hire)
             if max_days < 30:
                 max_days = 30
-
-            # Employees with poor performance leave sooner
-            performance_factor = random.random() * 0.5  # 0-0.5 multiplier for early termination
+            performance_factor = random.random() * 0.5
             upper_limit = int(max_days * (1 - performance_factor))
             if upper_limit < 30:
                 upper_limit = 30
             days_employed = random.randint(30, upper_limit)
-            data['termination_date'][i] = hire_date + timedelta(days=days_employed)
+            term_date = hire_date + timedelta(days=days_employed)
+
+            if isinstance(term_date, datetime):
+                term_date_cmp = term_date.date()
+            else:
+                term_date_cmp = term_date
+            if isinstance(DATA_END_DATE, datetime):
+                data_end_cmp = DATA_END_DATE.date()
+            else:
+                data_end_cmp = DATA_END_DATE
+            if term_date_cmp > data_end_cmp:
+                term_date = DATA_END_DATE
+            data['termination_date'][i] = term_date
             
             # Mark some terminated employees as having high absenteeism (especially in Sales)
             if data['department'][i] == 'Sales' and random.random() < 0.3:  # 30% of terminated sales
@@ -149,7 +193,19 @@ def generate_workday_data(n=1000):
             if max_days < 30:
                 max_days = 30
             days_employed = random.randint(30, max_days)
-            data['onleave_date'][i] = hire_date + timedelta(days=days_employed)
+            leave_date = hire_date + timedelta(days=days_employed)
+            # --- Fix: compare .date() ---
+            if isinstance(leave_date, datetime):
+                leave_date_cmp = leave_date.date()
+            else:
+                leave_date_cmp = leave_date
+            if isinstance(DATA_END_DATE, datetime):
+                data_end_cmp = DATA_END_DATE.date()
+            else:
+                data_end_cmp = DATA_END_DATE
+            if leave_date_cmp > data_end_cmp:
+                leave_date = DATA_END_DATE
+            data['onleave_date'][i] = leave_date
         else:
             data['status'].append('Active')
         
@@ -180,8 +236,8 @@ def generate_workday_data(n=1000):
 
 def generate_kronos_data(workday_df=None):
     employee_ids = workday_df['employee_id'].tolist()
-    start_date = datetime(2024, 1, 1)
-    end_date = datetime(2025, 5, 23, 23, 59)  # Last workday before May 24 (Saturday)
+    start_date = DATA_START_DATE
+    end_date = DATA_END_DATE
     data = {
         'entry_id': [],
         'employee_id': [],
@@ -582,15 +638,13 @@ def generate_survey_data(n=2000, workday_df=None):
         hire_date = emp_row['hire_date']
         termination_date = emp_row['termination_date']
         status = emp_row['status']
-        # Si fue terminado, la fecha máxima es la de terminación, si no, una fecha futura razonable
+        # Limita fechas al rango global
         if pd.notnull(termination_date):
-            end_date = termination_date
+            end_date = min(termination_date, DATA_END_DATE)
         else:
-            end_date = datetime(2025, 5, 23)
-        # Si el rango es inválido, ajusta
+            end_date = DATA_END_DATE
         if hire_date > end_date:
             end_date = hire_date
-
         # Calcular años completos de empleo (al menos 1)
         months_employed = max(1, ((end_date.year - hire_date.year) * 12 + (end_date.month - hire_date.month)))
         years_employed = max(1, int(np.ceil(months_employed / 12)))
@@ -602,10 +656,11 @@ def generate_survey_data(n=2000, workday_df=None):
             survey_dates = []
             for y in range(years_employed):
                 survey_year = hire_date.year + y
-                # Encuesta en aniversario o antes de terminar
                 survey_dt = hire_date + pd.DateOffset(years=y)
                 if survey_dt > end_date:
                     survey_dt = end_date
+                if survey_dt > DATA_END_DATE:
+                    survey_dt = DATA_END_DATE
                 survey_dates.append(survey_dt)
         for survey_dt in survey_dates:
             # Score y respuesta
@@ -643,10 +698,9 @@ def generate_survey_data(n=2000, workday_df=None):
             termination_date = emp_data['termination_date']
             status = emp_data['status']
             if pd.notnull(termination_date):
-                end_date = termination_date
+                end_date = min(termination_date, DATA_END_DATE)
             else:
-                end_date = datetime(2025, 5, 23)
-            # Asegura rango válido
+                end_date = DATA_END_DATE
             if hire_date > end_date:
                 survey_dt = hire_date
             else:
@@ -655,6 +709,8 @@ def generate_survey_data(n=2000, workday_df=None):
                     survey_dt = hire_date
                 else:
                     survey_dt = hire_date + timedelta(days=random.randint(0, delta_days))
+            if survey_dt > DATA_END_DATE:
+                survey_dt = DATA_END_DATE
             # Score y respuesta
             if status == 'Terminated' and pd.notnull(termination_date) and (termination_date - hire_date).days < 180:
                 score = random.choice([1, 2, 2, 3])
