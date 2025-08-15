@@ -71,11 +71,10 @@
 <body>
   <div id="root"></div>
   <script>
-    const { useState } = React;
+    const { useState, useEffect } = React;
 
     const App = () => {
       const [language, setLanguage] = useState('es');
-      const [videoPlayers, setVideoPlayers] = useState({});
 
       const toggleLanguage = () => {
         const newLanguage = language === 'es' ? 'en' : 'es';
@@ -197,6 +196,13 @@
         { id: 'rLLFMvlWqzE', title: 'Clustering in Snowflake with Notebook' },
         { id: 'Ucr4E4u9S_g', title: 'Multi-Scenario Forecast with KNIME' }
       ];
+
+      // Inicializa los reproductores de video cuando el componente se monta
+      useEffect(() => {
+        if (window.YT) {
+            window.onYouTubeIframeAPIReady();
+        }
+      }, []);
 
       const handleVideoEvents = (event) => {
         let action = '';
@@ -357,7 +363,6 @@
                 content[language].videoPortfolioLink
               )
             )
-          )
         ),
         // Portfolio Section
         React.createElement(
@@ -481,7 +486,6 @@
                 )
               )
             )
-          )
         ),
         // Contact Section
         React.createElement(
