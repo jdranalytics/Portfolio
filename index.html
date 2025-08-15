@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JDR Analytics Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Logo-DATA.ico">
   <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -386,7 +388,13 @@
                 { className: 'mt-2' },
                 React.createElement('a', {
                   href: 'https://deepwiki.com/jdranalytics/Portfolio',
-                  className: 'inline-block'
+                  className: 'inline-block',
+                  onClick: () => {
+                    gtag('event', 'clic_deepwiki_badge', {
+                      'event_category': 'Enlaces Salientes',
+                      'event_label': 'DeepWiki Badge'
+                    });
+                  }
                 },
                 React.createElement('img', {
                   src: 'https://deepwiki.com/badge.svg',
