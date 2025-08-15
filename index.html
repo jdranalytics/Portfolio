@@ -177,24 +177,24 @@
       };
 
       const videos = [
-        { id: 'F6nQHX9olDo', title: 'ContactApp 1.0.0 (R-Shiny)' },
-        { id: 'sBOK6WT38JU', title: 'My.RCManager v.2.0 (Excel-Access-VBA)' },
-        { id: 'BLnl0NhVNxM', title: 'Apetitoso Restaurant (Power Apps+Automate)' },
-        { id: 'QmfAVkEeaIM', title: 'Automated Offer Module (Excel-VBA)' },
-        { id: 'F13BJ3i9ilA', title: 'C5Manager v.1.0 (Excel+Access-VBA)' },
-        { id: '-2JqTp_lcnU', title: 'Airflow+BigQuery+ML (Risk Analysis)' },
-        { id: 'M9p6LTcJkOs', title: 'Excel-VBA | Power BI | Looker | Tableau' },
-        { id: 'eBS8BfjXEGM', title: 'MySQL Ingestion Process (AIRFLOW)' },
-        { id: '1c89jF3w34I', title: 'Risk Analysis (Shiny App+AI Assistant)' },
-        { id: 'fZLZ_h8GHq8', title: 'AI Assistant for Risk Analysis (Python+Streamlit)' },
-        { id: 'NSE45GBUpMA', title: 'Machine Learning in MS Fabric (Risk Analysis)' },
-        { id: 'XQCd9OFM0-E', title: 'RiskApp (Power Apps+Automate+Fabric)' },
-        { id: 'uMMLRSNm-CI', title: 'Employee Turnover Prediction' },
-        { id: 'lSItMMBnrYU', title: 'Overtime Hours Forecast' },
-        { id: '9gq6r8f0UNg', title: 'Employee Survey Sentiment Analysis' },
-        { id: 'iQ_a5aLrg8Q', title: 'Multi-Scenario Forecast with Snowflake ML' },
-        { id: 'rLLFMvlWqzE', title: 'Clustering in Snowflake with Notebook' },
-        { id: 'Ucr4E4u9S_g', title: 'Multi-Scenario Forecast with KNIME' }
+        { id: 'F6nQHX9olDo', title: 'ContactApp 1.0.0 (R-Shiny)', shortId: 'C1' },
+        { id: 'sBOK6WT38JU', title: 'My.RCManager v.2.0 (Excel-Access-VBA)', shortId: 'R1' },
+        { id: 'BLnl0NhVNxM', title: 'Apetitoso Restaurant (Power Apps+Automate)', shortId: 'A1' },
+        { id: 'QmfAVkEeaIM', title: 'Automated Offer Module (Excel-VBA)', shortId: 'O1' },
+        { id: 'F13BJ3i9ilA', title: 'C5Manager v.1.0 (Excel+Access-VBA)', shortId: 'C5' },
+        { id: '-2JqTp_lcnU', title: 'Airflow+BigQuery+ML (Risk Analysis)', shortId: 'AB1' },
+        { id: 'M9p6LTcJkOs', title: 'Excel-VBA | Power BI | Looker | Tableau', shortId: 'V1' },
+        { id: 'eBS8BfjXEGM', title: 'MySQL Ingestion Process (AIRFLOW)', shortId: 'M1' },
+        { id: '1c89jF3w34I', title: 'Risk Analysis (Shiny App+AI Assistant)', shortId: 'RA1' },
+        { id: 'fZLZ_h8GHq8', title: 'AI Assistant for Risk Analysis (Python+Streamlit)', shortId: 'AI1' },
+        { id: 'NSE45GBUpMA', title: 'Machine Learning in MS Fabric (Risk Analysis)', shortId: 'ML1' },
+        { id: 'XQCd9OFM0-E', title: 'RiskApp (Power Apps+Automate+Fabric)', shortId: 'R2' },
+        { id: 'uMMLRSNm-CI', title: 'Employee Turnover Prediction', shortId: 'ET1' },
+        { id: 'lSItMMBnrYU', title: 'Overtime Hours Forecast', shortId: 'OH1' },
+        { id: '9gq6r8f0UNg', title: 'Employee Survey Sentiment Analysis', shortId: 'ES1' },
+        { id: 'iQ_a5aLrg8Q', title: 'Multi-Scenario Forecast with Snowflake ML', shortId: 'SF1' },
+        { id: 'rLLFMvlWqzE', title: 'Clustering in Snowflake with Notebook', shortId: 'CS1' },
+        { id: 'Ucr4E4u9S_g', title: 'Multi-Scenario Forecast with KNIME', shortId: 'K1' }
       ];
 
       // Initialize YouTube players when the API is ready
@@ -209,6 +209,8 @@
                   let action = '';
                   const videoTitle = event.target.getVideoData().title;
                   const videoId = event.target.getVideoData().video_id;
+                  const videoData = videos.find(v => v.id === videoId);
+                  const shortId = videoData ? videoData.shortId : videoId;
 
                   switch (event.data) {
                     case window.YT.PlayerState.PLAYING:
@@ -226,8 +228,9 @@
 
                   gtag('event', `video_${action}`, {
                     'event_category': 'Interacción con Video',
-                    'event_label': videoTitle,
+                    'event_label': shortId,
                     'event_value': videoId,
+                    'video_title': videoTitle
                   });
                 }
               }
