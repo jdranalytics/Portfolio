@@ -1,486 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JDR Analytics Portfolio</title>
-  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
-  <!-- Note: For production, replace this CDN with a local Tailwind CSS installation using PostCSS or Tailwind CLI as per https://tailwindcss.com/docs/installation -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: linear-gradient(rgba(0, 33, 67, 0.7), rgba(30, 41, 59, 0.7)), url('https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Neural%20Pattern.jpg');
-      background-repeat: repeat;
-      background-size: auto; /* Maintains original image proportions for mosaic effect */
-      color: #e0e7ff;
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-    }
-    .neon-text {
-      text-shadow: 0 0 3px #60a5fa, 0 0 6px #60a5fa;
-    }
-    .neon-border {
-      box-shadow: 0 0 4px #60a5fa, 0 0 8px #60a5fa;
-    }
-    .video-grid iframe {
-      width: 100%;
-      height: 200px;
-      border: 2px solid #60a5fa;
-      border-radius: 8px;
-    }
-    @media (min-width: 768px) {
-      .video-grid iframe {
-        height: 250px;
-      }
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: rgba(59, 130, 246, 0.2);
-    }
-    th, td {
-      padding: 12px;
-      text-align: left;
-      border-bottom: 1px solid #60a5fa;
-    }
-    th {
-      background-color: #3b82f6;
-      font-weight: bold;
-    }
-    tr:nth-child(even) {
-      background-color: rgba(30, 41, 59, 0.5);
-    }
-    tr:hover {
-      background-color: rgba(96, 165, 250, 0.3);
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JDR Analytics Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(rgba(0, 33, 67, 0.7), rgba(30, 41, 59, 0.7)), url('https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Neural%20Pattern.jpg');
+      background-repeat: repeat;
+      background-size: auto; 
+      color: #e0e7ff;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+    }
+    .neon-text {
+      text-shadow: 0 0 3px #60a5fa, 0 0 6px #60a5fa;
+    }
+    .neon-border {
+      box-shadow: 0 0 4px #60a5fa, 0 0 8px #60a5fa;
+    }
+    .video-grid iframe {
+      width: 100%;
+      height: 200px;
+      border: 2px solid #60a5fa;
+      border-radius: 8px;
+    }
+    @media (min-width: 768px) {
+      .video-grid iframe {
+        height: 250px;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(59, 130, 246, 0.2);
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #60a5fa;
+    }
+    th {
+      background-color: #3b82f6;
+      font-weight: bold;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(30, 41, 59, 0.5);
+    }
+    tr:hover {
+      background-color: rgba(96, 165, 250, 0.3);
+    }
+  </style>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2G3WS88G1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B2G3WS88G1');
+  </script>
+
 </head>
 <body>
-  <div id="root"></div>
-  <script>
-    const { useState } = React;
+  <div id="root"></div>
+  <script>
+    const { useState } = React;
 
-    const App = () => {
-      const [language, setLanguage] = useState('es');
+    const App = () => {
+      const [language, setLanguage] = useState('es');
 
-      const toggleLanguage = () => {
-        setLanguage(language === 'es' ? 'en' : 'es');
-      };
+      const toggleLanguage = () => {
+        setLanguage(language === 'es' ? 'en' : 'es');
+      };
 
-      const content = {
-        es: {
-          welcome: '¡Bienvenidos a mi guarida!',
-          intro: 'Hola, mi nombre es <strong>José Daniel Rojas</strong>, soy un ingeniero químico apasionado de la <strong>analítica, ciencia de datos y sobre todo dar soluciones con impacto positivo</strong>. Este es mi rincón en GitHub, donde experimento, aprendo y comparto proyectos llevados a cabo con el fin de crear soluciones que generen valor.',
-          about: 'Sobre mí',
-          aboutText: [
-            '🏭 Ingeniero con <strong>amplia trayectoria</strong> en procesos, laboratorio y apasionado por los datos.',
-            '💡 Explorando ideas para la <strong>evaluación y mejora</strong> de procesos en diferentes contextos.'
-          ],
-          work: 'Mi trabajo',
-          workText: 'Parte de mi trabajo puede verse en mi repositorio público principal y en mi portafolio en video:',
-          portfolioLink: 'Portafolio en GitHub',
-          videoPortfolioLink: 'Portafolio en Video',
-          whatFind: '¿Qué encontrarás aquí?',
-          whatFindText: 'Una colección de mis proyectos con modelos y visualizaciones preparados con <strong>data sintética</strong> (siempre respetando la confidencialidad evitando usar datos reales). Estos proyectos abarcan diferentes contextos de negocio como contact centers, riesgo crediticio, recursos humanos, gestión de proyectos, gestión de activos, gestión de restaurantes, fuerza de ventas, regulatoria, entre otros.',
-          deepWiki: 'Para analizar de forma eficiente el contenido, ingresa al siguiente enlace:',
-          folders: 'Carpetas del portafolio',
-          folderList: [
-            { name: '00_orchestrations', desc: 'Orquestaciones con Python y Apache Airflow' },
-            { name: '01_call_center_analytics', desc: 'Proyectos con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R y Shiny Apps' },
-            { name: '02_credit_risk_analytics', desc: 'Proyectos con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R, Asistente AI con Streamlit, Power Apps + Power Automate y Shiny App. Backends en MS Fabric y BigQuery' },
-            { name: '03_people_analytics', desc: 'Proyecto con data sintética. Incluye Python con orquestaciones usando Apache Airflow, backend en MSSQL y visualización con Power BI' },
-            { name: '04_beverages_sales_analytics', desc: 'Proyecto con data sintética. Incluye Python y SQL con backend en Snowflake y visualizaciones en Tableau' },
-            { name: '05_gestor_residuos', desc: 'Proyecto de desarrollo de un gestor de residuos realizado con R + Shiny y empacado con Electron. Solución full-stack con SQLite y tablero en Power BI' }
-          ],
-          videos: 'Portafolio en Video Completo',
-          contact: 'Contacto',
-          contactEmail: 'Correo',
-          funFact: 'Datos Curiosos',
-          funFactText: '"No hay código que no venga acompañado de un buen café... ☕"',
-          star: '¡Si te gusta mi trabajo, déjame una estrella en este repo!',
-          technologies: 'Tecnologías Usadas',
-          techTable: [
-            { category: 'Lenguajes', tools: 'Python, R, SQL, VBA, DAX, FX', use: 'Procesamiento de datos, análisis estadístico' },
-            { category: 'Orquestación', tools: 'Apache Airflow', use: 'Automatización de datos, flujo de trabajo' },
-            { category: 'Almacenes de Datos en la Nube', tools: 'Snowflake, BigQuery (GCP), AWS S3, MS Fabric', use: 'Almacenamiento de datos escalable y ML' },
-            { category: 'Bases de Datos', tools: 'MSSQL Server, MySQL, SQLite', use: 'Gestión de datos local' },
-            { category: 'BI Empresarial', tools: 'Tableau, Power BI, Looker', use: 'Tableros ejecutivos y reportes' },
-            { category: 'Aplicaciones Web', tools: 'Shiny Apps, Streamlit', use: 'Interfaces analíticas interactivas' },
-            { category: 'Plataformas Low-Code', tools: 'Power Apps, Power Automate, KNIME', use: 'Automatización de procesos empresariales' },
-            { category: 'Aplicaciones de Escritorio', tools: 'Electron', use: 'Despliegue de escritorio multiplataforma' },
-            { category: 'Aprendizaje Automático', tools: 'Scikit-Learn, Prophet, XGBoost, Snowflake ML, BigQuery ML', use: 'Predicciones y análisis predictivos' }
-          ],
-          toggleLang: 'Switch to English'
-        },
-        en: {
-          welcome: 'Welcome to my lair!',
-          intro: 'Hello, I\'m <strong>José Daniel Rojas</strong>, a chemical engineer passionate about <strong>analytics, data science and above all creating solutions with positive impact</strong>. This is my GitHub corner where I experiment, learn and share projects aimed at creating valuable solutions.',
-          about: 'About Me',
-          aboutText: [
-            '🏭 Engineer with <strong>extensive experience</strong> in processes, laboratories, and passionate about data.',
-            '💡 Exploring ideas for <strong>evaluation and improvement</strong> of processes in different contexts.'
-          ],
-          work: 'My Work',
-          workText: 'Some of my work can be seen in my main public repository and video portfolio:',
-          portfolioLink: 'Portfolio on GitHub',
-          videoPortfolioLink: 'Video Portfolio',
-          whatFind: 'What You\'ll Find Here',
-          whatFindText: 'A collection of my projects featuring models and visualizations prepared with <strong>synthetic data</strong> (always respecting confidentiality by avoiding real data). These projects cover different business contexts like contact centers, credit risk, human resources, project management, asset management, restaurant management, sales force, regulatory compliance, among others.',
-          deepWiki: 'To efficiently analyze the content, visit the following link:',
-          folders: 'Portfolio Folders',
-          folderList: [
-            { name: '00_orchestrations', desc: 'Orchestrations with Python and Apache Airflow' },
-            { name: '01_call_center_analytics', desc: 'Projects with synthetic data. Includes Python with orchestrations using Apache Airflow, R and Shiny Apps' },
-            { name: '02_credit_risk_analytics', desc: 'Projects with synthetic data. Includes Python with orchestrations using Apache Airflow, R, AI Assistant with Streamlit, Power Apps + Power Automate and Shiny App. Backends in MS Fabric and BigQuery' },
-            { name: '03_people_analytics', desc: 'Project with synthetic data. Includes Python with orchestrations using Apache Airflow, backend in MSSQL and visualization with Power BI' },
-            { name: '04_beverages_sales_analytics', desc: 'Project with synthetic data. Includes Python and SQL with backend in Snowflake and visualizations in Tableau' },
-            { name: '05_gestor_residuos', desc: 'Waste management system development project made with R + Shiny and packaged with Electron. Full-stack solution with SQLite and a predefined Power BI dashboard' }
-          ],
-          videos: 'Full Video Portfolio',
-          contact: 'Contact',
-          contactEmail: 'Email',
-          funFact: 'Fun Facts',
-          funFactText: '"No code comes without a good coffee... ☕"',
-          star: 'If you like my work, leave a star on this repo!',
-          technologies: 'Technologies Used',
-          techTable: [
-            { category: 'Languages', tools: 'Python, R, SQL, VBA, DAX, FX', use: 'Data processing, statistical analysis' },
-            { category: 'Orchestration', tools: 'Apache Airflow', use: 'Data pipeline automation, workflow' },
-            { category: 'Cloud Data Warehouses', tools: 'Snowflake, BigQuery (GCP), AWS S3, MS Fabric', use: 'Scalable data storage and ML' },
-            { category: 'Databases', tools: 'MSSQL Server, MySQL, SQLite', use: 'Local data management' },
-            { category: 'Enterprise BI', tools: 'Tableau, Power BI', use: 'Executive dashboards and reporting' },
-            { category: 'Web Applications', tools: 'Shiny Apps, Streamlit', use: 'Interactive analytics interfaces' },
-            { category: 'Low-Code Platforms', tools: 'Power Apps, Power Automate, KNIME', use: 'Business process automation' },
-            { category: 'Desktop Applications', tools: 'Electron', use: 'Cross-platform desktop deployment' },
-            { category: 'Machine Learning', tools: 'Scikit-Learn, Prophet, XGBoost, Snowflake ML, BigQuery ML', use: 'Forecasting and predictive analytics' }
-          ],
-          toggleLang: 'Cambiar a Español'
-        }
-      };
+      const content = {
+        es: {
+          welcome: '¡Bienvenidos a mi guarida!',
+          intro: 'Hola, mi nombre es <strong>José Daniel Rojas</strong>, soy un ingeniero químico apasionado de la <strong>analítica, ciencia de datos y sobre todo dar soluciones con impacto positivo</strong>. Este es mi rincón en GitHub, donde experimento, aprendo y comparto proyectos llevados a cabo con el fin de crear soluciones que generen valor.',
+          about: 'Sobre mí',
+          aboutText: [
+            '🏭 Ingeniero con <strong>amplia trayectoria</strong> en procesos, laboratorio y apasionado por los datos.',
+            '💡 Explorando ideas para la <strong>evaluación y mejora</strong> de procesos en diferentes contextos.'
+          ],
+          work: 'Mi trabajo',
+          workText: 'Parte de mi trabajo puede verse en mi repositorio público principal y en mi portafolio en video:',
+          portfolioLink: 'Portafolio en GitHub',
+          videoPortfolioLink: 'Portafolio en Video',
+          whatFind: '¿Qué encontrarás aquí?',
+          whatFindText: 'Una colección de mis proyectos con modelos y visualizaciones preparados con <strong>data sintética</strong> (siempre respetando la confidencialidad evitando usar datos reales). Estos proyectos abarcan diferentes contextos de negocio como contact centers, riesgo crediticio, recursos humanos, gestión de proyectos, gestión de activos, gestión de restaurantes, fuerza de ventas, regulatoria, entre otros.',
+          deepWiki: 'Para analizar de forma eficiente el contenido, ingresa al siguiente enlace:',
+          folders: 'Carpetas del portafolio',
+          folderList: [
+            { name: '00_orchestrations', desc: 'Orquestaciones con Python y Apache Airflow' },
+            { name: '01_call_center_analytics', desc: 'Proyectos con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R y Shiny Apps' },
+            { name: '02_credit_risk_analytics', desc: 'Proyectos con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R, Asistente AI con Streamlit, Power Apps + Power Automate y Shiny App. Backends en MS Fabric y BigQuery' },
+            { name: '03_people_analytics', desc: 'Proyecto con data sintética. Incluye Python con orquestaciones usando Apache Airflow, backend en MSSQL y visualización con Power BI' },
+            { name: '04_beverages_sales_analytics', desc: 'Proyecto con data sintética. Incluye Python y SQL con backend en Snowflake y visualizaciones en Tableau' },
+            { name: '05_gestor_residuos', desc: 'Proyecto de desarrollo de un gestor de residuos realizado con R + Shiny y empacado con Electron. Solución full-stack con SQLite y tablero en Power BI' }
+          ],
+          videos: 'Portafolio en Video Completo',
+          contact: 'Contacto',
+          contactEmail: 'Correo',
+          funFact: 'Datos Curiosos',
+          funFactText: '"No hay código que no venga acompañado de un buen café... ☕"',
+          star: '¡Si te gusta mi trabajo, déjame una estrella en este repo!',
+          technologies: 'Tecnologías Usadas',
+          techTable: [
+            { category: 'Lenguajes', tools: 'Python, R, SQL, VBA, DAX, FX', use: 'Procesamiento de datos, análisis estadístico' },
+            { category: 'Orquestación', tools: 'Apache Airflow', use: 'Automatización de datos, flujo de trabajo' },
+            { category: 'Almacenes de Datos en la Nube', tools: 'Snowflake, BigQuery (GCP), AWS S3, MS Fabric', use: 'Almacenamiento de datos escalable y ML' },
+            { category: 'Bases de Datos', tools: 'MSSQL Server, MySQL, SQLite', use: 'Gestión de datos local' },
+            { category: 'BI Empresarial', tools: 'Tableau, Power BI, Looker', use: 'Tableros ejecutivos y reportes' },
+            { category: 'Aplicaciones Web', tools: 'Shiny Apps, Streamlit', use: 'Interfaces analíticas interactivas' },
+            { category: 'Plataformas Low-Code', tools: 'Power Apps, Power Automate, KNIME', use: 'Automatización de procesos empresariales' },
+            { category: 'Aplicaciones de Escritorio', tools: 'Electron', use: 'Despliegue de escritorio multiplataforma' },
+            { category: 'Aprendizaje Automático', tools: 'Scikit-Learn, Prophet, XGBoost, Snowflake ML, BigQuery ML', use: 'Predicciones y análisis predictivos' }
+          ],
+          toggleLang: 'Switch to English'
+        },
+        en: {
+          welcome: 'Welcome to my lair!',
+          intro: 'Hello, I\'m <strong>José Daniel Rojas</strong>, a chemical engineer passionate about <strong>analytics, data science and above all creating solutions with positive impact</strong>. This is my GitHub corner where I experiment, learn and share projects aimed at creating valuable solutions.',
+          about: 'About Me',
+          aboutText: [
+            '🏭 Engineer with <strong>extensive experience</strong> in processes, laboratories, and passionate about data.',
+            '💡 Exploring ideas for <strong>evaluation and improvement</strong> of processes in different contexts.'
+          ],
+          work: 'My Work',
+          workText: 'Some of my work can be seen in my main public repository and video portfolio:',
+          portfolioLink: 'Portfolio on GitHub',
+          videoPortfolioLink: 'Video Portfolio',
+          whatFind: 'What You\'ll Find Here',
+          whatFindText: 'A collection of my projects featuring models and visualizations prepared with <strong>synthetic data</strong> (always respecting confidentiality by avoiding real data). These projects cover different business contexts like contact centers, credit risk, human resources, project management, asset management, restaurant management, sales force, regulatory compliance, among others.',
+          deepWiki: 'To efficiently analyze the content, visit the following link:',
+          folders: 'Portfolio Folders',
+          folderList: [
+            { name: '00_orchestrations', desc: 'Orchestrations with Python and Apache Airflow' },
+            { name: '01_call_center_analytics', desc: 'Projects with synthetic data. Includes Python with orchestrations using Apache Airflow, R and Shiny Apps' },
+            { name: '02_credit_risk_analytics', desc: 'Projects with synthetic data. Includes Python with orchestrations using Apache Airflow, R, AI Assistant with Streamlit, Power Apps + Power Automate and Shiny App. Backends in MS Fabric and BigQuery' },
+            { name: '03_people_analytics', desc: 'Project with synthetic data. Includes Python with orchestrations using Apache Airflow, backend in MSSQL and visualization with Power BI' },
+            { name: '04_beverages_sales_analytics', desc: 'Project with synthetic data. Includes Python and SQL with backend in Snowflake and visualizations in Tableau' },
+            { name: '05_gestor_residuos', desc: 'Waste management system development project made with R + Shiny and packaged with Electron. Full-stack solution with SQLite and a predefined Power BI dashboard' }
+          ],
+          videos: 'Full Video Portfolio',
+          contact: 'Contact',
+          contactEmail: 'Email',
+          funFact: 'Fun Facts',
+          funFactText: '"No code comes without a good coffee... ☕"',
+          star: 'If you like my work, leave a star on this repo!',
+          technologies: 'Technologies Used',
+          techTable: [
+            { category: 'Languages', tools: 'Python, R, SQL, VBA, DAX, FX', use: 'Data processing, statistical analysis' },
+            { category: 'Orchestration', tools: 'Apache Airflow', use: 'Data pipeline automation, workflow' },
+            { category: 'Cloud Data Warehouses', tools: 'Snowflake, BigQuery (GCP), AWS S3, MS Fabric', use: 'Scalable data storage and ML' },
+            { category: 'Databases', tools: 'MSSQL Server, MySQL, SQLite', use: 'Local data management' },
+            { category: 'Enterprise BI', tools: 'Tableau, Power BI', use: 'Executive dashboards and reporting' },
+            { category: 'Web Applications', tools: 'Shiny Apps, Streamlit', use: 'Interactive analytics interfaces' },
+            { category: 'Low-Code Platforms', tools: 'Power Apps, Power Automate, KNIME', use: 'Business process automation' },
+            { category: 'Desktop Applications', tools: 'Electron', use: 'Cross-platform desktop deployment' },
+            { category: 'Machine Learning', tools: 'Scikit-Learn, Prophet, XGBoost, Snowflake ML, BigQuery ML', use: 'Forecasting and predictive analytics' }
+          ],
+          toggleLang: 'Cambiar a Español'
+        }
+      };
 
-      const videos = [
-        { id: 'F6nQHX9olDo', title: 'ContactApp 1.0.0 (R-Shiny)' },
-        { id: 'sBOK6WT38JU', title: 'My.RCManager v.2.0 (Excel-Access-VBA)' },
-        { id: 'BLnl0NhVNxM', title: 'Apetitoso Restaurant (Power Apps+Automate)' },
-        { id: 'QmfAVkEeaIM', title: 'Automated Offer Module (Excel-VBA)' },
-        { id: 'F13BJ3i9ilA', title: 'C5Manager v.1.0 (Excel+Access-VBA)' },
-        { id: '-2JqTp_lcnU', title: 'Airflow+BigQuery+ML (Risk Analysis)' },
-        { id: 'M9p6LTcJkOs', title: 'Excel-VBA | Power BI | Looker | Tableau' },
-        { id: 'eBS8BfjXEGM', title: 'MySQL Ingestion Process (AIRFLOW)' },
-        { id: '1c89jF3w34I', title: 'Risk Analysis (Shiny App+AI Assistant)' },
-        { id: 'fZLZ_h8GHq8', title: 'AI Assistant for Risk Analysis (Python+Streamlit)' },
-        { id: 'NSE45GBUpMA', title: 'Machine Learning in MS Fabric (Risk Analysis)' },
-        { id: 'XQCd9OFM0-E', title: 'RiskApp (Power Apps+Automate+Fabric)' },
-        { id: 'uMMLRSNm-CI', title: 'Employee Turnover Prediction' },
-        { id: 'lSItMMBnrYU', title: 'Overtime Hours Forecast' },
-        { id: '9gq6r8f0UNg', title: 'Employee Survey Sentiment Analysis' },
-        { id: 'iQ_a5aLrg8Q', title: 'Multi-Scenario Forecast with Snowflake ML' },
-        { id: 'rLLFMvlWqzE', title: 'Clustering in Snowflake with Notebook' },
-        { id: 'Ucr4E4u9S_g', title: 'Multi-Scenario Forecast with KNIME' }
-      ];
+      const videos = [
+        { id: 'F6nQHX9olDo', title: 'ContactApp 1.0.0 (R-Shiny)' },
+        { id: 'sBOK6WT38JU', title: 'My.RCManager v.2.0 (Excel-Access-VBA)' },
+        { id: 'BLnl0NhVNxM', title: 'Apetitoso Restaurant (Power Apps+Automate)' },
+        { id: 'QmfAVkEeaIM', title: 'Automated Offer Module (Excel-VBA)' },
+        { id: 'F13BJ3i9ilA', title: 'C5Manager v.1.0 (Excel+Access-VBA)' },
+        { id: '-2JqTp_lcnU', title: 'Airflow+BigQuery+ML (Risk Analysis)' },
+        { id: 'M9p6LTcJkOs', title: 'Excel-VBA | Power BI | Looker | Tableau' },
+        { id: 'eBS8BfjXEGM', title: 'MySQL Ingestion Process (AIRFLOW)' },
+        { id: '1c89jF3w34I', title: 'Risk Analysis (Shiny App+AI Assistant)' },
+        { id: 'fZLZ_h8GHq8', title: 'AI Assistant for Risk Analysis (Python+Streamlit)' },
+        { id: 'NSE45GBUpMA', title: 'Machine Learning in MS Fabric (Risk Analysis)' },
+        { id: 'XQCd9OFM0-E', title: 'RiskApp (Power Apps+Automate+Fabric)' },
+        { id: 'uMMLRSNm-CI', title: 'Employee Turnover Prediction' },
+        { id: 'lSItMMBnrYU', title: 'Overtime Hours Forecast' },
+        { id: '9gq6r8f0UNg', title: 'Employee Survey Sentiment Analysis' },
+        { id: 'iQ_a5aLrg8Q', title: 'Multi-Scenario Forecast with Snowflake ML' },
+        { id: 'rLLFMvlWqzE', title: 'Clustering in Snowflake with Notebook' },
+        { id: 'Ucr4E4u9S_g', title: 'Multi-Scenario Forecast with KNIME' }
+      ];
 
-      return React.createElement(
-        'div',
-        { className: 'min-h-screen' },
-        // Header
-        React.createElement(
-          'header',
-          { className: 'py-6 px-4 md:px-8 bg-[#002143] sticky top-0 z-10 neon-border' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto flex justify-between items-center' },
-            React.createElement('img', {
-              src: 'https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Logo%20JDR%20Analytics.png',
-              alt: 'JDR Analytics Logo',
-              className: 'h-16'
-            }),
-            React.createElement(
-              'button',
-              {
-                onClick: toggleLanguage,
-                className: 'bg-[#3b82f6] text-white px-4 py-2 rounded-lg hover:bg-[#2563eb] neon-text'
-              },
-              content[language].toggleLang
-            )
-          )
-        ),
-        // Hero Section
-        React.createElement(
-          'section',
-          { className: 'py-12 px-4 md:px-8' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto text-center' },
-            React.createElement('img', {
-              src: 'https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/banner%202.png',
-              alt: 'Main Banner',
-              className: 'w-full max-w-4xl mx-auto rounded-lg neon-border mb-6'
-            }),
-            React.createElement(
-              'h1',
-              { className: 'text-4xl md:text-5xl font-bold neon-text mb-4' },
-              content[language].welcome 
-            ),
-            React.createElement('p', {
-              className: 'text-lg md:text-xl max-w-3xl mx-auto',
-              dangerouslySetInnerHTML: { __html: content[language].intro }
-            })
-          )
-        ),
-        // About Section
-        React.createElement(
-          'section',
-          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto' },
-            React.createElement(
-              'h2',
-              { className: 'text-3xl font-bold neon-text mb-6' },
-              content[language].about
-            ),
-            React.createElement(
-              'ul',
-              { className: 'list-disc list-inside space-y-2' },
-              content[language].aboutText.map((item, idx) =>
-                React.createElement('li', {
-                  key: idx,
-                  dangerouslySetInnerHTML: { __html: item }
-                })
-              )
-            )
-          )
-        ),
-        // Work Section
-        React.createElement(
-          'section',
-          { className: 'py-12 px-4 md:px-8' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto' },
-            React.createElement(
-              'h2',
-              { className: 'text-3xl font-bold neon-text mb-6' },
-              content[language].work
-            ),
-            React.createElement(
-              'p',
-              { className: 'mb-4' },
-              content[language].workText
-            ),
-            React.createElement(
-              'div',
-              { className: 'flex flex-col md:flex-row gap-4' },
-              React.createElement(
-                'a',
-                {
-                  href: 'https://github.com/jdranalytics/portfolio',
-                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text'
-                },
-                content[language].portfolioLink
-              ),
-              React.createElement(
-                'a',
-                {
-                  href: 'https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko',
-                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text'
-                },
-                content[language].videoPortfolioLink
-              )
-            )
-          )
-        ),
-        // Portfolio Section
-        React.createElement(
-          'section',
-          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto' },
-            React.createElement(
-              'h2',
-              { className: 'text-3xl font-bold neon-text mb-6' },
-              content[language].whatFind
-            ),
-            React.createElement('p', {
-              dangerouslySetInnerHTML: { __html: content[language].whatFindText }
-            }),
-            React.createElement(
-              'div',
-              { className: 'mt-4' },
-              content[language].deepWiki,
-              React.createElement(
-                'div',
-                { className: 'mt-2' },
-                React.createElement('a', {
-                  href: 'https://deepwiki.com/jdranalytics/Portfolio',
-                  className: 'inline-block'
-                }, 
-                React.createElement('img', {
-                  src: 'https://deepwiki.com/badge.svg',
-                  alt: 'Ask DeepWiki',
-                  className: 'h-10'
-                }))
-              )
-            ),
-            React.createElement(
-              'h3',
-              { className: 'text-2xl font-bold neon-text mt-8 mb-4' },
-              content[language].folders
-            ),
-            React.createElement(
-              'ul',
-              { className: 'list-disc list-inside space-y-2' },
-              content[language].folderList.map((folder, idx) =>
-                React.createElement(
-                  'li',
-                  { key: idx },
-                  React.createElement('strong', null, folder.name),
-                  ': ',
-                  folder.desc
-                )
-              )
-            )
-          )
-        ),
-        // Technologies Section
-        React.createElement(
-          'section',
-          { className: 'py-12 px-4 md:px-8' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto' },
-            React.createElement(
-              'h2',
-              { className: 'text-3xl font-bold neon-text mb-6' },
-              content[language].technologies
-            ),
-            React.createElement(
-              'div',
-              { className: 'overflow-x-auto' },
-              React.createElement(
-                'table',
-                { className: 'w-full text-left border-collapse' },
-                React.createElement(
-                  'thead',
-                  null,
-                  React.createElement(
-                    'tr',
-                    null,
-                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Technology Category' : 'Tecnología'),
-                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Tools & Platforms' : 'Herramientas y Plataformas'),
-                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Primary Use Cases' : 'Casos de Uso Principales')
-                  )
-                ),
-                React.createElement(
-                  'tbody',
-                  null,
-                  content[language].techTable.map((row, idx) =>
-                    React.createElement(
-                      'tr',
-                      { key: idx, className: 'border-b border-[#60a5fa]' },
-                      React.createElement('td', { className: 'p-4' }, row.category),
-                      React.createElement('td', { className: 'p-4' }, row.tools),
-                      React.createElement('td', { className: 'p-4' }, row.use)
-                    )
-                  )
-                )
-              )
-            )
-          )
-        ),
-        // Videos Section
-        React.createElement(
-          'section',
-          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto' },
-            React.createElement(
-              'h2',
-              { className: 'text-3xl font-bold neon-text mb-6' },
-              content[language].videos
-            ),
-            React.createElement(
-              'div',
-              { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 video-grid' },
-              videos.map((video) =>
-                React.createElement(
-                  'div',
-                  { key: video.id, className: 'text-center' },
-                  React.createElement('iframe', {
-                    src: `https://www.youtube.com/embed/${video.id}`,
-                    title: video.title,
-                    frameBorder: '0',
-                    allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
-                    allowFullScreen: true
-                  }),
-                  React.createElement('p', { className: 'mt-2' }, video.title)
-                )
-              )
-            )
-          )
-        ),
-        // Contact Section
-        React.createElement(
-          'section',
-          { className: 'py-12 px-4 md:px-8' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto' },
-            React.createElement(
-              'h2',
-              { className: 'text-3xl font-bold neon-text mb-6' },
-              content[language].contact
-            ),
-            React.createElement(
-              'p',
-              null,
-              React.createElement(
-                'a',
-                {
-                  href: 'mailto:ing.jd.rojas@gmail.com',
-                  className: 'text-[#3b82f6] hover:underline'
-                },
-                content[language].contactEmail
-              )
-            )
-          )
-        ),
-        // Fun Fact Section
-        React.createElement(
-          'section',
-          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
-          React.createElement(
-            'div',
-            { className: 'max-w-7xl mx-auto text-center' },
-            React.createElement(
-              'h2',
-              { className: 'text-3xl font-bold neon-text mb-6' },
-              content[language].funFact
-            ),
-            React.createElement('p', {
-              dangerouslySetInnerHTML: { __html: content[language].funFactText }
-            }),
-            React.createElement('img', {
-              src: 'https://media.giphy.com/media/lSVL6vdhdZVPW/giphy.gif',
-              alt: 'Coffee GIF',
-              className: 'mx-auto mt-4 w-48 rounded-lg neon-border'
-            })
-          )
-        ),
-        // Footer
-        React.createElement(
-          'footer',
-          { className: 'py-6 px-4 md:px-8 bg-[#002143] text-center neon-border' },
-          React.createElement('p', null, content[language].star + ' ⭐️')
-        )
-      );
-    };
+      return React.createElement(
+        'div',
+        { className: 'min-h-screen' },
+        // Header
+        React.createElement(
+          'header',
+          { className: 'py-6 px-4 md:px-8 bg-[#002143] sticky top-0 z-10 neon-border' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto flex justify-between items-center' },
+            React.createElement('img', {
+              src: 'https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Logo%20JDR%20Analytics.png',
+              alt: 'JDR Analytics Logo',
+              className: 'h-16'
+            }),
+            React.createElement(
+              'button',
+              {
+                onClick: toggleLanguage,
+                className: 'bg-[#3b82f6] text-white px-4 py-2 rounded-lg hover:bg-[#2563eb] neon-text'
+              },
+              content[language].toggleLang
+            )
+          )
+        ),
+        // Hero Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto text-center' },
+            React.createElement('img', {
+              src: 'https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/banner%202.png',
+              alt: 'Main Banner',
+              className: 'w-full max-w-4xl mx-auto rounded-lg neon-border mb-6'
+            }),
+            React.createElement(
+              'h1',
+              { className: 'text-4xl md:text-5xl font-bold neon-text mb-4' },
+              content[language].welcome 
+            ),
+            React.createElement('p', {
+              className: 'text-lg md:text-xl max-w-3xl mx-auto',
+              dangerouslySetInnerHTML: { __html: content[language].intro }
+            })
+          )
+        ),
+        // About Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].about
+            ),
+            React.createElement(
+              'ul',
+              { className: 'list-disc list-inside space-y-2' },
+              content[language].aboutText.map((item, idx) =>
+                React.createElement('li', {
+                  key: idx,
+                  dangerouslySetInnerHTML: { __html: item }
+                })
+              )
+            )
+          )
+        ),
+        // Work Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].work
+            ),
+            React.createElement(
+              'p',
+              { className: 'mb-4' },
+              content[language].workText
+            ),
+            React.createElement(
+              'div',
+              { className: 'flex flex-col md:flex-row gap-4' },
+              React.createElement(
+                'a',
+                {
+                  href: 'https://github.com/jdranalytics/portfolio',
+                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text'
+                },
+                content[language].portfolioLink
+              ),
+              React.createElement(
+                'a',
+                {
+                  href: 'https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko',
+                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text'
+                },
+                content[language].videoPortfolioLink
+              )
+            )
+        ),
+        // Portfolio Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].whatFind
+            ),
+            React.createElement('p', {
+              dangerouslySetInnerHTML: { __html: content[language].whatFindText }
+            }),
+            React.createElement(
+              'div',
+              { className: 'mt-4' },
+              content[language].deepWiki,
+              React.createElement(
+                'div',
+                { className: 'mt-2' },
+                React.createElement('a', {
+                  href: 'https://deepwiki.com/jdranalytics/Portfolio',
+                  className: 'inline-block'
+                }, 
+                React.createElement('img', {
+                  src: 'https://deepwiki.com/badge.svg',
+                  alt: 'Ask DeepWiki',
+                  className: 'h-10'
+                }))
+              )
+            ),
+            React.createElement(
+              'h3',
+              { className: 'text-2xl font-bold neon-text mt-8 mb-4' },
+              content[language].folders
+            ),
+            React.createElement(
+              'ul',
+              { className: 'list-disc list-inside space-y-2' },
+              content[language].folderList.map((folder, idx) =>
+                React.createElement(
+                  'li',
+                  { key: idx },
+                  React.createElement('strong', null, folder.name),
+                  ': ',
+                  folder.desc
+                )
+              )
+            )
+          )
+        ),
+        // Technologies Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].technologies
+            ),
+            React.createElement(
+              'div',
+              { className: 'overflow-x-auto' },
+              React.createElement(
+                'table',
+                { className: 'w-full text-left border-collapse' },
+                React.createElement(
+                  'thead',
+                  null,
+                  React.createElement(
+                    'tr',
+                    null,
+                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Technology Category' : 'Tecnología'),
+                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Tools & Platforms' : 'Herramientas y Plataformas'),
+                    React.createElement('th', { className: 'p-4' }, language === 'en' ? 'Primary Use Cases' : 'Casos de Uso Principales')
+                  )
+                ),
+                React.createElement(
+                  'tbody',
+                  null,
+                  content[language].techTable.map((row, idx) =>
+                    React.createElement(
+                      'tr',
+                      { key: idx, className: 'border-b border-[#60a5fa]' },
+                      React.createElement('td', { className: 'p-4' }, row.category),
+                      React.createElement('td', { className: 'p-4' }, row.tools),
+                      React.createElement('td', { className: 'p-4' }, row.use)
+                    )
+                  )
+                )
+              )
+            )
+        ),
+        // Videos Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].videos
+            ),
+            React.createElement(
+              'div',
+              { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 video-grid' },
+              videos.map((video) =>
+                React.createElement(
+                  'div',
+                  { key: video.id, className: 'text-center' },
+                  React.createElement('iframe', {
+                    src: `https://www.youtube.com/embed/${video.id}`,
+                    title: video.title,
+                    frameBorder: '0',
+                    allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+                    allowFullScreen: true
+                  }),
+                  React.createElement('p', { className: 'mt-2' }, video.title)
+                )
+              )
+            )
+        ),
+        // Contact Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].contact
+            ),
+            React.createElement(
+              'p',
+              null,
+              React.createElement(
+                'a',
+                {
+                  href: 'mailto:ing.jd.rojas@gmail.com',
+                  className: 'text-[#3b82f6] hover:underline'
+                },
+                content[language].contactEmail
+              )
+            )
+          )
+        ),
+        // Fun Fact Section
+        React.createElement(
+          'section',
+          { className: 'py-12 px-4 md:px-8 bg-[#1e293b]' },
+          React.createElement(
+            'div',
+            { className: 'max-w-7xl mx-auto text-center' },
+            React.createElement(
+              'h2',
+              { className: 'text-3xl font-bold neon-text mb-6' },
+              content[language].funFact
+            ),
+            React.createElement('p', {
+              dangerouslySetInnerHTML: { __html: content[language].funFactText }
+            }),
+            React.createElement('img', {
+              src: 'https://media.giphy.com/media/lSVL6vdhdZVPW/giphy.gif',
+              alt: 'Coffee GIF',
+              className: 'mx-auto mt-4 w-48 rounded-lg neon-border'
+            })
+          )
+        ),
+        // Footer
+        React.createElement(
+          'footer',
+          { className: 'py-6 px-4 md:px-8 bg-[#002143] text-center neon-border' },
+          React.createElement('p', null, content[language].star + ' ⭐️')
+        )
+      );
+    };
 
-    ReactDOM.render(React.createElement(App), document.getElementById('root'));
-  </script>
+    ReactDOM.render(React.createElement(App), document.getElementById('root'));
+  </script>
 </body>
 </html>
