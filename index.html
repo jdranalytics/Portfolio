@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JDR Analytics Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Logo-DATA.ico">
   <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
-  <!-- Note: For production, replace this CDN with a local Tailwind CSS installation using PostCSS or Tailwind CLI as per https://tailwindcss.com/docs/installation -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       background: linear-gradient(rgba(0, 33, 67, 0.7), rgba(30, 41, 59, 0.7)), url('https://raw.githubusercontent.com/jdranalytics/jdranalytics/main/Neural%20Pattern.jpg');
       background-repeat: repeat;
-      background-size: auto; /* Maintains original image proportions for mosaic effect */
+      background-size: auto;
       color: #e0e7ff;
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -24,14 +25,14 @@
     .neon-border {
       box-shadow: 0 0 4px #60a5fa, 0 0 8px #60a5fa;
     }
-    .video-grid iframe {
+    .video-grid .video-container {
       width: 100%;
       height: 200px;
       border: 2px solid #60a5fa;
       border-radius: 8px;
     }
     @media (min-width: 768px) {
-      .video-grid iframe {
+      .video-grid .video-container {
         height: 250px;
       }
     }
@@ -56,17 +57,32 @@
       background-color: rgba(96, 165, 250, 0.3);
     }
   </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2G3WS88G1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-B2G3WS88G1');
+  </script>
+
+  <script async src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
   <div id="root"></div>
   <script>
-    const { useState } = React;
+    const { useState, useEffect } = React;
 
     const App = () => {
       const [language, setLanguage] = useState('es');
 
       const toggleLanguage = () => {
-        setLanguage(language === 'es' ? 'en' : 'es');
+        const newLanguage = language === 'es' ? 'en' : 'es';
+        setLanguage(newLanguage);
+        gtag('event', 'clic_cambio_idioma', {
+          'event_category': 'Interacción con el Sitio',
+          'event_label': `Idioma cambiado a ${newLanguage}`
+        });
       };
 
       const content = {
@@ -150,7 +166,7 @@
             { category: 'Orchestration', tools: 'Apache Airflow', use: 'Data pipeline automation, workflow' },
             { category: 'Cloud Data Warehouses', tools: 'Snowflake, BigQuery (GCP), AWS S3, MS Fabric', use: 'Scalable data storage and ML' },
             { category: 'Databases', tools: 'MSSQL Server, MySQL, SQLite', use: 'Local data management' },
-            { category: 'Enterprise BI', tools: 'Tableau, Power BI', use: 'Executive dashboards and reporting' },
+            { category: 'BI Empresarial', tools: 'Tableau, Power BI', use: 'Executive dashboards and reporting' },
             { category: 'Web Applications', tools: 'Shiny Apps, Streamlit', use: 'Interactive analytics interfaces' },
             { category: 'Low-Code Platforms', tools: 'Power Apps, Power Automate, KNIME', use: 'Business process automation' },
             { category: 'Desktop Applications', tools: 'Electron', use: 'Cross-platform desktop deployment' },
@@ -161,25 +177,72 @@
       };
 
       const videos = [
-        { id: 'F6nQHX9olDo', title: 'ContactApp 1.0.0 (R-Shiny)' },
-        { id: 'sBOK6WT38JU', title: 'My.RCManager v.2.0 (Excel-Access-VBA)' },
-        { id: 'BLnl0NhVNxM', title: 'Apetitoso Restaurant (Power Apps+Automate)' },
-        { id: 'QmfAVkEeaIM', title: 'Automated Offer Module (Excel-VBA)' },
-        { id: 'F13BJ3i9ilA', title: 'C5Manager v.1.0 (Excel+Access-VBA)' },
-        { id: '-2JqTp_lcnU', title: 'Airflow+BigQuery+ML (Risk Analysis)' },
-        { id: 'M9p6LTcJkOs', title: 'Excel-VBA | Power BI | Looker | Tableau' },
-        { id: 'eBS8BfjXEGM', title: 'MySQL Ingestion Process (AIRFLOW)' },
-        { id: '1c89jF3w34I', title: 'Risk Analysis (Shiny App+AI Assistant)' },
-        { id: 'fZLZ_h8GHq8', title: 'AI Assistant for Risk Analysis (Python+Streamlit)' },
-        { id: 'NSE45GBUpMA', title: 'Machine Learning in MS Fabric (Risk Analysis)' },
-        { id: 'XQCd9OFM0-E', title: 'RiskApp (Power Apps+Automate+Fabric)' },
-        { id: 'uMMLRSNm-CI', title: 'Employee Turnover Prediction' },
-        { id: 'lSItMMBnrYU', title: 'Overtime Hours Forecast' },
-        { id: '9gq6r8f0UNg', title: 'Employee Survey Sentiment Analysis' },
-        { id: 'iQ_a5aLrg8Q', title: 'Multi-Scenario Forecast with Snowflake ML' },
-        { id: 'rLLFMvlWqzE', title: 'Clustering in Snowflake with Notebook' },
-        { id: 'Ucr4E4u9S_g', title: 'Multi-Scenario Forecast with KNIME' }
+        { id: 'F6nQHX9olDo', title: 'ContactApp 1.0.0 (R-Shiny)', shortId: 'C1' },
+        { id: 'sBOK6WT38JU', title: 'My.RCManager v.2.0 (Excel-Access-VBA)', shortId: 'R1' },
+        { id: 'BLnl0NhVNxM', title: 'Apetitoso Restaurant (Power Apps+Automate)', shortId: 'A1' },
+        { id: 'QmfAVkEeaIM', title: 'Automated Offer Module (Excel-VBA)', shortId: 'O1' },
+        { id: 'F13BJ3i9ilA', title: 'C5Manager v.1.0 (Excel+Access-VBA)', shortId: 'C5' },
+        { id: '-2JqTp_lcnU', title: 'Airflow+BigQuery+ML (Risk Analysis)', shortId: 'AB1' },
+        { id: 'M9p6LTcJkOs', title: 'Excel-VBA | Power BI | Looker | Tableau', shortId: 'V1' },
+        { id: 'eBS8BfjXEGM', title: 'MySQL Ingestion Process (AIRFLOW)', shortId: 'M1' },
+        { id: '1c89jF3w34I', title: 'Risk Analysis (Shiny App+AI Assistant)', shortId: 'RA1' },
+        { id: 'fZLZ_h8GHq8', title: 'AI Assistant for Risk Analysis (Python+Streamlit)', shortId: 'AI1' },
+        { id: 'NSE45GBUpMA', title: 'Machine Learning in MS Fabric (Risk Analysis)', shortId: 'ML1' },
+        { id: 'XQCd9OFM0-E', title: 'RiskApp (Power Apps+Automate+Fabric)', shortId: 'R2' },
+        { id: 'uMMLRSNm-CI', title: 'Employee Turnover Prediction', shortId: 'ET1' },
+        { id: 'lSItMMBnrYU', title: 'Overtime Hours Forecast', shortId: 'OH1' },
+        { id: '9gq6r8f0UNg', title: 'Employee Survey Sentiment Analysis', shortId: 'ES1' },
+        { id: 'iQ_a5aLrg8Q', title: 'Multi-Scenario Forecast with Snowflake ML', shortId: 'SF1' },
+        { id: 'rLLFMvlWqzE', title: 'Clustering in Snowflake with Notebook', shortId: 'CS1' },
+        { id: 'Ucr4E4u9S_g', title: 'Multi-Scenario Forecast with KNIME', shortId: 'K1' }
       ];
+
+      // Initialize YouTube players when the API is ready
+      useEffect(() => {
+        window.onYouTubeIframeAPIReady = () => {
+          videos.forEach(video => {
+            new window.YT.Player(`player-${video.id}`, {
+              videoId: video.id,
+              playerVars: { 'autoplay': 0, 'controls': 1 },
+              events: {
+                'onStateChange': (event) => {
+                  let action = '';
+                  const videoTitle = event.target.getVideoData().title;
+                  const videoId = event.target.getVideoData().video_id;
+                  const videoData = videos.find(v => v.id === videoId);
+                  const shortId = videoData ? videoData.shortId : videoId;
+
+                  switch (event.data) {
+                    case window.YT.PlayerState.PLAYING:
+                      action = 'reproduccion_iniciada';
+                      break;
+                    case window.YT.PlayerState.PAUSED:
+                      action = 'reproduccion_pausada';
+                      break;
+                    case window.YT.PlayerState.ENDED:
+                      action = 'reproduccion_terminada';
+                      break;
+                    default:
+                      return;
+                  }
+
+                  gtag('event', `video_${action}_${videoId}`, {
+                    'event_category': 'Interacción con Video',
+                    'event_label': shortId,
+                    'event_value': videoId,
+                    'video_title': videoTitle
+                  });
+                }
+              }
+            });
+          });
+        };
+
+        // Cleanup to avoid memory leaks
+        return () => {
+          delete window.onYouTubeIframeAPIReady;
+        };
+      }, []);
 
       return React.createElement(
         'div',
@@ -221,7 +284,7 @@
             React.createElement(
               'h1',
               { className: 'text-4xl md:text-5xl font-bold neon-text mb-4' },
-              content[language].welcome 
+              content[language].welcome
             ),
             React.createElement('p', {
               className: 'text-lg md:text-xl max-w-3xl mx-auto',
@@ -277,7 +340,13 @@
                 'a',
                 {
                   href: 'https://github.com/jdranalytics/portfolio',
-                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text'
+                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text',
+                  onClick: () => {
+                    gtag('event', 'clic_portafolio_github', {
+                      'event_category': 'Enlaces Salientes',
+                      'event_label': 'Portafolio en GitHub'
+                    });
+                  }
                 },
                 content[language].portfolioLink
               ),
@@ -285,7 +354,13 @@
                 'a',
                 {
                   href: 'https://www.youtube.com/playlist?list=PLw0BQ_z2y2_vW_69NgGv2b7hfv8kKh6Ko',
-                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text'
+                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text',
+                  onClick: () => {
+                    gtag('event', 'clic_portafolio_youtube', {
+                      'event_category': 'Enlaces Salientes',
+                      'event_label': 'Portafolio en Video'
+                    });
+                  }
                 },
                 content[language].videoPortfolioLink
               )
@@ -316,8 +391,14 @@
                 { className: 'mt-2' },
                 React.createElement('a', {
                   href: 'https://deepwiki.com/jdranalytics/Portfolio',
-                  className: 'inline-block'
-                }, 
+                  className: 'inline-block',
+                  onClick: () => {
+                    gtag('event', 'clic_deepwiki_badge', {
+                      'event_category': 'Enlaces Salientes',
+                      'event_label': 'DeepWiki Badge'
+                    });
+                  }
+                },
                 React.createElement('img', {
                   src: 'https://deepwiki.com/badge.svg',
                   alt: 'Ask DeepWiki',
@@ -410,13 +491,7 @@
                 React.createElement(
                   'div',
                   { key: video.id, className: 'text-center' },
-                  React.createElement('iframe', {
-                    src: `https://www.youtube.com/embed/${video.id}`,
-                    title: video.title,
-                    frameBorder: '0',
-                    allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
-                    allowFullScreen: true
-                  }),
+                  React.createElement('div', { id: `player-${video.id}`, className: 'video-container' }),
                   React.createElement('p', { className: 'mt-2' }, video.title)
                 )
               )
@@ -442,7 +517,13 @@
                 'a',
                 {
                   href: 'mailto:ing.jd.rojas@gmail.com',
-                  className: 'text-[#3b82f6] hover:underline'
+                  className: 'text-[#3b82f6] hover:underline',
+                  onClick: () => {
+                    gtag('event', 'clic_correo_electronico', {
+                      'event_category': 'Contacto',
+                      'event_label': 'ing.jd.rojas@gmail.com'
+                    });
+                  }
                 },
                 content[language].contactEmail
               )
@@ -480,7 +561,9 @@
       );
     };
 
-    ReactDOM.render(React.createElement(App), document.getElementById('root'));
+    // Modern React 18 rendering
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(React.createElement(App));
   </script>
 </body>
 </html>
