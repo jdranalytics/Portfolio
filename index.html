@@ -88,6 +88,11 @@
 <body>
   <div id="root"></div>
   <script>
+    // Ensure page stays at the top on load to prevent auto-scroll
+    window.onload = () => {
+      window.scrollTo(0, 0);
+    };
+
     const { useState, useEffect } = React;
 
     const App = () => {
