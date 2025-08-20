@@ -95,9 +95,10 @@
             '💡 Explorando ideas para la <strong>evaluación y mejora</strong> de procesos en diferentes contextos.'
           ],
           work: 'Mi trabajo',
-          workText: 'Parte de mi trabajo puede verse en mi repositorio público principal y en mi portafolio en video:',
+          workText: 'Parte de mi trabajo puede verse en mi repositorio público principal, mi portafolio en video y mi dashboard interactivo:',
           portfolioLink: 'Portafolio en GitHub',
           videoPortfolioLink: 'Portafolio en Video',
+          dashboardLink: 'Dashboard Interactivo',
           whatFind: '¿Qué encontrarás aquí?',
           whatFindText: 'Una colección de mis proyectos con modelos y visualizaciones preparados con <strong>data sintética</strong> (siempre respetando la confidencialidad evitando usar datos reales). Estos proyectos abarcan diferentes contextos de negocio como contact centers, riesgo crediticio, recursos humanos, gestión de proyectos, gestión de activos, gestión de restaurantes, fuerza de ventas, regulatoria, entre otros.',
           deepWiki: 'Para analizar de forma eficiente el contenido, ingresa al siguiente enlace:',
@@ -106,7 +107,7 @@
             { name: '00_orchestrations', desc: 'Orquestaciones con Python y Apache Airflow' },
             { name: '01_call_center_analytics', desc: 'Proyectos con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R y Shiny Apps' },
             { name: '02_credit_risk_analytics', desc: 'Proyectos con data sintética. Incluye Python con orquestaciones usando Apache Airflow, R, Asistente AI con Streamlit, Power Apps + Power Automate y Shiny App. Backends en MS Fabric y BigQuery' },
-            { name: '03_people_analytics', desc: 'Proyecto con data sintética. Incluye Python con orquestaciones usando Apache Airflow, backend en MSSQL y visualización con Power BI' },
+            { name: '03_people_analytics', desc: 'Proyecto con data sintética. Incluye Python con orquestaciones usando Apache Airflow, KNIME, backend en MSSQL y visualización con Power BI' },
             { name: '04_beverages_sales_analytics', desc: 'Proyecto con data sintética. Incluye Python y SQL con backend en Snowflake y visualizaciones en Tableau' },
             { name: '05_gestor_residuos', desc: 'Proyecto de desarrollo de un gestor de residuos realizado con R + Shiny y empacado con Electron. Solución full-stack con SQLite y tablero en Power BI' }
           ],
@@ -139,9 +140,10 @@
             '💡 Exploring ideas for <strong>evaluation and improvement</strong> of processes in different contexts.'
           ],
           work: 'My Work',
-          workText: 'Some of my work can be seen in my main public repository and video portfolio:',
+          workText: 'Some of my work can be seen in my main public repository, video portfolio, and interactive dashboard:',
           portfolioLink: 'Portfolio on GitHub',
           videoPortfolioLink: 'Video Portfolio',
+          dashboardLink: 'Interactive Dashboard',
           whatFind: 'What You\'ll Find Here',
           whatFindText: 'A collection of my projects featuring models and visualizations prepared with <strong>synthetic data</strong> (always respecting confidentiality by avoiding real data). These projects cover different business contexts like contact centers, credit risk, human resources, project management, asset management, restaurant management, sales force, regulatory compliance, among others.',
           deepWiki: 'To efficiently analyze the content, visit the following link:',
@@ -150,7 +152,7 @@
             { name: '00_orchestrations', desc: 'Orchestrations with Python and Apache Airflow' },
             { name: '01_call_center_analytics', desc: 'Projects with synthetic data. Includes Python with orchestrations using Apache Airflow, R and Shiny Apps' },
             { name: '02_credit_risk_analytics', desc: 'Projects with synthetic data. Includes Python with orchestrations using Apache Airflow, R, AI Assistant with Streamlit, Power Apps + Power Automate and Shiny App. Backends in MS Fabric and BigQuery' },
-            { name: '03_people_analytics', desc: 'Project with synthetic data. Includes Python with orchestrations using Apache Airflow, backend in MSSQL and visualization with Power BI' },
+            { name: '03_people_analytics', desc: 'Project with synthetic data. Includes Python with orchestrations using Apache Airflow, KNIME, backend in MSSQL and visualization with Power BI' },
             { name: '04_beverages_sales_analytics', desc: 'Project with synthetic data. Includes Python and SQL with backend in Snowflake and visualizations in Tableau' },
             { name: '05_gestor_residuos', desc: 'Waste management system development project made with R + Shiny and packaged with Electron. Full-stack solution with SQLite and a predefined Power BI dashboard' }
           ],
@@ -363,6 +365,20 @@
                   }
                 },
                 content[language].videoPortfolioLink
+              ),
+              React.createElement(
+                'a',
+                {
+                  href: 'https://lookerstudio.google.com/reporting/99285bd9-30e8-4082-a032-9c3a68bc34f1',
+                  className: 'bg-[#3b82f6] text-white px-6 py-3 rounded-lg hover:bg-[#2563eb] neon-text',
+                  onClick: () => {
+                    gtag('event', 'clic_dashboard', {
+                      'event_category': 'Enlaces Salientes',
+                      'event_label': 'Dashboard Interactivo'
+                    });
+                  }
+                },
+                content[language].dashboardLink
               )
             )
           )
