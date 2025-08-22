@@ -142,9 +142,6 @@ CREATE TABLE Elbow_Method_Results (
 );
 
 
----------------------------------------------------------------------------------------------------
-
-
 -- VISTA DE MÉTRICAS DE PRECISIÓN DE MODELOS DE FORECAST DE OVERTIME POR DEPARTAMENTO
 
 CREATE VIEW vw_ml_overtime_forecast_metrics 
@@ -250,12 +247,36 @@ FROM Training
 GROUP BY employee_id, plan_year;
 
 
-
-
---------------------------------------------------------------------------------------------------------------------------
-
 -- CREAR PROCEDIMIENTO ALMACENADO PARA SABER EL UMBRAL DE RIESGO CUANDO EL TURNOVER Y EL PREDICHO SON IGUAL A 1
 
 CREATE PROCEDURE avg_turnover_threshold
 AS
 SELECT AVG(turnover_probability) AS probability FROM vw_headcount_full WHERE turnover = 1 AND  predicted_turnover =1;
+
+-- TABLA QUE ALMACENA LAS MÉTRICAS DE LA PREDICCIÓN DEL OVERTIME (FORECASTING)
+
+CREATE TABLE ML_Model_Metrics_Overtime_Predictions_KNIME_MLP (
+	id int IDENTITY(1,1) NOT NULL,
+	timestamp datetime NOT NULL,
+	department varchar(100) NOT NULL,
+	Capas INT NOT NULL,
+	Neuronas INT NOT NULL,
+	RMSE DECIMAL (4,3) NOT NULL,
+	MAE DECIMAL (4,3) NOT NULL,
+	MAPE DECIMAL (4,3) NOT NULL,
+	R2 DECIMAL (4,3) NOT NULL,
+	model_quality varchar(50) NOT NULL,
+	run_type varchar(50) NOT NULL
+);
+
+
+CREATE TABLE ML_Overtime_Predictions_KNIME_MLP (
+	id int IDENTITY(1,1) NOT NULL,
+	timestamp datetime NOT NULL,
+	department varchar(100) NOT NULL,
+	work_date date NOT NULL,
+	total_overtime FLOAT NULL,
+	total_overtime_prediction FLOAT  NULL,
+	overtime FLOAT NOT NULL,
+	conjunto varchar(100) NOT NULL
+	   );
